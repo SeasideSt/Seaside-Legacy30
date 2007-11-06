@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "pmm 5/27/2007 07:47",
+	"super" : "WAPlugin",
+	"category" : "Seaside-Core-Plugins",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"EnableSeasideTools"
+	],
+	"instvars" : [ ],
+	"name" : "WAHaloPlugin",
+	"type" : "normal"
+}

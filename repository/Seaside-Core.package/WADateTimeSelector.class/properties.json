@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "WAComponent",
+	"category" : "Seaside-Core-Components-Widgets",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"dateSelector",
+		"timeSelector"
+	],
+	"name" : "WADateTimeSelector",
+	"type" : "normal"
+}

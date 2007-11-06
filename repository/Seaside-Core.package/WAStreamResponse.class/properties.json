@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "WAResponse",
+	"category" : "Seaside-Core-HTTP",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"writtenHeaders"
+	],
+	"name" : "WAStreamResponse",
+	"type" : "normal"
+}

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "rew 10/19/2007 10:49",
+	"super" : "Object",
+	"category" : "Seaside-Core-RenderLoop",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAMain",
+	"type" : "normal"
+}

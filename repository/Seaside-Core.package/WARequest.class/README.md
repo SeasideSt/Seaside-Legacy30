@@ -1,0 +1,1 @@
+I am a server independent http request object. Instance of me can be aquired through WASession >> #currentRequest

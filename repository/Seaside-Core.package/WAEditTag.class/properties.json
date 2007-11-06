@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "pmm 3/28/2007 10:40",
+	"super" : "WAGenericTag",
+	"category" : "Seaside-Core-Canvas-Tags",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAEditTag",
+	"type" : "normal"
+}

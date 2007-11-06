@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "rew 10/7/2007 12:52",
+	"super" : "WAStringAttribute",
+	"category" : "Seaside-Core-Configuration",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAPasswordAttribute",
+	"type" : "normal"
+}

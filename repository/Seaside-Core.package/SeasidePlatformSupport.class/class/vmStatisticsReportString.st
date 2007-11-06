@@ -1,0 +1,3 @@
+vm
+vmStatisticsReportString
+	^Implementation vmStatisticsReportString

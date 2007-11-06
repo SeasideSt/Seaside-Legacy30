@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "pmm 6/30/2007 19:02",
+	"super" : "WAComponent",
+	"category" : "Seaside-Core-Component",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WATask",
+	"type" : "normal"
+}

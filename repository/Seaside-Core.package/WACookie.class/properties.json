@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "pmm 4/15/2007 22:26",
+	"super" : "Object",
+	"category" : "Seaside-Core-HTTP",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"key",
+		"value",
+		"path",
+		"expiry"
+	],
+	"name" : "WACookie",
+	"type" : "normal"
+}

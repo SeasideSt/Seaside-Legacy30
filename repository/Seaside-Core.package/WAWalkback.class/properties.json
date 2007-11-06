@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "lr 6/5/2007 21:21",
+	"super" : "WAComponent",
+	"category" : "Seaside-Core-Components-Tools",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"exception",
+		"frames",
+		"limit"
+	],
+	"name" : "WAWalkback",
+	"type" : "normal"
+}

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "lr 5/30/2007 22:18",
+	"super" : "Object",
+	"category" : "Seaside-Core-Plugins",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"target",
+		"requestor"
+	],
+	"name" : "WAPlugin",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+file-library
+convertToSmalltalkNewlines: aString
+	^Implementation convertToSmalltalkNewlines: aString

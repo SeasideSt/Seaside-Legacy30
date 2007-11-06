@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WATableColumnGroupTag",
+	"category" : "Seaside-Core-Canvas-Tags",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WATableColumnTag",
+	"type" : "normal"
+}

@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "pmm 4/15/2007 22:22",
+	"super" : "Object",
+	"category" : "Seaside-Core-HTTP",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"contents",
+		"contentType",
+		"fileName"
+	],
+	"name" : "WAFile",
+	"type" : "normal"
+}

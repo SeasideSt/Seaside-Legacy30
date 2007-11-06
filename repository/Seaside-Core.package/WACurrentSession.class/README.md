@@ -1,0 +1,1 @@
+A WACurrentSession is the dynamic variable for the current Seaside session. See superclass comment for what a dynamic variable is.

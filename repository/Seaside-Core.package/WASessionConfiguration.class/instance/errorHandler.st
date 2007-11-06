@@ -1,0 +1,3 @@
+defaults
+errorHandler
+	^ WAWalkbackErrorHandler

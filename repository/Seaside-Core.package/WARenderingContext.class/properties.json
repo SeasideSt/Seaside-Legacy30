@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Seaside-Core-Callbacks",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"session",
+		"actionUrl",
+		"count",
+		"callbacks",
+		"document",
+		"mode",
+		"properties"
+	],
+	"name" : "WARenderingContext",
+	"type" : "normal"
+}

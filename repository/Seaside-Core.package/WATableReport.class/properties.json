@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "WAReport",
+	"category" : "Seaside-Core-Components-Widgets",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"sortColumn",
+		"isReversed",
+		"columns",
+		"rowPeriod",
+		"rowColors"
+	],
+	"name" : "WATableReport",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+public
+configurationComponent
+	^ nil

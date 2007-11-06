@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "pmm 5/2/2007 21:46",
+	"super" : "WADecoration",
+	"category" : "Seaside-Core-Components-Decorations",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"remoteAddress"
+	],
+	"name" : "WASessionProtector",
+	"type" : "normal"
+}

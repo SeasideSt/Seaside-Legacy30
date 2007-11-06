@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "rew 10/19/2007 10:48",
+	"super" : "WAEntryPoint",
+	"category" : "Seaside-Core-RequestHandler",
+	"classinstvars" : [
+		"default"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAFileHandler",
+	"type" : "normal"
+}

@@ -1,0 +1,1 @@
+I encode path segments and arguments of an URL.

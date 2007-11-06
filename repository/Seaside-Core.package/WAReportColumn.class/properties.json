@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Seaside-Core-Components-Widgets",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"clickBlock",
+		"formatBlock",
+		"hasTotal",
+		"title",
+		"sortBlock",
+		"valueBlock"
+	],
+	"name" : "WAReportColumn",
+	"type" : "normal"
+}

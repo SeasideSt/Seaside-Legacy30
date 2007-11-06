@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "rew 10/19/2007 10:46",
+	"super" : "WAEntryPoint",
+	"category" : "Seaside-Core-RequestHandler",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"keysByHandler",
+		"handlersByKey",
+		"mutex"
+	],
+	"name" : "WARegistry",
+	"type" : "normal"
+}

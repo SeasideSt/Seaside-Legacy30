@@ -1,0 +1,21 @@
+{
+	"commentStamp" : "",
+	"super" : "WARoot",
+	"category" : "Seaside-Core-Document",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"context",
+		"docType",
+		"htmlAttrs",
+		"headAttrs",
+		"bodyAttrs",
+		"headElements",
+		"title",
+		"styles",
+		"scripts"
+	],
+	"name" : "WAHtmlRoot",
+	"type" : "normal"
+}

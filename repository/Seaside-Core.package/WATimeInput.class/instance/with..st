@@ -1,0 +1,15 @@
+public api
+with: aBlock
+	value isNil ifTrue: [value := Time now].
+	hours := value hour.
+	minutes := value minutes.
+	seconds := value seconds.
+	self renderHours.
+	canvas space; text: ':'; space.
+	self renderMinutes.
+	withSeconds ifTrue:
+		[canvas space; text: ':'; space.
+		self renderSeconds]
+	ifFalse:
+		[seconds := 0].
+	self addCallback

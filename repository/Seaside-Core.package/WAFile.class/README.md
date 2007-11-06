@@ -1,0 +1,1 @@
+I represent a file that was uploaded by the user via #fileInput.

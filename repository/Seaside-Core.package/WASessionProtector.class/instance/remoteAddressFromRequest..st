@@ -1,0 +1,5 @@
+accessing
+remoteAddressFromRequest: aRequest
+	^aRequest
+		headerAt: 'x-forwarded-for'
+		ifAbsent: [ aRequest nativeRequest remoteAddress ]

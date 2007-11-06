@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "pmm 10/20/2007 23:22",
+	"super" : "WARequestHandler",
+	"category" : "Seaside-Core-RequestHandler",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"document",
+		"mimeDocument",
+		"mimeType",
+		"fileName"
+	],
+	"name" : "WADocumentHandler",
+	"type" : "normal"
+}

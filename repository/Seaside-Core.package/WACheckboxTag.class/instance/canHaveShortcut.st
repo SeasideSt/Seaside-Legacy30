@@ -1,0 +1,3 @@
+javascript
+canHaveShortcut
+	^true

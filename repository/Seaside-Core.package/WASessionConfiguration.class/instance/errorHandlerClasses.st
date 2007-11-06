@@ -1,0 +1,3 @@
+defaults
+errorHandlerClasses
+	^ WAErrorHandler allSubclasses

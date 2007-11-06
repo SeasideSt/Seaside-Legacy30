@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "lr 5/10/2007 22:41",
+	"super" : "WAExpiringHandler",
+	"category" : "Seaside-Core-Session",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"continuations",
+		"lastContinuation",
+		"escapeContinuation",
+		"monitor",
+		"currentRequest",
+		"scripts",
+		"jumpTo",
+		"cookiesEnabled"
+	],
+	"name" : "WASession",
+	"type" : "normal"
+}

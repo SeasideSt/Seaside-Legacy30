@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "WAComponent",
+	"category" : "Seaside-Core-Components-Tools",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"path",
+		"selected",
+		"input"
+	],
+	"name" : "WAInspector",
+	"type" : "normal"
+}

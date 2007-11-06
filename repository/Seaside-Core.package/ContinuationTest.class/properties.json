@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Seaside-Core-Continuations",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"tmp",
+		"tmp2"
+	],
+	"name" : "ContinuationTest",
+	"type" : "normal"
+}

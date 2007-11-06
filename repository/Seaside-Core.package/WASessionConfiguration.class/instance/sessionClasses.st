@@ -1,0 +1,3 @@
+defaults
+sessionClasses
+	^ WAExpiringHandler withAllSubclasses

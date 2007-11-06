@@ -1,0 +1,3 @@
+accessing
+trailName
+	^ configuration name

@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "WAComponent",
+	"category" : "Seaside-Core-Components-Tools",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"Halos"
+	],
+	"instvars" : [
+		"root",
+		"mode",
+		"plugins"
+	],
+	"name" : "WAHalo",
+	"type" : "normal"
+}

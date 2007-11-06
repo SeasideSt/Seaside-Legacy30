@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "pmm 4/15/2007 22:14",
+	"super" : "WABrush",
+	"category" : "Seaside-Core-Canvas",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"attributes"
+	],
+	"name" : "WATagBrush",
+	"type" : "normal"
+}

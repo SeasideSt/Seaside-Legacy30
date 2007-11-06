@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "pmm 9/25/2007 20:27",
+	"super" : "WADecoration",
+	"category" : "Seaside-Core-Components-Decorations",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"active"
+	],
+	"name" : "WATransaction",
+	"type" : "normal"
+}

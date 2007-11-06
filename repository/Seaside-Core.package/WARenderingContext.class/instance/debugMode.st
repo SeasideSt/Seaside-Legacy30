@@ -1,0 +1,3 @@
+modes
+debugMode
+	mode := #debug

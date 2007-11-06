@@ -1,0 +1,3 @@
+accessing
+entryPointClasses
+	^ WAEntryPoint concreteSubclasses

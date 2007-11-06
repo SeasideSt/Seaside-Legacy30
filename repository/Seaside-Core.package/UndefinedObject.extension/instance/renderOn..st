@@ -1,0 +1,2 @@
+*Seaside-Core
+renderOn: html

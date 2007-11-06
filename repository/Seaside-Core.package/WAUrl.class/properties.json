@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "lr 7/9/2007 21:43",
+	"super" : "Object",
+	"category" : "Seaside-Core-HTTP",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"scheme",
+		"username",
+		"password",
+		"hostname",
+		"port",
+		"path",
+		"parameters",
+		"fragment"
+	],
+	"name" : "WAUrl",
+	"type" : "normal"
+}

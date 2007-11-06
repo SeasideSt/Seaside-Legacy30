@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WASystemConfiguration",
+	"category" : "Seaside-Core-RenderLoop",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WARenderLoopConfiguration",
+	"type" : "normal"
+}

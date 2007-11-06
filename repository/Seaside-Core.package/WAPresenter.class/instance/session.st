@@ -1,0 +1,3 @@
+convenience
+session
+	^ WACurrentSession value

@@ -1,0 +1,3 @@
+private
+removeParameters
+	parameters := nil

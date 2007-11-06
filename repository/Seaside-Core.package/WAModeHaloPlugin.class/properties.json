@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "pmm 5/27/2007 17:35",
+	"super" : "WAHaloPlugin",
+	"category" : "Seaside-Core-Plugins",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAModeHaloPlugin",
+	"type" : "normal"
+}

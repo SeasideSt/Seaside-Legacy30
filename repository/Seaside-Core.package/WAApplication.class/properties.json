@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "rew 10/19/2007 10:47",
+	"super" : "WARegistry",
+	"category" : "Seaside-Core-Session",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"configuration",
+		"libraries"
+	],
+	"name" : "WAApplication",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+responding
+pageIntentionallyLeftBlank
+	self returnResponse: WAResponse new

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Seaside-Core-Platform",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"Implementation"
+	],
+	"instvars" : [ ],
+	"name" : "SeasidePlatformSupport",
+	"type" : "normal"
+}

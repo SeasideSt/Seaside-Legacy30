@@ -1,0 +1,1 @@
+I encode everything that is written to myself using #nextPut: and #nextPutAll: onto the wrapped stream. To be efficient I use an encoding table to be able to transform the most used characters from the UTF Basic Multilingual Plane as efficiently as possible. The convertion of a single character is defined in #encode:on: on the class-side of my subclasses.

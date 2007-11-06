@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "rew 10/19/2007 10:43",
+	"super" : "WASystemConfiguration",
+	"category" : "Seaside-Core-Session",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"DeploymentMode"
+	],
+	"instvars" : [ ],
+	"name" : "WAGlobalConfiguration",
+	"type" : "normal"
+}

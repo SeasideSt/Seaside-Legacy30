@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "WAComponent",
+	"category" : "Seaside-Core-Components-Widgets",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"root",
+		"selected",
+		"expanded",
+		"childrenBlock",
+		"labelBlock",
+		"canSelectBlock",
+		"selectBlock"
+	],
+	"name" : "WATree",
+	"type" : "normal"
+}

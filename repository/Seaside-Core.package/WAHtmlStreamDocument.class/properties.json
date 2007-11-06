@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "WAHtmlDocument",
+	"category" : "Seaside-Core-Document",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"stream",
+		"htmlEncoder",
+		"urlEncoder"
+	],
+	"name" : "WAHtmlStreamDocument",
+	"type" : "normal"
+}

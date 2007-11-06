@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "lr 11/29/2004 16:30",
+	"super" : "WANavigation",
+	"category" : "Seaside-Core-Components-Frames",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"components"
+	],
+	"name" : "WASimpleNavigation",
+	"type" : "normal"
+}

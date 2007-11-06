@@ -1,0 +1,1 @@
+I am like WAErrorHandler except that I display the code 500 error with a short stackframe for errors and warnings too.

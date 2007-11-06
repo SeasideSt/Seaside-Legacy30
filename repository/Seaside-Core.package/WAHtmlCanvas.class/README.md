@@ -1,0 +1,1 @@
+This canvas knows about HTML but nothing about callbacks.

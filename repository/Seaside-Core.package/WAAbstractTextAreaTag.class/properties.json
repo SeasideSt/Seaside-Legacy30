@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "pmm 4/23/2007 21:10",
+	"super" : "WAFormInputTag",
+	"category" : "Seaside-Core-Canvas-Tags",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAAbstractTextAreaTag",
+	"type" : "normal"
+}

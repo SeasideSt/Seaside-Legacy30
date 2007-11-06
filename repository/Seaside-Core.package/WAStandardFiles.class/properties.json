@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "lr 6/5/2007 19:29",
+	"super" : "WAFileLibrary",
+	"category" : "Seaside-Core-Libraries",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAStandardFiles",
+	"type" : "normal"
+}

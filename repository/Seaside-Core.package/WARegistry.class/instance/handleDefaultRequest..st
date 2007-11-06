@@ -1,0 +1,3 @@
+private
+handleDefaultRequest: aRequest
+	self subclassResponsibility

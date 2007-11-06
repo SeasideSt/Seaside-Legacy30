@@ -1,0 +1,1 @@
+I am a server independent http response object. I am used in conjunction with WASession >> returnResponse:

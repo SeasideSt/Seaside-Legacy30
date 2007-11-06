@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "WADateTable",
+	"category" : "Seaside-Core-Components-Widgets",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"cellBlock",
+		"dateSelectionStart",
+		"dateSelectionEnd",
+		"rowSelectionStart",
+		"rowSelectionEnd"
+	],
+	"name" : "WASelectionDateTable",
+	"type" : "normal"
+}

@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "rew 10/19/2007 10:46",
+	"super" : "WAEntryPoint",
+	"category" : "Seaside-Core-RequestHandler",
+	"classinstvars" : [
+		"default"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"entryPoints",
+		"defaultName",
+		"lastUpdate",
+		"version"
+	],
+	"name" : "WADispatcher",
+	"type" : "normal"
+}

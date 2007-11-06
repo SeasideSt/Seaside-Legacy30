@@ -1,0 +1,3 @@
+preferences
+defaultAncestor
+	^ WARenderLoopConfiguration new

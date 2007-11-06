@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "lr 4/8/2007 15:49",
+	"super" : "Object",
+	"category" : "Seaside-Core-Document",
+	"classinstvars" : [
+		"table"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"stream",
+		"table"
+	],
+	"name" : "WAEncoder",
+	"type" : "normal"
+}

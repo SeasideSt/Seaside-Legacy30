@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "pmm 4/17/2007 00:15",
+	"super" : "WADynamicVariable",
+	"category" : "Seaside-Core-Session",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WACurrentSession",
+	"type" : "normal"
+}

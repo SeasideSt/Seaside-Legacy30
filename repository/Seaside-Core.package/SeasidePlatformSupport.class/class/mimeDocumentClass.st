@@ -1,0 +1,3 @@
+factory
+mimeDocumentClass
+	^Implementation mimeDocumentClass

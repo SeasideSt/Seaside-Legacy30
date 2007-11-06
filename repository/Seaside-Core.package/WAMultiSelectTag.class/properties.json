@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WASelectTag",
+	"category" : "Seaside-Core-Canvas-Tags",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAMultiSelectTag",
+	"type" : "normal"
+}

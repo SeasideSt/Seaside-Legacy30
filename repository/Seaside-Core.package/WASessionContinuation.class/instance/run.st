@@ -1,0 +1,3 @@
+processing
+run
+	self subclassResponsibility

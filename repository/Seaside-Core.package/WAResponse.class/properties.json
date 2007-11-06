@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "pmm 5/27/2007 21:52",
+	"super" : "Object",
+	"category" : "Seaside-Core-HTTP",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"contentType",
+		"headers",
+		"cookies",
+		"status",
+		"stream"
+	],
+	"name" : "WAResponse",
+	"type" : "normal"
+}

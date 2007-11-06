@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "rew 9/24/2007 20:28",
+	"super" : "WADecoration",
+	"category" : "Seaside-Core-Components-Decorations",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"authenticator",
+		"realm"
+	],
+	"name" : "WABasicAuthentication",
+	"type" : "normal"
+}

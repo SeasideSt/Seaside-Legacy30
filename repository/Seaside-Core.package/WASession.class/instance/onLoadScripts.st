@@ -1,0 +1,3 @@
+scripts
+onLoadScripts
+	^ scripts ifNil: [#()]

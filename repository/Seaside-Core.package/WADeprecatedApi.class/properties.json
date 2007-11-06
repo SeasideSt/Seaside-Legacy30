@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "pmm 4/17/2007 00:16",
+	"super" : "Notification",
+	"category" : "Seaside-Core-Exceptions",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WADeprecatedApi",
+	"type" : "normal"
+}

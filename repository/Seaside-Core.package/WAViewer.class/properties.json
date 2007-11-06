@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "WALabelledFormDialog",
+	"category" : "Seaside-Core-Components-Tools",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"presenter"
+	],
+	"name" : "WAViewer",
+	"type" : "normal"
+}

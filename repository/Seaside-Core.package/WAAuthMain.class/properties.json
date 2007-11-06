@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WARenderLoopMain",
+	"category" : "Seaside-Core-RenderLoop",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAAuthMain",
+	"type" : "normal"
+}

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "WAStringLibraryEditor",
+	"category" : "Seaside-Core-Components-Tools",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"renamingFile",
+		"newName"
+	],
+	"name" : "WAFileLibraryEditor",
+	"type" : "normal"
+}
