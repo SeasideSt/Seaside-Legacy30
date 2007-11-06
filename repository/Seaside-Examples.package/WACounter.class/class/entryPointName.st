@@ -1,0 +1,3 @@
+accessing
+entryPointName
+	^'examples/counter'

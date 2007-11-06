@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "pmm 4/17/2007 00:00",
+	"super" : "WAComponent",
+	"category" : "Seaside-Examples-Misc",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"count"
+	],
+	"name" : "WACounter",
+	"type" : "normal"
+}
