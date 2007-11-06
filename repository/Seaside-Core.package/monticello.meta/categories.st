@@ -5,7 +5,6 @@ SystemOrganization addCategory: #'Seaside-Core-Components-Decorations'!
 SystemOrganization addCategory: #'Seaside-Core-Components-Dialogs'!
 SystemOrganization addCategory: #'Seaside-Core-Components-Frames'!
 SystemOrganization addCategory: #'Seaside-Core-Components-Tools'!
-SystemOrganization addCategory: #'Seaside-Core-Components-Tools-Squeak'!
 SystemOrganization addCategory: #'Seaside-Core-Components-Widgets'!
 SystemOrganization addCategory: #'Seaside-Core-Configuration'!
 SystemOrganization addCategory: #'Seaside-Core-Continuations'!
