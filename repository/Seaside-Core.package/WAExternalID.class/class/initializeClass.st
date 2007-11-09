@@ -1,6 +1,6 @@
 class initialization
-initialize
-	"WAExternalID initialize"
+initializeClass
+	"WAExternalID initializeClass"
 
 	GeneratorMutex := SeasidePlatformSupport semaphoreClass forMutualExclusion.
 	SeasidePlatformSupport addToStartUpList: self.
