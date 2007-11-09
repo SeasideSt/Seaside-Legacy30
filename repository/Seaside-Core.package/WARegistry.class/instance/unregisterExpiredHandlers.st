@@ -1,9 +1,11 @@
 private
 unregisterExpiredHandlers
+	"Private - Unregisters the receiver expired handlers."
+
 	| expired newHandlersByKey newKeysByHandler |
 	expired := OrderedCollection new.
-	newHandlersByKey := Dictionary new.
-	newKeysByHandler := Dictionary new.
+	newHandlersByKey := SeasidePlatformSupport reducedConflictDictionary new.
+	newKeysByHandler := SeasidePlatformSupport reducedConflictDictionary new.
 	self mutex critical: [
 		handlersByKey keysAndValuesDo: [ :key :value |
 			value isActive

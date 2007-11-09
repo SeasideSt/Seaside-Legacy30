@@ -1,6 +1,6 @@
 private
 createMimeDatabaseString
-	"Teads /etc/mime.types for mime types and creates the #defaultMimeTypes method.
+	"Reads /etc/mime.types for mime types and creates the #defaultMimeTypes method.
 	You should not execute this method. If you still do it remember to send #initialize."
 	^String streamContents: [ :stream |
 		| database |

@@ -1,3 +1,3 @@
 initialization
 initialize
-	self registerAsAuthenticatedApplication: 'config'
+	self registerAsApplication: 'config'
