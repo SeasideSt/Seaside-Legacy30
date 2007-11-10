@@ -1,3 +1,5 @@
 accessing-headers
 headers
-	^ headers ifNil: [ #() ]
+	headers isNil ifTrue: [
+		headers := OrderedCollection new ].
+	^headers

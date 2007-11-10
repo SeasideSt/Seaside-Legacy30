@@ -1,4 +1,3 @@
 accessing-headers
-headerAt: key put: value
-	headers ifNil: [ headers := OrderedCollection new ].
-	headers add: (Association key: key value: value)
+headerAt: aKeyString put: aValueObject
+	self headers add: aKeyString -> aValueObject
