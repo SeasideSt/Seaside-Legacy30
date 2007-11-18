@@ -1,3 +1,3 @@
 defaults
 errorHandlerClasses
-	^ WAErrorHandler allSubclasses
+	^ WAErrorHandler withAllSubclasses asSortedCollection: [ :a :b | a name <= b name ]

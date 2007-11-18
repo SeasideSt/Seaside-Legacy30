@@ -1,3 +1,3 @@
-accessing
+configuration
 libraries
-	^ libraries ifNil: [libraries := OrderedCollection withAll: self defaultLibraries]
+	^ self preferenceAt: #libraries

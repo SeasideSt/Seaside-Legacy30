@@ -1,3 +1,3 @@
-accessing
-defaultLibraries
+defaults
+libraries
 	^ Array with: WAStandardFiles
