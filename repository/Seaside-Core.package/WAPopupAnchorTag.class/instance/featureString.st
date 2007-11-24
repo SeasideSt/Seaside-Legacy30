@@ -9,5 +9,5 @@ featureString
 					ifFalse: [
 						assoc value == false
 							ifTrue: [ 'no' ]
-							ifFalse: [ assoc value displayString ] ]) ]
+							ifFalse: [ assoc value toString ] ]) ]
 			separatedBy: [ stream nextPut: $, ] ]

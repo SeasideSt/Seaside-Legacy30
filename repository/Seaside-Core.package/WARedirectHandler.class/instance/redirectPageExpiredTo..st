@@ -2,5 +2,5 @@ actions
 redirectPageExpiredTo: aUrl
 	^ WAResponse
 		refreshWithMessage: 'That page has expired.'
-		location: aUrl displayString
+		location: aUrl toString
 		delay: 3

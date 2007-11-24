@@ -3,5 +3,5 @@ redirectWithMessage: aString delay: aNumber
 	self respond: [ :url |
 		WAResponse
 			refreshWithMessage: aString
-			location: url displayString
+			location: url toString
 			delay: aNumber ]

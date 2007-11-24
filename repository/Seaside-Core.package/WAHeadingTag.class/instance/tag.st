@@ -1,3 +1,3 @@
 private
 tag
-	^ 'h' , self level displayString
+	^ 'h' , self level toString

@@ -1,3 +1,3 @@
 defaults
 sessionClasses
-	^ WASession withAllSubclasses asSortedCollection: [ :a :b | a name <= b name ]
+	^ WAExpiringHandler withAllSubclasses

@@ -1,3 +1,3 @@
 actions
 execute
-	self open: self target session application configurationComponent
+	self open: (WAApplicationEditor new application: self target session application)

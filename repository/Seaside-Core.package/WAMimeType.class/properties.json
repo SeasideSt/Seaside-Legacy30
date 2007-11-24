@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Seaside-Core-HTTP",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"main",
+		"sub",
+		"parameters"
+	],
+	"name" : "WAMimeType",
+	"type" : "normal"
+}

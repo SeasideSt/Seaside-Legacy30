@@ -9,7 +9,7 @@ attribute: aKey with: aValue
 	html span class: 'attribute-value'; with: [
 		html text: '"'.
 		(self knownRefs includes: aKey)
-			ifTrue: [ html anchor url: aValue displayString; with: aValue ]
+			ifTrue: [ html anchor url: aValue toString; with: aValue ]
 			ifFalse: [
 				(self knownEvents includes: aKey)
 					ifTrue: [ html anchor onClick: aValue; with: aValue ]

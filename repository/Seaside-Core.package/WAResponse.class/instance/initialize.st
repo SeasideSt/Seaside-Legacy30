@@ -5,5 +5,5 @@ initialize
 	status := 200.
 	session := WACurrentSession value.
 	contentType := session isNil
-				ifFalse: [session contentType]
-				ifTrue: [self class defaultValueForContentType]
+		ifFalse: [ session contentType ]
+		ifTrue: [ self class defaultValueForContentType ]

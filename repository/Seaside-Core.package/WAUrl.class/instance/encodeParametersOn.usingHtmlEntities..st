@@ -13,4 +13,4 @@ encodeParametersOn: aDocument usingHtmlEntities: aBoolean
 		aDocument urlEncoder nextPutAll: key.
 		value ifNotNil: [
 			aDocument nextPut: $=.
-			aDocument urlEncoder nextPutAll: value asString ] ]
+			aDocument urlEncoder nextPutAll: value toString ] ]

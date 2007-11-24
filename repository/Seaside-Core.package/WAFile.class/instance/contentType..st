@@ -1,3 +1,3 @@
 accessing
-contentType: aString
-	contentType := aString
+contentType: aMimeTypeOrString
+	contentType := aMimeTypeOrString toMimeType

@@ -2,4 +2,4 @@ initialization
 initialize
 	super initialize.
 	items := #().
-	labelBlock := [ :each | each displayString]
+	labelBlock := [ :each | each toString ]

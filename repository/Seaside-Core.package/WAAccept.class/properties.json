@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "WAListAttribute",
-	"category" : "Seaside-Core-Configuration",
+	"super" : "WAQualifiedValue",
+	"category" : "Seaside-Core-HTTP",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WACollectionAttribute",
+	"name" : "WAAccept",
 	"type" : "normal"
 }

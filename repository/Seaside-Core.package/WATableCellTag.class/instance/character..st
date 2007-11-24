@@ -1,3 +1,3 @@
 attributes
 character: aStringOrCharacter
-	self attributes at: 'char' put: aStringOrCharacter displayString
+	self attributes at: 'char' put: aStringOrCharacter toString

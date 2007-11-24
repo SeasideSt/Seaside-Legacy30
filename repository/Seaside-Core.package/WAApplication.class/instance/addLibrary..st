@@ -1,3 +1,5 @@
 libraries
-addLibrary: aLibraryClass
-	self preferenceAt: #libraries put: (self libraries copyWith: aLibraryClass)
+addLibrary: aClass
+	self libraries add: aClass.
+	self announceChangeOf: #library with: #add->aClass.
+	^aClass

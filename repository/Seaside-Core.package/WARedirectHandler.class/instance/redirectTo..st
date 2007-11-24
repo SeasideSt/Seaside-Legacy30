@@ -1,3 +1,3 @@
 actions
 redirectTo: aUrl
-	^ WAResponse redirectTo: aUrl displayString
+	^ WAResponse redirectTo: aUrl toString

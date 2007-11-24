@@ -1,3 +1,5 @@
 libraries
-removeLibrary: aLibraryClass
-	self preferenceAt: #libraries put: (self libraries copyWithout: aLibraryClass)
+removeLibrary: aClass
+	self libraries remove: aClass.
+	self announceChangeOf: #library with: #remove->aClass.
+	^aClass

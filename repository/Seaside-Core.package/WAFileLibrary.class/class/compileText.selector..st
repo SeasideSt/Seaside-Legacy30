@@ -7,7 +7,7 @@ compileText: aByteArrayOrString selector: aSymbol
 	code := String streamContents: [ :stream |
 		stream nextPutAll: aSymbol; cr.
 		stream tab; nextPutAll: '^ '''.
-		aByteArrayOrString displayString do: [ :each |
+		aByteArrayOrString toString do: [ :each |
 			each = $' ifTrue: [ stream nextPut: $' ].
 			stream nextPut: each ].
 		stream nextPutAll: '''' ].

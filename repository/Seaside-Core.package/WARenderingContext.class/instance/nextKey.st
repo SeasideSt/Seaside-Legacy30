@@ -1,3 +1,3 @@
 callbacks
 nextKey
-	^ count contents displayString
+	^ count contents toString

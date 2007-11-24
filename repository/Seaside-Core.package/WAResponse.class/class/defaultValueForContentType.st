@@ -1,3 +1,5 @@
 defaults
 defaultValueForContentType
-	^ self defaultValueForMimeType, ';charset=', self defaultValueForCharSet
+	^(WAMimeType fromString: self defaultValueForMimeType)
+		charset: self defaultValueForCharSet;
+		yourself

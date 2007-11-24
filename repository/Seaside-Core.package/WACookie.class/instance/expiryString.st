@@ -1,19 +1,18 @@
 private
 expiryString
-	^ String streamContents:
-		[:s |
-		s
+	^ String streamContents: [ :stream |
+		stream
 			nextPutAll: (expiry dayOfWeekName first: 3);
 			nextPutAll: ', ';
-			nextPutAll: expiry dayOfMonth displayString;
+			nextPutAll: expiry dayOfMonth toString;
 			nextPut: $-;
 			nextPutAll: expiry monthName;
 			nextPut: $-;
-			nextPutAll: expiry year displayString;
+			nextPutAll: expiry year toString;
 			space;
-			nextPutAll: expiry hour24 displayString;
+			nextPutAll: expiry hour24 toString;
 			nextPut: $:;
-			nextPutAll: expiry minute displayString;
+			nextPutAll: expiry minute toString;
 			nextPut: $:;
-			nextPutAll: expiry second displayString;
+			nextPutAll: expiry second toString;
 			nextPutAll: ' GMT']

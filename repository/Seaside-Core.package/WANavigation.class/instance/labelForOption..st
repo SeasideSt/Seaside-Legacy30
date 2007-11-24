@@ -1,3 +1,3 @@
 query
 labelForOption: anObject
-	^ anObject displayString
+	^ anObject toString

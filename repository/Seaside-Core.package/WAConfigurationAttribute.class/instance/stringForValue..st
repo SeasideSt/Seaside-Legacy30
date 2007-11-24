@@ -1,3 +1,3 @@
 converting
 stringForValue: anObject
-	^ anObject displayString
+	^ anObject toString

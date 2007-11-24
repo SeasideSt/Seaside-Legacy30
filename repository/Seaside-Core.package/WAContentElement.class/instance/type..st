@@ -1,3 +1,3 @@
 attributes
-type: aString
-	self attributeAt: 'type' put: aString
+type: aMimeTypeOrString
+	self attributeAt: 'type' put: aMimeTypeOrString

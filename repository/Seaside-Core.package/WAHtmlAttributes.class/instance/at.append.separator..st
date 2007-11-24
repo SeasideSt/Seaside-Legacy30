@@ -5,6 +5,6 @@ at: aKey append: aValue separator: aString
 	aValue ifNil: [ ^ self at: aKey ].
 	^ self at: aKey put: (String streamContents: [ :stream |
 		self at: aKey ifPresent: [ :value |
-			stream nextPutAll: value displayString.
+			stream nextPutAll: value toString.
 			stream nextPutAll: aString ].
-		stream nextPutAll: aValue displayString ])
+		stream nextPutAll: aValue toString ])

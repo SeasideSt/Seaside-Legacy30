@@ -1,5 +1,6 @@
 initialization
 initializeWithDocument: anObject mimeType: mimeString fileName: fileString
 	document := anObject.
-	mimeType := mimeString.
+	mimeString isNil ifFalse: [
+		mimeType := mimeString toMimeType ].
 	fileName := fileString

@@ -4,4 +4,4 @@ urlForDocument: anObject mimeType: mimeType fileName: fileName
 		(WADocumentHandler
 			document: anObject
 			mimeType: mimeType
-			fileName: fileName)) displayString
+			fileName: fileName)) toString

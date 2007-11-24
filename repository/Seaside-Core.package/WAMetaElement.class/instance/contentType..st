@@ -1,4 +1,4 @@
 conveniance
-contentType: aString
+contentType: aMimeTypeOrString
 	self responseHeaderName: 'Content-Type'.
-	self content: aString
+	self content: aMimeTypeOrString

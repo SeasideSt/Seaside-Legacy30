@@ -1,3 +1,4 @@
 convenience
 beXML
-	contentType := contentType copyReplaceAll: '/html' with: '/xml'
+	contentType sub = 'html' ifTrue: [
+		contentType sub: 'xml' ]
