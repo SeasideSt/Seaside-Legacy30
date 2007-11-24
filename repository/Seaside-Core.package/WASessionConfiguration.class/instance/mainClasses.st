@@ -1,3 +1,3 @@
 defaults
 mainClasses
-	^ WAMain allSubclasses
+	^ WAMain allSubclasses asSortedCollection: [ :a :b | a name <= b name ]

@@ -15,4 +15,6 @@ attributes
 		add: ((WAListAttribute key: #redirectContinuationClass)
 			options: self redirectContinuationClasses);
 		add: (WABooleanAttribute key: #useSessionCookie);
+		add: ((WACollectionAttribute key: #libraries)
+			options: self libraryClasses);
 		yourself

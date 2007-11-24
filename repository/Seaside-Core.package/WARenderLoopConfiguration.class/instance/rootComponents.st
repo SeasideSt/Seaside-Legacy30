@@ -1,3 +1,4 @@
 defaults
 rootComponents
-	^ (WAComponent allSubclasses select: [:ea | ea canBeRoot]) asSortedCollection: [:a :b | a name <= b name]
+	^ (WAComponent allSubclasses select: [ :each | each canBeRoot ])
+		asSortedCollection: [ :a :b | a name <= b name ]
