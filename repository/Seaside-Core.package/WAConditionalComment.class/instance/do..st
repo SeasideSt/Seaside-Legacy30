@@ -1,5 +1,5 @@
 public
 do: aBlock
-	root add: (WAOpeningConditionalComment condition: condition).
+	root add: (self openingConditionClass condition: condition).
 	aBlock value.
-	root add: (WAClosingConditionalComment new)
+	root add: (self closingConditionClass new)

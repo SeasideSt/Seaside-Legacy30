@@ -1,3 +1,3 @@
 actions
 defaultAction
-	MessageSend receiver: self component selector: self component defaultButton
+	self component perform: self component defaultButton
