@@ -1,3 +1,6 @@
 instance-creation
 key: keySymbol group: groupSymbol
-	^ self basicNew initializeWithKey: keySymbol group: groupSymbol
+	^ self
+		key: keySymbol
+		group: groupSymbol
+		comment: ''

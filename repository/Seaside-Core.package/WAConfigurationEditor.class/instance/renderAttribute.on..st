@@ -1,7 +1,10 @@
 rendering-attributes
 renderAttribute: anAttribute on: html
 	html tableRow: [
-		html tableData: (self labelForSelector: anAttribute key).
+		html tableHeading: [
+			html label
+				title: anAttribute comment;
+				with: (self labelForSelector: anAttribute key) ].
 		html tableData: [
 			(configuration valueForAttribute: anAttribute)
 				ifNil: [ self renderUnspecifiedAttribute: anAttribute on: html ]

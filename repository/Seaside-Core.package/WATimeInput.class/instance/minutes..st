@@ -1,3 +1,3 @@
 private callbacks
 minutes: anIntegerOrString
-	minutes := [anIntegerOrString asNumber] on: Error do: [:e | 0]
+	minutes := [ anIntegerOrString asInteger ] on: Error do: [ :error | 0]

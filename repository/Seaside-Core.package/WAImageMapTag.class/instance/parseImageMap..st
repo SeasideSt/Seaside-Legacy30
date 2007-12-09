@@ -6,4 +6,4 @@ parseImageMap: aString
 	stream upTo: $?.
 	x := stream upTo: $,.
 	y := stream upToEnd.
-	^ x asNumber @ y asNumber
+	^ x asInteger @ y asInteger

@@ -7,4 +7,4 @@ takeServerParametersFromRequest: aRequest
 			ifAbsent: [ ^ self ].
 		hostname := httpHost copyUpTo: $:.
 		(httpHost includes: $:)
-			ifTrue: [ port := (httpHost copyAfter: $:) asNumber ] ]
+			ifTrue: [ port := (httpHost copyAfter: $:) asInteger ] ]
