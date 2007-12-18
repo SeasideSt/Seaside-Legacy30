@@ -1,6 +1,7 @@
 deprecated
 keyboardInput
-	"Keyboard, text to be entered by the user."
+	"Keyboard, text to be entered by the user.
+	This selector has been renamed"
 
 	self deprecatedApi.
-	^ self tag: 'kbd'
+	^ self keyboard

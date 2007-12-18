@@ -1,6 +1,0 @@
-accessing
-selectorsToInclude
-	^#(
-		kalseyTabsCss
-		sourceStyleCss
-	)

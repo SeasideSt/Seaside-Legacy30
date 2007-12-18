@@ -1,3 +1,3 @@
 rendering
 renderHeadingSpacerOn: html
-	html tableData: []
+	html tableData: ''
