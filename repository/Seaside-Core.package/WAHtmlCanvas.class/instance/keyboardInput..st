@@ -1,4 +1,4 @@
 deprecated
 keyboardInput: aBlock
 	self deprecatedApi.
-	self keyboardInput with: aBlock
+	self keyboard: aBlock
