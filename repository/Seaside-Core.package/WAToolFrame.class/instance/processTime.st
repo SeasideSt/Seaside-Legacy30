@@ -1,3 +1,0 @@
-plugin-timeing
-processTime
-	^ processTime

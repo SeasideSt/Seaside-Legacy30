@@ -1,3 +1,0 @@
-plugin-deprecation
-deprecated
-	^ deprecated

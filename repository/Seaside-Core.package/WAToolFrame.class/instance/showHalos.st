@@ -1,3 +1,0 @@
-accessing
-showHalos
-	^ showHalos contents

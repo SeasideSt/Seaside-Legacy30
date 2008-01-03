@@ -1,3 +1,0 @@
-accessing
-label
-	^ 'Toggle Halos'
