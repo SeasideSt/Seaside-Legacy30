@@ -4,13 +4,11 @@ SystemOrganization addCategory: #'Seaside-Core-Component'!
 SystemOrganization addCategory: #'Seaside-Core-Components-Decorations'!
 SystemOrganization addCategory: #'Seaside-Core-Components-Dialogs'!
 SystemOrganization addCategory: #'Seaside-Core-Components-Frames'!
-SystemOrganization addCategory: #'Seaside-Core-Components-Tools'!
 SystemOrganization addCategory: #'Seaside-Core-Components-Widgets'!
 SystemOrganization addCategory: #'Seaside-Core-Configuration'!
 SystemOrganization addCategory: #'Seaside-Core-Continuations'!
 SystemOrganization addCategory: #'Seaside-Core-Document'!
 SystemOrganization addCategory: #'Seaside-Core-Document-Elements'!
-SystemOrganization addCategory: #'Seaside-Core-Plugins'!
 SystemOrganization addCategory: #'Seaside-Core-HTTP'!
 SystemOrganization addCategory: #'Seaside-Core-Libraries'!
 SystemOrganization addCategory: #'Seaside-Core-Platform'!

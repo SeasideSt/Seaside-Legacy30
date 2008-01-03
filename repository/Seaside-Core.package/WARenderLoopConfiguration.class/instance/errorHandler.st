@@ -1,3 +1,3 @@
 defaults
 errorHandler
-	^ WAWalkbackErrorHandler
+	^ WASimpleErrorHandler
