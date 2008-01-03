@@ -17,4 +17,6 @@ attributes
 		add: (WABooleanAttribute key: #useSessionCookie);
 		add: ((WACollectionAttribute key: #libraries)
 			options: self libraryClasses);
+		add: ((WACollectionAttribute key: #decorationClasses)
+			options: self allDecorationClasses);
 		yourself
