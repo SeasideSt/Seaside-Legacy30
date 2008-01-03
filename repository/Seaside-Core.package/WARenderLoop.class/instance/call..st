@@ -1,3 +1,6 @@
 processing
 call: aComponent
-	^ self call: aComponent withToolFrame: true
+	^ AnswerContinuation currentDo: [ :cc |
+		aComponent onAnswer: cc.
+		self root: aComponent.
+		self run ]

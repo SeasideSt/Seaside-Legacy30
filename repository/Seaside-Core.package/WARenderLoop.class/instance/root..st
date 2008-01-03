@@ -1,3 +1,5 @@
 accessing
 root: aComponent
-	self root: aComponent withToolFrame: true
+	root := aComponent.
+	self application decorationClasses
+		do: [ :each | root addDecoration: each new ]
