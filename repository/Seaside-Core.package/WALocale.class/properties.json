@@ -2,7 +2,11 @@
 	"commentStamp" : "",
 	"super" : "Object",
 	"category" : "Seaside-Core-HTTP",
-	"classinstvars" : [ ],
+	"classinstvars" : [
+		"iso2Languages",
+		"iso3Languages",
+		"iso2Countries"
+	],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
