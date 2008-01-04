@@ -1,3 +1,0 @@
-factory
-mimeDocumentClass
-	^Implementation mimeDocumentClass

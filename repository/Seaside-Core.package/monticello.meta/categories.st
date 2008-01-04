@@ -11,7 +11,6 @@ SystemOrganization addCategory: #'Seaside-Core-Document'!
 SystemOrganization addCategory: #'Seaside-Core-Document-Elements'!
 SystemOrganization addCategory: #'Seaside-Core-HTTP'!
 SystemOrganization addCategory: #'Seaside-Core-Libraries'!
-SystemOrganization addCategory: #'Seaside-Core-Platform'!
 SystemOrganization addCategory: #'Seaside-Core-Callbacks'!
 SystemOrganization addCategory: #'Seaside-Core-RenderLoop'!
 SystemOrganization addCategory: #'Seaside-Core-RequestHandler'!

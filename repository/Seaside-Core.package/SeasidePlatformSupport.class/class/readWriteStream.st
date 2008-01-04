@@ -1,3 +1,0 @@
-factory
-readWriteStream
-	^Implementation readWriteStream

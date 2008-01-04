@@ -1,3 +1,0 @@
-accessing
-versionString
-	^Implementation versionString
