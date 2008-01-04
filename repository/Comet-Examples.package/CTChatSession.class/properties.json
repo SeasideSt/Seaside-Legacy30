@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "CTSession",
+	"category" : "Comet-Examples",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"username"
+	],
+	"name" : "CTChatSession",
+	"type" : "normal"
+}
