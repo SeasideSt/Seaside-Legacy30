@@ -1,3 +1,3 @@
 accessing
 mimetypeFor: aString
-	^ self mimetypes at: aString ifAbsent: [ self defaultMimeType ]
+	^ (self mimetypes at: aString ifAbsent: [ self defaultMimeType ]) toMimeType
