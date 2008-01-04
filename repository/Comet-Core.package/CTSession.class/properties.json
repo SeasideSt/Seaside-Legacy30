@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "WASession",
+	"category" : "Comet-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"handlers"
+	],
+	"name" : "CTSession",
+	"type" : "normal"
+}

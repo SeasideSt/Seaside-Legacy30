@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Comet-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"id",
+		"pusher",
+		"socket",
+		"session",
+		"context"
+	],
+	"name" : "CTHandler",
+	"type" : "normal"
+}

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WAFileLibrary",
+	"category" : "Comet-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CTLibrary",
+	"type" : "normal"
+}

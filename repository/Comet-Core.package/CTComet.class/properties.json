@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "SUPrototype",
+	"category" : "Comet-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"pusher",
+		"url"
+	],
+	"name" : "CTComet",
+	"type" : "normal"
+}
