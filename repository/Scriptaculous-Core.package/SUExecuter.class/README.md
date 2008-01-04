@@ -1,0 +1,1 @@
+This is a simple facility for periodical execution of a function. This essentially encapsulates the native clearInterval/setInterval mechanism found in native Window objects.

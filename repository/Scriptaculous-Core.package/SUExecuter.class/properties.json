@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "lr 2/27/2007 21:20",
+	"super" : "SUDecoration",
+	"category" : "Scriptaculous-Core-Decoration",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"frequency",
+		"callback"
+	],
+	"name" : "SUExecuter",
+	"type" : "normal"
+}

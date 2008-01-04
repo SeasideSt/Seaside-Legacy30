@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "SUStatement",
+	"category" : "Scriptaculous-Core-Decoration",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"operator"
+	],
+	"name" : "SUBinary",
+	"type" : "normal"
+}

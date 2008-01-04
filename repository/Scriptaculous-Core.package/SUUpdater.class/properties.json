@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "lr 2/27/2007 20:38",
+	"super" : "SUAjax",
+	"category" : "Scriptaculous-Core-Ajax",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"id"
+	],
+	"name" : "SUUpdater",
+	"type" : "normal"
+}

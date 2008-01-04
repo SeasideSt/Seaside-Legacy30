@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SUStatement",
+	"category" : "Scriptaculous-Core-Decoration",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SUBefore",
+	"type" : "normal"
+}

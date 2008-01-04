@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "SUDecoration",
+	"category" : "Scriptaculous-Core-Decoration",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"trueStatement",
+		"falseStatement"
+	],
+	"name" : "SUIfThenElse",
+	"type" : "normal"
+}

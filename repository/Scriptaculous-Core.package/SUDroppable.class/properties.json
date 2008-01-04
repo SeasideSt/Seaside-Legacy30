@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SUNamed",
+	"category" : "Scriptaculous-Core-Dragging",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SUDroppable",
+	"type" : "normal"
+}

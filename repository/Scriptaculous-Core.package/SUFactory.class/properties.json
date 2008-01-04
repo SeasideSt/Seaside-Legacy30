@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "lr 1/4/2007 21:07",
+	"super" : "Object",
+	"category" : "Scriptaculous-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"context",
+		"block"
+	],
+	"name" : "SUFactory",
+	"type" : "normal"
+}

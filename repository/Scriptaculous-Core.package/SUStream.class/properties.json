@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Scriptaculous-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"JavascriptCharacters"
+	],
+	"instvars" : [
+		"stream"
+	],
+	"name" : "SUStream",
+	"type" : "normal"
+}

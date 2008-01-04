@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "lr 4/25/2007 10:20",
+	"super" : "SUEnumerable",
+	"category" : "Scriptaculous-Core-Elements",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"selectors"
+	],
+	"name" : "SUSelector",
+	"type" : "normal"
+}

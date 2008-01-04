@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "SUScript",
+	"category" : "Scriptaculous-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"return",
+		"arguments"
+	],
+	"name" : "SUFunction",
+	"type" : "normal"
+}

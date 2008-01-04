@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SUMember",
+	"category" : "Scriptaculous-Core-Decoration",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SUAlias",
+	"type" : "normal"
+}

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SUNamed",
+	"category" : "Scriptaculous-Core-Elements",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SUSound",
+	"type" : "normal"
+}

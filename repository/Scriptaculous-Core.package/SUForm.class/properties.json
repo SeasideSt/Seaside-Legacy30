@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "lr 2/27/2007 21:14",
+	"super" : "SUElement",
+	"category" : "Scriptaculous-Core-Elements",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SUForm",
+	"type" : "normal"
+}

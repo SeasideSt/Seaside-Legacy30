@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WAHtmlStreamDocument",
+	"category" : "Scriptaculous-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SUDocument",
+	"type" : "normal"
+}

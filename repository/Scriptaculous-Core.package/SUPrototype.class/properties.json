@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "SUObject",
+	"category" : "Scriptaculous-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"options"
+	],
+	"name" : "SUPrototype",
+	"type" : "normal"
+}

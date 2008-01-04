@@ -1,0 +1,3 @@
+private
+defaultOptions
+	^ Dictionary new

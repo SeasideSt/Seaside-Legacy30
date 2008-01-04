@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SUUpdater",
+	"category" : "Scriptaculous-Core-Controls",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SUInPlaceEditor",
+	"type" : "normal"
+}

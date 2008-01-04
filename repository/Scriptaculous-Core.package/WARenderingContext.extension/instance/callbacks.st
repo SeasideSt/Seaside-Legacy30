@@ -1,0 +1,3 @@
+*scriptaculous-core
+callbacks
+	^ callbacks

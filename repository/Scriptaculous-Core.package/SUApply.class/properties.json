@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "SUDecoration",
+	"category" : "Scriptaculous-Core-Decoration",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"arguments"
+	],
+	"name" : "SUApply",
+	"type" : "normal"
+}

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "lr 2/27/2007 20:41",
+	"super" : "SUNamed",
+	"category" : "Scriptaculous-Core-Ajax",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SUResponders",
+	"type" : "normal"
+}
