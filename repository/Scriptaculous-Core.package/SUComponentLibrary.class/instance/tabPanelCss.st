@@ -5,7 +5,7 @@ tabPanelCss
 	^ '.tabPanel ul.head {
 	margin: 0;
 	padding-left: 1em;
-	padding-bottom: 2em;
+	padding-bottom: 19px;
 	border-bottom: 1px solid #ccc;
 }
 .tabPanel ul.head li	{
@@ -19,12 +19,12 @@ tabPanelCss
 	float: left;
 	color: #444;
 	outline: none;
-	line-height: 1.5em;
+	line-height: 14px;
 	margin-right: 1em;
 	background: #eee;
 	text-decoration: none;
 	border: 1px solid #ccc;
-	padding: 0.2em 1em 0.2em 1em;
+	padding: 2px 1em 2px 1em;
 }
 .tabPanel ul.head a:link.active, 
 .tabPanel ul.head a:visited.active {
