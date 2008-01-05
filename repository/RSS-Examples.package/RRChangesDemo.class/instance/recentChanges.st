@@ -1,0 +1,3 @@
+model
+recentChanges
+	^SeasidePlatformSupport recentChanges

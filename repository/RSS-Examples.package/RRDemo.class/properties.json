@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "RRComponent",
+	"category" : "RSS-Examples",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "RRDemo",
+	"type" : "normal"
+}

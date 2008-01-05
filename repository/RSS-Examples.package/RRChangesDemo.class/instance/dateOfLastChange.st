@@ -1,0 +1,3 @@
+model
+dateOfLastChange
+	^DateAndTime now

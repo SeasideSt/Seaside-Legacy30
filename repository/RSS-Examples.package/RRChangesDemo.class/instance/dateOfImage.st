@@ -1,0 +1,3 @@
+model
+dateOfImage
+	^DateAndTime now
