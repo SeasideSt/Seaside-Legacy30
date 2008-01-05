@@ -1,7 +1,7 @@
 rendering
 renderChange: aChange on: rss
 	| url |
-	url := self baseUrl addToPath: 'tools/classbrowser'; yourself.
+	url := self baseUrl addToPath: WABrowser applicationName; yourself.
 	aChange addParametersTo: url.
 	rss item: [
 		rss title: aChange title.
