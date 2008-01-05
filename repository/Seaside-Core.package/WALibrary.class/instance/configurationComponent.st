@@ -1,3 +1,0 @@
-accessing
-configurationComponent
-	self subclassResponsibility
