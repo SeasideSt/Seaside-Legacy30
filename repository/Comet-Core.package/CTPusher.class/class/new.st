@@ -1,3 +1,3 @@
-instance creation
+instance-creation
 new
 	^ self basicNew initialize
