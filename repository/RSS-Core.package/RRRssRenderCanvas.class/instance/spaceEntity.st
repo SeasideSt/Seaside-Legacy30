@@ -1,0 +1,3 @@
+xml
+spaceEntity
+	^'&#160;'

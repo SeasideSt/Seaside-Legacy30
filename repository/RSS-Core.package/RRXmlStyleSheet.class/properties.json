@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WAContentElement",
+	"category" : "RSS-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "RRXmlStyleSheet",
+	"type" : "normal"
+}

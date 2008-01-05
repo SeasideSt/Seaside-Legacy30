@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "pmm 4/11/2007 21:29",
+	"super" : "WACanvas",
+	"category" : "RSS-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"context",
+		"callbacks"
+	],
+	"name" : "RRRssRenderCanvas",
+	"type" : "normal"
+}

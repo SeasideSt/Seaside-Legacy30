@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "WAEntryPoint",
+	"category" : "RSS-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"rootComponentClass",
+		"openDebugger"
+	],
+	"name" : "RRRssHandler",
+	"type" : "normal"
+}

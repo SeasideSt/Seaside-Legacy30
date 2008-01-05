@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "WARoot",
+	"category" : "RSS-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"rssAttrs",
+		"channelAttrs",
+		"styles",
+		"charSet"
+	],
+	"name" : "RRRssRoot",
+	"type" : "normal"
+}

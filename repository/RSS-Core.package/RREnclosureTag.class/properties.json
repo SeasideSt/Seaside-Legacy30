@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WATagBrush",
+	"category" : "RSS-Core-Tags",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "RREnclosureTag",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+adding
+addDecoration: newDecoration
+	self shouldNotImplement

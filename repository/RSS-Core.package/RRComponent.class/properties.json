@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "pmm 7/1/2007 22:01",
+	"super" : "WAComponent",
+	"category" : "RSS-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "RRComponent",
+	"type" : "normal"
+}

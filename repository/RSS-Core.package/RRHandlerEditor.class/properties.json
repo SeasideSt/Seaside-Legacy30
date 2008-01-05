@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "WAConfigurationEditor",
+	"category" : "RSS-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"handler"
+	],
+	"name" : "RRHandlerEditor",
+	"type" : "normal"
+}

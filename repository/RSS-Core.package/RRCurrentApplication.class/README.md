@@ -1,0 +1,1 @@
+This dynamic variable points to the current RRRssHandler. This can be used to find out the base path.
