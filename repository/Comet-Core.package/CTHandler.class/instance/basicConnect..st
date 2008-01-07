@@ -5,7 +5,7 @@ basicConnect: aRequest
 	socket pushData: (String streamContents: [ :stream |
 		root := WAHtmlRoot context: context.
 		WAResponse new
-			contentType: ((WAMimeType main: 'text' sub: 'html') charset: 'utf-8'; yourself);
+			contentType: ((WAMimeType main: 'text' sub: 'html') charset: self session charSet; yourself);
 			cacheForever;
 			contents: (String streamContents: [ :contents |
 				WACurrentSession
