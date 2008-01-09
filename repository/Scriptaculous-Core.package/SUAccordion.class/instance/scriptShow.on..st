@@ -8,7 +8,7 @@ scriptShow: aComponent on: aScript
 			self 
 				renderBody: aComponent index: index
 				visible: false on: html ].
-	aScript effect
+	aScript effect duration: 0.2; 
 		id: (self uid: 'body' at: index);
 		blindDown.
 	aScript element

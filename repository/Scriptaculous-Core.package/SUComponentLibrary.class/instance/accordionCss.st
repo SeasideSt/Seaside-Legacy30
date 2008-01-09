@@ -1,7 +1,7 @@
 styles
 accordionCss
 	^ '.accordion dt,
-.accordion dd {
+.accordion dd {overflow:auto;
 	margin: 0;
 	padding: 0;
 }
