@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "WAComponent",
+	"category" : "Scriptaculous-Components-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"uids",
+		"roots",
+		"columns",
+		"expanded",
+		"childrenBlock",
+		"expandableBlock"
+	],
+	"name" : "SUTreeReport",
+	"type" : "normal"
+}

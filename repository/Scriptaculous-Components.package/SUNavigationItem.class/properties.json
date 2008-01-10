@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Scriptaculous-Components-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"owner",
+		"body",
+		"label"
+	],
+	"name" : "SUNavigationItem",
+	"type" : "normal"
+}

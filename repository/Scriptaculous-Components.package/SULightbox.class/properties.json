@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WADelegation",
+	"category" : "Scriptaculous-Components-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SULightbox",
+	"type" : "normal"
+}
