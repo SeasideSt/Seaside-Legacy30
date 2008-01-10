@@ -4,6 +4,7 @@ renderHead: anElement index: anInteger on: html
 		id: (self uid: 'head' at: anInteger); 
 		class: 'active' if: (self isVisible: anElement);
 		with: [
+			anElement renderCloseOn: html.
 			html anchor
 				onClick: (html evaluator
 					callback: [ :script | self scriptToggle: anElement on: script ];
