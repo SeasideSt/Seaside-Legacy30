@@ -4,23 +4,25 @@ treeReportCss
 	border: solid 1px #ccc;
 	background-color: white;
 }
+.treeReport table {margin:0;padding:0;border:0}
+
 .treeReport th {
-	padding: 5px;
+	padding: 4px;
 	text-align: left;
 	background-color: #ccc;
 }
 .treeReport td {
 	vertical-align: top;
-	padding-right: 1em;
+	padding:0;
+	margin:0;
 	white-space: nowrap;
 }
+.treeReport .pr {padding-right: 1em;}
 .treeReport .indent {
-	float: left;
 	height: 16px;
 	width: 16px;
 }
 .treeReport .indent a {
-	float: right;
 	width: 16px;
 	height: 16px;
 	display: block;
