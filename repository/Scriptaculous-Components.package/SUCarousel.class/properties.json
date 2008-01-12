@@ -5,7 +5,12 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"selected",
+		"elementHeight",
+		"visibleElements",
+		"offset"
+	],
 	"name" : "SUCarousel",
 	"type" : "normal"
 }
