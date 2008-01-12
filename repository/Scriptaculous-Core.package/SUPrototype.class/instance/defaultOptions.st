@@ -1,3 +1,3 @@
 private
 defaultOptions
-	^ Dictionary new
+	^ WASmallDictionary new
