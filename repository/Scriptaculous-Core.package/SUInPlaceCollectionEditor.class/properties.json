@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SUInPlaceEditor",
+	"category" : "Scriptaculous-Core-Controls",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SUInPlaceCollectionEditor",
+	"type" : "normal"
+}
