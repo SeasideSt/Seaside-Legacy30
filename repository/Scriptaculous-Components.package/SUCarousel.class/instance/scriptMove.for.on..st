@@ -8,5 +8,6 @@ scriptMove: anInteger for: id on: script
 			ifFalse: [(offset + elementsToMove abs) > items size ifTrue: [^self].
 					offset := offset + elementsToMove].
 	script effect id: id;
-		duration: 0.2; 
-		move: (Point x: 0 y: (self elementHeight * elementsToMove * anInteger))
+		duration: 0.2;
+		x: 0; y: (self elementHeight * elementsToMove * anInteger);
+		move 
