@@ -17,6 +17,7 @@ treeReportCss
 .treeReport td.indent {
 	margin: 0;
 	padding: 1px;
+	overflow: hidden;
 	white-space: nowrap;
 }
 .treeReport td.indent .space {
