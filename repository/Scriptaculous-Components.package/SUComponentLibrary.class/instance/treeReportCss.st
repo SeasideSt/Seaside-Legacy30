@@ -4,35 +4,31 @@ treeReportCss
 	border: solid 1px #ccc;
 	background-color: white;
 }
+.treeReport table {margin:0;padding:0;border:0}
+
 .treeReport th {
 	padding: 4px;
 	text-align: left;
 	background-color: #ccc;
 }
 .treeReport td {
-	text-align: left;
 	vertical-align: top;
-	padding-right: 5px;
-}
-.treeReport td.indent {
-	margin: 0;
-	padding: 1px;
-	overflow: hidden;
+	padding:0;
+	margin:0;
 	white-space: nowrap;
 }
-.treeReport td.indent .space {
-	float: left;
-	width: 16px;
+.treeReport .pr {padding-right: 1em;}
+.treeReport .indent {
 	height: 16px;
+	width: 16px;
 }
-.treeReport td.indent .space a {
+.treeReport .indent a {
 	width: 16px;
 	height: 16px;
-	outline: none;
 	display: block;
 	background-position: center center;
-	background-image: url(arrowright.gif);
+	background-image: url(arrowright.png);
 }
-.treeReport td.indent a.expanded {
-	background-image: url(arrowdown.gif);
+.treeReport .indent a.expanded {
+	background-image: url(arrowdown.png);
 }'

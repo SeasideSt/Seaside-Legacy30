@@ -4,9 +4,9 @@ renderRow: anObject level: anInteger on: html
 	
 	html tableRow id: (self uid: anObject on: html); with: [
 		columns withIndexDo: [ :each :index |
-			html tableData
-				class: 'indent' if: index = 1;
-				with: [
-					index = 1 
-						ifTrue: [ self renderRowIndent: anObject level: anInteger on: html ].
-					html render: (each value value: anObject) ] ] ]
+			html tableData: [
+				html table cellspacing: 0; cellpadding:0; with: [
+					html tableRow: [
+						index = 1 
+							ifTrue: [self renderRowIndent: anObject level: anInteger on: html ].
+							html tableData class: 'pr'; with: [html render: (each value value: anObject) ] ] ] ] ] ]
