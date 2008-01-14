@@ -4,9 +4,7 @@ renderRow: anObject level: anInteger on: html
 	
 	html tableRow id: (self uid: anObject on: html); with: [
 		columns withIndexDo: [ :each :index |
-			html tableData
-				class: 'indent' if: index = 1;
-				with: [
-					index = 1 
-						ifTrue: [ self renderRowIndent: anObject level: anInteger on: html ].
-					html render: (each value value: anObject) ] ] ]
+			html tableData: [
+				index = 1 
+					ifFalse: [ each render: anObject on: html ]
+					ifTrue: [ each render: anObject indent: anInteger on: html ] ] ] ]

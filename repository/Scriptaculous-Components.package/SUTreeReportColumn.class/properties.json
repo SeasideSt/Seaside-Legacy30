@@ -1,17 +1,15 @@
 {
 	"commentStamp" : "",
-	"super" : "WAComponent",
+	"super" : "Object",
 	"category" : "Scriptaculous-Components-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"title",
-		"body",
-		"open",
-		"uid",
-		"loaded"
+		"owner",
+		"renderer",
+		"label"
 	],
-	"name" : "SUTitlePane",
+	"name" : "SUTreeReportColumn",
 	"type" : "normal"
 }

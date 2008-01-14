@@ -4,4 +4,4 @@ renderHeadOn: html
 	
 	html tableRow: [
 		columns do: [ :each | 
-			html tableHeading: each key ] ]
+			html tableHeading: each label ] ]
