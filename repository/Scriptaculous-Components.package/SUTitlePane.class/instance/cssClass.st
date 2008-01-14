@@ -1,3 +1,3 @@
 accessing
 cssClass
-	^ 'contentPane'
+	^ 'titlePane'
