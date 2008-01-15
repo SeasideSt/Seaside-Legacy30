@@ -4,7 +4,7 @@ titlePaneCss
 	.titlePane {width:100%}
 	.titlePane .main {border:1px solid #ccc;}
 	.titlePane .body {background:white}
-	.titlePane .closed {height:0px}
+	.titlePane .closed {height:0px;display:none}
 	.titlePane a.title {cursor:pointer;
 					outline: none;
 					padding: 0.25em;
