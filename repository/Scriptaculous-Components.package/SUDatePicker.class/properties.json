@@ -7,7 +7,9 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"widgetId",
-		"uid"
+		"buttonId",
+		"uid",
+		"format"
 	],
 	"name" : "SUDatePicker",
 	"type" : "normal"

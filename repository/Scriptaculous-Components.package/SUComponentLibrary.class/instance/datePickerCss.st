@@ -1,11 +1,12 @@
 styles
 datePickerCss
-	^ '.calendar {font-family:Arial;font-size:10px;}
+	^ '.calendar {font-family:Arial;font-size:10px;width:100px}
 	.calendar .day {text-align:center;border:1px solid #ccc}
 	.calendar .main {border:1px solid black}
 	.calendar .daySelected {background:#e0e0e0;font-weight:bold}
 	.calendar a {text-decoration:none;color:black}
 	.calendar .day a {color:#336699}
+	.calendar .day a:hover {background:#aaa;color:white}
 	.calendar .monthRow {background:#e0e0e0}
 	.calendar .calendarTitle {background-color:#f0f0f0}
 	.calendar .monthCurrent {font-size:12px;font-family:verdana;width:99%}
