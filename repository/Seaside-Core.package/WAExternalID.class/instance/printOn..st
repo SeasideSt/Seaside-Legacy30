@@ -1,3 +1,3 @@
 private
-printOn: stream
-	self do: [:i | stream nextPut: (Character value: i)]
+printOn: aStream
+	self do: [ :each | aStream nextPut: (Character value: each) ]

@@ -1,3 +1,3 @@
-class initialization
+initialization
 startUp
 	Generator := SeasidePlatformSupport randomClass new

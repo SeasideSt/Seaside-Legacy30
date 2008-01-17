@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [
 		"Generator",
-		"GeneratorMutex"
+		"GeneratorMutex",
+		"GeneratorSpace"
 	],
 	"instvars" : [ ],
 	"name" : "WAExternalID",

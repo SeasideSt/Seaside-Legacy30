@@ -1,4 +1,4 @@
-instance creation
+instance-creation
 fromString: aString
 	| id |
 	id := self new: aString size.
