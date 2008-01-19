@@ -1,9 +1,8 @@
 styles
 titlePaneCss
 	^ '.titlePane .title {background:#e0e0e0;border-bottom-color:black;border-bottom-style:dotted;border-bottom-width:1px}
-	.titlePane {width:100%}
-	.titlePane .main {border:1px solid #ccc;}
-	.titlePane .body {background:white}
+	.titlePane {border:4px solid #ccc;width:450px;overflow:hidden}
+	.titlePane .body {background:white;height:100%;width:100%;overflow:hidden}
 	.titlePane .closed {height:0px;display:none}
 	.titlePane a.title {cursor:pointer;
 					outline: none;

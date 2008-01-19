@@ -3,4 +3,5 @@ initialize
 	super initialize.
 	open := false.
 	loaded := false.
-	alwaysRefresh := true
+	alwaysRefresh := true.
+	resizeable := true
