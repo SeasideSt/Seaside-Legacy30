@@ -2,7 +2,7 @@ WATrail implements breadcrumbs for pages generated using a sequence of WACompone
 
 Instantiate (WATrail on: rootComponent) an WATrail object on the first component (root) of the breadcrumb. When the root component, or subsequent component, transfers control via "self call:" the WATrail object is automatically updated and will display the correct call sequence in the breadcrumb. When a user clicks on a link in the breadcrumb the call sequence is automatically updated.
 
-Uses CSS and lists to display the ">>" in breadcrumbs. As a result the breadcrumb starts with ">>" rather than the first element
+The breadcrumb is placed in a div with class "trail" and each crumb is separated with the character '>', which is inside a span of class "separator" to aid in using CSS to format the breadcrumbs.
 
 Instance Variables:
 	root	<WAComponent>	first component in the breadcrumb and in the call sequence.
