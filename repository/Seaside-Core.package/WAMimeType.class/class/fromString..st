@@ -10,7 +10,7 @@ fromString: aString
 	endOfSub = aString size ifTrue: [
 		^self main: main sub: sub ].
 	parts := (aString copyFrom: endOfSub + 1 to: aString size) findTokens: ';'.
-	parameters := WASmallDictionary new.
+	parameters := RBSmallDictionary new.
 	parts do: [ :each | 
 		parameters
 			at: (each copyUpTo: $=) trimBlanks

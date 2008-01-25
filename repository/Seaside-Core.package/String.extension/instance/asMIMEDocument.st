@@ -1,3 +1,3 @@
 *Seaside-Core
 asMIMEDocument
-	^self asMIMEDocumentType: 'text/plain' toMimeType
+	^self asMIMEDocumentType: 'text/plain'

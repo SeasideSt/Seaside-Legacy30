@@ -1,3 +1,3 @@
 instance-creation
 new
-	^ self basicNew initialize
+	^ self new: 3
