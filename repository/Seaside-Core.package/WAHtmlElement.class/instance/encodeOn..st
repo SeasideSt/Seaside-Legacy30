@@ -1,6 +1,6 @@
 printing
 encodeOn: aDocument
-	aDocument openTag: self tag attributes: attributes closed: self isClosed.
+	self encodeBeforeOn: aDocument.
 	self isClosed ifTrue: [ ^ self ].
-	self childrenDo: [ :each | each encodeOn: aDocument ].
-	aDocument closeTag: self tag
+	self encodeChildrenOn: aDocument.
+	self encodeAfterOn: aDocument
