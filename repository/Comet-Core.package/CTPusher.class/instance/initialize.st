@@ -1,4 +1,4 @@
 initialization
 initialize
-	mutex := Semaphore forMutualExclusion.
+	mutex := SeasidePlatformSupport semaphoreClass forMutualExclusion.
 	handlers := Array new
