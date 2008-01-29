@@ -1,3 +1,5 @@
 accessing
 tag
-	^ 'link'
+	^ children isEmptyOrNil
+		ifTrue: [ 'link' ]
+		ifFalse: [ 'style' ]
