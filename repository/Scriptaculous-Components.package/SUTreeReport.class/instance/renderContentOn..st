@@ -1,6 +1,9 @@
 rendering
 renderContentOn: html
+	uid := html nextId.
 	uids := IdentityDictionary new.
-	html table class: self cssClass; cellspacing: 0; with: [
-		html tableHead: [ self renderHeadOn: html ].
-		html tableBody: [ self renderBodyOn: html ] ]
+	html table 
+		id: uid;
+		cellspacing: 0;
+		class: self cssClass;
+		with: [ self renderTableOn: html ]

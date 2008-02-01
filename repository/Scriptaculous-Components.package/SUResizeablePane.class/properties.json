@@ -1,19 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "WAComponent",
+	"super" : "SUTitlePane",
 	"category" : "Scriptaculous-Components-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"uid",
-		"uids",
-		"roots",
-		"columns",
-		"expanded",
-		"childrenBlock",
-		"expandableBlock"
+		"currentHeight"
 	],
-	"name" : "SUTreeReport",
+	"name" : "SUResizeablePane",
 	"type" : "normal"
 }

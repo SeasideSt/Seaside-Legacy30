@@ -1,19 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "WAComponent",
+	"super" : "Object",
 	"category" : "Scriptaculous-Components-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"uid",
-		"uids",
-		"roots",
-		"columns",
-		"expanded",
-		"childrenBlock",
-		"expandableBlock"
+		"owner",
+		"body"
 	],
-	"name" : "SUTreeReport",
+	"name" : "SURenderableItem",
 	"type" : "normal"
 }

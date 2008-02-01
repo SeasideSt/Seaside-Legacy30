@@ -6,14 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"uid",
-		"uids",
-		"roots",
-		"columns",
-		"expanded",
-		"childrenBlock",
-		"expandableBlock"
+		"items"
 	],
-	"name" : "SUTreeReport",
+	"name" : "SUSplitter",
 	"type" : "normal"
 }

@@ -1,3 +1,0 @@
-accessing-readonly
-body
-	^ body

@@ -6,14 +6,13 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
+		"title",
+		"elements",
+		"elementHeight",
+		"visibleElements",
 		"uid",
-		"uids",
-		"roots",
-		"columns",
-		"expanded",
-		"childrenBlock",
-		"expandableBlock"
+		"delay"
 	],
-	"name" : "SUTreeReport",
+	"name" : "SUScrollPane",
 	"type" : "normal"
 }
