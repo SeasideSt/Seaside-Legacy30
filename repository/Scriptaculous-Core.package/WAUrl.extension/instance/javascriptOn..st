@@ -1,3 +1,3 @@
 *scriptaculous-core
 javascriptOn: aStream
-	aStream print: self toString
+	aStream nextPut: $'; nextPutAll: self toString; nextPut: $'
