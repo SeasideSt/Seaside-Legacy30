@@ -4,5 +4,8 @@ draggable: aBeforeItem and: anAfterItem on: html
 		revert: true;
 		endEffect: nil;
 		startEffect: nil;
-		onStart: ((SUStream on: 'drag._originalLeft=drag.element.offsetLeft;drag._originalRight=drag.element.offsetRight;')
+		onStart: ((SUStream on: 'var splitter = drag.element;',
+								self initOffsetScript ,'
+								drag._previous = splitter.previous();
+								drag._next = splitter.next();')
 			asFunction: #(drag))

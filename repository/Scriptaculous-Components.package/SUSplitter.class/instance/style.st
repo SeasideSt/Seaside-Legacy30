@@ -2,6 +2,8 @@ rendering
 style
 	^ '.splitter-horizontal .handle {
 	height: 5px;
+	position: relative;
+	background-color: red;
 	cursor: row-resize;
 }
 
