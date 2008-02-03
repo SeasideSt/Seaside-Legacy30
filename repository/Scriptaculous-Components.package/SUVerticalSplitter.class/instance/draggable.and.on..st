@@ -8,10 +8,8 @@ draggable: aBeforeItem and: anAfterItem on: html
 				arguments[0]._originalLeft = splitter.offsetLeft;
 				leftElement = arguments[0]._previous;
 				leftWidth = leftElement.offsetWidth + offset;
-				
 				rightElement = arguments[0]._next;
 				rightWidth = rightElement.offsetWidth - offset;
-				console.log(offset,leftWidth)
 				if (leftWidth > 100 && rightWidth > 100) {
 					leftElement.style.width = leftWidth + "px";
 					rightElement.style.width = rightWidth + "px";
