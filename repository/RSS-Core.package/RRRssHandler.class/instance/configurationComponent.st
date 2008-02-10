@@ -1,5 +1,3 @@
 accessing
 configurationComponent
-	^RRHandlerEditor new
-		handler: self;
-		yourself
+	^ RRHandlerEditor on: self
