@@ -1,3 +1,3 @@
 accessing
 children
-	^Array with: body
+^(body isKindOf: WAComponent) ifTrue: [Array with: body] ifFalse: [#()]
