@@ -5,5 +5,4 @@ register: anEntryPoint
 	entryPoints
 		at: anEntryPoint name
 		put: (anEntryPoint setParent: self).
-	self announceChangeOf: #entryPoint with: #add -> anEntryPoint.
 	^ anEntryPoint

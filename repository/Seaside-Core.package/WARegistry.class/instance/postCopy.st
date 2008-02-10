@@ -1,5 +1,5 @@
 copying
 postCopy
 	super postCopy.
-	mutex := nil.
-	self clearHandlers
+	self clearHandlers.
+	mutex := nil

@@ -1,0 +1,3 @@
+defaults
+directory
+	^ SeasidePlatformSupport defaultDirectoryName

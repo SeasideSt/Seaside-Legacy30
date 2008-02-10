@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WAEntryPoint",
+	"category" : "Seaside-Core-RequestHandler",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAFileSystem",
+	"type" : "normal"
+}

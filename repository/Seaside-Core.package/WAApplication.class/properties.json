@@ -5,10 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"configuration",
-		"libraries"
-	],
+	"instvars" : [ ],
 	"name" : "WAApplication",
 	"type" : "normal"
 }

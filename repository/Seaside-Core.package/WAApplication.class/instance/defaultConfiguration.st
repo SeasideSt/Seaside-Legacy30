@@ -1,0 +1,3 @@
+configuration
+defaultConfiguration
+	^ super defaultConfiguration addAncestor: WARenderLoopConfiguration new
