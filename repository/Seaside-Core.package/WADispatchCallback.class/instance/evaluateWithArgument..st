@@ -1,4 +1,5 @@
 evaluation
 evaluateWithArgument: anObject
-	(context callbackAt: anObject)
-		ifNotNilDo: [ :callback | callback evaluateWithArgument: nil ]
+	| callback |
+	callback := context callbackAt: anObject.
+	callback isNil ifFalse: [ callback evaluateWithArgument: nil ]

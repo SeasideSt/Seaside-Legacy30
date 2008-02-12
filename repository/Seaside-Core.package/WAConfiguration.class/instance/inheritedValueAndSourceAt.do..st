@@ -1,7 +1,7 @@
 values
 inheritedValueAndSourceAt: aSymbol do: aBlock
-	self allAncestorsDo:
-		[:ea |
-		(ea localValueAt: aSymbol ifAbsent: [])
-			ifNotNilDo: [:val | ^ aBlock value: val value: ea]].
+	| value |
+	self allAncestorsDo: [ :each |
+		value := each localValueAt: aSymbol ifAbsent: [ nil ].
+		value isNil ifFalse: [ ^ aBlock value: value value: each ] ].
 	^ nil

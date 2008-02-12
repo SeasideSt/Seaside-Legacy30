@@ -1,7 +1,7 @@
 rendering
 renderContentOn: html
-	message contents ifNotNilDo: [ :msg |
+	message contents isNil ifFalse: [
 		html div
 			class: 'validation-error';
-			with: msg].
+			with: message contents ].
 	self renderOwnerOn: html

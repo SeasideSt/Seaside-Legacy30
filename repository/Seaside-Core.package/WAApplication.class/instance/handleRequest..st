@@ -1,7 +1,6 @@
 request handling
 handleRequest: aRequest
-	(aRequest cookieAt: self handlerCookieName) ifNotNilDo: [ :value |
-		aRequest fields
-			at: self handlerField
-			ifAbsentPut: [ value ] ].
+	| cookie |
+	cookie := aRequest cookieAt: self handlerCookieName.
+	cookie isNil ifFalse: [ aRequest fields at: self handlerField ifAbsentPut: [ cookie ] ].
 	^ super handleRequest: aRequest

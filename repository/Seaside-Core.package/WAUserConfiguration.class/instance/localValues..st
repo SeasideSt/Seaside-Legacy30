@@ -1,5 +1,6 @@
 accessing
 localValues: aDictionary
-	self allAttributes do:
-		[:attr | (aDictionary at: attr key ifAbsent: [nil])
-			ifNotNilDo: [:string | self valueAt: attr key put: (attr valueFromString: string)]]
+	| value |
+	self allAttributes do: [ :each | 
+		value := aDictionary at: each key ifAbsent: [ nil ].
+		value isNil ifFalse: [ self valueAt: each key put: (each valueFromString: value) ] ]

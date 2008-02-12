@@ -1,3 +1,7 @@
 accessing
 password
-	^ self authorization ifNotNilDo: [:auth | auth copyAfter: $:]
+	"Answer the password from basic authentication."
+	
+	| authorization |
+	^ (authorization := self authorization) isNil
+		ifFalse: [ authorization copyAfter: $: ]

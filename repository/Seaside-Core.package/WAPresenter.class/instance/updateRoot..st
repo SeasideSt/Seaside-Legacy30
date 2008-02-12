@@ -6,5 +6,5 @@ updateRoot: anHtmlRoot
 
 	Whenever you override this method don't forget to send super"
 
-	self script ifNotNilDo: [:script | anHtmlRoot addScript: script].
-	self style ifNotNilDo: [:style | anHtmlRoot addStyle: style]
+	self script isNil ifFalse: [ anHtmlRoot addScript: self script ].
+	self style isNil ifFalse: [ anHtmlRoot addStyle: self style ]

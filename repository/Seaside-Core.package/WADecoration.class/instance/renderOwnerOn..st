@@ -1,3 +1,4 @@
 rendering
 renderOwnerOn: html
-	self owner ifNotNilDo: [:owner | owner renderWithContext: html context]
+	self owner isNil
+		ifFalse: [ self owner renderWithContext: html context ]
