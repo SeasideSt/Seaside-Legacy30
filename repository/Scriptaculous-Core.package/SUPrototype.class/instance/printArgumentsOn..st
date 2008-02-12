@@ -1,3 +1,5 @@
 printing
 printArgumentsOn: aStream
-	self defaultArguments ifNotNilDo: [ :args | aStream arguments: args ]
+	| arguments |
+	(arguments := self defaultArguments) isNil
+		ifFalse: [ aStream arguments: arguments ]
