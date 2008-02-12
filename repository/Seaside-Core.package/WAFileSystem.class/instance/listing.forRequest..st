@@ -7,7 +7,9 @@ listing: aString forRequest: aRequest
 			html heading level: 1; with: aRequest url.
 			html unorderedList: [
 				(SeasidePlatformSupport filesIn: aString) do: [ :each | 
+					| localName |
+					localName := SeasidePlatformSupport localNameOf: each.
 					html listItem: [
 						html anchor
-							url: aRequest url , (each copyAfterLast: $/);
-							with: (each copyAfterLast: $/) ] ] ] ]
+							url: (self asAbsoluteUrl: localName relativeTo: aRequest);
+							with: localName ] ] ] ]
