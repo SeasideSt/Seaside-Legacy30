@@ -9,9 +9,7 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"entryPoints",
-		"defaultName",
-		"lastUpdate",
-		"version"
+		"defaultName"
 	],
 	"name" : "WADispatcher",
 	"type" : "normal"
