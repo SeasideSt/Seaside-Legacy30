@@ -1,13 +1,11 @@
 scripting
 scriptMove: anInteger for: id on: script
-	| elementsToMove |
-	elementsToMove := (visibleElements - 1) .
 	anInteger = 1 
 			ifTrue: [offset = 1 ifTrue: [^self].
-					offset := offset - elementsToMove]
-			ifFalse: [(offset + elementsToMove abs) > items size ifTrue: [^self].
-					offset := offset + elementsToMove].
+					offset := offset - scrollInc]
+			ifFalse: [(offset + scrollInc abs) > (items size + 1) ifTrue: [^self].
+					offset := offset + scrollInc].
 	script effect id: id;
-		duration: 0.2;
-		x: 0; y: (self elementHeight * elementsToMove * anInteger);
+		duration: animationSpeed;
+		y: 0; x: (self elementSize * scrollInc * anInteger);
 		move 

@@ -1,0 +1,3 @@
+accessing
+visibleItems
+	^self items

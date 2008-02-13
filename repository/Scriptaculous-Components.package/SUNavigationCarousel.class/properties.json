@@ -6,15 +6,11 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"elementExtent",
-		"numVisible",
-		"scrollInc",
-		"offset",
-		"wrap",
-		"navMargin",
-		"elementMargin",
-		"animationSpeed"
+		"selected",
+		"elementHeight",
+		"visibleElements",
+		"offset"
 	],
-	"name" : "SUCarousel",
+	"name" : "SUNavigationCarousel",
 	"type" : "normal"
 }

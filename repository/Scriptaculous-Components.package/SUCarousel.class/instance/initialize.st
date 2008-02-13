@@ -1,6 +1,10 @@
 initialize-release
 initialize
 	super initialize.
-	visibleElements := 5.
-	elementHeight := 14.
+	numVisible := 5.
+	elementExtent := Point x: 40 y: 40.
+	elementMargin := 5.
+	scrollInc := 5.
+	animationSpeed := 1.
+	navMargin := 10.
 	offset := 1
