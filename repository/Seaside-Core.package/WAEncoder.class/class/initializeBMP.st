@@ -3,11 +3,7 @@ initializeBMP
 	"Initializes the BMP, the Basic Multilingual Plane of UTF characters, using the encoding strategy of the receiver. This chaching strategy ensures that most commonly used characters can be encoded as efficient as possible."
 
 	| stream characterLimit |
-	characterLimit := "find the maximum value of a character that we can instantiate, for Squeak 3.7 this is 255"
-		[ Character value: 16rFFFF.
-		16rFFFF ]
-			on: Error
-			do: [ 16rFF ].
+	characterLimit := self maximumCharacterValue.
 	table := Array new: characterLimit.
 	stream := WriteStream on: (String new: 6).
 	1 to: characterLimit do: [ :index |
