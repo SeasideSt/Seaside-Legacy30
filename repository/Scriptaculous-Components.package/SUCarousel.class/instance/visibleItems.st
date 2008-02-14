@@ -1,3 +1,3 @@
 accessing
 visibleItems
-	^self items
+	^items copyFrom: offset to: (self lastOffset min: items size)
