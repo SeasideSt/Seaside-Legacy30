@@ -1,3 +1,0 @@
-forwarding
-name
-	^ model name

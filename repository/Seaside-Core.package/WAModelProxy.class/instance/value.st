@@ -1,3 +1,0 @@
-forwarding
-value
-	^ model value
