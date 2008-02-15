@@ -1,24 +1,34 @@
 scripting
 scriptMove: anInteger for: id on: script
-	| currentIndex nextIndex |
-	currentIndex := self lastOffset.
-	anInteger = 1 
-			ifTrue: [offset = 1 ifTrue: [^self].
-					offset := offset - scrollInc.
+	"hide buttons to avoid clicks between move operation"
+	
+	| currentIndex nextIndex direction buttonId |
+		currentIndex := self lastOffset. 
+
+		anInteger = 1 
+				ifTrue: [offset = 1 ifTrue: [^self].
+					offset := offset - scrollInc + 1.
+					direction := '_prev'.
 					offset < 1 ifTrue: [offset := 1]]
-			ifFalse: [(offset + scrollInc abs) > (items size + 1) ifTrue: [^self].
+				ifFalse: [(offset + scrollInc abs) > (items size + 1) ifTrue: [^self].
+					direction := '_next'.
 					offset := offset + scrollInc - 1].
-			
-	anInteger < 0 ifTrue: [
-	nextIndex := (currentIndex + scrollInc - 1) min: (items size).
-	nextIndex > currentIndex ifTrue: [
-	currentIndex + 1 to: nextIndex do: [:idx | 
-	script element
-		id: (self uid: 'head' at: idx - 1);
-		insertAfter: [ :html | 
-			self renderElement: (items at: idx) index: idx color: Color yellow on: html ].
-		]]].
-	script effect id: id;
-		duration: animationSpeed;
-		y: 0; x: (self elementSize * scrollInc * anInteger);
-		move 
+
+		anInteger < 0 ifTrue: [
+			nextIndex := (currentIndex + scrollInc - 1) min: (items size).
+			nextIndex > currentIndex ifTrue: [
+			currentIndex + 1 to: nextIndex do: [:idx | | anItem |
+				anItem := items at: idx.
+				(created includes: anItem) ifFalse: [created add: anItem.
+				script element id: (self uid: 'head' at: idx);
+					then: (script element
+						id: (self uid: 'head' at: idx - 1);
+						insertAfter: [ :html | self renderElement: (items at: idx) index: idx on: html ]) ] ] ] ].
+		
+		buttonId := uid,direction.
+		script element id: buttonId; styleAt: 'visibility' put: 'hidden'.
+		script effect id: id;
+			duration: animationSpeed;
+			y: 0; x: (self elementSizeWithMargins * (scrollInc - 1) * anInteger);
+			move;
+			onAfterFinish: (SUElement new id: buttonId; styleAt: 'visibility' put: 'visible').

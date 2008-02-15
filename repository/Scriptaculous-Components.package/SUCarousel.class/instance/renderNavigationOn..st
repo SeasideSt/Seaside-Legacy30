@@ -3,6 +3,7 @@ renderNavigationOn: html
 	"reset offset for each full refresh"
 	| theExtent clipExtent |
 	offset := 1.
+	created := self visibleItems.
 	theExtent := self componentExtent.
 	clipExtent := self clipExtent.
 	html div class: self cssClass;

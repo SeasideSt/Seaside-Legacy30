@@ -13,7 +13,8 @@
 		"wrap",
 		"navMargin",
 		"elementMargin",
-		"animationSpeed"
+		"animationSpeed",
+		"created"
 	],
 	"name" : "SUCarousel",
 	"type" : "normal"
