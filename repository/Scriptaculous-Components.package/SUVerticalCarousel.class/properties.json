@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SUCarousel",
+	"category" : "Scriptaculous-Components-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SUVerticalCarousel",
+	"type" : "normal"
+}

@@ -29,6 +29,6 @@ scriptMove: anInteger for: id on: script
 		script element id: buttonId; styleAt: 'visibility' put: 'hidden'.
 		script effect id: id;
 			duration: animationSpeed;
-			y: 0; x: (self elementSizeWithMargins * (scrollInc - 1) * anInteger);
+			y: (self moveSizeY: anInteger); x: (self moveSizeX: anInteger);
 			move;
 			onAfterFinish: (SUElement new id: buttonId; styleAt: 'visibility' put: 'visible').

@@ -6,10 +6,10 @@ renderNavigationOn: html
 	created := self visibleItems.
 	theExtent := self componentExtent.
 	clipExtent := self clipExtent.
-	html div class: self cssClass;
-		style: 'padding-top:5px; height:', theExtent y asString, 'px;width:', theExtent x asString ,'px' ;
+	html div class: self cssClass; 
+		style: 'height:', theExtent y asString, 'px;width:', theExtent x asString ,'px' ;
 		with: [self renderPreviousButtonOn: html.
-				html div class: 'clip-region';
+				html div class: 'clip-region';class: self cssFloat;
 				style: 'height:', clipExtent y asString, 'px;width:', clipExtent x asString ,'px' ;
 				id: 'clip_', uid;
 				with: [self renderNavElementsOn: html ].
