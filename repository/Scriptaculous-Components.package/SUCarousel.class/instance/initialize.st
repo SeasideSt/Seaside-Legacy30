@@ -6,5 +6,5 @@ initialize
 	elementMargin := 5.
 	scrollInc := 5.
 	animationSpeed := 0.5.
-	navMargin := 10.
+	navMargin := 12.
 	offset := 1
