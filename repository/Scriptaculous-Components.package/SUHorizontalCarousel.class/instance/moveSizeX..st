@@ -1,3 +1,3 @@
 private
-moveSizeX: anInteger
-	^(self elementSizeWithMargins * (scrollInc - 1) * anInteger)
+moveSizeX: anInteger 
+	^ self elementSizeWithMargins * scrollInc * anInteger

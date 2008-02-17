@@ -7,15 +7,15 @@ scriptMove: anInteger for: id on: script
 
 		anInteger = 1 
 				ifTrue: [offset = 1 ifTrue: [^self].
-					offset := offset - scrollInc + 1.
+					offset := offset - scrollInc.
 					direction := '_prev'.
 					offset < 1 ifTrue: [offset := 1]]
 				ifFalse: [(offset + scrollInc abs) > (items size + 1) ifTrue: [^self].
 					direction := '_next'.
-					offset := offset + scrollInc - 1].
+					offset := offset + scrollInc].
 
 		anInteger < 0 ifTrue: [
-			nextIndex := (currentIndex + scrollInc - 1) min: (items size).
+			nextIndex := (currentIndex + scrollInc) min: (items size).
 			nextIndex > currentIndex ifTrue: [
 			currentIndex + 1 to: nextIndex do: [:idx | | anItem |
 				anItem := items at: idx.
