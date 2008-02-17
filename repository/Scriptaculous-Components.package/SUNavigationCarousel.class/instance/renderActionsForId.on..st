@@ -7,7 +7,7 @@ renderActionsForId: id on: html
 								callback: [:script | self scriptMove: 1 for: id on: script];return: false);
 								with: 'Previous'].
 				html tableData style: 'width:100%'; with: [html space].
-				html tableData class: 'action'; align: 'right'; 
+				html tableData class: 'action'; class: 'right'; 
 						with: [html anchor
 								onClick: ((html evaluator)
 								callback: [:script | self scriptMove: -1 for: id on: script];return: false);

@@ -8,8 +8,7 @@ scriptMove: anInteger for: id on: script
 		anInteger = 1 
 				ifTrue: [offset = 1 ifTrue: [^self].
 					offset := offset - scrollInc.
-					direction := '_prev'.
-					offset < 1 ifTrue: [offset := 1]]
+					direction := '_prev']
 				ifFalse: [(offset + scrollInc abs) > (items size) ifTrue: [^self].
 					direction := '_next'.
 					offset := offset + scrollInc].

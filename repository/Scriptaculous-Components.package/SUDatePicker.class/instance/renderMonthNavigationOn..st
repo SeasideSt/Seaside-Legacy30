@@ -7,7 +7,7 @@ renderMonthNavigationOn: html
 				html anchor
 					callback: [self previousMonth];
 					onClick: ((html evaluator)
-						callback: [:script | self previousMonth. self scriptUpdateOn: script];
+						callback: [:script | self previousMonthUpdateOn: script];
 							return: false);
 					with: '<<' ].
 			html tableData class: 'monthCurrent'; with: (self month name).
@@ -16,6 +16,6 @@ renderMonthNavigationOn: html
 				with: [html anchor
 						callback: [self nextMonth];
 						onClick: ((html evaluator)
-							callback: [:script | self nextMonth. self scriptUpdateOn: script];
+							callback: [:script | self nextMonthUpdateOn: script];
 							return: false);
 						with: '>>'] ] ]

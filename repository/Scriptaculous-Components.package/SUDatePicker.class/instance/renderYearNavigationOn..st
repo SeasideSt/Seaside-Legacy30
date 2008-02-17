@@ -7,7 +7,7 @@ renderYearNavigationOn: html
 			html anchor
 				callback: [self previousYear];
 				onClick:	((html evaluator)
-						callback: [:script | self previousYear. self scriptUpdateOn: script];
+						callback: [:script | self previousYearUpdateOn: script];
 							return: false);
 				with: (self year - 1) ].
 			html tableData class: 'year'; class: 'yearCurrent'; with: (self year name).
@@ -17,6 +17,6 @@ renderYearNavigationOn: html
 			html anchor
 				callback: [self nextYear];
 				onClick: ((html evaluator)
-						callback: [:script | self nextYear. self scriptUpdateOn: script];
+						callback: [:script | self nextYearUpdateOn: script];
 							return: false);
 				with: (self year + 1) ] ] ]

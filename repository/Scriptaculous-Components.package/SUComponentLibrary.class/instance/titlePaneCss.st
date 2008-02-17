@@ -10,6 +10,7 @@ titlePaneCss
 					display: block;
 					text-decoration:none;
 					color:black}
+	.titlePane td.label {width:100%;white-space:nowrap}
 	.titlePane .gfx {background-position: center center;
 					width:16px;height:10px;
 					background-image: url(arrowright.gif)}
