@@ -10,4 +10,4 @@ renderElement: element index: index on: html
 						callback: [:script | self scriptSelected: element id: currentId on: script];
 							return: false);
 							callback: [self selected: element];
-				with: [html div with: element label]]
+				with: [html div: element label]]

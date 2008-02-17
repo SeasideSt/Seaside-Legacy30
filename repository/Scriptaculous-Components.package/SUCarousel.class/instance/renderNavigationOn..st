@@ -10,7 +10,7 @@ renderNavigationOn: html
 		style: 'height:', theExtent y asString, 'px;width:', theExtent x asString ,'px' ;
 		with: [self renderPreviousButtonOn: html.
 				html div class: 'clip-region';class: self cssFloat;
-				style: 'height:', clipExtent y asString, 'px;width:', clipExtent x asString ,'px' ;
-				id: 'clip_', uid;
-				with: [self renderNavElementsOn: html ].
+					style: 'height:', clipExtent y asString, 'px;width:', clipExtent x asString ,'px' ;
+					id: 'clip_', uid;
+					with: [self renderNavElementsOn: html ].
 			self renderNextButtonOn: html.]

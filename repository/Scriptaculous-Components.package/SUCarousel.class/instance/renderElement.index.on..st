@@ -5,4 +5,4 @@ renderElement: element index: index on: html
  	html div id: currentId;
 		class: 'carousel-element'; class: self cssFloat;
 		style: 'margin:' ,elementMargin asString ,'px;height:', self elementHeight asString, 'px;width:', self elementWidth asString ,'px;';
-		with: [html render: element]
+		with: element

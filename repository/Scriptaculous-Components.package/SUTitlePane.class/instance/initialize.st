@@ -4,4 +4,3 @@ initialize
 	open := false.
 	loaded := false.
 	alwaysRefresh := true.
-	resizeable := true
