@@ -1,6 +1,6 @@
 styles
 datePickerCss
-	^ '.calendar {font-family:Arial;font-size:10px;width:100px}
+	^ '.calendar {font-family:Arial;font-size:10px;width:150px}
 	.calendar .day {text-align:center;border:1px solid #ccc}
 	.calendar .main {border:1px solid black}
 	.calendar .daySelected {background:#e0e0e0;font-weight:bold}
