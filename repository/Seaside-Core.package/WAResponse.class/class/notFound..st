@@ -1,6 +1,8 @@
 instance creation
-notFound: locationString
+notFound: locationString 
 	^ self new
-		notFound;
-		nextPutAll: '<h1> Error: "', locationString, '" not found. </h1>';
+		notFound ;
+		nextPutAll: '<h1> Error: "' ;
+		nextPutAll: locationString ;
+		nextPutAll: '" not found. </h1>' ;
 		yourself
