@@ -1,8 +1,7 @@
 rendering
 renderRowsOn: html 
-	self rows keysAndValuesDo: 
-			[:i :row | 
-			self 
-				renderRowNumber: i
-				item: row
-				on: html]
+	self rows keysAndValuesDo: [ :index :row | 
+		self 
+			renderRowNumber: index
+			item: row
+			on: html ]
