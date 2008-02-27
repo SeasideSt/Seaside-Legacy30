@@ -1,6 +1,6 @@
 rendering
 renderMonthNavigationOn: html
-	html table cellspacing:0; with: [	
+	html table class: 'monthTable'; cellspacing:0; with: [	
 		html tableRow class: 'monthRow'; with: [
 			html tableData class: 'calendarPrevious';
 			with: [

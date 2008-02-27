@@ -1,6 +1,6 @@
 rendering
 renderYearNavigationOn: html
-	html table style: 'width:100%'; cellspacing:0; with: [	
+	html table class: 'yearTable'; cellspacing:0; with: [	
 		html tableRow: [
 			html tableData class: 'year';
 			with: [
