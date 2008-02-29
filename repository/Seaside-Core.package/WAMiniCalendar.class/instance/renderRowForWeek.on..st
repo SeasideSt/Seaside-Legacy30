@@ -1,4 +1,5 @@
 rendering
-renderRowForWeek: aWeek on: html
-	html tableRow: [
-		aWeek datesDo: [ :each | self renderCellForDate: each on: html ] ]
+renderRowForWeek: initialDay on: html
+	html 
+		tableRow: [0 to: 6 do: [:each |
+			self renderCellForDate: (initialDay addDays: each) on: html]]
