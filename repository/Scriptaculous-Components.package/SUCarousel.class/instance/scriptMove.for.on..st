@@ -1,6 +1,6 @@
 scripting
 scriptMove: anInteger for: id on: script
-	"hide buttons to avoid clicks between move operation"
+	"hide buttons to avoid clicks between move operation, works only for IE and firefox"
 	
 	| currentIndex nextIndex direction buttonId |
 		currentIndex := self lastOffset. 

@@ -1,3 +1,3 @@
 accessing
 children
-	^ (items select: [ :each | each isComponent ]) collect: [ :each | each body ]
+	^ self visibleComponentsFor: self visible
