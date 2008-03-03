@@ -6,7 +6,8 @@ critical: aBlock ifError: anErrorBlock
 		semaphore := SeasidePlatformSupport semaphoreClass new.
 		process := [
 			[ value := aBlock on: Error do: anErrorBlock ]
-				ensure: [ semaphore signal ] ] fork.
-		semaphore wait ].
-	process := nil.
+				ensure: [ semaphore signal ] ] newProcess.
+		process resume.
+		semaphore wait.
+		process := nil ].
 	^ value
