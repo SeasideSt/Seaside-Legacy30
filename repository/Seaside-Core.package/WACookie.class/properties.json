@@ -1,17 +1,15 @@
 {
-	"commentStamp" : "pmm 3/3/2008 20:37",
-	"super" : "WARequestCookie",
+	"commentStamp" : "pmm 4/15/2007 22:26",
+	"super" : "Object",
 	"category" : "Seaside-Core-HTTP",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"expiry",
-		"secure",
-		"discard",
-		"comment",
-		"commentUrl",
-		"httpOnly"
+		"key",
+		"value",
+		"path",
+		"expiry"
 	],
 	"name" : "WACookie",
 	"type" : "normal"

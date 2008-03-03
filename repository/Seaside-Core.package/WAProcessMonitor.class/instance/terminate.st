@@ -1,3 +1,3 @@
 controlling
 terminate
-	process ifNotNil: [process terminate]
+	process isNil ifFalse: [ process terminate ]

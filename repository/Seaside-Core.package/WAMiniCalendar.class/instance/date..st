@@ -1,4 +1,5 @@
 accessing-delegated
-date: aDate
+date: aDate 
 	date contents: aDate.
-	month contents: aDate month
+	monthIndex contents: aDate monthIndex.
+	year contents: aDate year

@@ -1,3 +1,3 @@
 accessing-delegated
 year
-	^ self month year
+	^year contents
