@@ -1,4 +1,3 @@
-accessing
-month: aMonth 
-	self monthIndex: aMonth monthIndex.
-	self year: aMonth year
+accessing-delegated
+month: aMonth
+	^ month contents: aMonth

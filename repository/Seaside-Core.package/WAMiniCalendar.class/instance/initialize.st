@@ -1,8 +1,7 @@
 initialization
 initialize
 	super initialize.
-	monthIndex := WAValueHolder with: Date today monthIndex.
-	year := WAValueHolder with: Date today year.
+	month := WAValueHolder with: Date today month.
 	date := WAValueHolder new.
-	canSelectBlock := [:value | true].
-	selectBlock := [:value | self answer: value]
+	canSelectBlock := [ :value | true ].
+	selectBlock := [ :value | self answer: value ]

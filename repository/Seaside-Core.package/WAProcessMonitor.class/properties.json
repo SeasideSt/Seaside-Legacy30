@@ -8,8 +8,7 @@
 	"instvars" : [
 		"mutex",
 		"process",
-		"semaphore",
-		"value"
+		"semaphore"
 	],
 	"name" : "WAProcessMonitor",
 	"type" : "normal"

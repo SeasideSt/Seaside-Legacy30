@@ -1,3 +1,7 @@
 responding
 onRespond: aBlock
-	self halt: 'I am currently broken'
+	| previous |
+	previous := escapeContinuation.
+	escapeContinuation := [ :response |
+		aBlock value: response.
+		previous value: response ]

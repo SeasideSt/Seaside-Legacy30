@@ -1,3 +1,3 @@
-accessing
+accessing-delegated
 month
-	^ Month month: self monthIndex year: self year
+	^ month contents

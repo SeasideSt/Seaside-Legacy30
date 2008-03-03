@@ -1,3 +1,3 @@
 private
 monthHeading
-	^ self monthName , ' ' , self year toString
+	^ self month name , ' ' , self month year toString

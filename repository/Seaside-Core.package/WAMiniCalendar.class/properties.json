@@ -1,13 +1,12 @@
 {
-	"commentStamp" : "<historical>",
+	"commentStamp" : "rew 1/23/2008 21:12",
 	"super" : "WAComponent",
 	"category" : "Seaside-Core-Components-Widgets",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"monthIndex",
-		"year",
+		"month",
 		"date",
 		"canSelectBlock",
 		"selectBlock"
