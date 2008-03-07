@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "dkh 02/29/2008 13:55",
 	"super" : "Notification",
 	"category" : "Seaside-Core-Session",
 	"classinstvars" : [ ],

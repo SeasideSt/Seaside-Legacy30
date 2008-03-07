@@ -5,7 +5,7 @@ parseLanguageString
 	iso3Languages := Dictionary new.
 	
 	string := self languageList.
-	lines := string findTokens: Character cr.
+	lines := string findTokens: SeasidePlatformSupport sourceCodeLineSeparatorCharacter.
 	lines do: [ :each |
 		| threeCode twoCode language firstIndex secondIndex thirdIndex fourthIndex |
 		firstIndex := each indexOf: $|.
