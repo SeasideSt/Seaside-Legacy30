@@ -1,17 +1,16 @@
 rendering
 render: anObject
-	^ String streamContents: [ :stream |
+	^String streamContents: [ :stream |
 		| context docRoot document html callbacks |
-		document := self documentClass new stream: stream.
+		document := (WAHtmlStreamDocument new) stream: stream.
 		context := WARenderingContext new.
 		context document: document.
 		context actionUrl: self actionUrl.
-		context session: self session.
+		context session: WACurrentSession value.
 		callbacks := self createCallbacksFor: context.
 		html := self canvasClass context: context callbacks: callbacks.
-		WACurrentSession
-			use: context session
-			during: [ 
-				self openDocumentDocument: document context: context.
-				html render: anObject; flush.
-				self closeDocument: document ] ]
+		self openDocumentDocument: document context: context.
+		html context document stream: stream.
+		html render: anObject.
+		html flush.
+		self closeDocument: document ]

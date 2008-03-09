@@ -1,4 +1,0 @@
-converting
-toString
-
-	^self printString

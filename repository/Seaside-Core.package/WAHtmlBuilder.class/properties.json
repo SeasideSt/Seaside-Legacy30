@@ -11,9 +11,7 @@
 		"documentRoot",
 		"rootBlock",
 		"callbackOwner",
-		"rootClass",
-		"session",
-		"documentClass"
+		"rootClass"
 	],
 	"name" : "WAHtmlBuilder",
 	"type" : "normal"

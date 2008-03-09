@@ -4,7 +4,7 @@ parseCountryString
 
 	iso2Countries := Dictionary new.
 	string := self countryList.
-	lines := string findTokens: SeasidePlatformSupport sourceCodeLineSeparatorCharacter.
+	lines := string findTokens: Character cr.
 	lines allButFirst collect: [:each |
 		| parts |
 		parts := each findTokens: $;.

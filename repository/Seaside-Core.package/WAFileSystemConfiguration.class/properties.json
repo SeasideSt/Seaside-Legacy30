@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "dkh 02/29/2008 13:55",
+	"commentStamp" : "",
 	"super" : "WASystemConfiguration",
 	"category" : "Seaside-Core-RequestHandler",
 	"classinstvars" : [ ],
