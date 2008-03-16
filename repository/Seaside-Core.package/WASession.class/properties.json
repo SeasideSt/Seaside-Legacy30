@@ -12,7 +12,8 @@
 		"currentRequest",
 		"scripts",
 		"jumpTo",
-		"cookiesEnabled"
+		"cookiesEnabled",
+		"escapeContinuation"
 	],
 	"name" : "WASession",
 	"type" : "normal"
