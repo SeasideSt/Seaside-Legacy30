@@ -1,4 +1,4 @@
 class initialization
 initialize
-	self parseLanguageString.
-	self parseCountryString
+	self initializeLangaugeList.
+	self initializeCountryList

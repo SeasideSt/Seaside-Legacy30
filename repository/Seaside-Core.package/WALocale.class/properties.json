@@ -5,7 +5,8 @@
 	"classinstvars" : [
 		"iso2Languages",
 		"iso3Languages",
-		"iso2Countries"
+		"iso2Countries",
+		"iso3Countries"
 	],
 	"pools" : [ ],
 	"classvars" : [ ],
