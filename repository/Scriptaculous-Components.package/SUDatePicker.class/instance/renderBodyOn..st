@@ -7,7 +7,7 @@ renderBodyOn: html
 						with: [
 						self weekDays do: [ :each |
 							html tableData class: 'weekDay'; with: each ] ].
-				self month weeksDo: [ :week |
+				self weeksDo: [ :week |
 					self renderRowForWeek: week on: html ].
 				html tableRow: [ html tableData colSpan: 9; with: [self renderYearNavigationOn: html] ].
 				].
