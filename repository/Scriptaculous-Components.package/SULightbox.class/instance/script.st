@@ -34,7 +34,8 @@ Object.extend(Element, {
 		element.style.top = y + "px";
 	}
 });
-function updateLightbox() {
+function updateLightbox() {//ie6 fix hide all select elements
+	if (Prototype.Browser.IE) {if (navigator.userAgent.indexOf("MSIE 6") != -1) {$$("select").invoke("setStyle", {visibility: "hidden"})}};
 	Element.fullscreen("overlay");
 	Element.center("lightbox");
 	Element.show("lightbox");
