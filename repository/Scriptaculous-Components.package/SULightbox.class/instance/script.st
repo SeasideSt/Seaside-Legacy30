@@ -34,8 +34,10 @@ Object.extend(Element, {
 		element.style.top = y + "px";
 	}
 });
-function updateLightbox() {//ie6 fix hide all select elements
-	if (Prototype.Browser.IE) {if (navigator.userAgent.indexOf("MSIE 6") != -1) {$$("select").invoke("setStyle", {visibility: "hidden"})}};
+function updateLightbox() {//ie6 fix hide all select elements not inside the lightbox
+	if (Prototype.Browser.IE) {if (navigator.userAgent.indexOf("MSIE 6") != -1) 
+								{$$("select").invoke("setStyle", {visibility: "hidden"})
+								$("lightbox").descendants().each(function(item) {item.setStyle({visibility: "visible"})})}};
 	Element.fullscreen("overlay");
 	Element.center("lightbox");
 	Element.show("lightbox");
