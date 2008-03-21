@@ -1,9 +1,8 @@
 private
 listing: aString forRequest: aRequest
 	^ WARenderCanvas builder
-		fullDocument: true;
 		rootBlock: [ :html | html title: aRequest url ];
-		render: [ :html |
+		renderResponse: [ :html |
 			html heading level: 1; with: aRequest url.
 			html unorderedList: [
 				(SeasidePlatformSupport filesIn: aString) do: [ :each | 

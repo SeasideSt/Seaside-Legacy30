@@ -1,11 +1,12 @@
 private
 responseAt: aPath ifAbsent: aBlock
-	| libraryName fileName libraryClass |
-	libraryName := aPath at: aPath size - 1.
-	fileName := aPath last.
+	| libraryClass |
 	libraryClass := self
-		libraryAt: libraryName asSymbol
+		libraryAt: aPath first asSymbol
 		ifAbsent: [ ^ aBlock value ].
-	^ libraryClass
-		documentAt: fileName
-		ifAbsent: aBlock
+	^aPath size > 1
+		ifTrue: [
+			libraryClass
+				documentAt: aPath second
+				ifAbsent: aBlock ]
+		ifFalse: [  libraryClass renderListing  ]

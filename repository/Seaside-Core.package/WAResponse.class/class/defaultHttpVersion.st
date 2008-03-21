@@ -1,3 +1,3 @@
 defaults
 defaultHttpVersion
-	^'HTTP/1.0'
+	^'HTTP/1.1'
