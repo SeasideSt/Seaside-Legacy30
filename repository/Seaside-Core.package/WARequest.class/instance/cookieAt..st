@@ -1,3 +1,6 @@
 accessing-cookies
 cookieAt: aKey
-	^ cookies ifNotNil: [ cookies at: aKey ifAbsent: [] ]
+	^ cookies ifNotNil: [
+		cookies
+			detect: [ :each | each key = aKey ]
+			ifNone: [ nil ] ]

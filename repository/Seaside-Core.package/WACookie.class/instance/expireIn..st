@@ -1,3 +1,5 @@
 api
 expireIn: aDuration
-	self expiry: DateAndTime now + aDuration
+	"sets the lifetime of the receiver mesaured in a duration"
+	self expiry: DateAndTime now + aDuration.
+	self maxAge: aDuration asSeconds

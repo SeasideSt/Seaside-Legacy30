@@ -1,3 +1,4 @@
 accessing
 handlerCookieName
-	^ self name
+	"returns the key of the session cookie"
+	^ self handlerField
