@@ -1,5 +1,5 @@
 actions
 removeFile: aFilename
-	SeasidePlatformSupport
+	self
 		removeSelector: (self asSelector: aFilename)
 		from: self class

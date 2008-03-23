@@ -3,8 +3,8 @@ clearHandlers
 	| handlers |
 	self mutex critical: [
 		handlers := handlersByKey.
-		handlersByKey := SeasidePlatformSupport reducedConflictDictionary new.
-		keysByHandler := SeasidePlatformSupport reducedConflictDictionary new ].
+		handlersByKey := self dictionaryClass new.
+		keysByHandler := self dictionaryClass new ].
 	handlers ifNotNil: [
 		[ handlers do: [ :each | each unregistered ] ]
 			fork ]

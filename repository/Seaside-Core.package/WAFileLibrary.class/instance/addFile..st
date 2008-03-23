@@ -8,5 +8,5 @@ addFile: aFile
 
 	contents := (self class isBinary: aFile fileName)
 		ifTrue: [ aFile contents ]
-		ifFalse: [ SeasidePlatformSupport convertToSmalltalkNewlines: aFile contents ].
+		ifFalse: [ self convertToSmalltalkNewlines: aFile contents ].
 	self class addFileNamed: aFile fileName contents: contents

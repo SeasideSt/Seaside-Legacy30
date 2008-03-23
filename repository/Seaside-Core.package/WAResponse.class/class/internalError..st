@@ -9,7 +9,7 @@ internalError: anError
 		render: [ :html |
 			html heading level1; with: 'Internal Error'.
 			html heading level2; with: anError description.
-			(SeasidePlatformSupport walkbackStringsFor: anError)
+			(self walkbackStringsFor: anError)
 				do: [ :each | html text: each ]
 				separatedBy: [ html break ] ].
 	response nextPutAll: content.

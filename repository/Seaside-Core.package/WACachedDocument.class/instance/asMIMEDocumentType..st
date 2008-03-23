@@ -3,6 +3,6 @@ asMIMEDocumentType: type
 	"Lazy caching."
 	^mimeDocument ifNil: [
 		mimeType := type.
-		mimeDocument := SeasidePlatformSupport
+		mimeDocument := self
 				mimeDocumentOfType: mimeType
 				from: fullFileName]
