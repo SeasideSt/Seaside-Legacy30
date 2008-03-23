@@ -10,7 +10,7 @@ renderMonthNavigationOn: html
 						callback: [:script | self previousMonthUpdateOn: script];
 							return: false);
 					with: '<<' ].
-			html tableData class: 'monthCurrent'; with: (self month name).
+			html tableData class: 'monthCurrent'; with: (Date nameOfMonth: self monthIndex).
 			html tableData
 				class: 'calendarNext';
 				with: [html anchor
