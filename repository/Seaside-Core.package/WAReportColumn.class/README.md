@@ -12,4 +12,7 @@ Instance Variables:
 	valueBlock	<BlockClosure [:rowObject | ] or [:rowObject :aWARenderCanvas |] >	
 		[:rowObject | ] this form results in an object that is to be displayed in a column cell, argument is the object for a given row (see WATableReport)
 		[:rowObject :aWARenderCanvas |] this form is to render the value for a column cell from rowObject directly on aWRenderCanvas
+cssClass
+	title <String> CSS class
+	the CSS class assigned to the <td>-tag in this column 
 
