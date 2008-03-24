@@ -1,10 +1,10 @@
 *scriptaculous-components-call/answer
-lightbox: aComponent
-	^ AnswerContinuation currentDo: [ :cc |
-		self
+lightbox: aComponent 
+	^ WAAnswerContinuation currentDo: [ :cc | 
+		self 
 			show: aComponent
 			onAnswer: cc
 			delegation: (SULightbox new
-				delegate: aComponent;
-				yourself).
+					delegate: aComponent;
+					yourself).
 		WARenderNotification raiseSignal ]
