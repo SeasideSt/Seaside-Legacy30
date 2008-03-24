@@ -3,7 +3,7 @@ withEscapeHandler: aBlock
 	escapeContinuation := [ :response |
 		WAReturnResponse new 
 			response: response;
-			signal ].
+			raiseSignal ].
 	^ aBlock
 		on: WAReturnResponse 
 		do: [ :err | err response ]
