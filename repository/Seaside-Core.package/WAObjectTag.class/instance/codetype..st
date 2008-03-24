@@ -1,3 +1,5 @@
 attributes
-codetype: aString
-	self attributeAt: 'codetype' put: aString
+codetype: aString 
+	self attributes 
+		at: 'codetype'
+		put: aString

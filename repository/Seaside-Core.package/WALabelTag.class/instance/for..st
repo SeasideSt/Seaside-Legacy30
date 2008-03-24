@@ -1,3 +1,5 @@
 attributes
-for: aString
-	self attributeAt: 'for' put: aString
+for: aString 
+	self attributes 
+		at: 'for'
+		put: aString

@@ -1,6 +1,6 @@
 {
-	"commentStamp" : "",
-	"super" : "WATableCellTag",
+	"commentStamp" : "lr 3/24/2008 13:48",
+	"super" : "WATableDataTag",
 	"category" : "Seaside-Core-Canvas-Tags",
 	"classinstvars" : [ ],
 	"pools" : [ ],

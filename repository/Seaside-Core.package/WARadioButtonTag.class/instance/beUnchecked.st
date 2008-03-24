@@ -1,3 +1,5 @@
 attributes
 beUnchecked
-	self attributeAt: 'checked' put: false
+	self attributes 
+		at: 'checked'
+		put: false

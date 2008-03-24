@@ -1,3 +1,5 @@
 attributes
-url: aString
-	self attributeAt: 'src' put: aString
+url: aString 
+	self attributes 
+		at: 'src'
+		put: aString

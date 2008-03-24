@@ -1,3 +1,5 @@
 attributes
-archive: aUrl
-	self attributeAt: 'archive' put: aUrl
+archive: aUrl 
+	self attributes 
+		at: 'archive'
+		put: aUrl

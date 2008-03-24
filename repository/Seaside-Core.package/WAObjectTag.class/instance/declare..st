@@ -1,3 +1,5 @@
 attributes
-declare: aBoolean
-	self attributeAt: 'declare' put: aBoolean
+declare: aBoolean 
+	self attributes 
+		at: 'declare'
+		put: aBoolean
