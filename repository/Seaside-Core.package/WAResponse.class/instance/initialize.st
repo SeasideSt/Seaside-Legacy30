@@ -1,7 +1,7 @@
 initialize-release
 initialize
 	| session |
-	stream := self readWriteStream.
+	stream := SeasidePlatformSupport readWriteStream.
 	status := 200.
 	session := WACurrentSession value.
 	contentType := session isNil

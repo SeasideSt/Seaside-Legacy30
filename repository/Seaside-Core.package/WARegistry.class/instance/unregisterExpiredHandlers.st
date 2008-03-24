@@ -4,8 +4,8 @@ unregisterExpiredHandlers
 
 	| expired newHandlersByKey newKeysByHandler |
 	expired := OrderedCollection new.
-	newHandlersByKey := self dictionaryClass new.
-	newKeysByHandler := self dictionaryClass new.
+	newHandlersByKey := SeasidePlatformSupport reducedConflictDictionary new.
+	newKeysByHandler := SeasidePlatformSupport reducedConflictDictionary new.
 	self mutex critical: [
 		handlersByKey keysAndValuesDo: [ :key :value |
 			value isActive

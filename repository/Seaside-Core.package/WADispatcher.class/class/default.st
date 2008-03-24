@@ -1,3 +1,3 @@
 accessing
 default
-	^ default ifNil: [ default := self named: self defaultDispatcherName ]
+	^ default ifNil: [ default := self named: SeasidePlatformSupport defaultDispatcherName ]

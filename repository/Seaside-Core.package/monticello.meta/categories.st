@@ -17,4 +17,3 @@ SystemOrganization addCategory: #'Seaside-Core-Session'!
 SystemOrganization addCategory: #'Seaside-Core-Exceptions'!
 SystemOrganization addCategory: #'Seaside-Core-Utilities'!
 SystemOrganization addCategory: #'Seaside-Core-Continuations'!
-SystemOrganization addCategory: #'Seaside-Core'!

@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "Continuation",
+	"super" : "WAContinuation",
 	"category" : "Seaside-Core-Continuations",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "AnswerContinuation",
+	"name" : "WAAnswerContinuation",
 	"type" : "normal"
 }
