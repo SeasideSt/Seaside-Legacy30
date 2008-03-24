@@ -1,9 +1,9 @@
 private
 parseImageMap: aString
 	| stream x y |
-	('?*,*' match: aString) ifFalse: [ ^ nil ].
 	stream := aString readStream.
-	stream upTo: $?.
-	x := stream upTo: $,.
-	y := stream upToEnd.
-	^ x asInteger @ y asInteger
+	stream next = $? ifFalse: [ ^ nil ].
+	x := Integer readFrom: stream.
+	stream next = $, ifFalse: [ ^ nil ].
+	y := Integer readFrom: stream.
+	^ x @ y
