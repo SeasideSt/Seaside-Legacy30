@@ -1,10 +1,10 @@
 accessing
 sessionCookie
-	"creates a new session cookie"
-	^ self newCookie
+	^ WACookie new
 		key: self application handlerCookieName;
 		value: (self application ensureKeyForHandler: self) toString;
 		discard: true;
-		comment: 'the Seaside Session Cookie';
+		httpOnly: true;
+		comment: 'the Seaside session cookie';
 		commentUrl: 'http://www.seaside.st/documentation/sessionCookie';
 		yourself
