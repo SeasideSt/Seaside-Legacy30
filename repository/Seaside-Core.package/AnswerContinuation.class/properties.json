@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "AnObsoleteContinuation",
+	"category" : "Seaside-Core-Continuations",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "AnswerContinuation",
+	"type" : "normal"
+}
