@@ -1,5 +1,3 @@
 attributes
-width: anInteger 
-	self attributes 
-		at: 'width'
-		put: anInteger
+width: anInteger
+	self attributeAt: 'width' put: anInteger

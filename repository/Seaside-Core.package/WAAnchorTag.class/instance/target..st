@@ -1,6 +1,4 @@
 deprecated
-target: aString 
+target: aString
 	self deprecatedApi.
-	self attributes 
-		at: 'target'
-		put: aString
+	self attributeAt: 'target' put: aString

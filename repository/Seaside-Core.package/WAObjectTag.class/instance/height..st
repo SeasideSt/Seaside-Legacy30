@@ -1,5 +1,3 @@
 attributes
-height: anInteger 
-	self attributes 
-		at: 'height'
-		put: anInteger
+height: anInteger
+	self attributeAt: 'height' put: anInteger

@@ -1,5 +1,3 @@
 attributes
-span: anInteger 
-	self attributes 
-		at: 'rbspan'
-		put: anInteger
+span: anInteger
+	self attributeAt: 'rbspan' put: anInteger

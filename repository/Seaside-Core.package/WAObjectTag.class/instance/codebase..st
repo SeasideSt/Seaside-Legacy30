@@ -1,5 +1,3 @@
 attributes
-codebase: aUrl 
-	self attributes 
-		at: 'codebase'
-		put: aUrl
+codebase: aUrl
+	self attributeAt: 'codebase' put: aUrl

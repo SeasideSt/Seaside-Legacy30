@@ -1,3 +1,3 @@
 responding
-respond: aBlock 
-	^ WAResponseContinuation currentDo: [ :cc | self respond: aBlock onAnswer: cc ]
+respond: aBlock
+	^ ResponseContinuation currentDo: [ :cc | self respond: aBlock onAnswer: cc ]

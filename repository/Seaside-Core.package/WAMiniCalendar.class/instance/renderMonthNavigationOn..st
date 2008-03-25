@@ -6,12 +6,18 @@ renderMonthNavigationOn: html
 		class: 'calendarPrevious';
 		with: 
 			[html anchor
-				callback: [self previousMonth];
+				callback: [
+					self monthIndex = 1
+						ifTrue: [ self monthIndex: 12; year: self year - 1]
+						ifFalse: [ self monthIndex: self monthIndex - 1 ]];
 				with: ((self monthNames at: (tab at: self monthIndex)) first: 3)].
 	html space.
 	html span
 		class: 'calendarNext';
 		with: 
 			[html anchor
-				callback: [self nextMonth];
+				callback: [
+					self monthIndex = 12
+						ifTrue: [ self monthIndex: 1; year: self year + 1]
+						ifFalse: [ self monthIndex: self monthIndex + 1 ]];
 				with: ((self monthNames at: (tab at: self monthIndex + 2)) first: 3)].

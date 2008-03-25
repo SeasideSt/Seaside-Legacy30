@@ -1,5 +1,3 @@
 attributes
-width: anInteger
-	"The width attribute specifies the width of the columns"
-	
-	self attributes at: 'width' put: anInteger
+width: aNumber
+	self attributeAt: 'width' put: aNumber toString

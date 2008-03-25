@@ -1,1 +1,0 @@
-The WATableHeadingTag is for headers only.

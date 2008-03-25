@@ -1,5 +1,3 @@
 attributes
-classId: aUrl 
-	self attributes 
-		at: 'classid'
-		put: aUrl
+classId: aUrl
+	self attributeAt: 'classid' put: aUrl

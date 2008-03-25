@@ -1,5 +1,3 @@
 attributes
-url: aUrl 
-	self attributes 
-		at: 'data'
-		put: aUrl
+url: aUrl
+	self attributeAt: 'data' put: aUrl

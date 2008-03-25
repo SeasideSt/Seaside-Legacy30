@@ -1,5 +1,3 @@
 attributes
-value: aBoolean 
-	self attributes 
-		at: 'checked'
-		put: aBoolean
+value: aBoolean
+	self attributeAt: 'checked' put: aBoolean

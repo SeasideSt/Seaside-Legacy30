@@ -11,7 +11,7 @@ newCookie
 		cookie domain: baseUrl hostname ].
 	baseUrl scheme = 'https' ifTrue: [
 		cookie secure: true ].
-	baseUrl port isNil ifFalse: [
+	(baseUrl port notNil and: [ baseUrl hostname notNil ]) ifTrue: [
 		cookie port: baseUrl port ].
 	^cookie
 	

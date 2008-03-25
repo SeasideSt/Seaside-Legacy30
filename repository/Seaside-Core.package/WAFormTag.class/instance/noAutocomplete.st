@@ -1,5 +1,3 @@
 attributes
 noAutocomplete
-	self attributes 
-		at: 'autocomplete'
-		put: 'off'
+	self attributeAt: 'autocomplete' put: 'off'

@@ -1,1 +1,0 @@
-The WATableDataTag is for data and for cells acting as header.
