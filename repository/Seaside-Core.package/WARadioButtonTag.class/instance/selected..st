@@ -1,3 +1,5 @@
 attributes
-selected: aBoolean
-	self attributeAt: 'checked' put: aBoolean
+selected: aBoolean 
+	self attributes 
+		at: 'checked'
+		put: aBoolean

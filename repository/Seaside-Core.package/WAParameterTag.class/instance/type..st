@@ -1,3 +1,5 @@
 attributes
-type: aString
-	self attributeAt: 'type' put: aString
+type: aString 
+	self attributes 
+		at: 'type'
+		put: aString

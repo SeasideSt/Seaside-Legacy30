@@ -5,4 +5,4 @@ blankRequest
 			url: ''
 			headers: Dictionary new
 			fields: Dictionary new
-			cookies: Array new
+			cookies: Dictionary new

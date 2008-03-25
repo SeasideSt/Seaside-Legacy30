@@ -1,6 +1,6 @@
 processing
-call: aComponent
-	^ AnswerContinuation currentDo: [ :cc |
+call: aComponent 
+	^ WAAnswerContinuation currentDo: [ :cc | 
 		aComponent onAnswer: cc.
 		self root: aComponent.
 		self run ]

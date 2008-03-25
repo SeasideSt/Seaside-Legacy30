@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "rew 2/14/2008 10:16",
+	"commentStamp" : "pmm 3/24/2008 16:44",
 	"super" : "Object",
 	"category" : "Seaside-Core-Components-Widgets",
 	"classinstvars" : [ ],
@@ -11,7 +11,8 @@
 		"hasTotal",
 		"title",
 		"sortBlock",
-		"valueBlock"
+		"valueBlock",
+		"cssClass"
 	],
 	"name" : "WAReportColumn",
 	"type" : "normal"

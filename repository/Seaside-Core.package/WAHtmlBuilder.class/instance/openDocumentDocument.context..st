@@ -1,6 +1,6 @@
 private
-openDocumentDocument: aDocument context: aContext
-	self fullDocument ifTrue: [
-		documentRoot := self rootClass context: aContext.
-		self rootBlock value: documentRoot.
-		aDocument open: documentRoot ]
+openDocumentDocument: aDocument context: aContext 
+	self fullDocument ifFalse: [ ^ self ].
+	documentRoot := self rootClass context: aContext.
+	self rootBlock value: documentRoot.
+	aDocument open: documentRoot

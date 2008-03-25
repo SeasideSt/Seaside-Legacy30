@@ -9,6 +9,7 @@ renderListing
 			html table: [
 				html tableRow: [
 					html tableHeading: 'Name'.
+					html tableHeading: 'Size'.
 					html tableHeading: 'Description' ].
 				self fileSelectors do: [ :each |
 					html tableRow: [
@@ -16,4 +17,5 @@ renderListing
 							html anchor
 								url: (self urlOf: each);
 								with: (self asFilename: each) ].
+						html tableData: (self perform: each) size.
 						html tableData: (self mimetypeForFile: (self asFilename: each)) ] ] ] ]

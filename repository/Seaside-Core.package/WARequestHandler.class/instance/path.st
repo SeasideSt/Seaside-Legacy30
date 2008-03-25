@@ -4,4 +4,4 @@ path
 	
 	^ self parent isNil
 		ifTrue: [ OrderedCollection with: self name ]
-		ifFalse: [ self parent path addLast: self name ]
+		ifFalse: [ self parent path addLast: self name; yourself ]

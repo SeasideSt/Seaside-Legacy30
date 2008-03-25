@@ -1,3 +1,5 @@
 attributes
-standby: aString
-	self attributeAt: 'standby' put: aString
+standby: aString 
+	self attributes 
+		at: 'standby'
+		put: aString

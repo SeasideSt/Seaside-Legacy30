@@ -1,3 +1,5 @@
 attributes
-value: aString
-	self attributeAt: 'value' put: aString
+value: aString 
+	self attributes 
+		at: 'value'
+		put: aString
