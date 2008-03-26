@@ -1,10 +1,9 @@
-accessing
+converting
 pathString
-	"returns the path converted to a string, for an empty path returns '/'"
-	path ifNil: [ ^ '/' ].
-	
-	^String streamContents: [ :stream |
-		stream nextPut: $/.
-		path
-			do: [ :each | stream nextPutAll: each ]
-			separatedBy: [ stream nextPut: $/ ] ]
+	"Answer the path converted to a string."
+
+	| document |
+	^ String streamContents: [ :stream | 
+		document := WAHtmlStreamDocument new.
+		document stream: stream.
+		self encodePathOn: document ]
