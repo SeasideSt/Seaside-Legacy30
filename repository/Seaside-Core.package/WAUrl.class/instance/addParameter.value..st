@@ -1,3 +1,4 @@
 adding
 addParameter: keyString value: valueString
-	self parameters at: keyString put: valueString
+	keyString isEmpty 
+		ifFalse: [ self parameters at: keyString put: valueString ]

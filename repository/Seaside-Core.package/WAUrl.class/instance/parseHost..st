@@ -1,6 +1,8 @@
 parsing
 parseHost: aString
 	| string index |
+	aString isEmpty 
+		ifTrue: [ ^ self ].
 	string := aString.
 	index := string indexOf: $@.
 	index > 1 ifTrue: [

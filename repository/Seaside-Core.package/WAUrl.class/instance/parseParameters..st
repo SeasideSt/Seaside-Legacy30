@@ -1,5 +1,5 @@
 parsing
-parseQuery: aString
+parseParameters: aString
 	| input string index |
 	input := aString readStream.
 	[ input atEnd ] whileFalse: [
