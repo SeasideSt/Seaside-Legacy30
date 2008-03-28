@@ -13,7 +13,7 @@ initializeFromString: aString
 		string := string copyFrom: 1 to: index - 1 ].
 	index := string indexOfSubCollection: '://'.
 	index > 0 ifTrue: [ 
-		scheme := string copyFrom: 1 to: index - 1.
+		self scheme: (string copyFrom: 1 to: index - 1).
 		string := string copyFrom: index + 3 to: string size.
 		index := string indexOf: $/.
 		index > 0
