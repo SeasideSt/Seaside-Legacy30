@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
-	"category" : "Seaside-Core-Contexts",
+	"super" : "WAContinuation",
+	"category" : "Seaside-Core-Continuations",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WASessionContext",
+	"name" : "WAAnswerContinuation",
 	"type" : "normal"
 }

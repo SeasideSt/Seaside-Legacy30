@@ -1,3 +1,0 @@
-accessing
-sessionContext
-	^parent sessionContext

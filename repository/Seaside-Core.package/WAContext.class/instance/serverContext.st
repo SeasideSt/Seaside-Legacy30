@@ -1,3 +1,0 @@
-accessing
-serverContext
-	^parent serverContext

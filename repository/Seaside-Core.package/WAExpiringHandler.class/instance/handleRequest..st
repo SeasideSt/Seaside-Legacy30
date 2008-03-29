@@ -1,4 +1,4 @@
 processing
 handleRequest: aRequest
 	lastAccess := Time totalSeconds.
-	^ self incomingRequest: aRequest
+	^self pushSelfDuring: [ self incomingRequest: aRequest ]
