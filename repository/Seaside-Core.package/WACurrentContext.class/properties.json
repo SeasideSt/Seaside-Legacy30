@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WADynamicVariable",
+	"category" : "Seaside-Core-Contexts",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WACurrentContext",
+	"type" : "normal"
+}

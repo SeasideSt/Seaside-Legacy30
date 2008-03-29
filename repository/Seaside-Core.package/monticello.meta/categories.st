@@ -6,6 +6,7 @@ SystemOrganization addCategory: #'Seaside-Core-Components-Dialogs'!
 SystemOrganization addCategory: #'Seaside-Core-Components-Frames'!
 SystemOrganization addCategory: #'Seaside-Core-Components-Widgets'!
 SystemOrganization addCategory: #'Seaside-Core-Configuration'!
+SystemOrganization addCategory: #'Seaside-Core-Contexts'!
 SystemOrganization addCategory: #'Seaside-Core-Document'!
 SystemOrganization addCategory: #'Seaside-Core-Document-Elements'!
 SystemOrganization addCategory: #'Seaside-Core-HTTP'!
