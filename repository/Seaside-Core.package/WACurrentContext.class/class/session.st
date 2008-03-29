@@ -1,3 +1,3 @@
 accessing
 session
-	^self value session
+	^self sessionContext session

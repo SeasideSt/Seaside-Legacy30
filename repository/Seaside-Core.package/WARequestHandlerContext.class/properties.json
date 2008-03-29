@@ -6,8 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"session"
+		"requestHandler"
 	],
-	"name" : "WASessionContext",
+	"name" : "WARequestHandlerContext",
 	"type" : "normal"
 }

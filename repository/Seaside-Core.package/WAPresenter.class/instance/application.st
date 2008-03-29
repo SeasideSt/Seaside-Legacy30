@@ -1,3 +1,3 @@
-accessing-context
+convenience
 application
-	^ self context application
+	^ self session application

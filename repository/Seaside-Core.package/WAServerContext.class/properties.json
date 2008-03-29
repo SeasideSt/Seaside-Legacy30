@@ -6,8 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"session"
+		"server"
 	],
-	"name" : "WASessionContext",
+	"name" : "WAServerContext",
 	"type" : "normal"
 }

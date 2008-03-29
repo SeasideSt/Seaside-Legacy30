@@ -7,14 +7,11 @@ incomingRequest: aRequest
 				monitor terminate.
 				^ WAResponse new nextPutAll: 'Process terminated' ].
 			
-	context := WACurrentContext value.
+	context := WASessionContext session: self.
 			
 	^ monitor
 		critical: [
 			WACurrentContext
 				use: context
 				during:  [ self responseForRequest: aRequest ] ]
-		ifError: [ :error |
-			WACurrentContext
-				use: context
-				during:  [ self errorHandler internalError: error ] ]
+		ifError: [ :error | self errorHandler internalError: error ]
