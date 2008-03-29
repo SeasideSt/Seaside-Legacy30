@@ -1,8 +1,8 @@
 events
-on: aClass do: aValuable
+on: anEventClass do: aValuable
 	"Evaluate aValuable, when an event of aClass is triggered."
 
 	subscribers ifNil: [ subscribers := WASmallDictionary new ].
-	(subscribers at: aClass ifAbsentPut: [ OrderedCollection new ])
+	(subscribers at: anEventClass ifAbsentPut: [ OrderedCollection new ])
 		add: aValuable.
 	^ aValuable

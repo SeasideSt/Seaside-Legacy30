@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"context"
+		"renderContext"
 	],
 	"name" : "WARenderContinuation",
 	"type" : "normal"
