@@ -5,14 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"server",
-		"request",
-		"response",
-		"requestHandlers",
-		"properties",
-		"subscribers"
-	],
-	"name" : "WAContext",
+	"instvars" : [ ],
+	"name" : "WAEvent",
 	"type" : "normal"
 }

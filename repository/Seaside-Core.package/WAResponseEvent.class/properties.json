@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "WAEvent",
 	"category" : "Seaside-Core-Contexts",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WASessionContext",
+	"name" : "WAResponseEvent",
 	"type" : "normal"
 }
