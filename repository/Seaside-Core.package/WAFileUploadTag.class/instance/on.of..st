@@ -1,3 +1,3 @@
 callbacks
-on: selector of: anObject
-	self callback: [ :value | anObject perform: selector asMutator with: value ]
+on: aSelector of: anObject
+	self callback: (MessageSend receiver: anObject selector: aSelector asMutator)

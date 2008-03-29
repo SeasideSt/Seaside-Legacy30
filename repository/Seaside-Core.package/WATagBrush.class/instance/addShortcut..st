@@ -4,7 +4,7 @@ addShortcut: aString
 		self error: 'May not assign shortcut on items that are not clickable' ].
 
 	self ensureId.
-	self context addLoadScript: (String streamContents: [ :stream |
+	self session addLoadScript: (String streamContents: [ :stream |
 		stream
 			nextPutAll: 'addShortcut(''';
 			nextPutAll: aString;

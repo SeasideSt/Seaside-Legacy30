@@ -1,4 +1,3 @@
 scripts
 addLoadScript: aString
-	self deprecatedApi: 'Use WAContext >> #addLoadScript'.
-	^self context addLoadScript: aString
+	^ (scripts ifNil: [scripts := OrderedCollection new]) add: aString

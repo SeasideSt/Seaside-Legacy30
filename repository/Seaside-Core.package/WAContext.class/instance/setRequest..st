@@ -1,3 +1,3 @@
 initialization
-request: aRequest
+setRequest: aRequest
 	request := aRequest

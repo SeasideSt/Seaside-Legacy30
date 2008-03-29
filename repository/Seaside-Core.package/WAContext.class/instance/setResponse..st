@@ -1,3 +1,3 @@
 initialization
-response: aResponse
+setResponse: aResponse
 	response := aResponse

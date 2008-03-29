@@ -1,3 +1,3 @@
 initialization
-server: aServerApater
+setServer: aServerApater
 	server := aServerApater

@@ -5,8 +5,9 @@ writeOnLoadOn: aDocument
 	attributes at: 'type' put: 'text/javascript'.
 	aDocument openTag: 'script' attributes: attributes closed: false.
 	aDocument nextPutAll: '/*<![CDATA[*/function onLoad(){'.
-	self loadScripts
+	self session onLoadScripts
 		do: [ :each | aDocument nextPutAll: each toString ]
 		separatedBy: [ aDocument nextPutAll: ';' ].
 	aDocument nextPutAll: '}/*]]>*/'.
-	aDocument closeTag: 'script'
+	aDocument closeTag: 'script'.
+	self session clearLoadScripts
