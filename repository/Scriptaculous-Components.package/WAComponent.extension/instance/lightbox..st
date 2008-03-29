@@ -1,6 +1,6 @@
 *scriptaculous-components-call/answer
 lightbox: aComponent 
-	^ WAAnswerContinuation currentDo: [ :cc | 
+	^ WAContinuation currentDo: [ :cc | 
 		self 
 			show: aComponent
 			onAnswer: cc
