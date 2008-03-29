@@ -1,3 +1,3 @@
 accessing
 session
-	^ context session
+	^ self context session

@@ -1,3 +1,3 @@
 *Seaside-Core
 deprecatedApi: aString
-	WADeprecatedApi raiseSignal: aString
+	self deprecatedApi: aString in: nil

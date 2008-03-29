@@ -6,9 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"context",
 		"owner",
-		"key"
+		"key",
+		"renderContext"
 	],
 	"name" : "WACallback",
 	"type" : "normal"
