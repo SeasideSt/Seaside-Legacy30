@@ -1,3 +1,5 @@
 accessing
 session
-	^self value session
+	| context |
+	context := self value.
+	^context value isNil ifFalse: [ context session ]
