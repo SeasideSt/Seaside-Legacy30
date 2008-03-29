@@ -1,3 +1,0 @@
-scripts
-clearLoadScripts
-	scripts := nil

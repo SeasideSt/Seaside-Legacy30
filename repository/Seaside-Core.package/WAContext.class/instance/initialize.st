@@ -1,3 +1,4 @@
 initialize-release
 initialize
-	requestHandlers := OrderedCollection new
+	requestHandlers := OrderedCollection new.
+	properties := IdentityDictionary new
