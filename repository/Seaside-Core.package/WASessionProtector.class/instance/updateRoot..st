@@ -1,5 +1,5 @@
 forwarding
 updateRoot: html
 	super updateRoot: html.
-	(self verifyRequest: self context request)
+	(self verifyRequest: self session currentRequest)
 		ifFalse: [ self respondNotVerified ]

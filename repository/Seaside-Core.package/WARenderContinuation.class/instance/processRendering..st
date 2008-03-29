@@ -1,11 +1,11 @@
 private
-processRendering: aResponse
+processRendering: aResponse 
 	| document htmlRoot |
 	document := self newDocumentOn: aResponse.
-	context document: document.
+	renderContext document: document.
 	htmlRoot := self newHtmlRoot.
 	document open: htmlRoot.
-	self root decorationChainDo: [ :each | each renderWithContext: context ].
+	self root decorationChainDo: [ :each | each renderWithContext: renderContext ].
 	self writeOnLoadOn: document.
 	document close: htmlRoot.
-	context release
+	renderContext release
