@@ -6,7 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"parent"
+		"server",
+		"request",
+		"response",
+		"requestHandlers"
 	],
 	"name" : "WAContext",
 	"type" : "normal"

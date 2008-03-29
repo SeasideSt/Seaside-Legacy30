@@ -1,3 +1,3 @@
 instance creation
 new
-	^self on: WACurrentContext value
+	^self basicNew initialize
