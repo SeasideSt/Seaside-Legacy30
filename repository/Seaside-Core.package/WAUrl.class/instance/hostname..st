@@ -1,3 +1,4 @@
 accessing
 hostname: aString
-	hostname := aString asLowercase
+	hostname := aString isNil
+		ifFalse: [ aString asLowercase ]
