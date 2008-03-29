@@ -6,12 +6,14 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"server",
-		"request",
-		"response",
-		"requestHandlers",
-		"properties",
-		"subscribers"
+		"continuations",
+		"lastContinuation",
+		"monitor",
+		"currentRequest",
+		"scripts",
+		"jumpTo",
+		"cookiesEnabled",
+		"escapeContinuation"
 	],
 	"name" : "WAContext",
 	"type" : "normal"
