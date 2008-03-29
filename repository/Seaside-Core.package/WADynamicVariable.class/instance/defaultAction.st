@@ -1,3 +1,3 @@
 defaults
 defaultAction
-	^self class defaultValue
+	^ self class defaultValue

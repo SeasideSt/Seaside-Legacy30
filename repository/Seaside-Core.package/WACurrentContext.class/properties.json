@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "WADynamicVariable",
+	"super" : "WAProcessVariable",
 	"category" : "Seaside-Core-Contexts",
 	"classinstvars" : [ ],
 	"pools" : [ ],
