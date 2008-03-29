@@ -1,3 +1,4 @@
-initialization
+initialize-release
 initialize
-	requestHandlers := OrderedCollection new
+	requestHandlers := OrderedCollection new.
+	properties := WASmallDictionary new

@@ -14,4 +14,4 @@ setSelectionFrom: aStartInteger to: aStopInteger
 	aStopInteger isNumber
 		ifTrue: [aStream nextPut: $,; print: aStopInteger ].
 	aStream nextPut: $).
-	self session addLoadScript: aStream contents
+	self context addLoadScript: aStream contents
