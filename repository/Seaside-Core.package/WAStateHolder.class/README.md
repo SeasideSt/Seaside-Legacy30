@@ -1,1 +1,0 @@
-I am only where for migration purposes. Don't use WAStateHolder anymore. Backtracking is now done using #states. If you need an object that wraps a single value use WAValueHolder.
