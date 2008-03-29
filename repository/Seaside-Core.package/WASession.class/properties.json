@@ -9,7 +9,6 @@
 		"continuations",
 		"lastContinuation",
 		"monitor",
-		"currentRequest",
 		"jumpTo",
 		"cookiesEnabled",
 		"escapeContinuation"
