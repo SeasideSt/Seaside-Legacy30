@@ -1,3 +1,3 @@
-convenience
+accessing-context
 session
-	^ WACurrentSession value
+	^ self context sessionContext session

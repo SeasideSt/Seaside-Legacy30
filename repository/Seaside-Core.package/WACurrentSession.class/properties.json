@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "pmm 4/17/2007 00:15",
-	"super" : "WADynamicVariable",
+	"super" : "Object",
 	"category" : "Seaside-Core-Session",
 	"classinstvars" : [ ],
 	"pools" : [ ],

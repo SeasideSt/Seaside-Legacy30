@@ -1,0 +1,3 @@
+evaluating
+value
+	^WACurrentContext session
