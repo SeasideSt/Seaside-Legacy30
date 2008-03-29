@@ -1,3 +1,3 @@
 testing
 isEnabled
-	^ self session currentRequest isXmlHttpRequest not
+	^ self context request isXmlHttpRequest not

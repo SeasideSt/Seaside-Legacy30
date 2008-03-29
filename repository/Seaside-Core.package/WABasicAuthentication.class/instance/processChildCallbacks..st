@@ -1,5 +1,5 @@
 processing
 processChildCallbacks: aStream
-	(self verifyRequest: self session currentRequest)
+	(self verifyRequest: self context request)
 		ifTrue: [ super processChildCallbacks: aStream ]
 		ifFalse: [ self respondWithChallenge ]
