@@ -12,9 +12,9 @@ handleRequest: aRequest
 	
 	rootComponent := self createRootComponent.
 	
-	RRCurrentApplication
-		use: self
-		during: [ [
+	WAContext
+		pushRequestHandler: self
+		while: [ [
 			rootComponent initialRequest: aRequest.
 			rootComponent updateRoot: aRequest.
 			canvas render: rootComponent ]

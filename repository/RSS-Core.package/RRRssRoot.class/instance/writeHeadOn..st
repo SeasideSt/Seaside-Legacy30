@@ -1,6 +1,6 @@
 writing
 writeHeadOn: aDocument
-	self writePreamleOn: aDocument.
+	self writePreambleOn: aDocument.
 	self writeStylesOn: aDocument.
 	
 	aDocument openTag: 'rss' attributes: rssAttrs.
