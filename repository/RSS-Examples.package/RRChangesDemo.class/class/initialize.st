@@ -1,4 +1,4 @@
 initialization
 initialize
 	
-	"self registerAsApplication: 'changes.rss'"
+	self registerAsApplication: 'examples/changes.rss'

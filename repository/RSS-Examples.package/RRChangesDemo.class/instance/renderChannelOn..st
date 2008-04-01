@@ -4,7 +4,7 @@ renderChannelOn: rss
 		rss text: 'Recent changes to the Seaside image'.
 		rss space.
 		rss text: SeasidePlatformSupport shortImageName].
-	rss link: self baseUrl asString , '/'. "Should go to the default app if defined"
+	rss link: self baseUrl. "Should go to the default app if defined"
 	rss description: [
 		rss text: 'Changes that were recently made to the Seaside image.'.
 		rss space.

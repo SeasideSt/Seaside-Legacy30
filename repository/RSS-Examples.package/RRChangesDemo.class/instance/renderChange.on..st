@@ -9,5 +9,5 @@ renderChange: aChange on: rss
 		rss link: url.
 		rss description: [
 				rss renderHtml: [ :html |
-					self renderDescription:  aChange description on: html ]].
+					self renderDescription:  aChange description on: html ] ].
 		rss publicationDate: (RRRfc822DateTime newDateAndTime: aChange timestamp) ]
