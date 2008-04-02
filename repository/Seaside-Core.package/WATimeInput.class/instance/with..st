@@ -1,4 +1,4 @@
-public api
+public
 with: aBlock
 	value isNil ifTrue: [value := Time now].
 	hours := value hour.

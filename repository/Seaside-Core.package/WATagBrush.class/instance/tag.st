@@ -1,3 +1,3 @@
-private
+accessing
 tag
 	self subclassResponsibility

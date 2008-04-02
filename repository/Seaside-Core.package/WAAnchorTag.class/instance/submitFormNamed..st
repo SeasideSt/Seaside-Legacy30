@@ -1,4 +1,4 @@
-conveniance
+convenience
 submitFormNamed: aString
 	"Submits a form with the id aString."
 

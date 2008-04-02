@@ -1,3 +1,3 @@
-javascript
+testing
 canHaveShortcut
 	^true
