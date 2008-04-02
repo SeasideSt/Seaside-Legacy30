@@ -1,1 +1,1 @@
-The WATableHeadingTag is for headers only.
+The WATableHeadingTag defines a table header cell in a table. The text within the th element usually renders in bold.

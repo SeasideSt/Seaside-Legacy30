@@ -1,1 +1,2 @@
-The WATableDataTag is for data and for cells acting as header.
+The WATableDataTag defines a cell in a table.
+
