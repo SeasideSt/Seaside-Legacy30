@@ -1,3 +1,3 @@
-accessing
+accessing-scripts
 addLoadScript: aString
-	^self loadScripts add: aString
+	^ self loadScripts addLast: aString

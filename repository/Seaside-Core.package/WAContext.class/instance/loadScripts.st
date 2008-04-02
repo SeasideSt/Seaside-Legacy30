@@ -1,5 +1,5 @@
-accessing
+accessing-scripts
 loadScripts
-	^properties
+	^ properties
 		at: #loadScripts
 		ifAbsentPut: [ OrderedCollection new ]
