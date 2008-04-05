@@ -1,7 +1,7 @@
 accessing
 sessionCookie
 	"creates a new session cookie"
-	^ self newCookie
+	^ self context newCookie
 		key: self application handlerCookieName;
 		value: (self application ensureKeyForHandler: self) toString;
 		discard: true;

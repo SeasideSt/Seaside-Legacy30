@@ -1,7 +1,7 @@
 private
-setMethod: methodString url: urlString headers: headDict fields: fieldDict cookies: cookieDict
+setMethod: methodString url: urlString headers: headDict fields: fieldDict cookies: cookieCollection
 	method := methodString.
 	url := urlString.
 	headers := headDict.
 	fields := fieldDict.
-	cookies := cookieDict
+	cookies := cookieCollection
