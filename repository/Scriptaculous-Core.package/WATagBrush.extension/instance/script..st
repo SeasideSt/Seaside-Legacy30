@@ -4,4 +4,4 @@ script: aPrototype
 		ifTrue: [ ^ self ].
 	(aPrototype respondsTo: #id:)
 		ifTrue: [ aPrototype id: self ensureId ].
-	aPrototype session addLoadScript: aPrototype
+	aPrototype context addLoadScript: aPrototype
