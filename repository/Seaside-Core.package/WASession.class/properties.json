@@ -10,8 +10,7 @@
 		"lastContinuation",
 		"monitor",
 		"jumpTo",
-		"cookiesEnabled",
-		"escapeContinuation"
+		"cookiesEnabled"
 	],
 	"name" : "WASession",
 	"type" : "normal"
