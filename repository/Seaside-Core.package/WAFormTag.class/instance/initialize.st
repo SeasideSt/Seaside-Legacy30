@@ -1,4 +1,4 @@
 initialize-release
 initialize
 	super initialize.
-	self acceptCharset: WACurrentSession value charSet
+	self acceptCharset: self context application charSet

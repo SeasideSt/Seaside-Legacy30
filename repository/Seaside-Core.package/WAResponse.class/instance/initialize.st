@@ -1,9 +1,9 @@
 initialize-release
 initialize
-	| session |
+	| application |
 	stream := SeasidePlatformSupport readWriteStream.
 	status := 200.
-	session := WACurrentContext session.
-	contentType := session isNil
-		ifFalse: [ session contentType ]
+	application := WACurrentContext application.
+	contentType := application isNil
+		ifFalse: [ application contentType ]
 		ifTrue: [ self class defaultValueForContentType ]
