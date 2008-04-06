@@ -10,6 +10,7 @@ deleteCookie: aCookie
 	| cookie |
 	cookie := (WACookie key: aCookie key value: '')
 		path: aCookie path;
+		version: aCookie version;
 		yourself.
 	aCookie version isNil ifTrue: [
 		"old Netscape cookie with no path information, assumbe baseUrl and cross fingers"
