@@ -8,8 +8,7 @@ basicConnect: aRequest
 			contentType: ((WAMimeType main: 'text' sub: 'html') charset: self session charSet; yourself);
 			cacheForever;
 			contents: (String streamContents: [ :contents |
-				WACurrentSession
-					use: session
-					during: [ session updateRoot: root. root open: (WAHtmlStreamDocument new stream: contents) ].
+				session updateRoot: root. 
+				root open: (WAHtmlStreamDocument new stream: contents).
 				contents nextPutAll: (String new: 1024 withAll: Character space) ]);
 			writeOn: stream ])
