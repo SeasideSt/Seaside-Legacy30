@@ -1,9 +1,9 @@
 processing
-respond: aBlock
+respond: aBlock 
 	| response |
 	states := self newStates.
 	response := self newResponse.
-	WAContext response: response.
+	WARequestContext response: response.
 	aBlock value: response.
 	self updateStates: states.
 	self session returnResponse: response

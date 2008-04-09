@@ -1,3 +1,5 @@
 accessing-context
 session
-	^ self context session
+	"Answer the current session."
+
+	^ self requestContext session

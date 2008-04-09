@@ -1,9 +1,7 @@
 processing
-handleRequest: aRequest
-	aRequest isXmlHttpRequest ifTrue: [
-		self context onRespond: [ :r | states snapshot ] ].
+handleRequest: aRequest 
+	aRequest isXmlHttpRequest ifTrue: [ self requestContext onRespond: [ :r | states snapshot ] ].
 	self withNotificationHandler: [ self processCallbacks: aRequest ].
-	((self shouldRedirect: aRequest)
+	((self shouldRedirect: aRequest) 
 		ifTrue: [ self newRedirectContinuation ]
-		ifFalse: [ self newRenderContinuation ])
-			run
+		ifFalse: [ self newRenderContinuation ]) run

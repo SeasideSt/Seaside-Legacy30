@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WACurrentContext",
+	"name" : "WACurrentRequestContext",
 	"type" : "normal"
 }

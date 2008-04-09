@@ -1,3 +1,0 @@
-accessing
-currentRequestHandler
-	^self requestHandlers first

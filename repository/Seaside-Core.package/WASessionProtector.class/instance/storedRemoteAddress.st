@@ -1,5 +1,3 @@
 accessing
 storedRemoteAddress
-	remoteAddress isNil
-		ifTrue: [ remoteAddress := self remoteAddressFromRequest: self context request ].
-	^remoteAddress
+	^ remoteAddress ifNil: [ remoteAddress := self remoteAddressFromRequest: self requestContext request ]

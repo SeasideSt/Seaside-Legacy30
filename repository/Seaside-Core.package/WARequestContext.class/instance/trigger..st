@@ -4,6 +4,6 @@ trigger: anEvent
 	
 	subscribers ifNil: [ ^ anEvent ].
 	subscribers keysAndValuesDo: [ :class :actions |
-		(anEvent isKindOf: class) ifTrue: [
-			actions do: [ :action | action value: anEvent ] ] ].
+		(anEvent isKindOf: class)
+			ifTrue: [ actions do: [ :action | action value: anEvent ] ] ].
 	^ anEvent

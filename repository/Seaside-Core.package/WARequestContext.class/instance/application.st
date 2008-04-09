@@ -1,5 +1,7 @@
-accessing
+accessing-dynamic
 application
-	^requestHandlers
+	"Answer the current application or nil."
+
+	^ handlers 
 		detect: [ :each | each isKindOf: WAApplication ]
 		ifNone: [ nil ]

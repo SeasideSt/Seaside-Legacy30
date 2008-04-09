@@ -1,11 +1,16 @@
 private
-writeOnLoadOn: aDocument
+writeOnLoadOn: aDocument 
 	| attributes |
 	attributes := WAHtmlAttributes new.
-	attributes at: 'type' put: 'text/javascript'.
-	aDocument openTag: 'script' attributes: attributes closed: false.
+	attributes 
+		at: 'type'
+		put: 'text/javascript'.
+	aDocument 
+		openTag: 'script'
+		attributes: attributes
+		closed: false.
 	aDocument nextPutAll: '/*<![CDATA[*/function onLoad(){'.
-	self context loadScripts
+	self requestContext loadScripts 
 		do: [ :each | aDocument nextPutAll: each toString ]
 		separatedBy: [ aDocument nextPutAll: ';' ].
 	aDocument nextPutAll: '}/*]]>*/'.

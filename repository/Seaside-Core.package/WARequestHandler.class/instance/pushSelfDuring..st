@@ -1,5 +1,5 @@
 processing
-pushSelfDuring: aBlock
-	^WAContext
+pushSelfDuring: aBlock 
+	^ WARequestContext 
 		pushRequestHandler: self
 		while: aBlock

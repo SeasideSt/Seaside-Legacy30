@@ -1,3 +1,3 @@
 evaluating
 value
-	^WACurrentContext session
+	^ WACurrentRequestContext session

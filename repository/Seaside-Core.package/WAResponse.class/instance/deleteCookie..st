@@ -1,5 +1,5 @@
 accessing-cookies
-deleteCookie: aCookie
+deleteCookie: aCookie 
 	"Delete the cookie in the browser.
 	
 	The spec sez:
@@ -8,14 +8,14 @@ deleteCookie: aCookie
 	The trouble is:
 	Browsers that follow the Netscape spec don't send path information"
 	| cookie |
-	cookie := (WACookie key: aCookie key value: '')
+	cookie := (WACookie 
+		key: aCookie key
+		value: '')
 		path: aCookie path;
 		version: aCookie version;
 		yourself.
-	aCookie version isNil ifTrue: [
-		"old Netscape cookie with no path information, assumbe baseUrl and cross fingers"
-		cookie path: WACurrentContext value currentRequestHandler baseUrl pathString ].
-	
+	aCookie version isNil ifTrue: 
+		[ "old Netscape cookie with no path information, assumbe baseUrl and cross fingers"
+		cookie path: WACurrentRequestContext value handler baseUrl pathString ].
 	cookie expireInPast.
-	
 	self addCookie: cookie
