@@ -3,4 +3,4 @@ process
 	| response |
 	response := self defaultResponse.
 	self processOn: response stream.
-	self context returnResponse: response
+	self requestContext returnResponse: response

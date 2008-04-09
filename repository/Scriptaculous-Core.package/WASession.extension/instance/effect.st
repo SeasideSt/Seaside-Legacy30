@@ -1,3 +1,3 @@
 *scriptaculous-core
 effect
-	^ self context addLoadScript: SUEffect new
+	^ self requestContext addLoadScript: SUEffect new
