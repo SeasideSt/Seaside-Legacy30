@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "pmm 7/28/2007 08:54",
-	"super" : "WASubmitButtonTag",
+	"super" : "WAFormInputTag",
 	"category" : "Seaside-Core-Canvas-Tags",
 	"classinstvars" : [ ],
 	"pools" : [ ],

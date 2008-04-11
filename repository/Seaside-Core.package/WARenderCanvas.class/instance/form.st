@@ -1,3 +1,3 @@
-form-buttons
+form
 form
 	^ self brush: WAFormTag new

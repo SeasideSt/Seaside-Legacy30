@@ -1,3 +1,3 @@
 testing
 canHaveShortcut
-	^false
+	^ false
