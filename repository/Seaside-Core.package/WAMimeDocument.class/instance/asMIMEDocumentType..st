@@ -1,0 +1,3 @@
+converting
+asMIMEDocumentType: aMimeType
+	self subclassResponsibility
