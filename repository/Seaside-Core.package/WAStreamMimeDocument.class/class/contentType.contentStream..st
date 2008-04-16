@@ -1,6 +1,3 @@
 instance creation
 contentType: aMimeType contentStream: aStream
-	^self new
-		contentType: aMimeType;
-		stream: aStream;
-		yourself
+	^self new initializeWithContentType: aMimeType contentStream: aStream
