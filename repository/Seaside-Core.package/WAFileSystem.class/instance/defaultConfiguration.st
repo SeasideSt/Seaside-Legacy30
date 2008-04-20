@@ -1,3 +1,0 @@
-configuration
-defaultConfiguration
-	^ super defaultConfiguration addAncestor: WAFileSystemConfiguration new
