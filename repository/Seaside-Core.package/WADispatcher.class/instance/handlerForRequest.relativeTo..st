@@ -1,14 +1,14 @@
-processing
+private
 handlerForRequest: aRequest relativeTo: aString
-	| fullUrl relativeUrl handlerName |
-	fullUrl := aRequest url.
-	(aString isEmpty or: [ fullUrl beginsWith: aString ]) ifTrue: [
-		relativeUrl := fullUrl allButFirst: aString size.
-		handlerName := (relativeUrl notEmpty and: [ relativeUrl first = $/ ])
-			ifTrue: [ (relativeUrl findTokens: '/') at: 1 ifAbsent: [ self defaultName ] ]
-			ifFalse: [ self defaultName ].
-		^ self entryPoints at: handlerName ifAbsent: [
-			self entryPoints
-				at: self defaultName
-				ifAbsent: [ WANotFoundHandler new ] ] ].
-       ^ WANotFoundHandler new
+	| requestUrl baseUrl relativePath |
+	requestUrl := WAUrl new parsePath: aRequest url; yourself.
+	requestUrl path isEmpty ifTrue: [
+		^self handlerOrNotFoundAt: self defaultName ].
+	
+	baseUrl := WAUrl new addAllToPath: self path; yourself.
+	relativePath := baseUrl relativeTo: requestUrl.
+	
+	relativePath isEmpty ifTrue: [
+		^self handlerOrNotFoundAt: self defaultName ].
+		
+	^ self handlerOrNotFoundAt: relativePath first
