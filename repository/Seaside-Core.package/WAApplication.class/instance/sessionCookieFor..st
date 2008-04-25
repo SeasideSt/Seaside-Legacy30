@@ -2,24 +2,30 @@ private
 sessionCookieFor: aRequest
 	"returns the session cookie or nil"
 
-	| candidates path |
+	| candidates requestUrl |
 	candidates := aRequest cookiesAt: self handlerCookieName.
+	
 	candidates isEmptyOrNil
 		ifTrue: [ ^nil ].
-	
 	candidates size = 1 
 		ifTrue: [ ^candidates first ].
 		
-	path := aRequest url findTokens: $/.
+	requestUrl := WAUrl new parsePath: aRequest url; yourself.
 	candidates := candidates collect: [ :each |
-		each -> (each path findTokens: $/) ].
+		each -> ((WAUrl new parsePath: each path; yourself) relativeTo: requestUrl) ].
 	
 	candidates := candidates reject: [ :each |
-		each value size > path size ].
+		| path |
+		path := each value.
+		path notEmpty and: [ path first = '..' ] ].
+	
+	candidates isEmpty
+		ifTrue: [  ^nil ].
+	candidates size = 1 
+		ifTrue: [ ^candidates first ].
 	
 	candidates sort: [ :a :b |
-		(self firstDifferenceBetween: a value and: path)
-			> (self firstDifferenceBetween: b value and: path) ].
+		a value size < b value size ].
 	
 	^candidates first key
 	
