@@ -1,7 +1,7 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "lr 4/28/2008 09:47",
 	"super" : "WAHtmlStreamDocument",
-	"category" : "Scriptaculous-Core",
+	"category" : "Scriptaculous-Core-Private",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

@@ -1,3 +1,3 @@
 printing
-printOn: aStream
+printContentOn: aStream
 	aStream nextPutAll: self contents

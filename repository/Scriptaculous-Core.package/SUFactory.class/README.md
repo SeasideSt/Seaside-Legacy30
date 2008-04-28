@@ -1,1 +1,1 @@
-I am a factory to create Scriptaculous objects. Actually I should be a Trait.
+I am a factory to create Scriptaculous objects.
