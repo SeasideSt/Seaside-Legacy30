@@ -1,3 +1,3 @@
 accessing
 selectorsToInclude
-	^ #( treeReportCss tabPanelCss accordionCss )
+	^ #( treeReportCss tabPanelCss accordionCss titlePaneCss carouselCss carouselComponentCss datePickerCss splitterCss)

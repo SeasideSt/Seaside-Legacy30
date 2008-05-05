@@ -1,9 +1,9 @@
-rendering
-style
+styles
+splitterCss
 	^ '.splitter-horizontal .handle {
 	height: 5px;
 	position: relative;
-	background-color: red;
+	background-color: #c5dea1;
 	cursor: row-resize;
 }
 
@@ -16,6 +16,6 @@ style
 	height: 200px;
 	position: relative;
 	cursor: col-resize;
-	background-color: red;
+	background-color: #c5dea1;
 
 }'
