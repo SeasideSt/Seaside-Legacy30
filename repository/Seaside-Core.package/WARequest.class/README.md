@@ -7,6 +7,7 @@ Instance Variables
 	nativeRequest:	<Object>
 	cookies:			<Collection<WARequestCookie>>
 	method:			<String>
+	remoteAddress:	<String>
 
 url
 	- The request path without the query string. For example if the client requested 'http://www.google.com/search?q=seaside' then the contents of url would be '/search'.
@@ -25,3 +26,6 @@ nativeRequest
 	
 method
 	- the HTTP method, should be upper case. In general only 'GET' and 'POST' are encountered in Seaside. SqueakSource also supports 'PUT'.
+	
+remoteAddress
+	- the IP address of the client. If the server is behind a reverse proxy then this is '127.0.0.1'. This could in theory also be an IPv6 address.

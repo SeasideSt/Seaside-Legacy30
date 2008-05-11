@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "pmm 5/9/2008 21:59",
+	"commentStamp" : "pmm 5/11/2008 22:14",
 	"super" : "Object",
 	"category" : "Seaside-Core-HTTP",
 	"classinstvars" : [ ],
@@ -12,7 +12,8 @@
 		"cookies",
 		"method",
 		"nativeRequest",
-		"responseStream"
+		"responseStream",
+		"remoteAddress"
 	],
 	"name" : "WARequest",
 	"type" : "normal"
