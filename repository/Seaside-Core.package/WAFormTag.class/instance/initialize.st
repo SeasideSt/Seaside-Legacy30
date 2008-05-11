@@ -1,4 +1,4 @@
 initialize-release
 initialize
 	super initialize.
-	self acceptCharset: self requestContext application charSet
+	self acceptCharset: self defaulUrlCharset

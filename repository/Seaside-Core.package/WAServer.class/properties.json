@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "pmm 5/11/2008 08:13",
+	"super" : "Object",
+	"category" : "Seaside-Core-HTTP",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"codec"
+	],
+	"name" : "WAServer",
+	"type" : "normal"
+}

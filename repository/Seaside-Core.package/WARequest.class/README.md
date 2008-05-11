@@ -15,7 +15,7 @@ headers
 	- The header of the HTTP request. This is a Dictionary mapping lowercase strings to other strings.
 	
 fields
-	- The HTTP request parameters. Depending on the type of the request this will either be the GET or PUT paramters. In general this is a dictionary mapping Strings to Strings. In the case of multivalued paramters it maps Strings to a Collection of Strings.
+	- The HTTP request parameters. These are the GET and POST parameters in combined into a single dictionary. In general this is a dictionary mapping Strings to Strings. In the case of multivalued paramters or parameters specified in both GET and POST it maps Strings to a Collection of Strings.
 	
 cookies
 	- The collection of cookies (instance of WARequestCookie) the client sent. Note not all clients support all fields. E.g. you might send a path but the client might not return it. Note there can be several cookies with the same key but a different domain or path. See the #cookiesAt: method.

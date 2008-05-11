@@ -6,6 +6,5 @@ encode: aCharacter on: aStream
 	aCharacter = Character space
 		ifTrue: [ ^ aStream nextPut: $+ ].
 	value := aCharacter asInteger.
-	[ aStream nextPut: $%; nextPutAll: (((value \\ 256) printStringBase: 16) padded: #left to: 2 with: $0).
-	  value := value // 256.
-	  value = 0 ] whileFalse
+	aStream nextPut: $%.
+	aStream nextPutAll: ((value printStringBase: 16) padded: #left to: 2 with: $0)
