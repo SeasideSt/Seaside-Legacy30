@@ -1,6 +1,7 @@
 private
 sessionCookieFor: aRequest
-	"returns the session cookie or nil"
+	"answers the session cookie or nil
+	There can be several cookies with the correct key (_s). We try to find the one who has the most specific path."
 
 	| candidates requestUrl |
 	candidates := aRequest cookiesAt: self handlerCookieName.
@@ -18,14 +19,13 @@ sessionCookieFor: aRequest
 		| path |
 		path := each value.
 		path notEmpty and: [ path first = '..' ] ].
-	
+
 	candidates isEmpty
 		ifTrue: [  ^nil ].
-	candidates size = 1 
-		ifTrue: [ ^candidates first ].
-	
-	candidates sort: [ :a :b |
-		a value size < b value size ].
+		
+	candidates size > 1
+		ifTrue: [
+			candidates sort: [ :a :b |
+				 a value size <= b value size ] ].
 	
 	^candidates first key
-	
