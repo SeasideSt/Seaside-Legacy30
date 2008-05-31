@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "IdentityDictionary",
+	"super" : "Object",
 	"category" : "Seaside-Core-RenderLoop",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"objects"
+	],
 	"name" : "WASnapshot",
 	"type" : "normal"
 }

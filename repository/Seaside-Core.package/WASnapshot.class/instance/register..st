@@ -1,3 +1,3 @@
 registry
 register: anObject
-	anObject ifNotNil: [ self at: anObject put: anObject snapshotCopy ]
+	anObject ifNotNil: [ objects at: anObject put: anObject snapshotCopy ]
