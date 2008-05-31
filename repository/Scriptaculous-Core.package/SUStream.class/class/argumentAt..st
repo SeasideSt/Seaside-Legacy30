@@ -1,6 +1,6 @@
 accessing
 argumentAt: anInteger
-	^ SUStream new
+	^ self new
 		nextPutAll: 'arguments[';
 		javascript: anInteger - 1;
 		nextPutAll: ']'
