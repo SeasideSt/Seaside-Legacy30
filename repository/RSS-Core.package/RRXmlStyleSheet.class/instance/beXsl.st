@@ -1,3 +1,3 @@
 attributes
 beXsl
-	self type: 'text/xsl'
+	self type: 'text/xsl' toMimeType
