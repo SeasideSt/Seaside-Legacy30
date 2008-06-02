@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "pmm 6/1/2008 00:13",
 	"super" : "WAResponse",
 	"category" : "Seaside-Core-HTTP",
 	"classinstvars" : [ ],

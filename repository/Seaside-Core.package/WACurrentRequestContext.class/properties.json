@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "pmm 6/1/2008 00:38",
 	"super" : "WAProcessVariable",
 	"category" : "Seaside-Core-Contexts",
 	"classinstvars" : [ ],
