@@ -1,0 +1,1 @@
+I redirect to a WARenderContinuation. I am necessary to avoid the execution of anchor and form callbacks, when the back-button is used.
