@@ -7,8 +7,8 @@ Instance Variables
 	headAttrs:		<WAHtmlAttributes>
 	headElements:	<OrderedCollection<WAHtmlElement>>
 	htmlAttrs:		<WAHtmlAttributes>
-	scripts:			<OrderedCollection<String>>
-	styles:			<OrderedCollection<String>>
+	scripts:			<Set<String>>
+	styles:			<Set<String>>
 	title:			<String>
 
 bodyAttrs
@@ -30,10 +30,10 @@ htmlAttrs
 	- the attriebutes of the <html> element
 
 scripts
-	- xxxxx
+	- contains the strings returned by WAPresenter >> #script
 
 styles
-	- xxxxx
+	- contains the strings returned by WAPresenter >> #style
 
 title
 	- the title of the HTML document, the contents of the <title> element
