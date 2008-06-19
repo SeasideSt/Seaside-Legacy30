@@ -2,4 +2,4 @@ actions
 restore
 	"Restore all the backtracked states."
 
-	objects keysAndValuesDo: [ :key :value | key restoreFromSnapshot: value ]
+	self keysAndValuesDo: [ :key :value | key restoreFromSnapshot: value ]

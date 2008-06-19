@@ -4,7 +4,7 @@ This class is for serving smallish files like PNG images etc using WADocumentHan
 
 or:
 
-	html image fileName: 'myimage.blurp' mimeType: 'blurp' toMimeType
+	html image fileName: 'myimage.blurp' mimeType: 'blurp'
 
 This will create a request handler in your WAApplication registry that is accessible on a unique URL and does not expire.
 The actual contents of the file will only be read upon first access, we could augment this class with smarter caching, like checking the modification time on disk.

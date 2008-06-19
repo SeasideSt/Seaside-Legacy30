@@ -1,10 +1,9 @@
 processing
 respond: aBlock 
-	| response context |
+	| response |
 	states := self newStates.
 	response := self newResponse.
-	context := WACurrentRequestContext value.
-	context response: response.
-	context onRespond: [ :value | self updateStates: states ].
+	WARequestContext response: response.
 	aBlock value: response.
-	context returnResponse: response
+	self updateStates: states.
+	self session returnResponse: response

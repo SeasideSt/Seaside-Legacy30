@@ -17,5 +17,3 @@ http://tools.ietf.org/html/rfc2965
 HttpOnly
 http://msdn2.microsoft.com/en-us/library/ms533046.aspx
 https://bugzilla.mozilla.org/show_bug.cgi?id=178993
-
-Compared to WARequestCookie I represent the information that is sent to the user agent.
