@@ -1,3 +1,5 @@
 registry
 register: anObject
-	anObject ifNotNil: [ self at: anObject put: anObject snapshotCopy ]
+	"Register anObject for backtracking."
+
+	anObject ifNotNil: [ objects at: anObject put: anObject snapshotCopy ]

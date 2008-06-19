@@ -7,7 +7,7 @@ performRendering: anObject
 	session := WACurrentSession value.
 	document := session outputDocumentClass new.
 	response := WAResponse new.
-	response headerAt: 'Cache-Control' put: 'No-cache'.
+	response doNotCache.
 	document stream: response stream.
 	canvas context document: document.
 	docRoot open: document.

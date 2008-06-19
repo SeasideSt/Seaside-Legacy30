@@ -18,6 +18,6 @@ parseHost: aString
 	index > 0 ifTrue: [
 		temp := string copyFrom: index + 1 to: string size.
 		string := string copyFrom: 1 to: index - 1.
-		self port: ((temp allSatisfy: [ :each | each isDigit ])
+		self port: ((temp notEmpty and: [ temp allSatisfy: [ :each | each isDigit ] ])
 			ifTrue: [ temp asInteger ]) ].
 	self hostname: (self decode: string)
