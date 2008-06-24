@@ -1,0 +1,3 @@
+private
+isVisible
+	^component notNil
