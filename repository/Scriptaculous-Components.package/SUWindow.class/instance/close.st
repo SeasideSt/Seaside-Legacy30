@@ -1,3 +1,4 @@
 actions
 close
-	component := nil
+	closed := true
+	"component := nil"

@@ -1,3 +1,3 @@
 accessing
 containerId
-	^'window_container'
+	^'container_', self windowId

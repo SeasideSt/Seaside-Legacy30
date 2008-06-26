@@ -1,3 +1,4 @@
 accessing
 windowId
-	^'suwindow'
+	id ifNil: [id := 'suwindow'].
+	^id

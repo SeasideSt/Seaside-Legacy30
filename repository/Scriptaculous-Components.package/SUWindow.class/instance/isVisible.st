@@ -1,3 +1,3 @@
 private
 isVisible
-	^component notNil
+	^closed not

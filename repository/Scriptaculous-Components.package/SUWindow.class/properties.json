@@ -8,9 +8,13 @@
 	"instvars" : [
 		"title",
 		"component",
+		"id",
 		"componentBlock",
 		"extent",
-		"origin"
+		"origin",
+		"properties",
+		"collapsed",
+		"closed"
 	],
 	"name" : "SUWindow",
 	"type" : "normal"
