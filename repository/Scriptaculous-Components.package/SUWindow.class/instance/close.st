@@ -1,4 +1,4 @@
 actions
 close
-	closed := true
+	visible := false
 	"component := nil"

@@ -2,8 +2,10 @@ scripting
 scriptOpenOn: aScript
 	self isVisible
 		ifFalse: [
-			aScript element
-				id: self windowId; show.
+			visible := true.
+"			aScript element
+				id: self windowId; show."
+			aScript effect id: self windowId; duration: 0.3; appear.
 			aScript element
 				id: self containerId;
 				insert: [:html | 

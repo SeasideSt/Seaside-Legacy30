@@ -1,9 +1,9 @@
 initialize-release
 initialize
 	super initialize.
-	extent := 300@200.
-	origin := 100@100.
+	extent := 300 @ 200.
+	origin := 100 @ 100.
 	title := 'SU_Window'.
-	componentBlock := [].
+	componentBlock := [  ].
 	collapsed := false.
-	closed := true
+	visible := false
