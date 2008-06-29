@@ -1,8 +1,15 @@
 instance creation
 notFound: locationString
-	^ self new
-		notFound;
-		nextPutAll: '<h1> Error: "';
-		nextPutAll: locationString;
-		nextPutAll: '" not found. </h1>';
-		yourself
+	| response content |
+	response := self new notFound.
+	content := WARenderCanvas builder
+		fullDocument: true;
+		rootBlock: [ :root |
+			root title: 'Not Found' ];
+		render: [ :html |
+			html heading level1; with: [
+				html render: 'Error: "'.
+				html render: locationString.
+				html render: '" not found' ] ].
+	response nextPutAll: content.
+	^ response

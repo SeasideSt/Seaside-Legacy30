@@ -1,8 +1,15 @@
 instance creation
 forbidden: locationString
-	^ self new
-		forbidden;
-		nextPutAll: '<h1> Error: you are forbidden to access "';
-		nextPutAll: locationString;
-		nextPutAll: '". </h1>';
-		yourself
+	| response content |
+	response := self new forbidden.
+	content := WARenderCanvas builder
+		fullDocument: true;
+		rootBlock: [ :root |
+			root title: 'Forbidden' ];
+		render: [ :html |
+			html heading level1; with: [
+				html render: 'Error: you are forbidden to access "'.
+				html render: locationString.
+				html render: '"' ] ].
+	response nextPutAll: content.
+	^ response
