@@ -2,7 +2,6 @@ rendering
 renderContentOn: html
 	self close.
 	collapsed := false.
-	"html div id: 'overlay'."
 	html div id: self windowId;
 		 script: (html draggable handle: self titleId; revert: false);
 		class: self cssClass;
