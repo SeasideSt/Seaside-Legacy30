@@ -1,7 +1,7 @@
 string-encoding
 encode: aString to: aStream
 	| char value encoded |
-	aStream nextPut: $".
+	aStream nextPut: $'.
 	1 to: aString size do: [ :index |
 		char := aString at: index.
 		value := char asInteger.
@@ -14,4 +14,4 @@ encode: aString to: aStream
 				encoded isString
 					ifTrue: [ aStream nextPutAll: encoded ]
 					ifFalse: [ aStream nextPut: encoded ] ] ].
-	aStream nextPut: $"
+	aStream nextPut: $'
