@@ -1,5 +1,6 @@
 instance creation
 fromString: aString
+	"Creates an array of cookies from a HTTP Cookie: header value."
 	| version tokens cookieLine current |
 	cookieLine := aString.
 	aString isEmptyOrNil ifTrue: [ ^#() ]. 
