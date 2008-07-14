@@ -1,6 +1,6 @@
 processing
-processWith: aString
+processWith: argumentString
 	| response |
 	response := self defaultResponse.
-	self processOn: response stream with: aString.
+	self processOn: response stream with: argumentString.
 	self requestContext returnResponse: response

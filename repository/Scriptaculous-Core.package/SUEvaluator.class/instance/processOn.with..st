@@ -1,5 +1,5 @@
 processing
-processOn: aStream 
+processOn: aStream with: unused
 	| script |
 	script := SUScript on: canvas.
 	callback ifNotNil: [ callback value: script ].

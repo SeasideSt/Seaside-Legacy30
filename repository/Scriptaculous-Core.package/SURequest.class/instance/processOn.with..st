@@ -1,3 +1,3 @@
 processing
-processOn: aStream
+processOn: aStream with: unused
 	callback ifNotNil: [ callback value ]
