@@ -1,4 +1,4 @@
 actions
 handleError: anError
-	WACurrentSession value
+	WACurrentRequestContext value
 		returnResponse: (WAResponse internalError: anError)
