@@ -4,5 +4,5 @@ handleExpiredRequest: aRequest
 	response := super handleExpiredRequest: aRequest.
 	sessionCookie := (self sessionCookieFor: aRequest).
 	sessionCookie isNil
-		ifFalse: [ response deleteCookieAt: sessionCookie ].
+		ifFalse: [ response deleteCookie: sessionCookie ].
 	^ response
