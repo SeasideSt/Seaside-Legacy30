@@ -9,5 +9,5 @@ registerAsAuthenticatedApplication: aString
 	password := SeasidePlatformSupport
 		request: 'Please enter a password for ' , aString printString.
 	application preferenceAt: #login put: user.
-	application preferenceAt: #password put: password.
+	application preferenceAt: #password put: (SeasidePlatformSupport hashString: password).
 	^ application

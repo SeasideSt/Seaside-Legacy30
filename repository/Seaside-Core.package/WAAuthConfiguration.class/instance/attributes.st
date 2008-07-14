@@ -5,7 +5,7 @@ attributes
 			key: #login
 			group: #authentication
 			comment: 'The username for this application.')
-		with: (WAStringAttribute
+		with: (WAPasswordAttribute
 			key: #password
 			group: #authentication
 			comment: 'The password for this application.')

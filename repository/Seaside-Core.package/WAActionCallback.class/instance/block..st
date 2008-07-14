@@ -1,3 +1,3 @@
 accessing
-block: aZeroArgBlock
-	block := aZeroArgBlock fixCallbackTemps
+block: aZeroOrOneArgBlock
+	block := aZeroOrOneArgBlock fixCallbackTemps
