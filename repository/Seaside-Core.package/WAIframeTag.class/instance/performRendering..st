@@ -1,11 +1,11 @@
 private
 performRendering: anObject
-	| innerContext docRoot session document response renderer |
+	| innerContext docRoot document response renderer requestContext |
 	innerContext := canvas context copy.
 	docRoot := WAHtmlRoot context: innerContext.
 	docRoot base target: '_top'.
-	session := WACurrentSession value.
-	document := session outputDocumentClass new.
+	requestContext := WACurrentRequestContext value.
+	document := requestContext session outputDocumentClass new.
 	response := WAResponse new.
 	response doNotCache.
 	document stream: response stream.
@@ -15,4 +15,4 @@ performRendering: anObject
 	renderer render: anObject;
 		 flush.
 	docRoot close: document.
-	session returnResponse: response
+	requestContext returnResponse: response

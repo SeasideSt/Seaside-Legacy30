@@ -1,3 +1,3 @@
 documents
 registry
-	^ WACurrentSession value application
+	^ WACurrentRequestContext application
