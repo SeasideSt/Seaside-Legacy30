@@ -2,9 +2,8 @@ processing
 handleRequest: aRequest 
 	| response document context canvas root rootComponent |
 	response := WAResponse new contentType: RRRssRoot defaultContentType.
-	document := WAHtmlStreamDocument new.
+	document := self newDocumentOn: response stream.
 	root := RRRssRoot new.
-	document stream: response stream.
 	document open: root.
 	context := WARenderingContext new document: document.
 	canvas := RRRssRenderCanvas 
