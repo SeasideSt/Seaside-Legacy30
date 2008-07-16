@@ -8,8 +8,7 @@
 	"instvars" : [
 		"key",
 		"group",
-		"comment",
-		"default"
+		"comment"
 	],
 	"name" : "WAConfigurationAttribute",
 	"type" : "normal"

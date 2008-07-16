@@ -1,3 +1,0 @@
-attributes
-overrides
-	^ IdentityDictionary new

@@ -1,7 +1,7 @@
 private
 processRendering: aResponse 
 	| document htmlRoot |
-	document := self application newDocumentOn: aResponse stream.
+	document := self newDocumentOn: aResponse.
 	renderContext document: document.
 	htmlRoot := self newHtmlRoot.
 	document open: htmlRoot.
