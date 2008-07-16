@@ -18,8 +18,7 @@ handleRequest: aRequest
 			rootComponent updateRoot: aRequest.
 			canvas render: rootComponent ] 
 				on: Error
-				do: 
-					[ :err | 
+				do: [ :err |
 					self openDebugger 
 						ifTrue: [ SeasidePlatformSupport openDebuggerOn: err ]
 						ifFalse: [ response := WAResponse internalError: err ] ] ].
