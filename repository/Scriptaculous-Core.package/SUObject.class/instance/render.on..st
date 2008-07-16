@@ -1,7 +1,7 @@
 utilities
 render: anObject on: aStream
 	| document html previous |
-	WACurrentRequestContext value rememberLoadScripts: [ 
+	self requestContext rememberLoadScripts: [ 
 		document := SUDocument new.
 		document stream: aStream; open: nil.
 		previous := canvas context document.
