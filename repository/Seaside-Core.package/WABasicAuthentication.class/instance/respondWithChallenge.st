@@ -1,3 +1,3 @@
 processing
 respondWithChallenge
-	self requestContext returnResponse: (WAResponse basicAuthWithRealm: self realm)
+	self session returnResponse: (WAResponse basicAuthWithRealm: self realm)
