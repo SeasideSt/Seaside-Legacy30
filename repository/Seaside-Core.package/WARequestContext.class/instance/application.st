@@ -3,5 +3,5 @@ application
 	"Answer the current application or nil."
 
 	^ handlers 
-		detect: [ :each | each isKindOf: WAApplication ]
+		detect: [ :each | each isApplication ]
 		ifNone: [ nil ]

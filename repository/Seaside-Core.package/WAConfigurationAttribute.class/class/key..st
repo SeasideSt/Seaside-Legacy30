@@ -1,3 +1,3 @@
 instance-creation
 key: aSymbol
-	^ self key: aSymbol group: nil
+	^ self basicNew initializeWithKey: aSymbol
