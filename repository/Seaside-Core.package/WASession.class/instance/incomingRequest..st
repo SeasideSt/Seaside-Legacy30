@@ -4,7 +4,7 @@ incomingRequest: aRequest
 	((aRequest fields includesKey: 'terminate') and: [ self application deploymentMode not ]) ifTrue: 
 		[ monitor terminate.
 		^ WAResponse new nextPutAll: 'Process terminated' ].
-	context := WACurrentRequestContext value.
+	context := self requestContext.
 	^ monitor 
 		critical: 
 			[ WACurrentRequestContext 
