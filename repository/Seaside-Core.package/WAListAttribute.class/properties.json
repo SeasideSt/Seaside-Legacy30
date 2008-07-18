@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"options"
+		"optionsBlock"
 	],
 	"name" : "WAListAttribute",
 	"type" : "normal"

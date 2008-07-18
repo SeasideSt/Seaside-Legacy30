@@ -11,7 +11,7 @@ attributes
 			yourself)
 		with: ((WAListAttribute key: #rootComponent)
 			comment: 'The root component of this seaside application.';
-			options: self rootComponents;
+			options: [self rootComponents];
 			yourself)
 		with: ((WAStringAttribute key: #resourceBaseUrl)
 			group: #server;

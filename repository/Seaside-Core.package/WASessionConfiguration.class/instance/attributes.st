@@ -7,26 +7,26 @@ attributes
 			yourself);
 		add: ((WAListAttribute key: #sessionClass)
 			comment: 'Sessions in this application will be instances of this class.';
-			options: self sessionClasses;
+			options: [self sessionClasses];
 			default: WASession;
 			yourself);
 		add: ((WAListAttribute key: #mainClass)
-			options: self mainClasses;
+			options: [self mainClasses];
 			yourself);
 		add: ((WAListAttribute key: #errorHandler)
-			options: self errorHandlerClasses;
+			options: [self errorHandlerClasses];
 			default: WASimpleErrorHandler;
 			yourself);
 		add: ((WAListAttribute key: #redirectHandler)
-			options: self redirectHandlerClasses;
+			options: [self redirectHandlerClasses];
 			default: WARedirectHandler;
 			yourself);
 		add: ((WAListAttribute key: #renderContinuationClass)
-			options: self renderContinuationClasses;
+			options: [self renderContinuationClasses];
 			default: WARenderContinuation; 
 			yourself);
 		add: ((WAListAttribute key: #redirectContinuationClass)
-			options: self redirectContinuationClasses;
+			options: [self redirectContinuationClasses];
 			default: WARenderContinuation;
 			yourself);
 		add: ((WABooleanAttribute key: #useSessionCookie)
@@ -34,11 +34,11 @@ attributes
 			default: false;
 			yourself);
 		add: ((WACollectionAttribute key: #libraries)
-			options: self libraryClasses;
+			options: [self libraryClasses];
 			default: (Array with: WAStandardFiles);
 			yourself);
 		add: ((WACollectionAttribute key: #decorationClasses)
-			options: self allDecorationClasses;
+			options: [self allDecorationClasses];
 			default: #();
 			yourself);
 		yourself
