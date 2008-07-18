@@ -9,6 +9,7 @@
 		"key",
 		"group",
 		"comment",
+		"label",
 		"default"
 	],
 	"name" : "WAConfigurationAttribute",

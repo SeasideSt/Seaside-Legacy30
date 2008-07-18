@@ -8,4 +8,5 @@ attributes
 		with: ((WAPasswordAttribute key: #passwordHash)
 			group: #authentication;
 			comment: 'The password for this application.';
+			label: 'Password';
 			yourself)
