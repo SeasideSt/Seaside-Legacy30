@@ -1,3 +1,3 @@
 ancestry
 ancestors
-	^ Array with: WASessionConfiguration new
+	^ Array with: WASessionConfiguration instance

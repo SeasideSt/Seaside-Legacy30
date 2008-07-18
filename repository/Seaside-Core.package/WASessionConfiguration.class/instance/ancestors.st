@@ -1,3 +1,3 @@
 ancestry
 ancestors
-	^ Array with: WAGlobalConfiguration new
+	^ Array with: WAGlobalConfiguration instance
