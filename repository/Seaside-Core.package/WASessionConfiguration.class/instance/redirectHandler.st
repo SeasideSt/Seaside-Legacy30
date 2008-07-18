@@ -1,3 +1,0 @@
-defaults
-redirectHandler
-	^ WARedirectHandler

@@ -1,8 +1,7 @@
 request handling
 handleExpiredRequest: aRequest
-	| response sessionCookie |
+	| response |
 	response := super handleExpiredRequest: aRequest.
-	sessionCookie := (self sessionCookieFor: aRequest).
-	sessionCookie isNil
-		ifFalse: [ response deleteCookie: sessionCookie ].
+	(self sessionCookieFor: aRequest) isNil
+		ifFalse: [ response deleteCookieAt: self handlerCookieName ].
 	^ response
