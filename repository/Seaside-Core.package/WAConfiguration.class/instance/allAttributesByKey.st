@@ -1,7 +1,8 @@
 attributes
-allAttributes
+allAttributesByKey
 	| attributes |
-	attributes := WAAttributes ordered.
+	attributes := WAAttributes keyed.
 	self withAllAncestorsDo: [ :each | attributes addAttributesFrom: each ].
 	 
 	^ attributes all
+		

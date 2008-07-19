@@ -1,3 +1,3 @@
-values
+attributes
 localAttributeNamed: aSymbol ifAbsent: absentBlock
-	^ self attributes detect: [:each | each key == aSymbol] ifNone: absentBlock
+	^ self attributesByKey at: aSymbol ifAbsent: absentBlock
