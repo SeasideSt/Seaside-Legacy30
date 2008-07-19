@@ -1,3 +1,6 @@
 attributes
 attributes
-	self subclassResponsibility
+	| attributes |
+	attributes := WAAttributes orderedForConfiguration: self.
+	self addAttributes: attributes.
+	^ attributes all
