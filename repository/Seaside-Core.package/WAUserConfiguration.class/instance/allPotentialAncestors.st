@@ -1,3 +1,3 @@
 ancestry
 allPotentialAncestors
-	^ WASystemConfiguration allSubclasses collect: [:ea | ea instance]
+	^ WASystemConfiguration allSubclasses collect: [:ea | ea new]

@@ -1,3 +1,3 @@
-attributes
+defaults
 redirectContinuationClasses
 	^ WARedirectContinuation withAllSubclasses

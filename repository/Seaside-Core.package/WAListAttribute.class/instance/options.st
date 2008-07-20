@@ -1,5 +1,3 @@
 accessing
 options
-	^ optionsBlock isNil
-		ifTrue: [#()]
-		ifFalse: optionsBlock
+	^ options
