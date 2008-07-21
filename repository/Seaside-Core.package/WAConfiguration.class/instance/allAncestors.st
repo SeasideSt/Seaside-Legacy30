@@ -1,7 +1,8 @@
 ancestry
 allAncestors
-	| temp linear |
-	temp := OrderedCollection new.
-	linear := OrderedCollection new.
-	self addAncestorsTo: temp linearization: linear.
-	^ linear removeFirst; asArray
+	"As it happens, the 'seen' set gives us the result we need"
+	| set |
+	set := IdentitySet new.
+	self allAncestorsDo: [ :each | "nothing" ] seen: set.
+	^ set
+	
