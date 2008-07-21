@@ -1,14 +1,17 @@
 {
-	"commentStamp" : "rew 10/7/2007 12:50",
+	"commentStamp" : "jf 7/19/2008 13:54",
 	"super" : "Object",
 	"category" : "Seaside-Core-Configuration",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
+		"configuration",
 		"key",
 		"group",
-		"comment"
+		"comment",
+		"label",
+		"default"
 	],
 	"name" : "WAConfigurationAttribute",
 	"type" : "normal"

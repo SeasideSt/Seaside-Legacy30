@@ -1,3 +1,3 @@
 ancestry
 ancestors
-	^ Array with: WARenderLoopConfiguration new
+	^ Array with: WARenderLoopConfiguration instance

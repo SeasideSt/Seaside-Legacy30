@@ -1,3 +1,3 @@
 accessing
-options: aCollection
-	options := aCollection
+options: aBlock
+	optionsBlock := aBlock
