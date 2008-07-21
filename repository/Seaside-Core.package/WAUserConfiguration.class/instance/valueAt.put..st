@@ -1,4 +1,4 @@
-accessing
+values
 valueAt: aSymbol put: anObject
 	"It would be faster to simply add the value to the dictionary and
 	implement #takeValue:forAttribute: in terms of this method, but
