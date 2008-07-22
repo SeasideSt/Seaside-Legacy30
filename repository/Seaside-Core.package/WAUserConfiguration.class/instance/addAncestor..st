@@ -1,4 +1,4 @@
 ancestry
 addAncestor: aConfiguration
-	(self isAddableAncestor: aConfiguration)
-		ifTrue: [ancestors add: aConfiguration]
+	(self inheritsFrom: aConfiguration)
+		ifFalse: [ancestors add: aConfiguration]

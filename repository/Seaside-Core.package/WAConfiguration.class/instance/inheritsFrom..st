@@ -1,3 +1,3 @@
-ancestry
+testing
 inheritsFrom: aConfiguration
-	^ self allAncestors includes: aConfiguration
+	^ self allAncestors anySatisfy: [:ea | ea = aConfiguration]

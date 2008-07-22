@@ -1,4 +1,4 @@
-ancestry-private
+ancestry
 addAncestorsTo: tempCollection linearization: linearCollection
 	(linearCollection includes: self)
 		ifTrue: [tempCollection do: [:ea | linearCollection add: ea before: self].

@@ -1,5 +1,3 @@
 values
-valueAt: aSymbol 
-	^ self 
-		localValueAt: aSymbol
-		ifAbsent: [ self inheritedValueAt: aSymbol ]
+valueAt: aSymbol
+	^ self localValueAt: aSymbol ifAbsent: [self lookupValueAt: aSymbol]
