@@ -1,4 +1,4 @@
 converting
 valueFromString: aString
-	^ aString isEmptyOrNil ifFalse:
-		[SeasidePlatformSupport secureHashFor: aString]
+	^ aString isEmptyOrNil ifFalse: [
+		SeasidePlatformSupport secureHashFor: aString ]
