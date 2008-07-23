@@ -1,3 +1,5 @@
 attributes
 allAttributes
-	^ self addAllAttributesTo: WAAttributes ordered
+	^ Array streamContents:
+		[:s |
+		self withAllAncestorsDo: [:ea | s nextPutAll: ea attributes]]
