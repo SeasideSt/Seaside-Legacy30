@@ -1,7 +1,7 @@
 values
 inheritedValueAndSourceAt: aSymbol do: aBlock
 	| value ancestors attribute |
-	ancestors := self allAncestorsLinearized.
+	ancestors := self allAncestorsLinearizedForAttributeAt: aSymbol.
 
 	ancestors do: [ :each |
 		value := each localValueAt: aSymbol ifAbsent: [ nil ].

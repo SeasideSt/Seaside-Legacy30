@@ -1,5 +1,8 @@
 values
 valueAt: aSymbol 
-	^ self 
-		localValueAt: aSymbol
-		ifAbsent: [ self inheritedValueAt: aSymbol ]
+	| value |
+	value := self inheritedValueAt: aSymbol.
+	
+	^ value isNil
+		ifTrue: [ nil ]
+		ifFalse: [ self localValueAt: aSymbol ifAbsent: [ value ] ]
