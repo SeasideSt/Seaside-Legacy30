@@ -1,3 +1,0 @@
-ancestry
-hasMutableAncestry
-	^ true
