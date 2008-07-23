@@ -7,4 +7,4 @@ addAncestorsTo: tempCollection linearization: linearCollection
 				self ancestors isEmpty
 					ifTrue: [linearCollection addAll: tempCollection.
 							tempCollection removeAllSuchThat: [:ea | true]]
-					ifFalse: [self ancestors reversed do: [:ea | ea addAncestorsTo: tempCollection linearization: linearCollection]]]
+					ifFalse: [self ancestors reverseDo: [:ea | ea addAncestorsTo: tempCollection linearization: linearCollection]]]
