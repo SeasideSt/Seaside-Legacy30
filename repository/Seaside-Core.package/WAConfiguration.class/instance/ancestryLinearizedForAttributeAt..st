@@ -1,7 +1,6 @@
 ancestry
 ancestryLinearizedForAttributeAt: aSymbol
-	| temp linear |
-	temp := OrderedCollection new.
+	| linear |
 	linear := OrderedCollection new.
-	self addAncestorsTo: temp forAttributeAt: aSymbol linearization: linear.
+	self addAncestorsTo: linear forAttributeAt: aSymbol.
 	^ linear asArray
