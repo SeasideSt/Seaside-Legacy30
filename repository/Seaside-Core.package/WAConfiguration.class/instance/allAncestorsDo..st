@@ -1,3 +1,6 @@
 ancestry
 allAncestorsDo: aBlock
-	self allAncestors do: aBlock
+	| set |
+	set := IdentitySet new.
+	self allAncestorsDo: aBlock seen: set.
+	^ set

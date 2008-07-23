@@ -1,5 +1,5 @@
 initialization
 initialize
 	super initialize.
-	values := Dictionary new.
+	values := IdentityDictionary new.
 	ancestors := OrderedCollection new

@@ -1,6 +1,10 @@
-A configuration for a Seaside application contains attributes which can be used by Seaside and the application. WAConfiguration hierarchy uses the composite pattern. Subclasses of WASystemConfiguration define related groups of attributes. A WASystemConfiguration subclass defines the name and optionally default values for attributes. See WASystemConfiguration class comment for information on defining your own group of attributes. WAUserConfiguration is a composite of configurations. The set of configurations contained in WAUserConfiguration is called the ancestors. Attribute values in a configuration override the attribute values in the ancestors. WAUserConfiguration also holds the non-default values of attributes.
+A configuration for a Seaside application contains attributes which can be used by Seaside and the application. WAConfiguration hierarchy uses the composite pattern.
 
-Seaside applications start with a WAUserConfiguration (see WAApplication>>configuration) that start with three configurations (WARenderLoopConfiguration, WAGlobalConfiguration and WASessionConfiguration). Other configurations can be added to an application on the Seaside configuration page for the application or in your application. Values for the attributes can be given in either location. 
+Subclasses of WASystemConfiguration define and configure related groups of attributes. See WASystemConfiguration class comment for information on defining your own attributes.
+
+WAUserConfiguration is a composite of configurations. The set of configurations contained in WAUserConfiguration is called the ancestors. Attribute values in a configuration override the attribute values in the ancestors. WAUserConfiguration also holds the non-default values of attributes.
+
+Seaside applications start with a WAUserConfiguration (see WAApplication>>configuration) a single direct ancestor: WARenderLoopConfiguration. The full ancestry also includes WASessionConfiguration WAGlobalConfiguration. Other configurations can be added to an application on the Seaside configuration page for the application or in your application. Values for the attributes can be given in either location. 
 
 See Seaside documentation (http://www.seaside.st/documentation) on configuration and preferences (http://www.seaside.st/documentation/Configuration%20and%20Preferences) for more information.
 

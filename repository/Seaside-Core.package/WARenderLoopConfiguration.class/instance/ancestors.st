@@ -1,3 +1,4 @@
-accessing
+ancestry
 ancestors
-	^ Array with: WASessionConfiguration new
+	"We override several attributes of the session configuration."
+	^ Array with: WASessionConfiguration instance

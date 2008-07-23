@@ -1,3 +1,6 @@
 values
-valueAt: aSymbol
-	^ self localValueAt: aSymbol ifAbsent: [self lookupValueAt: aSymbol]
+valueAt: aSymbol 
+	| ancestry |
+	ancestry := self ancestryLinearizedForAttributeAt: aSymbol.
+
+	^ self findValueAndSourceAt: aSymbol inAll: ancestry do: [ :value :source | value ]
