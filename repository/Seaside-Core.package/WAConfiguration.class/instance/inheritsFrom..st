@@ -1,3 +1,3 @@
 ancestry
-inheritsFrom: aConfiguration
-	^ self allAncestors includes: aConfiguration
+inheritsFrom: aConfiguration 
+	^ self ancestors includes: aConfiguration
