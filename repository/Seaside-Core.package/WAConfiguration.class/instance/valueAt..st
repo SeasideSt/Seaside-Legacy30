@@ -3,4 +3,8 @@ valueAt: aSymbol
 	| ancestry |
 	ancestry := self ancestryLinearizedForAttributeAt: aSymbol.
 
-	^ self findValueAndSourceAt: aSymbol inAll: ancestry do: [ :value :source | value ]
+	self findValuesAndSourcesAt: aSymbol inAll: ancestry do: [ :value :source | ^ value ].
+	
+	self findAttributeAndSourceAt: aSymbol inAll: ancestry do: [ :attribute :source | ^ attribute default ].
+	
+	^ nil
