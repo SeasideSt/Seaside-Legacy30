@@ -5,7 +5,7 @@ addAttributes: attributes
 		default: #().
 	(attributes list: #redirectContinuationClass)
 		options: [self redirectContinuationClasses];
-		default: WARenderContinuation.
+		default: WARedirectContinuation.
 	(attributes list: #renderContinuationClass)
 		options: [self renderContinuationClasses];
 		default: WARenderContinuation.
