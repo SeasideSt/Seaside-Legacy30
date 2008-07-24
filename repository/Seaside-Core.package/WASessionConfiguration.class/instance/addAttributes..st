@@ -5,9 +5,6 @@ addAttributes: attributes
 		default: WASimpleErrorHandler.
 	(attributes list: #mainClass)
 		options: [self mainClasses].
-	(attributes list: #redirectHandler)
-		options: [self redirectHandlerClasses];
-		default: WARedirectHandler.
 	(attributes number: #sessionExpirySeconds)
 		comment: 'The numer of seconds after which inactive sessions are expired.';
 		default: 600.
