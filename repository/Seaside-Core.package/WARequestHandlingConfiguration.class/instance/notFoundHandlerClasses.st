@@ -1,3 +1,0 @@
-attributes
-notFoundHandlerClasses
-	^ WANotFoundHandler withAllSubclasses

@@ -1,5 +1,5 @@
 creational
 createRoot
 	^ super createRoot
-		addDecoration: (WABasicAuthentication new authenticator: self application);
+		addDecoration: (WABasicAuthentication new authenticator: self);
 		yourself

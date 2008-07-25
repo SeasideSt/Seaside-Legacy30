@@ -3,4 +3,4 @@ respond: aBlock onAnswer: aContinuation
 	| url response |
 	url := self actionUrlForContinuation: aContinuation.
 	response := aBlock value: url.
-	self returnResponse: response
+	self requestContext returnResponse: response

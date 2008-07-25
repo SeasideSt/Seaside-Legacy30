@@ -1,12 +1,7 @@
 values
-inheritedValueAndSourceAt: aSymbol do: aBlock 
-	| ancestors |
-	ancestors := (self ancestryLinearizedForAttributeAt: aSymbol) allButFirst.
-	self 
-		findValuesAndSourcesAt: aSymbol
-		inAll: ancestors
-		do: 
-			[ :value :source | 
-			^ aBlock 
-				value: value
-				value: source ]
+inheritedValueAndSourceAt: aSymbol do: aBlock
+	| value |
+	self allAncestorsDo: [ :each |
+		value := each localValueAt: aSymbol ifAbsent: [ nil ].
+		value isNil ifFalse: [ ^ aBlock value: value value: each ] ].
+	^ nil

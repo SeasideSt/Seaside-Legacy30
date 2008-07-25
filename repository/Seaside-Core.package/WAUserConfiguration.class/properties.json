@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "jf 7/24/2008 19:45",
+	"commentStamp" : "rew 10/7/2007 12:55",
 	"super" : "WAConfiguration",
 	"category" : "Seaside-Core-Configuration",
 	"classinstvars" : [ ],
@@ -7,7 +7,7 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"values",
-		"parents"
+		"ancestors"
 	],
 	"name" : "WAUserConfiguration",
 	"type" : "normal"

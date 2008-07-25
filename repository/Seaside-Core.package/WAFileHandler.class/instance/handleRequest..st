@@ -9,4 +9,4 @@ handleRequest: aRequest
 		ifFalse: [
 			self
 				responseAt: path
-				ifAbsent: [ self notFoundResponseFor: aRequest ] ]
+				ifAbsent: [ self notFound: aRequest url ] ]

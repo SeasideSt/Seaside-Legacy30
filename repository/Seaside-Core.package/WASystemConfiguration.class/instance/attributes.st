@@ -1,0 +1,3 @@
+attributes
+attributes
+	self subclassResponsibility
