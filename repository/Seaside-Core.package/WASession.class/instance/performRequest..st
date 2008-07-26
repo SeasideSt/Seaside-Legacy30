@@ -3,7 +3,7 @@ performRequest: aRequest
 	| key continuation |
 	key := aRequest fields
 		at: self actionField
-		ifAbsent: [ ^ self performDefaultRequest: aRequest ].
+		ifAbsent: [ ^ self start: aRequest ].
 	((aRequest fields includesKey: self checkCookiesField)
 		and: [ aRequest cookies isEmpty ])
 			ifTrue: [ cookiesEnabled := false ].
