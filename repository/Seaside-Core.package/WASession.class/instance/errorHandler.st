@@ -1,3 +1,3 @@
-accessing-preferences
+configuration
 errorHandler
-	^ self application preferenceAt: #errorHandler
+	^ self preferenceAt: #errorHandler

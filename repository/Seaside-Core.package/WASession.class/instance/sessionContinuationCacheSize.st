@@ -1,3 +1,3 @@
-accessing-preferences
+configuration
 sessionContinuationCacheSize
-	^ self application preferenceAt: #sessionContinuationCacheSize
+	^ self preferenceAt: #sessionContinuationCacheSize
