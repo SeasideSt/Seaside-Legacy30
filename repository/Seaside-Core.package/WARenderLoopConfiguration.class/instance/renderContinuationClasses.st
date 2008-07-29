@@ -1,3 +1,3 @@
-attributes
+description
 renderContinuationClasses
 	^ WARenderContinuation withAllSubclasses
