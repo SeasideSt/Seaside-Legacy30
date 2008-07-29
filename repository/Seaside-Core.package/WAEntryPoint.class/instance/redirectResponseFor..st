@@ -1,3 +1,3 @@
 public
 redirectResponseFor: aUrl
-	^ (self configuration valueAt: #redirectHandler) redirectTo: aUrl
+	^ self redirectHandler redirectTo: aUrl
