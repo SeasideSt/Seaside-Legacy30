@@ -1,3 +1,3 @@
 accessing
 rootClass
-	^ self application preferenceAt: #rootComponent
+	^ self application rootClass

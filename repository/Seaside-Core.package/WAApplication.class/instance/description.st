@@ -1,5 +1,5 @@
 accessing
 description
-	^ self rootComponent isNil
+	^ self rootClass isNil
 		ifTrue: [ '' ]
-		ifFalse: [ self rootComponent description ]
+		ifFalse: [ self rootClass description ]

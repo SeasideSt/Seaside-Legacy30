@@ -9,6 +9,6 @@ addAttributes: attributes
 	(attributes list: #renderContinuationClass)
 		options: [self renderContinuationClasses];
 		default: WARenderContinuation.
-	(attributes list: #rootComponent)
+	(attributes list: #rootClass)
 		comment: 'The root component of this seaside application.';
-		options: [self rootComponents].
+		options: [self rootClasses].
