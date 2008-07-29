@@ -1,3 +1,0 @@
-defaults
-redirectHandlerClasses
-	^ WARedirectHandler withAllSubclasses

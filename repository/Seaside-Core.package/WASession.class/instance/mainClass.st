@@ -1,3 +1,3 @@
-accessing-preferences
+configuration
 mainClass
-	^ self application preferenceAt: #mainClass
+	^ self preferenceAt: #mainClass

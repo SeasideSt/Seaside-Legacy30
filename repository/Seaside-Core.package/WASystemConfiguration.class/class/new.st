@@ -1,3 +1,3 @@
 instance creation
 new
-	^ self instance
+	^ self error: 'SystemConfigurations are singletons. Use #instance.'

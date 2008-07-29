@@ -1,0 +1,3 @@
+attributes
+redirectHandlerClasses
+	^ WARedirectHandler withAllSubclasses
