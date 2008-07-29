@@ -3,5 +3,5 @@ session
 	"Answer the current session or nil."
 
 	^ handlers 
-		detect: [ :each | each isKindOf: WASession ]
+		detect: [ :each | each isSession ]
 		ifNone: [ nil ]
