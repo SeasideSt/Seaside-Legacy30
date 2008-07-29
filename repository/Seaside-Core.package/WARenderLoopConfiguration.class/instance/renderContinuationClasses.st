@@ -1,3 +1,0 @@
-attributes
-renderContinuationClasses
-	^ WARenderContinuation withAllSubclasses

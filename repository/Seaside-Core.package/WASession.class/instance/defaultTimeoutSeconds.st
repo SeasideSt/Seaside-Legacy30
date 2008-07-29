@@ -1,5 +1,5 @@
 expiring
 defaultTimeoutSeconds
-	^ self sessionExpirySeconds isNil
-		ifFalse: [ self sessionExpirySeconds ]
+	^ (self application isNil or: [ self application sessionExpirySeconds isNil ])
+		ifFalse: [ self application sessionExpirySeconds ]
 		ifTrue: [ super defaultTimeoutSeconds ]

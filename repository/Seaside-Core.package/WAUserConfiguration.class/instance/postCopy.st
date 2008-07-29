@@ -2,4 +2,4 @@ copying
 postCopy
 	super postCopy.
 	values := values copy.
-	parents := parents copy.
+	ancestors := ancestors collect: [ :each | each copy ]

@@ -1,3 +1,3 @@
 redirecting
 redirectResponseFor: aUrl
-	^ self application redirectResponseFor: aUrl
+	^ self application redirectHandler redirectTo: aUrl
