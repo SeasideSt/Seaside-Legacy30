@@ -1,12 +1,14 @@
 public
 baseUrl
 	| serverPath url |
-	url := WAUrl new.
-	
 	serverPath := self serverPath.
+	
+	url := (serverPath isNil and: [ parent notNil ])
+			ifTrue: [ parent baseUrl ]
+			ifFalse: [ WAUrl new ].
 	serverPath isNil
-		ifTrue: [ url addToPath: self basePath ]
-		ifFalse: [ url addToPath: serverPath ].
+		ifFalse: [ url addToPath: serverPath ]
+		ifTrue: [ url addToPath: self name ].
 		
 	^ url
 		scheme: self serverProtocol;
