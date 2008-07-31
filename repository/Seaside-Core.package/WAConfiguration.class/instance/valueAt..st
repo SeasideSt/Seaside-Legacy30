@@ -1,13 +1,10 @@
 values
 valueAt: aSymbol 
-	| ancestors attribute value |
-	ancestors := OrderedCollection new.
-	attribute := self addAncestorsTo: ancestors forAttributeAt: aSymbol.
+	| ancestry |
+	ancestry := self ancestryLinearizedForAttributeAt: aSymbol.
 
-	attribute isNil ifTrue: [ ^ nil ].
-
-	value := self valueForAttribute: attribute consider: ancestors asIdentitySet cache: IdentityDictionary new.
+	self findValuesAndSourcesAt: aSymbol inAll: ancestry do: [ :value :source | ^ value ].
 	
-	^ value isNil
-		ifTrue: [ attribute default ]
-		ifFalse: [ value ]
+	self findAttributeAndSourceAt: aSymbol inAll: ancestry do: [ :attribute :source | ^ attribute default ].
+	
+	^ nil

@@ -1,21 +1,17 @@
 ancestry-private
 addAncestorsTo: linearCollection forAttributeAt: aSymbol 
-	| found result attribute |
+	| found |
 	found := false.
-	attribute := nil.
 	(linearCollection includes: self) 
 		ifTrue: [ ^ true ]
 		ifFalse: 
 			[ linearCollection add: self.
-			((aSymbol notNil and: [ self canDefineAttributes ]) and: [ self attributes at: aSymbol ifPresent: [ :attr | ^ attr ] ] ).
+			((aSymbol notNil and: [ self canDefineAttributes ]) and: [ self attributesByKey includesKey: aSymbol ]) ifTrue: [ ^ true ].
 			self parents isEmpty ifFalse: 
 				[ self parents reverseDo: 
 					[ :ea | 
-					result := (ea 
+					(ea 
 						addAncestorsTo: linearCollection
-						forAttributeAt: aSymbol).
-					result isNil ifFalse: [
-						found := true.
-						result == true ifFalse: [ attribute := result ] ] ] ] ].
+						forAttributeAt: aSymbol) ifTrue: [ found := true ] ] ] ].
 	found ifFalse: [ linearCollection removeLast ].
-	^ (found and: [ attribute isNil ]) ifTrue: [ true ] ifFalse: [ attribute ]
+	^ found

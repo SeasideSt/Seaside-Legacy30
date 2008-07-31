@@ -1,3 +1,0 @@
-description
-clearDescription
-	description := nil

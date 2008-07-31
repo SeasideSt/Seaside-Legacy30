@@ -1,6 +1,3 @@
 values
 localValueAt: aSymbol ifAbsent: absentBlock
-	| valueDescriptor |
-	valueDescriptor := self description values at: aSymbol ifAbsent: [ ^ absentBlock value ].
-
-	^ valueDescriptor
+	^ self overrides at: aSymbol ifAbsent: absentBlock.

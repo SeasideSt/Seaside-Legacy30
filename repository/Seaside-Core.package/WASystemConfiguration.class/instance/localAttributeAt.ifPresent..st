@@ -1,3 +1,3 @@
 attributes
 localAttributeAt: aSymbol ifPresent: absentBlock
-	^ self attributes at: aSymbol ifPresent: absentBlock
+	^ self attributesByKey at: aSymbol ifPresent: absentBlock
