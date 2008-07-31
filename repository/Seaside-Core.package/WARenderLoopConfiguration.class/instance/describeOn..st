@@ -1,8 +1,7 @@
 description
 describeOn: config
 	(config collection: #decorationClasses)
-		options: [self allDecorationClasses];
-		default: #().
+		options: [self allDecorationClasses].
 	(config list: #redirectContinuationClass)
 		options: [self redirectContinuationClasses];
 		default: WARedirectContinuation.

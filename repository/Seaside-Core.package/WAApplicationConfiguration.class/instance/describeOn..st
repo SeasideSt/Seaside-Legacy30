@@ -5,7 +5,7 @@ describeOn: config
 		default: WAResponse defaultValueForCharSet.
 	(config collection: #libraries)
 		options: [self libraryClasses];
-		default: (Array with: WAStandardFiles).
+		default: (Set with: WAStandardFiles).
 	(config string: #mimeType)
 		comment: 'the Internet media type of HTML documents reported to the browser';
 		default: WAResponse defaultValueForMimeType.

@@ -6,8 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"value"
+		"additions",
+		"removals"
 	],
-	"name" : "WAOverrideValue",
+	"name" : "WACollectionValue",
 	"type" : "normal"
 }
