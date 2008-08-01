@@ -1,3 +1,3 @@
 attributes
 renderContinuationClasses
-	^ WARenderContinuation withAllSubclasses
+	^ WARenderContinuation withAllSubclasses asSortedCollection: [ :a :b | a name <= b name ]

@@ -1,3 +1,3 @@
 attributes
 redirectContinuationClasses
-	^ WARedirectContinuation withAllSubclasses
+	^ WARedirectContinuation withAllSubclasses asSortedCollection: [ :a :b | a name <= b name ]

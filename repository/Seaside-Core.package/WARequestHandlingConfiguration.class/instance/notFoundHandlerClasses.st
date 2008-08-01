@@ -1,3 +1,3 @@
 attributes
 notFoundHandlerClasses
-	^ WANotFoundHandler withAllSubclasses
+	^ WANotFoundHandler withAllSubclasses asSortedCollection: [ :a :b | a name <= b name ]
