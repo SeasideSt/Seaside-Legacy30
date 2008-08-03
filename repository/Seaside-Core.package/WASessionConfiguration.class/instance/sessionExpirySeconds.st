@@ -1,3 +1,0 @@
-defaults
-sessionExpirySeconds
-	^ 600

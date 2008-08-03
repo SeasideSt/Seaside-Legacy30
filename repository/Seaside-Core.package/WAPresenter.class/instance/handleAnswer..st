@@ -1,3 +1,3 @@
 call/answer
 handleAnswer: anObject
-	^ false
+	self subclassResponsibility

@@ -2,4 +2,4 @@ call/answer
 answer: anObject
 	"Give back control to the component from which the receiver was called from. When returning, a component can additionally return anObject to the caller."
 
-	self outermost handleAnswer: anObject
+	self decorationChainDo: [ :each | each handleAnswer: anObject ]

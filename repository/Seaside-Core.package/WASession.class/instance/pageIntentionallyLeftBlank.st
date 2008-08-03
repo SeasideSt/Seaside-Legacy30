@@ -1,3 +1,3 @@
 responding
 pageIntentionallyLeftBlank
-	self returnResponse: WAResponse new
+	self requestContext returnResponse: WAResponse new

@@ -1,3 +1,3 @@
-accessing-preferences
+configuration
 useSessionCookie
-	^ cookiesEnabled and: [ self application useSessionCookie ]
+	^ cookiesEnabled and: [ self preferenceAt: #useSessionCookie ]

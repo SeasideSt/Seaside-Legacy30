@@ -1,3 +1,0 @@
-testing
-description
-	^ self name
