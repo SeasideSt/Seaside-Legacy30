@@ -1,3 +1,3 @@
 testing
-isDecoration
+isTask
 	^ false

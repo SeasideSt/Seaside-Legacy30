@@ -1,3 +1,3 @@
 testing
-isDecoration
+isComponent
 	^ false
