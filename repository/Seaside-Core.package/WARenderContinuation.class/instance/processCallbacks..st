@@ -5,5 +5,5 @@ processCallbacks: aRequest
 	callbackStream := renderContext callbackStreamForRequest: aRequest.
 	[ callbackStream position = lastPosition ] whileFalse: 
 		[ lastPosition := callbackStream position.
-		self root decorationChainDo: [ :each | each processCallbackStream: callbackStream ] ].
+		self root outermost processCallbackStream: callbackStream ].
 	callbackStream atEnd ifFalse: [ self unprocessedCallbacks: callbackStream upToEnd ]

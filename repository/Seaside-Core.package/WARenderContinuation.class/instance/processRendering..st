@@ -5,7 +5,7 @@ processRendering: aResponse
 	renderContext document: document.
 	htmlRoot := self newHtmlRoot.
 	document open: htmlRoot.
-	self root decorationChainDo: [ :each | each renderWithContext: renderContext ].
+	self root outermost renderWithContext: renderContext.
 	self writeOnLoadOn: document.
 	document close: htmlRoot.
 	renderContext release

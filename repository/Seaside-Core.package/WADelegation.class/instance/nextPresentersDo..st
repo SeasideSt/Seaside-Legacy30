@@ -1,3 +1,3 @@
 iterating
 nextPresentersDo: aBlock
-	delegate decorationChainDo: aBlock
+	aBlock value: delegate outermost

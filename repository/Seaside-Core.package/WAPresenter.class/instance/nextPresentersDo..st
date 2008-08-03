@@ -1,3 +1,3 @@
 tree
 nextPresentersDo: aBlock
-	self childrenDo: [:ea | ea decorationChainDo: aBlock]
+	self childrenDo: [:ea | aBlock value: ea outermost]

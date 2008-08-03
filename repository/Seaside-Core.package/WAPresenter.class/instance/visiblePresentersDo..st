@@ -1,3 +1,3 @@
 iterating
 visiblePresentersDo: aBlock
-	self decorationChainDo: [:ea | ea withNextPresentersDo: aBlock]
+	self outermost withNextPresentersDo: aBlock
