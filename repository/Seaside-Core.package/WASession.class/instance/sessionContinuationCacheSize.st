@@ -1,3 +1,0 @@
-configuration
-sessionContinuationCacheSize
-	^ self preferenceAt: #sessionContinuationCacheSize

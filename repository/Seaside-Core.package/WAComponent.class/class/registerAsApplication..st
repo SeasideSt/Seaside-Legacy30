@@ -4,5 +4,5 @@ registerAsApplication: aString
 	
 	| application |
 	application := WAApplication register: aString.
-	application preferenceAt: #rootClass put: self.
+	application preferenceAt: #rootComponent put: self.
 	^ application

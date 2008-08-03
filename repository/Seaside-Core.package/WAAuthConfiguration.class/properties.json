@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "jf 7/22/2008 12:39",
+	"commentStamp" : "",
 	"super" : "WASystemConfiguration",
 	"category" : "Seaside-Core-RenderLoop",
 	"classinstvars" : [ ],

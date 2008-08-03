@@ -1,3 +1,3 @@
 tree
 nextPresentersDo: aBlock
-	self subclassResponsibility
+	self childrenDo: [:ea | ea decorationChainDo: aBlock]

@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "jf 7/22/2008 11:48",
+	"commentStamp" : "lr 5/10/2007 22:41",
 	"super" : "WAExpiringHandler",
 	"category" : "Seaside-Core-Session",
 	"classinstvars" : [ ],

@@ -1,3 +1,3 @@
 processing
 handleAnswer: anObject continueWith: aBlock
-	block valueWithPossibleArgument: anObject
+	block value: anObject

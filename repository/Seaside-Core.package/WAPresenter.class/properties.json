@@ -1,6 +1,6 @@
 {
-	"commentStamp" : "",
-	"super" : "Object",
+	"commentStamp" : "jf 7/17/2008 22:48",
+	"super" : "WAAbstractPresenter",
 	"category" : "Seaside-Core-Component",
 	"classinstvars" : [ ],
 	"pools" : [ ],

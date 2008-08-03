@@ -1,4 +1,3 @@
-deprecated
+configuration
 rootComponent
-	self deprecatedApi: 'Use WAApplication>>rootClass'.
-	^ self rootClass
+	^ self preferenceAt: #rootComponent

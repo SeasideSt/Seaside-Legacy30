@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "jf 7/17/2008 19:20",
+	"super" : "Object",
+	"category" : "Seaside-Core-Component",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAPainter",
+	"type" : "normal"
+}

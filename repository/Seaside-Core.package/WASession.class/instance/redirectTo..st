@@ -1,3 +1,3 @@
 redirecting
 redirectTo: anUrl
-	self requestContext returnResponse: (self redirectResponseFor: anUrl)
+	self returnResponse: (self redirectResponseFor: anUrl)
