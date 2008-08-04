@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 initializeWithKey: keySymbol target: targetConfiguration
 	target := targetConfiguration.
 	ancestorsWithAttribute := OrderedCollection new.
