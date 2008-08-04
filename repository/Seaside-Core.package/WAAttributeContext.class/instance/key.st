@@ -1,3 +1,3 @@
 accessing
 key
-	^ self attribute key
+	^ key

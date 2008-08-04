@@ -6,8 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"attribute",
+		"key",
 		"target",
+		"attribute",
 		"cachedValues",
 		"ancestorsWithAttribute"
 	],

@@ -1,7 +1,9 @@
 initialization
 initializeWithKey: keySymbol target: targetConfiguration
+	key := keySymbol.
 	target := targetConfiguration.
-	ancestorsWithAttribute := OrderedCollection new.
-	attribute := target addAncestorsTo: ancestorsWithAttribute forAttributeAt: keySymbol.
+	ancestorsWithAttribute := IdentitySet new.
 	cachedValues := IdentityDictionary new.
+	
+	self findAttributeAndSelectAncestorsOf: target.
 	
