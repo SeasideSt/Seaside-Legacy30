@@ -1,5 +1,5 @@
 initialization
 initialize
 	super initialize.
-	values := Dictionary new.
+	expressions := Dictionary new.
 	parents := OrderedCollection new

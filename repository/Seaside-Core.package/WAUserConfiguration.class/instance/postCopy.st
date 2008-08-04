@@ -1,5 +1,5 @@
 copying
 postCopy
 	super postCopy.
-	values := values copy.
+	expressions := expressions copy.
 	parents := parents copy.

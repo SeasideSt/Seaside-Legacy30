@@ -1,10 +1,12 @@
 values
 valueAt: aSymbol 
-	| ancestry |
-	ancestry := self ancestryLinearizedForAttributeAt: aSymbol.
+	| value context |
+	context := WAAttributeContext key: aSymbol target: self.
 
-	self findValuesAndSourcesAt: aSymbol inAll: ancestry do: [ :value :source | ^ value ].
+	context attribute isNil ifTrue: [ ^ nil ].
+
+	value := self valueAt: aSymbol context: context.
 	
-	self findAttributeAndSourceAt: aSymbol inAll: ancestry do: [ :attribute :source | ^ attribute default ].
-	
-	^ nil
+	^ value isNil
+		ifTrue: [ context attribute default ]
+		ifFalse: [ value ]

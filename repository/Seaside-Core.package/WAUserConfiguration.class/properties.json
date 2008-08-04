@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"values",
+		"expressions",
 		"parents"
 	],
 	"name" : "WAUserConfiguration",

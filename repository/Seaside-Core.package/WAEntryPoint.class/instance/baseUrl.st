@@ -2,7 +2,7 @@ public
 baseUrl
 	| serverPath url |
 	serverPath := self serverPath.
-
+	
 	url := (serverPath isNil and: [ parent notNil ])
 			ifTrue: [ parent baseUrl ]
 			ifFalse: [ WAUrl new ].
@@ -10,8 +10,8 @@ baseUrl
 		ifFalse: [ url addToPath: serverPath ]
 		ifTrue: [ url addToPath: self name ].
 		
-	self serverProtocol isNil ifFalse: [ url scheme: self serverProtocol ].
-	self serverHostname isNil ifFalse: [ url hostname: self serverHostname ].
-	self serverPort isNil ifFalse: [ url port: self serverPort ].
-
 	^ url
+		scheme: self serverProtocol;
+		hostname: self serverHostname;
+		port: self serverPort;
+		yourself
