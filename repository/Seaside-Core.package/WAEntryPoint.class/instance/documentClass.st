@@ -1,3 +1,3 @@
-public
+configuration
 documentClass
 	^ self preferenceAt: #documentClass

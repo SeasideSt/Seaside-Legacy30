@@ -3,6 +3,9 @@ describeOn: config
 	(config list: #documentClass)
 		options: [self documentClasses];
 		default: WAHtmlStreamDocument.
+	(config list: #expiredKeyHandlerClass)
+		options: [self expiredKeyHandlerClasses];
+		default: WAExpiredKeyHandler.
 	(config list: #notFoundHandlerClass)
 		options: [self notFoundHandlerClasses];
 		default: WANotFoundHandler.

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WAExpiredKeyHandler",
+	"category" : "Seaside-Core-Session",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAExpiredSessionKeyHandler",
+	"type" : "normal"
+}

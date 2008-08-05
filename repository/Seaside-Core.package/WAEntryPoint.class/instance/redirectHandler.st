@@ -1,3 +1,3 @@
-configuration
+public
 redirectHandler
 	^ self redirectHandlerClass new

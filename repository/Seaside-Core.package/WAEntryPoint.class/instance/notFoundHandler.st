@@ -1,3 +1,5 @@
 public
 notFoundHandler
-	^ (self configuration valueAt: #notFoundHandlerClass) new
+	^ self notFoundHandlerClass new
+		setParent: self;
+		yourself
