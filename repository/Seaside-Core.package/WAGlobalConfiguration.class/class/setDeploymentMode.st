@@ -1,3 +1,0 @@
-configuration
-setDeploymentMode
-	DeploymentMode := true
