@@ -6,7 +6,7 @@ describeOn: config
 	(config list: #notFoundHandlerClass)
 		options: [self notFoundHandlerClasses];
 		default: WANotFoundHandler.
-	(config list: #redirectHandler)
+	(config list: #redirectHandlerClass)
 		options: [self redirectHandlerClasses];
 		default: WARedirectHandler.
 	(config list: #serverProtocol)

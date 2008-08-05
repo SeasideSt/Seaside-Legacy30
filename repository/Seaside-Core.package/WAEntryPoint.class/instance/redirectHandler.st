@@ -1,3 +1,3 @@
 configuration
 redirectHandler
-	^ self preferenceAt: #redirectHandler
+	^ self redirectHandlerClass new
