@@ -1,7 +1,7 @@
 request handling
 incomingRequest: aRequest 
 	| context |
-	((aRequest fields includesKey: 'terminate') and: [ self sessionAllowTermination ]) ifTrue: 
+	((aRequest fields includesKey: 'terminate') and: [ self application deploymentMode not ]) ifTrue: 
 		[ monitor terminate.
 		^ WAResponse new nextPutAll: 'Process terminated' ].
 	context := self requestContext.

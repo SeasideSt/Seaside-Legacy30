@@ -4,4 +4,4 @@ handlerOrNotFoundAt: aString
 	if no handler exists for such a key a WANotFoundHandler is returned"
 	^self entryPoints
 		at: aString
-		ifAbsent: [ self notFoundHandler ]
+		ifAbsent: [ WANotFoundHandler new ]

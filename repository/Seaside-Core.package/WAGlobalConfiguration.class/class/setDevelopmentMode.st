@@ -1,0 +1,3 @@
+configuration
+setDevelopmentMode
+	DeploymentMode := false

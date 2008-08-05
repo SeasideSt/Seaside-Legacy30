@@ -1,5 +1,5 @@
 copying
 postCopy
 	super postCopy.
-	expressions := expressions copy.
-	parents := parents copy.
+	values := values copy.
+	ancestors := ancestors collect: [ :each | each copy ]

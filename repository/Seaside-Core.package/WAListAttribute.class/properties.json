@@ -1,12 +1,12 @@
 {
-	"commentStamp" : "jf 7/19/2008 13:55",
-	"super" : "WAAttributeDescription",
+	"commentStamp" : "rew 10/7/2007 12:51",
+	"super" : "WAConfigurationAttribute",
 	"category" : "Seaside-Core-Configuration",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"optionsBlock"
+		"options"
 	],
 	"name" : "WAListAttribute",
 	"type" : "normal"

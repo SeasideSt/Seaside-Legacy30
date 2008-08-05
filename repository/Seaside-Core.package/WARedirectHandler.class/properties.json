@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Seaside-Core-RequestHandler",
+	"category" : "Seaside-Core-Session",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

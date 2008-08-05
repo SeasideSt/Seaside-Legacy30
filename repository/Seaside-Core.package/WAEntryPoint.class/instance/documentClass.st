@@ -1,3 +1,3 @@
-configuration
+public
 documentClass
-	^ self preferenceAt: #documentClass
+	^ WAHtmlStreamDocument

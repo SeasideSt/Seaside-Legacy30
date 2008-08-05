@@ -1,0 +1,3 @@
+defaults
+sessionExpirySeconds
+	^ 600

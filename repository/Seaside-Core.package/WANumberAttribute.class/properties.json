@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "rew 10/7/2007 12:51",
-	"super" : "WAAttributeDescription",
+	"super" : "WAConfigurationAttribute",
 	"category" : "Seaside-Core-Configuration",
 	"classinstvars" : [ ],
 	"pools" : [ ],

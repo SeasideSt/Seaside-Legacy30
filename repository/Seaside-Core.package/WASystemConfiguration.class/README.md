@@ -1,14 +1,7 @@
-You should subclass WASystemConfiguration to define new attributes. The method #addAttributes is passed an instance of WAAttributes which can be used to create new attributes. The attributes can be configured to specify their default value, label, and so on. See the methods on WAConfigurationAttribute and its subclasses to see what options are available.
+Subclass WASystemConfiguration to define a group of attributes for a Seaside application. The method "attributes" returns a collection of attributes in this configuration. If a configuration requires other configurations then implement the method "ancestors", which returns a collection of configuration classes. Subclasses can define default values for attributes. If you define an attribute named "useSessionCookie" you can provide a default value by implementing a method "useSessionCookie" that returns the default value. See existing subclasses for examples. Non-default values for attributes are not stored in WASystemConfiguration subclasses, but are stored in WAUserConfiguration.
 
-If a configuration needs to override the value of another WASystemConfiguration or depends on its attributes, implement the method "parents", returning a collection of configuration objects.
+WAUserConfiguration is a singleton class to avoid implementing = and hash. Only need one instance of WAUserConfiguration and its subclasses.
 
-WASystemConfiguration subclasses are "read-only" in that their attributes, parents, and default values are all specified in code. Users and applications that want to configure values for attributes should create a WAUserConfiguration and specify the WASystemConfiguration in its ancestry.
-
-WASystemConfiguration classes are singleton. You should use #instance on the class side to get the current instance. You cannot call #copy on a WASystemConfiguration.
-
-Subclasses should implement the following messages:
-	addAttributes:
-		
-They may also want to implement:
-	addOverrides:
-	parents
+Subclasses must implement the following messages:
+	attributes
+		return a collection of attribute objects
