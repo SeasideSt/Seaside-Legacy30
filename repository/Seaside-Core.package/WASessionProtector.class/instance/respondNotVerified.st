@@ -1,3 +1,3 @@
 forwarding
 respondNotVerified
-	self session redirectTo: self session application basePath
+	self session redirectTo: self session application baseUrl
