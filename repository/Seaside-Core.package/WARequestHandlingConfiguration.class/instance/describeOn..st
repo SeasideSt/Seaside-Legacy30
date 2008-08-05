@@ -1,5 +1,8 @@
 description
 describeOn: config
+	(config list: #documentClass)
+		options: [self documentClasses];
+		default: WAHtmlStreamDocument.
 	(config list: #notFoundHandlerClass)
 		options: [self notFoundHandlerClasses];
 		default: WANotFoundHandler.
