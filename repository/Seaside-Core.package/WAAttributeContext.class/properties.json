@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Seaside-Core-Configuration",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"key",
+		"target",
+		"attribute",
+		"cachedValues",
+		"ancestorsWithAttribute"
+	],
+	"name" : "WAAttributeContext",
+	"type" : "normal"
+}

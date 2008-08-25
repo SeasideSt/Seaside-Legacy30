@@ -1,3 +1,3 @@
 attributes
 attributes
-	self subclassResponsibility
+	^ self description attributes

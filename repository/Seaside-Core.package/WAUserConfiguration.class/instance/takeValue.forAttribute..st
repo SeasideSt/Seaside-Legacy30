@@ -1,3 +1,10 @@
-accessing
+values
 takeValue: anObject forAttribute: anAttribute
-	^ anObject ifNotNil: [values at: anAttribute key put: anObject]
+	^ anObject isNil ifFalse: [
+		self
+			storeExpression:
+				((WAValueExpression key: anAttribute key)
+					configuration: self;
+					value: anObject;
+					yourself)
+			forAttribute: anAttribute ]

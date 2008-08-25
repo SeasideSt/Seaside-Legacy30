@@ -1,3 +1,3 @@
 converting
 valueFromString: aString
-	^ Number readFrom: aString
+	^ aString isEmptyOrNil ifFalse: [ Number readFrom: aString ]
