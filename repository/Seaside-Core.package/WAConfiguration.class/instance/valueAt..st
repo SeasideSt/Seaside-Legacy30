@@ -3,7 +3,7 @@ valueAt: aSymbol
 	| value context |
 	context := WAAttributeContext key: aSymbol target: self.
 
-	context attribute isNil ifTrue: [ ^ nil ].
+	context attribute isNil ifTrue: [ ^ WAAttributeNotFound new key: aSymbol; signal ].
 
 	value := self valueAt: aSymbol context: context.
 	
