@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "WAConfigurationEditor",
+	"super" : "WAUserConfigurationEditor",
 	"category" : "RSS-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
