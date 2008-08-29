@@ -1,3 +1,3 @@
 private
 keyFrom: aString
-	^(aString copyUpTo: $=) trimBlanks
+	^(aString copyUpTo: $=) trimBoth
