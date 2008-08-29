@@ -24,6 +24,6 @@ toolbarCss
 #toolbar a:hover {
 	color: #111;
 }
-#toolbar a.deprecated, #toolbar a.missing-attributes {
+#toolbar a.deprecated {
 	color: #ff7000;
 }'

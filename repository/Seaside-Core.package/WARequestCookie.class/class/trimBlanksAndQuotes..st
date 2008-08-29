@@ -1,7 +1,7 @@
 private
 trimBlanksAndQuotes: aString
 	| trimmed |
-	trimmed := aString trimBoth.
+	trimmed := aString trimBlanks.
 	^(trimmed size > 2
 		and: [ trimmed first = $"
 		and: [ trimmed last = $" ] ])

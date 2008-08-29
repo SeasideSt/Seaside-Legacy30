@@ -1,4 +1,4 @@
-values
+values-private
 valueAt: aSymbol context: aContext
 	aContext at: self ifPresent: [ :v | ^ v ].
 	
