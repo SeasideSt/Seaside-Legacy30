@@ -1,5 +1,5 @@
 *Seaside-Core
 asMIMEDocumentType: mimeType
-	^WACollectionMimeDocument
-		contentType: mimeType toMimeType
+	^SeasidePlatformSupport mimeDocumentClass
+		contentType: mimeType toString
 		content: self
