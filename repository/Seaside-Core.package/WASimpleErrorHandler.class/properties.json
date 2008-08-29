@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "pmm 5/27/2007 21:48",
-	"super" : "WADefaultErrorHandler",
+	"super" : "WAErrorHandler",
 	"category" : "Seaside-Core-Session",
 	"classinstvars" : [ ],
 	"pools" : [ ],
