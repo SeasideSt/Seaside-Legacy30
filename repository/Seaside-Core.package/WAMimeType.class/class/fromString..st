@@ -13,6 +13,6 @@ fromString: aString
 	parameters := WASmallDictionary new.
 	parts do: [ :each | 
 		parameters
-			at: (each copyUpTo: $=) trimBlanks
-			put: (each copyAfter: $=) trimBlanks ].
+			at: (each copyUpTo: $=) trimBoth
+			put: (each copyAfter: $=) trimBoth ].
 	^self main: main sub: sub parameters: parameters
