@@ -1,5 +1,5 @@
 scripting
-scriptOpenOn: aScript hidden: aBoolean
+openOn: aScript hidden: aBoolean
 	self isVisible
 		ifFalse: [
 			visible := true.

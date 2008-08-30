@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 updateBlock: aBlock
-	self flag: #whatIsThisSupposedToDo
+	updateBlock := aBlock
