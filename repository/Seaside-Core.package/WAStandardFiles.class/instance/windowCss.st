@@ -16,24 +16,6 @@ windowCss
 	font-weight: bold;
 	padding-left: 20px;
 }
-.window .window-titlebar .browserhaloplugin {
-	background: url(codebrowser.png) no-repeat;
-}
-.window .window-titlebar .inspectorplugin {
-	background: url(inspector.png) no-repeat;
-}
-.window .window-titlebar .styleshaloplugin {
-	background: url(styleeditor.png) no-repeat;
-}
-.window .window-titlebar .configuretoolplugin {
-	background: url(config.png) no-repeat;
-}
-.window .window-titlebar .profilertoolplugin {
-	background: url(profiler.png) no-repeat;
-}
-.window .window-titlebar .memorytoolplugin {
-	background: url(memory.png) no-repeat;
-}
 .window .window-titlebar .window-close {
 	float: right;
 }

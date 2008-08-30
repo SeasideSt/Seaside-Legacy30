@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "pmm 6/1/2008 00:15",
+	"super" : "Object",
+	"category" : "Seaside-Core-Document",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"DocumentCache"
+	],
+	"instvars" : [
+		"fullFileName",
+		"mimeDocument",
+		"mimeType"
+	],
+	"name" : "WACachedDocument",
+	"type" : "normal"
+}

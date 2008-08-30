@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "Error",
+	"super" : "Notification",
 	"category" : "Seaside-Core-Configuration",
 	"classinstvars" : [ ],
 	"pools" : [ ],
