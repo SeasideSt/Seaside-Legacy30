@@ -1,3 +1,3 @@
 actions
-redirectTo: aUrl 
-	^ WAResponse redirectTo: aUrl seasideString
+redirectTo: aUrl
+	^ WAResponse redirectTo: aUrl toString

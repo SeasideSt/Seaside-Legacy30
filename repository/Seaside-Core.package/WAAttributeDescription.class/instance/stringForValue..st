@@ -1,3 +1,3 @@
 converting
-stringForValue: anObject 
-	^ anObject seasideString
+stringForValue: anObject
+	^ anObject toString

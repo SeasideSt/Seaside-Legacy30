@@ -1,3 +1,3 @@
 convenience
-submitFormNamed: formName 
-	self onClick: 'submitForm(''' , formName seasideString , '''); return false;'
+submitFormNamed: formName
+	self onClick: 'submitForm(''', formName toString, '''); return false;'
