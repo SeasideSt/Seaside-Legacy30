@@ -12,7 +12,7 @@ close
 		attributes: attributes.
 	stream nextPutAll: '/*<![CDATA[*/'.
 	context loadScripts 
-		do: [ :each | stream nextPutAll: each toString ]
+		do: [ :each | stream nextPutAll: each seasideString ]
 		separatedBy: [ stream nextPut: $; ].
 	stream nextPutAll: '/*]]>*/'.
 	self closeTag: 'script'

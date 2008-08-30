@@ -1,3 +1,3 @@
 *scriptaculous-core
-javascriptOn: aStream
-	aStream javascript: self toString
+javascriptOn: aStream 
+	aStream javascript: self seasideString
