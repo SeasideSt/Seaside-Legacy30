@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "WAObject",
-	"category" : "Seaside-Core-Component",
+	"super" : "Object",
+	"category" : "Seaside-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WAPresenter",
+	"name" : "WAObject",
 	"type" : "normal"
 }
