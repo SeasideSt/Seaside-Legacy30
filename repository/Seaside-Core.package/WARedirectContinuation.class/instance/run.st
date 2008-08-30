@@ -1,3 +1,3 @@
 processing
 run
-	self respond: [ :response | response redirectTo: self url toString ]
+	self respond: [ :response | response redirectTo: self url seasideString ]

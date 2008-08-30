@@ -1,4 +1,4 @@
-values
+values-private
 inheritedValueAt: aSymbol context: aContext
 	| value |
 	(self parents select: [ :each | aContext isAttributeInheritedBy: each ]) reverseDo:

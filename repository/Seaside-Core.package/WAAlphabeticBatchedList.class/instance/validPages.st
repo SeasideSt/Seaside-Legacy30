@@ -1,4 +1,3 @@
 accessing-calculated
 validPages
-	^ (items collect: [ :each |
-		each toString asUppercase first]) asSet asSortedCollection
+	^ (items collect: [ :each | each seasideString asUppercase first ]) asSet asSortedCollection

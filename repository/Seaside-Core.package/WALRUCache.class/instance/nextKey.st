@@ -1,5 +1,5 @@
 callbacks
 nextKey
 	| key |
-	[ table includesKey: (key := WAExternalID new toString) ] whileTrue.
+	[ table includesKey: (key := WAExternalID new seasideString) ] whileTrue.
 	^ key

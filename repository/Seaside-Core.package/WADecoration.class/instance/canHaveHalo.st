@@ -1,3 +1,3 @@
 rendering
-showHalo
+canHaveHalo
 	^ false
