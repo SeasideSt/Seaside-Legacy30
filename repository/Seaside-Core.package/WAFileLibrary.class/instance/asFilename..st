@@ -1,9 +1,9 @@
 private
-asFilename: aSelector
+asFilename: aSelector 
 	| dotIndex extension |
 	dotIndex := self lastUpperCaseIndexIn: aSelector.
-	dotIndex = 0
-		"convert Symbol to String"
-		ifTrue: [ ^ aSelector toString ].
+	dotIndex = 0 ifTrue: 
+		[ "convert Symbol to String"
+		^ aSelector seasideString ].
 	extension := (aSelector last: aSelector size - dotIndex + 1) asLowercase.
-	^ (aSelector first: dotIndex - 1), '.', extension
+	^ (aSelector first: dotIndex - 1) , '.' , extension

@@ -1,7 +1,7 @@
 printing
-printOn: aStream
+printOn: aStream 
 	super printOn: aStream.
 	aStream
 		nextPut: $(;
-		nextPutAll: self toString;
+		nextPutAll: self seasideString;
 		nextPut: $)

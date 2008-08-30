@@ -1,4 +1,6 @@
 printing
-printOn: aStream
+printOn: aStream 
 	super printOn: aStream.
-	aStream space; nextPutAll: self status toString
+	aStream
+		space;
+		nextPutAll: self status seasideString

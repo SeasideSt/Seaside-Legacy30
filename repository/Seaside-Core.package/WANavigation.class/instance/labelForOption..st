@@ -1,3 +1,3 @@
 query
-labelForOption: anObject
-	^ anObject toString
+labelForOption: anObject 
+	^ anObject seasideString

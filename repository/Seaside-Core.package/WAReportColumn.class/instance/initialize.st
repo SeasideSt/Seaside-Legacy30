@@ -1,6 +1,6 @@
 initialize-release
 initialize
-	formatBlock := [ :x | x toString ].
+	formatBlock := [ :x | x seasideString ].
 	sortBlock := [ :a :b | a <= b ].
 	valueBlock := [ :row | nil ].
 	clickBlock := nil.

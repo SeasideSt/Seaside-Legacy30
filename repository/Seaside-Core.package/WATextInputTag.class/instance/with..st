@@ -1,5 +1,4 @@
 public
-with: anObject
-	anObject isNil 
-		ifFalse: [ self value: anObject toString ].
+with: anObject 
+	anObject isNil ifFalse: [ self value: anObject seasideString ].
 	super with: nil
