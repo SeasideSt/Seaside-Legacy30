@@ -1,3 +1,3 @@
 private
 monthHeading
-	^ self monthName , ' ' , self year seasideString
+	^ self monthName , ' ' , self year toString

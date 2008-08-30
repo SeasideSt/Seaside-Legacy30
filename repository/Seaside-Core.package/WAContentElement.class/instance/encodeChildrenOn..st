@@ -1,6 +1,6 @@
 printing
-encodeChildrenOn: aDocument 
+encodeChildrenOn: aDocument
 	children isEmptyOrNil ifTrue: [ ^ self ].
 	aDocument nextPutAll: '/*<![CDATA[*/'.
-	children do: [ :each | aDocument nextPutAll: each seasideString ].
+	children do: [ :each | aDocument nextPutAll: each toString ].
 	aDocument nextPutAll: '/*]]>*/'

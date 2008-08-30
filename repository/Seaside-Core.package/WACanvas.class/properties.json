@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "pmm 4/15/2007 22:05",
-	"super" : "WAObject",
+	"super" : "Object",
 	"category" : "Seaside-Core-Canvas",
 	"classinstvars" : [ ],
 	"pools" : [ ],

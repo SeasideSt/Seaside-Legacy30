@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "pmm 4/15/2008 21:00",
-	"super" : "WAObject",
+	"super" : "Object",
 	"category" : "Seaside-Core-HTTP",
 	"classinstvars" : [ ],
 	"pools" : [ ],

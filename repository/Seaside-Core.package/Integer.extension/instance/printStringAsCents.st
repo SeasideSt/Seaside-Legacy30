@@ -1,3 +1,3 @@
 *Seaside-Core
 printStringAsCents
-	^ '$' , (self // 100) seasideString , '.' , (self \\ 100) asTwoCharacterString
+	^ '$', (self // 100) toString, '.', (self \\ 100) asTwoCharacterString

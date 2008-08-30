@@ -3,5 +3,6 @@ renderContentOn: html
 	html form
 		defaultAction: [ self defaultAction ];
 		with: [
-			self renderOwnerOn: html.
-			self renderButtonsOn: html ]
+			html div: [
+				self renderOwnerOn: html.
+				self renderButtonsOn: html ]]

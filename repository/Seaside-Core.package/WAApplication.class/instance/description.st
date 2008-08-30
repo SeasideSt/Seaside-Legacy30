@@ -1,5 +1,5 @@
 accessing
 description
-	^ [ self rootClass description ]
-		on: WAAttributeNotFound
-		do: [ :err | String new ]
+	^ self rootClass isNil
+		ifTrue: [ '' ]
+		ifFalse: [ self rootClass description ]

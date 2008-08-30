@@ -1,5 +1,6 @@
 public
-html: aString 
+html: aString
 	"Emit aString unescaped onto the target document."
+
 	self flush.
-	self document nextPutAll: aString seasideString
+	self document nextPutAll: aString toString

@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "pmm 4/22/2007 12:56",
-	"super" : "WAObject",
+	"super" : "Object",
 	"category" : "Seaside-Core-Libraries",
 	"classinstvars" : [
 		"default"

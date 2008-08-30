@@ -1,3 +1,3 @@
 callbacks
 nextKey
-	^ count contents seasideString
+	^ count contents toString

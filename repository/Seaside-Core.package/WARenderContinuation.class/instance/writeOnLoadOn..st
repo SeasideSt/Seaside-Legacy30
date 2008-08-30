@@ -11,7 +11,7 @@ writeOnLoadOn: aDocument
 		closed: false.
 	aDocument nextPutAll: '/*<![CDATA[*/function onLoad(){'.
 	self requestContext loadScripts 
-		do: [ :each | aDocument nextPutAll: each seasideString ]
+		do: [ :each | aDocument nextPutAll: each toString ]
 		separatedBy: [ aDocument nextPutAll: ';' ].
 	aDocument nextPutAll: '}/*]]>*/'.
 	aDocument closeTag: 'script'
