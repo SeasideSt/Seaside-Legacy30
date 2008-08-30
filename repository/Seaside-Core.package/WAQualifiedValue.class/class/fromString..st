@@ -7,9 +7,9 @@ fromString: aString
 			| value quality |
 			(each includes: $;)
 				ifTrue: [
-					value := self valueClass fromString: (each copyUpTo: $;) trimBlanks.
+					value := self valueClass fromString: (each copyUpTo: $;) trimBoth.
 					quality := Float readFrom: ((each copyAfter: $;) copyAfter: $=) readStream ]
 				ifFalse: [
-					value := self valueClass fromString: each trimBlanks.
+					value := self valueClass fromString: each trimBoth.
 					quality := Float infinity ].
 			stream nextPut: (self value: value quality: quality) ] ]
