@@ -1,3 +1,3 @@
 accessing
 rootComponentClass: aClass
-	rootComponentClass := aClass
+	^ self preferenceAt: #rootComponentClass put: aClass
