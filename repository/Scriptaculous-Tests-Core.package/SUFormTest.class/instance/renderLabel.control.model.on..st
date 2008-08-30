@@ -7,6 +7,6 @@ renderLabel: aString control: aBlock model: anObject on: html
 		html div class: 'control'; with: [
 			html form
 				id: (fid := html nextId);
-				with: [ aBlock value: fid value: (mid := html nextId) ] ].
+				with: [ html div: [ aBlock value: fid value: (mid := html nextId) ] ] ].
 		html div class: 'model'; id: mid; with: anObject.
 		html div class: 'clear' ]
