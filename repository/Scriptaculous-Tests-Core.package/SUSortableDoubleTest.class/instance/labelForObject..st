@@ -1,3 +1,3 @@
 private
-labelForObject: anObject
-	^ anObject class name , ': ' , anObject toString
+labelForObject: anObject 
+	^ anObject class name , ': ' , anObject seasideString
