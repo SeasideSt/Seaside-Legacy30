@@ -1,10 +1,9 @@
 accessing
 description
-	^ [
-		| rootClass |
-		rootClass := self rootClass.
-		rootClass isNil
-			ifTrue: [ String new ]
-			ifFalse: [ rootClass description ] ]
+	| class |
+	class := [ self rootClass ] 
 		on: WAAttributeNotFound
-		do: [ :err | String new ]
+		do: [ :err | WAComponent ].
+	^ class isNil
+		ifTrue: [ String new ]
+		ifFalse: [ class description ]
