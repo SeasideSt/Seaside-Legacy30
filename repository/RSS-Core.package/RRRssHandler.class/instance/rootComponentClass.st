@@ -1,3 +1,3 @@
 accessing
 rootComponentClass
-	^ rootComponentClass
+	^ self preferenceAt: #rootComponentClass

@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "WAUserConfigurationEditor",
+	"super" : "WASystemConfiguration",
 	"category" : "RSS-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "RRHandlerEditor",
+	"name" : "RRSystemConfiguration",
 	"type" : "normal"
 }

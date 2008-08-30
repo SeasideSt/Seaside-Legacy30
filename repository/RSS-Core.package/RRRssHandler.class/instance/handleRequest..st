@@ -12,15 +12,12 @@ handleRequest: aRequest
 	rootComponent := self createRootComponent.
 	WARequestContext 
 		pushRequestHandler: self
-		while: 
-			[ 
+		while: [ 
 			[ rootComponent initialRequest: aRequest.
 			rootComponent updateRoot: aRequest.
 			canvas render: rootComponent ] 
 				on: Error
-				do: [ :err |
-					self openDebugger 
-						ifTrue: [ SeasidePlatformSupport openDebuggerOn: err ]
-						ifFalse: [ response := WAResponse internalError: err ] ] ].
+				do: [ :error |
+					response := self errorHandler internalError: error ] ].
 	document close: root.
 	^ response
