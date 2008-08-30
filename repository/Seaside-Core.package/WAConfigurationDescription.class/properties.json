@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "jf 7/19/2008 13:33",
-	"super" : "Object",
+	"super" : "WAObject",
 	"category" : "Seaside-Core-Configuration",
 	"classinstvars" : [ ],
 	"pools" : [ ],
