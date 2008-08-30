@@ -10,7 +10,7 @@ initialize
 								title: 'Window 2';
 								yourself)
 					with: ((SUWindow on: [:w | SUTooltipTest new]) id: 'window_3';
-								updateBlock: [:w :model | model textWithKey: (w arguments at: 3)];
+								updateBlock: [:w :model | model textWithKey: (w tooltipKey)];
 								zIndex: 1003;
 								extent: 150@45;
 								title: 'Tooltip';

@@ -8,7 +8,7 @@ tooltipScriptOn: html window: aWindow
      	do: [ :each | each element on: 'mouseover' do: ((SUStream on: 'event.target._showState = true'),
 				((SUStream on: 'event.target._showState') then:
 					(html evaluator 
-						callback: [:v | aWindow initializeWith: v ] value: (SUStream on: '[event.clientX,event.clientY,event.target.rel]');
+						callback: [:v | aWindow initializeTooltipWith: v ] value: (SUStream on: '[event.clientX,event.clientY,event.target.rel]');
 						callback: [:script | aWindow openOn: script hidden: true];
 						onComplete: ((SUStream on: 'event.target._showState') then: (html element id: aWindow windowId; show))); timeout: 2000)).
 				each element on: 'mouseout' do: 	((SUStream on: 'event.target._showState = false'),
