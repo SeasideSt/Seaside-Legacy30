@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "SUFunctionalTest",
+	"category" : "Scriptaculous-Tests-Components",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"splitter"
+	],
+	"name" : "SUHorizontalSplitterTest",
+	"type" : "normal"
+}

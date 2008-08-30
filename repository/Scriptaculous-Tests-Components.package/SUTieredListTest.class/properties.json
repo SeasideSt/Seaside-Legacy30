@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "SUFunctionalTest",
+	"category" : "Scriptaculous-Tests-Components",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"tieredList"
+	],
+	"name" : "SUTieredListTest",
+	"type" : "normal"
+}

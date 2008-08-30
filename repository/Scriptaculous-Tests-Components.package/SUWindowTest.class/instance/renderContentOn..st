@@ -1,0 +1,35 @@
+rendering
+renderContentOn: html 
+	| aWindow |
+	html big: 'Window Test:'.
+	html space.
+	html anchor
+		onClick: (html evaluator callback: [ : script | windows first openOn: script ]) ;
+		with: 'Open window 1'.
+	html space: 2.
+	html anchor
+		onClick: (html evaluator callback: [ : script | (windows at: 2) openOn: script ]) ;
+		with: 'Open window 2'.
+	html space: 2.
+	aWindow := windows last.
+	html anchor
+		class: 'tt' ;
+		attributeAt: 'rel'
+			put: 'ok' ;
+		with: 'Show tooltip 1'.
+	html space: 2.
+	html anchor
+		class: 'tt' ;
+		attributeAt: 'rel'
+			put: 'hello' ;
+		with: 'Show tooltip 2'.
+	html space: 2.
+	html anchor
+		class: 'tt' ;
+		attributeAt: 'rel'
+			put: 'illegal' ;
+		with: 'Show tooltip 3'.
+	windows do: [:w | html render: w ].
+	self 
+		tooltipScriptOn: html
+		window: aWindow
