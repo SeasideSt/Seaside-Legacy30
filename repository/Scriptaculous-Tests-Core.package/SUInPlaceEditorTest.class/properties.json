@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "SUFunctionalTest",
+	"category" : "Scriptaculous-Tests-Core-Functional",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"text",
+		"list",
+		"selected"
+	],
+	"name" : "SUInPlaceEditorTest",
+	"type" : "normal"
+}
