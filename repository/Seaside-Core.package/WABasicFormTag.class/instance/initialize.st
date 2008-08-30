@@ -1,4 +1,4 @@
 initialize-release
 initialize
 	super initialize.
-	self acceptCharset: self defaulUrlCharset
+	self acceptCharset: self defaultUrlCharset

@@ -1,3 +1,3 @@
 *Seaside-Core
-encodeOn: aDocument
-	aDocument print: self toString
+encodeOn: aDocument 
+	aDocument print: self seasideString
