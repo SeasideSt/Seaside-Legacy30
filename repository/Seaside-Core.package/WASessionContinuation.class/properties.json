@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "lr 6/2/2008 09:19",
-	"super" : "WAObject",
+	"super" : "Object",
 	"category" : "Seaside-Core-RenderLoop",
 	"classinstvars" : [ ],
 	"pools" : [ ],

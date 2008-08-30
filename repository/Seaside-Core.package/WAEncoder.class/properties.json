@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "lr 4/8/2007 15:49",
-	"super" : "WAObject",
+	"super" : "Object",
 	"category" : "Seaside-Core-Document",
 	"classinstvars" : [
 		"table"

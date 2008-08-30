@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "pmm 3/24/2008 16:44",
-	"super" : "WAObject",
+	"super" : "Object",
 	"category" : "Seaside-Core-Components-Widgets",
 	"classinstvars" : [ ],
 	"pools" : [ ],
