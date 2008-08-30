@@ -1,6 +1,6 @@
 {
-	"commentStamp" : "",
-	"super" : "Object",
+	"commentStamp" : "<historical>",
+	"super" : "WAObject",
 	"category" : "Seaside-Core-Component",
 	"classinstvars" : [ ],
 	"pools" : [ ],

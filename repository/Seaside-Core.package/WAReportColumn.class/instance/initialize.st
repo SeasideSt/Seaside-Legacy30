@@ -1,5 +1,6 @@
 initialize-release
 initialize
+	super initialize.
 	formatBlock := [ :x | x toString ].
 	sortBlock := [ :a :b | a <= b ].
 	valueBlock := [ :row | nil ].
