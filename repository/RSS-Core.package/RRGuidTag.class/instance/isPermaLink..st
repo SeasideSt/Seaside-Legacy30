@@ -1,5 +1,7 @@
 attributes
-isPermaLink: aBoolean
+isPermaLink: aBoolean 
 	"the value really must be a string else seaside makes
 	isPermaLink='isPermaLink'"
-	self attributeAt: 'isPermaLink' put: aBoolean toString
+	self 
+		attributeAt: 'isPermaLink'
+		put: aBoolean seasideString
