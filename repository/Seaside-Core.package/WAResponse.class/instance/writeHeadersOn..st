@@ -1,15 +1,13 @@
 writing
 writeHeadersOn: aStream 
-	self headers associationsDo: 
-		[ :assoc | 
+	self headers associationsDo: [ :association | 
 		aStream
-			nextPutAll: assoc key;
+			nextPutAll: association key;
 			nextPutAll: ': ';
-			nextPutAll: assoc value seasideString.
+			nextPutAll: association value seasideString.
 		aStream crlf ].
-	cookies ifNotNil: 
-		[ cookies do: 
-			[ :each | 
+	cookies ifNotNil:  [
+		cookies do: [ :each | 
 			aStream nextPutAll: 'Set-Cookie: '.
 			each writeOn: aStream.
 			aStream crlf ] ].

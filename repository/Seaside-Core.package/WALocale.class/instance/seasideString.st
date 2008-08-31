@@ -1,9 +1,7 @@
 converting
 seasideString
-	^ String streamContents: 
-		[ :stream | 
+	^ String streamContents: [ :stream | 
 		stream nextPutAll: self language.
-		self country isNil ifFalse: 
-			[ stream
-				nextPut: $-;
-				nextPutAll: self country ] ]
+		self country isNil ifFalse: [ stream
+			nextPut: $-;
+			nextPutAll: self country ] ]

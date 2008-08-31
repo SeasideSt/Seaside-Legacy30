@@ -1,7 +1,6 @@
 redirecting
 redirectWithMessage: aString delay: aNumber 
-	self respond: 
-		[ :url | 
+	self respond: [ :url | 
 		WAResponse 
 			refreshWithMessage: aString
 			location: url seasideString
