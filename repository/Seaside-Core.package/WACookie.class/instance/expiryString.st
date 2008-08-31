@@ -1,6 +1,7 @@
 private
 expiryString
-	^ String streamContents: [ :stream | 
+	^ String streamContents: 
+		[ :stream | 
 		stream
 			nextPutAll: (expiry dayOfWeekName first: 3);
 			nextPutAll: ', ';

@@ -5,4 +5,4 @@ renderContentOn: html
 		with: [
 			html div: [
 				self renderOwnerOn: html.
-				self renderButtonsOn: html ] ]
+				self renderButtonsOn: html ]]

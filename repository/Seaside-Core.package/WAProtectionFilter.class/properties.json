@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "WARequestFilter",
+	"category" : "Seaside-Core-Filter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"remoteAddress"
+	],
+	"name" : "WAProtectionFilter",
+	"type" : "normal"
+}

@@ -9,7 +9,10 @@ incomingRequest: aRequest
 		critical: 
 			[ WACurrentRequestContext 
 				use: context
-				during: [ self responseForRequest: aRequest ] ]
+				during: [ 
+					self withEscapeHandler: [
+						self withErrorHandler: [
+							self performRequest: aRequest ] ] ] ]
 		ifError: 
 			[ :error | 
 			WACurrentRequestContext 

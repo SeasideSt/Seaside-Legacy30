@@ -1,12 +1,14 @@
 converting
 seasideString
-	^ String streamContents: [ :stream | 
+	^ String streamContents: 
+		[ :stream | 
 		stream
 			nextPutAll: self main;
 			nextPut: $/;
 			nextPutAll: self sub.
-		parameters isNil ifFalse: [
-			parameters keysAndValuesDo: [ :key :value | 
+		parameters isNil ifFalse: 
+			[ parameters keysAndValuesDo: 
+				[ :key :value | 
 				stream
 					nextPut: $;;
 					nextPutAll: key;
