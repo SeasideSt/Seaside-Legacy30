@@ -1,7 +1,6 @@
 responding
 closePopupAndContinue
-	^ self respond: 
-		[ :url | 
+	^ self respond: [ :url | 
 		WAResponse new
 			nextPutAll: '<html><script>';
 			nextPutAll: 'self.close();';

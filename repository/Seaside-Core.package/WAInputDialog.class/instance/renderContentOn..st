@@ -8,4 +8,4 @@ renderContentOn: html
 				html space.
 				html submitButton
 					callback: [ self answer: value ];
-					text: self label ]]
+					text: self label ] ]

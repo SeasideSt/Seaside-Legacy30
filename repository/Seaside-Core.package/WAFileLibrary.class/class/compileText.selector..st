@@ -4,16 +4,14 @@ compileText: aByteArrayOrString selector: aSymbol
 	aSymbol
 		^ aByteArrayOrString"
 	| code |
-	code := String streamContents: 
-		[ :stream | 
+	code := String streamContents: [ :stream | 
 		stream
 			nextPutAll: aSymbol;
 			cr.
 		stream
 			tab;
 			nextPutAll: '^ '''.
-		aByteArrayOrString seasideString do: 
-			[ :each | 
+		aByteArrayOrString seasideString do: [ :each | 
 			each = $' ifTrue: [ stream nextPut: $' ].
 			stream nextPut: each ].
 		stream nextPutAll: '''' ].

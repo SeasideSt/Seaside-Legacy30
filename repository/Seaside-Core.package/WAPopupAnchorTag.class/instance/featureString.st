@@ -1,17 +1,14 @@
 private
 featureString
-	^ String streamContents: 
-		[ :stream | 
-		features associations 
-			do: 
-				[ :assoc | 
-				stream
-					nextPutAll: assoc key;
-					nextPut: $=.
-				stream nextPutAll: (assoc value == true 
-						ifTrue: [ 'yes' ]
-						ifFalse: 
-							[ assoc value == false 
-								ifTrue: [ 'no' ]
-								ifFalse: [ assoc value seasideString ] ]) ]
+	^ String streamContents: [ :stream | 
+		features associations do: [ :association | 
+			stream
+				nextPutAll: association key;
+				nextPut: $=.
+			stream nextPutAll: (association value == true 
+					ifTrue: [ 'yes' ]
+					ifFalse: [
+						association value == false 
+							ifTrue: [ 'no' ]
+							ifFalse: [ association value seasideString ] ]) ]
 			separatedBy: [ stream nextPut: $, ] ]
