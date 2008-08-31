@@ -1,3 +1,3 @@
 request handling
 unknownRequest: aRequest
-	self start: aRequest
+	^ self start: aRequest
