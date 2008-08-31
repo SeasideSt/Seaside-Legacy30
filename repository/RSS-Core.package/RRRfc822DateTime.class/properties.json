@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "WAObject",
 	"category" : "RSS-Core-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],

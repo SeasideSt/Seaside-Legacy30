@@ -1,3 +1,3 @@
 accessing
-timezoneString: anObject
-	timezoneString := anObject
+timezoneString: aString
+	timezoneString := aString
