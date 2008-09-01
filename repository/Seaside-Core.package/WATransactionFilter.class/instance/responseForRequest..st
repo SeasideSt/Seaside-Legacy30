@@ -3,7 +3,14 @@ responseForRequest: aRequest
 	^ self isClosed
 		ifFalse: [ super responseForRequest: aRequest ]
 		ifTrue: [
+			| content |
+			content := WARenderCanvas builder
+				fullDocument: true;
+				rootBlock: [ :root | root title: 'Page Expired' ];
+				render: [ :html |
+					html heading: 'Page Expired'.
+					html paragraph: 'Please use the back-button to navigate to the last valid page.' ].
 			WAResponse new
-				nextPutAll: '<html><head><title>Page Expired</title><body><h1>Page Expired</h1><p>Please use the back-button to navigate to the last valid page.</p></html>';
+				nextPutAll: content;
 				doNotCache;
 				yourself ]
