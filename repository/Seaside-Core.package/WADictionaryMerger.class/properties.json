@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "pmm 9/4/2008 14:07",
+	"super" : "WAObject",
+	"category" : "Seaside-Core-Document",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"dictionary"
+	],
+	"name" : "WADictionaryMerger",
+	"type" : "normal"
+}
