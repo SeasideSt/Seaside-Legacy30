@@ -1,5 +1,5 @@
 values
 at: aSymbol put: anObject 
-	self addValue: ((WAValueExpression key: aSymbol)
+	self addExpression: ((WAValueExpression key: aSymbol)
 			value: anObject;
 			yourself)
