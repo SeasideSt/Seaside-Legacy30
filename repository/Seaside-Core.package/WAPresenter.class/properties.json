@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "<historical>",
+	"commentStamp" : "",
 	"super" : "WAObject",
 	"category" : "Seaside-Core-Component",
 	"classinstvars" : [ ],
