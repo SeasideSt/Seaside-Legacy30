@@ -4,7 +4,9 @@ initialize
 	super initialize.
 	stream := SeasidePlatformSupport readWriteStream.
 	status := 200.
-	application := self application.
+	application := [ self application ]
+					on: WARequestContextNotFound
+					do: [ nil ].
 	contentType := application isNil 
 		ifFalse: [ application contentType ]
 		ifTrue: [ self class defaultValueForContentType ]

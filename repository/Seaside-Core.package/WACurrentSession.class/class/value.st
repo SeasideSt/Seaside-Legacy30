@@ -1,3 +1,5 @@
 evaluating
 value
-	^ WACurrentRequestContext session
+	| request |
+	request := WACurrentRequestContext value.
+	^ request isNil ifFalse: [ request session ]
