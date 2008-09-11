@@ -7,7 +7,7 @@ performRequest: aRequest
 	((aRequest fields includesKey: self checkCookiesField)
 		and: [ aRequest cookies isEmpty ])
 			ifTrue: [ cookiesEnabled := false ].
-	(key isKindOf: OrderedCollection)
+	(key isSequenceable)
 		ifTrue: [ key := key first ].
 	continuation := continuations
 		at: key
