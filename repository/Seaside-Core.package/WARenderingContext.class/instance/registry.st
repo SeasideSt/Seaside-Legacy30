@@ -1,3 +1,3 @@
 documents
 registry
-	^ WACurrentRequestContext application
+	^ self application

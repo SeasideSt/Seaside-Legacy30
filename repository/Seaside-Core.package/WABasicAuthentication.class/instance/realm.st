@@ -1,3 +1,3 @@
 accessing
 realm
-	^ realm ifNil: [self session application baseUrl pathString]
+	^ realm ifNil: [self application baseUrl pathString]

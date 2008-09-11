@@ -4,7 +4,7 @@ initialize
 	super initialize.
 	stream := SeasidePlatformSupport readWriteStream.
 	status := 200.
-	application := WACurrentRequestContext application.
+	application := self application.
 	contentType := application isNil 
 		ifFalse: [ application contentType ]
 		ifTrue: [ self class defaultValueForContentType ]

@@ -1,1 +1,1 @@
-Available for backward compatibility. You should now use "WACurrentRequestContext session"
+Available for backward compatibility. You should now use "self session" in any subclass of WAObject or "WACurrentRequestContext value session" anywhere else.
