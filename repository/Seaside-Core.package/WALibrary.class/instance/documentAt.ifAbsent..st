@@ -6,6 +6,6 @@ documentAt: aFilename ifAbsent: aBlock
 		ifTrue: [ (WAResponse
 			document: (self documentForFile: aFilename)
 			mimeType: (self mimetypeForFile: aFilename))
-			cacheForMinutes: 30;
+			cacheFor: self cacheDuration;
 			yourself ]
 		ifFalse: [ aBlock value ]
