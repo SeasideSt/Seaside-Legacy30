@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "pmm 5/27/2007 21:48",
+	"super" : "WADefaultErrorHandler",
+	"category" : "Seaside-Session",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WASimpleErrorHandler",
+	"type" : "normal"
+}

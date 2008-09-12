@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "jf 9/11/2008 14:58",
+	"super" : "WAObject",
+	"category" : "Seaside-Session",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WACurrentSession",
+	"type" : "normal"
+}

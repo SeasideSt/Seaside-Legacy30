@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "jf 7/22/2008 11:48",
+	"super" : "WAExpiringHandler",
+	"category" : "Seaside-Session",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"continuations",
+		"monitor",
+		"jumpTo",
+		"cookiesEnabled"
+	],
+	"name" : "WASession",
+	"type" : "normal"
+}
