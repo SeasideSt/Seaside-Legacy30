@@ -1,0 +1,1 @@
+I am used to trigger the rendering of the component-tree. After processing the callbacks of the page I rendered, I am followed by a WARedirectContinuation.
