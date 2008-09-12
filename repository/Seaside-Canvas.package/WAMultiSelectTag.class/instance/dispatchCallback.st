@@ -1,0 +1,3 @@
+private
+dispatchCallback
+	^ canvas callbacks registerMultiDispatchCallback

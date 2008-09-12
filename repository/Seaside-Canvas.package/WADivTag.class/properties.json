@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "obi 4/2/2008 22:48",
+	"super" : "WATagBrush",
+	"category" : "Seaside-Canvas-Tags",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WADivTag",
+	"type" : "normal"
+}

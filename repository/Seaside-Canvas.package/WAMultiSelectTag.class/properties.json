@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "obi 4/2/2008 22:54",
+	"super" : "WASelectTag",
+	"category" : "Seaside-Canvas-Tags",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAMultiSelectTag",
+	"type" : "normal"
+}

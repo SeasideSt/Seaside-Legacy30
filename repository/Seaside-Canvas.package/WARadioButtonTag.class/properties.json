@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "pmm 6/1/2008 00:45",
+	"super" : "WAFormInputTag",
+	"category" : "Seaside-Canvas-Tags",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WARadioButtonTag",
+	"type" : "normal"
+}

@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "lr 3/27/2007 11:18",
+	"super" : "WAObject",
+	"category" : "Seaside-Canvas",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"canvas",
+		"parent",
+		"closed"
+	],
+	"name" : "WABrush",
+	"type" : "normal"
+}

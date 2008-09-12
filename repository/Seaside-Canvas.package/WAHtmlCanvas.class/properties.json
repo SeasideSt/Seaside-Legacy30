@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "jf 7/16/2008 12:16",
+	"super" : "WACanvas",
+	"category" : "Seaside-Canvas",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAHtmlCanvas",
+	"type" : "normal"
+}

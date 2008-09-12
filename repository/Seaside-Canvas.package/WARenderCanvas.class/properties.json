@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "pmm 4/20/2007 11:35",
+	"super" : "WAHtmlCanvas",
+	"category" : "Seaside-Canvas",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"context",
+		"callbacks"
+	],
+	"name" : "WARenderCanvas",
+	"type" : "normal"
+}

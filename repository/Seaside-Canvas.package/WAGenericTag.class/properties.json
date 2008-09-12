@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "pmm 6/1/2008 00:40",
+	"super" : "WATagBrush",
+	"category" : "Seaside-Canvas",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"tag"
+	],
+	"name" : "WAGenericTag",
+	"type" : "normal"
+}

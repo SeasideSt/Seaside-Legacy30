@@ -1,0 +1,1 @@
+This is an abstract canvas that knows about HTML but nothing about callbacks. Subclasses must implement #document.

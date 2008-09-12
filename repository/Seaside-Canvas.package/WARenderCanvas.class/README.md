@@ -1,0 +1,1 @@
+This canvas knows about callbacks and is intertwined with the rest of the framework.

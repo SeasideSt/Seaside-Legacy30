@@ -1,0 +1,1 @@
+This canvas can be used to generate static/RESTful HTML pages.
