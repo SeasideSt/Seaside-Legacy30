@@ -1,1 +1,0 @@
-A WADefaultErrorHandler is a convienient superclass for all error handlers. It returns an HTTP response for #internalError:.

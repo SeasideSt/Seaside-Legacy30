@@ -1,3 +1,0 @@
-private
-checkCookiesField
-	^ '_c'

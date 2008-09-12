@@ -1,3 +1,0 @@
-responding
-pageIntentionallyLeftBlank
-	self requestContext returnResponse: WAResponse new

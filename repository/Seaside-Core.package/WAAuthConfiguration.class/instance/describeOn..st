@@ -7,4 +7,3 @@ describeOn: config
 		group: #authentication;
 		comment: 'The password for this application.';
 		label: 'Password'.
-	config at: #mainClass put: WAAuthMain.

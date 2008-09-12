@@ -1,3 +1,0 @@
-processing
-go
-	self subclassResponsibility

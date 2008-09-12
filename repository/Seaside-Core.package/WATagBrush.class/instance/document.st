@@ -1,3 +1,0 @@
-private
-document
-	^ canvas document

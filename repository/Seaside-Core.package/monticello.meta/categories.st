@@ -1,10 +1,3 @@
-SystemOrganization addCategory: #'Seaside-Core-Canvas'!
-SystemOrganization addCategory: #'Seaside-Core-Canvas-Tags'!
-SystemOrganization addCategory: #'Seaside-Core-Component'!
-SystemOrganization addCategory: #'Seaside-Core-Components-Decorations'!
-SystemOrganization addCategory: #'Seaside-Core-Components-Dialogs'!
-SystemOrganization addCategory: #'Seaside-Core-Components-Frames'!
-SystemOrganization addCategory: #'Seaside-Core-Components-Widgets'!
 SystemOrganization addCategory: #'Seaside-Core-Configuration'!
 SystemOrganization addCategory: #'Seaside-Core-Contexts'!
 SystemOrganization addCategory: #'Seaside-Core-Document'!
@@ -12,10 +5,8 @@ SystemOrganization addCategory: #'Seaside-Core-Document-Elements'!
 SystemOrganization addCategory: #'Seaside-Core-HTTP'!
 SystemOrganization addCategory: #'Seaside-Core-Libraries'!
 SystemOrganization addCategory: #'Seaside-Core-Callbacks'!
-SystemOrganization addCategory: #'Seaside-Core-RenderLoop'!
 SystemOrganization addCategory: #'Seaside-Core-RequestHandler'!
 SystemOrganization addCategory: #'Seaside-Core-Filter'!
-SystemOrganization addCategory: #'Seaside-Core-Session'!
 SystemOrganization addCategory: #'Seaside-Core-Exceptions'!
 SystemOrganization addCategory: #'Seaside-Core-Utilities'!
 SystemOrganization addCategory: #'Seaside-Core'!
