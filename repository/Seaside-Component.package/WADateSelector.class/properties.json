@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "rew 1/23/2008 21:10",
+	"super" : "WAComponent",
+	"category" : "Seaside-Component-Widget",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"day",
+		"month",
+		"year",
+		"startYear",
+		"endYear"
+	],
+	"name" : "WADateSelector",
+	"type" : "normal"
+}

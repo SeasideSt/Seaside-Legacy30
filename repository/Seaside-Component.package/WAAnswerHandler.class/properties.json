@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "WADecoration",
+	"category" : "Seaside-Component",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"block"
+	],
+	"name" : "WAAnswerHandler",
+	"type" : "normal"
+}

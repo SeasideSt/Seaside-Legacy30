@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "WAComponent",
+	"category" : "Seaside-Component-Widget",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"monthIndex",
+		"year",
+		"date",
+		"canSelectBlock",
+		"selectBlock"
+	],
+	"name" : "WAMiniCalendar",
+	"type" : "normal"
+}

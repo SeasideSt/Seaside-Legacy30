@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "rew 2/14/2008 10:17",
+	"super" : "WAComponent",
+	"category" : "Seaside-Component-Widget",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"actionsSelector",
+		"owner"
+	],
+	"name" : "WANavigationBar",
+	"type" : "normal"
+}

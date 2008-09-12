@@ -1,0 +1,3 @@
+decoration
+isDecoration
+	^ false

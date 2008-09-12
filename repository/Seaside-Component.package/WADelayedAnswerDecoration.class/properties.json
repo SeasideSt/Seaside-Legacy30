@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "rew 1/23/2008 21:11",
+	"super" : "WADecoration",
+	"category" : "Seaside-Component-Widget",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"delay"
+	],
+	"name" : "WADelayedAnswerDecoration",
+	"type" : "normal"
+}

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "pmm 10/3/2007 21:11",
+	"super" : "WADecoration",
+	"category" : "Seaside-Component-Decoration",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"title",
+		"cssClass"
+	],
+	"name" : "WAWindowDecoration",
+	"type" : "normal"
+}

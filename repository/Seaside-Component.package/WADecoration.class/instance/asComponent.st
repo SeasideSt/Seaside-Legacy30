@@ -1,0 +1,3 @@
+convenience
+asComponent
+	^ self component

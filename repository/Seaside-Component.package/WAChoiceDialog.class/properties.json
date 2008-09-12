@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "pmm 9/25/2007 20:24",
+	"super" : "WAFormDialog",
+	"category" : "Seaside-Component-Dialog",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"options",
+		"selection"
+	],
+	"name" : "WAChoiceDialog",
+	"type" : "normal"
+}
