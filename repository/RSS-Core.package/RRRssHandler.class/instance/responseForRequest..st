@@ -1,5 +1,5 @@
 processing
-handleRequest: aRequest 
+responseForRequest: aRequest
 	| response document context canvas root rootComponent |
 	response := WAResponse new contentType: RRRssRoot defaultContentType.
 	document := self newDocumentOn: response stream.

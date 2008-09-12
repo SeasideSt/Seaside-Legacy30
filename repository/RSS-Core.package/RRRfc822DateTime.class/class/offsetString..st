@@ -6,5 +6,5 @@ offsetString: aDuration
 		 	or: [ aDuration asSeconds = 0
 				and: [ aDuration nanoSeconds > 0 ] ].
 		stream nextPut: (positive ifTrue: [ $+ ] ifFalse: [ $- ]).
-		stream nextPutAll: (aDuration hours printPaddedWith: $0 to: 2 base: 10).
-		stream nextPutAll: (aDuration minutes printPaddedWith: $0 to: 2 base: 10) ]
+		stream nextPutAll: (aDuration hours abs printPaddedWith: $0 to: 2 base: 10).
+		stream nextPutAll: (aDuration minutes abs printPaddedWith: $0 to: 2 base: 10) ]
