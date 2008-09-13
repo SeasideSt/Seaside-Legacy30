@@ -1,17 +1,19 @@
 request handling
-incomingRequest: aRequestContext 
-	((aRequestContext request fields includesKey: 'terminate') and: [ self sessionAllowTermination ]) ifTrue: [
+incomingRequest: aRequest 
+	| context |
+	((aRequest fields includesKey: 'terminate') and: [ self sessionAllowTermination ]) ifTrue: [
 		monitor terminate.
 		^ WAResponse new nextPutAll: 'Process terminated' ].
+	context := self requestContext.
 	^ monitor 
 		critical:  [
 			WACurrentRequestContext 
-				use: aRequestContext
+				use: context
 				during: [ 
 					self withEscapeHandler: [
 						self withErrorHandler: [
-							self performRequest: aRequestContext request ] ] ] ]
+							self performRequest: aRequest ] ] ] ]
 		ifError:  [ :error | 
 			WACurrentRequestContext 
-				use: aRequestContext
+				use: context
 				during: [ self errorHandler internalError: error ] ]

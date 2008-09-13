@@ -1,3 +1,3 @@
 request handling
-handleDefaultRequest: aRequestContext
-	^ (self sessionClass new setParent: self) handleRequest: aRequestContext
+handleDefaultRequest: aRequest
+	^ (self sessionClass new setParent: self) handleRequest: aRequest
