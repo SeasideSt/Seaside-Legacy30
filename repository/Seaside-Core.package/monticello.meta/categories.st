@@ -1,3 +1,4 @@
+SystemOrganization addCategory: #'Seaside-Core'!
 SystemOrganization addCategory: #'Seaside-Core-Configuration'!
 SystemOrganization addCategory: #'Seaside-Core-Contexts'!
 SystemOrganization addCategory: #'Seaside-Core-Document'!
@@ -9,4 +10,3 @@ SystemOrganization addCategory: #'Seaside-Core-RequestHandler'!
 SystemOrganization addCategory: #'Seaside-Core-Filter'!
 SystemOrganization addCategory: #'Seaside-Core-Exceptions'!
 SystemOrganization addCategory: #'Seaside-Core-Utilities'!
-SystemOrganization addCategory: #'Seaside-Core'!
