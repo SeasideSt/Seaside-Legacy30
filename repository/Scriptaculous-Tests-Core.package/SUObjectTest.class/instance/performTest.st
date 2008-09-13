@@ -4,7 +4,7 @@ performTest
 	context := WARequestContext new.
 	context server: (
 		WAServer new
-		codec: (WACodec forEncoding: 'utf-8');
+		codec: (SeasidePlatformSupport codecForEncoding: 'utf-8');
 		yourself).
 	
 	WACurrentRequestContext 
