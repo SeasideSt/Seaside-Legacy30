@@ -1,3 +1,3 @@
 public
-notFoundResponseFor: aRequest
-	^ self notFoundHandler handleRequest: aRequest
+notFoundResponseFor: aRequestContext
+	^ self notFoundHandler handleRequest: aRequestContext
