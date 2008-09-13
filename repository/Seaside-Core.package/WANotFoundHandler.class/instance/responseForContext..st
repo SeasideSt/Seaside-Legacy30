@@ -1,3 +1,3 @@
 actions
 responseForContext: aRequestContext 
-	^ WAResponse notFound: aRequestContext request url
+	^ WAResponseFactory notFoundForContext: aRequestContext

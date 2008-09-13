@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WARedirectHandler",
+	"name" : "WAResponseFactory",
 	"type" : "normal"
 }
