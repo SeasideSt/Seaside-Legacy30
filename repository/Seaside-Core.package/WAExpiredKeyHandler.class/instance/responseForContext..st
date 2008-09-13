@@ -1,5 +1,5 @@
-as yet unclassified
-expiredKeyForContext: aRequestContext 
+processing
+responseForContext: aRequestContext 
 	| url |
 	aRequestContext request isXmlHttpRequest 
 		ifTrue: [ ^ WAResponse new forbidden ].

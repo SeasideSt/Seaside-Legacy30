@@ -1,3 +1,3 @@
 public
 notFoundResponseFor: aRequestContext
-	^ self responseFactory notFoundForContext: aRequestContext
+	^ self notFoundHandler handleRequest: aRequestContext

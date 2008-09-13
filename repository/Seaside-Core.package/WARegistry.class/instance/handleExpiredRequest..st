@@ -1,3 +1,3 @@
 private
 handleExpiredRequest: aRequestContext
-	^ self responseFactory expiredKeyForContext: aRequestContext
+	^ self expiredKeyHandler handleRequest: aRequestContext

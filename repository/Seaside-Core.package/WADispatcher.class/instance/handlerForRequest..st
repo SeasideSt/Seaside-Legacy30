@@ -1,7 +1,7 @@
 private
-handlerForContext: aRequestContext
+handlerForRequest: aRequest
 	| requestUrl baseUrl relativePath |
-	requestUrl := WAUrl new parsePath: aRequestContext request url; yourself.
+	requestUrl := WAUrl new parsePath: aRequest url; yourself.
 	requestUrl path isEmpty ifTrue: [
 		^self handlerOrNotFoundAt: self defaultName ].
 	

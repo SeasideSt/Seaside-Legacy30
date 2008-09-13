@@ -1,3 +1,3 @@
 processing
 responseForContext: aRequestContext 
-	^ (self handlerForContext: aRequestContext) handleRequest: aRequestContext
+	^ (self handlerForRequest: aRequestContext request) handleRequest: aRequestContext
