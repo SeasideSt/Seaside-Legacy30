@@ -1,5 +1,5 @@
 processing
-responseForRequest: aRequest
+responseForContext: aRequest 
 	| response document context canvas root rootComponent |
 	response := WAResponse new contentType: RRRssRoot defaultContentType.
 	document := self newDocumentOn: response stream.
@@ -10,11 +10,11 @@ responseForRequest: aRequest
 		context: context
 		callbacks: Dictionary new.
 	rootComponent := self createRootComponent.
+	
 	[ rootComponent initialRequest: aRequest.
 	rootComponent updateRoot: aRequest.
 	canvas render: rootComponent ] 
 		on: Error
-		do: [ :error |
-			response := self errorHandler internalError: error ].
+		do: [ :error | response := self errorHandler internalError: error ].
 	document close: root.
 	^ response
