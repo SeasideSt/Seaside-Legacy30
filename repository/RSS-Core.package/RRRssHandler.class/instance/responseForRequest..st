@@ -10,14 +10,11 @@ responseForRequest: aRequest
 		context: context
 		callbacks: Dictionary new.
 	rootComponent := self createRootComponent.
-	WACurrentRequestContext value
-		pushRequestHandler: self
-		while: [ 
-			[ rootComponent initialRequest: aRequest.
-			rootComponent updateRoot: aRequest.
-			canvas render: rootComponent ] 
-				on: Error
-				do: [ :error |
-					response := self errorHandler internalError: error ] ].
+	[ rootComponent initialRequest: aRequest.
+	rootComponent updateRoot: aRequest.
+	canvas render: rootComponent ] 
+		on: Error
+		do: [ :error |
+			response := self errorHandler internalError: error ].
 	document close: root.
 	^ response
