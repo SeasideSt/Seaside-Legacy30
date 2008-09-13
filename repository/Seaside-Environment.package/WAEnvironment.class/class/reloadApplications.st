@@ -1,4 +1,4 @@
-as yet unclassified
+development
 reloadApplications
 	WADispatcher clearDefault.
 	WAEntryPoint allSubclasses do: [ :each | each initialize ].
