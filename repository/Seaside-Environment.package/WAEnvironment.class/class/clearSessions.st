@@ -1,0 +1,4 @@
+development
+clearSessions
+	WARegistry clearAllHandlers.
+	SeasidePlatformSupport garbageCollect.
