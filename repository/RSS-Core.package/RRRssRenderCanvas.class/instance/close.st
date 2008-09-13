@@ -1,3 +1,0 @@
-private
-close
-	self flush

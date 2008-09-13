@@ -10,7 +10,7 @@ responseForRequest: aRequest
 		context: context
 		callbacks: Dictionary new.
 	rootComponent := self createRootComponent.
-	WACurrentRequestContext value
+	WARequestContext 
 		pushRequestHandler: self
 		while: [ 
 			[ rootComponent initialRequest: aRequest.
