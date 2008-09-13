@@ -5,6 +5,7 @@ register: aComponent at: aString
 	| application |
 	application := WAApplication register: aString.
 	application configuration
+		removeParent: WASessionConfiguration instance; "make the chain slightly cleaner"
 		addParent: WARenderLoopConfiguration instance.
 	application
 		preferenceAt: #rootClass put: aComponent.
