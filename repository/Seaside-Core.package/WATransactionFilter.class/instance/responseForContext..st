@@ -1,13 +1,13 @@
 processing
-responseForRequest: aRequest
-	^ self isClosed
-		ifFalse: [ super responseForRequest: aRequest ]
+responseForContext: aRequestContext 
+	^ self isClosed 
+		ifFalse: [ super responseForContext: aRequestContext ]
 		ifTrue: [
 			| content |
 			content := WARenderCanvas builder
 				fullDocument: true;
 				rootBlock: [ :root | root title: 'Page Expired' ];
-				render: [ :html |
+				render: [ :html | 
 					html heading: 'Page Expired'.
 					html paragraph: 'Please use the back-button to navigate to the last valid page.' ].
 			WAResponse new
