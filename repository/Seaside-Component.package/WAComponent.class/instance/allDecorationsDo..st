@@ -4,4 +4,4 @@ allDecorationsDo: aBlock
 	ea := self decoration.
 	[ea notNil and: [ea ~~ self]] whileTrue:
 		[aBlock value: ea.
-		ea := ea owner]
+		ea := ea next]

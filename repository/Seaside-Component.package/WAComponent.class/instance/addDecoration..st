@@ -5,9 +5,9 @@ addDecoration: newDecoration
 	dec := self decoration.
 	[dec ~~ self and: [self decoration: dec shouldWrap: newDecoration]] whileTrue:
 		[prev := dec.
-		dec := dec owner].
-	newDecoration owner: dec.
+		dec := dec next].
+	newDecoration setNext: dec.
 	prev
 		ifNil: [self decoration: newDecoration]
-		ifNotNil: [prev owner: newDecoration].
+		ifNotNil: [prev setNext: newDecoration].
 	^ newDecoration

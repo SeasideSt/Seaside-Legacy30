@@ -3,10 +3,10 @@ removeDecoration: aDecoration
 	| dec |
 	dec := self decoration.
 	dec = aDecoration ifTrue:
-		[self decoration: dec owner.
+		[self decoration: dec next.
 		^ self].
 
 	[dec notNil] whileTrue:
-		[dec owner = aDecoration
-			ifTrue: [dec owner: aDecoration owner.  ^ self]
-			ifFalse: [dec := dec owner]]
+		[dec next = aDecoration
+			ifTrue: [dec setNext: aDecoration next.  ^ self]
+			ifFalse: [dec := dec next]]

@@ -1,3 +1,3 @@
 iterating
 nextPresentersDo: aBlock
-	aBlock value: self owner
+	aBlock value: self next
