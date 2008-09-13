@@ -1,3 +1,3 @@
 private
-handleDefaultRequest: aRequestContext
+handleDefaultRequest: aRequest
 	self subclassResponsibility

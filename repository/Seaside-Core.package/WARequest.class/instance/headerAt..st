@@ -1,3 +1,3 @@
 accessing
 headerAt: aKey
-	^ self headerAt: aKey ifAbsent: []
+	^ self headerAt: aKey ifAbsent: [ nil ]
