@@ -1,3 +1,3 @@
 as yet unclassified
 clearAllDescriptions
-	self allSubInstances do: [ :each | each clearDescription ]
+	self allSubclasses do: [ :each | each instance clearDescription ]
