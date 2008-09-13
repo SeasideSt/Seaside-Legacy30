@@ -1,6 +1,3 @@
 instance creation
-server: aServerApater request: aRequest
-	^self new
-		server: aServerApater;
-		request: aRequest;
-		yourself
+server: aServer request: aRequest
+	^ self new initializeServer: aServer request: aRequest
