@@ -1,3 +1,3 @@
 private
-handleExpiredRequest: aRequest
-	^ self expiredKeyHandler handleRequest: aRequest
+handleExpiredRequest: aRequestContext
+	^ self expiredKeyHandler handleRequest: aRequestContext
