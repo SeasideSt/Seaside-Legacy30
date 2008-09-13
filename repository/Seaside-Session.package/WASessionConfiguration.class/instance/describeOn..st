@@ -17,5 +17,3 @@ describeOn: config
 	(config boolean: #sessionAllowTermination)
 		comment: 'Whether sessions allows a special HTTP request to terminate the process currently running in the session. This is used during development and should be disabled for deployment.';
 		default: false.
-		
-	config at: #expiredKeyHandlerClass put: WAExpiredSessionKeyHandler.
