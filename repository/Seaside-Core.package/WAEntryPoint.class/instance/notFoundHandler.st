@@ -1,5 +1,5 @@
 public
 notFoundHandler
-	^ self notFoundHandlerClass new
+	^ WANotFoundHandler new
 		setParent: self;
 		yourself

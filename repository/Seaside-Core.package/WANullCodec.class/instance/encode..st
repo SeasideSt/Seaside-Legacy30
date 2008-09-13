@@ -1,3 +1,0 @@
-encoding
-encode: aString
-	^aString

@@ -1,3 +1,0 @@
-decoding
-decode: aString
-	^aString
