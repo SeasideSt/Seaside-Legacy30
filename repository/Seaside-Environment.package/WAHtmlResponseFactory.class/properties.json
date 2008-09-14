@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WAResponseFactory",
+	"category" : "Seaside-Environment",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAHtmlResponseFactory",
+	"type" : "normal"
+}

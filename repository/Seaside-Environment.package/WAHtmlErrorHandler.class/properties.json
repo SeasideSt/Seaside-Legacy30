@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WAErrorHandler",
+	"category" : "Seaside-Environment",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAHtmlErrorHandler",
+	"type" : "normal"
+}
