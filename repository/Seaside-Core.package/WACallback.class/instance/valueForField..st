@@ -1,10 +1,11 @@
 converting
 valueForField: anObject
-	^ anObject
-		ifNil: ['']
-		ifNotNil:
-			[(anObject isCollection and: [anObject isString not])
-					ifTrue: [anObject isEmpty
-								ifTrue: ['']
-								ifFalse: [anObject first]]
-					ifFalse: [anObject]]
+	^ anObject isNil
+		ifTrue: [ String new ]
+		ifFalse: [
+			anObject isString
+				ifTrue: [ anObject ]
+				ifFalse: [
+					anObject isEmpty
+						ifTrue: [ String new ]
+						ifFalse: [ anObject first ] ] ]
