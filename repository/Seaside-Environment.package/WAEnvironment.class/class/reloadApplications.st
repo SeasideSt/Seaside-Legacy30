@@ -3,8 +3,8 @@ reloadApplications
 	WADispatcher resetDefault.
 	WASystemConfiguration clearAllDescriptions.
 	WAEntryPoint allSubclasses do: [ :each | 
-		(each includesSelector: #initialize)
+		(each class includesSelector: #initialize)
 			ifTrue: [ each initialize ] ].
 	WAComponent allSubclasses do: [ :each |
-		(each includesSelector: #initialize)
+		(each class includesSelector: #initialize)
 			ifTrue: [ each initialize ] ]
