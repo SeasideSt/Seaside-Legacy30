@@ -8,9 +8,9 @@ removeFilter: aFilter
 	[ current = self ] whileFalse: [
 		current = aFilter ifTrue: [
 			previous isNil
-				ifTrue: [ self filter: current next ]
-				ifFalse: [ previous next: current next ].
-			^ aFilter next: nil ].
+				ifTrue: [ self setFilter: current next ]
+				ifFalse: [ previous setNext: current next ].
+			^ aFilter setNext: nil ].
 		previous := current.
 		current := current next ].
 	^ nil

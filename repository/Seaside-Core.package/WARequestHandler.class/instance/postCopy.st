@@ -1,4 +1,5 @@
 copying
 postCopy
 	super postCopy.
-	parent := nil
+	filter := filter copy.
+	self setParent: nil; setFilter: (self filter copyTo: self)
