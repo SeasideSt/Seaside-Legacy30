@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "jf 9/14/2008 01:58",
+	"super" : "WAObject",
+	"category" : "Seaside-Core-RequestHandler",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAErrorHandler",
+	"type" : "normal"
+}

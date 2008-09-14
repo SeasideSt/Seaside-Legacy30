@@ -1,0 +1,1 @@
+This error handler displays a code 500 error with a short stackframe for all errors and warnings.
