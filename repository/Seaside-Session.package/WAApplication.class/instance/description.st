@@ -2,7 +2,7 @@ accessing
 description
 	^ [
 		| rootClass |
-		rootClass := self rootClass.
+		rootClass := self preferenceAt: #rootClass.
 		rootClass isNil
 			ifTrue: [ String new ]
 			ifFalse: [ rootClass description ] ]
