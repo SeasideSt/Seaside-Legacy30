@@ -1,3 +1,3 @@
 private
 withNotificationHandler: aBlock
-	^ aBlock on: WARenderNotification , WAPageExpired do: [ :n | ]
+	^ aBlock on: WARenderNotification do: [ :n | ]
