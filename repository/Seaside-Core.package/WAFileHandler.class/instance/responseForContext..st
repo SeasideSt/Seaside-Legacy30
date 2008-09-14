@@ -8,9 +8,7 @@ responseForContext: aRequestContext
 		parsePath: aRequestContext request url;
 		yourself.
 	path := baseUrl relativeTo: requestUrl.
-	^ path isEmpty 
-		ifTrue: [ self renderListing ]
-		ifFalse: 
-			[ self 
-				responseAt: path
-				ifAbsent: [ self notFoundResponseFor: aRequestContext ] ]
+	^ self 
+		responseAt: path
+		ifForbidden: [ self forbiddenResponseFor: aRequestContext ]
+		ifAbsent: [ self notFoundResponseFor: aRequestContext ]
