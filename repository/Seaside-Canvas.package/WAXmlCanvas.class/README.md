@@ -1,1 +1,0 @@
-This is an abstract canvas base class for build canvae for custom XML dialects.

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WAResponseFactory",
+	"category" : "Seaside-Canvas",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WACanvasResponseFactory",
+	"type" : "normal"
+}
