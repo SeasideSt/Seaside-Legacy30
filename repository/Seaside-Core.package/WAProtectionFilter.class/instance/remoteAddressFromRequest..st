@@ -4,4 +4,4 @@ remoteAddressFromRequest: aRequest
 		remoteAddress := aRequest
 			headerAt: 'x-forwarded-for'
 			ifAbsent: [ aRequest remoteAddress ]	].
-	^ remoteAddress
+	^ aRequest remoteAddress

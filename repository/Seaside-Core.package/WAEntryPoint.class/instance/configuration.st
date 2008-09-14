@@ -1,4 +1,4 @@
-preferences
+configuration
 configuration
 	"Answer a default user configuration for the receiver."
 

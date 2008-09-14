@@ -8,8 +8,8 @@ addFilter: aFilter
 	[ current = self ] whileFalse: [
 		previous := current.
 		current := current next ].
-	aFilter setNext: current.
+	aFilter next: current.
 	previous isNil
-		ifTrue: [ self setFilter: aFilter ]
-		ifFalse: [ previous setNext: aFilter ].
+		ifTrue: [ self filter: aFilter ]
+		ifFalse: [ previous next: aFilter ].
 	^ aFilter

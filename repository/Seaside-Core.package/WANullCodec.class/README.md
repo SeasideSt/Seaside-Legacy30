@@ -1,0 +1,1 @@
+A WANullCodec does not do any encoding at all.

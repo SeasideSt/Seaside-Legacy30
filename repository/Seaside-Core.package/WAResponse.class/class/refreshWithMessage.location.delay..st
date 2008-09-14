@@ -1,16 +1,12 @@
-instance creation
-refreshWithMessage: aString location: locationString delay: aNumber
-	| document |
-	document := WARenderCanvas builder
-		fullDocument: true;
-		rootBlock: [ :root |
-			root redirectTo: locationString delay: aNumber ];
-		render: [ :html |
-			html heading level1
-				with: aString.
-			html text: 'You are being redirected to '.
-			html anchor
-				url: locationString;
-				with: locationString ].
+deprecated
+refreshWithMessage: aString location: aUrlOrString delay: aNumber
+	| response |
+	self deprecatedApi: 'Use WAResponse>>redirectAfter:location:message:'.
+	response := self new refreshAfter: aNumber location: aUrlOrString.
+	
+	response
+		contentType: 'text/plain' toMimeType;
+		nextPutAll: aString, Character cr;
+		nextPutAll: 'You are being redirected to ', aUrlOrString seasideString.
 
-	^ self new nextPutAll: document
+	^ response

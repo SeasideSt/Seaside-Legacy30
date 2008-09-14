@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "lr 7/12/2007 13:15",
+	"super" : "WAObject",
+	"category" : "Seaside-Core-Utilities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"size",
+		"keys",
+		"values"
+	],
+	"name" : "WASmallDictionary",
+	"type" : "normal"
+}

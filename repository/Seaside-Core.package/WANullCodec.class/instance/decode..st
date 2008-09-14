@@ -1,0 +1,3 @@
+decoding
+decode: aString
+	^aString

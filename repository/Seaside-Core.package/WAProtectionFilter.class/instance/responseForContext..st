@@ -2,4 +2,4 @@ processing
 responseForContext: aRequestContext 
 	^ (self verifyRequest: aRequestContext request) 
 		ifTrue: [ super responseForContext: aRequestContext ]
-		ifFalse: [ WAResponse forbidden: aRequestContext request url ]
+		ifFalse: [ aRequestContext entryPoint responseFactory forbiddenForContext: aRequestContext ]
