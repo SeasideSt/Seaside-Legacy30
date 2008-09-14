@@ -2,7 +2,7 @@ description
 describeOn: config
 	(config list: #errorHandler)
 		options: [self errorHandlerClasses];
-		default: WASimpleErrorHandler.
+		default: WAErrorHandler.
 	(config list: #mainClass)
 		options: [self mainClasses].
 	(config number: #sessionContinuationCacheSize)
