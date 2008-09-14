@@ -1,5 +1,10 @@
 development
 reloadApplications
 	WADispatcher resetDefault.
-	WAEntryPoint allSubclasses do: [ :each | each initialize ].
-	WAComponent allSubclasses do: [ :each | each initialize ].
+	WASystemConfiguration clearAllDescriptions.
+	WAEntryPoint allSubclasses do: [ :each | 
+		(each includesSelector: #initialize)
+			ifTrue: [ each initialize ] ].
+	WAComponent allSubclasses do: [ :each |
+		(each includesSelector: #initialize)
+			ifTrue: [ each initialize ] ]
