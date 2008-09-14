@@ -1,9 +1,11 @@
 private
-processCallbacks: aRequest 
-	| lastPosition callbackStream |
-	lastPosition := nil.
-	callbackStream := renderContext callbackStreamForRequest: aRequest.
-	[ callbackStream position = lastPosition ] whileFalse: 
-		[ lastPosition := callbackStream position.
-		self root decorationChainDo: [ :each | each processCallbackStream: callbackStream ] ].
-	callbackStream atEnd ifFalse: [ self unprocessedCallbacks: callbackStream upToEnd ]
+processCallbacks: aRequest
+	| callbacks |
+	callbacks := SortedCollection new.
+	aRequest fields keysDo: [ :key |
+		renderContext callbacks
+			at: key
+			ifPresent: [ :callback | callbacks add: callback ] ].
+	callbacks do: [ :callback |
+		callback evaluateWithField: (aRequest fields
+			at: callback key) ]
