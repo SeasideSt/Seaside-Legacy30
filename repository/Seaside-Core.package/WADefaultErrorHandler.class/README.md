@@ -1,1 +1,0 @@
-This is the default error handler possibly suitable for deployment. It returns a simple walkback to the browser but only for internal (ie. framework instead of application) errors.
