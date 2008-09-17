@@ -1,10 +1,6 @@
-Error handlers are invoked when an error in a Seaside application occurs. WASession uses the method WARequest>>withErrorHandler: to set up exception handlers that call the appropriate WAErrorHandler subclass based on the #errorHandler configuration attribute.
+WAErrorHandler catches Errors and Warnings and provides two methods for handling each type of exception:
 
-Error handlers have methods to handle:
-- Errors
-- Warnings
-- Internal errors
+handleError:
+handleWarning:
 
-Internal errors are typically errors that occur while trying to execute one of the other error handlers and should be as basic as possible to ensure they don't have any trouble executing.
-
-See WAWalkbackErrorHandler in the development packages for examples of how to do rendering with the canvas API.
+If either method is not implemented, the default implementation will call #handleDefault:, which can be used to provide common behaviour for both exception types.
