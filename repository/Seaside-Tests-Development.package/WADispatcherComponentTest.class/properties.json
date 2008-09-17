@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "WAContextTestCase",
+	"category" : "Seaside-Tests-Development",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"rootHanlder",
+		"childHanlder",
+		"configApplication",
+		"normalApplication",
+		"childApplication",
+		"configComponent"
+	],
+	"name" : "WADispatcherComponentTest",
+	"type" : "normal"
+}
