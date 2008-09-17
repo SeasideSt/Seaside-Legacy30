@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "jf 9/17/2008 20:52",
 	"super" : "WAErrorHandler",
 	"category" : "Seaside-Environment",
 	"classinstvars" : [ ],

@@ -8,5 +8,7 @@ register: aComponent at: aString
 		removeParent: WASessionConfiguration instance; "make the chain slightly cleaner"
 		addParent: WARenderLoopConfiguration instance.
 	application
-		preferenceAt: #rootClass put: aComponent.
+		preferenceAt: #rootClass put: aComponent;
+		preferenceAt: #exceptionHandler put: WAHtmlErrorHandler;
+		preferenceAt: #responseFactory put: WAHtmlResponseFactory.
 	^ application
