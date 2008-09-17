@@ -1,3 +1,3 @@
 testing
 isActive
-	^ self policy isActive
+	^ self expired not and: [ self secondsSinceLastAccess < self timeoutSeconds ]

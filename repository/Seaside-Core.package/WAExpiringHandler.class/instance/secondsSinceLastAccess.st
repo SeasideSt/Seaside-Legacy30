@@ -1,4 +1,3 @@
-deprecated
+accessing
 secondsSinceLastAccess
-	self deprecatedApi: 'WAExpiringHandler now has pluggable expiry policies.'.
-	^ self policy secondsSinceLastAccess
+	^ Time totalSeconds - self lastAccess

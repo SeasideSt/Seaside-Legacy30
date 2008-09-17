@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "jf 9/14/2008 19:11",
-	"super" : "WAObject",
+	"super" : "WAExceptionHandler",
 	"category" : "Seaside-Core-RequestHandler",
 	"classinstvars" : [ ],
 	"pools" : [ ],

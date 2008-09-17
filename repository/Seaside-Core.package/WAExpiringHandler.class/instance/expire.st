@@ -1,3 +1,3 @@
 actions
 expire
-	self policy: WAExpiredExpiryHandler new
+	expired := true

@@ -6,7 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"policy"
+		"lastAccess",
+		"expired",
+		"timeout"
 	],
 	"name" : "WAExpiringHandler",
 	"type" : "normal"
