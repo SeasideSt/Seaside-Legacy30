@@ -1,5 +1,5 @@
 request handling
-incomingRequest: aRequestContext 
+responseForContext: aRequestContext 
 	((aRequestContext request fields includesKey: 'terminate') and: [ self sessionAllowTermination ]) ifTrue: [
 		monitor terminate.
 		^ WAResponse new nextPutAll: 'Process terminated' ].
