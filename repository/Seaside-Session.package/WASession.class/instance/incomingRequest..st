@@ -1,5 +1,5 @@
 request handling
-responseForContext: aRequestContext 
+incomingRequest: aRequestContext 
 	((aRequestContext request fields includesKey: 'terminate') and: [ self sessionAllowTermination ]) ifTrue: [
 		monitor terminate.
 		^ WAResponse new nextPutAll: 'Process terminated' ].
@@ -9,9 +9,9 @@ responseForContext: aRequestContext
 				use: aRequestContext
 				during: [ 
 					self withEscapeHandler: [
-						self withErrorHandler: [
+						self exceptionHandler handleExceptionsDuring: [
 							self performRequest: aRequestContext request ] ] ] ]
 		ifError:  [ :error | 
 			WACurrentRequestContext 
 				use: aRequestContext
-				during: [ self errorHandler internalError: error ] ]
+				during: [ self exceptionHandler internalError: error ] ]

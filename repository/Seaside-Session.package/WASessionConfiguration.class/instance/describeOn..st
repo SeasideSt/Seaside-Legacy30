@@ -1,7 +1,7 @@
 description
 describeOn: config
-	(config list: #errorHandler)
-		options: [self errorHandlerClasses];
+	(config list: #exceptionHandler)
+		options: [self exceptionHandlerClasses];
 		default: WAErrorHandler.
 	(config list: #mainClass)
 		options: [self mainClasses].
