@@ -1,3 +1,4 @@
-accessing
+deprecated
 timeoutSeconds
-	^ timeout ifNil: [ timeout := self defaultTimeoutSeconds ]
+	self deprecatedApi: 'WAExpiringHandler now has pluggable expiry policies.'.
+	^ self policy timeoutSeconds

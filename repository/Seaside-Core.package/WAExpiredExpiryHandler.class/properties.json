@@ -1,11 +1,11 @@
 {
-	"commentStamp" : "jf 9/17/2008 20:49",
-	"super" : "WAObject",
+	"commentStamp" : "",
+	"super" : "WAHandlerExpiryPolicy",
 	"category" : "Seaside-Core-RequestHandler",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WAExceptionHandler",
+	"name" : "WAExpiredExpiryHandler",
 	"type" : "normal"
 }

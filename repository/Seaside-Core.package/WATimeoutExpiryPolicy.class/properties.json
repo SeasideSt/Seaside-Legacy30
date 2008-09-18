@@ -1,13 +1,15 @@
 {
-	"commentStamp" : "rew 10/19/2007 10:47",
-	"super" : "WARequestHandler",
+	"commentStamp" : "",
+	"super" : "WAHandlerExpiryPolicy",
 	"category" : "Seaside-Core-RequestHandler",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"policy"
+		"lastAccess",
+		"expired",
+		"timeout"
 	],
-	"name" : "WAExpiringHandler",
+	"name" : "WATimeoutExpiryPolicy",
 	"type" : "normal"
 }

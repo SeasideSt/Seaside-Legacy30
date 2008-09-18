@@ -1,3 +1,4 @@
-accessing
+deprecated
 lastAccess
-	^ lastAccess ifNil: [ lastAccess := Time totalSeconds ]
+	self deprecatedApi: 'WAExpiringHandler now has pluggable expiry policies.'.
+	^ self policy lastAccess
