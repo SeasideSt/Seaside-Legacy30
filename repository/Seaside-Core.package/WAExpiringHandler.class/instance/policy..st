@@ -1,3 +1,3 @@
-accessing
+expiry
 policy: aHandlerExpiryPolicy
 	policy := aHandlerExpiryPolicy

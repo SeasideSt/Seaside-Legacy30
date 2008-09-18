@@ -1,3 +1,3 @@
-testing
+expiry
 isActive
 	^ self policy isActive
