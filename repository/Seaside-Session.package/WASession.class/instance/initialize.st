@@ -1,6 +1,6 @@
 initializing
 initialize
 	super initialize.
-	continuations := WALRUCache new.
+	continuations := WACache new setExpiryPolicy: WALeastRecentlyUsedExpiryPolicy; yourself.
 	monitor := WAProcessMonitor new.
 	cookiesEnabled := true
