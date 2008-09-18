@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WAExpiredExpiryHandler",
+	"name" : "WAExpiredExpiryPolicy",
 	"type" : "normal"
 }
