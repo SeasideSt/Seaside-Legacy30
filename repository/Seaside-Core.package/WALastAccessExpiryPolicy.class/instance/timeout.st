@@ -1,0 +1,3 @@
+configuration
+timeout
+	^ 600

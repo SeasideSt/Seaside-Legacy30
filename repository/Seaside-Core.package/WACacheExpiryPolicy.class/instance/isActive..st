@@ -1,0 +1,3 @@
+protocol
+isActive: anExternalID
+	^ true

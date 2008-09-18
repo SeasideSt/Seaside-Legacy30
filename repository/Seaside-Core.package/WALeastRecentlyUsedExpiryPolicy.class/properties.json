@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "WACacheExpiryPolicy",
+	"category" : "Seaside-Core-Cache",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"ageTable"
+	],
+	"name" : "WALeastRecentlyUsedExpiryPolicy",
+	"type" : "normal"
+}

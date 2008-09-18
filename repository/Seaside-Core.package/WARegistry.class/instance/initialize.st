@@ -1,4 +1,4 @@
 private
 initialize
 	super initialize.
-	self clearHandlers
+	cache := WACache new
