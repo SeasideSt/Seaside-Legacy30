@@ -1,3 +1,3 @@
 private
 keyOrNilForHandler: anObject
-	^ cache keyFor: anObject
+	^ self mutex critical: [ keysByHandler at: anObject ifAbsent: [ nil ] ]

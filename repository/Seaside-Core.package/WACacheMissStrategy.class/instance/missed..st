@@ -1,3 +1,0 @@
-protocol
-missed: anExternalID
-	^ nil

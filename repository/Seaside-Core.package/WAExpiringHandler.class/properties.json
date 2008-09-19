@@ -1,15 +1,15 @@
 {
-	"commentStamp" : "jf 8/5/2008 11:13",
-	"super" : "WAEntryPoint",
+	"commentStamp" : "rew 10/19/2007 10:47",
+	"super" : "WARequestHandler",
 	"category" : "Seaside-Core-RequestHandler",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"keysByHandler",
-		"handlersByKey",
-		"mutex"
+		"lastAccess",
+		"expired",
+		"timeout"
 	],
-	"name" : "WARegistry",
+	"name" : "WAExpiringHandler",
 	"type" : "normal"
 }

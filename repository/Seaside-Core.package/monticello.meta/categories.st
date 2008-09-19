@@ -7,7 +7,6 @@ SystemOrganization addCategory: #'Seaside-Core-HTTP'!
 SystemOrganization addCategory: #'Seaside-Core-Libraries'!
 SystemOrganization addCategory: #'Seaside-Core-Callbacks'!
 SystemOrganization addCategory: #'Seaside-Core-RequestHandler'!
-SystemOrganization addCategory: #'Seaside-Core-Cache'!
 SystemOrganization addCategory: #'Seaside-Core-Filter'!
 SystemOrganization addCategory: #'Seaside-Core-Exceptions'!
 SystemOrganization addCategory: #'Seaside-Core-Utilities'!
