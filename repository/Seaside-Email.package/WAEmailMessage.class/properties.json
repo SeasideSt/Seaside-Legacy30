@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "WAObject",
+	"category" : "Seaside-Email",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"to",
+		"from",
+		"cc",
+		"bcc",
+		"subject",
+		"headers",
+		"body"
+	],
+	"name" : "WAEmailMessage",
+	"type" : "normal"
+}
