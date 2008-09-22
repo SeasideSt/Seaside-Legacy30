@@ -1,3 +1,3 @@
 accessing
 defaultContentType
-	^'application/rss+xml' toMimeType
+	^'application/rss+xml' seasideMimeType
