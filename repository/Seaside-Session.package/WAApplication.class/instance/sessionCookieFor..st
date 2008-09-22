@@ -11,9 +11,9 @@ sessionCookieFor: aRequest
 	candidates size = 1 
 		ifTrue: [ ^candidates first ].
 		
-	requestUrl := WAUrl new parsePath: aRequest url; yourself.
+	requestUrl := aRequest url seasideUrl.
 	candidates := candidates collect: [ :each |
-		each -> ((WAUrl new parsePath: each path; yourself) relativeTo: requestUrl) ].
+		each -> (each path seasideUrl relativeTo: requestUrl) ].
 	
 	candidates := candidates reject: [ :each |
 		| path |

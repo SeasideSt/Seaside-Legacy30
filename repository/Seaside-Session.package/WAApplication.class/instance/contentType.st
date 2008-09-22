@@ -1,5 +1,5 @@
 configuration
 contentType
-	^ (WAMimeType fromString: self mimeType)
+	^ self mimeType seasideMimeType
 		charset: self charSet;
 		yourself
