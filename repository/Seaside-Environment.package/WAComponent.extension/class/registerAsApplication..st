@@ -1,4 +1,4 @@
 *Seaside-Environment
-registerAsApplication: aString
+registerAsApplication: aString 
 	self deprecatedApi: 'Use WAEnvironment>>register:at:'.
-	^ WAEnvironment register: self at: aString
+	^ WAAdmin 	register: self at: aString

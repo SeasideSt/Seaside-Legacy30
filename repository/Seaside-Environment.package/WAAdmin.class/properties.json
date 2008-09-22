@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WAEnvironment",
+	"name" : "WAAdmin",
 	"type" : "normal"
 }
