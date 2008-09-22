@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "jf 9/22/2008 17:41",
 	"super" : "WAObject",
 	"category" : "Seaside-Core-Cache",
 	"classinstvars" : [ ],
@@ -12,7 +12,7 @@
 		"expiryPolicy",
 		"reapingStrategy",
 		"missStrategy",
-		"expiryAction"
+		"reapAction"
 	],
 	"name" : "WACache",
 	"type" : "normal"

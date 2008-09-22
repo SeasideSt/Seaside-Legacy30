@@ -1,3 +1,3 @@
 notifications
-expired: anObject key: anExternalID
+reaped: anObject key: anExternalID
 	ageTable removeKey: anExternalID ifAbsent: []

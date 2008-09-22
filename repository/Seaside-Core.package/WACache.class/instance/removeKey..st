@@ -6,6 +6,6 @@ removeKey: aStringOrExternalID
 		object := objectsByKey removeKey: key ifAbsent: [ nil ].
 		keysByObject removeKey: object ifAbsent: [ nil ] ].
 	
-	self expired: object key: key.
+	object isNil ifFalse: [ self reap: object key: key ].
 	
 	^ object

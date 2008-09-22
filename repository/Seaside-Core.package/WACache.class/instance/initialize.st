@@ -4,5 +4,5 @@ initialize
 	expiryPolicy := WALastAccessExpiryPolicy cache: self.
 	reapingStrategy := WARetrievalIntervalReapingStrategy cache: self.
 	missStrategy := WACacheMissStrategy cache: self.
-	expiryAction := WANotifyExpiryAction cache: self.
+	reapAction := WANotifyReapAction cache: self.
 	self clear
