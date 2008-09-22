@@ -5,7 +5,7 @@ refreshWithMessage: aString location: aUrlOrString delay: aNumber
 	response := self new refreshAfter: aNumber location: aUrlOrString.
 	
 	response
-		contentType: WAMimeType textPlain;
+		contentType: 'text/plain' toMimeType;
 		nextPutAll: aString, Character cr;
 		nextPutAll: 'You are being redirected to ', aUrlOrString seasideString.
 

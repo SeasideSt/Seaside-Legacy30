@@ -1,3 +1,0 @@
-defaults
-defaultTimeoutSeconds
-	^ 600

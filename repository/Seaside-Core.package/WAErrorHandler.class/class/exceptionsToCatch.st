@@ -1,3 +1,3 @@
 exception handling
 exceptionsToCatch
-	^ super exceptionsToCatch, Error, Warning, SeasidePlatformSupport haltExceptionClass
+	^ super exceptionsToCatch, Error, Warning

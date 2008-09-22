@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WACacheExpiryAction",
+	"category" : "Seaside-Core-Cache",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WANotifyExpiryAction",
+	"type" : "normal"
+}

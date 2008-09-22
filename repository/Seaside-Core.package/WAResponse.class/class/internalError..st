@@ -2,5 +2,5 @@ instance creation
 internalError: anError
 	^ self new
 		internalError;
-		contentType: WAMimeType textPlain;
+		contentType: 'text/plain' toMimeType;
 		nextPutAll: 'Internal Error: ', anError description.

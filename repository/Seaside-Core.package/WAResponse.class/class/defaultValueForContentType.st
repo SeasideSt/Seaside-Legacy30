@@ -1,5 +1,5 @@
 defaults
 defaultValueForContentType
-	^ self defaultValueForMimeType seasideMimeType
+	^(WAMimeType fromString: self defaultValueForMimeType)
 		charset: self defaultValueForCharSet;
 		yourself

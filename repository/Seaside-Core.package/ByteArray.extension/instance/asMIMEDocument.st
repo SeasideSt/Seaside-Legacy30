@@ -1,3 +1,3 @@
 *Seaside-Core
 asMIMEDocument
-	^self asMIMEDocumentType: WAMimeType applicationOctetStream
+	^self asMIMEDocumentType: 'application/octet-stream' toMimeType

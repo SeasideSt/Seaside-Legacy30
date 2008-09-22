@@ -4,6 +4,6 @@ forbidden: aUrlOrString
 	response := self new.
 	response
 		forbidden;
-		contentType: WAMimeType textPlain;
+		contentType: 'text/plain' toMimeType;
 		nextPutAll: 'Access forbidden to ', aUrlOrString seasideString.
 	^ response

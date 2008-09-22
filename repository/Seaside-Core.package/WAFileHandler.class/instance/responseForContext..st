@@ -4,7 +4,9 @@ responseForContext: aRequestContext
 	baseUrl := WAUrl new
 		addAllToPath: self path;
 		yourself.
-	requestUrl := aRequestContext request url seasideUrl.
+	requestUrl := WAUrl new
+		parsePath: aRequestContext request url;
+		yourself.
 	path := baseUrl relativeTo: requestUrl.
 	^ self 
 		responseAt: path

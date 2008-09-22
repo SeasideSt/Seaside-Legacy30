@@ -6,7 +6,7 @@ handleKeyRequest: aRequestContext
 			(keyString isString not and: [ keyString isSequenceable ])
 				ifTrue: [keyString := keyString first].
 			WAExternalID fromString: keyString] on: Error do: [:e | nil].
-	handler := handlersByKey at: key ifAbsent: [nil].
-	^ (handler notNil and: [handler isActive])
+	handler := cache at: key.
+	^ handler notNil
 		ifTrue: [handler handleRequest: aRequestContext]
 		ifFalse: [self handleExpiredRequest: aRequestContext]

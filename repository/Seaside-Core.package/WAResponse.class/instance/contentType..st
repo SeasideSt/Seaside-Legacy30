@@ -1,3 +1,3 @@
 accessing
 contentType: mimeTypeOrString
-	contentType := mimeTypeOrString seasideMimeType
+	contentType := mimeTypeOrString toMimeType
