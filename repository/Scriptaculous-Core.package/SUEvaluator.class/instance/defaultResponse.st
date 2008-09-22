@@ -1,3 +1,5 @@
 private
 defaultResponse
-	^ super defaultResponse contentType: 'text/javascript' toMimeType
+	^ super defaultResponse
+		contentType: WAMimeType textJavascript;
+		yourself
