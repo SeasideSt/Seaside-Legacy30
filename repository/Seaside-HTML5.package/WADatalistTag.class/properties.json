@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "pmm 7/29/2007 00:44",
+	"super" : "WACollectionTag",
+	"category" : "Seaside-HTML5-Tags",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WADatalistTag",
+	"type" : "normal"
+}

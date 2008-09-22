@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "pmm 3/16/2007 13:02",
+	"super" : "WASteppedTag",
+	"category" : "Seaside-HTML5-Tags",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAClosedRangeTag",
+	"type" : "normal"
+}

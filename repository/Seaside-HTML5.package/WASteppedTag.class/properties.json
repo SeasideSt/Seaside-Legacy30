@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WAAbstractTextAreaTag",
+	"category" : "Seaside-HTML5-Tags",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WASteppedTag",
+	"type" : "normal"
+}

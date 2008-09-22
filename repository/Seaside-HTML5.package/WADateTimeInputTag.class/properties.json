@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "pmm 3/16/2007 14:05",
+	"super" : "WASteppedTag",
+	"category" : "Seaside-HTML5-Tags",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WADateTimeInputTag",
+	"type" : "normal"
+}
