@@ -1,3 +1,3 @@
 accessing
 scriptaculous
-	^ WAUrl new hostname: 'script.aculo.us'
+	^ WAUrl absolute: 'http://script.aculo.us/'

@@ -1,3 +1,3 @@
 accessing
 seaside
-	^ WAUrl new hostname: 'seaside.st'
+	^ WAUrl absolute: 'http://seaside.st/'
