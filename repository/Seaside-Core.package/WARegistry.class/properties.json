@@ -6,7 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"cache"
+		"keysByHandler",
+		"handlersByKey",
+		"mutex"
 	],
 	"name" : "WARegistry",
 	"type" : "normal"

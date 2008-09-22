@@ -1,3 +1,3 @@
 types
 beJavascript
-	self type: 'text/javascript' toMimeType
+	self type: WAMimeType textJavascript

@@ -4,6 +4,6 @@ notFound: aUrlOrString
 	response := self new.
 	response
 		notFound;
-		contentType: 'text/plain' toMimeType;
+		contentType: WAMimeType textPlain;
 		nextPutAll: aUrlOrString seasideString, ' not found'.
 	^ response

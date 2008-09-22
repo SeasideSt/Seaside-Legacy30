@@ -1,3 +1,3 @@
 type
 beRss
-	self type: 'application/rss+xml' toMimeType
+	self type: 'application/rss+xml' seasideMimeType

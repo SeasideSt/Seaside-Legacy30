@@ -1,0 +1,3 @@
+defaults
+defaultTimeoutSeconds
+	^ 600

@@ -1,3 +1,3 @@
 type
 beCss
-	self type: 'text/css' toMimeType
+	self type: WAMimeType textCss

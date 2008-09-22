@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "rew 10/19/2007 10:47",
+	"super" : "WARequestHandler",
+	"category" : "Seaside-Core-RequestHandler",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"lastAccess",
+		"expired",
+		"timeout"
+	],
+	"name" : "WAExpiringHandler",
+	"type" : "normal"
+}

@@ -1,3 +1,0 @@
-configuration
-timeout
-	^ 600
