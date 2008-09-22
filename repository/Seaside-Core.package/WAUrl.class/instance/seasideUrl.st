@@ -1,3 +1,3 @@
 converting
-toMimeType
+seasideUrl
 	^ self

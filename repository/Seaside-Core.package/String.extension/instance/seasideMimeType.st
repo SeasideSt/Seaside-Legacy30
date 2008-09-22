@@ -1,3 +1,3 @@
 *Seaside-Core
-toMimeType
+seasideMimeType
 	^ WAMimeType fromString: self

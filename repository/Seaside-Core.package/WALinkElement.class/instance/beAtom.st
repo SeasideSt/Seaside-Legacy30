@@ -1,3 +1,3 @@
 type
 beAtom
-	self type: 'application/atom+xml' toMimeType
+	self type: 'application/atom+xml' seasideMimeType
