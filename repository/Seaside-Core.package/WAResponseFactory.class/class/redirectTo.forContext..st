@@ -1,3 +1,3 @@
 as yet unclassified
-redirectTo: aUrl forContext: aRequestContext 
-	^ WAResponse redirectTo: aUrl seasideString
+redirectTo: aUrlOrString forContext: aRequestContext 
+	^ WAResponse redirectTo: aUrlOrString

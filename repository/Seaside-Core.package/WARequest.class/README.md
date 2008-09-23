@@ -1,7 +1,7 @@
-I am a server independent http request object. Instance of me can be aquired through WASession >> #currentRequest.
+I am a server independent http request object. Instance of me can be aquired through WAObject >> #currentRequest.
 
 Instance Variables
-	url:				<String>
+	url:				<WAUrl>
 	fields:			<Dictionary<String, Object>>
 	headers:		<Dictionary<String, String>>
 	nativeRequest:	<Object>

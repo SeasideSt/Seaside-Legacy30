@@ -1,8 +1,8 @@
 instance-creation
-method: methodString url: urlString headers: headerDictionary fields: fieldDictionary cookies: cookieCollection remoteAddress: addressString
+method: methodString url: aUrlOrString headers: headerDictionary fields: fieldDictionary cookies: cookieCollection remoteAddress: addressString
 	^ self new
 		setMethod: methodString
-		url: urlString
+		url: aUrlOrString
 		headers: headerDictionary
 		fields: fieldDictionary
 		cookies: cookieCollection

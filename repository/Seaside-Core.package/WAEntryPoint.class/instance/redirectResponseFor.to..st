@@ -1,3 +1,3 @@
 response generation
-redirectResponseFor: aRequestContext to: aUrl
-	^ self responseFactory redirectTo: aUrl forContext: aRequestContext
+redirectResponseFor: aRequestContext to: aUrlOrString
+	^ self responseFactory redirectTo: aUrlOrString forContext: aRequestContext

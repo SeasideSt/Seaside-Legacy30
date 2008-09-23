@@ -1,7 +1,7 @@
 private
-setMethod: methodString url: urlString headers: headerDictionary fields: fieldDictionary cookies: cookieCollection remoteAddress: addressString
+setMethod: methodString url: aUrlOrString headers: headerDictionary fields: fieldDictionary cookies: cookieCollection remoteAddress: addressString
 	method := methodString.
-	url := urlString.
+	url := aUrlOrString seasideUrl.
 	headers := headerDictionary.
 	fields := fieldDictionary.
 	cookies := cookieCollection.

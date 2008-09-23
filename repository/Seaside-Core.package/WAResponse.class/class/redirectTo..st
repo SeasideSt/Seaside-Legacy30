@@ -1,3 +1,3 @@
 responding
-redirectTo: locationString
-	^ self new redirectTo: locationString
+redirectTo: aUrlOrString
+	^ self new redirectTo: aUrlOrString

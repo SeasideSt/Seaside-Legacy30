@@ -4,7 +4,7 @@ expiredKeyForContext: aRequestContext
 	aRequestContext request isXmlHttpRequest 
 		ifTrue: [ ^ WAResponse new forbidden ].
 	url := WAUrl new.
-	url addToPath: aRequestContext request url.
+	url addAllToPath: aRequestContext request url path.
 	url takeServerParametersFromRequest: aRequestContext request.
 	aRequestContext request isGet ifTrue: [ 
 		aRequestContext request fields keysAndValuesDo: [ :key :value | 

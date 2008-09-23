@@ -1,3 +1,3 @@
 *Seaside-Core
 deprecatedApi
-	self class deprecatedApi
+	self deprecatedApi: thisContext sender seasideString

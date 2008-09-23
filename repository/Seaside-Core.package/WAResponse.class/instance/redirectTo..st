@@ -1,4 +1,4 @@
 convenience
-redirectTo: aString
-	self headerAt: 'Location' put: aString.
+redirectTo: aUrlOrString
+	self headerAt: 'Location' put: aUrlOrString seasideString.
 	self redirect
