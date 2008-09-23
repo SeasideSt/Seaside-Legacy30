@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WACacheReapAction",
+	"category" : "Seaside-Core-Cache",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WANotifyReapAction",
+	"type" : "normal"
+}

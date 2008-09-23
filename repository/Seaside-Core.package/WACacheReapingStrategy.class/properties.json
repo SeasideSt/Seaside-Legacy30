@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "jf 9/22/2008 16:43",
+	"super" : "WACachePlugin",
+	"category" : "Seaside-Core-Cache",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WACacheReapingStrategy",
+	"type" : "normal"
+}
