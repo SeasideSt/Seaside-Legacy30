@@ -1,4 +1,4 @@
 processing
 run
 	self respond: [ :response |
-		response redirectTo: self url seasideString ]
+		response redirectTo: self url ]
