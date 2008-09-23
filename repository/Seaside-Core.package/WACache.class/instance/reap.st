@@ -6,7 +6,7 @@ reap
 	newKeysByObject := SeasidePlatformSupport reducedConflictDictionary new.
 	self mutex critical: [
 		objectsByKey keysAndValuesDo: [ :key :object |
-			(self isExpired: object key: key)
+			(expiryPolicy isExpired: object key: key)
 				ifTrue: [ expired add: (key -> object) ]
 				ifFalse: [
 					newObjectsByKey at: key put: object.
