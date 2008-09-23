@@ -1,3 +1,3 @@
 redirecting
-redirectResponseFor: aUrl
-	^ self application redirectResponseFor: self requestContext to: aUrl
+redirectResponseFor: aUrlOrString
+	^ self application redirectResponseFor: self requestContext to: aUrlOrString

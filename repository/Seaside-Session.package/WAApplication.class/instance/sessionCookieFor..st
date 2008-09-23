@@ -11,7 +11,7 @@ sessionCookieFor: aRequest
 	candidates size = 1 
 		ifTrue: [ ^candidates first ].
 		
-	requestUrl := aRequest url seasideUrl.
+	requestUrl := aRequest url.
 	candidates := candidates collect: [ :each |
 		each -> (each path seasideUrl relativeTo: requestUrl) ].
 	
