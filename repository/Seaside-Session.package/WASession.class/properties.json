@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "jf 7/22/2008 11:48",
-	"super" : "WAExpiringHandler",
+	"super" : "WARequestHandler",
 	"category" : "Seaside-Session",
 	"classinstvars" : [ ],
 	"pools" : [ ],
