@@ -1,4 +1,5 @@
 *seaside-environment
 resetAll
-	self deprecatedApi: 'Use WAEnvironment>>reloadApplications.'.
+	self seasideDeprecatedApi: 'WADispatcher class>>resetAll'
+		details: 'Use WAAdmin>>reloadApplications.'.
 	WAAdmin reloadApplications
