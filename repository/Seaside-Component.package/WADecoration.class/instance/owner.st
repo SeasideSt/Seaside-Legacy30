@@ -1,4 +1,5 @@
 deprecated
 owner
-	self deprecatedApi: 'Use WADecoration>>#next now.'.
+	self seasideDeprecatedApi: 'WADecoration>>owner'
+		details: 'Use WADecoration>>#next.'.
 	^ next contents
