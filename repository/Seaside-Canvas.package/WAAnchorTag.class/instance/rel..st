@@ -1,4 +1,5 @@
 deprecated
 rel: aString
-	self deprecatedApi.
+	self seasideDeprecatedApi: 'WAAnchorTag>>rel:'
+		details: 'Use WAAnchorTag>>relationship:.'.
 	self relationship: aString

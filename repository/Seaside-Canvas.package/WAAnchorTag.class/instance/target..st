@@ -1,6 +1,6 @@
 deprecated
 target: aString 
-	self deprecatedApi.
+	self seasideDeprecatedApi: 'WAAnchorTag>>target:'.
 	self attributes 
 		at: 'target'
 		put: aString

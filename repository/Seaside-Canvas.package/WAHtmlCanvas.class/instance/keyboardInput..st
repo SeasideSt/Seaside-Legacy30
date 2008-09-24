@@ -1,4 +1,5 @@
 deprecated
 keyboardInput: aBlock
-	self deprecatedApi.
+	self seasideDeprecatedApi: 'WAHtmlCanvas>>keyboardInput:'
+		details: 'WAHtmlCanvas>>keyboard:'.
 	self keyboard: aBlock

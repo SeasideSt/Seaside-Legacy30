@@ -1,4 +1,4 @@
 deprecated
 align: aString
-	self deprecatedApi.
+	self seasideDeprecatedApi: 'WATableTag>>align:'.
 	self attributes at: 'align' put: aString

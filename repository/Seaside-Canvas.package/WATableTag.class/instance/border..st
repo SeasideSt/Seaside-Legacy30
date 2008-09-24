@@ -1,4 +1,4 @@
 deprecated
 border: anInteger
-	self deprecatedApi.
+	self seasideDeprecatedApi: 'WATableTag>>border:'.
 	self attributes at: 'border' put: anInteger

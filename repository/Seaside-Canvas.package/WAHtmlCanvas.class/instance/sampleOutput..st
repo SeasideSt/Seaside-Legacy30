@@ -1,4 +1,5 @@
 deprecated
 sampleOutput: aBlock
-	self deprecatedApi.
-	self sampleOutput with: aBlock
+	self seasideDeprecatedApi: 'WAHtmlCanvas>>sampleOutput:'
+		details: 'Use WAHtmlCanvas>>sample:.'.
+	self sample with: aBlock
