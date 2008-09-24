@@ -1,3 +1,3 @@
 accessing
 mimeDocument
-	^ mimeDocument ifNil: [ mimeDocument := document asMIMEDocumentType: mimeType ]
+	^ mimeDocument ifNil: [ mimeDocument := document seasideMimeDocumentType: mimeType ]

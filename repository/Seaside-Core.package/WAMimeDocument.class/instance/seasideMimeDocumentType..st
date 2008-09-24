@@ -1,3 +1,3 @@
 converting
-asMIMEDocumentType: aMimeType
+seasideMimeDocumentType: aMimeType
 	self subclassResponsibility

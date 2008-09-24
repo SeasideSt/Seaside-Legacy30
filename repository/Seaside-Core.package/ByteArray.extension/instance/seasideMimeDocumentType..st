@@ -1,5 +1,5 @@
 *Seaside-Core
-asMIMEDocumentType: mimeType
+seasideMimeDocumentType: mimeType
 	^WACollectionMimeDocument
 		contentType: mimeType seasideMimeType
 		content: self
