@@ -1,3 +1,0 @@
-*Seaside-Core
-deprecatedApi: aString
-	self class deprecatedApi: aString
