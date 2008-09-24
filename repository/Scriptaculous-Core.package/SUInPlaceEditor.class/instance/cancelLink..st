@@ -1,6 +1,7 @@
 deprecated
 cancelLink: aBoolean
-	self deprecatedApi.
+	self seasideDeprecatedApi: 'SUInPlaceEditor>>cancelLink:'
+		details: 'Use SUInPlaceEditor>>cancelControl:.'.
 	self cancelControl: (aBoolean 
 		ifTrue: [ 'link' ]
 		ifFalse: [ false ])
