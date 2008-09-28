@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "lr 6/2/2008 09:22",
-	"super" : "WASessionContinuation",
+	"super" : "WARenderLoopContinuation",
 	"category" : "Seaside-RenderLoop",
 	"classinstvars" : [ ],
 	"pools" : [ ],

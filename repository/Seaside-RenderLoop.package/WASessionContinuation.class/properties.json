@@ -6,7 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"root",
 		"states"
 	],
 	"name" : "WASessionContinuation",
