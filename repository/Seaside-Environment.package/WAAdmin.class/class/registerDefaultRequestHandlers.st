@@ -1,4 +1,5 @@
 registration
 registerDefaultRequestHandlers
 	WADispatcher resetDefault.
-	WADispatcher default register: (WAFileHandler named: 'files').
+	WAFileHandler default: (WAFileHandler named: 'files').
+	WADispatcher default register: WAFileHandler default
