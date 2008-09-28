@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "pmm 5/27/2007 21:47",
+	"super" : "WAErrorHandler",
+	"category" : "Seaside-Development-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"requestContext"
+	],
+	"name" : "WADebugErrorHandler",
+	"type" : "normal"
+}

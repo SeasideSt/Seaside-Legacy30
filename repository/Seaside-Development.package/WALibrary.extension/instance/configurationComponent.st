@@ -1,0 +1,3 @@
+*seaside-development
+configurationComponent
+	self subclassResponsibility

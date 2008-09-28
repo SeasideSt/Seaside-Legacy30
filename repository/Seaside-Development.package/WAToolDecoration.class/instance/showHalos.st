@@ -1,0 +1,3 @@
+accessing
+showHalos
+	^ showHalos contents

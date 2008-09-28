@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "WARequestFilter",
+	"category" : "Seaside-Development-Filter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"notifications"
+	],
+	"name" : "WADeprecatedToolFilter",
+	"type" : "normal"
+}

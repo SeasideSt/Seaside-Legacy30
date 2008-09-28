@@ -1,0 +1,1 @@
+I am a component that renders an exeception stack with temporary variables. Per default I renders the top stack frames only, but I offers the option to render all. I also offers the option to open a debugger in the image or to proceed with the execution.

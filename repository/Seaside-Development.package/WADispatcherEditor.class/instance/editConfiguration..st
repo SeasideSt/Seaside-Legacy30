@@ -1,0 +1,3 @@
+actions
+editConfiguration: aConfiguration
+	self call: aConfiguration configurationComponent

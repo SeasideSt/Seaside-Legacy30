@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WAHandlerEditor",
+	"category" : "Seaside-Development-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAFileHandlerEditor",
+	"type" : "normal"
+}

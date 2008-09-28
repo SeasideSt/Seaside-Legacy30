@@ -1,0 +1,4 @@
+initialization
+initializeOn: aUserConfiguration
+	WASystemConfiguration clearAllDescriptions.
+	configuration := aUserConfiguration

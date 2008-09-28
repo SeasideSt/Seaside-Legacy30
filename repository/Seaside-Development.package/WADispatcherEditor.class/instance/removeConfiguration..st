@@ -1,0 +1,3 @@
+actions
+removeConfiguration: aConfiguration
+	self sharedConfiguration remove: aConfiguration

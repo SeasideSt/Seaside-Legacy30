@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "WADispatcherComponent",
+	"category" : "Seaside-Development-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"name",
+		"type"
+	],
+	"name" : "WADispatcherEditor",
+	"type" : "normal"
+}
