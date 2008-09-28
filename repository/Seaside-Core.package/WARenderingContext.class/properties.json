@@ -6,7 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"session",
 		"actionUrl",
 		"count",
 		"callbacks",
