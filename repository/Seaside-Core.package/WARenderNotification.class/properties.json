@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "Notification",
-	"category" : "Seaside-Core-Callbacks",
+	"category" : "Seaside-Core-Exceptions",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
