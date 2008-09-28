@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "rew 10/19/2007 10:48",
 	"super" : "WAEntryPoint",
-	"category" : "Seaside-Core-RequestHandler",
+	"category" : "Seaside-Core-Libraries",
 	"classinstvars" : [
 		"default"
 	],
