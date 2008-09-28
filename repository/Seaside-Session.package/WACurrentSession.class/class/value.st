@@ -1,7 +1,7 @@
 evaluating
 value
-	| request |
+	| context |
 	self seasideDeprecatedApi: 'WACurrentSession class>>value'
 		details: 'Use "self session" on a subclass of WAObject or "WACurrentRequestContext value session"'.
-	request := WACurrentRequestContext value.
-	^ request isNil ifFalse: [ request session ]
+	context := WACurrentRequestContext value.
+	^ context isNil ifFalse: [ context session ]
