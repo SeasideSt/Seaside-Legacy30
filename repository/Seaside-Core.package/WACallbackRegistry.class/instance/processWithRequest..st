@@ -1,11 +1,11 @@
 processing
 processWithRequest: aRequest
-	| callbacks |
-	callbacks := SortedCollection new.
+	| sorted |
+	sorted := SortedCollection new.
 	aRequest fields keysDo: [ :key |
-		self
+		sorted
 			at: key
-			ifPresent: [ :callback | callbacks add: callback ] ].
-	callbacks do: [ :callback |
+			ifPresent: [ :callback | sorted add: callback ] ].
+	sorted do: [ :callback |
 		callback evaluateWithField:
 			(aRequest fields	at: callback key) ]
