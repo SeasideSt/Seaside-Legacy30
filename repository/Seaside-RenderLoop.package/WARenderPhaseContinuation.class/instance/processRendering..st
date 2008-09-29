@@ -1,12 +1,12 @@
 as yet unclassified
 processRendering: aResponse 
-	| document htmlRoot renderContext |
-	renderContext := self newContext.
+	| document htmlRoot renderingContext |
+	renderingContext := self newContext.
 	document := self application newDocumentOn: aResponse stream.
-	renderContext document: document.
-	htmlRoot := self newHtmlRootWithContext: renderContext.
+	renderingContext document: document.
+	htmlRoot := self newHtmlRootWithContext: renderingContext.
 	document open: htmlRoot.
-	self root decorationChainDo: [ :each | each renderWithContext: renderContext ].
+	self root decorationChainDo: [ :each | each renderWithContext: renderingContext ].
 	self writeOnLoadOn: document.
 	document close: htmlRoot.
-	renderContext release
+	renderingContext release
