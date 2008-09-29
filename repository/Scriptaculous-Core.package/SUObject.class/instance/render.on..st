@@ -8,8 +8,7 @@ render: anObject on: aStream
 		canvas context document: document.
 		html := canvas species
 			context: canvas context
-			callbacks: (canvas context 
-				callbacksFor: nil).
+			callbacks: (canvas context callbacks).
 		html render: anObject; flush.
 		document close: nil.
 		canvas context document: previous ]
