@@ -1,4 +1,5 @@
 copying
 postCopy
 	super postCopy.
-	configuration := configuration copy
+	configuration := configuration copy.
+	self setParent: nil

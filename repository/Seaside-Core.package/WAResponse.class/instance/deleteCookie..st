@@ -16,6 +16,6 @@ deleteCookie: aCookie
 		yourself.
 	aCookie version isNil ifTrue: 
 		[ "old Netscape cookie with no path information, assumbe baseUrl and cross fingers"
-		cookie path: WACurrentRequestContext value handler baseUrl pathString ].
+		cookie path: WACurrentRequestContext value entryPoint baseUrl pathString ].
 	cookie expireInPast.
 	self addCookie: cookie

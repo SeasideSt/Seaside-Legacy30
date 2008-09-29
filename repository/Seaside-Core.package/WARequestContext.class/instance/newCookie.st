@@ -1,8 +1,8 @@
 initialization
 newCookie
-	"Creates a new cookie. Tries to put as many restrictions on it as possible and make stealing it has hard a possible. Some of these restrictions might be to severe for your application, you can always loosen them."
+	"Creates a new cookie. Tries to put as many restrictions on it as possible and make stealing it has hard a possible. Some of these restrictions might be too severe for your application, you can always loosen them."
 	| cookie baseUrl |
-	baseUrl := self handler baseUrl.
+	baseUrl := self entryPoint baseUrl.
 	cookie := WACookie new
 		path: baseUrl pathString;
 		httpOnly: true;
