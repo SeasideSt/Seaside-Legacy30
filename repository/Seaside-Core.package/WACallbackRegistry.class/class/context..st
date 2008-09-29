@@ -1,3 +1,3 @@
 instance-creation
 context: aContext
-	^ self basicNew initializeWithContext: aContext; yourself
+	^ self new initializeWithContext: aContext; yourself
