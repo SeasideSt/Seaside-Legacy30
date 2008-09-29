@@ -1,3 +1,3 @@
 instance-creation
 context: aContext
-	^ self context: aContext owner: nil
+	^ self basicNew initializeWithContext: aContext; yourself
