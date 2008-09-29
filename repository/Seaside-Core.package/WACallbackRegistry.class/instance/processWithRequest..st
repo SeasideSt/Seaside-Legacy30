@@ -3,7 +3,7 @@ processWithRequest: aRequest
 	| sorted |
 	sorted := SortedCollection new.
 	aRequest fields keysDo: [ :key |
-		sorted
+		callbacks
 			at: key
 			ifPresent: [ :callback | sorted add: callback ] ].
 	sorted do: [ :callback |
