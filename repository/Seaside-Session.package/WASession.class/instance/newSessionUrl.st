@@ -1,3 +1,3 @@
 responding
 newSessionUrl
-	^ self baseUrl takeServerParametersFromRequest: self requestContext request
+	^ self application baseUrl takeServerParametersFromRequest: self requestContext request

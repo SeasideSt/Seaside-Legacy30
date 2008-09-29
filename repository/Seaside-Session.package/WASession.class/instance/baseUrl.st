@@ -1,3 +1,5 @@
-accessing
+deprecated
 baseUrl
-	^ self parent baseUrl
+	self seasideDeprecatedApi: 'WASession>>baseUrl'
+		details: 'Use WAApplication>>baseUrl.'.
+	^ self application baseUrl
