@@ -6,9 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
+		"mutex",
 		"keysByObject",
 		"objectsByKey",
-		"mutex",
 		"expiryPolicy",
 		"reapingStrategy",
 		"missStrategy",

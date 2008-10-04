@@ -1,3 +1,3 @@
-as yet unclassified
+instance-creation
 cache: aCache
-	^ self basicNew initializeWithCache: aCache; yourself
+	^ self basicNew initializeWithCache: aCache
