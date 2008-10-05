@@ -1,3 +1,3 @@
 configuration
 preferenceAt: aSymbol
-	^ self configuration valueAt: aSymbol
+	^ self configuration at: aSymbol

@@ -1,5 +1,5 @@
 values
-valueAt: aSymbol addAll: additions removeAll: removals
+at: aSymbol addAll: additions removeAll: removals
 	^ self
 		storeExpression:
 			((WAAddRemoveExpression key: aSymbol)
