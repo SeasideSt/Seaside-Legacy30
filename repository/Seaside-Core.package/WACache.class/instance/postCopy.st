@@ -1,0 +1,17 @@
+copying
+postCopy
+	super postCopy.
+	"At this point we are sharing the mutex with the original object. This means
+	we can safely copy our dictionaries and our plugins. The plugins are copied
+	within the mutex because they depend on our mutex rather than having their
+	own."
+	self mutex critical: [
+		keysByObject := keysByObject copy.
+		objectsByKey := objectsByKey copy.
+		
+		self setExpiryPolicy: self expiryPolicy copy.
+		self setMissStrategy: self missStrategy copy.
+		self setReapAction: self reapAction copy.
+		self setReapingStrategy: self reapingStrategy copy ].
+	"Now we're done and have all our own data so we want our own mutex."
+	mutex := SeasidePlatformSupport semaphoreClass forMutualExclusion.

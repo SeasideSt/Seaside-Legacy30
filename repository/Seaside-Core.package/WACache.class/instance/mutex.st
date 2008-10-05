@@ -1,3 +1,3 @@
-private
+private-accessing
 mutex
 	^ mutex

@@ -1,6 +1,6 @@
 private
 pluginsDo: aBlock
-	aBlock value: expiryPolicy.
-	aBlock value: reapingStrategy.
-	aBlock value: missStrategy.
-	aBlock value: reapAction.
+	aBlock value: self expiryPolicy.
+	aBlock value: self reapingStrategy.
+	aBlock value: self missStrategy.
+	aBlock value: self reapAction.

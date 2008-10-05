@@ -1,3 +1,3 @@
 initialization
-setExpiryPolicy: anExpiryPolicyClass
-	expiryPolicy := anExpiryPolicyClass cache: self
+setExpiryPolicy: anExpiryPolicy
+	expiryPolicy := anExpiryPolicy setCache: self; yourself

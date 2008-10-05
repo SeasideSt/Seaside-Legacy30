@@ -1,3 +1,3 @@
 instance-creation
 cache: aCache
-	^ self basicNew initializeWithCache: aCache
+	^ self new setCache: aCache; yourself

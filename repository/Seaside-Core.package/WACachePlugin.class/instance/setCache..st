@@ -1,3 +1,3 @@
 initialization
-initializeWithCache: aCache
+setCache: aCache
 	cache := aCache

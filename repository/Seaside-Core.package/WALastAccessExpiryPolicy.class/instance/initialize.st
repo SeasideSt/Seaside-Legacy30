@@ -1,4 +1,4 @@
 initialization
-initializeWithCache: aCache
-	super initializeWithCache: aCache.
+initialize
+	super initialize.
 	lastAccessTable := SeasidePlatformSupport reducedConflictDictionary new
