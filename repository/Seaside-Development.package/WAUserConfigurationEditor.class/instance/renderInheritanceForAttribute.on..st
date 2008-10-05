@@ -16,7 +16,7 @@ renderInheritanceForAttribute: anAttribute on: html
 					(anAttribute isKindOf: WACollectionAttribute) ifTrue: [
 						html text: ' '.
 						html anchor
-							callback: [ self configuration valueAt: anAttribute key addAll: #() removeAll: #() ];
+							callback: [ self configuration at: anAttribute key addAll: #() removeAll: #() ];
 							with: 'modify' ] ].
 			^ self ].
 		(self configuration hasLocalValueForAttribute: anAttribute)
@@ -38,5 +38,5 @@ renderInheritanceForAttribute: anAttribute on: html
 						(anAttribute isKindOf: WACollectionAttribute) ifTrue: [
 							html text: ' '.
 							html anchor
-								callback: [ self configuration valueAt: anAttribute key addAll: #() removeAll: #() ];
+								callback: [ self configuration at: anAttribute key addAll: #() removeAll: #() ];
 								with: 'modify' ] ] ] ]

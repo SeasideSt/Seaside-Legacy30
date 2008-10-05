@@ -1,3 +1,3 @@
 *seaside-development
 valueForAttribute: anAttribute
-	^ self valueAt: anAttribute key
+	^ self at: anAttribute key
