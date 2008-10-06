@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "WAContextTestCase",
+	"category" : "Seaside-Tests-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"response"
+	],
+	"name" : "WAResponseTest",
+	"type" : "normal"
+}
