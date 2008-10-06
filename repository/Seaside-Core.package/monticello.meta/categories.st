@@ -1,4 +1,3 @@
-SystemOrganization addCategory: #'Seaside-Core'!
 SystemOrganization addCategory: #'Seaside-Core-Configuration'!
 SystemOrganization addCategory: #'Seaside-Core-Contexts'!
 SystemOrganization addCategory: #'Seaside-Core-Document'!

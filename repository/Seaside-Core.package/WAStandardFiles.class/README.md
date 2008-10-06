@@ -1,1 +1,0 @@
-A collection of standard scripts, styles, and images. They are needed for the configuration application and some basic look-and-feel in Seaside. The icons are from the Tango Desktop Project (tango.freedesktop.org), they are licensed under the Creative Commons Attribution Share-Alike license.
