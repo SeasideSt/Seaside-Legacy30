@@ -4,5 +4,5 @@ testByteArray
 		createAndVerifyBinaryDocumentNamed: nil
 		hasAttachement: nil.
 	self
-		createAndVerifyBinaryDocumentNamed: 'profiler.png'
-		hasAttachement: 'attachment; filename="profiler.png"'
+		createAndVerifyBinaryDocumentNamed: 'sample.png'
+		hasAttachement: 'attachment; filename="sample.png"'

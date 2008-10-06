@@ -1,7 +1,7 @@
 testing
 testCompileByteArray
 	| library data file first second |
-	library := WATestingFiles new.
+	library := WATestingFiles default.
 	self deny: (library class selectors includes: #demoJpeg).
 	data := (1 to: 255) asByteArray.
 	file := WAFile new

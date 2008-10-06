@@ -1,7 +1,7 @@
 testing
 testCompileString
 	| library data file first second |
-	library := WATestingFiles new.
+	library := WATestingFiles default.
 	self deny: (library class selectors includes: #demoTxt).
 
 	data := 'this is a string'.

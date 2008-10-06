@@ -1,5 +1,5 @@
 accessing-images
-styleeditorPng
+samplePng
 	| cache |
 	cache := #(nil) beMutable.
 	(cache at: 1) isNil ifTrue: [
