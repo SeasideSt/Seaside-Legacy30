@@ -6,9 +6,7 @@ register: aComponent at: aString
 	application := WAApplication register: aString.
 	application configuration
 		removeParent: WASessionConfiguration instance; "make the chain slightly cleaner"
-		addParent: WARenderLoopConfiguration instance.
-	application
-		preferenceAt: #rootClass put: aComponent;
-		preferenceAt: #exceptionHandler put: WAHtmlErrorHandler;
-		preferenceAt: #responseFactory put: WAHtmlResponseFactory.
+		addParent: WARenderLoopConfiguration instance;
+		addParent: self applicationDefaults.
+	application preferenceAt: #rootClass put: aComponent.
 	^ application
