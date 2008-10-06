@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WAStandardFileLibraryTest",
+	"name" : "WAStandardFilesTest",
 	"type" : "normal"
 }
