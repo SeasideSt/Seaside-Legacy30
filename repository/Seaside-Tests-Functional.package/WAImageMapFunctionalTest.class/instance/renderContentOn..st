@@ -13,4 +13,4 @@ renderContentOn: html
 				html image
 				altText: 'Style Editor Icon';
 					width: '40%';
-					url: WATestingFiles / #styleeditorPng ] ]
+					url: WATestingFiles / #samplePng ] ]

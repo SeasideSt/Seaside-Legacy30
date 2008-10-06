@@ -7,5 +7,5 @@ renderContentOn: html
 		url: (WADispatcher default entryPointAt: WACounter entryPointName) baseUrl.
 	html break; break.
 	html iframe
-		document: WATestingFiles default styleeditorPng
+		document: WATestingFiles default samplePng
 		mimeType: 'image/png'
