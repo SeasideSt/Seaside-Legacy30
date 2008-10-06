@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "WAFunctionalTest",
+	"category" : "Seaside-Tests-Functional",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"beginDate",
+		"endDate",
+		"beginTime",
+		"endTime",
+		"beginDAT",
+		"endDAT"
+	],
+	"name" : "WADateSelectorFunctionalTest",
+	"type" : "normal"
+}

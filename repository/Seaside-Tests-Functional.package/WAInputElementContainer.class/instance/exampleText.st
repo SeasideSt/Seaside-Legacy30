@@ -1,0 +1,3 @@
+accessing
+exampleText
+	^ 'Example Text'

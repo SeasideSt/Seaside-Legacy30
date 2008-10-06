@@ -1,0 +1,4 @@
+private
+stackDepth
+
+	^SeasidePlatformSupport stackDepth

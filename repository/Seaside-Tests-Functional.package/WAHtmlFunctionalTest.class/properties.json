@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "WAFunctionalTest",
+	"category" : "Seaside-Tests-Functional",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"booleanList",
+		"message",
+		"number"
+	],
+	"name" : "WAHtmlFunctionalTest",
+	"type" : "normal"
+}

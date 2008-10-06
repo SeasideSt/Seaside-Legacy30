@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "pmm 9/2/2007 00:08",
+	"super" : "WATask",
+	"category" : "Seaside-Tests-Functional",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WANestedTransaction",
+	"type" : "normal"
+}

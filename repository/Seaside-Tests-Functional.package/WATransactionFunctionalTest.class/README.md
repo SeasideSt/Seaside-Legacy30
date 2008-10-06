@@ -1,0 +1,1 @@
+A WATransactionTest runs a WANestedTransaction with a description

@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "WAComponent",
+	"category" : "Seaside-Tests-Functional",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"textInput",
+		"textInputExample",
+		"textArea",
+		"textAreaExample",
+		"singleSelection",
+		"singleSelectionOptional",
+		"multiSelection",
+		"nestedSelection"
+	],
+	"name" : "WAInputElementContainer",
+	"type" : "normal"
+}

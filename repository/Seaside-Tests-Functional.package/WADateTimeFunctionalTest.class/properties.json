@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "WAFunctionalTest",
+	"category" : "Seaside-Tests-Functional",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"data",
+		"numericData",
+		"date",
+		"time",
+		"data1",
+		"data2",
+		"message"
+	],
+	"name" : "WADateTimeFunctionalTest",
+	"type" : "normal"
+}
