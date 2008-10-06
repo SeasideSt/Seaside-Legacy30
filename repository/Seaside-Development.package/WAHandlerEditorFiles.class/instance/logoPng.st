@@ -1,6 +1,6 @@
 accessing-pictures
 logoPng
-	"The official logo was designed by Samuel Morello. He released it under under the Creative Commons Attribution-No Derivative Works 3.0 license (http://creativecommons.org/licenses/by-nd/3.0/)."
+	"The official logo was designed by Samuel Morello. He released it under the Creative Commons Attribution-No Derivative Works 3.0 license (http://creativecommons.org/licenses/by-nd/3.0/)."
 
 	| cache |
 	cache := #(nil) beMutable.
