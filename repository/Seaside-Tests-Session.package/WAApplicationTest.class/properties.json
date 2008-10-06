@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Seaside-Tests-Session",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"application",
+		"request"
+	],
+	"name" : "WAApplicationTest",
+	"type" : "normal"
+}

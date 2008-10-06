@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "pmm 3/29/2008 12:34",
+	"super" : "TestCase",
+	"category" : "Seaside-Tests-Session",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"savedContinuation"
+	],
+	"name" : "WACurrentSessionTest",
+	"type" : "normal"
+}

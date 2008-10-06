@@ -1,0 +1,3 @@
+accessing
+context
+	^ WACurrentRequestContext value
