@@ -1,3 +1,3 @@
 testing
 testUrlOf
-	self assert: (WAStandardFiles / #seasideJpg) seasideString = ('/' , SeasidePlatformSupport defaultDispatcherName , '/files/WAStandardFiles/seaside.jpg')
+	self assert: (WATestingFiles / #samplePng) seasideString = ('/' , SeasidePlatformSupport defaultDispatcherName , '/files/WATestingFiles/sample.png')
