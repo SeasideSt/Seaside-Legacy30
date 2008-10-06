@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WAContextTestCase",
+	"category" : "Seaside-Tests-Environment",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAStandardFilesTest",
+	"type" : "normal"
+}
