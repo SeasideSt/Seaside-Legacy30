@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WADocumentHandlerTest",
+	"name" : "WAEntryPointTest",
 	"type" : "normal"
 }

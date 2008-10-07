@@ -1,4 +1,4 @@
 running
 setUp
 	super setUp.
-	handler := WARequestHandler new
+	handler := self newHandler

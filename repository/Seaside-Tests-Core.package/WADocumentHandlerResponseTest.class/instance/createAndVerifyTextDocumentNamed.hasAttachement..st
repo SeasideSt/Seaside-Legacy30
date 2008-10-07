@@ -3,5 +3,5 @@ createAndVerifyTextDocumentNamed: aFilename hasAttachement: aHttpHeaderValue
 	self
 		createAndVerifyDocumentNamed: aFilename
 		content: 'body { background-color: #ffffff }'
-		mimeType: 'text/css'
+		mimeType: WAMimeType textCss
 		hasAttachement: aHttpHeaderValue

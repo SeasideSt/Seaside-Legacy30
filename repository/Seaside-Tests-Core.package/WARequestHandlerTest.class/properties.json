@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "TestCase",
+	"super" : "WAContextTestCase",
 	"category" : "Seaside-Tests-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
