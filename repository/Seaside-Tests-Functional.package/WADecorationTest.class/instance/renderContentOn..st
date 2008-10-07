@@ -22,7 +22,7 @@ renderContentOn: html
 				html tableData: each printString.
 				html tableData: each identityHash.
 				html tableData: (each isDecoration
-					ifTrue: [ each owner printString ]
+					ifTrue: [ each next printString ]
 					ifFalse: [ each decoration printString ]).
 				html tableData: (each isDecoration
 					ifTrue: [ each next identityHash ]
