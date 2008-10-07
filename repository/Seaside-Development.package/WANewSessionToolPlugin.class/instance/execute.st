@@ -1,3 +1,3 @@
 actions
 execute
-	self session unregistered; redirectTo: self session newSessionUrl
+	self session expire; redirectTo: self session newSessionUrl

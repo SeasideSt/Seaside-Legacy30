@@ -7,5 +7,6 @@ execute
 		default: self target name.
 	name ifNil: [ ^ self ].
 	self requestor handler
-		register: (self target copy
-			setName: name)
+		register: (self target cloneHandler
+			setName: name;
+			yourself)
