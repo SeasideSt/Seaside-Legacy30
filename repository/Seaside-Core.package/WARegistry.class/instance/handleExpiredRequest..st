@@ -1,3 +1,3 @@
-private
+processing
 handleExpiredRequest: aRequestContext
 	^ self responseFactory expiredKeyForContext: aRequestContext

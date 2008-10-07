@@ -3,6 +3,8 @@ WARegistry maintains a set of handlers indexed by a key (by default _s) which it
 Subclasses must implement the following messages:
 	handleDefaultRequest:
 		Handle a request without a session key, ie a new request.
+	handlerField
+		The URL parameter in which to store the request handler key.
 
 Instance Variables:
 	cache - an instance of WACache to hold the stored request handlers

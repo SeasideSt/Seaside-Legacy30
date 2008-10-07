@@ -1,3 +1,3 @@
 private
 registerRequestHandler: anObject
-	^ cache store: anObject
+	^ self cache store: anObject

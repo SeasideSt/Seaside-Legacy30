@@ -1,4 +1,4 @@
-private
+processing
 handleKeyRequest: aRequestContext
 	| key handler keyString |
 	"Under some circumstances, HTTP fields are collections of values"
@@ -6,7 +6,7 @@ handleKeyRequest: aRequestContext
 			(keyString isString not and: [ keyString isSequenceable ])
 				ifTrue: [keyString := keyString first].
 			WAExternalID fromString: keyString] on: Error do: [:e | nil].
-	handler := cache at: key.
+	handler := self cache at: key.
 	^ handler notNil
 		ifTrue: [handler handleRequest: aRequestContext]
 		ifFalse: [self handleExpiredRequest: aRequestContext]

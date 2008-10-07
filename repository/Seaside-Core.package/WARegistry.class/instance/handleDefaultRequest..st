@@ -1,3 +1,3 @@
-private
+processing
 handleDefaultRequest: aRequestContext
 	self subclassResponsibility

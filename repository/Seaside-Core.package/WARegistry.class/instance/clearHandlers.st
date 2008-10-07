@@ -1,3 +1,3 @@
 public
 clearHandlers
-	cache clear
+	self cache clear

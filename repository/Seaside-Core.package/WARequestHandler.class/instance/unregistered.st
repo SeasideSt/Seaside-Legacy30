@@ -1,2 +1,2 @@
-processing
+notifications
 unregistered

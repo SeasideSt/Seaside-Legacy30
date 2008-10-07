@@ -1,4 +1,4 @@
-private
+notifications
 unregistered
 	super unregistered.
 	self clearHandlers

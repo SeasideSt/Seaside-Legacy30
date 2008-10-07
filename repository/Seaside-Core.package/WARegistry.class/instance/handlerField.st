@@ -1,3 +1,3 @@
-private
+processing
 handlerField
-	^ '_s'
+	self subclassResponsibility
