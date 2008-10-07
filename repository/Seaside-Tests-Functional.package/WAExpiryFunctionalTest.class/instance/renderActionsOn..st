@@ -6,7 +6,7 @@ renderActionsOn: html
 			 with: 'New Session'.
 		html break.
 		html anchor
-			callback: [ self session expire ];
+			callback: [ self session unregister; redirectTo: self session newSessionUrl ];
 			 with: 'Expire'.
 		html break.
 		html anchor
@@ -20,21 +20,14 @@ renderActionsOn: html
 		html anchor
 			callback: [
 				self application clearHandlers.
-				Smalltalk garbageCollect ];
-			 with: 'Clear Handlers'.
+				Smalltalk garbageCollect.
+				self session redirectTo: self session newSessionUrl ];
+			 with: 'Clear Cache'.
 		html break.
 		html anchor
 			callback: [
 				self application clearHandlers.
 				WAExpirySession resetCounters.
-				Smalltalk garbageCollect ];
-			 with: 'Reset All' ]. 
-	html form: [
-		html div: [
-			html text: 'Expiry seconds:'.
-			html textInput
-				value: self session sessionExpirySeconds;
-				callback: [ :value | self session timeoutSeconds: value asInteger ].
-			html space.
-			html submitButton
-				text: 'Change' ] ]
+				Smalltalk garbageCollect.
+				self session redirectTo: self session newSessionUrl ];
+			 with: 'Reset All' ].

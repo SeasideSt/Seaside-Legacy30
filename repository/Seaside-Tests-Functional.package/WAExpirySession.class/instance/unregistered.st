@@ -1,4 +1,4 @@
-subclass responsibilities
+notifications
 unregistered
 	super unregistered.
 	Unregistered := Unregistered + 1
