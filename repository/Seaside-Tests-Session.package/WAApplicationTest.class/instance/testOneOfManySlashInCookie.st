@@ -22,5 +22,5 @@ testOneOfManySlashInCookie
 			with: cookie3
 			with: cookie4)
 		remoteAddress: '127.0.0.1'.
-	actual := application sessionCookieFor: request.
+	actual := handler sessionCookieFor: request.
 	self assert: actual == cookie3

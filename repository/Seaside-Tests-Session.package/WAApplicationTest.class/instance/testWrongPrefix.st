@@ -15,5 +15,5 @@ testWrongPrefix
 			with: cookie1
 			with: cookie2)
 		remoteAddress: '127.0.0.1'.
-	actual := application sessionCookieFor: request.
+	actual := handler sessionCookieFor: request.
 	self assert: actual == cookie1

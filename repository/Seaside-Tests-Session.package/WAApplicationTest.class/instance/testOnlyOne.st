@@ -9,5 +9,5 @@ testOnlyOne
 		fields: Dictionary new
 		cookies: (Array with: cookie1)
 		remoteAddress: '127.0.0.1'.
-	cookie2 := application sessionCookieFor: request.
+	cookie2 := handler sessionCookieFor: request.
 	self assert: cookie1 == cookie2

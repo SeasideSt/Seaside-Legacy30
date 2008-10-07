@@ -1,3 +1,3 @@
 testing
 testEmpty
-	self assert: (application sessionCookieFor: request) isNil
+	self assert: (handler sessionCookieFor: request) isNil

@@ -9,4 +9,4 @@ testWrongKey
 		fields: Dictionary new
 		cookies: (Array with: cookie)
 		remoteAddress: '127.0.0.1'.
-	self assert: (application sessionCookieFor: request) isNil
+	self assert: (handler sessionCookieFor: request) isNil
