@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Seaside-Tests-Environment",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"defaultDispatcher",
+		"alternateDispatcher",
+		"shortDispatcher",
+		"baseName",
+		"alternateName"
+	],
+	"name" : "WAEnvironmentDefaultHandlersTest",
+	"type" : "normal"
+}

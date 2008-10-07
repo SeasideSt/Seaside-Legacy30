@@ -1,0 +1,3 @@
+private
+baseName
+	^ SeasidePlatformSupport defaultDispatcherName
