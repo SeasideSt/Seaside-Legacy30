@@ -9,7 +9,7 @@ performRendering: anObject
 	document := self application newDocumentOn: response stream.
 	canvas context document: document.
 	docRoot open: document.
-	renderer := canvas species context: canvas context callbacks: canvas callbacks.
+	renderer := canvas species context: canvas context.
 	renderer render: anObject;
 		 flush.
 	docRoot close: document.

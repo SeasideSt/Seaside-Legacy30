@@ -1,3 +1,3 @@
 public
 nextId
-	^ 'id' , context advanceKey
+	^ 'id' , self callbacks advanceKey

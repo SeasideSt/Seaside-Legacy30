@@ -1,3 +1,3 @@
 public
 peekNextId
-	^ 'id' , context nextKey
+	^ 'id' , self callbacks nextKey

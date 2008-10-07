@@ -2,4 +2,4 @@ accessing
 callbacks
 	"Answer the callback registry."
 
-	^ callbacks
+	^ context callbacks

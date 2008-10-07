@@ -10,8 +10,7 @@ render: anObject
 		context := WARenderingContext new.
 		context document: document.
 		context actionUrl: self actionUrl.
-		callbacks := context callbacks.
-		html := self canvasClass context: context callbacks: callbacks.
+		html := self canvasClass context: context.
 		
 		self openDocumentDocument: document context: context.
 		html render: anObject; flush.
