@@ -5,5 +5,5 @@ response
 	response contents: self mimeDocument contentStream.
 	response contentType: (mimeType ifNil: [ self mimeDocument contentType seasideMimeType ]).
 	response cacheForever.
-	fileName ifNotNil: [ response attachmentWithFileName: fileName ].
+	self fileName isNil ifFalse: [ response attachmentWithFileName: self fileName ].
 	^ response
