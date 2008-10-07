@@ -7,7 +7,6 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"actionUrl",
-		"count",
 		"callbacks",
 		"document",
 		"mode",

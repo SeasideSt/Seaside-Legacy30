@@ -1,4 +1,5 @@
 initialization
 initializeWithContext: aContext
 	context := aContext.
-	callbacks := Dictionary new
+	callbacks := Dictionary new.
+	count := WAValueHolder with: 1.
