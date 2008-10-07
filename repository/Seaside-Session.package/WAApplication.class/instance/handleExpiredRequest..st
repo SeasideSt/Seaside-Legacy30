@@ -1,4 +1,4 @@
-as yet unclassified
+private
 handleExpiredRequest: aRequestContext
 	| response sessionCookie |
 	response := super handleExpiredRequest: aRequestContext.
