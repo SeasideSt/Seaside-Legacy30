@@ -1,9 +1,7 @@
 rendering
 renderContentOn: html
 	| haloHtml |
-	haloHtml := self rendererClass
-		context: html context
-		callbacks: html callbacks.
+	haloHtml := self rendererClass context: html context.
 	haloHtml div class: 'halo'; with: [
 		haloHtml div class: 'halo-header'; with: [
 			(self plugins select: [ :each | each isActive ])
