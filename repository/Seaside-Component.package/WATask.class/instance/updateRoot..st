@@ -1,8 +1,7 @@
 rendering
 updateRoot: aHtmlRoot
-	| callbacks url |
-	callbacks := WACallbackRegistry context: aHtmlRoot context.
+	| url |
 	url := aHtmlRoot context actionUrl 
-		withParameter: (callbacks 
+		withParameter: (aHtmlRoot context callbacks 
 			registerActionCallback: [ [ self answer: self go ] repeat ]).
 	self session redirectTo: url

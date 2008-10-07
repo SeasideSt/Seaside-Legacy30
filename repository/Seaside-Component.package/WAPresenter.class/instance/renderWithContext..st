@@ -1,8 +1,7 @@
 rendering
 renderWithContext: aRenderingContext
-	| html callbacks |
-	callbacks := aRenderingContext callbacks.
-	html := self rendererClass context: aRenderingContext callbacks: callbacks.
+	| html |
+	html := self rendererClass context: aRenderingContext.
 	(aRenderingContext isDebugMode and: [ self canHaveHalo ])
 		ifTrue: [ (SeasidePlatformSupport haloClass for: self) renderContentOn: html ]
 		ifFalse: [ self renderContentOn: html ].
