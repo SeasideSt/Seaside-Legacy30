@@ -1,3 +1,3 @@
 instance creation
-context: aRenderingContext callbacks: aCallbackStore
+context: aRenderingContext
 	^ self new initializeWithContext: aRenderingContext
