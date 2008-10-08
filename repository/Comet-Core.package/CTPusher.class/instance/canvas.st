@@ -4,4 +4,3 @@ canvas
 	
 	^ WARenderCanvas 
 		context: WARenderingContext new
-		callbacks: Dictionary new
