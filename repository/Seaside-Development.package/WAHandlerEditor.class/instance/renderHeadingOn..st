@@ -8,4 +8,7 @@ renderHeadingOn: html
 				addParameter: 'platform' value: SeasidePlatformSupport platformString;
 				yourself);
 			with: 'Seaside' ].
-	html heading: self title
+	html heading class: 'title'; with: [
+		html anchor
+			url: self handler baseUrl;
+			with: self title ]

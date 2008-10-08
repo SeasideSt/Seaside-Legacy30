@@ -15,7 +15,7 @@ input, textarea, select {
 input.text, textarea {
 	width: 200px;
 }
-a, a:link, a:active, a:visited, a:focus, a:hover {
+a {
 	color: #008aff;
 	text-decoration: none;
 }
@@ -26,19 +26,24 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 1ex;
 	font-weight: normal;
 }
+table { border: 0; border-spacing: 0 2px; }
+td { padding-left: 0; }
 th {
 	text-align: right;
 	padding-right: 1em;
 }
 
 /* special */
-h1.logo a {
+h1.logo a { 
 	width: 200px;
 	height: 106px;
 	outline: none;
 	display: block;
 	text-indent: -100em;
 	background: url(logo.png) no-repeat;
+}
+h1.title a {
+	color: #01598d;
 }
 span.unspecified {
 	color: #ff7000;
