@@ -1,7 +1,7 @@
 rendering
 updateRoot: aHtmlRoot
-	| url |
-	url := aHtmlRoot context actionUrl 
+	self activeComponent == self
+		ifFalse: [ ^ self ].
+	self session redirectTo: (aHtmlRoot context actionUrl 
 		withParameter: (aHtmlRoot context callbacks 
-			registerActionCallback: [ [ self answer: self go ] repeat ]).
-	self session redirectTo: url
+			registerActionCallback: [ [ self answer: self go ] repeat ]))
