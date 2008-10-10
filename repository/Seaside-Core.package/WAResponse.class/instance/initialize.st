@@ -6,7 +6,7 @@ initialize
 	status := 200.
 	application := [ self application ]
 					on: WARequestContextNotFound
-					do: [ nil ].
+					do: [:e | nil ].
 	contentType := application isNil 
 		ifFalse: [ application contentType ]
 		ifTrue: [ self class defaultValueForContentType ]
