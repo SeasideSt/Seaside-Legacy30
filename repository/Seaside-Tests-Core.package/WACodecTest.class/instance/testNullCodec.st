@@ -1,7 +1,7 @@
 testing
 testNullCodec
 	| codec string |
-	codec := WASqueakPlatform codecForEncoding: nil.
+	codec := SeasidePlatformSupport codecForEncoding: nil.
 	string := 'Übèrstrîñgé'.
 	self assert: codec notNil.
 	self assert: codec class = WANullCodec.

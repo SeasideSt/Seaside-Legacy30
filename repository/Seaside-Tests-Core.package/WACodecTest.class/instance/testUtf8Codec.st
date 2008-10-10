@@ -1,7 +1,7 @@
 testing
 testUtf8Codec
 	| codec |
-	codec := WASqueakPlatform codecForEncoding: 'UTF-8'.
+	codec := SeasidePlatformSupport codecForEncoding: 'UTF-8'.
 	self assert: codec notNil.
 	
 	self assert: (codec encode: 'Übèrstrîñgé') = 'ÃbÃ¨rstrÃ®Ã±gÃ©'.

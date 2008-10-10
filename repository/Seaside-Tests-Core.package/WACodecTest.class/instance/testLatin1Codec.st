@@ -1,7 +1,7 @@
 testing
 testLatin1Codec
 	| codec |
-	codec := WASqueakPlatform codecForEncoding: 'ISO-8859-1'.
+	codec := SeasidePlatformSupport codecForEncoding: 'ISO-8859-1'.
 	self assert: codec notNil.
 	
 	self assert: (codec encode: self latin1String) = self latin1String.

@@ -1,7 +1,7 @@
 testing
 testUtf8BomCodec
 	| codec bom |
-	codec := WASqueakPlatform codecForEncoding: 'UTF-8'.
+	codec := SeasidePlatformSupport codecForEncoding: 'UTF-8'.
 	self assert: codec notNil.
 	
 	bom := String streamContents: [ :stream |

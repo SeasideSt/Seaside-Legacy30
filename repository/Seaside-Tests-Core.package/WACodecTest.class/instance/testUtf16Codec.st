@@ -1,7 +1,7 @@
 testing
 testUtf16Codec
 	| codec |
-	codec := WASqueakPlatform codecForEncoding: 'UTF-16'.
+	codec := SeasidePlatformSupport codecForEncoding: 'UTF-16'.
 	self assert: codec notNil.
 	
 	self assert: (codec encode: self latin1String) = self utf16String.
