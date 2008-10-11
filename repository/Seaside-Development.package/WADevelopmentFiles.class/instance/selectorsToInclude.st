@@ -3,4 +3,5 @@ selectorsToInclude
 	^#(
 		toolbarCss
 		haloCss
+		toolsCss
 	)

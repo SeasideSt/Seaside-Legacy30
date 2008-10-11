@@ -1,8 +1,10 @@
 rendering
-renderContentOn: html 
-
-	html div class: self class name;
+renderContentOn: html
+	html div
+		class: 'tool';
 		with: [
-			html strong: 'Reset deprecated warnings?'.
-			html render: self table]
+			html render: self table.
+			html anchor
+				callback: [ self resetDeprecationWarnings ];
+				with: 'Reset deprecation warnings' ]
 	
