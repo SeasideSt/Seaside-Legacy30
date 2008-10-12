@@ -1,3 +1,3 @@
 attributes
 height: aNumber
-	self attributeAt: 'height' put: aNumber displayString
+	self attributeAt: 'height' put: aNumber seasideString

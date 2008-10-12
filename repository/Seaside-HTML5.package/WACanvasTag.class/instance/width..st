@@ -1,3 +1,3 @@
 attributes
 width: aNumber
-	self attributeAt: 'width' put: aNumber displayString
+	self attributeAt: 'width' put: aNumber seasideString
