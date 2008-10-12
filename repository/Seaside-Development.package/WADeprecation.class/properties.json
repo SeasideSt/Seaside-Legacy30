@@ -7,8 +7,7 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"table",
-		"filter",
-		"form"
+		"filter"
 	],
 	"name" : "WADeprecation",
 	"type" : "normal"
