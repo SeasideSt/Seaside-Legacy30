@@ -1,4 +1,4 @@
-testing-other
+running
 testSound
 	self
 		assert: (self sound play: 'blah.mp3')

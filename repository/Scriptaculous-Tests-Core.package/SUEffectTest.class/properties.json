@@ -5,9 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"factory"
-	],
-	"name" : "SUObjectTest",
+	"instvars" : [ ],
+	"name" : "SUEffectTest",
 	"type" : "normal"
 }

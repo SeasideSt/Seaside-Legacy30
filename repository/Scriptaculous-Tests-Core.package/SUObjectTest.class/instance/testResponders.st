@@ -1,4 +1,4 @@
-testing-other
+running
 testResponders
 	self
 		assert: (self responders)

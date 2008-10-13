@@ -1,3 +1,0 @@
-accessing
-stream
-	^ SUStream new
