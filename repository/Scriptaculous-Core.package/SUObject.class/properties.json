@@ -1,14 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
-	"category" : "Scriptaculous-Core",
+	"super" : "JSObject",
+	"category" : "Scriptaculous-Core-Objects",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"decoration",
-		"canvas"
-	],
+	"instvars" : [ ],
 	"name" : "SUObject",
 	"type" : "normal"
 }

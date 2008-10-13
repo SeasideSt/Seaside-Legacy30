@@ -1,1 +1,0 @@
-I periodically execute the decorated object. I essentially encapsulates the native clearInterval/setInterval mechanism found in native Window objects.

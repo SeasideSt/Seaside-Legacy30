@@ -1,1 +1,0 @@
-I wrap the decorated object by adding a statement to the end.

@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "lr 6/16/2007 18:28",
 	"super" : "SUObject",
-	"category" : "Scriptaculous-Core",
+	"category" : "Scriptaculous-Core-Objects",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
