@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WAActionCallback",
+	"category" : "Javascript-Core-Object",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "JSCallback",
+	"type" : "normal"
+}

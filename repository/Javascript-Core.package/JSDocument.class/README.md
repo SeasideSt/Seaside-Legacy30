@@ -1,0 +1,1 @@
+I represent a document that is sent back when processing an AJAX request. I am an internal class.

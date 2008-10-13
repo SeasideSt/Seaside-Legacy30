@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "lr 4/28/2008 09:48",
+	"super" : "JSDecoration",
+	"category" : "Javascript-Core-Decorations",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"object"
+	],
+	"name" : "JSAssignment",
+	"type" : "normal"
+}

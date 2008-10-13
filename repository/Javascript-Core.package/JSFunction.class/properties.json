@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "lr 4/28/2008 09:40",
+	"super" : "JSScript",
+	"category" : "Javascript-Core-Object",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"return",
+		"arguments"
+	],
+	"name" : "JSFunction",
+	"type" : "normal"
+}

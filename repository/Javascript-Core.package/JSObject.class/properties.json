@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "WAObject",
+	"category" : "Javascript-Core-Object",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"decoration",
+		"canvas"
+	],
+	"name" : "JSObject",
+	"type" : "normal"
+}

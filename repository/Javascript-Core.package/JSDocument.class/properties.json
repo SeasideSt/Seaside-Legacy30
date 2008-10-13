@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "lr 4/28/2008 09:47",
+	"super" : "WAHtmlStreamDocument",
+	"category" : "Javascript-Core-Object",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "JSDocument",
+	"type" : "normal"
+}

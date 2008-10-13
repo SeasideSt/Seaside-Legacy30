@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "lr 11/28/2006 10:40",
+	"super" : "JSObject",
+	"category" : "Javascript-Core-Object",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "JSLogger",
+	"type" : "normal"
+}
