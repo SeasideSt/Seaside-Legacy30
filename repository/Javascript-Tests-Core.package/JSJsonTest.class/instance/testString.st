@@ -1,0 +1,8 @@
+testing-literals
+testString
+	self assert: (self parse: '""') = ''.
+	self assert: (self parse: '"foo"') = 'foo'.
+	self assert: (self parse: '"fo\"o"') = 'fo\"o'.
+	self assert: (self parse: '''''') = ''.
+	self assert: (self parse: '''foo''') = 'foo'.
+	self assert: (self parse: '''fo\''o''') = 'fo\''o'
