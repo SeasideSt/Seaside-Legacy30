@@ -1,3 +1,5 @@
 messages
-warn: anObject
-	self call: 'warn' argument: anObject
+warn: anObject 
+	self 
+		call: 'warn'
+		with: anObject

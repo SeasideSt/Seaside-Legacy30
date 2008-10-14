@@ -1,3 +1,5 @@
 messages
-error: anObject
-	self call: 'error' argument: anObject
+error: anObject 
+	self 
+		call: 'error'
+		with: anObject

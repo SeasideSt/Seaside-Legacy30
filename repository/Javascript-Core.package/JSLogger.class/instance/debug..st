@@ -1,3 +1,5 @@
 messages
-debug: anObject
-	self call: 'debug' argument: anObject
+debug: anObject 
+	self 
+		call: 'debug'
+		with: anObject

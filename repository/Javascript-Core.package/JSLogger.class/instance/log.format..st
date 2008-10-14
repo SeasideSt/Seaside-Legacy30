@@ -1,3 +1,5 @@
 logging
-log: anObject format: anArray
-	self call: 'log' arguments: (Array with: anObject) , anArray
+log: anObject format: anArray 
+	self 
+		call: 'log'
+		withArguments: (Array with: anObject) , anArray

@@ -2,4 +2,4 @@ decorations
 call: aString
 	"Call the method aString."
 
-	self call: aString arguments: #()
+	self call: aString withArguments: #()

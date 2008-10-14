@@ -1,3 +1,5 @@
 assertions
-assertNotUndefined: anObject
-	self call: 'assertNotUndefined' argument: anObject
+assertNotUndefined: anObject 
+	self 
+		call: 'assertNotUndefined'
+		with: anObject

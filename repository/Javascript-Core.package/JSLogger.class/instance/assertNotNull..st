@@ -1,3 +1,5 @@
 assertions
-assertNotNull: anObject
-	self call: 'assertNotNull' argument: anObject
+assertNotNull: anObject 
+	self 
+		call: 'assertNotNull'
+		with: anObject

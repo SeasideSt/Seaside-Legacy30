@@ -1,3 +1,5 @@
 assertions
-assertTrue: anObject
-	self call: 'assertTrue' argument: anObject
+assertTrue: anObject 
+	self 
+		call: 'assertTrue'
+		with: anObject

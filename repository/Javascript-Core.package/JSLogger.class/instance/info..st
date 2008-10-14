@@ -1,3 +1,5 @@
 messages
-info: anObject
-	self call: 'info' argument: anObject
+info: anObject 
+	self 
+		call: 'info'
+		with: anObject

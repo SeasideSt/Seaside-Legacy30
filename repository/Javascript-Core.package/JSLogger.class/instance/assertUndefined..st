@@ -1,3 +1,5 @@
 assertions
-assertUndefined: anObject
-	self call: 'assertUndefined' argument: anObject
+assertUndefined: anObject 
+	self 
+		call: 'assertUndefined'
+		with: anObject

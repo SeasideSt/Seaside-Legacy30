@@ -1,3 +1,6 @@
 assertions
-assert: anObject greater: anotherObject
-	self call: 'assertGreater' arguments: (Array with: anObject with: anotherObject)
+assert: anObject greater: anotherObject 
+	self 
+		call: 'assertGreater'
+		with: anObject
+		with: anotherObject

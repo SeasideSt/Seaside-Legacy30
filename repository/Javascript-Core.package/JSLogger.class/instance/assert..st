@@ -1,3 +1,5 @@
 assertions
-assert: anObject
-	self call: 'assert' argument: anObject
+assert: anObject 
+	self 
+		call: 'assert'
+		with: anObject

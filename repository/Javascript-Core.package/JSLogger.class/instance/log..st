@@ -1,3 +1,5 @@
 logging
-log: anObject
-	self call: 'log' argument: anObject
+log: anObject 
+	self 
+		call: 'log'
+		with: anObject
