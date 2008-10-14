@@ -1,6 +1,5 @@
 utilities
-render: anObject
-	anObject isString 
-		ifTrue: [ ^ anObject ].
-	^ String streamContents: [ :stream |
-		self render: anObject on: stream ]
+render: aRenderable
+	"Render aRenderable and answer the resulting string."
+	
+	^ String streamContents: [ :stream | self render: aRenderable on: stream ]

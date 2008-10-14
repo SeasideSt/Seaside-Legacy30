@@ -1,5 +1,7 @@
 utilities
-render: anObject on: aStream
+render: aRenderable on: aStream
+	"Render aRenderable on aStream."
+	
 	| document html previous |
 	self requestContext rememberLoadScripts: [ 
 		document := JSDocument new.
@@ -7,6 +9,6 @@ render: anObject on: aStream
 		previous := canvas context document.
 		canvas context document: document.
 		html := canvas species context: canvas context.
-		html render: anObject; flush.
+		html render: aRenderable; flush.
 		document close: nil.
 		canvas context document: previous ]
