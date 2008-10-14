@@ -5,4 +5,4 @@ describeOn: config
 		options: [ self rootComponents ].
 	(config list: #errorHandler)
 		options: [ self errorHandlerClasses ];
-		default: WASimpleErrorHandler.
+		default: WAHtmlErrorHandler.
