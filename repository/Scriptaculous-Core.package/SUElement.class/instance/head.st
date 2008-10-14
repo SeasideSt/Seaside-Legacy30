@@ -1,3 +1,3 @@
 elements
 head
-	self id: (SUStream on: 'document.head')
+	self id: (JSStream on: 'document.head')

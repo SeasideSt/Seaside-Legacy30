@@ -1,3 +1,3 @@
 private
 defaultEvent
-	^ SUStream on: 'event'
+	^ JSStream on: 'event'

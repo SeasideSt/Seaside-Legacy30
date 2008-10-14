@@ -1,3 +1,3 @@
 creational
 function
-	^ self create: SUFunction
+	^ self create: JSFunction

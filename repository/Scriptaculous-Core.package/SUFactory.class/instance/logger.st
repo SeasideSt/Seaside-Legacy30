@@ -1,3 +1,3 @@
 creational
 logger
-	^ self create: SULogger
+	^ self create: JSLogger

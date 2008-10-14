@@ -1,3 +1,3 @@
 creational
 stream
-	^ self register: SUStream new
+	^ self register: JSStream new

@@ -1,3 +1,3 @@
 elements
 body
-	self id: (SUStream on: 'document.body')
+	self id: (JSStream on: 'document.body')

@@ -6,7 +6,7 @@ triggerAutocompleter: aBlock
 		callback: [ :value |
 			aBlock value: (canvas context callbacks
 				at: value ifAbsent: [ nil ]) ]
-		value: (SUStream new
+		value: (JSStream new
 			nextPutAll: 'arguments[1].id.match';
 			argument: SUSortable passengerRegexp;
 			nextPutAll: '[1]')

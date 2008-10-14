@@ -1,5 +1,5 @@
 printing
-javascriptOn: aStream
+printOn: aStream
 	aStream nextPut: $[.
 	self collection 
 		do: [ :each |

@@ -1,3 +1,3 @@
 private
 defaultId
-	^ SUStream on: 'this'
+	^ JSStream on: 'this'

@@ -2,4 +2,4 @@ triggers
 triggerArgument: anInteger callback: aBlock
 	"Triggers a JavaScript function argument and passes its value into aBlock."
 
-	self callback: aBlock value: (SUStream argumentAt: anInteger)
+	self callback: aBlock value: (JSStream argumentAt: anInteger)

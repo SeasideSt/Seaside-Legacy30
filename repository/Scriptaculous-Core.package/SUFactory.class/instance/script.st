@@ -1,3 +1,3 @@
 creational
 script
-	^ self create: SUScript
+	^ self create: JSScript

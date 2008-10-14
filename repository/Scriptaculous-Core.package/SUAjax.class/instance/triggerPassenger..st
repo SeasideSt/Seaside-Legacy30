@@ -4,7 +4,7 @@ triggerPassenger: aBlock
 		callback: [ :value |
 			aBlock value: (canvas context callbacks
 				at: value ifAbsent: [ nil ]) ]
-		value: (SUStream new
+		value: (JSStream new
 			nextPutAll: 'arguments[0].id.match';
 			argument: SUSortable passengerRegexp;
 			nextPutAll: '[1]')

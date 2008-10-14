@@ -1,6 +1,6 @@
 private
 passengerRegexp
-	^ SUStream new
+	^ JSStream new
 		nextPutAll: '/^';
 		nextPutAll: self passengerPrefix;
 		nextPutAll: '([0-9]+)$/'
