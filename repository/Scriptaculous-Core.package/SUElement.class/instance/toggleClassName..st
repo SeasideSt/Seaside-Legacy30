@@ -1,5 +1,6 @@
 styling-classes
-toggleClassName: aString
+toggleClassName: aString 
 	"Toggles element's CSS className and returns element."
-
-	self call: 'toggleClassName' argument: aString
+	self 
+		call: 'toggleClassName'
+		with: aString

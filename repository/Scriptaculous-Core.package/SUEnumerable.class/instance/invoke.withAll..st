@@ -1,3 +1,5 @@
 querying
-invoke: aString withAll: anArray
-	self call: 'invoke' arguments: (Array with: aString) , anArray
+invoke: aString withAll: anArray 
+	self 
+		call: 'invoke'
+		withArguments: (Array with: aString) , anArray

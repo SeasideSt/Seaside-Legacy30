@@ -1,5 +1,6 @@
 querying
-find: anObject
+find: anObject 
 	"Finds the first element for which the iterator returns true."
-
-	self call: 'find' argument: (self iteratorFor: anObject)
+	self 
+		call: 'find'
+		with: (self iteratorFor: anObject)

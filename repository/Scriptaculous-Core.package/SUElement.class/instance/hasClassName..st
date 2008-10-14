@@ -1,5 +1,6 @@
 styling-classes
-hasClassName: aString
+hasClassName: aString 
 	"Checks whether element has the given CSS className."
-
-	self call: 'hasClassName' argument: aString
+	self 
+		call: 'hasClassName'
+		with: aString

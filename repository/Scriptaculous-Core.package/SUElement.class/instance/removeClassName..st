@@ -1,5 +1,6 @@
 styling-classes
-removeClassName: aString
+removeClassName: aString 
 	"Removes element's CSS className and returns element."
-
-	self call: 'removeClassName' argument: aString
+	self 
+		call: 'removeClassName'
+		with: aString

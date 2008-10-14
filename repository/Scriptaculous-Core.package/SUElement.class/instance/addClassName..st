@@ -1,5 +1,6 @@
 styling-classes
-addClassName: aString
+addClassName: aString 
 	"Adds a CSS class to element."
-
-	self call: 'addClassName' argument: aString
+	self 
+		call: 'addClassName'
+		with: aString

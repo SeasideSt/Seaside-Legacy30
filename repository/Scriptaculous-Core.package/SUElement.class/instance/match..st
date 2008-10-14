@@ -1,5 +1,6 @@
 querying
-match: aString
+match: aString 
 	"Checks if element matches the given CSS selector."
-
-	self call: 'match' argument: aString
+	self 
+		call: 'match'
+		with: aString
