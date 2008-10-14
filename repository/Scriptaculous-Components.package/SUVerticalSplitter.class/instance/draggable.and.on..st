@@ -2,7 +2,7 @@ rendering
 draggable: aBeforeItem and: anAfterItem on: html
 	^ (super draggable: aBeforeItem and: anAfterItem on: html)
 		constraintHorizontal;
-		onDrag: (SUStream on: '
+		onDrag: (JSStream on: '
 				var splitter = arguments[0].element;
 				offset = splitter.offsetLeft - arguments[0]._originalLeft;
 				arguments[0]._originalLeft = splitter.offsetLeft;
@@ -16,6 +16,6 @@ draggable: aBeforeItem and: anAfterItem on: html
 				}');
 		onEnd: (html request
 			callback: [ :value | aBeforeItem size: value ]
-				value: (SUStream on: 'arguments[0].element.previous().offsetWidth + ''px''');
+				value: (JSStream on: 'arguments[0].element.previous().offsetWidth + ''px''');
 			callback: [ :value | anAfterItem size: value ]
-				value: (SUStream on: 'arguments[0].element.next().offsetWidth + ''px'''))
+				value: (JSStream on: 'arguments[0].element.next().offsetWidth + ''px'''))
