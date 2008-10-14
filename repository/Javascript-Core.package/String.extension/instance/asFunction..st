@@ -1,3 +1,3 @@
 *javascript-core
 asFunction: aCollection
-	^ (SUStream on: self) asFunction: aCollection
+	^ (JSStream on: self) asFunction: aCollection

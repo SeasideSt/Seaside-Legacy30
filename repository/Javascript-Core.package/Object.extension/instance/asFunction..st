@@ -1,3 +1,3 @@
 *javascript-core
 asFunction: aCollection
-	^ SUFunction new add: self; arguments: aCollection
+	^ JSFunction new add: self; arguments: aCollection

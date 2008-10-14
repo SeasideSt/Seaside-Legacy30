@@ -1,3 +1,6 @@
 utilities
 render: anObject
-	^ String streamContents: [ :stream | self render: anObject on: stream ]
+	anObject isString 
+		ifTrue: [ ^ anObject ].
+	^ String streamContents: [ :stream |
+		self render: anObject on: stream ]
