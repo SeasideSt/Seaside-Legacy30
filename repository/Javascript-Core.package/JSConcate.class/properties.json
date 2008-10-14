@@ -1,11 +1,11 @@
 {
-	"commentStamp" : "lr 4/28/2008 09:54",
+	"commentStamp" : "",
 	"super" : "JSStatement",
 	"category" : "Javascript-Core-Decorations",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "JSAfter",
+	"name" : "JSConcate",
 	"type" : "normal"
 }
