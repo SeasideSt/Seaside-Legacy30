@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "JSObjectTest",
+	"category" : "JQuery-Tests-Core-Unit",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "JQueryTest",
+	"type" : "normal"
+}

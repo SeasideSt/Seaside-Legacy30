@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "JQFunctionalTest",
+	"category" : "JQuery-Tests-Core-Functional",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"count"
+	],
+	"name" : "JQCounterTest",
+	"type" : "normal"
+}

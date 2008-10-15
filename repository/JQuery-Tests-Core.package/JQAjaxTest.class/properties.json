@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "lr 10/14/2008 22:09",
+	"super" : "JQueryTest",
+	"category" : "JQuery-Tests-Core-Unit",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "JQAjaxTest",
+	"type" : "normal"
+}
