@@ -4,5 +4,5 @@ initializeWithIterator: aBlock
 		on: self canvas
 		using: [ :each | 
 			(each respondsTo: #id:)
-				ifTrue: [ each id: (JSStream argumentAt: 1) ].
+				ifTrue: [ each id: (JSStream argument: 0) ].
 			self add: each ])
