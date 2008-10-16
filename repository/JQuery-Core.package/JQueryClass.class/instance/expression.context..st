@@ -6,6 +6,4 @@ expression: aString context: anObject
 	constructor := anObject isNil
 		ifTrue: [ Array with: aString ]
 		ifFalse: [ Array with: aString with: anObject ].
-	aString isSymbol
-		ifTrue: [ constructor at: 1 put: aString printString ].
 	^ JQueryInstance on: canvas constructor: constructor
