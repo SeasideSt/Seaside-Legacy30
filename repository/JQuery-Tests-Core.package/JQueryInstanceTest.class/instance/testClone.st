@@ -2,4 +2,4 @@ testing-copying
 testClone
 	self
 		assert: (((self jQuery: 'div')) clone)
-		equals: self function , '("div").clone()'
+		equals: self name , '("div").clone()'

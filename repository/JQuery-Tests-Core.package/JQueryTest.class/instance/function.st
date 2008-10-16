@@ -1,3 +1,0 @@
-accessing
-function
-	^ JQuery functionName

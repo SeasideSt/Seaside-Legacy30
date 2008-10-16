@@ -1,0 +1,5 @@
+testing-with
+testWithBlock
+	self
+		assert: (self jQuery: [ :html | html heading: 'jQuery' ])
+		equals: self name , '("<h1>jQuery</h1>")'

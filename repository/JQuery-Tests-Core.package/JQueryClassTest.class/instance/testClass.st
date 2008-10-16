@@ -2,4 +2,4 @@ testing
 testClass
 	self
 		assert: self jQuery
-		equals: self function
+		equals: self name

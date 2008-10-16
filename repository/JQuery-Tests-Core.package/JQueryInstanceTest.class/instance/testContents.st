@@ -2,4 +2,4 @@ testing-finding
 testContents
 	self
 		assert: (((self jQuery: 'div')) contents)
-		equals: self function , '("div").contents()'
+		equals: self name , '("div").contents()'

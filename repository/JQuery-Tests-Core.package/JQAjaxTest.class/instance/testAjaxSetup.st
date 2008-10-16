@@ -2,4 +2,4 @@ testing
 testAjaxSetup
 	self 
 		assert: self ajaxSetup
-		equals: self function , '.ajaxSetup()'
+		equals: self name , '.ajaxSetup()'

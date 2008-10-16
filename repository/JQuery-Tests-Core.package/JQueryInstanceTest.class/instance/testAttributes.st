@@ -6,4 +6,4 @@ testAttributes
 			at: 'title' put: 'jQuery';
 			at: 'alt' put: 'jQuery Logo';
 			yourself))
-		equals: self function , '("img").attr({src:"/images/hat.gif",title:"jQuery",alt:"jQuery Logo"})'
+		equals: self name , '("img").attr({src:"/images/hat.gif",title:"jQuery",alt:"jQuery Logo"})'
