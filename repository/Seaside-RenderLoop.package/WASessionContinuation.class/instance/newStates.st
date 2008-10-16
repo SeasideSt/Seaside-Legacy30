@@ -1,3 +1,6 @@
 creational
 newStates
-	^ WASnapshot new
+	| snapshot |
+	snapshot := WASnapshot new.
+	self requestContext onRespond: [ :value | self updateStates: snapshot ].
+	^ snapshot
