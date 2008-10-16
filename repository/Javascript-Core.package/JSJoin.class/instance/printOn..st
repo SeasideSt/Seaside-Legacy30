@@ -1,18 +1,11 @@
 printing
 printOn: aStream
+	self collection isEmpty
+		ifTrue: [ ^ self printEmptyOn: aStream ].
+	self collection size = 1
+		ifTrue: [ ^ self printElement: self collection first on: aStream ].
 	aStream nextPut: $[.
 	self collection 
-		do: [ :each |
-			each isVariableBinding
-				ifFalse: [ aStream javascript: each ]
-				ifTrue: [
-					aStream nextPut: $'; nextPutAll: each key asString.
-					each key isNil
-						ifTrue: [ aStream nextPut: $' ]
-						ifFalse: [
-							aStream nextPut: $=.
-							each value isString
-								ifTrue: [ aStream nextPutAll: each value; nextPut: $' ]
-								ifFalse: [ aStream nextPut: $'; nextPut: $+; javascript: each value ] ] ] ]
+		do: [ :each | self printElement: each on: aStream ]
 		separatedBy: [ aStream nextPut: $, ].
 	aStream nextPutAll: '].join("&")'
