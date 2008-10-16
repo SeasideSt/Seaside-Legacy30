@@ -1,18 +1,23 @@
 convenience
-@ aString
-	"This method is purely syntactic sugar for being to write an expression like
-	
-		(html jQuery expression: 'div') addClass: 'highlight'; text: 'Hello'
-		
-	without brackets like this
-	
-		html jQuery @ 'div'; addClass: 'highlight'; text: 'Hallo'
-		
-	
-		"
+@ anObject
+	"This method is purely syntactic sugar for being able to write an expression like
+
+		(html jQuery with: 'div')
+			show;
+			addClass: 'highlight'
+
+	without brackets
+
+		html jQuery @ 'div';
+			show;
+			addClass: 'highlight'
+
+	Note, the semicolon after the #@ message that starts the cascade. We do not suggest to use this code, unless you really understand what and why you are doing this."
+
 	| sender expression |
-	(sender := thisContext sender) top == self
-		ifFalse: [ self error: 'This method is supposed to be called from within a cascade.' ].
-	expression := self expression: aString.
+	sender := thisContext sender.
+	(sender stackPtr = 0 or: [ sender top ~~ self ])
+		ifTrue: [ self error: 'This method is supposed to be called from within a cascade.' ].
+	expression := self with: anObject.
 	sender pop; push: expression.
 	^ expression
