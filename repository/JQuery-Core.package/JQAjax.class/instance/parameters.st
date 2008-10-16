@@ -1,3 +1,5 @@
 parameters
 parameters
-	^ self optionAt: 'data' ifAbsentPut: [ WASmallDictionary new ]
+	"Answer the request parameters of the reciever."
+	
+	^ self data collection

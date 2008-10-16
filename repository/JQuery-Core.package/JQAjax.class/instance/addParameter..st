@@ -1,3 +1,5 @@
 parameters
-addParameter: aKey
-	self addParameter: aKey value: nil
+addParameter: anObject
+	"Add the request parameter anObject, a single value or an association."
+
+	self parameters add: anObject

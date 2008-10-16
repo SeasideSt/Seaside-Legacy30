@@ -6,5 +6,5 @@ iteratorFor: anObject
 	result := (JQueryClass on: canvas) this.
 	anObject numArgs = 1
 		ifTrue: [ anObject value: result ]
-		ifFalse: [ anObject value: result value: (JSStream argumentAt: 0) ].
+		ifFalse: [ anObject value: result value: (JSStream argument: 0) ].
 	^ result asFunction return: true

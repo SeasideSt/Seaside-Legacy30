@@ -1,4 +1,4 @@
-finding
+navigation
 nextAll
 	"Find all sibling elements after the current element."
 	
