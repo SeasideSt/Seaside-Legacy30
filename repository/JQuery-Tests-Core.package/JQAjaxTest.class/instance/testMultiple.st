@@ -5,4 +5,4 @@ testMultiple
 			callback: [ :value | ] value: $a; 
 			callback: [ :value | ] value: $b;
 			callback: [ ])
-		equals: self name , '.ajax({url:"http://www.seaside.st/",data:{"_s":"123","_k":"abc","1":"a","2":"b","3":null}})'.
+		equals: self name , '.ajax({url:"http://www.seaside.st/",data:["_s=123","_k=abc","1="+"a","2="+"b","3"].join("&")})'.
