@@ -1,5 +1,5 @@
 testing-css
 testOffset
 	self
-		assert: ((self jQuery @ 'div') offset)
+		assert: (((self jQuery: 'div')) offset)
 		equals: self function , '("div").offset()'

@@ -1,8 +1,8 @@
 testing-modifying
 testRemove
 	self 
-		assert: ((self jQuery @ 'div') remove)
+		assert: (((self jQuery: 'div')) remove)
 		equals: self function , '("div").remove()'.
 	self 
-		assert: ((self jQuery @ 'div') remove: 'p')
+		assert: (((self jQuery: 'div')) remove: 'p')
 		equals: self function , '("div").remove("p")'

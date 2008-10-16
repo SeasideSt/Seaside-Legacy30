@@ -1,7 +1,7 @@
 testing-attributes
 testAttributes
 	self
-		assert: (self jQuery @ 'img' attributes: (WASmallDictionary new
+		assert: ((self jQuery: 'img') attributes: (WASmallDictionary new
 			at: 'src' put: '/images/hat.gif';
 			at: 'title' put: 'jQuery';
 			at: 'alt' put: 'jQuery Logo';

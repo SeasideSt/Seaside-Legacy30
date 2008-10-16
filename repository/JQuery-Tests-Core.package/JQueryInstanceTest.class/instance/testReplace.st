@@ -1,7 +1,7 @@
 testing-modifying
 testReplace
 	self
-		assert: (self jQuery @ 'p' replaceWith: [ :html | html emphasis: 'Hello' ])
+		assert: ((self jQuery: 'p') replaceWith: [ :html | html emphasis: 'Hello' ])
 		equals: self function , '("p").replaceWith("<em>Hello</em>")'.
 	self
 		assert: ((self jQuery html: [ :html | html div: 'Hello' ]) replaceAll: '.foo')
