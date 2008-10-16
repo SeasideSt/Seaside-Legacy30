@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "lr 4/28/2008 09:46",
+	"super" : "WAObject",
+	"category" : "Javascript-Core-Object",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"collection"
+	],
+	"name" : "JSJoin",
+	"type" : "normal"
+}
