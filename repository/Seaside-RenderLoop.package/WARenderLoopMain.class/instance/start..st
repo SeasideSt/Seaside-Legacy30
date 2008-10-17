@@ -3,4 +3,4 @@ start: aRequest
 	| root |
 	root := self createRoot.
 	root visiblePresentersDo: [ :each | each initialRequest: aRequest ].
-	(WARenderPhaseContinuation root: root) value: aRequest
+	((self session preferenceAt: #renderPhaseContinuationClass) root: root) value: aRequest

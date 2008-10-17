@@ -1,3 +1,3 @@
 *Seaside-RenderLoop
 inNewRenderLoopShow: aComponent
-	(WARenderPhaseContinuation root: aComponent) value: nil
+	((self preferenceAt: #renderPhaseContinuationClass) root: aComponent) value: nil

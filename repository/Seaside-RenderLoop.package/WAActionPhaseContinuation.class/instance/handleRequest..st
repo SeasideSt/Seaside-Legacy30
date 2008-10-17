@@ -4,7 +4,7 @@ handleRequest: aRequest
 	aRequest isXmlHttpRequest ifTrue: [ self requestContext onRespond: [ :r | states snapshot ] ].
 	self withNotificationHandler: [ self renderingContext callbacks processWithRequest: aRequest ].
 	
-	renderContinuation := WARenderPhaseContinuation root: self root.	
+	renderContinuation := self newRenderPhaseContinuation.	
 	
 	(self shouldRedirect: aRequest) 
 		ifTrue: [ self respond: [ :response |
