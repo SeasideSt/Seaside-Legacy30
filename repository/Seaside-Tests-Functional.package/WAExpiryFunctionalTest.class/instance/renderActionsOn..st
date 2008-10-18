@@ -2,11 +2,13 @@ rendering
 renderActionsOn: html
 	html paragraph: [
 		html anchor
-			url: self session newSessionUrl;
+			url: self application baseUrl;
 			 with: 'New Session'.
 		html break.
 		html anchor
-			callback: [ self session unregister; redirectTo: self session newSessionUrl ];
+			callback: [
+				self session unregister.
+				self requestContext redirectTo: self application baseUrl ];
 			 with: 'Expire'.
 		html break.
 		html anchor
@@ -21,7 +23,7 @@ renderActionsOn: html
 			callback: [
 				self application clearHandlers.
 				Smalltalk garbageCollect.
-				self session redirectTo: self session newSessionUrl ];
+				self requestContext redirectTo: self application baseUrl ];
 			 with: 'Clear Cache'.
 		html break.
 		html anchor
@@ -29,5 +31,5 @@ renderActionsOn: html
 				self application clearHandlers.
 				WAExpirySession resetCounters.
 				Smalltalk garbageCollect.
-				self session redirectTo: self session newSessionUrl ];
+				self requestContext redirectTo: self application baseUrl ];
 			 with: 'Reset All' ].

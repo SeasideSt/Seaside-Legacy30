@@ -1,8 +1,8 @@
 actions
 addFirst
 	| response |
-	self session respond: [ :url |
-		response := self session redirectResponseFor: url.
+	self requestContext respondAndContinue: [ :url |
+		response := self requestContext redirectResponseFor: url.
 		response addCookie: self firstCookie.
 		response ].
 	

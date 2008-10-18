@@ -1,3 +1,3 @@
 actions
 answerNil
-	self requestContext returnResponse: nil
+	self requestContext respond: nil
