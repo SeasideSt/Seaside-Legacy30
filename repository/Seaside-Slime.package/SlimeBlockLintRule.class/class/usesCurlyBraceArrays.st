@@ -1,4 +1,4 @@
-miscellaneous
+seaside-portability
 usesCurlyBraceArrays
 	^ self new
 		name: 'Uses curly brace arrays';

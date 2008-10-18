@@ -1,4 +1,4 @@
-miscellaneous
+seaside
 avoidUnnecessaryWith
 	| matcher |
 	matcher := ParseTreeSearcher new.

@@ -1,4 +1,4 @@
-bugs
+seaside
 instantiatesComponentWhileRendering
 	| matcher matches class |
 	matcher := ParseTreeSearcher new.

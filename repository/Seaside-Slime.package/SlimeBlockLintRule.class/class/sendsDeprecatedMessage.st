@@ -1,4 +1,4 @@
-possible bugs
+seaside-portability
 sendsDeprecatedMessage
 	^ self new
 		name: 'Sends deprecated message';

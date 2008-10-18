@@ -1,4 +1,4 @@
-bugs
+seaside
 implementsSessionExpired
 	^ self new
 		name: 'Implements #expired in a session class';
