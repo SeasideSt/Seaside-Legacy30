@@ -1,8 +1,6 @@
-responding
+deprecated
 closePopupWithoutReloadingOpener
-	^ self respond: [ :url |
-		WAResponse new
-			nextPutAll: '<html><script>';
-			nextPutAll: 'self.close();';
-			nextPutAll: '</script></html>';
-			yourself]
+	self seasideDeprecatedApi: 'WASession>>closePopupWithoutReloadingOpener'
+		details: 'Use WARequestContext>>closeThisPopup'.
+		
+	^ self requestContext closeThisPopup

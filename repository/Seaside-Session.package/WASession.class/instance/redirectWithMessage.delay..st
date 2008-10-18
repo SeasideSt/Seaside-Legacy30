@@ -1,7 +1,6 @@
-redirecting
+deprecated
 redirectWithMessage: aString delay: aNumber 
-	self respond: [ :url | 
-		self application responseFactory
-			refreshAfter: aNumber
-			location: url
-			message: aString ]
+	self seasideDeprecatedApi: 'WASession>>redirectWithMessage:delay:'
+		details: 'Use WARequestContext>>redirectWithMessage:delay:'.
+		
+	^ self requestContext redirectWithMessage: aString delay: aNumber

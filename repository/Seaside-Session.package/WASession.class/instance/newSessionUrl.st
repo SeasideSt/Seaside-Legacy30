@@ -1,3 +1,6 @@
-responding
+deprecated
 newSessionUrl
-	^ self application baseUrl takeServerParametersFromRequest: self requestContext request
+	self seasideDeprecatedApi: 'WASession>>newSessionUrl'
+		details: 'Use WAApplication>>baseUrl'.
+		
+	^ self application baseUrl

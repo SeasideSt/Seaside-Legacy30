@@ -1,5 +1,5 @@
 deprecated
 returnResponse: aResponse
 	self seasideDeprecatedApi: 'WASession>>returnResponse:'
-		details: 'Use WARequestContext>>returnResponse:. Common usage would be "self requestContext returnResponse:".'.
-	self requestContext returnResponse: aResponse
+		details: 'Use WARequestContext>>respond:. Common usage would be "self requestContext respond:".'.
+	self requestContext respond: aResponse

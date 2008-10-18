@@ -1,3 +1,6 @@
-redirecting
+deprecated
 redirect
-	^ self respond: [ :url | self redirectResponseFor: url ]
+	self seasideDeprecatedApi: 'WASession>>redirect'
+		details: 'Use WARequestContext>>redirect'.
+		
+	^ self requestContext redirect

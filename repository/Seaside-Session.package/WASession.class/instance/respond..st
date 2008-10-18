@@ -1,3 +1,6 @@
-responding
+deprecated
 respond: aBlock 
-	^ WAContinuation currentDo: [ :cc | self respond: aBlock onAnswer: cc ]
+	self seasideDeprecatedApi: 'WASession>>respond:'
+	 	details: 'Use WARequestContext>>respondAndContinue:'.
+		
+	^ self requestContext respondAndContinue: aBlock

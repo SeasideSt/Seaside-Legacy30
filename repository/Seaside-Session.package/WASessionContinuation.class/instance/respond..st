@@ -5,4 +5,4 @@ respond: aBlock
 	context := self requestContext.
 	context response: response.
 	aBlock value: response.
-	context returnResponse: response
+	context respond: response
