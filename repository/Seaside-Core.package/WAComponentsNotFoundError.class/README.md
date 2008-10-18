@@ -1,1 +1,0 @@
-A WAComponentsNotFoundError is an exception that is raised when for a callback now owning component could be found. See #possibleCauses for examples when this can happen.
