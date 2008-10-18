@@ -1,7 +1,7 @@
 initialization
 initialize
 	super initialize.
-	self initializeMutex.
+	mutex := SeasidePlatformSupport semaphoreClass forMutualExclusion.
 	self setExpiryPolicy: WALastAccessExpiryPolicy new.
 	self setReapingStrategy: WARetrievalIntervalReapingStrategy new.
 	self setMissStrategy: WACacheMissStrategy new.
