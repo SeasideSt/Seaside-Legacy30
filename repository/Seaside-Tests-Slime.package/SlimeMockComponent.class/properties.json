@@ -6,8 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"foo",
-		"maybe"
+		"foo"
 	],
 	"name" : "SlimeMockComponent",
 	"type" : "normal"
