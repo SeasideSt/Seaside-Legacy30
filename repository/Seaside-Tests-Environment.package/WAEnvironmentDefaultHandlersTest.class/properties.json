@@ -5,13 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"defaultDispatcher",
-		"alternateDispatcher",
-		"shortDispatcher",
-		"baseName",
-		"alternateName"
-	],
+	"instvars" : [ ],
 	"name" : "WAEnvironmentDefaultHandlersTest",
 	"type" : "normal"
 }
