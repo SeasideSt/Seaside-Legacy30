@@ -1,5 +1,5 @@
 *Seaside-Core
 asMIMEDocumentType: mimeType
 	self seasideDeprecatedApi: '#asMIMEDocumentType:'
-		details: 'Use #seasideMimeDocumentType:.'.
-	^ self seasideMimeDocumentType: mimeType
+		details: 'Use #seasideMimeDocument'.
+	^ self seasideMimeDocument mimeType: mimeType

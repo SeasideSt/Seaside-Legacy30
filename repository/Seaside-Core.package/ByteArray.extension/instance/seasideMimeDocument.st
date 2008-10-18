@@ -1,3 +1,3 @@
 *Seaside-Core
 seasideMimeDocument
-	^self seasideMimeDocumentType: WAMimeType applicationOctetStream
+	^ WAMimeDocument on: self mimeType: WAMimeType applicationOctetStream

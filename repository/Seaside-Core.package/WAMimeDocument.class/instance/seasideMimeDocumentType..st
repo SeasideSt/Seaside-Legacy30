@@ -1,3 +1,0 @@
-converting
-seasideMimeDocumentType: aMimeType
-	self subclassResponsibility

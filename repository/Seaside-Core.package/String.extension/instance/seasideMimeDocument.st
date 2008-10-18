@@ -1,3 +1,3 @@
 *Seaside-Core
 seasideMimeDocument
-	^self seasideMimeDocumentType: WAMimeType textPlain
+	^ WAMimeDocument on: self mimeType: WAMimeType textPlain
