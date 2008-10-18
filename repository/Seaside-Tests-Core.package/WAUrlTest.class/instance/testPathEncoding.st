@@ -4,7 +4,7 @@ testPathEncoding
 	self assert: url printString = '/foo%2Fbar'.
 
 	url path: #( 'foo bar' ).
-	self assert: url printString = '/foo+bar'.
+	self assert: url printString = '/foo%20bar'.
 
 	url path: #( 'foo+bar' ).
 	self assert: url printString = '/foo%2Bbar'.

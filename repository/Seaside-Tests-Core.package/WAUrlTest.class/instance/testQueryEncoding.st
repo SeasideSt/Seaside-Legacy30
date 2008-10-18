@@ -2,7 +2,7 @@ testing-encoding
 testQueryEncoding
 	self
 		assert: (url withParameter: '/' value: ' ')
-			printString = '/?%2F=+'.
+			printString = '/?%2F=%20'.
 	self
 		assert: (url withParameter: '+' value: '%')
 			printString = '/?%2B=%25'.

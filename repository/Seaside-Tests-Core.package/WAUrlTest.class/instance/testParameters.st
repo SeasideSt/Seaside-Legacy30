@@ -15,4 +15,4 @@ testParameters
 	url parameters 
 		at: '4'
 		put: 'foo bar&zork'.
-	self assert: url seasideString = '/?1&2=foo&3=123&4=foo+bar%26zork'
+	self assert: url seasideString = '/?1&2=foo&3=123&4=foo%20bar%26zork'
