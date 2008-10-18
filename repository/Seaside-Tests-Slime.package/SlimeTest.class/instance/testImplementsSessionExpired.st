@@ -1,5 +1,5 @@
 testing-bugs
 testImplementsSessionExpired
 	self 
-		run: SlimeParseTreeLintRule implementsSessionExpired
+		run: SlimeBlockLintRule implementsSessionExpired
 		selectors: #(expired)
