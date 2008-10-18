@@ -1,3 +1,3 @@
 actions
 counterLoop
-	WARenderLoop new call: WACounter new
+	self session inNewRenderLoopShow: WACounter new
