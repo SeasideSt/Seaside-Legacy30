@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "TransformationRule",
+	"category" : "Seaside-Slime",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SlimeTransformationRule",
+	"type" : "normal"
+}

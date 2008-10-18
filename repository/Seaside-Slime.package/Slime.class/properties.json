@@ -1,0 +1,23 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Seaside-Slime",
+	"classinstvars" : [
+		"forbiddenCallbackSelectors",
+		"attributeSelectors",
+		"callbackSelectors",
+		"brushSelectors",
+		"notPortableClasses",
+		"superSelectors",
+		"deprecatedSelectors",
+		"notPortableSelectors",
+		"braceSelectors",
+		"forbiddenRenderingSelectors",
+		"deprecatedClasses"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "Slime",
+	"type" : "normal"
+}

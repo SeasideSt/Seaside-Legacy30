@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ParseTreeLintRule",
+	"category" : "Seaside-Slime",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SlimeParseTreeLintRule",
+	"type" : "normal"
+}
