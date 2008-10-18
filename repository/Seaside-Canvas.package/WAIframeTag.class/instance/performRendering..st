@@ -13,4 +13,4 @@ performRendering: anObject
 	renderer render: anObject;
 		 flush.
 	docRoot close: document.
-	self requestContext returnResponse: response
+	self requestContext respond: response
