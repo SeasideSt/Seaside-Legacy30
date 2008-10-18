@@ -1,8 +1,13 @@
 as yet unclassified
 handleRequest: aRequest 
 	| renderContinuation |
-	aRequest isXmlHttpRequest ifTrue: [ self requestContext onRespond: [ :r | states snapshot ] ].
-	self withNotificationHandler: [ self renderingContext callbacks processWithRequest: aRequest ].
+	aRequest isXmlHttpRequest ifTrue:
+		[ self requestContext onRespond: [ :r | states snapshot ] ].
+	self withNotificationHandler:
+		[ self renderingContext callbacks processWithRequest: aRequest ].
+	
+	aRequest isXmlHttpRequest ifTrue:
+		[ ^ WAResponseExpectedError raiseSignal: 'XML HTTP requests must return a response during callback evaluation.' ].
 	
 	renderContinuation := self newRenderPhaseContinuation.	
 	
