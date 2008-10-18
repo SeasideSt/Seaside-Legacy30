@@ -1,4 +1,4 @@
-miscellaneous
+seaside
 usesNotPortableClass
 	^ self new
 		name: 'Uses not portable class';

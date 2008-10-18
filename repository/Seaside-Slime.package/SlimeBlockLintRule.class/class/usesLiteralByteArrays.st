@@ -1,4 +1,4 @@
-miscellaneous
+seaside
 usesLiteralByteArrays
 	^ self new
 		name: 'Uses literal byte arrays';

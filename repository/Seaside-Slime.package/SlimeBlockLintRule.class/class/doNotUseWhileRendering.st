@@ -1,4 +1,4 @@
-bugs
+seaside
 doNotUseWhileRendering
 	| matcher matches |
 	matcher := ParseTreeSearcher new.

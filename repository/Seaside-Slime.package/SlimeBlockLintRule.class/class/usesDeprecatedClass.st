@@ -1,4 +1,4 @@
-possible bugs
+seaside
 usesDeprecatedClass
 	^ self new
 		name: 'Uses deprecated class';
@@ -8,7 +8,7 @@ usesDeprecatedClass
 				anySatisfy: [ :each | Slime deprecatedClasses includes: each name ])
 					ifTrue: [ result addClass: context selectedClass ] ];
 		methodBlock: [ :context :result |
-			context compiledMethod literalsDo: [ :each |
+			context compiledMethod literals do: [ :each |
 				(each isVariableBinding and: [ Slime deprecatedClasses includes: each key ]) ifTrue: [
 					result addClass: context selectedClass selector: context selector.
 					result addSearchString: each key ] ] ]

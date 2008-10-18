@@ -1,4 +1,4 @@
-miscellaneous
+seaside
 dontCallSuperInitialize
 	^ self new
 		name: 'Don''t call super initialize';

@@ -1,4 +1,4 @@
-miscellaneous
+seaside
 basicNewInitializeMissing
 	| matcher |
 	matcher := ParseTreeSearcher new.

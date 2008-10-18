@@ -1,4 +1,4 @@
-bugs
+seaside
 withHasToBeLastMessageInCascade
 	| matcher |
 	matcher := ParseTreeSearcher new.
