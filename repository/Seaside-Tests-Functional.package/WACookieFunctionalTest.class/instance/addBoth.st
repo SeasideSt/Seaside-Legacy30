@@ -1,8 +1,8 @@
 actions
 addBoth
 	| response |
-	self requestContext respondAndContinue: [ :url |
-		response := self requestContext redirectResponseFor: url.
+	self session respond: [ :url |
+		response := self session redirectResponseFor: url.
 		response addCookie: self firstCookie.
 		response addCookie: self secondCookie.
 		response ].

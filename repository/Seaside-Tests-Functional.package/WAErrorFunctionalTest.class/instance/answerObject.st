@@ -1,3 +1,3 @@
 actions
 answerObject
-	self requestContext respond: Object new
+	self requestContext returnResponse: Object new
