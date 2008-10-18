@@ -1,0 +1,3 @@
+initialization
+initializeMutex
+	mutex := SeasidePlatformSupport semaphoreClass forMutualExclusion
