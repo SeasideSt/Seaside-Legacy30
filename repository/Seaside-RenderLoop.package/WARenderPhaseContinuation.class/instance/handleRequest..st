@@ -1,3 +1,3 @@
-as yet unclassified
+processing
 handleRequest: aRequest 
 	self withNotificationHandler: [ self render ]

@@ -1,4 +1,4 @@
-as yet unclassified
+processing
 processRendering: aResponse 
 	| document htmlRoot renderingContext |
 	renderingContext := self newContext.

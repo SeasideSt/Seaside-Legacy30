@@ -1,4 +1,4 @@
-as yet unclassified
+private
 newHtmlRootWithContext: aRenderContext
 	| htmlRoot |
 	htmlRoot := WAHtmlRoot context: aRenderContext.

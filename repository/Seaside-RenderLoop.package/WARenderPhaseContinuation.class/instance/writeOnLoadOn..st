@@ -1,4 +1,4 @@
-as yet unclassified
+processing
 writeOnLoadOn: aDocument 
 	| attributes |
 	attributes := WAHtmlAttributes new.

@@ -1,4 +1,4 @@
-as yet unclassified
+private
 newContext
 	| renderingContext actionContinuation |
 	renderingContext := WARenderingContext new.

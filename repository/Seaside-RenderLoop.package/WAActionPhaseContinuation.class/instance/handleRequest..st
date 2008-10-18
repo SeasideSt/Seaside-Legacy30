@@ -1,4 +1,4 @@
-as yet unclassified
+processing
 handleRequest: aRequest 
 	| renderContinuation |
 	aRequest isXmlHttpRequest ifTrue:
