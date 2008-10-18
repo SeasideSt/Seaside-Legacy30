@@ -1,3 +1,3 @@
 accessing
 children
-	^ Array with: counter
+	^ Array with: calendar

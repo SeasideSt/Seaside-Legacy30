@@ -6,6 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
+		"key",
+		"value",
+		"path",
 		"firstKey",
 		"firstValue",
 		"firstPath",

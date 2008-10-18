@@ -1,5 +1,6 @@
 path
 updateUrl: aUrl 
 	super updateUrl: aUrl.
-	aUrl addToPath: counter count seasideString.
-	aUrl fragment: counter count seasideString
+	string notNil ifTrue: [
+		aUrl addToPath: string.
+		aUrl fragment: string ]

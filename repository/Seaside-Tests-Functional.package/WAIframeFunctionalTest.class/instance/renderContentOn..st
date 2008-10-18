@@ -1,11 +1,12 @@
 rendering
 renderContentOn: html
+	html paragraph: 'With #contents:'.
 	html iframe
-		contents: counter.
-	html break; break.
+		contents: calendar.
+	html paragraph: 'With #url:'.
 	html iframe
-		url: (WADispatcher default entryPointAt: WACounter entryPointName) baseUrl.
-	html break; break.
+		url: (WATestingFiles / #samplePng).
+	html paragraph: 'With #document:'.
 	html iframe
 		document: WATestingFiles default samplePng
 		mimeType: 'image/png'

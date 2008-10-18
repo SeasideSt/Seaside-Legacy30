@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"counter"
+		"string"
 	],
 	"name" : "WAPathFunctionalTest",
 	"type" : "normal"

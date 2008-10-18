@@ -1,4 +1,4 @@
 initialization
 initialize
 	super initialize.
-	counter := WACounter new
+	calendar := WAMiniCalendar new

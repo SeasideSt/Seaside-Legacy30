@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"counter"
+		"calendar"
 	],
 	"name" : "WAIframeFunctionalTest",
 	"type" : "normal"
