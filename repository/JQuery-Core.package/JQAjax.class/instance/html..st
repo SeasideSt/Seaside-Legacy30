@@ -8,4 +8,4 @@ html: aRenderable
 		response := WAResponse new.
 		response contentType: WAMimeType textHtml.
 		owner render: aRenderable on: response contents.
-		owner requestContext returnResponse: response ]
+		owner requestContext respond: response ]
