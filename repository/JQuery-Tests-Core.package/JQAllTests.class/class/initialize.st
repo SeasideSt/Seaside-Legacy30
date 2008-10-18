@@ -1,4 +1,7 @@
 initialization
 initialize
-	(self registerAsApplication: 'tests/jquery')
-		addLibrary: JQProductionLibrary
+	| application |
+	application := self registerAsApplication: 'tests/jquery'.
+	application
+		addLibrary: JQDevelopmentLibrary;
+		addLibrary: JQUiDevelopmentLibrary
