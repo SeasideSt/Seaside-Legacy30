@@ -1,5 +1,5 @@
 uploads
-jqueryJs
+jQueryJs
 	^ '(function(){
 /*
  * jQuery 1.2.6 - New Wave Javascript
