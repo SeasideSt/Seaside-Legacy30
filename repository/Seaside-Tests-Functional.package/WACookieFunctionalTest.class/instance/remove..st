@@ -1,8 +1,8 @@
 actions
 remove: aCookie
 	
-	self session respond: [ :url |
+	self requestContext respondAndContinue: [ :url |
 		| response |
-		response := self session redirectResponseFor: url.
+		response := self requestContext redirectResponseFor: url.
 		response deleteCookie: aCookie.
 		response ]
