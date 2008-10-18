@@ -10,7 +10,6 @@
 		"childHanlder",
 		"configApplication",
 		"normalApplication",
-		"childApplication",
 		"configComponent"
 	],
 	"name" : "WADispatcherComponentTest",
