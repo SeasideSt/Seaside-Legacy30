@@ -1,6 +1,4 @@
 running
 setUp
 	super setUp.
-	document := WACollectionMimeDocument
-		contentType: WAMimeType textPlain
-		content: 'aString'
+	document := WAMimeDocument on: 'aString' mimeType: WAMimeType textPlain

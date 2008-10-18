@@ -6,6 +6,4 @@ testAsMIMEDocumentByteArray
 	content := document content.
 	self assert: content size = 4.
 	self assert: content class = ByteArray.
-	1 to: 4 do: [ :index |
-		self assert: (content at: index) = index ].
-	self assert: (document seasideMimeDocumentType: WAMimeType applicationOctetStream) == document
+	1 to: 4 do: [ :index | self assert: (content at: index) = index ]
