@@ -8,4 +8,4 @@ script: aBlock
 		response := WAResponse new.
 		response contentType: WAMimeType textJavascript.
 		owner script: aBlock on: response contents.
-		owner requestContext returnResponse: response ]
+		owner requestContext respond: response ]
