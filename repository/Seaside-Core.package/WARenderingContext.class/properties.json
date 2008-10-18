@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "WAObject",
-	"category" : "Seaside-Core-Callbacks",
+	"category" : "Seaside-Core-Contexts",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
@@ -9,8 +9,7 @@
 		"actionUrl",
 		"callbacks",
 		"document",
-		"mode",
-		"properties"
+		"mode"
 	],
 	"name" : "WARenderingContext",
 	"type" : "normal"
