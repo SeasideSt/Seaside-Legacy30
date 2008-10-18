@@ -1,4 +1,4 @@
-seaside
+miscellaneous
 sendsRenderContentOn
 	| matcher |
 	matcher := ParseTreeSearcher new.

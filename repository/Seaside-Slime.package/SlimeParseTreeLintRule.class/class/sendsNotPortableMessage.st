@@ -1,4 +1,4 @@
-seaside-portability
+miscellaneous
 sendsNotPortableMessage
 	| matcher |
 	matcher := ParseTreeSearcher new.

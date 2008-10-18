@@ -1,4 +1,4 @@
-seaside
+miscellaneous
 extractCallbackCodeToMethod
 	| matcher |
 	matcher := ParseTreeSearcher new.

@@ -1,4 +1,4 @@
-seaside
+miscellaneous
 unnecessaryBlockPassedToBrush
 	| matcher |
 	matcher := ParseTreeSearcher new.

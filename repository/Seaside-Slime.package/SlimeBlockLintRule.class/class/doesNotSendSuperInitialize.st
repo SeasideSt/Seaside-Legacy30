@@ -1,4 +1,4 @@
-seaside
+bugs
 doesNotSendSuperInitialize
 	^ self new
 		name: 'Does not send super';
