@@ -1,3 +1,4 @@
 actions
 execute
-	self session unregister; redirectTo: self session newSessionUrl
+	self session unregister.
+	self requestContext redirectTo: self application baseUrl
