@@ -5,5 +5,9 @@ testChildApplication
 	
 	context := self requestContextWithUrl: '/seaside/config/child/counter'.
 	
-	configComponent initialRequest: context request.
+	self
+		should: [ configComponent initialRequest: context request ]
+		raise: WARenderNotification.
+	
 	self assert: configComponent handler == childHanlder
+	
