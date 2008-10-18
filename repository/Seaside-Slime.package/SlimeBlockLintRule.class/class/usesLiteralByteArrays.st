@@ -1,4 +1,4 @@
-seaside
+seaside-portability
 usesLiteralByteArrays
 	^ self new
 		name: 'Uses literal byte arrays';

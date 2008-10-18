@@ -1,4 +1,4 @@
-seaside
+seaside-deprecation
 sendsDeprecatedMessage
 	^ self new
 		name: 'Sends deprecated message';

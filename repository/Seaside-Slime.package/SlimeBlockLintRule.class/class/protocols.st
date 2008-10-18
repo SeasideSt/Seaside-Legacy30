@@ -1,3 +1,3 @@
 accessing
 protocols
-	^ #('seaside')
+	^ #('seaside' 'seaside-portability')

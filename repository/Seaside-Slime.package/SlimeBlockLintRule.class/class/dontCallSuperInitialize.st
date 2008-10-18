@@ -1,4 +1,4 @@
-seaside
+seaside-portability
 dontCallSuperInitialize
 	^ self new
 		name: 'Don''t call super initialize';
