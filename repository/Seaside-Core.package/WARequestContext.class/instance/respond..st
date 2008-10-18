@@ -1,5 +1,5 @@
 responding
-returnResponse: aResponse
+respond: aResponse
 	| event |
 	"That should be improved, it should also check if the response is not already out on the socket.
 	response isNil 

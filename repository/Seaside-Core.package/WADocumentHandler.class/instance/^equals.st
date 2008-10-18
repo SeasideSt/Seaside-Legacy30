@@ -1,3 +1,5 @@
 comparing
-= anObject
-	^ self species = anObject species and: [ self document = anObject document]
+= other
+	^ other species = self species
+		and: [ other document = self document
+		and: [ other mimeType = self mimeType ] ]

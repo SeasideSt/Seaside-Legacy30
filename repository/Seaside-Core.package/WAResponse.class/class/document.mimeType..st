@@ -1,5 +1,8 @@
 instance creation
-document: anObject mimeType: aMimeType
-	^ self document: (anObject seasideMimeDocument 
-		mimeType: aMimeType;
-		yourself)
+document: anObject mimeType: mimeType
+	| document |
+	document := anObject seasideMimeDocumentType: mimeType.
+	^ self new
+		contentType: (mimeType ifNil: [ document contentType seasideMimeType ]);
+		nextPutAll: document content;
+		yourself

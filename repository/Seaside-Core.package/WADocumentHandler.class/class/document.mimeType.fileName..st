@@ -1,6 +1,4 @@
 instance-creation
-document: anObject mimeType: aMimeType fileName: aString
-	^ self document: (anObject seasideMimeDocument
-		mimeType: aMimeType;
-		fileName: aString;
-		yourself)
+document: anObject mimeType: mimeString fileName: fileString
+	^ self new
+		initializeWithDocument: anObject mimeType: mimeString fileName: fileString

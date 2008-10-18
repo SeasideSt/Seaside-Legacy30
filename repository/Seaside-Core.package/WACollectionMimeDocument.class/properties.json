@@ -1,13 +1,13 @@
 {
-	"commentStamp" : "jf 9/28/2008 17:01",
-	"super" : "WAObject",
+	"commentStamp" : "pmm 4/15/2008 20:57",
+	"super" : "WAMimeDocument",
 	"category" : "Seaside-Core-HTTP",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"contentType"
+		"content"
 	],
-	"name" : "WAMimeDocument",
+	"name" : "WACollectionMimeDocument",
 	"type" : "normal"
 }

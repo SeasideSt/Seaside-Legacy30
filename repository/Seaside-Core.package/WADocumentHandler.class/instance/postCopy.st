@@ -1,4 +1,8 @@
 copying
 postCopy
 	super postCopy.
-	document := document copy
+	"It seems reasonable to leave our 'document' instvar pointing to the same object.
+	We let the mimeDocument be regenerated."
+	mimeDocument := nil.
+	mimeType := mimeType copy.
+	fileName := fileName copy.

@@ -1,3 +1,4 @@
-compatiblity
+accessing
 content
-	^ self contents
+	"returns the contents of the receiver as a Collection of Characters or bytes"
+	self subclassResponsibility

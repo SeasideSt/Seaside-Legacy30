@@ -1,3 +1,4 @@
-compatiblity
+accessing
 contentStream
-	^ self contents readStream
+	"returns the contents of receiver as a ReadStream"
+	self subclassResponsibility
