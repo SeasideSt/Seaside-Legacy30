@@ -10,7 +10,6 @@
 		"fullDocument",
 		"documentRoot",
 		"rootBlock",
-		"callbackOwner",
 		"rootClass",
 		"documentClass"
 	],
