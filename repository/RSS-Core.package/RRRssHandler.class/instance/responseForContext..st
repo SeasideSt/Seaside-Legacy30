@@ -9,10 +9,11 @@ responseForContext: aRequestContext
 	canvas := RRRssRenderCanvas context: context.
 	rootComponent := self createRootComponent.
 	
-	[ rootComponent initialRequest: aRequestContext request.
-	"rootComponent updateRoot: aRequest."
-	canvas render: rootComponent ] 
-		on: Error
-		do: [ :error | response := self errorHandler internalError: error ].
-	document close: root.
-	^ response
+	^ self exceptionHandler
+		handleExceptionsDuring: [
+			rootComponent initialRequest: aRequestContext request.
+			rootComponent updateRoot: root.
+			canvas render: rootComponent.
+			document close: root.
+			response ]
+		context: aRequestContext
