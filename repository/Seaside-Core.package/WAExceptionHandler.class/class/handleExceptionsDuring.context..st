@@ -7,4 +7,10 @@ handleExceptionsDuring: aBlock context: aRequestContext
 		
 	^ aBlock
 		on: self exceptionsToCatch
-		do: [ :e | (handler ifNil: [ handler := self context: aRequestContext ]) handleException: e ]
+		do: [ :exception | 
+			[ (handler ifNil: [ handler := self context: aRequestContext ])
+				handleException: exception ]
+					"If there's an error while running the exception handler, fall
+					back on an internal error response."
+					on: Error
+					do: [ :error | self internalError: error context: aRequestContext ] ]
