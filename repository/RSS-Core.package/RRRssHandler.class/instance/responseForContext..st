@@ -1,5 +1,5 @@
 processing
-responseForContext: aRequest 
+responseForContext: aRequestContext
 	| response document context canvas root rootComponent |
 	response := WAResponse new contentType: RRRssRoot defaultContentType.
 	document := self newDocumentOn: response stream.
@@ -9,8 +9,8 @@ responseForContext: aRequest
 	canvas := RRRssRenderCanvas context: context.
 	rootComponent := self createRootComponent.
 	
-	[ rootComponent initialRequest: aRequest.
-	rootComponent updateRoot: aRequest.
+	[ rootComponent initialRequest: aRequestContext request.
+	"rootComponent updateRoot: aRequest."
 	canvas render: rootComponent ] 
 		on: Error
 		do: [ :error | response := self errorHandler internalError: error ].
