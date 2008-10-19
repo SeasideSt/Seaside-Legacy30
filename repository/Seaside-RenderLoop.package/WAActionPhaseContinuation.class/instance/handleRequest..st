@@ -6,9 +6,6 @@ handleRequest: aRequest
 	self withNotificationHandler:
 		[ self renderingContext callbacks processWithRequest: aRequest ].
 	
-	aRequest isXmlHttpRequest ifTrue:
-		[ ^ WAResponseExpectedError raiseSignal: 'XML HTTP requests must return a response during callback evaluation.' ].
-	
 	renderContinuation := self newRenderPhaseContinuation.	
 	
 	(self shouldRedirect: aRequest) 
