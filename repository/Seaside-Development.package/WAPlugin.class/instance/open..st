@@ -2,7 +2,7 @@ actions
 open: aComponent
 	"Replace the current page with aComponent."
 
-	self session inNewRenderLoopShow:
+	self session inNewRenderLoopCall:
 		(aComponent
 			addDecoration: (WAWindowDecoration new
 				cssClass: self cssClass;
