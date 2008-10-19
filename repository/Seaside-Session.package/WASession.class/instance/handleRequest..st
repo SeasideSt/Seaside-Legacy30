@@ -10,9 +10,11 @@ handleRequest: aRequestContext
 				use: aRequestContext
 				during: [ 
 					self withEscapeHandler: [
-						self exceptionHandler handleExceptionsDuring: [
-							self filter responseForContext: aRequestContext ] ] ] ]
+						self exceptionHandler
+							handleExceptionsDuring: [
+								self filter responseForContext: aRequestContext ]
+							context: aRequestContext ] ] ]
 		ifError:  [ :error |
 			WACurrentRequestContext 
 				use: aRequestContext
-				during: [ self exceptionHandler internalError: error ] ] ]
+				during: [ self exceptionHandler internalError: error context: aRequestContext ] ] ]
