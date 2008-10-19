@@ -1,3 +1,3 @@
 processing
-handleRequest: aRequest
+handleRequest
 	self subclassResponsibility
