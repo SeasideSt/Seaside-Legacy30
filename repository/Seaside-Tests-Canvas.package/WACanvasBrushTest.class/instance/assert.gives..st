@@ -2,7 +2,6 @@ private
 assert: aBlock gives: aString
 	| html |
 	html := WARenderCanvas builder
-		callbackOwner: self;
 		render: aBlock.
 	self
 		assert: html = aString

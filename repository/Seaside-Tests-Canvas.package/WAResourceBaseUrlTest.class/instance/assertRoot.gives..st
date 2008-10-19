@@ -2,7 +2,6 @@ private
 assertRoot: aBlock gives: aString
 	| html |
 	html := WARenderCanvas builder
-		callbackOwner: self;
 		fullDocument: true;
 		rootBlock: aBlock;
 		render: [ :canvas | ].
