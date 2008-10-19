@@ -1,8 +1,8 @@
 request handling
 handleRequest: aRequestContext
-	((aRequestContext request fields includesKey: 'terminate') and: [ self sessionAllowTermination ]) ifTrue: [
-		monitor terminate.
-		^ WAResponse new nextPutAll: 'Process terminated' ].
+	(self shouldTerminate: aRequestContext) ifTrue: [
+		^ self terminate: aRequestContext ].
+	
 	^ aRequestContext push: self while: [
 		monitor 
 			critical:  [ 
