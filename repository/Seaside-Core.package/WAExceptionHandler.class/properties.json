@@ -5,9 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"requestContext"
-	],
+	"instvars" : [ ],
 	"name" : "WAExceptionHandler",
 	"type" : "normal"
 }
