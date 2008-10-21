@@ -2,9 +2,7 @@
 	"commentStamp" : "",
 	"super" : "WAObject",
 	"category" : "Seaside-Environment",
-	"classinstvars" : [
-		"applicationDefaults"
-	],
+	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],

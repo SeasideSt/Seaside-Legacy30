@@ -1,3 +1,3 @@
-class initialization
+initialization
 initialize
-	self registerDefaultRequestHandlers.
+	self reloadApplications
