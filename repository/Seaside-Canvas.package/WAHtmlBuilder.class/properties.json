@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "pmm 8/18/2007 12:40",
+	"super" : "WAObject",
+	"category" : "Seaside-Canvas",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"canvasClass",
+		"fullDocument",
+		"documentRoot",
+		"rootBlock",
+		"rootClass",
+		"documentClass"
+	],
+	"name" : "WAHtmlBuilder",
+	"type" : "normal"
+}

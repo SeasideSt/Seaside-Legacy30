@@ -1,4 +1,6 @@
 public
 text: anObject
+	"Emit anObject onto the target document."
+
 	self flush.
-	super text: anObject
+	self document print: anObject
