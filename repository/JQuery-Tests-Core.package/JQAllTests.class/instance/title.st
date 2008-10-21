@@ -1,3 +1,3 @@
 configuration
 title
-	^ 'jQuery - Functional Seaside Tests'
+	^ 'jQuery for Seaside'

@@ -2,6 +2,6 @@ rendering
 renderLogoOn: html
 	html heading level: 1; class: 'logo'; with: [
 		html anchor
-			url: self url;
 			title: self title;
+			callback: [ contents := self default ];
 			with: [ html span: self title ] ]

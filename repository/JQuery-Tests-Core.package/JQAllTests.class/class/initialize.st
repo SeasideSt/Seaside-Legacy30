@@ -4,4 +4,4 @@ initialize
 	application := WAAdmin register: self at: 'tests/jquery'.
 	application 
 		addLibrary: JQProductionLibrary;
-		addLibrary: JQFileLibrary
+		addLibrary: JQAllTestsLibrary

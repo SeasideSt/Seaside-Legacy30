@@ -1,2 +1,0 @@
-rendering
-renderFootOn: html

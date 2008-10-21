@@ -5,9 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"contents"
-	],
-	"name" : "JQAllTests",
+	"instvars" : [ ],
+	"name" : "JQWelcome",
 	"type" : "normal"
 }

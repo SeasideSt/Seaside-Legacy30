@@ -1,0 +1,3 @@
+configuration
+default
+	^ JQWelcome new

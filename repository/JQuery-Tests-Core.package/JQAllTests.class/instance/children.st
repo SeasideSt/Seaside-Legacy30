@@ -1,3 +1,3 @@
 accessing
 children
-	^ children
+	^ Array with: contents

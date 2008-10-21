@@ -1,9 +1,9 @@
 rendering
-renderNavigationOn: html
-	html div id: 'navigation'; with: [
+renderMenuOn: html
+	html div id: 'menu'; with: [
 		html div class: 'left'.
 		html unorderedList: [
-			self navigation do: [ :pair |
+			self menu do: [ :pair |
 				html listItem: [
 					html anchor
 						url: pair first;

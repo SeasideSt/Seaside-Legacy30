@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "JQFileLibrary",
+	"name" : "JQAllTestsLibrary",
 	"type" : "normal"
 }
