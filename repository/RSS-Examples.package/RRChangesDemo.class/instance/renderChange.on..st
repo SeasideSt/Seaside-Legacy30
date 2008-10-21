@@ -1,7 +1,10 @@
 rendering
 renderChange: aChange on: rss
 	| url |
-	url := self baseUrl addToPath: WABrowser applicationName; yourself.
+	url := self baseUrl
+		takeServerParametersFromRequest: self requestContext request;
+		addToPath: WABrowser applicationName;
+		yourself.
 	aChange addParametersTo: url.
 	rss item: [
 		rss title: aChange title.
