@@ -1,7 +1,12 @@
 rendering-ancestry
 renderParent: aConfiguration on: html 
 	html listItem: [
-		html text: (self nameForConfiguration: aConfiguration).
+		aConfiguration isShared
+			ifTrue: [ 
+				html anchor
+					callback: [ self call: aConfiguration configurationComponent ];
+					with: aConfiguration name ]
+			ifFalse: [ html text: aConfiguration name ].
 		html space.
 		html anchor
 			callback: [ self configuration moveParentUp: aConfiguration ];

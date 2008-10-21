@@ -7,8 +7,8 @@ renderParentSelectorOn: html
 		selectedParent := WAValueHolder new.
 		html select
 			selected: nil;
-			labels: [ :each | self nameForConfiguration: each ];
 			list: parents;
+			labels: [ :each | each name ];
 			callback: [ :value | selectedParent contents: value ].
 		html space.
 		html submitButton

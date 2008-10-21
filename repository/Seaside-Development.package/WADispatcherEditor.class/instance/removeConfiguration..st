@@ -1,3 +1,3 @@
 actions
 removeConfiguration: aConfiguration
-	self sharedConfiguration remove: aConfiguration
+	aConfiguration unregister
