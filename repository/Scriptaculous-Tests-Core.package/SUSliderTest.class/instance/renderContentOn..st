@@ -13,5 +13,5 @@ renderContentOn: html
 		range: (0 to: 100);
 		onChange: (html updater
 			id: positionId;
-			triggerSliderCallback: [ :value | position := value rounded];
+			triggerSliderCallback: [ :value | position := value rounded ];
 			callback: [ :renderer | renderer render: position ]))
