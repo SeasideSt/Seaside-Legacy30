@@ -1,3 +1,0 @@
-private
-passengerPrefix
-	^ '_p'
