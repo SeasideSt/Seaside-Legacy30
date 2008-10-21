@@ -1,0 +1,3 @@
+rendering
+canHaveHalo
+	^ false
