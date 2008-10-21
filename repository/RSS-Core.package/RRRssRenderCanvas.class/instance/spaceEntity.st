@@ -1,3 +1,0 @@
-xml
-spaceEntity
-	^'&#160;'
