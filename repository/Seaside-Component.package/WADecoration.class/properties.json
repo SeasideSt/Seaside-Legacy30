@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "<historical>",
+	"commentStamp" : "jf 10/19/2008 03:56",
 	"super" : "WAPresenter",
 	"category" : "Seaside-Component",
 	"classinstvars" : [ ],
