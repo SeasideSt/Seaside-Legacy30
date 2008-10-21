@@ -1,5 +1,5 @@
 testing-options
 testDataType
 	self
-		assert: (self ajax dataType: 'xml')
+		assert: (self ajax reset; dataType: 'xml')
 		equals: self name , '.ajax({dataType:"xml"})'

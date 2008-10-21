@@ -1,5 +1,7 @@
 initialization
 initialize
 	| application |
-	application := self registerAsApplication: 'tests/jquery'.
-	application addLibrary: JQDevelopmentLibrary
+	application := WAAdmin register: self at: 'tests/jquery'.
+	application 
+		addLibrary: JQProductionLibrary;
+		addLibrary: JQFileLibrary
