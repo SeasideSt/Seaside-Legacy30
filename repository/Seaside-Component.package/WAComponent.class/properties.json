@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "pmm 8/27/2007 12:55",
-	"super" : "WAPresenter",
+	"super" : "WAView",
 	"category" : "Seaside-Component",
 	"classinstvars" : [ ],
 	"pools" : [ ],
