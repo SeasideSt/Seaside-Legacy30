@@ -6,6 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
+		"default",
+		"tests",
 		"contents"
 	],
 	"name" : "JQAllTests",

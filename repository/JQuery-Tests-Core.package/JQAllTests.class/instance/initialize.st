@@ -1,4 +1,5 @@
 initialization
 initialize
 	super initialize.
-	contents := self default
+	tests := self tests.
+	contents := default := self default
