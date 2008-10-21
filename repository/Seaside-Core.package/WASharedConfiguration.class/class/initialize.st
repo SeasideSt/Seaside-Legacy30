@@ -1,3 +1,3 @@
-class initialization
+initialization
 initialize
-	instances := IdentitySet new.
+	instances := Set new

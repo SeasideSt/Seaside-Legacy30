@@ -1,3 +1,5 @@
-instance creation
+instance-creation
 named: aString
-	^ self add: (self new name: aString; yourself)
+	^ self configurations
+		detect: [ :each | each name = aString ]
+		ifNone: [ instances add: (self basicNew initialize; setName: aString) ]
