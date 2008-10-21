@@ -11,7 +11,6 @@ responseForContext: aRequestContext
 	
 	^ self exceptionHandler
 		handleExceptionsDuring: [
-			rootComponent initialRequest: aRequestContext request.
 			rootComponent updateRoot: root.
 			canvas render: rootComponent.
 			document close: root.
