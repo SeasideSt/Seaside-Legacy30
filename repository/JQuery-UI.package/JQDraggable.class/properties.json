@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "lr 10/20/2008 19:54",
+	"super" : "JQUiPlugin",
+	"category" : "JQuery-UI-Interaction",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "JQDraggable",
+	"type" : "normal"
+}

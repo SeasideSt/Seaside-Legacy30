@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "lr 10/21/2008 13:38",
+	"super" : "JQUiPlugin",
+	"category" : "JQuery-UI-Interaction",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "JQSelectable",
+	"type" : "normal"
+}

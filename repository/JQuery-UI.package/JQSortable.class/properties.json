@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "JQUiPlugin",
+	"category" : "JQuery-UI-Interaction",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "JQSortable",
+	"type" : "normal"
+}

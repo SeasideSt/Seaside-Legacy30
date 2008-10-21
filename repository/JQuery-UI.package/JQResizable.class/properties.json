@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "lr 10/21/2008 13:40",
+	"super" : "JQUiPlugin",
+	"category" : "JQuery-UI-Interaction",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "JQResizable",
+	"type" : "normal"
+}
