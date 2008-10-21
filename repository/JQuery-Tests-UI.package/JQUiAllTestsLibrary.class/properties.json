@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "JQAllTestsLibrary",
+	"category" : "JQuery-Tests-UI-Functional",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "JQUiAllTestsLibrary",
+	"type" : "normal"
+}
