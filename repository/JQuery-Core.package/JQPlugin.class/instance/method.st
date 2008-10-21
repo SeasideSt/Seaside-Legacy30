@@ -1,3 +1,3 @@
 accessing
 method
-	^ self subclassResponsibility
+	self subclassResponsibility
