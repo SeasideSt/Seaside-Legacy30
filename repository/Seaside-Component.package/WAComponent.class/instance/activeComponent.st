@@ -1,3 +1,4 @@
 convenience
 activeComponent
-	self visiblePresentersDo: [:ea | ea isDecoration ifFalse: [^ ea]]
+	WAPluggableVisiblePresentersVisitor new
+			start: self do: [ :each | each isDecoration ifFalse: [ ^ each ] ]

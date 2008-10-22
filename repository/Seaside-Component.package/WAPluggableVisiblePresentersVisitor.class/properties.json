@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "WAVisiblePresentersVisitor",
+	"category" : "Seaside-Component",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"block"
+	],
+	"name" : "WAPluggableVisiblePresentersVisitor",
+	"type" : "normal"
+}

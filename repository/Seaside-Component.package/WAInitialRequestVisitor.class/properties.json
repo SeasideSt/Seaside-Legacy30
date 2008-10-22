@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "WAAllPresentersVisitor",
+	"category" : "Seaside-Component",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"request"
+	],
+	"name" : "WAInitialRequestVisitor",
+	"type" : "normal"
+}

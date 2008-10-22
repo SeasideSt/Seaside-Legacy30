@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WARenderingContext",
+	"category" : "Seaside-Component",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WATreeRenderContext",
+	"type" : "normal"
+}

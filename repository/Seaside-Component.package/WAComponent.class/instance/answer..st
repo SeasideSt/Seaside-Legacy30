@@ -3,4 +3,4 @@ answer: anObject
 	"Give back control back to the component from which the receiver was called.
 	When returning, a component can additionally return anObject to the caller."
 
-	self outermost handleAnswer: anObject
+	self decoration handleAnswer: anObject

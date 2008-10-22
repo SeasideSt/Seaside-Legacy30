@@ -1,0 +1,3 @@
+rendering
+renderWithContext: aRenderingContext
+	self acceptDecorated: aRenderingContext
