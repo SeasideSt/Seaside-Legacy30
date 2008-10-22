@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
-	"super" : "WAPainterVisitor",
-	"category" : "Seaside-Core-Rendering",
+	"super" : "WAObject",
+	"category" : "Seaside-Core-Contexts",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
