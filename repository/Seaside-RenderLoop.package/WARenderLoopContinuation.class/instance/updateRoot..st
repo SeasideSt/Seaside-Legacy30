@@ -1,6 +1,6 @@
 updating
 updateRoot: aHtmlRoot
 	super updateRoot: aHtmlRoot.
-	WAUpdateRootVisitor new
-		root: aHtmlRoot;
+	WAVisiblePresenterGuide new
+		client: (WAUpdateRootVisitor new root: aHtmlRoot; yourself);
 		start: self root

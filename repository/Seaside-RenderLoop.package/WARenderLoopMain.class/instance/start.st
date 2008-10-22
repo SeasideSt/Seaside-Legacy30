@@ -2,7 +2,9 @@ processing
 start
 	| root |
 	root := self createRoot.
-	WAInitialRequestVisitor new
-		request: self requestContext request;
+	WAAllPresenterGuide new
+		client: (WAInitialRequestVisitor new
+			request: (self requestContext request);
+			yourself);
 		start: root.
 	((self session preferenceAt: #renderPhaseContinuationClass) root: root) value

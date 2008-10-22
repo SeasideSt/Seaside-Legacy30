@@ -1,6 +1,6 @@
 updating
 updateStates: aSnapshot
 	super updateStates: aSnapshot.
-	WAUpdateStatesVisitor new
-		snapshot: aSnapshot;
+	WAAllPresenterGuide new
+		client: (WAUpdateStatesVisitor new snapshot: aSnapshot; yourself);
 		start: self root

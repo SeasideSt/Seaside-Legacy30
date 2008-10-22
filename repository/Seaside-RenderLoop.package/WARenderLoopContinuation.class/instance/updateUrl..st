@@ -1,6 +1,6 @@
 updating
 updateUrl: anUrl
 	super updateUrl: anUrl.
-	WAUpdateUrlVisitor new
-		url: anUrl;
+	WAVisiblePresenterGuide new
+		client: (WAUpdateUrlVisitor new url: anUrl; yourself);
 		start: self root
