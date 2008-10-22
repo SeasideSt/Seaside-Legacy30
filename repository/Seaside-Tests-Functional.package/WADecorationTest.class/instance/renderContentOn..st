@@ -17,7 +17,8 @@ renderContentOn: html
 			html tableHeading.
 			html tableHeading: 'Next'.
 			html tableHeading ].
-		self visiblePresentersDo: [ :each |
+		WAPluggableVisiblePresentersVisitor new
+			start: self do: [ :each |
 			html tableRow: [
 				html tableData: each printString.
 				html tableData: each identityHash.
