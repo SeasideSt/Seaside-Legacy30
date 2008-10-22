@@ -1,7 +1,7 @@
 private
 newContext
 	| renderingContext actionContinuation |
-	renderingContext := WARenderingContext new.
+	renderingContext := WATreeRenderContext new.
 	actionContinuation := self newActionPhaseContinuation.
 	actionContinuation
 		renderingContext: renderingContext;
