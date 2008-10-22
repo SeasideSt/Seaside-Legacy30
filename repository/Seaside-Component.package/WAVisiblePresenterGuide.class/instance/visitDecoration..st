@@ -1,4 +1,4 @@
 visiting
 visitDecoration: aDecoration
-	super visitDecoration: aDecoration.
+	self client visitDecoration: aDecoration.
 	aDecoration next accept: self

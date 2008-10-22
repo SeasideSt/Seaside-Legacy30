@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "WAAllPresentersVisitor",
+	"instvars" : [
+		"client"
+	],
+	"name" : "WAPresenterGuide",
 	"type" : "normal"
 }

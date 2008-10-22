@@ -1,3 +1,3 @@
 as yet unclassified
 visitPresenter: aPresenter
-	block value: aPresenter
+	self block value: aPresenter

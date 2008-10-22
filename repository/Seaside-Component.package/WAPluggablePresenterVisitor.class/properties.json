@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "WAVisiblePresentersVisitor",
+	"instvars" : [
+		"block"
+	],
+	"name" : "WAPluggablePresenterVisitor",
 	"type" : "normal"
 }

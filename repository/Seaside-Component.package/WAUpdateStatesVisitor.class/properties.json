@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "WAAllPresentersVisitor",
+	"super" : "WAPresenterVisitor",
 	"category" : "Seaside-Component",
 	"classinstvars" : [ ],
 	"pools" : [ ],

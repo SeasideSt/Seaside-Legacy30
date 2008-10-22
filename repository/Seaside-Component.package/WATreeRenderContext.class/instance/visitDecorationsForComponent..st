@@ -1,3 +1,0 @@
-visiting
-visitDecorationsForComponent: aComponent
-	aComponent decoration renderUndecoratedWithContext: self

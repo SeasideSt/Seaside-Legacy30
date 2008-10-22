@@ -1,3 +1,3 @@
 visiting
 visitDelegation: aDelegation
-	aDelegation delegate renderWithContext: self
+	self visit: aDelegation delegate

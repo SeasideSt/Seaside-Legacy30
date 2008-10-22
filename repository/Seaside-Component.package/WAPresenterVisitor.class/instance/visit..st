@@ -1,3 +1,3 @@
 as yet unclassified
-start: aPainter
+visit: aPainter
 	aPainter acceptDecorated: self
