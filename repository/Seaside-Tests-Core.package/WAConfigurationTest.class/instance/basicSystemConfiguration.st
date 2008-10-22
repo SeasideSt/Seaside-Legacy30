@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 basicSystemConfiguration
 	^ WAConfigurationMock new
 		description: [ :config | (config string: #a) default: #default ];
