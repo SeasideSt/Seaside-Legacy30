@@ -1,4 +1,4 @@
 visiting
 visitDelegation: aDelegation
-	self client visitDelegation: aDelegation.
+	super visitDelegation: aDelegation.
 	self visit: aDelegation delegate

@@ -1,3 +1,3 @@
 rendering
 renderWithContext: aRenderingContext
-	aRenderingContext visit: self
+	aRenderingContext guide visit: self

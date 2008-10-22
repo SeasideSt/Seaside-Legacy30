@@ -1,4 +1,4 @@
 visiting
 visitView: aView
-	self client visitView: aView.
+	super visitView: aView.
 	self visitAll: aView children
