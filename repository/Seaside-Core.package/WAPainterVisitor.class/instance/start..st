@@ -1,3 +1,3 @@
 visiting
 start: aPainter
-	aPainter accept: self
+	self visit: aPainter
