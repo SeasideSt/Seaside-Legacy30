@@ -2,6 +2,7 @@ uploads
 jQueryUiJs
 	^ '/*
  * jQuery UI 1.6rc2
+
  *
  * Copyright (c) 2008 Paul Bakaus (ui.jquery.com)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -9,7 +10,7 @@ jQueryUiJs
  *
  * http://docs.jquery.com/UI
  */
-(function($) {
+;(function($) {
 
 /** jQuery core modifications and additions **/
 
@@ -436,7 +437,8 @@ $.ui.mouse.defaults = {
 
 })(jQuery);
 /*
- * jQuery UI Draggable @VERSION
+ * jQuery UI Draggable 1.6rc2
+
  *
  * Copyright (c) 2008 Paul Bakaus
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -1108,7 +1110,8 @@ $.ui.plugin.add("draggable", "stack", {
 
 })(jQuery);
 /*
- * jQuery UI Droppable @VERSION
+ * jQuery UI Droppable 1.6rc2
+
  *
  * Copyright (c) 2008 Paul Bakaus
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -1408,7 +1411,8 @@ $.ui.plugin.add("droppable", "hoverClass", {
 
 })(jQuery);
 /*
- * jQuery UI Resizable @VERSION
+ * jQuery UI Resizable 1.6rc2
+
  *
  * Copyright (c) 2008 Paul Bakaus
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -2187,7 +2191,8 @@ $.ui.plugin.add("resizable", "alsoResize", {
 
 })(jQuery);
 /*
- * jQuery UI Selectable @VERSION
+ * jQuery UI Selectable 1.6rc2
+
  *
  * Copyright (c) 2008 Richard D. Worth (rdworth.org)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -2453,7 +2458,8 @@ $.extend($.ui.selectable, {
 
 })(jQuery);
 /*
- * jQuery UI Sortable @VERSION
+ * jQuery UI Sortable 1.6rc2
+
  *
  * Copyright (c) 2008 Paul Bakaus
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -3313,7 +3319,8 @@ $.ui.plugin.add("sortable", "axis", {
 
 })(jQuery);
 /*
- * jQuery UI Accordion @VERSION
+ * jQuery UI Accordion 1.6rc2
+
  * 
  * Copyright (c) 2007, 2008 Jörn Zaefferer
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -3604,7 +3611,8 @@ $.extend($.ui.accordion, {
 
 })(jQuery);
 /*
- * jQuery UI Autocomplete @VERSION
+ * jQuery UI Autocomplete 1.6rc2
+
  *
  * Copyright (c) 2007, 2008 Dylan Verheul, Dan G. Switzer, Anjesh Tuladhar, Jörn Zaefferer
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -4376,7 +4384,8 @@ $.Autocompleter.Selection = function(field, start, end) {
 
 })(jQuery);
 /*
- * jQuery UI Color Picker @VERSION
+ * jQuery UI Color Picker 1.6rc2
+
  *
  * Copyright (c) 2008 Stefan Petre, Paul Bakaus
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -4847,7 +4856,8 @@ $.extend($.ui.colorpicker, {
 });
 
 })(jQuery);/*
- * jQuery UI Dialog @VERSION
+ * jQuery UI Dialog 1.6rc2
+
  *
  * Copyright (c) 2008 Richard D. Worth (rdworth.org)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -5431,7 +5441,8 @@ $.extend($.ui.dialog.overlay.prototype, {
 
 })(jQuery);
 /*
- * jQuery UI Slider @VERSION
+ * jQuery UI Slider 1.6rc2
+
  *
  * Copyright (c) 2008 Paul Bakaus
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -5888,7 +5899,8 @@ $.ui.slider.defaults = {
 
 })(jQuery);
 /*
- * jQuery UI Tabs @VERSION
+ * jQuery UI Tabs 1.6rc2
+
  *
  * Copyright (c) 2007, 2008 Klaus Hartl (stilbuero.de)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -6475,7 +6487,8 @@ $.extend($.ui.tabs.prototype, {
 
 })(jQuery);
 /*
- * jQuery UI Datepicker @VERSION
+ * jQuery UI Datepicker 1.6rc2
+
  *
  * Copyright (c) 2006, 2007, 2008 Marc Grabanski
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -8174,7 +8187,8 @@ $.datepicker.uuid = new Date().getTime();
 
 })(jQuery);
 /*
- * jQuery UI Magnifier @VERSION
+ * jQuery UI Magnifier 1.6rc2
+
  *
  * Copyright (c) 2008 jQuery
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -8349,7 +8363,8 @@ $.extend($.ui.magnifier, {
 
 })(jQuery);
 /*
- * jQuery UI ProgressBar @VERSION
+ * jQuery UI ProgressBar 1.6rc2
+
  *
  * Copyright (c) 2008 Eduardo Lundgren
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -8543,7 +8558,8 @@ $.ui.progressbar.defaults = {
 };
 
 })(jQuery);/*
- * jQuery UI Spinner @VERSION
+ * jQuery UI Spinner 1.6rc2
+
  *
  * Copyright (c) 2008 jQuery
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -8877,7 +8893,8 @@ $.extend($.ui.spinner, {
 
 })(jQuery);
 /*
- * jQuery UI Effects @VERSION
+ * jQuery UI Effects 1.6rc2
+
  *
  * Copyright (c) 2008 Aaron Eisenberger (aaronchi@gmail.com)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -9386,7 +9403,8 @@ jQuery.extend( jQuery.easing,
 
 })(jQuery);
 /*
- * jQuery UI Effects Blind @VERSION
+ * jQuery UI Effects Blind 1.6rc2
+
  *
  * Copyright (c) 2008 Aaron Eisenberger (aaronchi@gmail.com)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -9435,7 +9453,8 @@ $.effects.blind = function(o) {
 
 })(jQuery);
 /*
- * jQuery UI Effects Bounce @VERSION
+ * jQuery UI Effects Bounce 1.6rc2
+
  *
  * Copyright (c) 2008 Aaron Eisenberger (aaronchi@gmail.com)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -9513,7 +9532,8 @@ $.effects.bounce = function(o) {
 
 })(jQuery);
 /*
- * jQuery UI Effects Clip @VERSION
+ * jQuery UI Effects Clip 1.6rc2
+
  *
  * Copyright (c) 2008 Aaron Eisenberger (aaronchi@gmail.com)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -9567,7 +9587,8 @@ $.effects.clip = function(o) {
 
 })(jQuery);
 /*
- * jQuery UI Effects Drop @VERSION
+ * jQuery UI Effects Drop 1.6rc2
+
  *
  * Copyright (c) 2008 Aaron Eisenberger (aaronchi@gmail.com)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -9617,7 +9638,8 @@ $.effects.drop = function(o) {
 
 })(jQuery);
 /*
- * jQuery UI Effects Explode @VERSION
+ * jQuery UI Effects Explode 1.6rc2
+
  *
  * Copyright (c) 2008 Paul Bakaus (ui.jquery.com)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -9696,7 +9718,8 @@ $.effects.explode = function(o) {
 
 })(jQuery);
 /*
- * jQuery UI Effects Fold @VERSION
+ * jQuery UI Effects Fold 1.6rc2
+
  *
  * Copyright (c) 2008 Aaron Eisenberger (aaronchi@gmail.com)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -9751,7 +9774,8 @@ $.effects.fold = function(o) {
 
 })(jQuery);
 /*
- * jQuery UI Effects Highlight @VERSION
+ * jQuery UI Effects Highlight 1.6rc2
+
  *
  * Copyright (c) 2008 Aaron Eisenberger (aaronchi@gmail.com)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -9799,7 +9823,8 @@ $.effects.highlight = function(o) {
 
 })(jQuery);
 /*
- * jQuery UI Effects Pulsate @VERSION
+ * jQuery UI Effects Pulsate 1.6rc2
+
  *
  * Copyright (c) 2008 Aaron Eisenberger (aaronchi@gmail.com)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -9854,7 +9879,8 @@ $.effects.pulsate = function(o) {
 
 })(jQuery);
 /*
- * jQuery UI Effects Scale @VERSION
+ * jQuery UI Effects Scale 1.6rc2
+
  *
  * Copyright (c) 2008 Aaron Eisenberger (aaronchi@gmail.com)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -10034,7 +10060,8 @@ $.effects.size = function(o) {
 
 })(jQuery);
 /*
- * jQuery UI Effects Shake @VERSION
+ * jQuery UI Effects Shake 1.6rc2
+
  *
  * Copyright (c) 2008 Aaron Eisenberger (aaronchi@gmail.com)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -10091,7 +10118,8 @@ $.effects.shake = function(o) {
 
 })(jQuery);
 /*
- * jQuery UI Effects Slide @VERSION
+ * jQuery UI Effects Slide 1.6rc2
+
  *
  * Copyright (c) 2008 Aaron Eisenberger (aaronchi@gmail.com)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -10141,7 +10169,8 @@ $.effects.slide = function(o) {
 
 })(jQuery);
 /*
- * jQuery UI Effects Transfer @VERSION
+ * jQuery UI Effects Transfer 1.6rc2
+
  *
  * Copyright (c) 2008 Aaron Eisenberger (aaronchi@gmail.com)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
