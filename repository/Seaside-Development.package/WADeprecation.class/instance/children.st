@@ -1,3 +1,3 @@
 accessing
 children
-	^ Array with: self table
+	^ Array with: table
