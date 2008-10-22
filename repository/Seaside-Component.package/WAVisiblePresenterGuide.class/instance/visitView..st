@@ -1,4 +1,4 @@
 visiting
 visitView: aView
 	super visitView: aView.
-	self visitAll: aView children
+	aView childrenDo: [ :each | self visit: each ]
