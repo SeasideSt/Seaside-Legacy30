@@ -2,6 +2,6 @@
 seasideCore
 	^ self new
 		name: 'Seaside-Core';
-		description: 'foo';
+		description: 'The core of Seaside, required for all packages.';
 		addDependency: 'Seaside-Platform';
 		yourself
