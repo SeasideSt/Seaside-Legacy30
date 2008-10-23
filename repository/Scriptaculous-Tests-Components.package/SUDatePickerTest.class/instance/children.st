@@ -1,3 +1,3 @@
 accessing
 children
-	^Array with: component
+	^Array with: component with: timeComponent

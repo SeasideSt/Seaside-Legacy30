@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"component"
+		"component",
+		"timeComponent"
 	],
 	"name" : "SUDatePickerTest",
 	"type" : "normal"

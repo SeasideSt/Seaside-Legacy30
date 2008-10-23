@@ -1,13 +1,29 @@
 rendering
 renderContentOn: html
-	| theId buttonId | 
+	| theId divId theId2 | 
 	component := nil.
+	timeComponent := nil.
 	theId := html nextId.
-	buttonId := html nextId.
-	html form: [html table: [
+	divId := html nextId.
+	theId2 := html nextId.
+	html div id: divId.
+	html form: [
+		html table: [
 				html tableRow: [
-					html tableData verticalAlign: 'top'; with: [html textInput id: theId].
-					html tableData: [html button id: buttonId; value: 'Set date';
-								onClick: (html evaluator callback: [:script | self setupDatePickerOn: theId button: buttonId script: script];
-												return: false)].
-					 ] ] ].
+					html tableData
+						with: [html textInput id: theId].
+					html tableData: [
+						html button value: 'Set date';
+							onClick: (html evaluator
+								callback: [:v | self setupDatePickerOn: theId div: divId origin: v] value: (html element id: theId; cumulativeOffset);
+								callback: [:script | self openDatePickerOn: script];
+											return: false) ] ].
+				html tableRow: [
+					html tableData
+						with: [html textInput id: theId2].
+					html tableData: [
+						html button value: 'Set date & time';
+							onClick: (html evaluator
+								callback: [:v | self setupDateTimePickerOn: theId2 div: divId origin: v] value: (html element id: theId2; cumulativeOffset);
+								callback: [:script | self openDateTimePickerOn: script];
+											return: false) ] ] ] ].
