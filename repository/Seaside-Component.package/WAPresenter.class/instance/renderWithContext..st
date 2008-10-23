@@ -1,3 +1,8 @@
 rendering
 renderWithContext: aRenderingContext
-	aRenderingContext guide visit: self
+	| html |
+	html := self rendererClass context: aRenderingContext.
+	(aRenderingContext isDebugMode and: [ self canHaveHalo ])
+		ifTrue: [ (SeasidePlatformSupport haloClass for: self) renderContentOn: html ]
+		ifFalse: [ self renderContentOn: html ].
+	html flush

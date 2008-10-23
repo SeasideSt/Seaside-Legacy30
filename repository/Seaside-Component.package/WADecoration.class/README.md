@@ -2,4 +2,6 @@ I am an abstract decoration around instances of WAComponent. I can be added to a
 
 - #renderContentOn: to emit xhtml around the decorated component. Call #renderOwnerOn: to let the owner emit its output.
 
+- #processChildCallbacks: to intercept the callback processing of the owner.
+
 - #handleAnswer: to intercept the answer processing.
