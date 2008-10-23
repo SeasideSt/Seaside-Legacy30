@@ -1,17 +1,13 @@
 scripting
-scriptSelect: aDate on: script
+scriptSelect: aDate on: script 
 	"Ajax select"
 	self select: aDate.
-	widgetId ifNotNil: [
-		script element
+	widgetId ifNotNil: 
+		[ script element
 			id: widgetId;
 			access: 'value';
-			assign: aDate mmddyyyy.
-		buttonId ifNotNil: [
-			script element
-				id: buttonId;
-				styleAt: 'display' put: 'inline'].
+			assign: self formattedResult.
 		script element
 			id: uid;
-			remove]
-		
+			remove.
+		open := false ]

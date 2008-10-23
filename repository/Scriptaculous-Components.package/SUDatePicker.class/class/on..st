@@ -1,3 +1,5 @@
 instance creation
-on: aId
-	^self on: aId button: nil
+on: aId 
+	^ self 
+		on: aId
+		container: nil

@@ -3,6 +3,8 @@ renderBodyOn: html
 	html table
 		cellspacing: 0;
 		class: 'main';
-		with: [self renderCalendarOn: html ].
+		with: [
+			self renderCalendarOn: html.
+			self renderTimeOn: html	].
 
 			

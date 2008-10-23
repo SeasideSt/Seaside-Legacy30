@@ -1,6 +1,6 @@
 rendering
 renderContentOn: html
-	uid := html nextId.
+	uid ifNil: [uid := html nextId].
 	html div
 		id: uid;
 		class: 'calendar';
