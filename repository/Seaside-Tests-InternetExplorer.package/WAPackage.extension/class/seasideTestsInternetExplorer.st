@@ -2,7 +2,7 @@
 seasideTestsInternetExplorer
 	^ self new
 		name: 'Seaside-Tests-InternetExplorer';
-		description: 'foo';
+		description: 'Unit tests for the package Seaside-InternetExplorer.';
 		addDependency: 'Seaside-InternetExplorer';
 		addDependency: 'Seaside-Tests-Core';
 		yourself
