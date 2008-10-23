@@ -2,6 +2,6 @@
 jQueryUI
 	^ self new
 		name: 'JQuery-UI';
-		description: 'foo';
+		description: 'jQuery-UI integration for Seaside. Expression through code.';
 		addDependency: 'JQuery-Core';
 		yourself
