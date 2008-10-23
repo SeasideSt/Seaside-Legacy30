@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "pmm 7/1/2007 22:01",
-	"super" : "WAPainter",
+	"super" : "WAPresenter",
 	"category" : "RSS-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
