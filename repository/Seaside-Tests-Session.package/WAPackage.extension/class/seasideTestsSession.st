@@ -2,7 +2,7 @@
 seasideTestsSession
 	^ self new
 		name: 'Seaside-Tests-Session';
-		description: 'foo';
+		description: 'Unit tests for the package Seaside-Session.';
 		addDependency: 'Seaside-Session';
 		addDependency: 'Seaside-Tests-Core';
 		yourself
