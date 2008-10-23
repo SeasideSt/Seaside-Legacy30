@@ -2,7 +2,7 @@
 seasideTestsComponent
 	^ self new
 		name: 'Seaside-Tests-Component';
-		description: 'foo';
+		description: 'Unit tests for the package Seaside-Component.';
 		addDependency: 'Seaside-Component';
 		addDependency: 'Seaside-Tests-Core';
 		yourself
