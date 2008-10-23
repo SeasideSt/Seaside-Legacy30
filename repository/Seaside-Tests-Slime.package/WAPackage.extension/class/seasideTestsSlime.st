@@ -2,6 +2,6 @@
 seasideTestsSlime
 	^ self new
 		name: 'Seaside-Tests-Slime';
-		description: 'foo';
+		description: 'Unit tests for the package Seaside-Slime.';
 		addDependency: 'Seaside-Slime';
 		yourself
