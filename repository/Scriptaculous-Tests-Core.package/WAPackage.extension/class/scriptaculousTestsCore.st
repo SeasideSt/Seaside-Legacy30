@@ -2,7 +2,7 @@
 scriptaculousTestsCore
 	^ self new
 		name: 'Scriptaculous-Tests-Core';
-		description: 'foo';
+		description: 'Functional and unit tests for the Scriptaculous-Core package.';
 		addDependency: 'Scriptaculous-Core';
 		addDependency: 'Javascript-Tests-Core';
 		yourself
