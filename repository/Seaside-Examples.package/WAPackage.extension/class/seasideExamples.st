@@ -2,6 +2,6 @@
 seasideExamples
 	^ self new
 		name: 'Seaside-Examples';
-		description: 'foo';
+		description: 'Simple example applications and components.';
 		addDependency: 'Seaside-Component';
 		yourself
