@@ -2,7 +2,7 @@
 javascriptTestsCore
 	^ self new
 		name: 'Javascript-Tests-Core';
-		description: 'foo';
+		description: 'Unit tests for the Javascript-Core package.';
 		addDependency: 'Javascript-Core';
 		addDependency: 'Seaside-Tests-Core';
 		yourself
