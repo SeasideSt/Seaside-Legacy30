@@ -2,7 +2,7 @@
 jQueryTestsUI
 	^ self new
 		name: 'JQuery-Tests-UI';
-		description: 'foo';
+		description: 'Functional and unit tests for the JQuery-UI package.';
 		addDependency: 'JQuery-UI';
 		addDependency: 'JQuery-Tests-Core';
 		yourself
