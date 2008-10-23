@@ -2,6 +2,6 @@
 javascriptCore
 	^ self new
 		name: 'Javascript-Core';
-		description: 'foo';
+		description: 'Javascript integration in Seaside. Provides a basic functionality to generate Javascript from Smalltalk.';
 		addDependency: 'Seaside-Core';
 		yourself
