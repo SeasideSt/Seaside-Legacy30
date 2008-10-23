@@ -2,6 +2,7 @@
 seasideSession
 	^ self new
 		name: 'Seaside-Session';
-		description: 'foo';
+		description: 'Support for stateful and secure session handling.';
 		addDependency: 'Seaside-Core';
+		addDependency: 'Seaside-Squeak-Continuation';
 		yourself
