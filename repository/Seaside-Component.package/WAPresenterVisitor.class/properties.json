@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WAPainterVisitor",
+	"category" : "Seaside-Component",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAPresenterVisitor",
+	"type" : "normal"
+}

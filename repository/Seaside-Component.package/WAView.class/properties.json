@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WAPresenter",
+	"category" : "Seaside-Component",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAView",
+	"type" : "normal"
+}

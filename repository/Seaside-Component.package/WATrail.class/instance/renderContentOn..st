@@ -5,7 +5,7 @@ renderContentOn: html
 	html div
 		class: 'trail';
 		with: [
-			root visiblePresentersDo: [ :each |
+			self visiblePresentersDo: [ :each |
 				(each isDecoration and: [each isDelegation]) ifTrue: [
 					(each component respondsTo: #trailName) ifTrue: [
 						last := each.

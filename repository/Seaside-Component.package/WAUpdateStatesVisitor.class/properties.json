@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "WAPresenterVisitor",
+	"category" : "Seaside-Component",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"snapshot"
+	],
+	"name" : "WAUpdateStatesVisitor",
+	"type" : "normal"
+}

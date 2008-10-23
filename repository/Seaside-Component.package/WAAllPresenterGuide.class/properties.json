@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WAVisiblePresenterGuide",
+	"category" : "Seaside-Component",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAAllPresenterGuide",
+	"type" : "normal"
+}
