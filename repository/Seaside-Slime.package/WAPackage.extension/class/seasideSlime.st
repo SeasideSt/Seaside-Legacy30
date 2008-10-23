@@ -2,5 +2,5 @@
 seasideSlime
 	^ self new
 		name: 'Seaside-Slime';
-		description: 'foo';
+		description: 'Codecritis for Seaside. Detects common types of bugs.';
 		yourself
