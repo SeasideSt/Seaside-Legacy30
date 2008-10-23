@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "WADecoration",
+	"category" : "Seaside-Tests-Component-Mocks",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"initialRequestBlock",
+		"updateRootBlock",
+		"updateUrlBlock",
+		"updateStatesBlock",
+		"renderBlock"
+	],
+	"name" : "WADecorationMock",
+	"type" : "normal"
+}

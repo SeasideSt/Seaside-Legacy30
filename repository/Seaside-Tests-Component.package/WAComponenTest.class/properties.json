@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Seaside-Tests-Component-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"log",
+		"component",
+		"root",
+		"decoration1",
+		"decoration2",
+		"child1",
+		"child2",
+		"child3"
+	],
+	"name" : "WAComponenTest",
+	"type" : "normal"
+}
