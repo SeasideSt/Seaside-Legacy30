@@ -1,7 +1,3 @@
-convenience
+iterating
 visiblePresentersDo: aBlock
-	WAVisiblePresenterGuide new
-		client: (WAPluggablePresenterVisitor new
-			block: aBlock;
-			yourself);
-		start: self
+	self decorationChainDo: [:ea | ea withNextPresentersDo: aBlock]
