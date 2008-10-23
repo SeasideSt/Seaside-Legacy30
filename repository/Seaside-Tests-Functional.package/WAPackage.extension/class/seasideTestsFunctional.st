@@ -2,6 +2,6 @@
 seasideTestsFunctional
 	^ self new
 		name: 'Seaside-Tests-Functional';
-		description: 'foo';
+		description: 'Functional Seaside test suite.';
 		addDependency: 'Seaside-Environment';
 		yourself
