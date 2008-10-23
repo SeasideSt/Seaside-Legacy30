@@ -2,7 +2,7 @@
 seasideTestsEnvironment
 	^ self new
 		name: 'Seaside-Tests-Environment';
-		description: 'foo';
+		description: 'Unit tests for the package Seaside-Environment.';
 		addDependency: 'Seaside-Environment';
 		addDependency: 'Seaside-Tests-Component';
 		addDependency: 'Seaside-Tests-RenderLoop';
