@@ -2,6 +2,6 @@
 seasideHTML5
 	^ self new
 		name: 'Seaside-HTML5';
-		description: 'foo';
+		description: 'Support for HTML 5 tags.';
 		addDependency: 'Seaside-Canvas';
 		yourself
