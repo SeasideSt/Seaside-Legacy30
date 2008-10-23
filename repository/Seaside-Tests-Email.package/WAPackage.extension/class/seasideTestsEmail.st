@@ -2,7 +2,7 @@
 seasideTestsEmail
 	^ self new
 		name: 'Seaside-Tests-Email';
-		description: 'foo';
+		description: 'Unit tests for the package Seaside-Email.';
 		addDependency: 'Seaside-Email';
 		addDependency: 'Seaside-Tests-Core';
 		yourself
