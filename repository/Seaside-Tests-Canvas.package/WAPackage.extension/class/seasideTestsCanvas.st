@@ -2,7 +2,7 @@
 seasideTestsCanvas
 	^ self new
 		name: 'Seaside-Tests-Canvas';
-		description: 'foo';
+		description: 'Unit tests for the package Seaside-Canvas.';
 		addDependency: 'Seaside-Canvas';
 		addDependency: 'Seaside-Tests-Core';
 		yourself
