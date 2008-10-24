@@ -10,24 +10,22 @@ renderTimeOn: html
 					id: self timeId;
 					with: [
 						html textInput
-							style: 'width:18px';
 							maxLength: 2;
 							value: (self withLeadingZero: hours);
 							callback: [:v | self hours: v].
 						html text: ':'.
 						html textInput
-							style: 'width:18px';
 							maxLength: 2;
 							value: (self withLeadingZero: minutes);
 							callback: [:v | self minutes: v].
 						showSeconds ifTrue: [
 							html text: ':'.
 							html textInput
-								style: 'width:18px';
 								maxLength: 2;
 								value: (self withLeadingZero: seconds);
 								callback: [:v | self seconds: v] ].
 						html space.
 						html anchor
+							class: 'button';
 							onClick: (self ajaxCallbackFor: self date on: html);
 							with: 'Ok' ] ] ]
