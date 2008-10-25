@@ -1,5 +1,5 @@
 initialization
 initialize
 	(self registerAsApplication: 'tests/scriptaculous')
-		addLibrary: SULibrary;
+		addLibrary: SUDeploymentLibrary;
 		addLibrary: SUAllTestLibrary
