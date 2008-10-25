@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
 	"super" : "WAFileLibrary",
-	"category" : "Scriptaculous-Core-Objects",
+	"category" : "Scriptaculous-Core-Libraries",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "SULibrary",
+	"name" : "SUGoogleLibrary",
 	"type" : "normal"
 }
