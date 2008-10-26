@@ -1,4 +1,4 @@
 initialization
 initialize
-	(self registerAsApplication: 'tests/alltests')
+	(WAAdmin register: self asApplicationAt: 'tests/alltests')
 		preferenceAt: #sessionClass put: WAExpirySession

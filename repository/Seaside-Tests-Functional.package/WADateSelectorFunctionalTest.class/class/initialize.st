@@ -1,3 +1,3 @@
 class initialization
 initialize
-	self registerAsApplication: 'tests/dateselector'
+	WAAdmin register: self asApplicationAt: 'tests/dateselector'
