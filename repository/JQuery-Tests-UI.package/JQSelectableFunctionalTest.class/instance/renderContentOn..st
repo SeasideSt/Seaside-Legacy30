@@ -1,10 +1,13 @@
 rendering
 renderContentOn: html
-	html div id: #selectable; with: [ 
-		JQFunctionalTest allSubclasses 
-			do: [ :each |
-				html span
+	html unorderedList
+		script: (html jQuery new selectable
+			onStop: (html jQuery ajax
+				trigger: [ :value | selected := value asSet ]
+				passengers: (html jQuery this find: 'li.ui-selected')));
+		with: [
+			JQFunctionalTest allSubclasses do: [ :each |
+				html listItem
 					passenger: each;
-					with: each name ]
-			separatedBy: [ html text: ' ' ] ].
-	self session addLoadScript: (html jQuery id: #selectable) selectable
+					class: 'ui-selected' if: (selected includes: each);
+					with: each name ] ]

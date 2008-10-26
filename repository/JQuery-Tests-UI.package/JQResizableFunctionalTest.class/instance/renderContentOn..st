@@ -1,4 +1,8 @@
 rendering
 renderContentOn: html
-	html div id: #resizer; style: 'height: 20px; background-color: red;'.
-	html session addLoadScript: (html jQuery id: #resizer) resizable
+	html image
+		width: size x; height: size y;
+		url: (JQUiAllTestsLibrary urlOf: #image1Jpg);
+		script: (html jQuery new resizable
+			onStop: (html jQuery ajax
+				triggerResizableSize: [ :value | size := value ]))
