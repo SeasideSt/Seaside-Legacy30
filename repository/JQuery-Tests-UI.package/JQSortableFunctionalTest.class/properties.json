@@ -6,9 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"items",
-		"selected"
+		"items"
 	],
-	"name" : "JQSelectableFunctionalTest",
+	"name" : "JQSortableFunctionalTest",
 	"type" : "normal"
 }

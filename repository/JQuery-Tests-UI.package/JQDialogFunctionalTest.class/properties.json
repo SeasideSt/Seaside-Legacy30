@@ -5,10 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"items",
-		"selected"
-	],
-	"name" : "JQSelectableFunctionalTest",
+	"instvars" : [ ],
+	"name" : "JQDialogFunctionalTest",
 	"type" : "normal"
 }
