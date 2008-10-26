@@ -3,7 +3,7 @@ addEntryPoint
 	| newHandler editorCommand |
 	(name isNil or: [ name isEmpty ])
 		ifTrue: [ ^ self inform: 'You must enter a path-name.' ].
-	newHandler := type register: name.
+	newHandler :=  WAAdmin register: type at: name.
 	newHandler isApplication ifTrue: [
 		newHandler configuration
 			removeParent: WASessionConfiguration instance;
