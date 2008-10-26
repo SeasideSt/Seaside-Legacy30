@@ -1,6 +1,6 @@
 initialization
 initialize
-	(self registerAsApplication: 'tests/scriptaculous-components')
+	(WAAdmin register: self asApplicationAt: 'tests/scriptaculous-components')
 		addLibrary: SUDeploymentLibrary;
 		addLibrary: SUComponentLibrary;
 		addLibrary: SUAllTestLibrary
