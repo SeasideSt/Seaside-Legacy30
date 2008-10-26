@@ -1,3 +1,3 @@
 class initialization
 initialize
-	self registerAsApplication: 'tests/canvas'
+	WAAdmin register: self asApplicationAt: 'tests/html5/canvas'

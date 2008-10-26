@@ -1,3 +1,3 @@
 class initialization
 initialize
-	self registerAsApplication: 'tests/html5'
+	WAAdmin register: self asApplicationAt: 'tests/html5/input'
