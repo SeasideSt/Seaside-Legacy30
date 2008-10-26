@@ -1,8 +1,8 @@
 registration
-register: aComponent at: aString user: user password: password
-	"Like #registerApplicationAt: root: but additionally adds password protection."
+register: aComponentClass asApplicationAt: aString user: user password: password
+	"Like #register:asApplicationAt: but additionally adds password protection."
 	| application |
-	application := self register: aComponent at: aString.
+	application := self register: aComponentClass asApplicationAt: aString.
 	application configuration addParent: WAAuthConfiguration instance.
 	application 
 		preferenceAt: #login
