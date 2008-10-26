@@ -2,7 +2,7 @@ running
 setUp
 	super setUp.
 	rootHanlder := WADispatcher named: 'seaside'.
-	childHanlder := WADispatcher register: 'child' in: rootHanlder.
+	childHanlder := rootHanlder register: (WADispatcher named: 'child').
 	
 	configApplication := WAApplication register: 'config' in: rootHanlder.
 	configApplication configuration addParent: WARenderLoopConfiguration instance.
