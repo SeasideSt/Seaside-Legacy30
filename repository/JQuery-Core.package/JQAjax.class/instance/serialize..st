@@ -1,5 +1,5 @@
 callbacks
 serialize: aQuery
-	"Serialize the elemnts matching aQuery."
+	"Serialize the elements matching aQuery and evaluates the associated callbacks."
 
 	self addParameter: aQuery serialize

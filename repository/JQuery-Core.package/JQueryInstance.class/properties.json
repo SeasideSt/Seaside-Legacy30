@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"arguments"
+	],
 	"name" : "JQueryInstance",
 	"type" : "normal"
 }
