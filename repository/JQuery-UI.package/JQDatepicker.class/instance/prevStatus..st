@@ -1,0 +1,5 @@
+options
+prevStatus: aString
+	"The text to display in the status bar for the previous month link. This attribute is one of the regionalisation attributes."
+
+	self optionAt: 'prevStatus' put: aString
