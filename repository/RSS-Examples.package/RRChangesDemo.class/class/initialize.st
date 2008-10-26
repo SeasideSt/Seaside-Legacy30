@@ -1,4 +1,4 @@
 initialization
 initialize
-	
-	self registerAsApplication: 'examples/changes.rss'
+	(WAAdmin register: RRRssHandler at: 'examples/changes.rss')
+		rootComponentClass: self
