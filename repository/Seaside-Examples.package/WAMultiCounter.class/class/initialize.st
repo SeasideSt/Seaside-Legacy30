@@ -1,3 +1,3 @@
 initialization
 initialize
-	self registerAsApplication: 'examples/multicounter'
+	WAAdmin register: self asApplicationAt: 'examples/multicounter'
