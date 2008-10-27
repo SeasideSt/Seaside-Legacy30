@@ -1,5 +1,5 @@
 options
-zIndex: aInteger
+zIndex: anInteger
 	"z-index for the helper while being dragged."
 
-	self optionAt: 'zIndex' put: aInteger
+	self optionAt: 'zIndex' put: anInteger

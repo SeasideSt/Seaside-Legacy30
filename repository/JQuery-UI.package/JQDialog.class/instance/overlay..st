@@ -1,5 +1,5 @@
 options
-overlay: aOptions
-	"Key/value object of style properties for the overlay to display behind the dialog (but above other page elements). See [[CSS]] for details"
+overlay: aDictionary
+	"Key/value object of style properties for the overlay to display behind the dialog (but above other page elements)."
 
-	self optionAt: 'overlay' put: aOptions
+	self optionAt: 'overlay' put: aDictionary

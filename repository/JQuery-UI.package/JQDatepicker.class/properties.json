@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "lr 10/26/2008 20:17",
-	"super" : "JQPlugin",
+	"super" : "JQUiPlugin",
 	"category" : "JQuery-UI-Widgets",
 	"classinstvars" : [ ],
 	"pools" : [ ],

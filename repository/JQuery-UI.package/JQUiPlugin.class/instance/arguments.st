@@ -1,11 +1,11 @@
 accessing
 arguments
-	^ action isNil
-		ifTrue: [ 
-			options isNil
-				ifTrue: [ Array new ]
-				ifFalse: [ Array with: options ] ]
-		ifFalse: [
-			options isNil
-				ifTrue: [ Array with: action ]
-				ifFalse: [ Array with: action with: options ] ]
+	| result |
+	result := OrderedCollection new.
+	action isNil
+		ifFalse: [ result add: action ].
+	arguments isNil
+		ifFalse: [ result addAll: arguments ].
+	(options isNil or: [ options isEmpty ])
+		ifFalse: [ result add: options ].
+	^ result
