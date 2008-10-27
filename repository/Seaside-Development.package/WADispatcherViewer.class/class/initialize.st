@@ -1,5 +1,5 @@
 initialization
 initialize
-	(self registerAsApplication: 'browse') addLibrary: WAHandlerEditorFiles.
+	(WAAdmin register: self asApplicationAt: 'browse') addLibrary: WAHandlerEditorFiles.
 	WADispatcher default 
 		defaultName: 'browse'
