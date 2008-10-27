@@ -6,9 +6,7 @@ renderActionsOn: html
 			 with: 'New Session'.
 		html break.
 		html anchor
-			callback: [
-				self session unregister.
-				self requestContext redirectTo: self application baseUrl ];
+			callback: [ self session unregister ];
 			 with: 'Expire'.
 		html break.
 		html anchor
@@ -21,15 +19,13 @@ renderActionsOn: html
 		html break.
 		html anchor
 			callback: [
-				self application clearHandlers.
-				SeasidePlatformSupport garbageCollect.
-				self requestContext redirectTo: self application baseUrl ];
+				self application clear.
+				SeasidePlatformSupport garbageCollect ];
 			 with: 'Clear Cache'.
 		html break.
 		html anchor
 			callback: [
-				self application clearHandlers.
+				self application clear.
 				WAExpirySession resetCounters.
-				SeasidePlatformSupport garbageCollect.
-				self requestContext redirectTo: self application baseUrl ];
+				SeasidePlatformSupport garbageCollect ];
 			 with: 'Reset All' ].
