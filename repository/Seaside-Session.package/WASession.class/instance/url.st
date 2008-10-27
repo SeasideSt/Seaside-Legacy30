@@ -1,7 +1,7 @@
 accessing
 url
 	| url |
-	url := self useSessionCookie
+	url := cookiesEnabled
 			ifTrue: [ self application baseUrl ]
 			ifFalse: [ self application urlFor: self ].
 	url takeServerParametersFromRequest: self requestContext request.

@@ -5,4 +5,4 @@ initialize
 			setExpiryPolicy: (WALeastRecentlyUsedExpiryPolicy new);
 			yourself.
 	monitor := WAProcessMonitor new.
-	cookiesEnabled := true
+	cookiesEnabled := false
