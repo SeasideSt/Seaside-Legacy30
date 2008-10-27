@@ -1,0 +1,1 @@
+Make the contents of the selected elements magnify upon mouse proximity.

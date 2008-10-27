@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "lr 10/27/2008 21:38",
+	"super" : "JQUiPlugin",
+	"category" : "JQuery-UI-Widgets",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "JQColorpicker",
+	"type" : "normal"
+}

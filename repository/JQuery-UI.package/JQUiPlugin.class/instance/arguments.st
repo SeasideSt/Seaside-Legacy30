@@ -3,9 +3,9 @@ arguments
 	| result |
 	result := OrderedCollection new.
 	action isNil
-		ifFalse: [ result add: action ].
+		ifFalse: [ result addLast: action ].
 	arguments isNil
 		ifFalse: [ result addAll: arguments ].
 	(options isNil or: [ options isEmpty ])
-		ifFalse: [ result add: options ].
+		ifFalse: [ result addLast: options ].
 	^ result
