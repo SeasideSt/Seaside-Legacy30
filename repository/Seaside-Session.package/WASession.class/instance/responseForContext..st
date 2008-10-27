@@ -1,8 +1,6 @@
 request handling
 responseForContext: aRequestContext
 	| key continuation |
-	self checkSessionCookie: aRequestContext.
-
 	^ WACurrentRequestContext use: aRequestContext during: [
 		key := aRequestContext request fields
 			at: self actionField
