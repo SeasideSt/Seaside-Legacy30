@@ -1,3 +1,3 @@
 development
 clearSessions
-	WARegistry clearAllHandlers
+	WARegistry clearAll
