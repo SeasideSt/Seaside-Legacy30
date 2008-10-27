@@ -1,3 +1,3 @@
 expiring
 unregister
-	self application unregisterRequestHandler: self
+	self application unregister: self
