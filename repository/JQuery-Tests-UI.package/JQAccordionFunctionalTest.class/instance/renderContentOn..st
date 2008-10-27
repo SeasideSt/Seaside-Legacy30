@@ -1,8 +1,8 @@
 rendering
 renderContentOn: html
 	html div
-		script: html jQuery new accordion;
+		script: (html jQuery new accordion autoHeight: false);
 		with: [
-			JQUiPlugin allSubclasses do: [ :each |
-				html anchor: each name.
-				html div: each comment ] ]
+			self berries keysAndValuesDo: [ :name :description |
+				html anchor: name.
+				html div: description ] ]

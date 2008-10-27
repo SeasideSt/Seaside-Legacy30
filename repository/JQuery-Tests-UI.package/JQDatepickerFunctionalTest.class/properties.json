@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"date"
+	],
 	"name" : "JQDatepickerFunctionalTest",
 	"type" : "normal"
 }

@@ -6,7 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"items",
 		"selected"
 	],
 	"name" : "JQSelectableFunctionalTest",

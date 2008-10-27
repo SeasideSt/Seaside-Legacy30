@@ -6,7 +6,7 @@ renderContentOn: html
 				trigger: [ :value | selected := value asSet ]
 				passengers: (html jQuery this find: '.ui-selected')));
 		with: [
-			items do: [ :each |
+			self vegetables do: [ :each |
 				html listItem
 					class: 'ui-selected' if: (selected includes: each);
 					passenger: each;
