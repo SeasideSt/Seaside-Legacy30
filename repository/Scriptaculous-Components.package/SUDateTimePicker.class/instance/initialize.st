@@ -4,6 +4,6 @@ initialize
 	super initialize.
 	showSeconds := false.
 	now := DateAndTime now.
-	hours := now hours.
-	minutes := now minutes.
+	hours := now hour.
+	minutes := now minute.
 	seconds := 0

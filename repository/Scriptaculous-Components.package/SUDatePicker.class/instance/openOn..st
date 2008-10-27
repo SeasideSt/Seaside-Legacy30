@@ -10,5 +10,5 @@ openOn: aScript
 			put: origin y asString , 'px'.
 	self isOpen
 		ifFalse: [
-			anElement insert: self.
+			anElement update: self.
 			open := true]
