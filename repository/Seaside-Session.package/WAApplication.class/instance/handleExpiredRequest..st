@@ -4,5 +4,5 @@ handleExpiredRequest: aRequestContext
 	response := super handleExpiredRequest: aRequestContext.
 	sessionCookie := self sessionCookieFor: aRequestContext request.
 	sessionCookie isNil 
-		ifFalse: [ response deleteCookie: sessionCookie ].
+		ifFalse: [ response deleteCookie: sessionCookie path: self baseUrl pathString ].
 	^ response
