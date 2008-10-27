@@ -1,3 +1,3 @@
 processing
 handleRequest
-	self withNotificationHandler: [ self render ]
+	self withExceptionHandlers: [ self render ]
