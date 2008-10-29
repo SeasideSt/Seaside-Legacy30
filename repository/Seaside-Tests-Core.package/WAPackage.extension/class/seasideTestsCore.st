@@ -2,6 +2,6 @@
 seasideTestsCore
 	^ self new
 		name: 'Seaside-Tests-Core';
-		description: 'Unit tests for the package Seaside-Core.';
+		description: 'foo';
 		addDependency: 'Seaside-Core';
 		yourself
