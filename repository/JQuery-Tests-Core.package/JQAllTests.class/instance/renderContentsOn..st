@@ -4,4 +4,6 @@ renderContentsOn: html
 		html heading
 			level: 1;
 			with: contents title.
-		html render: contents ]
+		contents selectors isEmpty
+			ifTrue: [ html render: contents ]
+			ifFalse: [ self renderBrowserOn: html ] ]

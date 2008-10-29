@@ -1,3 +1,3 @@
 configuration
 default
-	^ JQWelcome new
+	^ JQWelcomeFunctionalTest new

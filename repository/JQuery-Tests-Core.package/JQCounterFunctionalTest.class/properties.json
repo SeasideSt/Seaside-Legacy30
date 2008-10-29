@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "JQAnimateTest",
+	"instvars" : [
+		"count"
+	],
+	"name" : "JQCounterFunctionalTest",
 	"type" : "normal"
 }

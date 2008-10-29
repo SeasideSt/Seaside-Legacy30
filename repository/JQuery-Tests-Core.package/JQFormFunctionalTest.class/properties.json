@@ -5,7 +5,14 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "JQWelcome",
+	"instvars" : [
+		"textInput",
+		"textArea",
+		"checkBox",
+		"radioButton",
+		"selectList",
+		"mutliSelectList"
+	],
+	"name" : "JQFormFunctionalTest",
 	"type" : "normal"
 }

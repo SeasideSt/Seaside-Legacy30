@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "JQUpdaterTest",
+	"name" : "JQAjaxFunctionalTest",
 	"type" : "normal"
 }
