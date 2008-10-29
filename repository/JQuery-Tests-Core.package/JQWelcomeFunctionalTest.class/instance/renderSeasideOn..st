@@ -1,6 +1,6 @@
 rendering
 renderSeasideOn: html
-	html heading level: 2; with: 'Seaside'.
+	html heading level: 4; with: 'Seaside'.
 	html paragraph: [
 		html anchor
 			url: 'http://www.seaside.st/';

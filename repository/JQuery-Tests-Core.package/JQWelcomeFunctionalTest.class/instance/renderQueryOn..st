@@ -1,6 +1,6 @@
 rendering
 renderQueryOn: html
-	html heading level: 2; with: 'jQuery'.
+	html heading level: 4; with: 'jQuery'.
 	html paragraph: [
 		html anchor
 			url: 'http://www.jquery.com/';

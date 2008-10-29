@@ -1,7 +1,7 @@
 rendering-browser
 renderJavascriptOn: html
 	| context pretty prettyHtml |
-	html heading level: 2; with: 'Javascript'.
+	html heading level: 4; with: 'Javascript'.
 	html code: [
 		pretty := self rendererClass context: html context.
 		context := pretty context copy.

@@ -1,8 +1,8 @@
 rendering
-renderContentsOn: html
-	html div class: 'contents'; with: [
+renderMainOn: html
+	html div class: 'main'; with: [
 		html heading
-			level: 1;
+			level: 3;
 			with: contents title.
 		contents selectors isEmpty
 			ifTrue: [ html render: contents ]

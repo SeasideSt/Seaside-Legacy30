@@ -28,13 +28,20 @@ h1.logo a span { display: none; }
 #content .head p { float: left; margin: 10px; padding-left: 20px; line-height: 50px; font-size: 20px; border-left: 1px solid #ddd; }
 #content .head { padding: 10px; }
 
-#content .tests, #content .contents { padding: 20px; float: left; }
-#content .contents { width: 735px; border-left: 1px solid #ddd; margin-left: -1px; }
-
-#content .tests { width: 180px; border-right: 1px solid #ddd; }
-#content .tests h3 { font-size: 20px; color: #ff7200; margin-bottom: 10px; }
+#content .tests { padding: 20px; float: left; width: 180px; border-right: 1px solid #ddd; }
+#content .tests h3 { font-size: 20px; margin-bottom: 10px; color: #ff7200; }
 #content .tests ul, #content .tests ul li { padding: 0; margin: 0; list-style-type: none; }
 #content .tests ul { margin-bottom: 40px; }
 #content .tests ul li { line-height: 25px; border-bottom: 1px solid #eee; }
 #content .tests ul li.active { background-color: #ddd; border-bottom: 1px solid #ccc; }
-#content .tests ul li a { margin-left: 10px; color: #222; text-decoration: none; }'
+#content .tests ul li a { margin-left: 10px; color: #222; text-decoration: none; }
+
+
+#content .main { padding: 20px; float: left; width: 735px; border-left: 1px solid #ddd; margin-left: -1px; }
+#content .main h3 { font-size: 20px; margin-bottom: 10px; }
+#content .main h4 { font-size: 16px; border-bottom: 1px solid #eee; margin-top: 20px; margin-bottom: 10px; }
+#content .main code { font-size: 12px; word-wrap: break-word; }
+#content .main code .tag-known { font-weight: bold; color: purple; }
+#content .main code .attribute-known { font-weight: bold; color: black; }
+#content .main code .attribute-value { color: blue; }
+#content .main code .attribute-value a { color: blue; text-decoration: underline; }'

@@ -1,7 +1,7 @@
 rendering-browser
 renderSmalltalkOn: html
 	| source |
-	html heading level: 2; with: 'Smalltalk'.
+	html heading level: 4; with: 'Smalltalk'.
 	contents selectors 
 		do: [ :selector |
 			source := (contents class sourceCodeAt: selector)
