@@ -1,4 +1,4 @@
-encoding
+accessing
 encoding: aStringOrNil
 	"valid values for aStringOrNil are:
 	nil

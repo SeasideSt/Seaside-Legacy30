@@ -1,3 +1,3 @@
-private
+defaults
 defaultPort
 	^ 8080

@@ -1,3 +1,3 @@
 starting/stopping
 start
-	self subclassResponsibility 
+	self canStart ifTrue: [ self basicStart ]

@@ -1,3 +1,3 @@
 starting/stopping
 stop
-	self subclassResponsibility 
+	self canStop ifTrue: [ self basicStop ]
