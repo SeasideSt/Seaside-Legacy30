@@ -1,9 +1,7 @@
-deprecated
-urlForRequestHandler: aRequestHandler addHandlerField: aBoolean 
+public
+urlForRequestHandler: anObject addHandlerField: aBoolean 
 	| key url |
-	self seasideDeprecatedApi: 'WARegistry>>urlForRequestHandler:addHandlerField:'
-		details: 'Use #urlFor: or #urlFor:ifAbsent:. In any case where you do not want the handler field, simply use #baseUrl'.
-	key := self ensureKeyForHandler: aRequestHandler.
+	key := self ensureKeyForHandler: anObject.
 	url := self baseUrl.
 	aBoolean ifTrue: [
 		url 

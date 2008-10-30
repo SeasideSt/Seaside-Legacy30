@@ -1,15 +1,13 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "pmm 6/1/2008 00:14",
 	"super" : "WAObject",
 	"category" : "Seaside-Core-HTTP",
-	"classinstvars" : [
-		"instance"
-	],
+	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"adaptors"
+		"codec"
 	],
-	"name" : "WAServerManager",
+	"name" : "WAServer",
 	"type" : "normal"
 }
