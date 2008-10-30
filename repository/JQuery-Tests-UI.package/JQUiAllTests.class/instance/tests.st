@@ -1,15 +1,22 @@
 configuration
 tests
 	^ Array
-		with: 'Interaction' -> (Array
-			with: 'Draggable' -> JQDraggableFunctionalTest new
-			with: 'Droppable' -> JQDroppableFunctionalTest new
-			with: 'Resizable' -> JQResizableFunctionalTest new
-			with: 'Selectable' -> JQSelectableFunctionalTest new
-			with: 'Sortable' -> JQSortableFunctionalTest new)
-		with: 'Widgets' -> (Array
-			with: 'Accordion' -> JQAccordionFunctionalTest new
-			with: 'Datepicker' -> JQDatepickerFunctionalTest new
-			with: 'Dialog' -> JQDialogFunctionalTest new
-			with: 'Slider' -> JQSliderFunctionalTest new
-			with: 'Tabs' -> JQTabsFunctionalTest new)
+		with: 'Interaction' -> (OrderedCollection new
+			add: 'Draggable' -> JQDraggableFunctionalTest new;
+			add: 'Droppable' -> JQDroppableFunctionalTest new;
+			add: 'Resizable' -> JQResizableFunctionalTest new;
+			add: 'Selectable' -> JQSelectableFunctionalTest new;
+			add: 'Sortable' -> JQSortableFunctionalTest new;
+			yourself)
+		with: 'Widgets' -> (OrderedCollection new
+			add: 'Accordion' -> JQAccordionFunctionalTest new;
+			add: 'Autocomplete' -> JQAutocompleteFunctionalTest new;
+			add: 'Colorpicker' -> JQColorpickerFunctionalTest new;
+			add: 'Datepicker' -> JQDatepickerFunctionalTest new;
+			add: 'Dialog' -> JQDialogFunctionalTest new;
+			add: 'Magnifier' -> JQMagnifierFunctionalTest new;
+			add: 'Progressbar' -> JQProgressbarFunctionalTest new;
+			add: 'Slider' -> JQSliderFunctionalTest new;
+			add: 'Spinner' -> JQSpinnerFunctionalTest new;
+			add: 'Tabs' -> JQTabsFunctionalTest new;
+			yourself)

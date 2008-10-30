@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "JQPluginTest",
+	"category" : "JQuery-Tests-UI-Unit",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "JQSpinnerTest",
+	"type" : "normal"
+}
