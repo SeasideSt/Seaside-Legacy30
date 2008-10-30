@@ -8,8 +8,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"adaptors",
-		"activeAdaptors"
+		"adaptors"
 	],
 	"name" : "WAServerManager",
 	"type" : "normal"
