@@ -1,3 +1,3 @@
 initialization
 initialize
-	(WAAdmin register: self asApplicationAt: 'config') addLibrary: WAHandlerEditorFiles
+	(self registerAsApplication: 'config') addLibrary: WAHandlerEditorFiles

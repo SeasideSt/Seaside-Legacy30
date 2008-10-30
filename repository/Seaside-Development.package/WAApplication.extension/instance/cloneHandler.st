@@ -1,5 +1,5 @@
 *seaside-development
 cloneHandler
 	^ super cloneHandler
-		clear;
+		clearHandlers;
 		yourself

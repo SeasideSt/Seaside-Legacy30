@@ -12,8 +12,9 @@ renderConfigurationsOn: html
 					html anchor
 						callback: [ self removeConfiguration: each ];
 						with: [ html html: '&times;' ] ] ] ].
-		html textInput
-			callback: [ :value | name := value ].
-		html submitButton
-			callback: [ self addConfiguration ];
-			text: 'Add' ]
+		html paragraph: [
+			html textInput
+				callback: [ :value | name := value ].
+			html submitButton
+				callback: [ self addConfiguration ];
+				text: 'Add' ] ]
