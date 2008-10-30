@@ -1,4 +1,3 @@
 starting/stopping
 restart
-	self stop.
-	self start
+	self manager restart: self

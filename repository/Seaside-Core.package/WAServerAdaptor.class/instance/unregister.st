@@ -1,3 +1,3 @@
 registration
 unregister
-	WAServerManager unregister: self
+	self manager unregister: self

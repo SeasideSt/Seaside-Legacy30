@@ -1,3 +1,3 @@
 accessing
-add: aServerAdaptor
+register: aServerAdaptor
 	^ adaptors add: aServerAdaptor

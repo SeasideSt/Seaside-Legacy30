@@ -1,3 +1,3 @@
 starting/stopping
 stop
-	self canStop ifTrue: [ self basicStop ]
+	self manager stop: self

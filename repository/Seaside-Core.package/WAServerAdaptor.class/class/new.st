@@ -1,3 +1,3 @@
 instance-creation
 new
-	^ WAServerManager register: super new
+	^ self manager: WAServerManager instance
