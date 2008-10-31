@@ -1,3 +1,6 @@
 accessing
 requestHandler
-	^ requestHandler ifNil: [ WADispatcher default ]
+	"We don't set the instvar here, if nil, because the default request handler
+	may change over time and we want to keep using the current default if
+	the user hasn't specified one."
+	^ requestHandler ifNil: [ self defaultRequestHandler ]
