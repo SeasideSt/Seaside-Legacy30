@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WADocumentHandlerResponseTest",
+	"category" : "Seaside-Tests-Adaptors-Comanche",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAKomDocumentHandlerResponseTest",
+	"type" : "normal"
+}
