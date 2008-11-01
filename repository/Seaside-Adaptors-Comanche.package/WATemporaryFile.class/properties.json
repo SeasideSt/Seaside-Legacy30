@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "pmm 4/18/2008 22:52",
+	"super" : "WAFile",
+	"category" : "Seaside-Adaptors-Comanche",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"temporaryFileName",
+		"fileSize"
+	],
+	"name" : "WATemporaryFile",
+	"type" : "normal"
+}

@@ -1,0 +1,2 @@
+kom
+validateForStack: anArray

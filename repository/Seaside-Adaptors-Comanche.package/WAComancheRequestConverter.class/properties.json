@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "pmm 4/13/2008 20:18",
+	"super" : "WAServerAdaptor",
+	"category" : "Seaside-Adaptors-Comanche",
+	"classinstvars" : [
+		"default"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"streamUploads"
+	],
+	"name" : "WAComancheRequestConverter",
+	"type" : "normal"
+}

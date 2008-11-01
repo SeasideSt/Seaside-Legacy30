@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "pmm 4/13/2008 20:20",
+	"super" : "WAKomEncoded",
+	"category" : "Seaside-Adaptors-Comanche",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAKomEncoded39",
+	"type" : "normal"
+}

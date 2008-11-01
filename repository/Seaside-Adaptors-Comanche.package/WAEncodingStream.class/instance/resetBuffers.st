@@ -1,0 +1,3 @@
+accessing
+resetBuffers
+	^stream resetBuffers

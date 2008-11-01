@@ -1,0 +1,3 @@
+accessing
+crlf
+	stream crlf

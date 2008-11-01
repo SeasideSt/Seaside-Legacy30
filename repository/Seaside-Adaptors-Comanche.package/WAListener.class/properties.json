@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "pmm 4/22/2008 07:15",
+	"super" : "WAComancheRequestConverter",
+	"category" : "Seaside-Adaptors-Comanche",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"process"
+	],
+	"name" : "WAListener",
+	"type" : "normal"
+}
