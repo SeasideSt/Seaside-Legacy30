@@ -1,4 +1,0 @@
-accessing
-example
-
-	^ self new
