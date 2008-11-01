@@ -1,10 +1,12 @@
 testing
 assertHttpResponseFrom: aResponse matches: aHandler 
-	| httpResponse |
+	| httpResponse kom |
 	super 
 		assertHttpResponseFrom: aResponse
 		matches: aHandler.
-	httpResponse := WAKom basicNew convertResponse: aResponse.
+	[ kom := WAKom new.
+	httpResponse := kom convertResponse: aResponse ]
+		ensure: [ kom ifNotNil: [ kom unregister ] ].
 	self assert: httpResponse status == #ok.
 	self assert: httpResponse contentType = aHandler document mimeType seasideString.
 	self assert: httpResponse contentLength = aHandler document contents size.
