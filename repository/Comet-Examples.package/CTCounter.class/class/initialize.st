@@ -1,6 +1,5 @@
 initialization
 initialize
 	| application |
-	application := self registerAsApplication: 'comet/counter'.
-	application preferenceAt: #sessionClass put: CTSession.
-	application addLibrary: SULibrary; addLibrary: CTLibrary
+	application := WAAdmin 	register: self asApplicationAt: 'comet/counter'.
+	application addLibrary: SUDeploymentLibrary; addLibrary: CTLibrary

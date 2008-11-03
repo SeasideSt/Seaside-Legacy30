@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "CTSession",
+	"super" : "WASession",
 	"category" : "Comet-Examples",
 	"classinstvars" : [ ],
 	"pools" : [ ],
