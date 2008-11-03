@@ -1,4 +1,4 @@
-request processing
+hooks
 initialRequest: aRequest
 	"When a new session is started, all visible presenters (components or tasks) receive this message with the request as argument.
 

@@ -1,3 +1,5 @@
-rendering
+deprecated
 renderOwnerOn: html
-	self next renderWithContext: html context
+	self seasideDeprecatedApi: 'WADecoration>>renderOwnerOn:'
+		details: 'Use WADecoration>>renderNextOn:'.
+	self renderNextOn: html

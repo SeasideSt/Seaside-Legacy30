@@ -1,4 +1,4 @@
-rendering
+hooks
 style
 	"Returns a CSS stylesheet associated with this component. This stylesheet will be added to <head> section of the html document so it will be global and not scoped.
 

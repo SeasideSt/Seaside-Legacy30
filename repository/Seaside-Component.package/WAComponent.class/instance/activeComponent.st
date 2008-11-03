@@ -1,3 +1,3 @@
 convenience
 activeComponent
-	self visiblePresentersDo: [:ea | ea isDecoration ifFalse: [^ ea]]
+	self visiblePresentersDo: [ :each | each isDecoration ifFalse: [ ^ each ] ]

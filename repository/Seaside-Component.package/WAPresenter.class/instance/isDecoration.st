@@ -1,3 +1,3 @@
-decoration
+testing
 isDecoration
 	^ false
