@@ -1,6 +1,6 @@
 testing
 testUpdateStates
-	| snapshot |
+	| snapshot guide |
 	snapshot := WASnapshot new.
 
 	root onUpdateStates: [ :each |
@@ -22,37 +22,23 @@ testUpdateStates
 		self assert: each = snapshot.
 		self log: 'decoration2' ].
 
+	guide := WAAllPresenterGuide client: (WAUpdateStatesVisitor snapshot: snapshot).
+
 	" single root component "
-	WAAllPresenterGuide new
-		client: (WAUpdateStatesVisitor new
-			snapshot: snapshot;
-			yourself);
-		start: root.
+	guide start: root.
 	self assertLog: #('root').
 
 	" add two children "
 	root onChildren: [ Array with: child1 with: child2 ].
-	WAAllPresenterGuide new
-		client: (WAUpdateStatesVisitor new
-			snapshot: snapshot;
-			yourself);
-		start: root.
+	guide start: root.
 	self assertLog: #('root' 'child1' 'child2').
 
 	" add two decorations "
 	root addDecoration: decoration1; addDecoration: decoration2.
-	WAAllPresenterGuide new
-		client: (WAUpdateStatesVisitor new
-			snapshot: snapshot;
-			yourself);
-		start: root.
+	guide start: root.
 	self assertLog: #('decoration2' 'decoration1' 'root' 'child1' 'child2').
 	
 	" delegate to another component "
 	child2 show: child3.
-	WAAllPresenterGuide new
-		client: (WAUpdateStatesVisitor new
-			snapshot: snapshot;
-			yourself);
-		start: root.
+	guide start: root.
 	self assertLog: #('decoration2' 'decoration1' 'root' 'child1' 'child3' 'child2')
