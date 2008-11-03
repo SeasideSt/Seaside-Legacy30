@@ -4,5 +4,5 @@ renderContentOn: html
 		defaultAction: [ self defaultAction ];
 		with: [
 			html div: [
-				self renderOwnerOn: html.
+				self renderNextOn: html.
 				self renderButtonsOn: html ] ]

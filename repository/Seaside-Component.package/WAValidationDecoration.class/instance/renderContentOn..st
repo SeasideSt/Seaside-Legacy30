@@ -4,4 +4,4 @@ renderContentOn: html
 		html div
 			class: 'validation-error';
 			with: message contents ].
-	self renderOwnerOn: html
+	self renderNextOn: html
