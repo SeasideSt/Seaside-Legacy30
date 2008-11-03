@@ -2,6 +2,6 @@ accessing
 pusher: aPusher
 	self url: (self canvas context actionUrl
 		withParameter: self class headerField
-		value: (self session
+		value: (self filter
 			registerPusher: (pusher := aPusher)
 			context: self canvas context))

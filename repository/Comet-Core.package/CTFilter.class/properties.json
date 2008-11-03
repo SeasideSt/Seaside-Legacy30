@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "WASession",
+	"super" : "WARequestFilter",
 	"category" : "Comet-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
@@ -8,6 +8,6 @@
 	"instvars" : [
 		"handlers"
 	],
-	"name" : "CTSession",
+	"name" : "CTFilter",
 	"type" : "normal"
 }

@@ -1,7 +1,7 @@
 scripts
 cometJs
 	^ '/* Seaside Comet API
- *  (c) 2006 Lukas Renggli (renggli@iam.unibe.ch)
+ *  (c) 2006-2008 Lukas Renggli (renggli@gmail.com)
  */
 
 Comet = Class.create();

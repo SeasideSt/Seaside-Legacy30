@@ -1,7 +1,7 @@
 actions
-connect: aRequest
+connect: aRequestContext
 	self
 		basicDisconnect;
-		basicConnect: aRequest.
+		basicConnect: aRequestContext.
 	self pusher register: self.
 	self basicTerminate

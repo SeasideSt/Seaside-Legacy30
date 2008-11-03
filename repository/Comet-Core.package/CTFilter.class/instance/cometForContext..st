@@ -1,8 +1,8 @@
 processing
-cometRequest: aRequest
+cometForContext: aRequestContext
 	^ (handlers
-		at: (aRequest fields
+		at: (aRequestContext request fields
 			at: CTComet headerField
 			ifAbsent: [ ^ nil ])
 		ifAbsent: [ ^ nil ])
-			connect: aRequest
+			connect: aRequestContext
