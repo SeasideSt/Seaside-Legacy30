@@ -8,6 +8,7 @@ refreshWithMessage: aString location: aUrlOrString delay: aNumber
 	response
 		contentType: WAMimeType textPlain;
 		nextPutAll: aString, Character cr;
-		nextPutAll: 'You are being redirected to ', aUrlOrString seasideString.
+		nextPutAll: 'You are being redirected to ';
+		nextPutAll: aUrlOrString seasideString.
 
 	^ response
