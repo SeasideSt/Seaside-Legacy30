@@ -6,12 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"visitor",
-		"actionUrl",
-		"callbacks",
-		"document",
-		"mode"
+		"context"
 	],
-	"name" : "WARenderingContext",
+	"name" : "WARenderer",
 	"type" : "normal"
 }

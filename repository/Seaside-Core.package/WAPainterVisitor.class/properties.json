@@ -5,13 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"visitor",
-		"actionUrl",
-		"callbacks",
-		"document",
-		"mode"
-	],
-	"name" : "WARenderingContext",
+	"instvars" : [ ],
+	"name" : "WAPainterVisitor",
 	"type" : "normal"
 }
