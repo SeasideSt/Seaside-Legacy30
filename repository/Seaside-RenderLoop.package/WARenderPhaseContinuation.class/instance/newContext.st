@@ -1,7 +1,9 @@
 private
 newContext
-	| renderingContext actionContinuation |
+	| renderingContext actionContinuation guide |
 	renderingContext := WARenderingContext new.
+	guide := WARenderingGuide client: (WARenderVisitor context: renderingContext).
+	renderingContext visitor: guide.
 	actionContinuation := self newActionPhaseContinuation.
 	actionContinuation
 		renderingContext: renderingContext;
