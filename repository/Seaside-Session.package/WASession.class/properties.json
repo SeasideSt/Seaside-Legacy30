@@ -7,7 +7,6 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"continuations",
-		"monitor",
 		"jumpTo",
 		"cookiesEnabled"
 	],

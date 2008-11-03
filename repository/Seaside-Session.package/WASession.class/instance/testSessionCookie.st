@@ -1,4 +1,4 @@
-private-cookies
+private
 testSessionCookie
 	| cookie |
 	self requestContext redirectWithCookie: self sessionCookie.
