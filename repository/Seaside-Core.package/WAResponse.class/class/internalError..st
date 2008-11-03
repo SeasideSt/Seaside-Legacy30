@@ -3,4 +3,5 @@ internalError: anError
 	^ self new
 		internalError;
 		contentType: WAMimeType textPlain;
-		nextPutAll: 'Internal Error: ', anError description.
+		nextPutAll: 'Internal Error: ';
+		nextPutAll: anError description

@@ -1,0 +1,3 @@
+defaults
+defaultCodec
+	^ WANullCodec new

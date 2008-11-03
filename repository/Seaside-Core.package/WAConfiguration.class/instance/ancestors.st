@@ -4,9 +4,6 @@ ancestors
 	| set |
 	set := IdentitySet new.
 	self 
-		ancestorsDo: 
-			[ :each | 
-			"nothing"
-			 ]
+		ancestorsDo:  [ :each | "nothing" ]
 		seen: set.
 	^ set

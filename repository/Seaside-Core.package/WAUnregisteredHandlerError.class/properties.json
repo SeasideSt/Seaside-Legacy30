@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "jf 10/27/2008 14:56",
+	"super" : "Error",
+	"category" : "Seaside-Core-Exceptions",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAUnregisteredHandlerError",
+	"type" : "normal"
+}

@@ -1,3 +1,5 @@
-public
-ensureKeyForHandler: anObject
-	^ (self keyOrNilForHandler: anObject) ifNil: [ self registerRequestHandler: anObject ]
+deprecated
+ensureKeyForHandler: aRequestHandler
+	self seasideDeprecatedApi: 'WARegistry>>ensureKeyForHandler:'
+		details: 'Use #ensureKeyFor:'.
+	^ self ensureKeyFor: aRequestHandler

@@ -1,3 +1,6 @@
-initialization
+deprecated
 clearAllHandlers
-	self allSubInstancesDo: [ :each | each clearHandlers ]
+	self seasideDeprecatedApi: 'WARegistry class>>clearAllHandlers'
+		details: 'Use #clearAll'.
+	
+	^ self clearAll

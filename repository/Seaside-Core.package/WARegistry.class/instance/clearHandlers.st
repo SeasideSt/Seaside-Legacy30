@@ -1,3 +1,6 @@
-public
+deprecated
 clearHandlers
-	self cache clear
+	self seasideDeprecatedApi: 'WARegistry>>clearHandlers'
+		details: 'Use WARegistry>>clear'.
+		
+	^ self clear

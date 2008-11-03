@@ -1,0 +1,3 @@
+private-controlling
+basicStart
+	self subclassResponsibility

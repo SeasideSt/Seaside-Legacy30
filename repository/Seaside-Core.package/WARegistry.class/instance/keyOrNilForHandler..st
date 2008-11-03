@@ -1,3 +1,5 @@
-private
-keyOrNilForHandler: anObject
-	^ self cache keyFor: anObject
+deprecated
+keyOrNilForHandler: aRequestHandler
+	self seasideDeprecatedApi: 'WARegistry>>keyOrNilForHandler:'
+		details: 'Use #keyFor:ifAbsent:'.
+	^ self keyFor: aRequestHandler ifAbsent: [ nil ]
