@@ -5,6 +5,5 @@ forbidden: aUrlOrString
 	response
 		forbidden;
 		contentType: WAMimeType textPlain;
-		nextPutAll: 'Access forbidden to ';
-		nextPutAll: aUrlOrString seasideString.
+		nextPutAll: 'Access forbidden to ', aUrlOrString seasideString.
 	^ response
