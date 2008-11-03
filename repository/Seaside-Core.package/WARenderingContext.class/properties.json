@@ -1,11 +1,12 @@
 {
 	"commentStamp" : "",
 	"super" : "WAObject",
-	"category" : "Seaside-Core-Contexts",
+	"category" : "Seaside-Core-Rendering",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
+		"visitor",
 		"actionUrl",
 		"callbacks",
 		"document",

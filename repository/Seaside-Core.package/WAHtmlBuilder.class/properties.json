@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "jf 10/19/2008 02:50",
+	"super" : "WAObject",
+	"category" : "Seaside-Core-Rendering",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"fullDocument",
+		"documentRoot",
+		"rootBlock",
+		"rootClass",
+		"documentClass",
+		"rendererClass"
+	],
+	"name" : "WAHtmlBuilder",
+	"type" : "normal"
+}

@@ -1,3 +1,4 @@
 accessing
 default: aCollection
-	default := Array withAll: aCollection
+	default := Set new.
+	default addAll: aCollection.

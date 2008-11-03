@@ -5,6 +5,5 @@ notFound: aUrlOrString
 	response
 		notFound;
 		contentType: WAMimeType textPlain;
-		nextPutAll: aUrlOrString seasideString;
-		nextPutAll: ' not found'.
+		nextPutAll: aUrlOrString seasideString, ' not found'.
 	^ response

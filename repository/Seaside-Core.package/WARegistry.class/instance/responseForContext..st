@@ -1,8 +1,5 @@
-processing
+public
 responseForContext: aRequestContext 
-	| key |
-	key := self
-		keyFromContext: aRequestContext
-		ifAbsent: [ ^ self handleDefaultRequest: aRequestContext ].
-		
-	^ self responseForContext: aRequestContext key: key
+	^ (aRequestContext request fields includesKey: self handlerField) 
+		ifTrue: [ self handleKeyRequest: aRequestContext ]
+		ifFalse: [ self handleDefaultRequest: aRequestContext ]

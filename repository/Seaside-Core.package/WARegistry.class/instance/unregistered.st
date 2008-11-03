@@ -1,4 +1,4 @@
 notifications
 unregistered
 	super unregistered.
-	self clear
+	self clearHandlers
