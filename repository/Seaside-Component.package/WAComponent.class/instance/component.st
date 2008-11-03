@@ -1,3 +1,3 @@
-accessing
+decorations
 component
 	^ self
