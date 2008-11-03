@@ -1,3 +1,3 @@
 visiting
 acceptDecorated: aVisitor
-	self decoration accept: aVisitor
+	aVisitor visitDecorationsOfComponent: self

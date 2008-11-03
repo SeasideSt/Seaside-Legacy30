@@ -1,3 +1,3 @@
 rendering
 renderUndecoratedWithContext: aRenderingContext
-	self accept: aRenderingContext
+	self accept: aRenderingContext visitor
