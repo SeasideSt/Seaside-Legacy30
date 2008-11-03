@@ -1,7 +1,5 @@
 convenience
 visiblePresentersDo: aBlock
-	WAVisiblePresenterGuide new
-		client: (WAPluggablePresenterVisitor new
-			block: aBlock;
-			yourself);
+	(WAVisiblePresenterGuide client:
+		(WAPluggablePresenterVisitor block: aBlock))
 		start: self
