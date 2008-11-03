@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "jf 7/16/2008 12:16",
-	"super" : "WACanvas",
+	"super" : "WATagCanvas",
 	"category" : "Seaside-Canvas",
 	"classinstvars" : [ ],
 	"pools" : [ ],
