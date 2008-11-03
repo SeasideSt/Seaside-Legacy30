@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "WAComponent",
+	"category" : "Seaside-Tests-Component-Mocks",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"initialRequestBlock",
+		"updateRootBlock",
+		"updateUrlBlock",
+		"updateStatesBlock",
+		"renderBlock",
+		"childrenBlock"
+	],
+	"name" : "WAComponentMock",
+	"type" : "normal"
+}
