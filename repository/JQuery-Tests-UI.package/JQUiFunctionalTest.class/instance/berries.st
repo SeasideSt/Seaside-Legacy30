@@ -8,5 +8,4 @@ berries
 		at: 'Blueberry' put: 'Blueberries are flowering plants in the genus Vaccinium, sect. Cyanococcus.'; 
 		at: 'Cloudberry' put: 'The cloudberry is a slow-growing alpine or sub-Arctic species of Rubus, producing amber-colored edible fruit.';
 		at: 'Cranberry' put: 'Cranberries are a group of evergreen dwarf shrubs or trailing vines in the genus Vaccinium subgenus Oxycoccos, or in some treatments, in the distinct genus Oxycoccos.';
-		at: 'Loganberry' put: 'The loganberry is a hybrid produced from crossing a blackberry and a raspberry.';
 		yourself

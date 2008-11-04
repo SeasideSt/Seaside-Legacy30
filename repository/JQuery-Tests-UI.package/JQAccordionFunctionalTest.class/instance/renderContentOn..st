@@ -1,8 +1,15 @@
 rendering
 renderContentOn: html
-	html div
-		script: (html jQuery new accordion autoHeight: false);
+	html unorderedList
+		script: (html jQuery new accordion 
+			header: '.ui-accordion-header';
+			autoHeight: false);
 		with: [
 			self berries keysAndValuesDo: [ :name :description |
-				html anchor: name.
-				html div: description ] ]
+				html listItem class: 'ui-accordion-group'; with: [
+					html div
+						class: 'ui-accordion-header';
+						with: [ html anchor: name ].
+					html div
+						class: 'ui-accordion-content';
+						with: description ] ] ]

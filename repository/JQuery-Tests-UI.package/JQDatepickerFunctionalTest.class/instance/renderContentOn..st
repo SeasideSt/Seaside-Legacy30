@@ -1,6 +1,7 @@
 rendering
 renderContentOn: html	
 	html textInput
-		script: html jQuery new datepicker;
-		callback: [ :value | date := value asDate ];
-		value: date mmddyyyy
+		value: date;
+		callback: [ :value | date := value ];
+		script: (html jQuery new datepicker
+			onSelect: (html jQuery ajax serializeThis))

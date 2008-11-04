@@ -1,4 +1,4 @@
 initialization
 initialize
 	super initialize.
-	date := '09/19/2008'
+	count := 0
