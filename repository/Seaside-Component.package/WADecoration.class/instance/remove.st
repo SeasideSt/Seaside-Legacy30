@@ -1,5 +1,5 @@
 actions
 remove
-	"Remove the decoration from the owning component."
+	"Remove the decoraiton from the owning component."
 	
 	self component removeDecoration: self
