@@ -1,13 +1,14 @@
 styles
 defaultCss
-	^ 'body { margin: 0; padding: 0; background: #434242 url(background.png) repeat-x; font-family: Helvetica,Arial,Verdana,sans-serif; font-size: 14px; line-height: 1.5; color: #222; }
+	^ 'body { margin: 0; padding: 0; background: #434242 url(background.png) repeat-x; font-family: Helvetica,Arial,Verdana,sans-serif; font-size: 80%; line-height: 1.5; color: #222; }
 a { text-decoration: none; color: #ff7200; outline: none; }
 h1, h2, h3, h4, h5, h6 { border: 0; margin: 0; font-weight: normal; letter-spacing: 1px; }
-#canvas { margin: 0 auto; width: 1000px; }
 
-h1.logo { float: left; margin: 50px 0; }
-h1.logo a { display: block; width: 350px; height: 70px; background-image: url(logo.png); }
-h1.logo a span { display: none; }
+#canvas { position: relative; margin: 0 auto; width: 1000px; }
+
+#header h1.logo { float: left; margin: 50px 0; }
+#header h1.logo a { display: block; width: 350px; height: 70px; background-image: url(logo.png); }
+#header h1.logo a span { display: none; }
 
 #menu { float: right; margin: 50px 0 10px 0; height: 50px; }
 #menu .left, #menu .right { width: 15px; height: 50px; float: left; }
@@ -18,7 +19,7 @@ h1.logo a span { display: none; }
 #menu ul li a { padding: 0 15px; color: #bbb; line-height: 50px; font-size: 14px; }
 #menu ul li a:hover { color: #fff; }
 
-#content { margin-bottom: 15px; }
+#content { position: relative; margin-bottom: 15px; }
 #content { clear: both; background-color: white; }
 #content .top, 
 #content .bottom { height: 15px; background: url(frame.png); }
@@ -28,7 +29,7 @@ h1.logo a span { display: none; }
 #content .head p { float: left; margin: 10px; padding-left: 20px; line-height: 50px; font-size: 20px; border-left: 1px solid #ddd; }
 #content .head { padding: 10px; }
 
-#content .tests { padding: 20px; float: left; width: 180px; border-right: 1px solid #ddd; }
+#content .tests { position: relative; padding: 20px; float: left; width: 180px; border-right: 1px solid #ddd; }
 #content .tests h3 { font-size: 20px; margin-bottom: 10px; color: #ff7200; }
 #content .tests ul, #content .tests ul li { padding: 0; margin: 0; list-style-type: none; }
 #content .tests ul { margin-bottom: 40px; }
@@ -36,11 +37,11 @@ h1.logo a span { display: none; }
 #content .tests ul li.active { background-color: #ddd; border-bottom: 1px solid #ccc; }
 #content .tests ul li a { margin-left: 10px; color: #222; text-decoration: none; }
 
-
-#content .main { padding: 20px; float: left; width: 735px; border-left: 1px solid #ddd; margin-left: -1px; }
+#content .main { position: relative; padding: 20px; float: left; width: 735px; border-left: 1px solid #ddd; margin-left: -1px; }
 #content .main h3 { font-size: 20px; margin-bottom: 10px; }
 #content .main h4 { font-size: 16px; border-bottom: 1px solid #eee; margin-top: 20px; margin-bottom: 10px; }
-#content .main code { font-size: 12px; word-wrap: break-word; }
+#content .main .demo { position: relative; }
+#content .main code { font-size: 12px; }
 #content .main code .tag-known { font-weight: bold; color: purple; }
 #content .main code .attribute-known { font-weight: bold; color: black; }
 #content .main code .attribute-value { color: blue; }

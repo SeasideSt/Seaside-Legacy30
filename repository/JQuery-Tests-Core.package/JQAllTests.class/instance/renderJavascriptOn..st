@@ -12,8 +12,9 @@ renderJavascriptOn: html
 			contents renderContentOn: prettyHtml.
 			self requestContext loadScripts isEmpty ifFalse: [
 				(prettyHtml tag: 'script') with: [
+					html break.
 					self requestContext loadScripts
-						do: [ :each | prettyHtml render: each ]
-						separatedBy: [ prettyHtml break ] ].
+						do: [ :each | html space; space; space; text: each; text: ';'; break ].
+					html flush ].
 				prettyHtml flush ] ].
 		pretty flush ]

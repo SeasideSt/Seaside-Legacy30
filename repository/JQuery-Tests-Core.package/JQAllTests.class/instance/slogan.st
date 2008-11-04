@@ -1,3 +1,3 @@
 configuration
 slogan
-	^ 'Smalltalk and Javascript married'
+	^ 'Say it in Smalltalk, Do it with JQuery'

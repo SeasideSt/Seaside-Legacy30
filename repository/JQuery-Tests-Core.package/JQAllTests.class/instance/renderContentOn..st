@@ -2,8 +2,7 @@ rendering
 renderContentOn: html
 	html div id: 'canvas'; with: [
 		html div id: 'header'; with: [ 
-			self renderLogoOn: html.
-			self renderMenuOn: html ].
+			self renderHeaderOn: html ].
 		html div id: 'content'; with: [
 			self renderTopOn: html.
 			self renderHeadOn: html.
