@@ -1,3 +1,3 @@
-as yet unclassified
+rendering
 rendererClass
 	^ WARenderCanvas
