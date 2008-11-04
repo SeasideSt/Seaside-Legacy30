@@ -7,4 +7,5 @@ setUp
 	decoration2 := WADecorationMock new.
 	child1 := WAComponentMock new.
 	child2 := WAComponentMock new.
-	child3 := WAComponentMock new
+	child3 := WAComponentMock new.
+	child4 := WAComponentMock new
