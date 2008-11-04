@@ -1,3 +1,5 @@
 accessing
 home
-	self delegations do: [:ea | self removeDecoration: ea]
+	"Remove all delegations from the receiver, making sure that it is displayed again."
+	
+	self delegations do: [ :each | self removeDecoration: each ]
