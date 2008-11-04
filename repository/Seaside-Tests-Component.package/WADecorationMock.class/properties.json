@@ -10,7 +10,8 @@
 		"updateRootBlock",
 		"updateUrlBlock",
 		"updateStatesBlock",
-		"renderBlock"
+		"renderBlock",
+		"childrenBlock"
 	],
 	"name" : "WADecorationMock",
 	"type" : "normal"
