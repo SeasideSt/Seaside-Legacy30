@@ -1,3 +1,3 @@
 hooks
 children
-	^ Array with: self delegate
+	^ super children copyWith: self delegate
