@@ -1,3 +1,3 @@
 rendering
 baseUrl
-	^WADispatcher default baseUrl
+	^ self requestContext entryPoint baseUrl
