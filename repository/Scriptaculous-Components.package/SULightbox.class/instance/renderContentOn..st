@@ -1,6 +1,6 @@
 rendering
 renderContentOn: html
-	self renderNextOn: html.
+	super renderContentOn: html.
 	html div id: 'overlay'.
 	html div
 		id: 'lightbox';

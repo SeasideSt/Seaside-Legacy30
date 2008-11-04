@@ -1,4 +1,4 @@
-accessing
+accessing-scripts
 script
 	^ 'Object.extend(Position, {
 	windowBounds: function() {

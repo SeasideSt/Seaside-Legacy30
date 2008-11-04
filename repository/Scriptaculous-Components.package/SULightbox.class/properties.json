@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "WADelegation",
+	"super" : "WADecoration",
 	"category" : "Scriptaculous-Components-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"delegate"
+	],
 	"name" : "SULightbox",
 	"type" : "normal"
 }

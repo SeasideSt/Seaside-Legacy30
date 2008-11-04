@@ -1,4 +1,4 @@
-accessing
+accessing-scripts
 style
 	^ 'html { overflow: hidden; }
 body { overflow: hidden; }
