@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testCloneApplication
 	| app handler key clone |
 	app := (WADispatcher named: 'root') register: (WAApplication named: 'app').

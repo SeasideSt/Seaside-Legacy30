@@ -1,4 +1,4 @@
-as yet unclassified
+private
 simulateWithDebugBlock: debugBlock progress: desiredProgress result: desiredResult
 	"Set up a known working mechanism similar to the error handler so we can
 	test whether the underlying system works the same way as on Squeak
