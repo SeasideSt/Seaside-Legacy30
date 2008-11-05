@@ -1,3 +1,3 @@
 testing
 usesSmalltalkEncoding
-	^self requestContext usesSmalltalkEncoding
+	^self requestContext codec usesSmalltalkEncoding
