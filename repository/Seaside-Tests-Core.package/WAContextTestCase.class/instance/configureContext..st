@@ -1,3 +1,3 @@
 private
 configureContext: aRequestContext
-	aRequestContext server: WAMockServerAdaptor new
+	aRequestContext codec: self codec

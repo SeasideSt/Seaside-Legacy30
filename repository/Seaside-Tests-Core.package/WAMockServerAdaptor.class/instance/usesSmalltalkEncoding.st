@@ -1,3 +1,0 @@
-mocked messages
-usesSmalltalkEncoding
-	^ true
