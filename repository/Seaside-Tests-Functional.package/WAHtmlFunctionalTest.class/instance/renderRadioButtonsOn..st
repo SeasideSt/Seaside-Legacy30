@@ -17,6 +17,6 @@ renderRadioButtonsOn: html
 				callback: [ association value: false ].
 			html span
 				class: 'indented'; class: 'hint';
-				with: 'Shortcuts: ' , 'Ctrl-' , association key , ' Alt-' , association key.
+				with: 'Shortcuts: Ctrl-' , association key, ' Alt-', association key.
 			html break ].
 		html submitButton ]

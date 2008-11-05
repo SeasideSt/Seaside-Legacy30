@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderLetterListOn: html
 	html select
 		id: 'letter-list';

@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 states
 	^ Array with: self

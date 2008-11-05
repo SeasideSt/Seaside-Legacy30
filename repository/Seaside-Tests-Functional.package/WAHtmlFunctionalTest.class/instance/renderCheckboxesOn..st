@@ -10,6 +10,6 @@ renderCheckboxesOn: html
 				on: #value of: association.
 			html span
 				class: 'indented'; class: 'hint';
-				with: 'Shortcuts: ' , 'Ctrl-' , association key asUppercase.
+				with: 'Shortcuts: ', 'Ctrl-', association key asUppercase.
 			html break].
 		html submitButton]
