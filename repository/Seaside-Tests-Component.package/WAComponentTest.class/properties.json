@@ -7,7 +7,6 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"log",
-		"component",
 		"root",
 		"decoration1",
 		"decoration2",
