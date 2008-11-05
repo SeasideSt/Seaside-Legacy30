@@ -2,7 +2,7 @@ running
 performTest
 	| context |
 	context := WARequestContext new.
-	context server: WAMockServerAdaptor new.
+	context codec: (SeasidePlatformSupport codecForEncoding: 'utf-8').
 	
 	WACurrentRequestContext 
 		use: context
