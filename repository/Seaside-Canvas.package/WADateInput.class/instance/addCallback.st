@@ -1,9 +1,8 @@
 private rendering
 addCallback
-	self hasCallback
-		ifFalse:
-			[canvas flush.
-			^ self].
+	self hasCallback ifFalse: [
+		canvas flush.
+		^ self ].
 	canvas hiddenInput
-		callback: [callbackBlock value: self setValueWithNewDate];
+		callback: [ callbackBlock value: self setValueWithNewDate ];
 		 with: nil

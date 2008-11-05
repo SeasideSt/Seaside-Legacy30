@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "pmm 4/15/2007 22:05",
-	"super" : "WARenderer",
+	"super" : "WAObject",
 	"category" : "Seaside-Canvas",
 	"classinstvars" : [ ],
 	"pools" : [ ],

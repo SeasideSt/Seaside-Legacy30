@@ -2,6 +2,6 @@ private
 nest: aBlock
 	parentBrush := currentBrush.
 	currentBrush := nil.
-	self render: aBlock.
+	aBlock renderOn: self.
 	self flush.
 	parentBrush := parentBrush parent

@@ -5,6 +5,6 @@ with: anObject
 	self openTag.
 	super with: [
 		self before.
-		canvas render: anObject.
+		anObject renderOn: canvas.
 		self after ].
 	self closeTag
