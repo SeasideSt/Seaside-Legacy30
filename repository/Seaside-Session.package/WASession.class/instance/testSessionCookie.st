@@ -1,10 +1,11 @@
-private-cookies
+private
 testSessionCookie
 	| cookie |
 	self requestContext redirectWithCookie: self sessionCookie.
 	"The following will be in a new request:"
 	cookie := self requestContext application sessionCookieFor: self requestContext request.
-	cookie value = self key seasideString
+	
+	(cookie value = self key seasideString)
 		ifFalse: [ ^self ].
 	
 	cookiesEnabled := true.

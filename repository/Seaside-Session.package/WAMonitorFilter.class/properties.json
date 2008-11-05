@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "WARequestFilter",
+	"category" : "Seaside-Session-Filter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"monitor"
+	],
+	"name" : "WAMonitorFilter",
+	"type" : "normal"
+}
