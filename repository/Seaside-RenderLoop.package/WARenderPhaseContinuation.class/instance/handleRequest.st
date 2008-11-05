@@ -1,5 +1,5 @@
 processing
 handleRequest
-	self withExceptionHandlers: [ self render ].
+	self withNotificationHandlerDo: [ self render ].
 	"The render phase should have returned a response"
 	WAMissingResponseError raiseSignal

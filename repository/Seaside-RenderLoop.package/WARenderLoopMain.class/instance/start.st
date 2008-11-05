@@ -2,5 +2,7 @@ processing
 start
 	| root |
 	root := self createRoot.
-	root visiblePresentersDo: [ :each | each initialRequest: self requestContext request ].
+	(WAAllPresenterGuide client:
+		(WAInitialRequestVisitor request: self requestContext request))
+		start: root.
 	((self session preferenceAt: #renderPhaseContinuationClass) root: root) value
