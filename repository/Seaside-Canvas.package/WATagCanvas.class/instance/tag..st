@@ -1,4 +1,4 @@
-private
+public
 tag: aString
 	"Defines a generic tag with the name aString."
 

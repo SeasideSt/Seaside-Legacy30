@@ -1,3 +1,0 @@
-accessing
-actionUrl
-	^WAUrl new
