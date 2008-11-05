@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"server",
+		"codec",
 		"handlers",
 		"request",
 		"response",

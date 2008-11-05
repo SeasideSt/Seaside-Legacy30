@@ -1,4 +1,4 @@
 initialization
 initialize
 	super initialize.
-	handlers := OrderedCollection new
+	self fullDocument: false
