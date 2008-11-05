@@ -1,4 +1,4 @@
-as yet unclassified
+response-generation
 notFoundForContext: aRequestContext 
 	| response content |
 	response := WAResponse new.

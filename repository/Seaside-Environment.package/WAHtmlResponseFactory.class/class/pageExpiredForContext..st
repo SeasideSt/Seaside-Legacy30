@@ -1,4 +1,4 @@
-as yet unclassified
+response-generation
 pageExpiredForContext: aRequestContext
 	| content |
 	content := WARenderCanvas builder

@@ -1,4 +1,4 @@
-as yet unclassified
+response-generation
 refreshAfter: aNumber location: aUrlOrString message: aString
 	| response document |
 	response := WAResponse new.
