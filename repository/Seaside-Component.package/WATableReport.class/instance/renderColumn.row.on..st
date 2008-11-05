@@ -2,10 +2,11 @@ rendering
 renderColumn: aColumn row: aRow on: html
 	| text |
 	aColumn canRender ifTrue: [
-		^html tableData
+		html tableData
 			class: aColumn cssClass;
 			with: [
-				aColumn renderValue: aRow on: html ] ].
+				aColumn renderValue: aRow on: html ].
+		^self ].
 	text := aColumn textForRow: aRow.
 	text isEmpty ifTrue: [ text := ' ' ].
 	html tableData
