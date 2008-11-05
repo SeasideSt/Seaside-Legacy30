@@ -1,3 +1,3 @@
 private
-withNotificationHandlerDo: aBlock
+withNotificationHandler: aBlock
 	^ aBlock on: WARenderNotification do: [ :n | ]

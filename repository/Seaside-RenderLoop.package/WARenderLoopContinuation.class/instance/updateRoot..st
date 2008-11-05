@@ -1,6 +1,4 @@
 updating
 updateRoot: aHtmlRoot
 	super updateRoot: aHtmlRoot.
-	(WAVisiblePresenterGuide client:
-		(WAUpdateRootVisitor root: aHtmlRoot))
-		start: self root
+	self root visiblePresentersDo: [ :each | each updateRoot: aHtmlRoot ]

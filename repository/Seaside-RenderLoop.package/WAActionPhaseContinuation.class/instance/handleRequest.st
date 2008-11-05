@@ -3,7 +3,7 @@ handleRequest
 	| renderContinuation |
 	self request isXmlHttpRequest ifTrue:
 		[ self requestContext onRespond: [ :r | states snapshot ] ].
-	self withNotificationHandlerDo:
+	self withExceptionHandlers:
 		[ self renderingContext callbacks processWithRequest: self request ].
 	
 	renderContinuation := self newRenderPhaseContinuation.	

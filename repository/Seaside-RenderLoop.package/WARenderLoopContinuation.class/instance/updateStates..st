@@ -1,6 +1,7 @@
 updating
 updateStates: aSnapshot
 	super updateStates: aSnapshot.
-	(WAAllPresenterGuide client:
-		(WAUpdateStatesVisitor snapshot: aSnapshot))
-		start: self root
+	self root visiblePresentersDo: [ :each |
+		(each isDecoration and: [ each isDelegation ])
+			ifTrue: [ each component updateStates: aSnapshot ].
+		each updateStates: aSnapshot ]
