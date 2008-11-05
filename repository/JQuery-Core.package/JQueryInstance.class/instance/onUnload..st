@@ -1,4 +1,4 @@
-events
+events-dom
 onUnload: anObject
 	"Binds a function to the unload event of each matched element."
 	

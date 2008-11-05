@@ -1,4 +1,4 @@
-events
+events-dom
 onScroll: anObject
 	"Bind a function to the scroll event of each matched element."
 	

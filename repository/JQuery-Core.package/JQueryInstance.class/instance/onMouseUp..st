@@ -1,4 +1,4 @@
-events
+events-dom
 onMouseUp: anObject
 	"Bind a function to the mouseup event of each matched element."
 	

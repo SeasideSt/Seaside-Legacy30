@@ -1,4 +1,4 @@
-events
+events-dom
 onSelect: anObject
 	"Bind a function to the select event of each matched element."
 	

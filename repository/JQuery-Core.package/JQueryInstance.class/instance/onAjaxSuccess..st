@@ -1,4 +1,4 @@
-ajax
+ajax-events
 onAjaxSuccess: anObject
 	"Attach a function to be executed whenever an AJAX request completes."
 	

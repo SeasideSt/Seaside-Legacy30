@@ -1,4 +1,4 @@
-events
+events-dom
 onClick: anObject
 	"Binds a function to the change event of each matched element."
 	

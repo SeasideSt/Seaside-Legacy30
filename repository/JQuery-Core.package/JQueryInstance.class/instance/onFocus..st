@@ -1,4 +1,4 @@
-events
+events-dom
 onFocus: anObject
 	"Binds a function to the focus event of each matched element."
 	

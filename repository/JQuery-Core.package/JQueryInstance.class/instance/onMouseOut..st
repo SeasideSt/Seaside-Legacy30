@@ -1,4 +1,4 @@
-events
+events-dom
 onMouseOut: anObject
 	"Bind a function to the mouseout event of each matched element."
 	
