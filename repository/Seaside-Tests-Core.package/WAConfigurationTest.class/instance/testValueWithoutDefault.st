@@ -13,7 +13,7 @@ testValueWithoutDefault
 	user at: #a put: 1.
 	user at: #b put: 2.
 	
-	self assert: (root1 at: #a) = nil.
-	self assert: (root2 at: #b) = nil.
+	self assert: (root1 at: #a) isNil.
+	self assert: (root2 at: #b) isNil.
 	self assert: (user at: #a) = 1.
 	self assert: (user at: #b) = 2.

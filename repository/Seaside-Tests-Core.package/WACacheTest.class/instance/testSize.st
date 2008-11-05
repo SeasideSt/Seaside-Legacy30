@@ -1,6 +1,6 @@
 testing
 testSize
-	self assert: cache size = 0.
+	self assert: cache isEmpty.
 	cache store: #a.
 	self assert: cache size = 1.
 	cache store: #b.

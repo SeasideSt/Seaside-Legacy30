@@ -1,6 +1,7 @@
 utilities
 requestContextWithUrl: aString
 	^ WARequestContext
+		server: self
 		request: (WARequest
 			method: 'GET'
 			url: aString
