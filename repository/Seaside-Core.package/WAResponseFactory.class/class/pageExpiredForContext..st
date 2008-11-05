@@ -1,4 +1,4 @@
-as yet unclassified
+response-creation
 pageExpiredForContext: aRequestContext
 	^WAResponse new
 		contentType: WAMimeType textPlain;

@@ -16,11 +16,11 @@ initializeFromString: aString
 		self scheme: (string copyFrom: 1 to: index - 1).
 		string := string copyFrom: index + 3 to: string size.
 		index := string indexOf: $/.
-		index > 0
+		string := index > 0
 			ifFalse: [ 
 				self parseHost: string.
-				string := '' ]
+				'' ]
 			ifTrue: [
 				self parseHost: (string copyFrom: 1 to: index - 1).
-				string := string copyFrom: index + 1 to: string size ] ].
+				string copyFrom: index + 1 to: string size ] ].
 	self parsePath: string

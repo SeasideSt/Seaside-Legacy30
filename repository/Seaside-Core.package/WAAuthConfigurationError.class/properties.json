@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "pmm 11/4/2008 20:45",
+	"super" : "Error",
+	"category" : "Seaside-Core-Exceptions",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAAuthConfigurationError",
+	"type" : "normal"
+}

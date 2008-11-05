@@ -1,3 +1,4 @@
 accessing
 codec
-	^ codec ifNil: [ codec := self defaultCodec ]
+	"returns the WACodec instance used by the current server"
+	^self server codec

@@ -5,11 +5,8 @@ fromString: aString
 		values := aString findTokens: ','.
 		values do: [ :each |
 			| value quality |
-			(each includes: $;)
-				ifTrue: [
-					value := self valueClass fromString: (each copyUpTo: $;) trimBoth.
-					quality := Float readFrom: ((each copyAfter: $;) copyAfter: $=) readStream ]
-				ifFalse: [
-					value := self valueClass fromString: each trimBoth.
-					quality := Float infinity ].
+			value := self valueClass fromString: (each copyUpTo: $;) trimBoth.
+			quality := (each includes: $;)
+				ifTrue: [ Float readFrom: ((each copyAfter: $;) copyAfter: $=) readStream ]
+				ifFalse: [ Float infinity ].
 			stream nextPut: (self value: value quality: quality) ] ]

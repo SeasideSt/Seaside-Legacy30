@@ -1,3 +1,3 @@
 *Seaside-Core
 renderOn: html
-	self do: [ :each | html render: each ]
+	self do: [ :each | each renderOn: html ]
