@@ -5,6 +5,6 @@ initializeFromChunk: aChunk
 
 	| stream |
 	stream := StandardFileStream newFileNamed: (self temporaryDirectory fullNameFor: self temporaryFileName).
-	[	stream binary.
-		fileSize := aChunk saveToStream: stream ]
+	fileSize := [ stream binary.
+		aChunk saveToStream: stream ]
 			ensure: [ stream close ]

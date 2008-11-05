@@ -3,7 +3,8 @@ writeResponseForRequest: aRequest on: aStream
 	| request response |
 	request := self convertRequest: aRequest.
 	request responseStream: aStream.
-	response := self dispatchRequest: request.
+	response := self requestHandler handleRequest: (WARequestContext
+		server: self request: request).
 	response ifNil: [ ^ self ].
 	response class = WAResponse ifTrue: 
 		[ aStream resetBuffers.
