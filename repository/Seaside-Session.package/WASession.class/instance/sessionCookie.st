@@ -1,4 +1,4 @@
-private
+private-cookies
 sessionCookie
 	"creates a new session cookie"
 	^ self requestContext newCookie
