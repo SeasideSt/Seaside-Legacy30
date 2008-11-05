@@ -1,5 +1,5 @@
 rendering
-renderContentOn: html
+renderOn: html
 	html span
 		title: 'Callback Time';
 		with: filter previousTiming.

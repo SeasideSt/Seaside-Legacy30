@@ -5,15 +5,14 @@ addAncestorsTo: linearCollection forAttributeAt: aSymbol
 	attribute := nil.
 	(linearCollection includes: self) 
 		ifTrue: [ ^ true ]
-		ifFalse: 
-			[ linearCollection add: self.
-			((aSymbol notNil and: [ self canDefineAttributes ]) and: [ self attributes at: aSymbol ifPresent: [ :attr | ^ attr ] ] ).
-			self parents isEmpty ifFalse: 
-				[ self parents reverseDo: 
-					[ :ea | 
-					result := (ea 
+		ifFalse: [
+			linearCollection add: self.
+			aSymbol notNil and: [ self canDefineAttributes and: [ self attributes at: aSymbol ifPresent: [ :attr | ^ attr ] ] ].
+			self parents isEmpty ifFalse: [
+				self parents reverseDo: [ :each | 
+					result := each
 						addAncestorsTo: linearCollection
-						forAttributeAt: aSymbol).
+						forAttributeAt: aSymbol.
 					result isNil ifFalse: [
 						found := true.
 						result == true ifFalse: [ attribute := result ] ] ] ] ].

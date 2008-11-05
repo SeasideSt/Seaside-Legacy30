@@ -2,15 +2,16 @@ rendering-ancestry
 renderParentSelectorOn: html 
 	| selectedParent parents |
 	parents := self potentialParents.
-	parents isEmpty ifFalse: 
-		[ html text: 'Add parent: '.
-		selectedParent := WAValueHolder new.
-		html select
-			selected: nil;
-			list: parents;
-			labels: [ :each | each name ];
-			callback: [ :value | selectedParent contents: value ].
-		html space.
-		html submitButton
-			callback: [ self configuration addParent: selectedParent contents ];
-			text: 'Add' ]
+	parents isEmpty ifTrue: [ ^self ].
+	
+	html text: 'Add parent: '.
+	selectedParent := WAValueHolder new.
+	html select
+		selected: nil;
+		list: parents;
+		labels: [ :each | each name ];
+		callback: [ :value | selectedParent contents: value ].
+	html space.
+	html submitButton
+		callback: [ self configuration addParent: selectedParent contents ];
+		text: 'Add'

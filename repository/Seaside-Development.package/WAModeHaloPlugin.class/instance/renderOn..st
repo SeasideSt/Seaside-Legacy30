@@ -1,5 +1,5 @@
 rendering
-renderContentOn: html
+renderOn: html
 	html div class: self cssClass; with: [
 		html text: '['.
 		self requestor modes
