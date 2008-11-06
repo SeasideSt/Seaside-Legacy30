@@ -1,5 +1,5 @@
 visiting
 visitDecoration: aDecoration
 	super visitDecoration: aDecoration.
-	aDecoration isDelegation
-		ifFalse: [ aDecoration next accept: self ]
+	(self shouldVisitNextPresenterOf: aDecoration)
+		ifTrue: [ aDecoration next accept: self ]
