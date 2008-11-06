@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "jf 11/6/2008 12:00",
+	"super" : "TestCase",
+	"category" : "Seaside-Tests-Component-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAComponentPlatformTest",
+	"type" : "normal"
+}
