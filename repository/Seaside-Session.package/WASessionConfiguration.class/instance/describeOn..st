@@ -2,7 +2,7 @@ description
 describeOn: config
 	(config list: #exceptionHandler)
 		options: [self exceptionHandlerClasses];
-		default: WAErrorHandler.
+		default: WASimpleErrorHandler.
 	(config list: #mainClass)
 		options: [self mainClasses].
 	(config boolean: #useSessionCookie)

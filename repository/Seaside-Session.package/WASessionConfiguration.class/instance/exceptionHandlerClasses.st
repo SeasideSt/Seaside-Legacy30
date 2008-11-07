@@ -1,3 +1,3 @@
 description
 exceptionHandlerClasses
-	^ WAExceptionHandler withAllSubclasses asSortedCollection: [ :a :b | a name <= b name ]
+	^ WAErrorHandler withAllSubclasses asSortedCollection: [ :a :b | a name <= b name ]
