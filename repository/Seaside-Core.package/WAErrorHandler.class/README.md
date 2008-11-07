@@ -1,6 +1,8 @@
-WAErrorHandler catches Errors and Warnings and provides two methods for handling each type of exception:
+Error handlers are invoked when an error in a Seaside application occurs. They handle
+- errors
+- warnings
+- internal errors in the Seaside core
 
-handleError:
-handleWarning:
+I am the base class for all error handlers and handle only internal errors which which I display a code 500 error with a short stackframe.
 
-If either method is not implemented, the default implementation will call #handleDefault:, which can be used to provide common behaviour for both exception types.
+See WAWalkbackErrorHandler for examples of how to do rendering with the canvas API.
