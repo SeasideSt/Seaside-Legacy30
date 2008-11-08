@@ -7,7 +7,7 @@ convertRequest: aKomRequest
 
 	request := WARequest
 		method: aKomRequest method
-		url: (self pathFrom: aKomRequest)
+		url: (self urlFrom: aKomRequest)
 		headers: aKomRequest header
 		fields: (self fieldsOf: aKomRequest)
 		cookies: (self cookiesFrom: aKomRequest)
