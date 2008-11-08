@@ -1,3 +1,3 @@
 actions
 handleWarning: aWarning
-	^ self handleDefault: aWarning
+	self handleError: aWarning
