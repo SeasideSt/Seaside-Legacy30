@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "WAServerAdaptor",
+	"category" : "Seaside-Adaptors-Swazoo",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"site"
+	],
+	"name" : "WASwazooAdaptor",
+	"type" : "normal"
+}
