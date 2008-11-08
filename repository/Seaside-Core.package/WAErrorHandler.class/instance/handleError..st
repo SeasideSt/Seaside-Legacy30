@@ -1,3 +1,3 @@
 actions
 handleError: anError
-	anError pass
+	^ self handleDefault: anError

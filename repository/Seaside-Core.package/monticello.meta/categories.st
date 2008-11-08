@@ -11,4 +11,3 @@ SystemOrganization addCategory: #'Seaside-Core-Filter'!
 SystemOrganization addCategory: #'Seaside-Core-Rendering'!
 SystemOrganization addCategory: #'Seaside-Core-Exceptions'!
 SystemOrganization addCategory: #'Seaside-Core-Utilities'!
-SystemOrganization addCategory: #'Seaside-Core-Session'!
