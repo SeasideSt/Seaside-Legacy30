@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WAFileHandlerListing",
+	"category" : "Seaside-Core-Libraries",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAForbiddenFileHandlerListing",
+	"type" : "normal"
+}

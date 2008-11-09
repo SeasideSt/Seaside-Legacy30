@@ -8,5 +8,4 @@ responseForContext: aRequestContext
 	path := baseUrl relativeTo: requestUrl.
 	^ self 
 		responseAt: path
-		ifForbidden: [ self forbiddenResponseFor: aRequestContext ]
-		ifAbsent: [ self notFoundResponseFor: aRequestContext ]
+		forContext: aRequestContext
