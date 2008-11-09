@@ -2,7 +2,7 @@ private
 basicConnect: aRequestContext
 	| root |
 	WACurrentRequestContext use: aRequestContext during: [
-		socket := aRequestContext request responseStream encodingSocket.
+		socket := aRequestContext responseStream encodingSocket.
 		socket pushData: (String streamContents: [ :stream |
 			root := WAHtmlRoot context: context.
 			WAResponse new

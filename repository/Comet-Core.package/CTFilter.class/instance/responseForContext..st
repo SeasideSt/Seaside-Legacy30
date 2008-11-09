@@ -1,6 +1,6 @@
 processing
 responseForContext: aRequestContext
-	aRequestContext request responseStream
+	aRequestContext responseStream
 		ifNil: [ self error: 'Streaming-server required.' ].
 	^ (aRequestContext request includesKey: CTComet headerField)
 		ifTrue: [ self cometForContext: aRequestContext ]
