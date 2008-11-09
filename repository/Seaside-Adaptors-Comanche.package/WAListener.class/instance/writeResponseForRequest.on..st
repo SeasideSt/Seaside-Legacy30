@@ -1,9 +1,9 @@
 private
 writeResponseForRequest: aRequest on: aStream 
-	| request response |
-	request := self convertRequest: aRequest.
-	request responseStream: aStream.
-	response := self dispatchRequest: request.
+	| response context |
+	context := self contextForRequest: (self convertRequest: aRequest).
+	context responseStream: aStream.
+	response := self dispatchContext: context.
 	response ifNil: [ ^ self ].
 	response class = WAResponse ifTrue: 
 		[ aStream resetBuffers.
