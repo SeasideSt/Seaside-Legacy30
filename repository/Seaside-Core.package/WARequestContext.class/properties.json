@@ -10,6 +10,7 @@
 		"handlers",
 		"request",
 		"response",
+		"responseStream",
 		"properties",
 		"subscribers"
 	],
