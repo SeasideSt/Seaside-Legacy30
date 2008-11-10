@@ -1,5 +1,5 @@
 creation
 new
-	"Instantiates a new jQuery instance. Matches all DOM nodes."
+	"Wrap jQuery functionality around this DOM Element."
 
-	^ JQueryInstance on: canvas constructor: (Array with: '*')
+	^ JQueryInstance on: canvas constructor: (Array with: JSStream this)

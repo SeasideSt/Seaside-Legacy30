@@ -1,18 +1,18 @@
 convenience
 @ anObject
-	"This method is purely syntactic sugar for being able to write an expression like
+	"This method provides syntactic sugar for being able to write an expression like
 
 		(html jQuery with: 'div')
 			show;
 			addClass: 'highlight'
 
-	without brackets
+	without brackets as
 
 		html jQuery @ 'div';
 			show;
 			addClass: 'highlight'
 
-	Note, the semicolon after the #@ message that starts the cascade. We do not suggest to use this code, unless you really understand what and why you are doing this."
+	Note, the semicolon after the #@ message that starts a cascade. Also note, that at this point the receiver of the cascade changes. This is something one would not expect normally. We do not suggest to use this code, unless you really understand what and why you are doing this."
 
 	| sender expression |
 	sender := thisContext sender.

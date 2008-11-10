@@ -1,4 +1,4 @@
-as yet unclassified
+printing
 printOn: aStream
 	| normal special |
 	normal := self collection select: [ :each | each isString or: [ each isVariableBinding ] ].

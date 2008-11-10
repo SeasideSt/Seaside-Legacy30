@@ -1,4 +1,4 @@
-filtering
+accessors
 eq: anInteger
 	"Reduce the set of matched elements to a single element."
 	
