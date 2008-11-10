@@ -10,7 +10,7 @@ renderRadioButtonOn: html
 							group: group;
 							selected: radioButton = each;
 							callback: [ radioButton := each ].
-					 	html text: each ].
+						html text: each ].
 					html break ] ] ]
 		model: radioButton
 		on: html
