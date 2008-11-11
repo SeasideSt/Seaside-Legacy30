@@ -2,5 +2,7 @@ initialization
 initializeSuperSelectors
 	superSelectors := Dictionary new.
 	superSelectors
-		at: WAPresenter name put: #( initialize updateRoot: updateStates: updateUrl: initialRequest: ) asSet;
-		at: WATagBrush name put: #( initialize setParent:canvas: #with: ) asSet
+		at: WAObject name put: #(initialize postCopy) asSet;
+		at: WAPainter name put: #(updateRoot: updateUrl:) asSet;
+		at: WATagBrush name put: #(setParent:canvas: with: before after openTag closeTag) asSet;
+		at: WARequestFilter name put: #(responseForContext:) asSet
