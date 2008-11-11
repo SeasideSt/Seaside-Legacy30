@@ -9,7 +9,6 @@
 		"rootHanlder",
 		"childHanlder",
 		"configApplication",
-		"normalApplication",
 		"configComponent"
 	],
 	"name" : "WADispatcherComponentTest",

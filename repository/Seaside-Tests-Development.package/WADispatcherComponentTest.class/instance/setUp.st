@@ -1,5 +1,7 @@
 running
 setUp
+	| normalApplication |
+	
 	super setUp.
 	rootHanlder := WADispatcher named: 'seaside'.
 	childHanlder := rootHanlder register: (WADispatcher named: 'child').
