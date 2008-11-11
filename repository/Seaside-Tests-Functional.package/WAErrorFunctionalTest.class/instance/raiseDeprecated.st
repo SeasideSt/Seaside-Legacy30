@@ -1,4 +1,4 @@
 actions
 raiseDeprecated
-	self deprecatedApi: 'Test Deprecation'.
+	self seasideDeprecatedApi: 'Test Deprecation'.
 	self inform: 'To be displayed'
