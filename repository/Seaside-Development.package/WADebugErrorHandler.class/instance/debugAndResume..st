@@ -1,6 +1,6 @@
 actions
 debugAndResume: anException
-	[ self open: anException ] value.
+	self open: anException.
 
 	"If the user closes the debugger, the process is terminated and the stack unwound.
 	There was previously an #ifCurtailed: block around the #open: call above to try to
