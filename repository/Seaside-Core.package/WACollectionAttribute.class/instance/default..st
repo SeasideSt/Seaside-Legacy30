@@ -1,3 +1,3 @@
 accessing
 default: aCollection
-	super default: (Array withAll: aCollection)
+	default := Array withAll: aCollection

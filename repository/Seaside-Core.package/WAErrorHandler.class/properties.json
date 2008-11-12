@@ -1,6 +1,6 @@
 {
-	"commentStamp" : "pmm 5/27/2007 21:46",
-	"super" : "WAObject",
+	"commentStamp" : "jf 9/17/2008 20:50",
+	"super" : "WAExceptionHandler",
 	"category" : "Seaside-Core-RequestHandler",
 	"classinstvars" : [ ],
 	"pools" : [ ],

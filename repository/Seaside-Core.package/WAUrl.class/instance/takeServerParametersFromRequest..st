@@ -1,11 +1,9 @@
 private
 takeServerParametersFromRequest: aRequest
-	"Takes the hostname on URL from the given request unless already set."
-
-	"aRequest headers
-		at: 'base'
-		ifPresent: [ :value | self parsePath: value ]."
-	self hostname isNil ifTrue: [
-		aRequest headers
-			at: 'host'
-			ifPresent: [ :value | self parseHost: value ] ]
+	"Takes the hostname on URL from the given request unless already set.."
+	
+	self hostname isNil
+		ifFalse: [ ^ self ].
+	self parseHost: (aRequest 
+		headerAt: 'host'
+		ifAbsent: [ ^ self ])

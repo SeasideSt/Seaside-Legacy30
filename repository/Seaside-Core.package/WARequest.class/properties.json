@@ -12,6 +12,7 @@
 		"cookies",
 		"method",
 		"nativeRequest",
+		"responseStream",
 		"remoteAddress"
 	],
 	"name" : "WARequest",
