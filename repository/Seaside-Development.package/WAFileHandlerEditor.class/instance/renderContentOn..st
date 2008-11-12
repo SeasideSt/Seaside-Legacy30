@@ -1,6 +1,10 @@
 rendering
 renderContentOn: html
 	super renderContentOn: html.
+	html paragraph: [
+		html anchor
+			callback: [ self call: self handler configuration configurationComponent ];
+			with: 'edit file handler configuration' ].
 	html table: [
 		self libraries do: [ :each |
 			html tableRow: [
