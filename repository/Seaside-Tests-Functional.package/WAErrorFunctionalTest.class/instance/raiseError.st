@@ -1,4 +1,5 @@
 actions
 raiseError
-	self error: 'Test Error'.
-	self inform: 'Not to be displayed'
+	| result |
+	result := self error: 'Test Error'.
+	self inform: 'Signalling the error returned: ', result seasideString
