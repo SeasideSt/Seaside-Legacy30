@@ -3,7 +3,7 @@ newResponse
 	"Answer a new response object and assign the current request stream."
 
 	| stream response |
-	stream := self requestContext responseStream.
+	stream := self request responseStream.
 	response := stream isNil
 		ifTrue: [ WAResponse new ]
 		ifFalse: [ WAStreamResponse on: stream ].

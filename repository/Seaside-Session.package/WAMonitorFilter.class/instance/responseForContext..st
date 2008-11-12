@@ -8,4 +8,6 @@ responseForContext: aRequestContext
 			monitor
 				critical: [ super responseForContext: aRequestContext ]
 				ifError: [ :error | 
-					WAErrorHandler internalError: error ] ]
+					WAExceptionHandler
+						internalError: error 
+						context: aRequestContext ] ]
