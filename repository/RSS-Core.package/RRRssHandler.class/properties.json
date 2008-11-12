@@ -5,10 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"rootComponentClass",
-		"openDebugger"
-	],
+	"instvars" : [ ],
 	"name" : "RRRssHandler",
 	"type" : "normal"
 }
