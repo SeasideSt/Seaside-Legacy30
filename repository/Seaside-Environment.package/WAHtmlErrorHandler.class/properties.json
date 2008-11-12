@@ -1,11 +1,11 @@
 {
-	"commentStamp" : "",
-	"super" : "WAFileHandlerListing",
+	"commentStamp" : "jf 11/10/2008 10:07",
+	"super" : "WAErrorHandler",
 	"category" : "Seaside-Environment",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WAHtmlFileHandlerListing",
+	"name" : "WAHtmlErrorHandler",
 	"type" : "normal"
 }
