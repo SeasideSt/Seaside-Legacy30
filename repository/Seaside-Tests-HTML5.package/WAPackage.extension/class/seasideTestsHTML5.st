@@ -4,5 +4,5 @@ seasideTestsHTML5
 		name: 'Seaside-Tests-HTML5';
 		description: 'Unit tests for the package Seaside-HTML5.';
 		addDependency: 'Seaside-HTML5';
-		addDependency: 'Seaside-Tests-Canvas';
+		addDependency: 'Seaside-Tests-Functional';
 		yourself
