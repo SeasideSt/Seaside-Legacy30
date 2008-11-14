@@ -17,19 +17,23 @@ renderContentOn: html
 					autosave: 'Seaside';
 					placeholder: 'placeholder ...';
 					results: 5;
-					incremental: false ] ].
+					incremental: false;
+					on: #search of: self ] ].
 			html tableRow: [
 				html tableHeading: [ html label: 'range (6..12) by 2' ].
 				html tableData: [ html rangeInput
 					min: 6;
 					max: 12;
-					step: 2 ] ].
+					step: 2;
+					on: #range of: self.
+				html space.
+				html render: self range ] ].
 			html tableRow: [
 				html tableHeading: [ html label: 'email' ].
-				html tableData: [ html emailInput ] ].
+				html tableData: [ html emailInput on: #email of: self ] ].
 			html tableRow: [
 				html tableHeading: [ html label: 'url' ].
-				html tableData: [ html urlInput] ].
+				html tableData: [ html urlInput on: #url of: self ] ].
 			html tableRow: [
 				html tableHeading: [ html label: 'number' ].
 				html tableData: [ html numberInput ] ].

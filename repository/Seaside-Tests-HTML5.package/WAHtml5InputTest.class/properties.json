@@ -5,7 +5,12 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"search",
+		"range",
+		"email",
+		"url"
+	],
 	"name" : "WAHtml5InputTest",
 	"type" : "normal"
 }
