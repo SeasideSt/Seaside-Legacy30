@@ -1,5 +1,5 @@
 private
-withUnregisteredHandlerDo: aBlock
-	^ aBlock
+withUnregisteredHandlerDo: aBlock 
+	^ aBlock 
 		on: WAUnregisteredHandlerError
-		do: [ self requestContext redirectTo: self application baseUrl ]
+		do: [ :err | self requestContext redirectTo: self application baseUrl ]
