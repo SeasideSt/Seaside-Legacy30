@@ -1,6 +1,5 @@
 rendering
 renderContentOn: html
-	| url |
 	self renderInstructionsOn: html.
 	
 	html form: [
@@ -12,7 +11,9 @@ renderContentOn: html
 	html paragraph: 'This should always be a NUMBER: ', number seasideString.
 	html paragraph: 'This should always be a LETTER: ', letter seasideString.
 	
-	url := html context actionUrl seasideString.
-	html anchor
-		onClick: 'swapCallbacks("',url,'","letter-list", "number-list")';
-		with: 'Try to break it'
+	html paragraph: [
+		| url |
+		url := html context actionUrl seasideString.
+		html anchor
+			onClick: 'swapCallbacks("',url,'","letter-list", "number-list")';
+			with: 'Try to break it' ]
