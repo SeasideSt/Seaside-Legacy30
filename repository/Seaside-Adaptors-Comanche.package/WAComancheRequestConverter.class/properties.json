@@ -1,10 +1,8 @@
 {
 	"commentStamp" : "pmm 4/13/2008 20:18",
-	"super" : "WAServerAdaptor",
+	"super" : "WAStartableServerAdaptor",
 	"category" : "Seaside-Adaptors-Comanche",
-	"classinstvars" : [
-		"default"
-	],
+	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [

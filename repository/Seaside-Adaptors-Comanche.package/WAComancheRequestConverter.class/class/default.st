@@ -1,3 +1,0 @@
-compatibility
-default
-	^ default
