@@ -11,4 +11,4 @@ open: anException
 					(SeasidePlatformSupport walkbackClass exception: anException) ].
 	answer ifTrue: [ super open: anException ] ]
 		on: WARequestContextNotFound
-		do: [ super open: anException ]
+		do: [ :err | super open: anException ]
