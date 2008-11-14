@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "pmm 11/14/2008 22:28",
+	"super" : "WATool",
+	"category" : "Seaside-Development-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"component"
+	],
+	"name" : "WAPluggableTool",
+	"type" : "normal"
+}
