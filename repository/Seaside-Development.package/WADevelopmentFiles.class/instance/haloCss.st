@@ -28,13 +28,13 @@ haloCss
 	display: block;
 	padding-right: 5px;
 }
-.halo-header div.browserhaloplugin {
+.halo-header div.browserhaloplugin, div.window-titlebar div.browserhaloplugin {
 	background: url(codebrowser.png) no-repeat;
 }
-.halo-header div.inspectorplugin {
+.halo-header div.inspectorplugin, div.window-titlebar div.inspectorplugin {
 	background: url(inspector.png) no-repeat;
 }
-.halo-header div.styleshaloplugin {
+.halo-header div.styleshaloplugin, div.window-titlebar div.styleshaloplugin {
 	background: url(styleeditor.png) no-repeat;
 }
 .halo-header div.browserhaloplugin a,
@@ -58,6 +58,15 @@ haloCss
 }
 .halo-header div.modehaloplugin a.active {
 	font-weight: bold;
+}
+div.window-titlebar div.profilertoolplugin {
+	background: url(profiler.png) no-repeat;
+}
+div.window-titlebar div.memorytoolplugin {
+	background: url(memory.png) no-repeat;
+}
+div.window-titlebar div.configuretoolplugin {
+	background: url(config.png) no-repeat;
 }
 
 /* body */

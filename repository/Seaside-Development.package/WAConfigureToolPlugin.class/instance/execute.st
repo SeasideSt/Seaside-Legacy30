@@ -1,3 +1,3 @@
 actions
 execute
-	self open: self application configurationComponent
+	self open: (WAPluggableTool on: self application configurationComponent)
