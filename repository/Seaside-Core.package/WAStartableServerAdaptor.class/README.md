@@ -1,0 +1,1 @@
+A WAStartableServerAdaptor is a convenience class for making server adapters that can easily be started and stopped.
