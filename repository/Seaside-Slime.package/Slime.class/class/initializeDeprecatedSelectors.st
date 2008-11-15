@@ -1,7 +1,7 @@
 initialization
 initializeDeprecatedSelectors
 	| selectors |
-	selectors := #( deprecatedApi deprecatedApi: ).
+	selectors := #( seasideDeprecatedApi: seasideDeprecatedApi:details: ).
 	deprecatedSelectors := Set new.
 	Object allSubclassesDo: [ :class |
 		class methodDictionary keysAndValuesDo: [ :selector :method |
