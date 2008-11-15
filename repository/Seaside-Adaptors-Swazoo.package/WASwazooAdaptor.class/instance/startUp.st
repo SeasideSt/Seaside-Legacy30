@@ -1,3 +1,3 @@
 private-controlling
 startUp
-	SwazooServer stop
+	SwazooServer start
