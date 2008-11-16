@@ -1,5 +1,5 @@
 callbacks
 callback: aBlock
-	"Defines aBlock as a callback of the receiver."
+	"Register aBlock as a primary callback of the receiver. It only makes sense to have a single primary callback registered per instance. The primary callback must generate a response."
 	
-	self addParameter: (owner canvas callbacks registerAjaxCallback: aBlock)
+	callback := aBlock fixCallbackTemps

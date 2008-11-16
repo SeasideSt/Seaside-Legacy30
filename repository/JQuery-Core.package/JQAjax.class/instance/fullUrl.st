@@ -1,11 +1,12 @@
-accessing
+accessing-urls
 fullUrl
-	"Answer the complete composed URL. Does not work if there are Javascript objects part of the URL."
+	"Answer a Seaside URL object that is composed with the parameters of the receiver. This method excludes dyanmic Javascript objects that might be part of the parameters."
 	
 	| url |
 	url := self url copy.
 	self parameters do: [ :each | 
+		each isString
+			ifTrue: [ url addParameter: each ].
 		each isVariableBinding
-			ifTrue: [ url addParameter: each key value: each value ]
-			ifFalse: [ url addParameter: each ] ].
+			ifTrue: [ url addParameter: each key value: each value ] ].
 	^ url
