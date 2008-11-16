@@ -7,4 +7,5 @@ tests
 			with: 'Counter' -> JQCounterFunctionalTest new)
 		with: 'Other' -> (Array
 			with: 'Animate' -> JQAnimateFunctionalTest new
-			with: 'Effects' -> JQEffectFunctionalTest new)
+			with: 'Effects' -> JQEffectFunctionalTest new
+			with: 'Transition' -> JQTransitionFunctionalTest new)

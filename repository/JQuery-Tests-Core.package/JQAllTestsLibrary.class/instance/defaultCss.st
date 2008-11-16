@@ -3,7 +3,7 @@ defaultCss
 	^ 'body { margin: 0; padding: 0; background: #434242 url(background.png) repeat-x; font-family: Helvetica,Arial,Verdana,sans-serif; font-size: 80%; line-height: 1.5; color: #222; }
 a { text-decoration: none; color: #ff7200; outline: none; }
 h1, h2, h3, h4, h5, h6 { border: 0; margin: 0; font-weight: normal; letter-spacing: 1px; }
-.ui-effects-transfer {border:1px solid black;background:#ffffe0;opacity:.5;}
+
 #canvas { position: relative; margin: 0 auto; width: 1000px; }
 
 #header h1.logo { float: left; margin: 50px 0; }
@@ -45,4 +45,8 @@ h1, h2, h3, h4, h5, h6 { border: 0; margin: 0; font-weight: normal; letter-spaci
 #content .main code .tag-known { font-weight: bold; color: purple; }
 #content .main code .attribute-known { font-weight: bold; color: black; }
 #content .main code .attribute-value { color: blue; }
-#content .main code .attribute-value a { color: blue; text-decoration: underline; }'
+#content .main code .attribute-value a { color: blue; text-decoration: underline; }
+#content .main .ui-effects-transfer {border:1px solid black;background:#ffffe0;opacity:.5;}
+#content .main .blue { background: #77f; }
+#content .main .highlight { background:yellow; }
+#content .main .blackBorder { border:5px solid black }'

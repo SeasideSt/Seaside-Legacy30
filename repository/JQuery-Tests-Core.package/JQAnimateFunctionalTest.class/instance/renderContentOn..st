@@ -2,7 +2,8 @@ rendering
 renderContentOn: html
 	html div
 		id: #animated;
-		style: 'position: relative; width: 100px; height: 100px; background-color: #77f'.
+		style: 'position: relative; width: 100px; height: 100px; background-color: #77f;border:1px solid black;text-align:center';
+		with: [html break; break; text: 'Animate me'].
 		
 	html paragraph: 'Relative Values'.
 	html button
@@ -15,10 +16,10 @@ renderContentOn: html
 	html paragraph: 'Toggle Values'.
 	html button
 		onClick: ((html jQuery: #animated) animate height: 'toggle');
-		with: 'height'.
+		with: 'Height'.
 	html button
 		onClick: ((html jQuery: #animated) animate width: 'toggle');
-		with: 'width'.
+		with: 'Width'.
 
 	html paragraph: 'Absolute Values'.
 	html button
@@ -34,7 +35,17 @@ renderContentOn: html
 	html paragraph: 'Multiple Values'.		
 	html button
 		onClick: ((html jQuery: #animated) animate width: 60; height: 60; border: '20px solid #00f');
-		with: 'show'.
+		with: 'Show'.
 	html button
 		onClick: ((html jQuery: #animated) animate width: 100; height: 100; border: '0px solid #00f');
-		with: 'hide'.
+		with: 'Hide'.
+	html paragraph: 'Color Animations'.		
+	html button
+		onClick: ((html jQuery: #animated) animate backgroundColor: '#f77');
+		with: 'Background to red'.
+	html button
+		onClick: ((html jQuery: #animated) animate color: '#fff');
+		with: 'Text to white'.
+	html button
+		onClick: ((html jQuery: #animated) animate backgroundColor: '#77f'; color: 'black');
+		with: 'Back to default'.
