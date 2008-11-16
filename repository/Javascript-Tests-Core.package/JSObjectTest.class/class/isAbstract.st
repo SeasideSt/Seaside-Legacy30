@@ -1,3 +1,3 @@
 testing
 isAbstract
-	^self name = #JSObjectTest
+	^ self name = #JSObjectTest
