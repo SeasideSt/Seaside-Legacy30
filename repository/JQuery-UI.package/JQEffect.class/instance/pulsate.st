@@ -2,4 +2,4 @@ effects-toggle
 pulsate
 	"Pulsates the opacity of the element multiple times."
 	
-	self effect: 'Pulsate'
+	self effect: 'pulsate'

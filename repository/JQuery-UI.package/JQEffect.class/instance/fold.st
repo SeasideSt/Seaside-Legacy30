@@ -2,4 +2,4 @@ effects-toggle
 fold
 	"Folds the element like a piece of paper."
 	
-	self effect: 'Fold'
+	self effect: 'fold'
