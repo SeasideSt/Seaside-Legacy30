@@ -1,5 +1,4 @@
 effects
 highlight
 	"Highlights the background with a defined color."
-	self effect.
-	self effect: 'highlight'
+	self effect; effect: 'highlight'

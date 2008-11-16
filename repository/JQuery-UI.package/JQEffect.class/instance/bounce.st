@@ -1,5 +1,4 @@
 effects
 bounce
 	"Bounces the element vertically or horizontally n-times."
-	self effect.
-	self effect: 'bounce'
+	self effect; effect: 'bounce'
