@@ -1,10 +1,8 @@
 rendering
 renderContentOn: html
-	html div
-		id: 'form';
-		onChange: (JSLogger new log: (html jQuery this atAll)) , (html jQuery ajax
-			serializeForm;
-			script: [ :script |
-				script << (script jQuery: #form)
-					html: [ :r | self renderFormOn: r ] ]);
-		with: [ self renderFormOn: html ]
+	self renderTextInputOn: html.
+	self renderTextAreaOn: html.
+	self renderCheckBoxOn: html.
+	self renderRadioButtonOn: html.
+	self renderSelectListOn: html.
+	self renderMultiSelectListOn: html

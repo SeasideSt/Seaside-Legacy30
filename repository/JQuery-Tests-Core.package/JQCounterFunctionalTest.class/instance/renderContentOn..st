@@ -1,13 +1,14 @@
 rendering
 renderContentOn: html
 	html anchor
-		onClick: (html jQuery ajax
-			script: [ :script | script << (script jQuery: #count) html: (count := count - 1) ]);
+		onClick: ((html jQuery: #count) load
+			html: [ :h | h render: (count := count - 1) ]);
 		with: '--'.
+	html text: ' '.
 	html anchor
-		onClick: (html jQuery ajax
-			script: [ :script | script << (script jQuery: #count) html: (count := count + 1) ]);
+		onClick: ((html jQuery: #count) load
+			html: [ :h | h render: (count := count + 1) ]);
 		with: '++'.
 	html div
-		id: 'count';
+		id: #count;
 		with: count

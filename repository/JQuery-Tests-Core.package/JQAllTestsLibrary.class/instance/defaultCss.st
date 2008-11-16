@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6 { border: 0; margin: 0; font-weight: normal; letter-spaci
 #content .tests ul { margin-bottom: 40px; }
 #content .tests ul li { line-height: 25px; border-bottom: 1px solid #eee; }
 #content .tests ul li.active { background-color: #ddd; border-bottom: 1px solid #ccc; }
-#content .tests ul li a { margin-left: 10px; color: #222; text-decoration: none; }
+#content .tests ul li a { margin-left: 10px; color: #222; text-decoration: none; display: block; }
 
 #content .main { position: relative; padding: 20px; float: left; width: 735px; border-left: 1px solid #ddd; margin-left: -1px; }
 #content .main h3 { font-size: 20px; margin-bottom: 10px; }
