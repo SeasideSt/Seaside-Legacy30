@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "JQPluginTest",
-	"category" : "JQuery-Tests-Core-Unit",
+	"super" : "JQFunctionalTest",
+	"category" : "JQuery-Tests-Core-Functional",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "JQAjaxTest",
+	"name" : "JQEffectFunctionalTest",
 	"type" : "normal"
 }
