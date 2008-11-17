@@ -6,7 +6,7 @@ Browser support:
 http://www.mnot.net/blog/2006/10/27/cookie_fun
 
 Netscape spec
-http://wp.netscape.com/newsref/std/cookie_spec.html
+http://cgi.netscape.com/newsref/std/cookie_spec.html
 
 Cookie spec
 http://tools.ietf.org/html/rfc2109

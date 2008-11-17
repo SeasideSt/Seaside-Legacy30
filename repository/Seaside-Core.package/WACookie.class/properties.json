@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "pmm 6/1/2008 00:01",
+	"commentStamp" : "pmm 11/17/2008 20:31",
 	"super" : "WARequestCookie",
 	"category" : "Seaside-Core-HTTP",
 	"classinstvars" : [ ],
