@@ -1,8 +1,11 @@
-testing-options
+testing-accessing
 testUrl
+	self 
+		assert: self ajax url
+		equals: '"http://www.seaside.st/"'.
 	self
-		assert: (self ajax reset; url: 'http://www.seaside.st/')
-		equals: self name , '.ajax({url:"http://www.seaside.st/"})'.
+		assert: self ajax fullUrl
+		equals: '"http://www.seaside.st/?_s=1&_k=a&1"'.
 	self
-		assert: (self ajax reset; url: (WAUrl absolute: 'http://www.seaside.st/'))
-		equals: self name , '.ajax({url:"http://www.seaside.st/"})'
+		assert: self ajax javascriptUrl
+		equals: '"http://www.seaside.st/"+"?"+["_s=1","_k=a","1"].join("&")'

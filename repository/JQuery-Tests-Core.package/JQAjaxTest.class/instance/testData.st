@@ -1,5 +1,5 @@
-testing-options
+testing-accessing
 testData
-	self
-		assert: (self ajax reset; data: (Array with: 'foo' with: 'bar'))
-		equals: self name , '.ajax({data:["foo","bar"]})'
+	self 
+		assert: self ajax data 
+		equals: '["_s=1","_k=a","1"].join("&")'
