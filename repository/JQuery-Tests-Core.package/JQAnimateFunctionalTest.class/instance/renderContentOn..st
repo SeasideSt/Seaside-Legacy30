@@ -39,13 +39,3 @@ renderContentOn: html
 	html button
 		onClick: ((html jQuery: #animated) animate width: 100; height: 100; border: '0px solid #00f');
 		with: 'Hide'.
-	html paragraph: 'Color Animations'.		
-	html button
-		onClick: ((html jQuery: #animated) animate backgroundColor: '#f77');
-		with: 'Background to red'.
-	html button
-		onClick: ((html jQuery: #animated) animate color: '#fff');
-		with: 'Text to white'.
-	html button
-		onClick: ((html jQuery: #animated) animate backgroundColor: '#77f'; color: 'black');
-		with: 'Back to default'.
