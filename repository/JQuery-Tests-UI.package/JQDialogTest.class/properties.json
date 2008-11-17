@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "JQPluginTest",
+	"super" : "JQueryTest",
 	"category" : "JQuery-Tests-UI-Unit",
 	"classinstvars" : [ ],
 	"pools" : [ ],
