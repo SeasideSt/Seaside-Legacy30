@@ -6,6 +6,4 @@ tests
 			with: 'Form' -> JQFormFunctionalTest new
 			with: 'Counter' -> JQCounterFunctionalTest new)
 		with: 'Other' -> (Array
-			with: 'Animate' -> JQAnimateFunctionalTest new
-			with: 'Effects' -> JQEffectFunctionalTest new
-			with: 'Transition' -> JQTransitionFunctionalTest new)
+			with: 'Animate' -> JQAnimateFunctionalTest new)
