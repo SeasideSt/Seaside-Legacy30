@@ -20,3 +20,8 @@ tests
 			add: 'Spinner' -> JQSpinnerFunctionalTest new;
 			add: 'Tabs' -> JQTabsFunctionalTest new;
 			yourself)
+		with: 'Effects' -> (OrderedCollection new
+			add: 'Basic' -> JQEffectFunctionalTest new;
+			add: 'Transition' -> JQTransitionFunctionalTest new;
+			add: 'ColorAnimations' -> JQColorAnimateFunctionalTest new;
+			yourself)
