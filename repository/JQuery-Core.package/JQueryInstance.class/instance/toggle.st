@@ -1,4 +1,4 @@
-animation
+effects
 toggle
 	"Toggles displaying each of the set of matched elements."
 	

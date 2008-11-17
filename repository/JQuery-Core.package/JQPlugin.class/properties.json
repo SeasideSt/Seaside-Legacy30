@@ -1,12 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "WAObject",
+	"super" : "JSDecoration",
 	"category" : "JQuery-Core-Objects",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"owner",
 		"options"
 	],
 	"name" : "JQPlugin",
