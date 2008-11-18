@@ -30,12 +30,13 @@ h1, h2, h3, h4, h5, h6 { border: 0; margin: 0; font-weight: normal; letter-spaci
 #content .head { padding: 10px; }
 
 #content .tests { position: relative; padding: 20px; float: left; width: 180px; border-right: 1px solid #ddd; }
-#content .tests h3 { font-size: 20px; margin-bottom: 10px; color: #ff7200; }
+#content .tests h3 { font-size: 20px; margin-bottom: 6px; color: #ff7200; }
 #content .tests ul, #content .tests ul li { padding: 0; margin: 0; list-style-type: none; }
-#content .tests ul { margin-bottom: 40px; }
-#content .tests ul li { line-height: 25px; border-bottom: 1px solid #eee; }
+#content .tests ul { margin-bottom: 20px; }
+#content .tests ul li { line-height: 25px; border-bottom: 1px solid #eee;}
 #content .tests ul li.active { background-color: #ddd; border-bottom: 1px solid #ccc; }
-#content .tests ul li a { margin-left: 10px; color: #222; text-decoration: none; display: block; }
+#content .tests ul li a {padding-left:10px; color: #222; text-decoration: none; display: block; }
+#content .tests ul li a:hover {background:#eee }
 
 #content .main { position: relative; padding: 20px; float: left; width: 735px; border-left: 1px solid #ddd; margin-left: -1px; }
 #content .main h3 { font-size: 20px; margin-bottom: 10px; }
