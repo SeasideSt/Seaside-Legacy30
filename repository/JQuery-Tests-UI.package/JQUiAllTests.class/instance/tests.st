@@ -21,6 +21,7 @@ tests
 			add: 'Tabs' -> JQTabsFunctionalTest new;
 			yourself)
 		with: 'Effects' -> (OrderedCollection new
+			add: 'Toggle' -> JQToggleFunctionalTest new;
 			add: 'Basic' -> JQEffectFunctionalTest new;
 			add: 'Transition' -> JQTransitionFunctionalTest new;
 			add: 'ColorAnimations' -> JQColorAnimateFunctionalTest new;
