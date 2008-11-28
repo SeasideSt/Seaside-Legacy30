@@ -1,3 +1,3 @@
 actions
 configureLibrary: aLibrary
-	self call: aLibrary configurationComponent
+	self show: aLibrary configurationComponent

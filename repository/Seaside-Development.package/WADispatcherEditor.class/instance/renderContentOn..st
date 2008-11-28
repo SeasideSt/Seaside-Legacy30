@@ -4,6 +4,6 @@ renderContentOn: html
 	self renderSettingsOn: html.
 	html paragraph: [
 		html anchor
-			callback: [ self call: self handler configuration configurationComponent ];
+			callback: [ self show: self handler configuration configurationComponent ];
 			with: 'edit dispatcher configuration' ].
 	self renderConfigurationsOn: html

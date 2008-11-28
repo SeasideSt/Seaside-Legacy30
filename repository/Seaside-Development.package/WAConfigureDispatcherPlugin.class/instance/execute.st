@@ -1,3 +1,3 @@
 actions
 execute
-	self requestor call: self target configurationComponent
+	self requestor show: self target configurationComponent

@@ -1,3 +1,3 @@
 actions
 editConfiguration: aConfiguration
-	self call: aConfiguration configurationComponent
+	self show: aConfiguration configurationComponent

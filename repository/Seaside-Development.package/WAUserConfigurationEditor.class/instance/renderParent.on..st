@@ -4,7 +4,7 @@ renderParent: aConfiguration on: html
 		aConfiguration isShared
 			ifTrue: [ 
 				html anchor
-					callback: [ self call: aConfiguration configurationComponent ];
+					callback: [ self show: aConfiguration configurationComponent ];
 					with: aConfiguration name ]
 			ifFalse: [ html text: aConfiguration name ].
 		html space.
