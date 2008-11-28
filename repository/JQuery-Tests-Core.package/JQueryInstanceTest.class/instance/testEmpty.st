@@ -2,4 +2,4 @@ testing-modifying
 testEmpty
 	self 
 		assert: (((self jQuery: 'div')) empty)
-		equals: self name , '("div").empty()'.
+		equals: self function , '("div").empty()'.

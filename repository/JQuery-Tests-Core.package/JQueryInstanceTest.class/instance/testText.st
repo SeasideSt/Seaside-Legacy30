@@ -2,7 +2,7 @@ testing-manipulating
 testText
 	self 
 		assert: ((self jQuery: 'p') text)
-		equals: self name , '("p").text()'.
+		equals: self function , '("p").text()'.
 	self 
 		assert: ((self jQuery: 'p') text: 'foo')
-		equals: self name , '("p").text("foo")'
+		equals: self function , '("p").text("foo")'

@@ -2,7 +2,7 @@ testing-creation
 testNew
 	self
 		assert: (self jQuery new)
-		equals: self name , '(this)'.
+		equals: self function , '(this)'.
 	self
 		assert: (self jQuery new id: 'foo')
-		equals: self name , '("#foo")'
+		equals: self function , '("#foo")'

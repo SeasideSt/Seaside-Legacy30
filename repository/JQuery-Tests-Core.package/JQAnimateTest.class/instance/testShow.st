@@ -2,10 +2,10 @@ testing
 testShow
 	self 
 		assert: (self target show)
-		equals: self name , '("div").show()'.
+		equals: self function , '("div").show()'.
 	self 
 		assert: (self target show: 'slow')
-		equals: self name , '("div").show("slow")'.
+		equals: self function , '("div").show("slow")'.
 	self 
 		assert: (self target show: 'fast' callback: 'done')
-		equals: self name , '("div").show("fast",function(){done})'
+		equals: self function , '("div").show("fast",function(){done})'

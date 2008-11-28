@@ -2,4 +2,4 @@ testing
 testToggle
 	self 
 		assert: (self target toggle)
-		equals: self name , '("div").toggle()'
+		equals: self function , '("div").toggle()'

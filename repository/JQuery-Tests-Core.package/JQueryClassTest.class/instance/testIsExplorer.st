@@ -2,4 +2,4 @@ testing-agent
 testIsExplorer
 	self
 		assert: self jQuery isExplorer
-		equals: self name , '.browser.msie'
+		equals: self function , '.browser.msie'
