@@ -4,7 +4,7 @@ renderContentOn: html
 		class: 'outer';
 		with: [ html div class: 'inner' ].
 	html div
-		class: 'cl';
+		class: 'action';
 		with: [
 		#( blind clip drop explode fold puff pulsate scale slide )
 			do: [ :each | 
@@ -12,5 +12,4 @@ renderContentOn: html
 					onClick: ((html jQuery: '.inner') effect
 						toggle;
 						perform: each);
-					with: each ]
-			separatedBy: [ html text: ' ' ] ]
+					with: each ] ]
