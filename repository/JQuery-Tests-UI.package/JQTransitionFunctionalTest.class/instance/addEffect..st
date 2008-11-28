@@ -1,3 +1,3 @@
 private
 addEffect: effect
-	^effect addClass: 'blackBorder' duration: 'slow'
+	^effect addClass: 'blackBorder' duration: 'fast'

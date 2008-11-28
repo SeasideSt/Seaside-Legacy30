@@ -5,7 +5,7 @@ renderContentOn: html
 		with: [
 			html div
 				id: 'effect';
-				class: 'blue';
+				class: 'blueBox';
 				with: [html break; break; big: 'Animate me'] ].
 	html div 
 		class: 'action';
