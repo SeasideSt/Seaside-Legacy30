@@ -1,4 +1,4 @@
-*Seaside-Tests-Slime
+*seaside-tests-slime
 seasideTestsSlime
 	^ self new
 		name: 'Seaside-Tests-Slime';
