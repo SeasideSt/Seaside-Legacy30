@@ -1,4 +1,4 @@
-*Seaside-Slime
+*seaside-slime
 seasideSlime
 	^ self new
 		name: 'Seaside-Slime';
