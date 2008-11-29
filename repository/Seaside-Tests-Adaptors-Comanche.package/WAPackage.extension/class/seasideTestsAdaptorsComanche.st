@@ -1,4 +1,4 @@
-*Seaside-Tests-Adaptors-Comanche
+*seaside-tests-adaptors-comanche
 seasideTestsAdaptorsComanche
 	^ self new
 		name: 'Seaside-Tests-Adaptors-Comanche';
