@@ -1,4 +1,4 @@
-*JQuery-Tests-Core
+*jquery-tests-core
 jQueryTestsCore
 	^ self new
 		name: 'JQuery-Tests-Core';
