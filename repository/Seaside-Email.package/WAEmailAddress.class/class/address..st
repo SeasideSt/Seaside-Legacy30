@@ -1,4 +1,4 @@
-instance creation
+instance-creation
 address: aString
 	^self new
 		address: aString;
