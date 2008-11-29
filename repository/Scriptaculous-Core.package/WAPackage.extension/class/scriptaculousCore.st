@@ -1,4 +1,4 @@
-*Scriptaculous-Core
+*scriptaculous-core
 scriptaculousCore
 	^ self new
 		name: 'Scriptaculous-Core';
