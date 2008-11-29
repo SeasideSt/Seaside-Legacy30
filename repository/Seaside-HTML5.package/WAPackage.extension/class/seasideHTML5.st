@@ -1,4 +1,4 @@
-*Seaside-HTML5
+*seaside-html5
 seasideHTML5
 	^ self new
 		name: 'Seaside-HTML5';
