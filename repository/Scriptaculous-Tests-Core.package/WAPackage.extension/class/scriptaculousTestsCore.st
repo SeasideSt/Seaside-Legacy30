@@ -1,4 +1,4 @@
-*Scriptaculous-Tests-Core
+*scriptaculous-tests-core
 scriptaculousTestsCore
 	^ self new
 		name: 'Scriptaculous-Tests-Core';
