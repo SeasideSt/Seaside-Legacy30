@@ -1,4 +1,4 @@
-*Seaside-Tests-HTML5
+*seaside-tests-html5
 seasideTestsHTML5
 	^ self new
 		name: 'Seaside-Tests-HTML5';
