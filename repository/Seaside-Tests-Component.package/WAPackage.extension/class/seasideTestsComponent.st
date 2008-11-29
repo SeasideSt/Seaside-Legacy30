@@ -1,4 +1,4 @@
-*Seaside-Tests-Component
+*seaside-tests-component
 seasideTestsComponent
 	^ self new
 		name: 'Seaside-Tests-Component';
