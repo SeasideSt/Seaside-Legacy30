@@ -1,4 +1,4 @@
-*Seaside-Tests-Core
+*seaside-tests-core
 seasideTestsCore
 	^ self new
 		name: 'Seaside-Tests-Core';
