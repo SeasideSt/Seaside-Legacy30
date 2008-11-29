@@ -1,3 +1,3 @@
-*Seaside-Component
+*seaside-component
 acceptDecorated: aVisitor
 	self accept: aVisitor

@@ -1,4 +1,4 @@
-*Seaside-Component
+*seaside-component
 seasideComponent
 	^ self new
 		name: 'Seaside-Component';

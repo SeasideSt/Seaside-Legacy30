@@ -1,3 +1,3 @@
-initialize-release
+initialization
 initializeDecoration
 	decoration := WAValueHolder with: self

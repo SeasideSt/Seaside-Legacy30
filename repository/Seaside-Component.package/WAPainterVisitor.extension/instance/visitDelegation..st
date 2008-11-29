@@ -1,3 +1,3 @@
-*Seaside-Component
+*seaside-component
 visitDelegation: aDelegation
 	self visitDecoration: aDelegation
