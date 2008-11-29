@@ -1,3 +1,3 @@
-skipHours
+skiphours
 hour
 	^ self tag: 'hour'

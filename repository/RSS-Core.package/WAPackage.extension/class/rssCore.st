@@ -1,4 +1,4 @@
-*RSS-Core
+*rss-core
 rssCore
 	^ self new
 		name: 'RSS-Core';
