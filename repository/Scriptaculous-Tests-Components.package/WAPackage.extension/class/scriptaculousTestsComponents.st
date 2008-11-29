@@ -1,4 +1,4 @@
-*Scriptaculous-Tests-Components
+*scriptaculous-tests-components
 scriptaculousTestsComponents
 	^ self new
 		name: 'Scriptaculous-Tests-Components';

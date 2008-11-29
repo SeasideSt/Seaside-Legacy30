@@ -1,4 +1,4 @@
-initialize-release
+initialization
 initialize
 	super initialize.
 	component := self coreClass new title: 'Title';

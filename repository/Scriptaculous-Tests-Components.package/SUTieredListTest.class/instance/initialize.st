@@ -1,4 +1,4 @@
-initialize-release
+initialization
 initialize
 	super initialize.
 	tieredList := SUTieredList new
