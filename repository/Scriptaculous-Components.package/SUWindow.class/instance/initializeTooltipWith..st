@@ -1,4 +1,4 @@
-initialize-release
+initialization
 initializeTooltipWith: aString
 	| stringArray |
 	stringArray := self initializeWith: aString.

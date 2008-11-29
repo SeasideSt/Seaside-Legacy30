@@ -1,4 +1,4 @@
-initialize-release
+initialization
 initialize
 	super initialize.
 	extent := 300 @ 200.

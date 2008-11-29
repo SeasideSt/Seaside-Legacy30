@@ -1,4 +1,4 @@
-initialize-release
+initialization
 initializeWith: aString
 	arguments := aString subStrings: (Array with: $,).
 	arguments size > 1

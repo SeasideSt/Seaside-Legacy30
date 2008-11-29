@@ -1,4 +1,4 @@
-*Scriptaculous-Components
+*scriptaculous-components
 scriptaculousComponents
 	^ self new
 		name: 'Scriptaculous-Components';
