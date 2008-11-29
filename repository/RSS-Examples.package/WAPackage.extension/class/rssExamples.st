@@ -1,4 +1,4 @@
-*RSS-Examples
+*rss-examples
 rssExamples
 	^ self new
 		name: 'RSS-Examples';
