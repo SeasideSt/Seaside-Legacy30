@@ -1,4 +1,4 @@
-*Seaside-Adaptors-Comanche
+*seaside-adaptors-comanche
 seasideAdaptorsComanche
 	^ self new
 		name: 'Seaside-Adaptors-Comanche';

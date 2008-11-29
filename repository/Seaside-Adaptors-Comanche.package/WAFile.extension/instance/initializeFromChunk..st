@@ -1,4 +1,4 @@
-*Seaside-Adaptors-Comanche
+*seaside-adaptors-comanche
 initializeFromChunk: aChunk
 	self contentType: aChunk contentType seasideMimeType.
 	self contents: (String streamContents: [ :stream |
