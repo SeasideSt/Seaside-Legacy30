@@ -1,4 +1,4 @@
-*Seaside-Canvas
+*seaside-canvas
 closeThisPopupAndReloadOpener
 	^ self respond:
 		(WAResponse new

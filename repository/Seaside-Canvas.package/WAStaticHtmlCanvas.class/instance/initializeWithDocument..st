@@ -1,3 +1,3 @@
-initialize-release
+initialization
 initializeWithDocument: aDocument
 	document := aDocument

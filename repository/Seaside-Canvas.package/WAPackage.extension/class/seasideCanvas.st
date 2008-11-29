@@ -1,4 +1,4 @@
-*Seaside-Canvas
+*seaside-canvas
 seasideCanvas
 	^ self new
 		name: 'Seaside-Canvas';
