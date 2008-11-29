@@ -1,4 +1,4 @@
-*Seaside-Examples
+*seaside-examples
 seasideExamples
 	^ self new
 		name: 'Seaside-Examples';
