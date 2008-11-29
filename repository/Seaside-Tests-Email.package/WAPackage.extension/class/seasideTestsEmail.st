@@ -1,4 +1,4 @@
-*Seaside-Tests-Email
+*seaside-tests-email
 seasideTestsEmail
 	^ self new
 		name: 'Seaside-Tests-Email';
