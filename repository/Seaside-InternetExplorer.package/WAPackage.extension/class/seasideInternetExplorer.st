@@ -1,4 +1,4 @@
-*Seaside-InternetExplorer
+*seaside-internetexplorer
 seasideInternetExplorer
 	^ self new
 		name: 'Seaside-InternetExplorer';
