@@ -1,4 +1,4 @@
-instance creation
+instance-creation
 main: aMainString sub: aSubString
 	^self new
 		main: aMainString;

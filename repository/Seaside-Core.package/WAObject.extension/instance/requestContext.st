@@ -1,4 +1,4 @@
-*Seaside-Core
+*seaside-core
 requestContext
 	"Answer the current request context, instance of WARequestContext."
 

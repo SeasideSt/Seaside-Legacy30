@@ -1,4 +1,4 @@
-instance creation
+instance-creation
 value: anObject quality: aFloat
 	^self new
 		value: anObject;

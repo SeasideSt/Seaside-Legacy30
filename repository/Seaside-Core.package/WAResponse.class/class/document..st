@@ -1,4 +1,4 @@
-instance creation
+instance-creation
 document: anObject
 	| document |
 	document := anObject seasideMimeDocument.
