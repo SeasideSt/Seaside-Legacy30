@@ -1,4 +1,4 @@
-*Seaside-Tests-Development
+*seaside-tests-development
 seasideTestsDevelopment
 	^ self new
 		name: 'Seaside-Tests-Development';
