@@ -1,4 +1,4 @@
-*Javascript-Tests-Core
+*javascript-tests-core
 javascriptTestsCore
 	^ self new
 		name: 'Javascript-Tests-Core';
