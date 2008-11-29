@@ -1,6 +1,7 @@
 rendering
 renderContentOn: html 
 	| aWindow |
+	html div id: 'overlay'.
 	html big: 'Window Test:'.
 	html space.
 	html anchor
@@ -11,7 +12,11 @@ renderContentOn: html
 		onClick: (html evaluator callback: [ : script | (windows at: 2) openOn: script ]) ;
 		with: 'Open window 2'.
 	html space: 2.
-	aWindow := windows last.
+	html anchor
+		onClick: (html evaluator callback: [ : script | script add: (JSStream on: 'Element.fullscreen("overlay");'). (windows at: 4) openOn: script ]) ;
+		with: 'Open dialog window'.
+	html space: 2.
+	aWindow := windows at: 3.
 	html anchor
 		class: 'tt' ;
 		attributeAt: 'rel'

@@ -16,4 +16,15 @@ initialize
 								title: 'Tooltip';
 								closeButtonEnabled: false;
 								minimizeButtonEnabled: false;
-								yourself)
+								yourself).
+	windows add: ((SUWindow on: [:w | SUDialogTest new
+											answer: [:script | 
+												script alert: 'Window will be closed'. 
+												script add: (JSStream on: '$("overlay").hide()').
+												w closeOn: script];
+											yourself]) 
+										id: 'dialog_window';
+										closeButtonEnabled: false;
+										minimizeButtonEnabled: false;
+										zIndex: 9999;
+										title: 'Window 4'; yourself).
