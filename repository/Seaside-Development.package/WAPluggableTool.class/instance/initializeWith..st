@@ -1,3 +1,3 @@
-initialize-release
+initialization
 initializeWith: aComponent
 	component := aComponent

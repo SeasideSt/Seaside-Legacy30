@@ -1,4 +1,4 @@
-*Seaside-Development
+*seaside-development
 seasideDevelopment
 	^ self new
 		name: 'Seaside-Development';
