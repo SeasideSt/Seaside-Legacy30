@@ -1,4 +1,4 @@
-*JQuery-Tests-UI
+*jquery-tests-ui
 jQueryTestsUI
 	^ self new
 		name: 'JQuery-Tests-UI';
