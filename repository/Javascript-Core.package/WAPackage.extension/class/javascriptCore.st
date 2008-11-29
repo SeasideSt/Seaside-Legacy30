@@ -1,4 +1,4 @@
-*Javascript-Core
+*javascript-core
 javascriptCore
 	^ self new
 		name: 'Javascript-Core';
