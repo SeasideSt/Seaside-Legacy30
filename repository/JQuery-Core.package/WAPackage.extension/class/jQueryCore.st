@@ -1,4 +1,4 @@
-*JQuery-Core
+*jquery-core
 jQueryCore
 	^ self new
 		name: 'JQuery-Core';
