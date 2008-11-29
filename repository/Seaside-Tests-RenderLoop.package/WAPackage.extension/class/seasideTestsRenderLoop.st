@@ -1,4 +1,4 @@
-*Seaside-Tests-RenderLoop
+*seaside-tests-renderloop
 seasideTestsRenderLoop
 	^ self new
 		name: 'Seaside-Tests-RenderLoop';
