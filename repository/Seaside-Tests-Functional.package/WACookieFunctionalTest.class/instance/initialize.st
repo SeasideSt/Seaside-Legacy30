@@ -1,4 +1,4 @@
-initialize-release
+initialization
 initialize
 	super initialize.
 	self firstPath: self application baseUrl pathString.

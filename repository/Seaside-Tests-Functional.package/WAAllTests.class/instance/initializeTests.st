@@ -1,4 +1,4 @@
-initialize-release
+initialization
 initializeTests
 	classes := SortedCollection sortBlock: [ :a :b | a name < b name ].
 	WAFunctionalTest allSubclassesDo: [ :each | classes add: each ].

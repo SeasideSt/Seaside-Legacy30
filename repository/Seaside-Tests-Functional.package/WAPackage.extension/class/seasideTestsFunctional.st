@@ -1,4 +1,4 @@
-*Seaside-Tests-Functional
+*seaside-tests-functional
 seasideTestsFunctional
 	^ self new
 		name: 'Seaside-Tests-Functional';

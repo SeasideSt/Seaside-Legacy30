@@ -1,4 +1,4 @@
-initialize-release
+initialization
 initialize
 	super initialize.
 	tree := WATree new
