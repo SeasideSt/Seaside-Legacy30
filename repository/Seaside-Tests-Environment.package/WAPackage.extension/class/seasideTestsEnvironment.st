@@ -1,4 +1,4 @@
-*Seaside-Tests-Environment
+*seaside-tests-environment
 seasideTestsEnvironment
 	^ self new
 		name: 'Seaside-Tests-Environment';
