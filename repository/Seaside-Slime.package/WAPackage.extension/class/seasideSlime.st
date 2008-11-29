@@ -2,5 +2,6 @@
 seasideSlime
 	^ self new
 		name: 'Seaside-Slime';
-		description: 'Codecritis for Seaside. Detects common types of bugs.';
+		description: 'Code critis for Seaside. Detects common types of bugs.';
+		addDependency: 'Refactoring-Core';
 		yourself
