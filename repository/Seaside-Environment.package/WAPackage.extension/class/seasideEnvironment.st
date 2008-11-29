@@ -1,4 +1,4 @@
-*Seaside-Environment
+*seaside-environment
 seasideEnvironment
 	^ self new
 		name: 'Seaside-Environment';

@@ -1,4 +1,4 @@
-*Seaside-Environment
+*seaside-environment
 register: aString
 	self seasideDeprecatedApi: 'WAEntryPoint class>>register:'
 		details: 'Use WAAdmin class>>register:at:'.
