@@ -1,4 +1,4 @@
-*Seaside-Session
+*seaside-session
 application
 	"Answer the current application or nil."
 

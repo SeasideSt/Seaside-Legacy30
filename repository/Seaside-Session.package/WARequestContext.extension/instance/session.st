@@ -1,4 +1,4 @@
-*Seaside-Session
+*seaside-session
 session
 	"Answer the current session or nil."
 

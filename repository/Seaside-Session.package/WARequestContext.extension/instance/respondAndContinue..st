@@ -1,4 +1,4 @@
-*Seaside-Session
+*seaside-session
 respondAndContinue: aBlock 
 	| r |
 	^ WAContinuation currentDo: [ :cc |

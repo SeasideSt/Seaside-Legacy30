@@ -1,4 +1,4 @@
-*Seaside-Session
+*seaside-session
 seasideSession
 	^ self new
 		name: 'Seaside-Session';

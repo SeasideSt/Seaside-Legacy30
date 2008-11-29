@@ -1,4 +1,4 @@
-*Seaside-Session
+*seaside-session
 redirectWithMessage: aString delay: aNumber 
 	self respondAndContinue: [ :url | 
 		self application responseFactory

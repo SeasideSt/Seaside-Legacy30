@@ -1,4 +1,4 @@
-*Seaside-Session
+*seaside-session
 redirectWithCookie: aCookie
 	| r |
 	self respondAndContinue: [ :url |
