@@ -13,7 +13,11 @@ renderContentOn: html
 		with: 'Open window 2'.
 	html space: 2.
 	html anchor
-		onClick: (html evaluator callback: [ : script | script add: (JSStream on: 'Element.fullscreen("overlay");'). (windows at: 4) openOn: script ]) ;
+		onClick: (html evaluator
+					callback: [ : script | 
+						script add: (JSStream on: 'Element.fullscreen("overlay")'). 
+						(windows at: 4) openOn: script.
+						script add: (JSStream on: 'Element.center("dialog_window")') ]) ;
 		with: 'Open dialog window'.
 	html space: 2.
 	aWindow := windows at: 3.

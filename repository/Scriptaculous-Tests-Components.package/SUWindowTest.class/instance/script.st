@@ -17,11 +17,10 @@ Object.extend(Element, {
 	fullscreen: function(element) {
 		element = $(element);
 		element.show();
-		var bounds = Position.windowBounds();
 		element.style.position = "absolute";
 		element.style.left = element.style.top = 0;
-		element.style.width = bounds[0] + "px";
-		element.style.height = bounds[1] + "px";
+		element.style.width = "100%";
+		element.style.height = "5000px";
 	},
 	center: function(element) {
 		element = $(element);
@@ -34,9 +33,4 @@ Object.extend(Element, {
 		element.style.left = x + "px";
 		element.style.top = y + "px";
 	}
-});
-function updateLightbox() {
-	Element.fullscreen("overlay");
-	Element.center("lightbox");
-	Element.show("lightbox");
-};'
+});'
