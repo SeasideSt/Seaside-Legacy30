@@ -1,6 +1,6 @@
 rendering
 renderContentOn: html
-	html code id: #logger; with: TimeStamp now.
+	html code id: #logger; with: DateAndTime now.
 	html paragraph: [
 		html submitButton
 			onClick: (html jQuery ajax
