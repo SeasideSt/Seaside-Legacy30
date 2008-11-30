@@ -2,5 +2,5 @@
 rssCore
 	^ self new
 		name: 'RSS-Core';
-		description: 'foo';
+		description: 'RSS integration for Seaside. Helps to create RSS 2.0 feeds.';
 		yourself

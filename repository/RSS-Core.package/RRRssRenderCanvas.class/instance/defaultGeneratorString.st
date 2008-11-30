@@ -1,3 +1,3 @@
 private
 defaultGeneratorString
-	^SeasidePlatformSupport defaultRSSGeneratorString
+	^'Seaside-RSRSS'
