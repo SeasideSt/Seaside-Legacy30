@@ -2,5 +2,5 @@
 rssTestsCore
 	^ self new
 		name: 'RSS-Tests-Core';
-		description: 'foo';
+		description: 'Unit tests for the "RSS-Core" package.';
 		yourself
