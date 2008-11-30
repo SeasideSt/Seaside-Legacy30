@@ -1,4 +1,4 @@
-instance-creation
+instance creation
 notFound: aUrlOrString
 	| response |
 	response := self new.

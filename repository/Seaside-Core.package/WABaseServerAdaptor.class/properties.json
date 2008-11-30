@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "pmm 11/27/2008 07:48",
+	"super" : "WAStartableServerAdaptor",
+	"category" : "Seaside-Core-HTTP",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WABaseServerAdaptor",
+	"type" : "normal"
+}

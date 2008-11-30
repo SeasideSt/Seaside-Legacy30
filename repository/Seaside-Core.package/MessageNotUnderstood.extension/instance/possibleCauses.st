@@ -1,4 +1,4 @@
-*seaside-core
+*Seaside-Core
 possibleCauses
 	| causes |
 	self receiver isNil ifFalse: [

@@ -1,4 +1,4 @@
-instance-creation
+instance creation
 fromString: aString
 	| main endOfSub sub parts parameters |
 	main  := aString copyUpTo: $/.

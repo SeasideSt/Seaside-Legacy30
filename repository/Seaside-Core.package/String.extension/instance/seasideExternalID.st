@@ -1,3 +1,3 @@
-*seaside-core
+*Seaside-Core
 seasideExternalID
 	^ WAExternalID fromString: self

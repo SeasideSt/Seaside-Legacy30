@@ -1,5 +1,5 @@
 processing
-responseForContext: aRequestContext 
+responseForContext: aRequestContext
 	| key |
 	key := self
 		keyFromContext: aRequestContext

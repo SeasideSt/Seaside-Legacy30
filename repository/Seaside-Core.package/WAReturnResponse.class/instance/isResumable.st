@@ -1,3 +1,3 @@
-exceptiondescription
+exceptionDescription
 isResumable
 	^ false
