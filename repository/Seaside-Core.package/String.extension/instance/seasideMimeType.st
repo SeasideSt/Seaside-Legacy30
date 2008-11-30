@@ -1,3 +1,3 @@
-*Seaside-Core
+*seaside-core
 seasideMimeType
 	^ WAMimeType fromString: self

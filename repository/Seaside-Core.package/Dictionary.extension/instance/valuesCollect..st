@@ -1,4 +1,4 @@
-*Seaside-Core
+*seaside-core
 valuesCollect: aBlock
 	| result |
 	result := self species new: self size.

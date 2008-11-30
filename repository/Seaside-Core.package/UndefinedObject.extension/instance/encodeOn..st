@@ -1,2 +1,2 @@
-*Seaside-Core
+*seaside-core
 encodeOn: aDocument

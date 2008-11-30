@@ -1,4 +1,4 @@
-initialize-release
+initialization
 release
 	stream := cookies := headers := nil.
 	super release

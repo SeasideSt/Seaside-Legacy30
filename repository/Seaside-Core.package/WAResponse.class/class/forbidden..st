@@ -1,4 +1,4 @@
-instance creation
+instance-creation
 forbidden: aUrlOrString
 	| response |
 	response := self new.
