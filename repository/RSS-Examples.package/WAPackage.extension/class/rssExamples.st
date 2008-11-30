@@ -2,5 +2,5 @@
 rssExamples
 	^ self new
 		name: 'RSS-Examples';
-		description: 'foo';
+		description: 'Examples of how to use the "RSS-Core" package.';
 		yourself
