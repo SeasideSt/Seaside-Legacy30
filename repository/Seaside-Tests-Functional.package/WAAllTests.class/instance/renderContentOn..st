@@ -9,9 +9,9 @@ renderContentOn: html
 			html select
 				list: classes;
 				beSubmitOnChange;
-				labels: [ :value | value name ];
 				selected: self selected;
-				callback: [ :value | self activate: value ].
+				labels: [ :value | value name ];
+				callback: [ :value | self selected: value ].
 			html anchor
 				callback: [ self next ];
 				with: [ html html: '&rarr;' ].

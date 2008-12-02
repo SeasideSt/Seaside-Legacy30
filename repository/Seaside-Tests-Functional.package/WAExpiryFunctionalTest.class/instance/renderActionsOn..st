@@ -2,30 +2,31 @@ rendering
 renderActionsOn: html
 	html paragraph: [
 		html anchor
-			url: self application baseUrl;
-			 with: 'New Session'.
+			url: (self application baseUrl
+				with: self class name);
+			with: 'New Session'.
 		html break.
 		html anchor
 			callback: [ self session unregister ];
-			 with: 'Expire'.
+			with: 'Expire'.
 		html break.
 		html anchor
 			callback: [ WAExpirySession resetCounters ];
-			 with: 'Reset Counters'.
+			with: 'Reset Counters'.
 		html break.
 		html anchor
 			callback: [ SeasidePlatformSupport garbageCollect ];
-			 with: 'Garbage Collect'.
+			with: 'Garbage Collect'.
 		html break.
 		html anchor
 			callback: [
 				self application clear.
 				SeasidePlatformSupport garbageCollect ];
-			 with: 'Clear Cache'.
+			with: 'Clear Cache'.
 		html break.
 		html anchor
 			callback: [
 				self application clear.
 				WAExpirySession resetCounters.
 				SeasidePlatformSupport garbageCollect ];
-			 with: 'Reset All' ].
+			with: 'Reset All' ].

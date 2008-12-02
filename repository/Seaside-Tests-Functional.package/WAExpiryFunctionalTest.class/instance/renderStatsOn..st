@@ -6,7 +6,7 @@ renderStatsOn: html
 			html tableData: WAExpirySession allInstances size ].
 		html tableRow: [
 			html tableHeading: 'Cached session instances for this Application'.
-			html tableData: (self application cache size) ].
+			html tableData: self application cache size ].
 		html tableRow: [
 			html tableHeading: 'Total component instances'.
 			html tableData: self class allInstances size ].

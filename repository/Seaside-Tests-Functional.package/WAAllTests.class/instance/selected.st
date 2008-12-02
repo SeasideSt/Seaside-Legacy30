@@ -1,3 +1,3 @@
 accessing
 selected
-	^current contents class
+	^ current contents class
