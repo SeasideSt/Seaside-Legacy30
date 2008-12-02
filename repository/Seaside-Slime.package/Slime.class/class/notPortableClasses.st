@@ -1,3 +1,3 @@
 accessing
-notPortableClasses.
+notPortableClasses
 	^ notPortableClasses
