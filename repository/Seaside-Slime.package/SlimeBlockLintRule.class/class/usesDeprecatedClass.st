@@ -1,4 +1,4 @@
-seaside
+seaside-deprecation
 usesDeprecatedClass
 	^ self new
 		name: 'Uses deprecated class';

@@ -4,12 +4,20 @@ usesWrongRenderer
 	matcher := ParseTreeSearcher new.
 	matcher 
 		matchesAnyOf: #(
-			'`html updater callback: [ :`r | | `@temps | `@.statements ]'
-			'`html evaluator callback: [ :`r | | `@temps | `@.statements ]'
-			'`html periodical callback: [ :`r | | `@temps | `@.statements ]'
-			'`html autocompleter callback: [ :`r | | `@temps | `@.statements ]'
-			'`html inPlaceEditor callback: [ :`r | | `@temps | `@.statements ]'
-			'`html inPlaceCollectionEditor callback: [ :`r | | `@temps | `@.statements ]' )
+			" JQuery: "
+			'``@obj ajax html: [ :`r | | `@temps | `@.statements ]'
+			'``@obj load html: [ :`r | | `@temps | `@.statements ]'
+			'``@obj ajax script: [ :`r | | `@temps | `@.statements ]'
+			'``@obj load script: [ :`r | | `@temps | `@.statements ]'
+			'``@obj ajax text: [ :`r | | `@temps | `@.statements ]'
+			'``@obj load text: [ :`r | | `@temps | `@.statements ]'
+			" Scriptaculous: "
+			'``@obj updater callback: [ :`r | | `@temps | `@.statements ]'
+			'``@obj evaluator callback: [ :`r | | `@temps | `@.statements ]'
+			'``@obj periodical callback: [ :`r | | `@temps | `@.statements ]'
+			'``@obj autocompleter callback: [ :`r | | `@temps | `@.statements ]'
+			'``@obj inPlaceEditor callback: [ :`r | | `@temps | `@.statements ]'
+			'``@obj inPlaceCollectionEditor callback: [ :`r | | `@temps | `@.statements ]' )
 		do: [ :node :answer | 
 			(answer isNil and: [ node arguments first references: node receiver receiver name ])
 				ifTrue: [ node arguments first ]

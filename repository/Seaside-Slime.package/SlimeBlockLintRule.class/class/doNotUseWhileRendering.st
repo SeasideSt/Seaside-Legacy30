@@ -4,7 +4,7 @@ doNotUseWhileRendering
 	matcher := ParseTreeSearcher new.
 	matcher 
 		matchesAnyOf: (Slime forbiddenRenderingSelectors collect: [ :each | 
-			'``@receiver' , (ParseTreeLintRule genericPatternForSelector: each) ])			
+			'self' , (ParseTreeLintRule genericPatternForSelector: each) ])			
 		do: [ :node :answer |
 			(Slime isWithinCallback: node)
 				ifFalse: [ answer add: node ].
