@@ -1,5 +1,5 @@
 convenience
 this
-	"Answer a jQuery object that matches the receiving DOM elemnt."
+	"Answer a jQuery object of the receiving DOM element."
 	
 	^ self new

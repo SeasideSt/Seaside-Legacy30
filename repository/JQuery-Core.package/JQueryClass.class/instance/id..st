@@ -1,5 +1,5 @@
 convenience
 id: aString
-	"Instantiates a new jQuery with a single DOM element identified with an ID."
+	"Answer a jQuery with a single DOM element identified by the ID aString."
 	
 	^ self expression: '#' , aString seasideString
