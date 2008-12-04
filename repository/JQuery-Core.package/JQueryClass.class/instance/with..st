@@ -8,4 +8,6 @@ with: anObject
 		ifTrue: [ ^ self id: anObject ].
 	anObject isBlock
 		ifTrue: [ ^ self html: anObject ].
+	anObject isJavascript
+		ifTrue: [ ^ self ready: anObject ].
 	^ self expression: anObject
