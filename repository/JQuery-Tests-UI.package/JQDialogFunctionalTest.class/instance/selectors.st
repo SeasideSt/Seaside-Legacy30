@@ -1,3 +1,3 @@
 accessing
 selectors
-	^ #(renderContentOn:)
+	^ #(renderWindowOn: renderLightboxOn:)
