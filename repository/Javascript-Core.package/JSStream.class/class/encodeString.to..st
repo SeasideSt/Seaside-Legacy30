@@ -8,9 +8,7 @@ encodeString: aString to: aStream
 		char := aString at: index.
 		value := char asInteger.
 		value < JavascriptCharacters size
-			ifFalse: [
-				aStream nextPutAll: '\u'; nextPutAll: ((char asUnicode
-					printStringBase: 16) padded: #left to: 4 with: $0) ]
+			ifFalse: [ aStream nextPut: char ]
 			ifTrue: [
 				encoded := JavascriptCharacters at: value + 1.
 				encoded isString
