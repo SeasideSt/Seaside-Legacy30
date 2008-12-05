@@ -1,4 +1,4 @@
-seaside-deprecation
+seaside-portability
 usesNotPortableClass
 	^ self new
 		name: 'Uses not portable class';
