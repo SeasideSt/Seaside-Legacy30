@@ -1,15 +1,20 @@
 running
 setUp
 	| normalApplication |
-	
 	super setUp.
-	rootHanlder := WADispatcher named: 'seaside'.
-	childHanlder := rootHanlder register: (WADispatcher named: 'child').
-	
-	configApplication := WAApplication register: 'config' in: rootHanlder.
+	rootHandler := WADispatcher named: 'seaside'.
+	childHandler := rootHandler register: (WADispatcher named: 'child').
+	configApplication := WAApplication 
+		register: 'config'
+		in: rootHandler.
 	configApplication configuration addParent: WARenderLoopConfiguration instance.
-	configApplication preferenceAt: #rootClass put: WADispatcherEditor.
-	
-	normalApplication := WAApplication register: 'counter' in: childHanlder.
+	configApplication 
+		preferenceAt: #rootClass
+		put: WADispatcherEditor.
+	normalApplication := WAApplication 
+		register: 'counter'
+		in: childHandler.
 	normalApplication configuration addParent: WARenderLoopConfiguration instance.
-	normalApplication preferenceAt: #rootClass put: WADispatcherEditor
+	normalApplication 
+		preferenceAt: #rootClass
+		put: WADispatcherEditor
