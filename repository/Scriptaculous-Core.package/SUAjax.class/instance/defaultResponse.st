@@ -1,3 +1,5 @@
 private
 defaultResponse
-	^ WAResponse new doNotCache
+	^ WAResponse new 
+		contentType: self defaultContentType;
+		doNotCache
