@@ -1,3 +1,6 @@
 convenience
-fromWidth: w height: h
-	self from: (WASmallDictionary new at: 'width' put: w; at: 'height' put: h; yourself)
+fromWidth: aWidthInteger height: aHeightInteger
+	self from: (WASmallDictionary new
+		at: 'width' put: aWidthInteger;
+		at: 'height' put: aHeightInteger;
+		yourself)

@@ -9,6 +9,6 @@
 		"action",
 		"arguments"
 	],
-	"name" : "JQUiPlugin",
+	"name" : "JQWidget",
 	"type" : "normal"
 }

@@ -1,3 +1,3 @@
 convenience
-toElement: anId
-	self to: anId
+toElement: aString
+	self to: aString
