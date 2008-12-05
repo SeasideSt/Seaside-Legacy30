@@ -6,5 +6,5 @@ script: aBlock on: aStream
 	self requestContext rememberLoadScripts: [ 
 		script := JSScript on: canvas.
 		aBlock value: script.
-		script addAll: self request loadScripts ].
+		script addAll: self requestContext loadScripts ].
 	script printOn: aStream
