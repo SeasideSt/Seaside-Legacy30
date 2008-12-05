@@ -7,6 +7,7 @@ text: aBlock
 	self callback: [
 		| response |
 		response := WAResponse new.
-		response contentType: WAMimeType textPlain.
+		response contentType: (WAMimeType textPlain
+			charset: self application charSet).
 		aBlock value: response stream.
 		owner requestContext respond: response ]
