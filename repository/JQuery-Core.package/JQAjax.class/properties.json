@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"callback"
+		"primaryCallbackId"
 	],
 	"name" : "JQAjax",
 	"type" : "normal"

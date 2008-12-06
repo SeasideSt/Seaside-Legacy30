@@ -1,5 +1,8 @@
 callbacks
 callback: aBlock value: anObject
 	"Register aBlock as a secondary callback. anObject is interpreted as Javascript on the client-side, the result will be sent back to the server and passed into aBlock. Multiple secondary callbacks can be defined with one receiver."
-	
-	self addParameter: (owner canvas callbacks registerCallback: aBlock) -> anObject
+
+	self hasPrimaryCallback
+		ifFalse: [ self callback: nil ].
+	self addParameter: (owner canvas callbacks
+		registerCallback: aBlock) -> anObject

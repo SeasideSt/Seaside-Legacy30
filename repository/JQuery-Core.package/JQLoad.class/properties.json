@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "lr 11/15/2008 20:45",
+	"super" : "JQAjax",
+	"category" : "JQuery-Core-Objects",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "JQLoad",
+	"type" : "normal"
+}

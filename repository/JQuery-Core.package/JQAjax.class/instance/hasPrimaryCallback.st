@@ -1,0 +1,3 @@
+testing
+hasPrimaryCallback
+	^ primaryCallbackId notNil

@@ -1,3 +1,3 @@
 accessing
 data
-	^ self optionAt: 'data' ifAbsentPut: [ JSJoin new ]
+	^ self options at: 'data' ifAbsentPut: [ JSJoin new ]

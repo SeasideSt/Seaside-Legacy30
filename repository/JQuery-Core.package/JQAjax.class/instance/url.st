@@ -1,3 +1,3 @@
 accessing
 url
-	^ self optionAt: 'url' ifAbsentPut: [ WAUrl new ]
+	^ self options at: 'url' ifAbsentPut: [ WAUrl new ]
