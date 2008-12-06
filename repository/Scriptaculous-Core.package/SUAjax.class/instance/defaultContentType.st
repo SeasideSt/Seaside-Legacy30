@@ -1,3 +1,3 @@
 private
 defaultContentType
-	^ self application contentType charset: self application charSet
+	^ self application contentType
