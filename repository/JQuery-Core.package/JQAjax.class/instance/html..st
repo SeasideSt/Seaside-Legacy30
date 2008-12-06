@@ -7,7 +7,6 @@ html: aBlock
 	self callback: [
 		| response |
 		response := WAResponse new.
-		response contentType: (self application contentType
-			charset: self application charSet).
+		response contentType: self application contentType.
 		owner render: aBlock on: response contents.
 		owner requestContext respond: response ]
