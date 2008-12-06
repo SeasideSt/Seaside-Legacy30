@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "WAActionCallback",
+	"super" : "WACallback",
 	"category" : "Javascript-Core-Object",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "JSCallback",
+	"instvars" : [
+		"block"
+	],
+	"name" : "JSAjaxCallback",
 	"type" : "normal"
 }
