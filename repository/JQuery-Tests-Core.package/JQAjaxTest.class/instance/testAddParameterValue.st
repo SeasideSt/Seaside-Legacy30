@@ -1,5 +1,5 @@
 testing-parameters
 testAddParameterValue
 	self 
-		assert: (self ajax reset; addParameter: 'foo' -> true)
+		assert: (self ajax addParameter: 'foo' -> true)
 		equals: self function , '.ajax({data:"foo="+true})'

@@ -1,5 +1,5 @@
 testing-options
 testAsync
 	self
-		assert: (self ajax reset; async: true)
+		assert: (self ajax async: true)
 		equals: self function , '.ajax({async:true})'

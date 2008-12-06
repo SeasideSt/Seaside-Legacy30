@@ -1,4 +1,4 @@
-testing-finding
+testing-navigating
 testFind
 	self
 		assert: ((self jQuery: 'div') find: ':even')

@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "JQAnimateTest",
+	"name" : "JQEffectsTest",
 	"type" : "normal"
 }
