@@ -1,3 +1,3 @@
 accessing
 priority
-	self subclassResponsibility
+	^ 5
