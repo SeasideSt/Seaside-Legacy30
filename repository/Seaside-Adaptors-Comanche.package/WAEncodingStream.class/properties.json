@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "pmm 10/14/2006 14:37",
-	"super" : "Object",
+	"super" : "WAObject",
 	"category" : "Seaside-Adaptors-Comanche",
 	"classinstvars" : [ ],
 	"pools" : [ ],
