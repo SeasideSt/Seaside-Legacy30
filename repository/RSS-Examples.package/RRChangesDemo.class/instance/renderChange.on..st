@@ -3,7 +3,8 @@ renderChange: aChange on: rss
 	| url |
 	url := self baseUrl
 		takeServerParametersFromRequest: self requestContext request;
-		addToPath: WABrowser applicationName;
+		"don't reference WABrowser directly to avoid a hard dependency on a Squeak package"
+		addToPath: 'tools/classbrowser' "WABrowser applicationName";
 		yourself.
 	aChange addParametersTo: url.
 	rss item: [
