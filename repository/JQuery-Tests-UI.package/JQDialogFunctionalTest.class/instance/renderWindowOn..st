@@ -5,7 +5,8 @@ renderWindowOn: html
 		id: (id := html nextId);
 		script: (html jQuery new dialog
 			title: 'Vegetables';
-			autoOpen: false);
+			autoOpen: false;
+			addButton: 'Close' do: html jQuery new dialog close);
 		with: [ html unorderedList list: self vegetables ].
 	html submitButton
 		onClick: (html jQuery id: id) dialog open;
