@@ -4,5 +4,4 @@ javascriptCore
 		name: 'Javascript-Core';
 		description: 'Javascript integration in Seaside. Provides a basic functionality to generate Javascript from Smalltalk.';
 		addDependency: 'Seaside-Canvas';
-		addDependency: 'SmaCC';
 		yourself
