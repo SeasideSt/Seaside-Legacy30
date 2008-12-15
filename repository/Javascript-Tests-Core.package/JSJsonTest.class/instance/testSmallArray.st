@@ -1,7 +1,7 @@
 testing-array
 testSmallArray
 	| result |
-	result := self parse: '[a]'.
-	self assert: (result isKindOf: OrderedCollection).
-	self assert: (result at: 1) = 'a'.
-	self assert: (result size) = 1
+	result := self parse: '["a"]'.
+	self assert: result isArray.
+	self assert: result size = 1.
+	self assert: result first = 'a'.

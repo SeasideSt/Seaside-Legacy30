@@ -2,5 +2,5 @@ testing-array
 testEmptyArray
 	| result |
 	result := self parse: '[]'.
-	self assert: (result isKindOf: OrderedCollection).
-	self assert: (result isEmpty)
+	self assert: result isArray.
+	self assert: result isEmpty

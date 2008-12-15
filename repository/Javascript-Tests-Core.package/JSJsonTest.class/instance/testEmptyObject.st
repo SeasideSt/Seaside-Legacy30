@@ -2,5 +2,5 @@ testing-objects
 testEmptyObject
 	| result |
 	result := self parse: '{}'.
-	self assert: (result isKindOf: Dictionary).
-	self assert: (result isEmpty)
+	self assert: result isDictionary.
+	self assert: result isEmpty
