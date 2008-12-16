@@ -4,6 +4,7 @@ source: html
 	haloHtml := self rendererClass context: html context.
 	context := haloHtml context copy.
 	context clearMode.
+	context visitor: nil.
 	context document: (WAPrettyPrintedDocument renderer: haloHtml).
 	haloHtml div
 		class: 'halo-source';
