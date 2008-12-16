@@ -34,15 +34,15 @@ h1, h2, h3, h4, h5, h6 { border: 0; margin: 0; font-weight: normal; letter-spaci
 #content .tests h3 { font-size: 20px; margin-bottom: 6px; color: #ff7200; }
 #content .tests ul, #content .tests ul li { padding: 0; margin: 0; list-style-type: none; }
 #content .tests ul { margin-bottom: 20px; }
-#content .tests ul li { line-height: 25px; border-bottom: 1px solid #eee;}
+#content .tests ul li { line-height: 25px; }
 #content .tests ul li.active { background-color: #ddd; border-bottom: 1px solid #ccc; }
-#content .tests ul li a {padding-left:10px; color: #222; text-decoration: none; display: block; }
-#content .tests ul li a:hover {background:#eee }
+#content .tests ul li a {padding-left:10px; color: #222; text-decoration: none; display: block; border-bottom: 1px solid #eee;}
+#content .tests ul li a:hover {background:#eee; border-bottom: 1px solid #ccc; }
 
 #content .main { position: relative; padding: 20px; float: left; width: 735px; border-left: 1px solid #ddd; margin-left: -1px; }
 #content .main h3 { font-size: 20px; margin-bottom: 10px; }
 #content .main h4 { font-size: 16px; border-bottom: 1px solid #eee; margin-top: 20px; margin-bottom: 10px; }
-#content .main .demo { position: relative; }
+#content .main .demo { position: relative; min-height:120px }
 #content .main code { font-size: 12px; }
 #content .main code .tag-known { font-weight: bold; color: purple; }
 #content .main code .attribute-known { font-weight: bold; color: black; }
