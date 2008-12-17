@@ -1,3 +1,3 @@
 accessing
 title
-	^ 'Toggle'
+	^ 'Toggle Effects'

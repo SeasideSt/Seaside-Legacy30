@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "JQueryTest",
+	"category" : "JQuery-Tests-UI-Unit",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "JQEffectTest",
+	"type" : "normal"
+}

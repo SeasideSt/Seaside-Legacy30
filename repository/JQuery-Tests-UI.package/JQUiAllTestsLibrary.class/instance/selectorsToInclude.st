@@ -1,3 +1,3 @@
 accessing
 selectorsToInclude
-	^ super selectorsToInclude copyWith: #themeCss
+	^ super selectorsToInclude , #(defaultUiCss themeCss)

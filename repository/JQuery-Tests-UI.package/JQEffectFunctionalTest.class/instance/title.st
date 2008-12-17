@@ -1,3 +1,3 @@
 accessing
 title
-	^ 'Effect'
+	^ 'Basic Effects'
