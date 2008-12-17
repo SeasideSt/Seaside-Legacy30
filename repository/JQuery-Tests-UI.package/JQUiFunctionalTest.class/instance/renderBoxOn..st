@@ -1,6 +1,6 @@
 rendering
 renderBoxOn: html
-	html div class: 'outer'; with: [ 
+	html div class: 'pack'; with: [
 		html div 
-			id: 'box';
-			class: 'inner' ]
+			class: 'box';
+			class: 'blue' ]

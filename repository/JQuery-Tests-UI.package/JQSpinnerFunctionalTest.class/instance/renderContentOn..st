@@ -4,4 +4,5 @@ renderContentOn: html
 		value: count;
 		callback: [ :value | count := value ];
 		script: (html jQuery new spinner
-			onChange: (html jQuery ajax serializeThis))
+			onChange: (html jQuery ajax
+				serializeThis))
