@@ -1,4 +1,4 @@
 initialization
 initialize
 	super initialize.
-	self effect; highlight
+	self effect; highlight; options
