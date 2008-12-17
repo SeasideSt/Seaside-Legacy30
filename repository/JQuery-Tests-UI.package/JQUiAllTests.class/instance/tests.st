@@ -24,5 +24,4 @@ tests
 			add: 'Basic' -> JQEffectFunctionalTest new;
 			add: 'Toggle' -> JQToggleFunctionalTest new;
 			add: 'Transition' -> JQTransitionFunctionalTest new;
-			add: 'Color' -> JQColorAnimateFunctionalTest new;
 			yourself)

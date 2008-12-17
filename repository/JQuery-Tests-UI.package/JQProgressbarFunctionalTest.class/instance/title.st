@@ -1,3 +1,3 @@
 accessing
 title
-	^ 'Progressbar'
+	^ 'Progressbar Widget'

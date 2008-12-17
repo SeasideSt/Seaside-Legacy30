@@ -1,3 +1,3 @@
 accessing
 title
-	^ 'Droppable'
+	^ 'Droppable Interaction'

@@ -1,17 +1,10 @@
 rendering
 renderContentOn: html
-	html div 
-		class: 'outer';
-		with: [
-			html div
-				id: 'effect';
-				class: 'blueBox';
-				with: [html break; break; big: 'Animate me'] ].
-	html div 
-		class: 'action';
-		with: [
-		#(switch toggle add remove)
-			do: [ :each | 
-				html anchor
-					onClick: (self perform: (each asString,'Effect:') asSymbol with: (html jQuery: #effect));
-				with: each ] ]
+	self renderBoxOn: html.
+	html paragraph class: 'actions'; with: [
+		#(green wide bold) do: [ :each |
+			html anchor
+				onClick: ((html jQuery: #box)
+					toggleClass: each
+					duration: 'slow');
+				with: (each copyUpTo: $:) ] ]

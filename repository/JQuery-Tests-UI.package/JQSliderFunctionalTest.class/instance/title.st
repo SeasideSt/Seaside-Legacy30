@@ -1,3 +1,3 @@
 accessing
 title
-	^ 'Slider'
+	^ 'Slider Widget'

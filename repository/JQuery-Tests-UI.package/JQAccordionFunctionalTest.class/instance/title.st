@@ -1,3 +1,3 @@
 accessing
 title
-	^ 'Accordion'
+	^ 'Accordion Widget'

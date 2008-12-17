@@ -1,3 +1,3 @@
 accessing
 title
-	^ 'Selectable'
+	^ 'Selectable Interaction'

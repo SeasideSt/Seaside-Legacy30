@@ -1,3 +1,3 @@
 accessing
 title
-	^ 'Autocomplete'
+	^ 'Autocomplete Widget'

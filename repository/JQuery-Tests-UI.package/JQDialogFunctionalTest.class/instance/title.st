@@ -1,3 +1,3 @@
 accessing
 title
-	^ 'Dialog'
+	^ 'Dialog Widget'

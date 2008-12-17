@@ -1,3 +1,3 @@
 accessing
 title
-	^ 'Magnifier'
+	^ 'Magnifier Widget'
