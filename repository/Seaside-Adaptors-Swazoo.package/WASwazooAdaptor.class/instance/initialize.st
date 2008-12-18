@@ -1,4 +1,4 @@
-initialize-release
+initialization
 initialize
 	super initialize.
 	site := WAPlugableSite named: (WAExternalID new: 32) seasideString on: self.
