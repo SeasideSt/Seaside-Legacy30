@@ -1,3 +1,3 @@
 private
-getFieldsOf: aSwazooRequest into: aDictionaryMerger
+getFieldsOf: aNativeRequest into: aDictionaryMerger
 	self subclassResponsibility

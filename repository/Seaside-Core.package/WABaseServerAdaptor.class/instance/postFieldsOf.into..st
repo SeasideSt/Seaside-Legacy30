@@ -1,3 +1,3 @@
 private
-postFieldsOf: aSwazooRequest into: aDictionaryMerger
+postFieldsOf: aNativeRequest into: aDictionaryMerger
 	self subclassResponsibility
