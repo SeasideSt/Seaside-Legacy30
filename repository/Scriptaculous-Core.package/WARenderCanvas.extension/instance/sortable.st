@@ -1,3 +1,6 @@
-*scriptaculous-core-dragging
+*scriptaculous-core-deprecated
 sortable
-	^ SUSortable on: self
+	self 
+		seasideDeprecatedApi: 'WARenderCanvas>>#sortable'
+		details: 'Use "html scriptaculous sortable" instead'.
+	^ self scriptaculous sortable

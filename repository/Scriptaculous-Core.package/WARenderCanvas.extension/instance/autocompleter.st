@@ -1,3 +1,6 @@
-*scriptaculous-core-controls
+*scriptaculous-core-deprecated
 autocompleter
-	^ SUAutocompleter on: self
+	self 
+		seasideDeprecatedApi: 'WARenderCanvas>>#autocompleter'
+		details: 'Use "html scriptaculous autocompleter" instead'.
+	^ self scriptaculous autocompleter

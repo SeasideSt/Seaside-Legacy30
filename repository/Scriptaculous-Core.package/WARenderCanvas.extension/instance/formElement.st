@@ -1,3 +1,6 @@
-*scriptaculous-core-elements
+*scriptaculous-core-deprecated
 formElement
-	^ SUFormElement on: self
+	self 
+		seasideDeprecatedApi: 'WARenderCanvas>>#formElement'
+		details: 'Use "html scriptaculous formElement" instead'.
+	^ self scriptaculous formElement

@@ -1,3 +1,6 @@
-*scriptaculous-core
+*scriptaculous-core-deprecated
 element
-	^ self add: (SUElement on: canvas)
+	self 
+		seasideDeprecatedApi: 'JSScript>>#element'
+		details: 'Use "aScript scriptaculous element" instead'.
+	^ self scriptaculous element

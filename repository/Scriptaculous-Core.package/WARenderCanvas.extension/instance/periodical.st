@@ -1,3 +1,6 @@
-*scriptaculous-core-ajax
+*scriptaculous-core-deprecated
 periodical
-	^ SUPeriodical on: self
+	self 
+		seasideDeprecatedApi: 'WARenderCanvas>>#periodical'
+		details: 'Use "html scriptaculous periodical" instead'.
+	^ self scriptaculous periodical

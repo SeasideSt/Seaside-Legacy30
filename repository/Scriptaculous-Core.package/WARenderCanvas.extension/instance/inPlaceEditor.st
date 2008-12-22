@@ -1,3 +1,6 @@
-*scriptaculous-core-controls
+*scriptaculous-core-deprecated
 inPlaceEditor
-	^ SUInPlaceEditor on: self
+	self 
+		seasideDeprecatedApi: 'WARenderCanvas>>#inPlaceEditor'
+		details: 'Use "html scriptaculous inPlaceEditor" instead'.
+	^ self scriptaculous inPlaceEditor

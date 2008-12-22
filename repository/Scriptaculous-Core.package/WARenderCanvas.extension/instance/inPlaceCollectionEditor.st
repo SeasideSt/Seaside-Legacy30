@@ -1,3 +1,6 @@
-*scriptaculous-core-controls
+*scriptaculous-core-deprecated
 inPlaceCollectionEditor
-	^ SUInPlaceCollectionEditor on: self
+	self 
+		seasideDeprecatedApi: 'WARenderCanvas>>#inPlaceCollectionEditor'
+		details: 'Use "html scriptaculous inPlaceCollectionEditor" instead'.
+	^ self scriptaculous inPlaceCollectionEditor

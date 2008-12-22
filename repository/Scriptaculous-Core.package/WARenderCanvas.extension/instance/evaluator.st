@@ -1,3 +1,6 @@
-*scriptaculous-core-ajax
+*scriptaculous-core-deprecated
 evaluator
-	^ SUEvaluator on: self
+	self 
+		seasideDeprecatedApi: 'WARenderCanvas>>#evaluator'
+		details: 'Use "html scriptaculous evaluator" instead'.
+	^ self scriptaculous evaluator

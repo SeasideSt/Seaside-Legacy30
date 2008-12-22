@@ -1,3 +1,6 @@
-*scriptaculous-core-elements
+*scriptaculous-core-deprecated
 selector
-	^ SUSelector on: self
+	self 
+		seasideDeprecatedApi: 'WARenderCanvas>>#selector'
+		details: 'Use "html scriptaculous selector" instead'.
+	^ self scriptaculous selector

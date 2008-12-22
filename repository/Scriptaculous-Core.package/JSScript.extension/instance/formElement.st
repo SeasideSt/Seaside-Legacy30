@@ -1,3 +1,6 @@
-*scriptaculous-core
+*scriptaculous-core-deprecated
 formElement
-	^ self add: (SUFormElement on: canvas)
+	self 
+		seasideDeprecatedApi: 'JSScript>>#formElement'
+		details: 'Use "aScript scriptaculous formElement" instead'.
+	^ self scriptaculous formElement

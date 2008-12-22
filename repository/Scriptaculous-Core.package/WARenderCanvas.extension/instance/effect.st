@@ -1,3 +1,6 @@
-*scriptaculous-core-elements
+*scriptaculous-core-deprecated
 effect
-	^ SUEffect on: self
+	self 
+		seasideDeprecatedApi: 'WARenderCanvas>>#effect'
+		details: 'Use "html scriptaculous effect" instead'.
+	^ self scriptaculous effect

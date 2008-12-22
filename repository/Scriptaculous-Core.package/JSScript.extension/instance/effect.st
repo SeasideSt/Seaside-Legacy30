@@ -1,3 +1,6 @@
-*scriptaculous-core
+*scriptaculous-core-deprecated
 effect
-	^ self add: (SUEffect on: canvas)
+	self 
+		seasideDeprecatedApi: 'JSScript>>#effect'
+		details: 'Use "aScript scriptaculous effect" instead'.
+	^ self scriptaculous effect

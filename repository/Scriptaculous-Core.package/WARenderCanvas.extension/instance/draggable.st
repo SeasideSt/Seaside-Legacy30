@@ -1,3 +1,6 @@
-*scriptaculous-core-dragging
+*scriptaculous-core-deprecated
 draggable
-	^ SUDraggable on: self
+	self 
+		seasideDeprecatedApi: 'WARenderCanvas>>#draggable'
+		details: 'Use "html scriptaculous draggable" instead'.
+	^ self scriptaculous draggable

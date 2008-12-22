@@ -1,3 +1,6 @@
-*scriptaculous-core-elements
+*scriptaculous-core-deprecated
 element
-	^ SUElement on: self
+	self 
+		seasideDeprecatedApi: 'WARenderCanvas>>#element'
+		details: 'Use "html scriptaculous element" instead'.
+	^ self scriptaculous element

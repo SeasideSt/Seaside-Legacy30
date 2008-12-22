@@ -1,3 +1,6 @@
-*scriptaculous-core-elements
+*scriptaculous-core-deprecated
 insertion
-	^ SUInsertion on: self
+	self 
+		seasideDeprecatedApi: 'WARenderCanvas>>#insertion'
+		details: 'Use "html scriptaculous insertion" instead'.
+	^ self scriptaculous insertion

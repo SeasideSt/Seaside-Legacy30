@@ -1,3 +1,6 @@
-*scriptaculous-core-dragging
+*scriptaculous-core-deprecated
 droppable
-	^ SUDroppable on: self
+	self 
+		seasideDeprecatedApi: 'WARenderCanvas>>#droppable'
+		details: 'Use "html scriptaculous droppable" instead'.
+	^ self scriptaculous droppable

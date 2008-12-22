@@ -1,3 +1,6 @@
-*scriptaculous-core-ajax
+*scriptaculous-core-deprecated
 request
-	^ SURequest on: self
+	self 
+		seasideDeprecatedApi: 'WARenderCanvas>>#request'
+		details: 'Use "html scriptaculous request" instead'.
+	^ self scriptaculous request

@@ -1,3 +1,6 @@
-*scriptaculous-core
+*scriptaculous-core-deprecated
 selector
-	^ self add: (SUSelector on: canvas)
+	self 
+		seasideDeprecatedApi: 'JSScript>>#selector'
+		details: 'Use "aScript scriptaculous selector" instead'.
+	^ self scriptaculous selector

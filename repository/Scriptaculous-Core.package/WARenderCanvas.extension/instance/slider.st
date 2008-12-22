@@ -1,3 +1,6 @@
-*scriptaculous-core-controls
+*scriptaculous-core-deprecated
 slider
-	^ SUSlider on: self
+	self 
+		seasideDeprecatedApi: 'WARenderCanvas>>#slider'
+		details: 'Use "html scriptaculous slider" instead'.
+	^ self scriptaculous slider

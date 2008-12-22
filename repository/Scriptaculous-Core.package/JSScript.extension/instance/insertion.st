@@ -1,3 +1,6 @@
-*scriptaculous-core
+*scriptaculous-core-deprecated
 insertion
-	^ self add: (SUInsertion on: canvas)
+	self 
+		seasideDeprecatedApi: 'JSScript>>#insertion'
+		details: 'Use "aScript scriptaculous insertion" instead'.
+	^ self scriptaculous insertion
