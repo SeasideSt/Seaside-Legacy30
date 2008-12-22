@@ -6,10 +6,10 @@ renderContentOn: html
 			style: 'width: 75%';
 			value: 'margin-left: 120px; height: 140px; font-size: 20pt; width: 360px'.
 		html submitButton
-			onClick: (html effect
+			onClick: (html scriptaculous effect
 				morph;
 				id: 'morph';
-				style: (html formElement
+				style: (html scriptaculous formElement
 					id: 'rules';
 					value));
 			text: 'Morph' ].

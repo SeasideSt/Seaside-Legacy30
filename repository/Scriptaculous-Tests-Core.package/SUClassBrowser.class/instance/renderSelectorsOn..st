@@ -6,7 +6,7 @@ renderSelectorsOn: html
 		selected: selector;
 		list: self selectors;
 		callback: [ :value | self setSelector: value ];
-		onChange: (html updater
+		onChange: (html scriptaculous updater
 			id: 'source';
 			triggerFormElement: 'selectorList';
 			on: #renderSourceOn: of: self)

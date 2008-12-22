@@ -11,8 +11,8 @@ renderContentOn: html
 			callback: [ :value | text := value ].
 		html div
 			class: 'autocomplete';
-			script: (html autocompleter
+			script: (html scriptaculous autocompleter
 				element: textId;
-				onSelected: (html request
+				onSelected: (html scriptaculous request
 					triggerFormElement: textId);
 				on: #renderListOn:for: of: self) ]

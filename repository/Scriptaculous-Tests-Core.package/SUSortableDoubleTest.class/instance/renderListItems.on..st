@@ -3,11 +3,11 @@ renderListItems: aSelector on: html
 	html unorderedList
 		id: aSelector asString;
 		style: 'width: 200px; min-height: 50px;';
-		script: (html sortable
+		script: (html scriptaculous sortable
 			constraint: false;
 			dropOnEmpty: true;
 			containment: #( left right );
-			onUpdate: (html updater
+			onUpdate: (html scriptaculous updater
 				id: aSelector , 'status';
 				triggerSortable: aSelector asString
 					callback: [ :values | self perform: aSelector asMutator with: values ];

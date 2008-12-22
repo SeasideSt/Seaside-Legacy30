@@ -7,13 +7,13 @@ renderContentOn: html
 			with: count.
 		html space.
 		html anchor
-			onClick: (html updater
+			onClick: (html scriptaculous updater
 				id: id;
 				callback: [ :render | self increase; renderCountOn: render ]);
 			with: '++'.
 		html space.
 		html anchor
-			onClick: (html updater
+			onClick: (html scriptaculous updater
 				id: id;
 				callback: [ :render | self decrease; renderCountOn: render ]);
 			with: '--' ]

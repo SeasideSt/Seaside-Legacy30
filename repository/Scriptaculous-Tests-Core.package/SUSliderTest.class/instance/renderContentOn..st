@@ -6,12 +6,12 @@ renderContentOn: html
 	positionId := html nextId.
 	html div id: trackId; class: 'track'; with: [ html div id: handleId; class: 'handle' ].
 	html paragraph id: positionId; with: position.
-	html script: (html slider
+	html script: (html scriptaculous slider
 		handleId: handleId;
 		trackId: trackId;
 		value: position;
 		range: (0 to: 100);
-		onChange: (html updater
+		onChange: (html scriptaculous updater
 			id: positionId;
 			triggerSliderCallback: [ :value | position := value rounded ];
 			callback: [ :renderer | renderer render: position ]))

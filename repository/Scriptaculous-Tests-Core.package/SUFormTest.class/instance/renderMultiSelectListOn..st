@@ -8,7 +8,7 @@ renderMultiSelectListOn: html
 				list: (1 to: 9);
 				selected: mutliSelectList;
 				callback: [ :value | mutliSelectList := value ];
-				onChange: (html updater
+				onChange: (html scriptaculous updater
 					id: mid;
 					triggerForm: fid;
 					callback: [ :r | r render: mutliSelectList ]) ]

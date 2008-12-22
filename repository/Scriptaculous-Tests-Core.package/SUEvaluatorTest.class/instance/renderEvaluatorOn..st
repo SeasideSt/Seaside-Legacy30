@@ -1,5 +1,5 @@
 rendering
 renderEvaluatorOn: aScript
-	aScript selector
+	aScript scriptaculous selector
 		add: selector;
 		do: [ :each | each effect highlight ]

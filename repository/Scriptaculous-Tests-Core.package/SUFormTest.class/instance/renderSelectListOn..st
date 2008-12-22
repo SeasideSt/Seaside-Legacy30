@@ -7,7 +7,7 @@ renderSelectListOn: html
 				list: (1 to: 9);
 				selected: selectList;
 				callback: [ :value | selectList := value ];
-				onChange: (html updater
+				onChange: (html scriptaculous updater
 					id: mid;
 					triggerForm: fid;
 					callback: [ :r | r render: selectList ]) ]

@@ -10,7 +10,7 @@ renderRadioButtonOn: html
 							group: group;
 							selected: radioButton = each;
 							callback: [ radioButton := each ];
-							onChange: (html updater
+							onChange: (html scriptaculous updater
 								id: mid;
 								triggerForm: fid;
 								callback: [ :r | r render: radioButton ]).

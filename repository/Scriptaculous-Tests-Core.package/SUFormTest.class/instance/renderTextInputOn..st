@@ -6,7 +6,7 @@ renderTextInputOn: html
 			html textInput
 				value: textInput;
 				callback: [ :value | textInput := value ];
-				onChange: (html updater
+				onChange: (html scriptaculous updater
 					id: mid;
 					triggerForm: fid;
 					callback: [ :r | r render: textInput ]) ]

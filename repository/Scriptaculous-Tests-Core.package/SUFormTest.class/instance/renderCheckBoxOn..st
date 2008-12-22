@@ -6,7 +6,7 @@ renderCheckBoxOn: html
 			html checkbox
 				value: checkBox;
 				callback: [ :value | checkBox := value ];
-				onClick: (html updater
+				onClick: (html scriptaculous updater
 					id: mid;
 					triggerForm: fid;
 					callback: [ :r | r render: checkBox ]) ]

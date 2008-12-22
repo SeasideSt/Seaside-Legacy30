@@ -1,7 +1,7 @@
 rendering
 renderInPlaceCollectionEditorOn: html
 	html paragraph
-		script: (html inPlaceCollectionEditor
+		script: (html scriptaculous inPlaceCollectionEditor
 			collection: list;
 			cancelControl: 'button';
 			triggerInPlaceEditor: [ :value | selected := value ];

@@ -6,7 +6,7 @@ renderTextAreaOn: html
 			html textArea columns: 20;
 				value: textArea;
 				callback: [ :value | textArea := value ];
-				onChange: (html updater
+				onChange: (html scriptaculous updater
 					id: mid;
 					triggerForm: fid;
 					callback: [ :r | r render: textArea ]) ]

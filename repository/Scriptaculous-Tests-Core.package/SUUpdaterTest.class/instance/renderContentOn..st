@@ -5,7 +5,7 @@ renderContentOn: html
 	html paragraph: [
 		self insertions do: [ :each |
 			html anchor
-				onClick: (html updater
+				onClick: (html scriptaculous updater
 					id: elementId;
 					insertion: each;
 					on: #renderElementOn: of: self);

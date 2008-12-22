@@ -3,10 +3,10 @@ renderCartOn: html id: cartId
 	html div
 		class: 'cart';
 		id: cartId;
-		script: (html droppable
+		script: (html scriptaculous droppable
 			accept: 'inventory-item';
 			hoverclass: 'hover';
-			onDrop: (html updater
+			onDrop: (html scriptaculous updater
 				id: cartId;
 				triggerPassenger: [ :value | self cart add: value ];
 				callback: [ :renderer | self renderCartItemsOn: renderer ]));

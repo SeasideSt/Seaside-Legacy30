@@ -6,9 +6,9 @@ renderCartItemsOn: html
 		html div
 			class: 'cart-item';
 			passenger: each value;
-			script: (html draggable
-						revert: true;
-						ghosting: true);
+			script: (html scriptaculous draggable
+				revert: true;
+				ghosting: true);
 			with: [
 				html text: each value.
 				each key > 1

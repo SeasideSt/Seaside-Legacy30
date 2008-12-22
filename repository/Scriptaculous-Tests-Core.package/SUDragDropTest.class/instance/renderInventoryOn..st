@@ -6,6 +6,6 @@ renderInventoryOn: html
 				html span
 					passenger: each;
 					class: 'inventory-item';
-					script: (html draggable revert: true);
+					script: (html scriptaculous draggable revert: true);
 					with: each ]
 			separatedBy: [ html text: ', ' ] ]

@@ -3,7 +3,7 @@ renderContentOn: html
 	html paragraph: [
 		self effects do: [ :each |
 			html anchor
-				onClick: (html effect
+				onClick: (html scriptaculous effect
 					id: 'effect';
 					perform: each);
 				with: (self labelForSelector: each) ]

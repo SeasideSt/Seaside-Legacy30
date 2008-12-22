@@ -3,8 +3,8 @@ renderContentOn: html
 	| id |
 	html unorderedList
 		id: (id := html nextId);
-		script: (html sortable
-			onUpdate: (html request
+		script: (html scriptaculous sortable
+			onUpdate: (html scriptaculous request
 				triggerSortable: id
 				callback: [ :value | collection := value ]));
 		with: [ self renderListItemsOn: html ]

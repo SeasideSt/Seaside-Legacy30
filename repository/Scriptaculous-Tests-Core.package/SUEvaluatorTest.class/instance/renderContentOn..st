@@ -8,7 +8,7 @@ renderContentOn: html
 				value: (selector ifNil: [ 'h1' ]);
 				callback: [ :value | selector := value ].
 			html submitButton
-				onClick: (html evaluator
+				onClick: (html scriptaculous evaluator
 					triggerFormElement: 'selector';
 					on: #renderEvaluatorOn: of: self;
 					return: false);
