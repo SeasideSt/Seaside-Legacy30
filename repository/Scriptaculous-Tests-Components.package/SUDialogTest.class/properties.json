@@ -6,7 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"form",
 		"answerBlock"
 	],
 	"name" : "SUDialogTest",
