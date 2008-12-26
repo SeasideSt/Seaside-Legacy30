@@ -1,13 +1,14 @@
 testing-accessing
 testUrl
-	| ajax |
-	ajax := self ajax callback: [ ].
 	self 
-		assert: ajax url
+		assert: self ajax url
+		equals: '"/"'.
+	self
+		assert: (self ajax callback: [ ]; url)
 		equals: '"http://www.seaside.st/"'.
 	self
-		assert: ajax fullUrl
-		equals: '"http://www.seaside.st/?_s=1&_k=a&1"'.
+		assert: (self ajax callback: [ ] value: $a; url)
+		equals: '"http://www.seaside.st/"'.
 	self
-		assert: ajax javascriptUrl
-		equals: '"http://www.seaside.st/"+"?"+["_s=1","_k=a","1"].join("&")'
+		assert: (self ajax callback: [ ] value: self mock; url)
+		equals: '"http://www.seaside.st/"'

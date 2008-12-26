@@ -1,5 +1,11 @@
 testing-parameters
 testAddParameterValue
-	self 
+	self
+		assert: (self ajax addParameter: 'foo' -> 12)
+		equals: self function , '.ajax({data:"foo="+12})'.
+	self
 		assert: (self ajax addParameter: 'foo' -> true)
-		equals: self function , '.ajax({data:"foo="+true})'
+		equals: self function , '.ajax({data:"foo="+true})'.
+	self
+		assert: (self ajax addParameter: 'foo' -> self mock)
+		equals: self function , '.ajax({data:"foo="+mock})'
