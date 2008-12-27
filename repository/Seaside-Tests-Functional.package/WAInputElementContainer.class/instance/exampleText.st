@@ -1,3 +1,0 @@
-accessing
-exampleText
-	^ 'Example Text'

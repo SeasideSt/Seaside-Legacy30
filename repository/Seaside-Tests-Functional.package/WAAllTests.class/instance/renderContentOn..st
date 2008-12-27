@@ -8,7 +8,7 @@ renderContentOn: html
 				with: [ html html: '&larr;' ].
 			html select
 				list: classes;
-				beSubmitOnChange;
+				onChange: 'submit()';
 				selected: self selected;
 				labels: [ :value | value name ];
 				callback: [ :value | self selected: value ].
