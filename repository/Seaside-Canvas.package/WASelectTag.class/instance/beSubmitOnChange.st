@@ -4,5 +4,5 @@ beSubmitOnChange
 
 	self 
 		seasideDeprecatedApi: 'WASelectTag>>#beSubmitOnChange'
-		details: 'Use a dedicated Javascript library instead.'.
+		details: 'Use a dedicated Javascript library instead.'.
 	self onChange: 'submit()'
