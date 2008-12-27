@@ -3,14 +3,14 @@ renderChooserOn: html
 	html div class: 'chooser'; with: [
 		html form: [
 			html select
-				beSubmitOnChange;
-				list: self allClasses;
 				selected: class;
+				list: self allClasses;
+				onChange: 'submit()';
 				callback: [ :value | self class: value ] ].
 		self allSelectors size > 1 ifTrue: [
 			html form: [
 				html select
-					beSubmitOnChange;
-					list: self allSelectors;
 					selected: selector;
+					list: self allSelectors;
+					onChange: 'submit()';
 					callback: [ :value | self selector: value ] ] ] ]
