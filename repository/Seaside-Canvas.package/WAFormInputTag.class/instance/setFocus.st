@@ -4,6 +4,6 @@ setFocus
 	
 	self
 		seasideDeprecatedApi: 'WAFormInputTag>>#setFocus'
-		details: 'Use an appropriate Javascript library instead.'.
+		details: 'Use an appropriate Javascript library instead.'.
 	self requestContext
 		addLoadScript: 'document.getElementById(' , self ensureId printString , ').focus()'
