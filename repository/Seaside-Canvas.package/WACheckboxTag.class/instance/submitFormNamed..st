@@ -1,3 +1,6 @@
-convenience
-submitFormNamed: formName 
-	self onClick: 'submitForm(''' , formName seasideString , '''); return false;'
+deprecated
+submitFormNamed: aString 
+	self 
+		seasideDeprecatedApi: 'WACheckboxTag>>#submitFormNamed:'
+		details: 'Use a dedicated Javascript library instead.'.
+	self onClick: 'document.getElementById(' , aString printString , ').submit();return false;'

@@ -1,3 +1,5 @@
-javascript
+deprecated
 setCursorPosition: anInteger
-	self setSelectionFrom: anInteger to: anInteger
+	self
+		seasideDeprecatedApi: 'WAAbstractTextAreaTag>>#setCursorPosition:'
+		details: 'Use an appropriate Javascript library instead.'
