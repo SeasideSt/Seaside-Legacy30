@@ -9,7 +9,7 @@
 		"method",
 		"effect",
 		"speed",
-		"callback"
+		"complete"
 	],
 	"name" : "JQEffect",
 	"type" : "normal"

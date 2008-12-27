@@ -1,4 +1,3 @@
 private
 action: aString
-	action := aString.
-	arguments := nil
+	self action: aString arguments: nil

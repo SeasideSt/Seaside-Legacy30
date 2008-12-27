@@ -2,4 +2,4 @@ actions
 disable
 	"Temporarily disable the functionality."
 	
-	action := 'disable'
+	self action: 'disable'
