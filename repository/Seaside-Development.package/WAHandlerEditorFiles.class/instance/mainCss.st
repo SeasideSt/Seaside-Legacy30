@@ -4,8 +4,8 @@ mainCss
 body {
 	color: #002842;
 	font-size: 12px;
-	font-family: Helvetica, Verdana, Arial, sans-serif;
 	background-color: #fbfffa;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
 }
 input, textarea, select {
 	color: #002842;
@@ -26,12 +26,12 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 1ex;
 	font-weight: normal;
 }
-table { border: 0; border-spacing: 0 2px; }
-td { padding-left: 0; }
-th {
-	text-align: right;
-	padding-right: 1em;
+table {
+	border: 0;
+	border-collapse: collapse;
 }
+td, th { padding: 3px 1em 3px 0; }
+th { text-align: right; }
 
 /* special */
 h1.logo a { 
@@ -42,12 +42,8 @@ h1.logo a {
 	text-indent: -100em;
 	background: url(logo.png) no-repeat;
 }
-h1.title a {
-	color: #01598d;
-}
-span.unspecified {
-	color: #ff7000;
-}
+h1.title a { color: #01598d; }
+span.unspecified { color: #ff7000; }
 a.download {
 	background: url(save.png) no-repeat;
 	background-position: 0 50%;

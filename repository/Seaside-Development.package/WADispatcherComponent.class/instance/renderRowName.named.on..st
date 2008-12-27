@@ -1,11 +1,11 @@
 rendering-rows
 renderRowName: anEntryPoint named: aString on: html
 	anEntryPoint isDispatcher
-		ifTrue: [ 
+		ifTrue: [
 			html anchor
 				callback: [ self dispatcher: anEntryPoint ];
-				with: aString ]
+				with: [ html code: aString , '/' ] ]
 		ifFalse: [
 			html anchor 
 				url: anEntryPoint basePath , '/'; 
-				with: aString ]
+				with: [ html code: aString ] ]
