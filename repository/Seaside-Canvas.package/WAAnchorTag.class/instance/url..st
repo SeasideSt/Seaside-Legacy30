@@ -1,3 +1,3 @@
 accessing
-url: aString
-	url := aString
+url: anUrlOrString
+	url := anUrlOrString

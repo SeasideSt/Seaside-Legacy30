@@ -7,4 +7,5 @@ with: anObject
 		self before.
 		canvas render: anObject.
 		self after ].
-	self closeTag
+	self isClosed
+		ifFalse: [ self closeTag ]

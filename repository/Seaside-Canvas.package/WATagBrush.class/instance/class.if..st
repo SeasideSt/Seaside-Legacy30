@@ -1,12 +1,12 @@
 convenience
 class: aString if: aBoolean
-	"Adds the class aString aString to this element if aBoolean is true,
-
-	Example
-
+	"Adds the class aString to the receiving element if aBoolean is true. 
+	
+	Example:
+	
 	html div
-		class: 'important' if: self isImportant;
-		with: self message"
+		class: 'error' if: self hasError;
+		with: self errorMessage"
 
 	aBoolean
-		ifTrue: [self class: aString]
+		ifTrue: [ self class: aString ]

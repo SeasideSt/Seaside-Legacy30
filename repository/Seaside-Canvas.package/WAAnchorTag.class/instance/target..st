@@ -1,6 +1,5 @@
-deprecated
+attributes
 target: aString 
-	self seasideDeprecatedApi: 'WAAnchorTag>>target:'.
-	self attributes 
-		at: 'target'
-		put: aString
+	"This attribute specifies the name of a frame where a document is to be opened."
+	
+	self attributes at: 'target' put: aString
