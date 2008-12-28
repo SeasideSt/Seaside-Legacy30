@@ -1,0 +1,30 @@
+testing-callbacks
+testDispatchCallback
+	| key key1 key2 |
+	key := registry registerDispatchCallback.
+	key1 := registry registerValueCallback: [ :v | log add: 1; add: v ].
+	key2 := registry registerValueCallback: [ :v | log add: 2; add: v ].
+	
+	" an empty callback "
+	self
+		shouldnt: [ self request: (WASmallDictionary new at: key put: nil; yourself) ]
+		raise: WARenderNotification.
+	self assertLog: #().
+	
+	" another empty callback "
+	self
+		shouldnt: [ self request: (WASmallDictionary new at: key put: ''; yourself) ]
+		raise: WARenderNotification.
+	self assertLog: #().
+	
+	" the first callback "
+	self
+		shouldnt: [ self request: (WASmallDictionary new at: key put: key1; yourself) ]
+		raise: WARenderNotification.
+	self assertLog: #(1 '').
+	
+	" the second callback within array "
+	self
+		shouldnt: [ self request: (WASmallDictionary new at: key put: (Array with: key2); yourself) ]
+		raise: WARenderNotification.
+	self assertLog: #(2 '')

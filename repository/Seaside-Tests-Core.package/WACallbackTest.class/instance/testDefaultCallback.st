@@ -1,0 +1,28 @@
+testing-callbacks
+testDefaultCallback
+	| keyValue keySave keyDefault |
+	keyValue := registry registerValueCallback: [ :v | log add: v ].
+	keySave := registry registerActionCallback: [ log add: 'save' ].
+	keyDefault := registry registerDefaultActionCallback: [ log add: 'default' ].
+
+	" a save callback "
+	self
+		should: [ self request: (WASmallDictionary new at: keyValue put: 'a'; at: keySave put: nil; at: keyDefault put: nil; yourself) ]
+		raise: WARenderNotification.
+	self assertLog: #('a' 'save').
+
+	self
+		should: [ self request: (WASmallDictionary new at: keyDefault put: nil; at: keySave put: nil; at: keyValue put: 'b'; yourself) ]
+		raise: WARenderNotification.
+	self assertLog: #('b' 'save').
+	
+	" a default callback "
+	self
+		should: [ self request: (WASmallDictionary new at: keyValue put: 'a'; at: keyDefault put: nil; yourself) ]
+		raise: WARenderNotification.
+	self assertLog: #('a' 'default').
+
+	self
+		should: [ self request: (WASmallDictionary new at: keyDefault put: nil; at: keyValue put: 'b'; yourself) ]
+		raise: WARenderNotification.
+	self assertLog: #('b' 'default')
