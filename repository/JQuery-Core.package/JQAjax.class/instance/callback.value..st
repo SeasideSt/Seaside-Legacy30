@@ -4,4 +4,4 @@ callback: aBlock value: anObject
 
 	self enableCallbacks.
 	self addParameter: (owner canvas callbacks
-		registerCallback: aBlock) -> anObject
+		registerValueCallback: aBlock) -> anObject
