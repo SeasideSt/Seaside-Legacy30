@@ -1,5 +1,5 @@
 testing-tags-anchors
-testAnchorTagWithUrl
+testAnchorUrl
 	| url string |
 	url := WAUrl new.
 	url

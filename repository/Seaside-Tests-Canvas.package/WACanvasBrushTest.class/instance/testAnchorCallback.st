@@ -9,4 +9,4 @@ testAnchorCallback
 			self 
 				should: [ html anchor callback: [ :value | ] ]
 				raise: Error ]
-		gives: '<a href="javascript:void(0)"></a>'
+		gives: '<a></a>'

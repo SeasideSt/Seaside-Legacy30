@@ -1,5 +1,5 @@
 testing-tags-tables
-testTableAlltogether
+testTableFull
 	self
 		assert: [ :html | 
 			html table: [

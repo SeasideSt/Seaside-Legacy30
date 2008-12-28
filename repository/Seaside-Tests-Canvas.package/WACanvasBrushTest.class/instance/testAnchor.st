@@ -1,11 +1,8 @@
 testing-tags-anchors
-testAnchorTag
+testAnchor
 	self
 		assert: [ :html | html anchor ]
-		gives: '<a href="javascript:void(0)"></a>'.
-	self
-		assert: [ :html | html anchor name: 'foo' ]
-		gives: '<a name="foo"></a>'.
+		gives: '<a></a>'.
 	self
 		assert: [ :html | html anchor callback: [ ]; with: 'foo' ]
 		gives: '<a href="/?1">foo</a>'.
