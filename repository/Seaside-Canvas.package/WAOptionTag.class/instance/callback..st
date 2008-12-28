@@ -1,3 +1,3 @@
 callbacks
 callback: aBlock
-	self value: (canvas callbacks registerCallback: aBlock)
+	self value: (canvas callbacks registerValueCallback: aBlock)
