@@ -1,3 +1,5 @@
 accessing
 priority
-	^ 5
+	"Answer the priority in which the receiver is evaluated."
+	
+	^ 0

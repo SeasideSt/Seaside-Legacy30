@@ -1,4 +1,5 @@
 initialization
 initialize
 	super initialize.
-	callbacks := WACallbackRegistry new
+	callbacks := Dictionary new.
+	nextKey := 1

@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WAImageMapCallback",
+	"name" : "WAMapCallback",
 	"type" : "normal"
 }
