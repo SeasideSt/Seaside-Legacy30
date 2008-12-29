@@ -1,0 +1,3 @@
+testing
+testHandlesRequestContextNotFound
+	self assertHandles: WARequestContextNotFound new
