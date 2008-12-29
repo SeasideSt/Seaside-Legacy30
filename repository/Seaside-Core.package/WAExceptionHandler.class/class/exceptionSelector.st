@@ -1,3 +1,3 @@
 exception handling
-exceptionsToCatch
+exceptionSelector
 	^ WARequestContextNotFound

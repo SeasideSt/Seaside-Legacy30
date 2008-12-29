@@ -6,7 +6,7 @@ handleExceptionsDuring: aBlock context: aRequestContext
 	handler := nil.
 		
 	^ aBlock
-		on: self exceptionsToCatch
+		on: self
 		do: [ :exception | 
 			[ (handler ifNil: [ handler := self context: aRequestContext ])
 				handleException: exception ]
