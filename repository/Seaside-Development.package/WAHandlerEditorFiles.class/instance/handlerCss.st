@@ -1,10 +1,9 @@
-accessing-styles
-mainCss
+accessing-files
+handlerCss
 	^ '/* html */
 body {
 	color: #002842;
 	font-size: 12px;
-	background-color: #fbfffa;
 	font-family: Helvetica, Verdana, Arial, sans-serif;
 }
 input, textarea, select {

@@ -1,4 +1,4 @@
-accessing-pictures
+accessing-files
 faviconIco
 	| cache |
 	cache := #(nil) beMutable.

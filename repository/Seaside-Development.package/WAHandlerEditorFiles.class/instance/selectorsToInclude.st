@@ -1,3 +1,3 @@
 accessing
 selectorsToInclude
-	^ #( faviconIco mainCss )
+	^ #( faviconIco handlerCss handlerJs )

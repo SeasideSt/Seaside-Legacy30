@@ -7,5 +7,5 @@ renderAttributesOn: html
 				html tableData
 					colSpan: 3;
 					with: [ html heading level3; with: (self labelForSelector: association key) ] ].
-				association value do: [ :attribute |
-				self renderAttribute: attribute on: html ] ] ]
+				association value 
+					do: [ :attribute | self renderAttribute: attribute on: html ] ] ]

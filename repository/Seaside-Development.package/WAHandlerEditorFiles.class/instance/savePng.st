@@ -1,4 +1,4 @@
-accessing-pictures
+accessing-files
 savePng
 	| cache |
 	cache := #(nil) beMutable.
