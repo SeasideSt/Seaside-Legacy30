@@ -1,10 +1,10 @@
 testing
-testRequestContextNotFound
+testRequestContextRequest
 	| context |
 	context := self requestContext.
 	self handlerClass
 		handleExceptionsDuring: [
-			self assert: context == WARequestContextNotFound raiseSignal.
+			self assert: context == WARequestContextRequest raiseSignal.
 			^ self "success"]
 		context: context.
 		
