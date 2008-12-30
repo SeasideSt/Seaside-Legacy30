@@ -1,5 +1,3 @@
 accessing
 table
-	table isNil ifTrue: [
-		table := self buildTable ].
-	^table
+	^ table ifNil: [ table := self buildTable ]

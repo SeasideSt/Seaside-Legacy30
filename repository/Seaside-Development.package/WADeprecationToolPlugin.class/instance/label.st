@@ -1,3 +1,3 @@
 accessing
 label
-	^ 'Deprecated'
+	^ 'Deprecated (' , filter notifications size printString , ')'
