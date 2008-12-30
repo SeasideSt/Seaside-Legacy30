@@ -2,5 +2,5 @@
 selector
 	self 
 		seasideDeprecatedApi: 'JSScript>>#selector'
-		details: 'Use "aScript scriptaculous selector" instead'.
+		details: 'Use "aScript scriptaculous selector".'.
 	^ self scriptaculous selector

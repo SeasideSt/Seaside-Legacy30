@@ -2,5 +2,5 @@
 selector
 	self 
 		seasideDeprecatedApi: 'WARenderCanvas>>#selector'
-		details: 'Use "html scriptaculous selector" instead'.
+		details: 'Use "html scriptaculous selector".'.
 	^ self scriptaculous selector

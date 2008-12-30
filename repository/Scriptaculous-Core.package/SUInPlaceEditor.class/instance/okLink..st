@@ -1,7 +1,8 @@
 deprecated
 okLink: aBoolean
-	self seasideDeprecatedApi: 'SUInPlaceEditor>>okLink:'
-		details: 'Use SUInPlaceEditor>>okControl:.'.
+	self
+		seasideDeprecatedApi: 'SUInPlaceEditor>>#okLink:'
+		details: 'Use okControl:.'.
 	self okControl: (aBoolean 
 		ifTrue: [ 'link' ]
 		ifFalse: [ false ])

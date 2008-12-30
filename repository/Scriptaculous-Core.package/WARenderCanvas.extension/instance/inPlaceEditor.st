@@ -2,5 +2,5 @@
 inPlaceEditor
 	self 
 		seasideDeprecatedApi: 'WARenderCanvas>>#inPlaceEditor'
-		details: 'Use "html scriptaculous inPlaceEditor" instead'.
+		details: 'Use "html scriptaculous inPlaceEditor".'.
 	^ self scriptaculous inPlaceEditor

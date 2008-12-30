@@ -2,5 +2,5 @@
 element
 	self 
 		seasideDeprecatedApi: 'JSScript>>#element'
-		details: 'Use "aScript scriptaculous element" instead'.
+		details: 'Use "aScript scriptaculous element".'.
 	^ self scriptaculous element

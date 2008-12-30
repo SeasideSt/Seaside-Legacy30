@@ -2,5 +2,5 @@
 inPlaceCollectionEditor
 	self 
 		seasideDeprecatedApi: 'WARenderCanvas>>#inPlaceCollectionEditor'
-		details: 'Use "html scriptaculous inPlaceCollectionEditor" instead'.
+		details: 'Use "html scriptaculous inPlaceCollectionEditor".'.
 	^ self scriptaculous inPlaceCollectionEditor

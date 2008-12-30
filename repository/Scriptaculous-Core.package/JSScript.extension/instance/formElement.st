@@ -2,5 +2,5 @@
 formElement
 	self 
 		seasideDeprecatedApi: 'JSScript>>#formElement'
-		details: 'Use "aScript scriptaculous formElement" instead'.
+		details: 'Use "aScript scriptaculous formElement".'.
 	^ self scriptaculous formElement

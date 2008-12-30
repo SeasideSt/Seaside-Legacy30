@@ -2,5 +2,5 @@
 insertion
 	self 
 		seasideDeprecatedApi: 'JSScript>>#insertion'
-		details: 'Use "aScript scriptaculous insertion" instead'.
+		details: 'Use "aScript scriptaculous insertion".'.
 	^ self scriptaculous insertion

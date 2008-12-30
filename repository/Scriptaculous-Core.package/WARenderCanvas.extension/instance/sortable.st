@@ -2,5 +2,5 @@
 sortable
 	self 
 		seasideDeprecatedApi: 'WARenderCanvas>>#sortable'
-		details: 'Use "html scriptaculous sortable" instead'.
+		details: 'Use "html scriptaculous sortable".'.
 	^ self scriptaculous sortable

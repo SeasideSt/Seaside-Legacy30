@@ -2,5 +2,5 @@
 insertion
 	self 
 		seasideDeprecatedApi: 'WARenderCanvas>>#insertion'
-		details: 'Use "html scriptaculous insertion" instead'.
+		details: 'Use "html scriptaculous insertion".'.
 	^ self scriptaculous insertion

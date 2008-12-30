@@ -2,5 +2,5 @@
 autocompleter
 	self 
 		seasideDeprecatedApi: 'WARenderCanvas>>#autocompleter'
-		details: 'Use "html scriptaculous autocompleter" instead'.
+		details: 'Use "html scriptaculous autocompleter".'.
 	^ self scriptaculous autocompleter
