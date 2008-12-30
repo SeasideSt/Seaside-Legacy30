@@ -1,6 +1,6 @@
 deprecated
 submitOnClick
 	self 
-		seasideDeprecatedApi: 'WAFormInputTag>>#submitOnChange'
-		details: 'Use a dedicated Javascript library instead.'.
+		seasideDeprecatedApi: 'WAFormInputTag>>#submitOnClick'
+		details: 'Use a dedicated Javascript library.'.
 	self onClick: 'submit()'

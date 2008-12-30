@@ -1,5 +1,6 @@
 deprecated
 src: aString
-	self seasideDeprecatedApi: 'WAImageTag>>src:'
-		details: 'Use WAImageTag>>url:.'.
+	self 
+		seasideDeprecatedApi: 'WAImageTag>>#src:'
+		details: 'Use #url:.'.
 	self url: aString
