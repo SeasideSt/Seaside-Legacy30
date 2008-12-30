@@ -4,8 +4,9 @@ sendsNotPortableMessage
 	matcher := ParseTreeSearcher new.
 	matcher
 		matchesAnyOf: (Slime notPortableSelectors asArray
-			collect: [ :each | '`@object' , (self genericPatternForSelector: each) ]) , 
-			#('Dictionary withAll: `@args')
+			collect: [ :each | '`@object' , (self genericPatternForSelector: each) ]) , #(
+			'Dictionary withAll: `@args' " not supported "
+			'``@block on: ``@class do: [ | `@temps | `@.statements ]' " block argument expected ")
 		do: [ :node :answer | node ].
 	^ self new
 		matcher: matcher;
