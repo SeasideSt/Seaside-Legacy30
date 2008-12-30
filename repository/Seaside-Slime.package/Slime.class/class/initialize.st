@@ -4,7 +4,6 @@ initialize
 	self initializeBraceSelectors.
 	self initializeBrushSelectors.
 	self initializeDeprecatedClasses.
-	self initializeDeprecatedSelectors.
 	self initializeCallbackSelectors.
 	self initializeForbiddenCallbackSelectors.
 	self initializeForbiddenRenderingSelectors.
