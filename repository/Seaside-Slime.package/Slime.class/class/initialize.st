@@ -10,4 +10,4 @@ initialize
 	self initializeForbiddenRenderingSelectors.
 	self initializeNotPortableSelectors.
 	self initializeNotPortableClasses.
-	self initializeSuperSelectors 
+	self initializeSuperSelectors
