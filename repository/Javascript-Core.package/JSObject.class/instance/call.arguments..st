@@ -3,6 +3,6 @@ call: aString arguments: anArray
 	"Call the method aString with aCollection as its arguments."
 
 	self 
-		seasideDeprecatedApi: 'JSObject>>call:arguments:'
-		details: 'Use #call:withArguments: instead'.
+		seasideDeprecatedApi: 'JSObject>>#call:arguments:'
+		details: 'Use #call:withArguments:.'.
 	self call: aString withArguments: anArray
