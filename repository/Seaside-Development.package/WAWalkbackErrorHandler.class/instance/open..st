@@ -10,5 +10,5 @@ open: anException
 				[ self session inNewRenderLoopCall:
 					(SeasidePlatformSupport walkbackClass exception: anException) ].
 	answer ifTrue: [ super open: anException ] ]
-		on: WARequestContextNotFound
+		on: WARequestContextRequest
 		do: [ :err | super open: anException ]
