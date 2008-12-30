@@ -1,1 +1,1 @@
-A WAStartableServerAdaptor is a convenience class for making server adapters that can easily be started and stopped.
+A WAStartableServerAdaptor is a convenience class for making server adapters that allow a single "default" instance to be easily started and stopped from a Workspace.
