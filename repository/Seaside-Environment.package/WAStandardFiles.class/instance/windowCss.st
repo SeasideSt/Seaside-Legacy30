@@ -1,6 +1,7 @@
 accessing-styles
 windowCss
 	^ '.window {
+	margin: 1em;
 	border: 1px solid #aaa;
 }
 .window .window-titlebar {
@@ -29,4 +30,5 @@ windowCss
 .window .window-content {
 	clear: both;
 	padding: 2px;
+	background-color: #fff;
 }'
