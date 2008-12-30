@@ -2,8 +2,8 @@ deprecated
 refreshWithMessage: aString location: aUrlOrString delay: aNumber 
 	| response |
 	self 
-		seasideDeprecatedApi: 'WAResponse class>>refreshWithMessage:location:delay:'
-		details: 'Use WAResponse class>>redirectAfter:location:message:.'.
+		seasideDeprecatedApi: 'WAResponse class>>#refreshWithMessage:location:delay:'
+		details: 'Use #redirectAfter:location:message:.'.
 	response := self new 
 		refreshAfter: aNumber
 		location: aUrlOrString.

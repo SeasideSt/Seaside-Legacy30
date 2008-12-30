@@ -1,6 +1,6 @@
 deprecated
 unregisterRequestHandler: aRequestHandler
-	self seasideDeprecatedApi: 'WARegistry>>unregisterRequetsHandler:'
-		details: 'Use WARegistry>>unregister:'.
-		
+	self 
+		seasideDeprecatedApi: 'WARegistry>>#unregisterRequestHandler:'
+		details: 'Use #unregister:.'.
 	^ self unregister: aRequestHandler
