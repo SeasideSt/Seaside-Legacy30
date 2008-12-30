@@ -4,5 +4,5 @@ handleException: anException
 		ifTrue: [ ^ self handleError: anException ].
 	(Warning handles: anException)
 		ifTrue: [ ^ self handleWarning: anException ].
-	
-	^ self handleDefault: anException
+
+	^ super handleException: anException
