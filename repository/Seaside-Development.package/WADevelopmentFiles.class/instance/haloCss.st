@@ -68,6 +68,9 @@ div.window-titlebar div.memorytoolplugin {
 div.window-titlebar div.configuretoolplugin {
 	background: url(config.png) no-repeat;
 }
+div.window-titlebar div.deprecationtoolplugin {
+	background: url(deprecated.png) no-repeat;
+}
 
 /* body */
 .halo-body {
