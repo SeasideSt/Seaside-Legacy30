@@ -5,6 +5,6 @@ testCommaReturnsExceptionSet
 	self assert: (set isKindOf: ExceptionSet).
 	self assert: (set handles: WATestError new).
 	
-	set := self handlerClass new, WATestError.
+	set := self createHandler, WATestError.
 	self assert: (set isKindOf: ExceptionSet).
 	self assert: (set handles: WATestError new)
