@@ -6,8 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
+		"context",
 		"callbacks",
-		"nextKey"
+		"count"
 	],
 	"name" : "WACallbackRegistry",
 	"type" : "normal"

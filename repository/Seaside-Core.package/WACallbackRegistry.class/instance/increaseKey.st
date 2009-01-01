@@ -1,3 +1,3 @@
-accessing
+keys
 increaseKey
-	nextKey := nextKey + 1
+	count contents: count contents + 1

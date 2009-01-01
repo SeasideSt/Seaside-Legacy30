@@ -1,7 +1,7 @@
-private
+registration
 storeCallback: aCallback
 	| key |
 	key := self advanceKey.
 	callbacks at: (aCallback convertKey: key) put: aCallback.
-	aCallback setKey: key callbacks: callbacks.
+	aCallback setContext: context key: key.
 	^ key

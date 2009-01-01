@@ -1,4 +1,4 @@
-accessing
+keys
 advanceKey
 	| key |
 	key := self nextKey.

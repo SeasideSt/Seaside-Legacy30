@@ -1,5 +1,5 @@
 accessing
 key
-	"Answer the callback key of the receiver."
-	
+	"Answer the callback key."
+
 	^ self convertKey: key

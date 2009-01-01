@@ -1,6 +1,3 @@
-deprecated
+registration
 registerCallback: aBlock
-	self
-		seasideDeprecatedApi: 'WACallbackRegistry>>#registerCallback:'
-		details: 'Use WACallbackRegistry>>#registerValueCallback: instead.'.
-	^ self registerValueCallback: aBlock
+	^ self storeCallback: (WAValueCallback new block: aBlock)

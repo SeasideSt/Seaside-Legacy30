@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"callbacks"
+		"renderContext"
 	],
 	"name" : "WADispatchCallback",
 	"type" : "normal"

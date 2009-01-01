@@ -1,3 +1,5 @@
 evaluation
-evaluateWithArgument: anObject
-	callbacks at: anObject ifPresent: [ :callback | callback evaluateWithField: nil ]
+evaluateWithArgument: anObject 
+	| callback |
+	callback := renderContext callbackAt: anObject.
+	callback isNil ifFalse: [ callback evaluateWithArgument: nil ]

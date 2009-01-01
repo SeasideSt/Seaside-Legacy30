@@ -1,3 +1,0 @@
-exception handling
-exceptionSelector
-	^ WARequestContextRequest
