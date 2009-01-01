@@ -1,8 +1,8 @@
 private
-postFieldsOf: aSwazooRequest into: aDictionaryMerger
+postFieldsOf: aNativeRequest into: aDictionaryMerger
 	"break encapsulation"
-	aSwazooRequest ensureFullRead.
-	aSwazooRequest postData keysAndValuesDo: [ :key :value |
+	aNativeRequest ensureFullRead.
+	aNativeRequest postData keysAndValuesDo: [ :key :value |
 		| previousData data |
 		data := value filename isEmptyOrNil
 			ifTrue: [ self decodeUrl: value value ]
