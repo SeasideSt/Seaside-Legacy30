@@ -7,13 +7,13 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"textInput",
+		"textInputExample",
 		"textArea",
+		"textAreaExample",
 		"singleSelection",
 		"singleSelectionOptional",
 		"multiSelection",
-		"nestedSelection",
-		"checkbox",
-		"radio"
+		"nestedSelection"
 	],
 	"name" : "WAInputElementContainer",
 	"type" : "normal"

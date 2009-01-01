@@ -4,6 +4,7 @@ renderTextInputOn: html
 		renderLabel: 'Text Input'
 		input: [
 			html textInput
+				setFocus;
 				value: textInput;
 				callback: [ :value | textInput := value ] ]
 		output: textInput printString

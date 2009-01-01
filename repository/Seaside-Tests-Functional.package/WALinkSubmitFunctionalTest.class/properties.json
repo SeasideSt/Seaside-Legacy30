@@ -6,14 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"data",
-		"numericData",
-		"date",
-		"time",
-		"data1",
-		"data2",
-		"message"
+		"count"
 	],
-	"name" : "WADateTimeFunctionalTest",
+	"name" : "WALinkSubmitFunctionalTest",
 	"type" : "normal"
 }

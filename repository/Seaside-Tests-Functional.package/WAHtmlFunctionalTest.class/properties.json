@@ -6,14 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"data",
-		"numericData",
-		"date",
-		"time",
-		"data1",
-		"data2",
-		"message"
+		"booleanList",
+		"message",
+		"number"
 	],
-	"name" : "WADateTimeFunctionalTest",
+	"name" : "WAHtmlFunctionalTest",
 	"type" : "normal"
 }

@@ -1,5 +1,6 @@
 rendering
 renderContentOn: html
+	self renderExplanationOn: html.
 	html form: [
 		html table: inputElements.
 		html div: [

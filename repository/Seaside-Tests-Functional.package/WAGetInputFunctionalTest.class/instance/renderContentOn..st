@@ -1,5 +1,6 @@
 rendering
 renderContentOn: html
+	self renderExplanationOn: html.
 	html form
 		get;
 		with: [
