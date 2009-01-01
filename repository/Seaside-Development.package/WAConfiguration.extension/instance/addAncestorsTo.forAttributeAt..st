@@ -7,7 +7,7 @@ addAncestorsTo: linearCollection forAttributeAt: aSymbol
 		ifTrue: [ ^ true ]
 		ifFalse: [
 			linearCollection add: self.
-			aSymbol notNil and: [ self canDefineAttributes and: [ self attributes at: aSymbol ifPresent: [ :attr | ^ attr ] ] ].
+			aSymbol notNil ifTrue: [ self localAttributeAt: aSymbol ifPresent: [ :attr | ^ attr ] ].
 			self parents isEmpty ifFalse: [
 				self parents reverseDo: [ :each | 
 					result := each
