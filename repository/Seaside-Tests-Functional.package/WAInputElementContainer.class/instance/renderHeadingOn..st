@@ -1,6 +1,6 @@
-rendering-elements
+rendering
 renderHeadingOn: html
 	html tableRow: [
-		html tableData.
+		html tableHeading.
 		html tableHeading: 'Control'.
 		html tableHeading: 'Print String' ]
