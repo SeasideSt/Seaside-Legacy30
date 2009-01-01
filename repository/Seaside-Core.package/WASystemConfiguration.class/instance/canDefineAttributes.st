@@ -1,3 +1,0 @@
-attributes
-canDefineAttributes
-	^ true
