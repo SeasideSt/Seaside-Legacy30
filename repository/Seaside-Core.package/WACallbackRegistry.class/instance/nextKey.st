@@ -1,3 +1,3 @@
-keys
+accessing
 nextKey
-	^ count contents seasideString
+	^ nextKey seasideString

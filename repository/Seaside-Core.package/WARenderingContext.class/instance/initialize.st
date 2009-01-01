@@ -1,4 +1,4 @@
 initialization
 initialize
 	super initialize.
-	callbacks := WACallbackRegistry context: self
+	callbacks := WACallbackRegistry new

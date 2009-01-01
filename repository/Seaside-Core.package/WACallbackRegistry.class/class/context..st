@@ -1,3 +1,6 @@
-instance-creation
+deprecated
 context: aContext
-	^ self new initializeWithContext: aContext; yourself
+	self 
+		seasideDeprecatedApi: 'WACallbackRegistry class>>#context:'
+		details: 'Use #new. Callbacks are no longer instantiated with a context and an owning component.'.
+	^ self new

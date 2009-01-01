@@ -8,4 +8,4 @@ valueForField: anObject
 				ifFalse: [
 					anObject isEmpty
 						ifTrue: [ String new ]
-						ifFalse: [ anObject first ] ] ]
+						ifFalse: [ self valueForField: anObject first ] ] ]

@@ -5,7 +5,7 @@ initialize
 	stream := SeasidePlatformSupport readWriteStream.
 	status := 200.
 	application := [ self application ]
-		on: WARequestContextNotFound
+		on: WARequestContextRequest
 		do: [ :error | nil ].
 	contentType := application isNil 
 		ifFalse: [ application contentType ]
