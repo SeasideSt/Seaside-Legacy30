@@ -4,5 +4,5 @@ visitListAttribute: anAttribute with: html
 		beOptional;
 		optionalLabel: '(none)';
 		list: anAttribute options asArray;
-		selected: (self configuration valueForAttribute: anAttribute);
+		selected: (self valueForAttribute: anAttribute);
 		callback: [ :value | self configuration takeValue: value forAttribute: anAttribute ]

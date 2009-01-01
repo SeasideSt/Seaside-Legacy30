@@ -3,34 +3,34 @@ renderInheritanceForAttribute: anAttribute on: html
 	html tableData: [
 		| wasInherited |
 		wasInherited := false.
-		self configuration inheritedValueAndSourceAt: anAttribute key do: [ :value :source |
+		self inheritedValueAndSourceAt: anAttribute key do: [ :value :source |
 			wasInherited ifFalse: [
-				(self configuration hasLocalValueForAttribute: anAttribute)
+				(self hasLocalValueForAttribute: anAttribute)
 					ifTrue: [
 						html anchor
 							onClick: 'return submitForm(this)';
 							title: 'revert to ' , value printString , ', overriden from ', source name;
-							callback: [ self configuration clearValueForAttribute: anAttribute ]; 
+							callback: [ self clearAttribute: anAttribute ]; 
 							with: 'revert' ]
 					ifFalse: [
 						html anchor
 							onClick: 'return submitForm(this)';
 							title: 'inherited from ', source name;
-							callback: [ self configuration overrideAttribute: anAttribute ]; 
+							callback: [ self overrideAttribute: anAttribute ]; 
 							with: 'override'.
 						(anAttribute isKindOf: WACollectionAttribute) ifTrue: [
 							html text: ' '.
 							html anchor
 								onClick: 'return submitForm(this)';
-								callback: [ self configuration at: anAttribute key addAll: #() removeAll: #() ];
+								callback: [ self modifyCollectionAttribute: anAttribute ];
 								with: 'modify' ] ].
 			wasInherited := true ] ].
 		wasInherited ifFalse: [
-			(self configuration hasLocalValueForAttribute: anAttribute)
+			(self hasLocalValueForAttribute: anAttribute)
 				ifTrue: [
 					html anchor
 						onClick: 'return submitForm(this)';
-						callback: [ self configuration clearValueForAttribute: anAttribute ];
+						callback: [ self clearAttribute: anAttribute ];
 						with: 'clear' ]
 				ifFalse: [
 					anAttribute default isNil
@@ -42,11 +42,11 @@ renderInheritanceForAttribute: anAttribute on: html
 							html anchor
 								onClick: 'return submitForm(this)';
 								title: 'inherited from attribute default';
-								callback: [ self configuration overrideAttribute: anAttribute ]; 
+								callback: [ self overrideAttribute: anAttribute ]; 
 								with: 'override'.
 							(anAttribute isKindOf: WACollectionAttribute) ifTrue: [
 								html text: ' '.
 								html anchor
 									onClick: 'return submitForm(this)';
-									callback: [ self configuration at: anAttribute key addAll: #() removeAll: #() ];
+									callback: [ self modifyCollectionAttribute: anAttribute ];
 									with: 'modify' ] ] ] ] ]

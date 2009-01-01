@@ -2,7 +2,7 @@ rendering-attributes
 renderAttributesOn: html
 	html heading level: 2; with: 'Configuration'.
 	html table: [
-		self configuration groupedAttributes do: [ :association |
+		self groupedAttributes do: [ :association |
 			html tableRow: [
 				html tableData
 					colSpan: 3;

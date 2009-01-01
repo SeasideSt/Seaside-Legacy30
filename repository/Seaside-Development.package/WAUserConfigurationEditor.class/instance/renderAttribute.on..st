@@ -6,10 +6,10 @@ renderAttribute: anAttribute on: html
 				title: anAttribute comment;
 				with: anAttribute label ].
 		html tableData: [
-			(self configuration valueForAttribute: anAttribute) isNil
+			(self valueForAttribute: anAttribute) isNil
 				ifTrue: [ self renderUnspecifiedAttribute: anAttribute on: html ]
 				ifFalse: [
-					(self configuration hasLocalValueForAttribute: anAttribute)
+					(self hasLocalValueForAttribute: anAttribute)
 						ifTrue: [ self renderOverridenAttribute: anAttribute on: html ]
 						ifFalse: [ self renderInheritedAttribute: anAttribute on: html ] ] ].
 		self renderInheritanceForAttribute: anAttribute on: html ]
