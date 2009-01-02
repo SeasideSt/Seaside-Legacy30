@@ -9,7 +9,8 @@
 		"group",
 		"comment",
 		"label",
-		"default"
+		"default",
+		"advanced"
 	],
 	"name" : "WAAttributeDescription",
 	"type" : "normal"

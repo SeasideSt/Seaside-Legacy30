@@ -1,3 +1,5 @@
 accessing
 group
-	^ group ifNil: [#general]
+	"Answer the group of the receiving attribute."
+	
+	^ group ifNil: [ #general ]
