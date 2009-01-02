@@ -5,6 +5,6 @@ allAttributes
 	
 	self ancestorsDo: 
 		[ :each |
-		each canDefineAttributes ifTrue: [ attributes addAll: each attributes ] ].
+		each localAttributesDo: [ :attr | attributes at: attr key put: attr ] ].
 	
 	^ attributes

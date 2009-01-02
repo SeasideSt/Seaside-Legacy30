@@ -1,3 +1,0 @@
-accessing
-isAttributeInheritedBy: aConfiguration
-	^ ancestorsWithAttribute includes: aConfiguration

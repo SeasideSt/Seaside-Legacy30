@@ -1,6 +1,6 @@
 ancestry-private
 ancestorsDo: aBlock seen: seenSet 
-	self parents do: [ :each | 
+	self parents reverseDo: [ :each | 
 		(seenSet includes: each) ifFalse: [
 			aBlock value: each.
 			seenSet add: each.

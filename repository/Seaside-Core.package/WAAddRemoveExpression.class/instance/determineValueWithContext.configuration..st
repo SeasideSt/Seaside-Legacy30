@@ -1,7 +1,7 @@
 values
-determineValueWithContext: aContext
+determineValueWithContext: aContext configuration: aConfiguration
 	| collection result |
-	collection := self configuration inheritedValueAt: self key context: aContext.
+	collection := aConfiguration inheritedValueForContext: aContext.
 	
 	collection isNil ifTrue: [ collection := aContext attribute default ].
 	collection isNil ifTrue: [ collection := Array new ].

@@ -1,3 +1,3 @@
 private
-cache
+cachedValues
 	^ cachedValues
