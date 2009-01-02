@@ -1,4 +1,4 @@
-private
+accessing
 description
 	^ description isNil 
 		ifFalse: [ description ]

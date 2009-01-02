@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "jf 1/1/2009 21:39",
+	"commentStamp" : "",
 	"super" : "WAObject",
 	"category" : "Seaside-Core-Configuration",
 	"classinstvars" : [ ],
@@ -7,11 +7,11 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"key",
+		"target",
 		"attribute",
 		"cachedValues",
-		"attributeHolders",
-		"attributeInheritors"
+		"ancestorsWithAttribute"
 	],
-	"name" : "WAAttributeSearchContext",
+	"name" : "WAAttributeContext",
 	"type" : "normal"
 }

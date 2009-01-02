@@ -1,0 +1,3 @@
+initialization
+unload
+	SeasidePlatformSupport removeFromStartUpList: self

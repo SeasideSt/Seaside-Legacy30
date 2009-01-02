@@ -1,9 +1,11 @@
 values
 at: aSymbol 
 	| value context |
-	context := self createSearchContextFor: aSymbol.
+	context := WAAttributeContext key: aSymbol target: self.
 
-	value := self valueForContext: context.
+	context attribute isNil ifTrue: [ ^ (WAAttributeNotFound key: aSymbol) raiseSignal ].
+
+	value := self valueAt: aSymbol context: context.
 	
 	^ value isNil
 		ifTrue: [ context attribute default ]

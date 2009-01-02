@@ -1,3 +1,3 @@
-private
+attributes
 attributes
 	^ self description attributes

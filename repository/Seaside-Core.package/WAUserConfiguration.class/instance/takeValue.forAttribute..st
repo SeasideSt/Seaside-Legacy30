@@ -4,6 +4,7 @@ takeValue: anObject forAttribute: anAttribute
 		self
 			storeExpression:
 				((WAValueExpression key: anAttribute key)
+					configuration: self;
 					value: anObject;
 					yourself)
 			forAttribute: anAttribute ]
