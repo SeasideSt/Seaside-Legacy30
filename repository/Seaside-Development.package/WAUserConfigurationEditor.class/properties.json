@@ -2,7 +2,9 @@
 	"commentStamp" : "",
 	"super" : "WAComponent",
 	"category" : "Seaside-Development-Core",
-	"classinstvars" : [ ],
+	"classinstvars" : [
+		"displayAdvancedAttributes"
+	],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [

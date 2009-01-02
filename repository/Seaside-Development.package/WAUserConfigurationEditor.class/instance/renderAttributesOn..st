@@ -1,6 +1,7 @@
 rendering-attributes
 renderAttributesOn: html
 	html heading level: 2; with: 'Configuration'.
+	self renderAdvancedModeOn: html.
 	html table: [
 		self groupedAttributes do: [ :association |
 			html tableRow: [
