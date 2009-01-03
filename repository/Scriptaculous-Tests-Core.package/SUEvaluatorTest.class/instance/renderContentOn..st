@@ -1,8 +1,8 @@
 rendering
 renderContentOn: html
 	html paragraph: 'CSS Selector:'.
-	html paragraph: [
-		html form: [
+	html form: [
+		html paragraph: [
 			html textInput
 				id: 'selector';
 				value: (selector ifNil: [ 'h1' ]);

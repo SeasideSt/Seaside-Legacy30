@@ -3,7 +3,7 @@ renderContentOn: html
 	| textId |
 	textId := html nextId.
 	html paragraph: 'Start to type a Smalltalk class-name:'.
-	html paragraph: [
+	html div: [
 		html textInput
 			id: textId;
 			size: 30;

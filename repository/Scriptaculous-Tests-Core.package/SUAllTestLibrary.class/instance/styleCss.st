@@ -2,9 +2,20 @@ uploaded
 styleCss
 	^ '/* Adapted from http://script.aculo.us, thanks to Thomas Fuchs */
 
-body {margin: 0px; font: 11px Lucida Grande, Verdana, Arial, Helvetica, sans serif; background: url(background.gif) repeat-x #fff;}
-a, a:hover, a:visited, a:active {color: #e8a400; cursor: pointer}
-img {border: 0px}
+body { 
+	margin: 0;
+	font: 11px Lucida Grande, Verdana, Arial, Helvetica, sans serif;
+	background: url(background.gif) repeat-x #fff;
+}
+
+a, a:hover, a:visited, a:active {
+	color: #e8a400;
+	cursor: pointer;
+}
+
+img {
+	border: 0px;
+}
 
 #header {
 	height: 110px;

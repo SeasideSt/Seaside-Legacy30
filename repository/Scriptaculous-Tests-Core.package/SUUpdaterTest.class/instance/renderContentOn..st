@@ -11,5 +11,4 @@ renderContentOn: html
 					on: #renderElementOn: of: self);
 				with: each.
 			html break ] ].
-	html paragraph: [
-		html div class: 'targetElement'; id: elementId; with: 'Target Element' ]
+	html div: [ html div class: 'targetElement'; id: elementId; with: 'Target Element' ]

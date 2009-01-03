@@ -2,8 +2,7 @@ rendering
 renderChildrenOn: html
 	html div id: 'content'; with: [
 		selected do: [ :each |
-			html heading: each key.
-			html paragraph; render: each value.
+			html heading: each key; render: each value.
 			each value testClass isNil ifFalse: [
 				html paragraph: [
 					html anchor
@@ -13,5 +12,4 @@ renderChildrenOn: html
 						html break.
 						html anchor
 							callback: [ self lightbox: (SUClassBrowser onClass: each value coreClass) ];
-							with: 'Actual implementation' ] ] ].
-			html paragraph ] ]
+							with: 'Actual implementation' ] ] ] ] ]
