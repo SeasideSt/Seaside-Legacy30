@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WAKomDocumentHandlerResponseTest",
+	"name" : "WAComancheDocumentHandlerResponseTest",
 	"type" : "normal"
 }

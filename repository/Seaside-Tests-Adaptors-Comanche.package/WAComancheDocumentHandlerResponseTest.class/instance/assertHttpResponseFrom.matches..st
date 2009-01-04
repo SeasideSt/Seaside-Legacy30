@@ -4,7 +4,7 @@ assertHttpResponseFrom: aResponse matches: aHandler
 	super 
 		assertHttpResponseFrom: aResponse
 		matches: aHandler.
-	[ kom := WAKom new.
+	[ kom := WAComancheAdaptor new.
 	httpResponse := kom convertResponse: aResponse ]
 		ensure: [ kom ifNotNil: [ kom unregister ] ].
 	self assert: httpResponse status == #ok.
