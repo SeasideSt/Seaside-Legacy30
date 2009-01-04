@@ -1,4 +1,4 @@
-I am the common superclass for all classes that provided connectivity with the Comanche web server (Kom). Among other thing I do encoding and decoding of requests and responses. I have two main subclasses, WAKom is a traditional server adapter whereas WAListener is a streaming server adapter that proves Comet functioanlity. When in doubt, pick WAKom.
+I am the common superclass for all classes that provided connectivity with the Comanche web server (Kom). Among other thing I do encoding and decoding of requests and responses. I have two main subclasses, WAComancheAdaptor is a traditional server adapter whereas WAListener is a streaming server adapter that proves Comet functioanlity. When in doubt, pick WAComancheAdaptor.
 
 The encoding can be configured with the #endocing: method. The following values are allowed arguments:
 nil

@@ -1,0 +1,3 @@
+compatibility
+stop
+	WAComancheAdaptor stop
