@@ -1,3 +1,5 @@
 printing
 statusString
-	^ (service ifNil: [ super statusString ]) asString
+	^ self isRunning
+		ifTrue: [ service asString ]
+		ifFalse: [ super statusString ]
