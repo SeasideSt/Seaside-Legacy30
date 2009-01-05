@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "cds 7/25/2005 10:17",
-	"super" : "Notification",
+	"super" : "WANotification",
 	"category" : "Seaside-Component-Decoration",
 	"classinstvars" : [ ],
 	"pools" : [ ],
