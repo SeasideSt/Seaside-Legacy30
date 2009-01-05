@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "Error",
+	"super" : "WAError",
 	"category" : "Seaside-RenderLoop",
 	"classinstvars" : [ ],
 	"pools" : [ ],
