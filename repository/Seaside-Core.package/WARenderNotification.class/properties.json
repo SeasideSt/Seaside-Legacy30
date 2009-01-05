@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "Notification",
+	"super" : "WANotification",
 	"category" : "Seaside-Core-Exceptions",
 	"classinstvars" : [ ],
 	"pools" : [ ],

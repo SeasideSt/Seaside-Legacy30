@@ -1,13 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "WANotification",
+	"super" : "Error",
 	"category" : "Seaside-Core-Exceptions",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"response"
-	],
-	"name" : "WAReturnResponse",
+	"instvars" : [ ],
+	"name" : "WAError",
 	"type" : "normal"
 }
