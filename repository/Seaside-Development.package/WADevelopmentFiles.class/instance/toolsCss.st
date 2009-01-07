@@ -1,7 +1,6 @@
 accessing-styles
 toolsCss
-	^ '
-.tool strong {
+	^ '.tool strong {
 	color: #444444;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 12px;
