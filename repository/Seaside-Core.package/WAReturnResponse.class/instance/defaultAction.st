@@ -1,4 +1,4 @@
-exceptiondescription
+public
 defaultAction
 	^ WAUnhandledNotificationError new
 		notification: self;

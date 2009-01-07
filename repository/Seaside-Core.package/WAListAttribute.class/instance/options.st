@@ -1,5 +1,5 @@
 accessing
 options
 	^ optionsBlock isNil
-		ifTrue: [#()]
-		ifFalse: optionsBlock
+		ifTrue: [ #() ]
+		ifFalse: [ optionsBlock value ]

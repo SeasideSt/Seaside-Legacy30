@@ -1,3 +1,3 @@
-exceptiondescription
+public
 isResumable
 	^ false
