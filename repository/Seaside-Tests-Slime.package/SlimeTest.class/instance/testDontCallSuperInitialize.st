@@ -1,5 +1,5 @@
 testing-misc
 testDontCallSuperInitialize
 	self 
-		run: SlimeBlockLintRule dontCallSuperInitialize
+		run: SlimeBlockLintRule invalidObjectInitialization
 		selectors: #(initialize)
