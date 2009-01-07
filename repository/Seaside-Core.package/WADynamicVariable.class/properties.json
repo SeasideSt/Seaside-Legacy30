@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "pmm 4/17/2007 00:14",
-	"super" : "AnObsoleteWANotification",
+	"super" : "WANotification",
 	"category" : "Seaside-Core-Utilities",
 	"classinstvars" : [ ],
 	"pools" : [ ],

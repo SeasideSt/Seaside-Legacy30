@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "pmm 11/4/2008 20:45",
-	"super" : "AnObsoleteWAError",
+	"super" : "WAError",
 	"category" : "Seaside-Core-Exceptions",
 	"classinstvars" : [ ],
 	"pools" : [ ],
