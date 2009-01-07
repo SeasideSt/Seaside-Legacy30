@@ -7,4 +7,4 @@ keyFromContext: aRequestContext ifAbsent: aBlock
 			cookie := self sessionCookieFor: aRequestContext request.
 			cookie isNil
 				ifFalse: [ cookie value ]
-				ifTrue: aBlock ]
+				ifTrue: [ aBlock value ] ]
