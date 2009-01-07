@@ -1,6 +1,5 @@
 accessing
 selectorsToInclude
 	^#(
-		windowCss
 		kalseyTabsCss
 	)
