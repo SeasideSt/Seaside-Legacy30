@@ -1,3 +1,3 @@
 instance-creation
 new
-	self error: 'Create shared configurations by sending the message #named:'
+	self error: 'Create or retrieve shared configurations by sending the message #named:'

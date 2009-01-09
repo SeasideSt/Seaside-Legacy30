@@ -1,3 +1,3 @@
 initialization
-setName: aString
+initializeName: aString
 	name := aString

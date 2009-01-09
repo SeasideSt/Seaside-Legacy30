@@ -1,5 +1,5 @@
 instance-creation
 named: aString
-	^ self configurations
-		detect: [ :each | each name = aString ]
-		ifNone: [ instances add: (self basicNew initialize; setName: aString; yourself) ]
+	"Answer a shared configuration with the given name aString or answer a newly created one."
+	
+	^ self named: aString ifNew: [ :config | ]
