@@ -1,6 +1,0 @@
-private
-nonFileSelectors
-	^#(
-		nonFileSelectors
-		selectorsToInclude
-	)

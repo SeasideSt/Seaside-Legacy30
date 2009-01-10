@@ -1,3 +1,3 @@
 private
 libraryRootClasses
-	^ WALibrary subclasses
+	^ WAFileLibrary subclasses

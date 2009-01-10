@@ -1,3 +1,0 @@
-accessing
-asSelector: aFilename
-	self subclassResponsibility
