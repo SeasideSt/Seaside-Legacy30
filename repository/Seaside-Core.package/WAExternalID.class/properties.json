@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "pmm 4/22/2007 12:55",
+	"super" : "ByteArray",
+	"category" : "Seaside-Core-Utilities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"Generator",
+		"GeneratorMutex",
+		"GeneratorSpace"
+	],
+	"instvars" : [ ],
+	"name" : "WAExternalID",
+	"type" : "bytes"
+}

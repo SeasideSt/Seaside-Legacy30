@@ -1,3 +1,3 @@
 attributes
 attributeAt: aSymbol
-	^ self attributeAt: aSymbol ifAbsent: [ (WAAttributeNotFound key: aSymbol) raiseSignal ]
+	^ self attributeAt: aSymbol ifAbsent: [ WAAttributeNotFound signalKey: aSymbol ]

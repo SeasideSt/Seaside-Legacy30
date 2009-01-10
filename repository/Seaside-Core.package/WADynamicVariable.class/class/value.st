@@ -1,3 +1,3 @@
 evaluating
 value
-	^ self raiseSignal
+	^ self signal

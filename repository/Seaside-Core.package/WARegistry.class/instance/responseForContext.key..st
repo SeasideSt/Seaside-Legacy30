@@ -1,7 +1,8 @@
 private
 responseForContext: aRequestContext key: aString
-	| handler |
-	handler := self cache at: aString.
+	| key handler |
+	key := WAExternalID fromString: aString.
+	handler := self cache at: key.
 	^ handler notNil
 		ifTrue: [handler handleRequest: aRequestContext]
 		ifFalse: [self handleExpiredRequest: aRequestContext]

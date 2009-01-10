@@ -1,3 +1,3 @@
 public
 defaultAction
-	^ WARequestContextNotFound raiseSignal
+	^ WARequestContextNotFound signal
