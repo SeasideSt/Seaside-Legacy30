@@ -1,7 +1,7 @@
 testing
 testDevelopmentFilenames
 	| expected actual |
-	expected := #(#deprecatedPng #configPng #codebrowserPng #haloCss #inspectorPng #memoryPng #profilerPng #styleeditorPng #toolbarCss #toolsCss).
+	expected := #(#deprecatedPng #haloCss #inspectorPng #configPng #profilerPng #memoryPng #toolsCss #styleeditorPng #codebrowserPng #windowCss #toolbarCss).
 	actual := WADevelopmentFiles new fileSelectors.
 	"VW does not implement #= in Sets"
 	self assert: actual size = expected size.
