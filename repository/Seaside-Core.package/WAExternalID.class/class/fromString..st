@@ -1,3 +1,7 @@
 instance-creation
 fromString: aString
-	^ aString
+	| id |
+	id := self new: aString size.
+	aString keysAndValuesDo: [ :index :each |
+		id at: index put: each asInteger ].
+	^ id
