@@ -1,0 +1,3 @@
+private
+libraryRootClasses
+	^ WALibrary subclasses

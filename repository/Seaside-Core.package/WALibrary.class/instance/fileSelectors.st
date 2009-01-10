@@ -1,0 +1,3 @@
+accessing
+fileSelectors
+	self subclassResponsibility

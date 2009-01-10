@@ -1,4 +1,4 @@
 private
-reap: anObject key: aString
-	self reapAction reap: anObject key: aString.
-	self notifyReaped: anObject key: aString
+reap: anObject key: anExternalID
+	self reapAction reap: anObject key: anExternalID.
+	self notifyReaped: anObject key: anExternalID

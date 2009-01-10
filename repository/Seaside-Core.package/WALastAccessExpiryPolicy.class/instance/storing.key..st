@@ -1,3 +1,3 @@
 notifications
-storing: anObject key: aString
-	lastAccessTable at: aString put: Time totalSeconds
+storing: anObject key: anExternalID
+	lastAccessTable at: anExternalID put: Time totalSeconds

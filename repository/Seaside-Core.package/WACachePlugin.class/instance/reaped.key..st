@@ -1,2 +1,2 @@
 notifications
-reaped: anObject key: aString
+reaped: anObject key: anExternalID
