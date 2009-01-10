@@ -1,6 +1,5 @@
 accessing
 libraryAt: aSymbol ifAbsent: aBlock
-	self librariesDo: [ :each |
-		(each handlesFolder: aSymbol)
-			ifTrue: [ ^ each ] ].
-	^ aBlock value
+	^ self libraries 
+		detect: [ :each | each handlesFolder: aSymbol ]
+		ifNone: aBlock

@@ -1,3 +1,3 @@
 notifications
-retrieving: anObject key: anExternalID
-	lastAccessTable at: anExternalID put: Time totalSeconds
+retrieving: anObject key: aString
+	lastAccessTable at: aString put: Time totalSeconds

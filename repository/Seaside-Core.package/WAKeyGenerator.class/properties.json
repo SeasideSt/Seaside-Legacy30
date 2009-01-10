@@ -9,6 +9,7 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"generator",
+		"mutex",
 		"space"
 	],
 	"name" : "WAKeyGenerator",

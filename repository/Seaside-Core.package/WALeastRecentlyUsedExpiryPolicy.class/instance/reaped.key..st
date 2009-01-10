@@ -1,3 +1,3 @@
 notifications
-reaped: anObject key: anExternalID
-	ageTable removeKey: anExternalID ifAbsent: []
+reaped: anObject key: aString
+	ageTable removeKey: aString ifAbsent: []
