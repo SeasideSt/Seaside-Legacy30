@@ -5,7 +5,7 @@ testHandlerClassValidExceptionSelector
 	However, some platforms seem to require other protocol. This test will make sure
 	that each platform has implemented what is required to make this work."
 	
-	[[ self unhandledExceptionClass raiseSignal ]
+	[[ self unhandledExceptionClass signal ]
 		on: self handlerClass
 		do: [ :exception | self assert: false ]]
 			on: Exception

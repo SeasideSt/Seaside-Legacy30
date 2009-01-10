@@ -1,10 +1,10 @@
 testing
 testUnhandledException
-	[self handlerClass
-		handleExceptionsDuring: [self unhandledExceptionClass raiseSignal]
-		context: self requestContext]
+	[ self handlerClass
+		handleExceptionsDuring: [ self unhandledExceptionClass signal ]
+		context: self requestContext ]
 			on: self unhandledExceptionClass
-			do: [:exception | "success" ^ self].
+			do: [ :exception | "success" ^ self ].
 	
 	self assert: false
 	
