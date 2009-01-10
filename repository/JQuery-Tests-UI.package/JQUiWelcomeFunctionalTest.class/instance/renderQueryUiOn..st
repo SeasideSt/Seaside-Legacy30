@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderQueryUiOn: html
 	html heading level: 4; with: 'jQuery UI'.
 	html paragraph: [
