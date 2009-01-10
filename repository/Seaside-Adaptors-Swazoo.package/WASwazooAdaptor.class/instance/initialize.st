@@ -2,7 +2,7 @@ initialization
 initialize
 	super initialize.
 	site := WAPlugableSite
-		named: (WAExternalID new: 32)
+		named: (WAKeyGenerator current keyOfLength: 32)
 		on: self.
 	site ip: '*'.
 	site host: '*'.
