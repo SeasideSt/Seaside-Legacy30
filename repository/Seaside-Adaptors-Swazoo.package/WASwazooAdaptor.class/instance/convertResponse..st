@@ -3,8 +3,9 @@ convertResponse: aSeasideResponse
 	| swazooResponse |
 	aSeasideResponse isNil
 		ifTrue:  [ ^self requestHandlingAborted ].
+	self padResponse: aSeasideResponse.
 	swazooResponse := HTTPResponse new.
-			
+	
 	aSeasideResponse headers do: [ :each |
 		| field fieldClass |
 		fieldClass := HeaderField classForFieldName: each key.
