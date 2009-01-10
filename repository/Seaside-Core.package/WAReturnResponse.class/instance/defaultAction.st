@@ -1,3 +1,3 @@
 public
 defaultAction
-	^ WAUnhandledNotificationError signalNotification: self
+	^ WAUnhandledNotificationError signalWithNotification: self
