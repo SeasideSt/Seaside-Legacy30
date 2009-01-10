@@ -9,4 +9,4 @@ lightbox: aComponent
 			delegation: (SULightbox new
 				delegate: aComponent;
 				yourself).
-		WARenderNotification raiseSignal ]
+		WARenderNotification signal ]
