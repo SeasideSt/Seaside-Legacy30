@@ -1,11 +1,10 @@
 public
-removeKey: aStringOrExternalID
-	| key object |
-	key := aStringOrExternalID seasideExternalID.
+removeKey: aString
+	| object |
 	self mutex critical: [
-		object := objectsByKey removeKey: key ifAbsent: [ nil ].
+		object := objectsByKey removeKey: aString ifAbsent: [ nil ].
 		keysByObject removeKey: object ifAbsent: [ nil ] ].
 	
-	object isNil ifFalse: [ self reap: object key: key ].
+	object isNil ifFalse: [ self reap: object key: aString ].
 	
 	^ object
