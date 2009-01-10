@@ -1,6 +1,11 @@
 rendering
 style
-	^ '#status {
+	^ 'a {
+	color: #00f;
+	cursor: pointer;
+	text-decoration: underline;	
+}
+#status {
 	background-color: #eee;
 }
 #messages {
