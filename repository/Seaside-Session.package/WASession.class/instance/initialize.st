@@ -2,7 +2,5 @@ initializing
 initialize
 	super initialize.
 	self initializeFilters.
-	continuations := WACache new
-			setExpiryPolicy: (WALeastRecentlyUsedExpiryPolicy new);
-			yourself.
+	continuations := self createCache.
 	cookiesEnabled := false
