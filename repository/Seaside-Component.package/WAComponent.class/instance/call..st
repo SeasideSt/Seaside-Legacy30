@@ -6,4 +6,4 @@ call: aComponent
 		self 
 			show: aComponent
 			onAnswer: cc.
-		WARenderNotification raiseSignal ]
+		WARenderNotification signal ]
