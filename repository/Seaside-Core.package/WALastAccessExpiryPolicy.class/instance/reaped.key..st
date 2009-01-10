@@ -1,3 +1,3 @@
 notifications
-reaped: anObject key: anExternalID
-	lastAccessTable removeKey: anExternalID ifAbsent: []
+reaped: anObject key: aString
+	lastAccessTable removeKey: aString ifAbsent: []

@@ -1,2 +1,2 @@
 notifications
-storing: anObject key: anExternalID
+storing: anObject key: aString

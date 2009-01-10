@@ -1,3 +1,3 @@
 protocol
-missed: anExternalID
+missed: aString
 	^ nil

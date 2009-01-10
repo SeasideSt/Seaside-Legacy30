@@ -1,3 +1,3 @@
 private
-notifyReaped: anObject key: anExternalID
-	self pluginsDo: [ :each | each reaped: anObject key: anExternalID ]
+notifyReaped: anObject key: aString
+	self pluginsDo: [ :each | each reaped: anObject key: aString ]

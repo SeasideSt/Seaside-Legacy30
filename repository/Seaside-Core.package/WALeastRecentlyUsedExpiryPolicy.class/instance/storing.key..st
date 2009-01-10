@@ -1,4 +1,4 @@
 notifications
-storing: anObject key: anExternalID
+storing: anObject key: aString
 	ageTable associationsDo: [ :assoc | assoc value: assoc value + 1 ].
-	ageTable at: anExternalID put: 0.
+	ageTable at: aString put: 0.
