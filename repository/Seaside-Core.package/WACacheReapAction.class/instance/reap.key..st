@@ -1,2 +1,2 @@
 protocol
-reap: anObject key: anExternalID
+reap: anObject key: aString

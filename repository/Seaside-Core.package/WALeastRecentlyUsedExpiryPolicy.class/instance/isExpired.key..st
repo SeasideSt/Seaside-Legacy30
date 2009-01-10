@@ -1,3 +1,3 @@
 protocol
-isExpired: anObject key: anExternalID
-	^ (ageTable at: anExternalID) > self maximumAge
+isExpired: anObject key: aString
+	^ (ageTable at: aString) > self maximumAge

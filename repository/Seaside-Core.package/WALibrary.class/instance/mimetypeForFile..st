@@ -1,3 +1,0 @@
-accessing
-mimetypeForFile: aFilename
-	self subclassResponsibility

@@ -1,3 +1,3 @@
 accessing
 libraries
-	^ self libraryRootClasses gather: [ :each | each allSubclasses ]
+	^ WAFileLibrary allSubclasses

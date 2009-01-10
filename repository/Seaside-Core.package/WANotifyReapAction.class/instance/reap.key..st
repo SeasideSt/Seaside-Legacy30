@@ -1,4 +1,4 @@
 protocol
-reap: anObject key: anExternalID
+reap: anObject key: aString
 	(anObject respondsTo: #unregistered) ifTrue: [ anObject unregistered ]
 	

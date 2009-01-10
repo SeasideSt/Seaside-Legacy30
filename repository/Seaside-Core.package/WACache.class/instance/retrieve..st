@@ -1,12 +1,11 @@
 public
-retrieve: aStringOrExternalID
-	| key object |
-	key := aStringOrExternalID seasideExternalID.
+retrieve: aString
+	| object |
 	self mutex critical: [
-		object := objectsByKey at: key ifAbsent: [ self missStrategy missed: key ] ].
+		object := objectsByKey at: aString ifAbsent: [ self missStrategy missed: aString ] ].
 	
 	object isNil ifFalse: [
-		(self expiryPolicy isExpired: object key: key) ifTrue: [ ^ nil ].
-		self notifyRetrieving: object key: key ].
+		(self expiryPolicy isExpired: object key: aString) ifTrue: [ ^ nil ].
+		self notifyRetrieving: object key: aString ].
 	
 	^ object

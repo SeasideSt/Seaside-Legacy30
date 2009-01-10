@@ -1,8 +1,10 @@
 {
 	"commentStamp" : "pmm 8/17/2007 06:58",
-	"super" : "WALibrary",
+	"super" : "WAObject",
 	"category" : "Seaside-Core-Libraries",
-	"classinstvars" : [ ],
+	"classinstvars" : [
+		"default"
+	],
 	"pools" : [ ],
 	"classvars" : [
 		"MimeTypes"

@@ -1,3 +1,3 @@
 private
 authConfigurationError: aString
-	WAAuthConfigurationError raiseSignal: aString
+	WAAuthConfigurationError signal: aString

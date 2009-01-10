@@ -5,6 +5,4 @@ respond: aResponse
 	response isNil 
 		ifFalse: [ self error: 'Invalid state exception.' ]."
 	self trigger: (event := WAResponseEvent on: aResponse).
-	WAReturnResponse new
-		response: event response;
-		raiseSignal
+	WAReturnResponse signalResponse: event response

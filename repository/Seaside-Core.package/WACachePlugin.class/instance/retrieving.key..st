@@ -1,2 +1,2 @@
 notifications
-retrieving: anObject key: anExternalID
+retrieving: anObject key: aString
