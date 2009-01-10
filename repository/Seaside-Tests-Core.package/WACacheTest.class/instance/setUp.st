@@ -1,4 +1,4 @@
 running
 setUp
 	cache := WACache new.
-	key := WAExternalID new
+	key := WAKeyGenerator current keyOfLength: 8
