@@ -2,7 +2,7 @@ testing
 testWarning
 	| response |
 	response := self handlerClass
-		handleExceptionsDuring: [ Warning signal ]
+		handleExceptionsDuring: [Warning raiseSignal]
 		context: self requestContext.
 		
 	self assert: response status = 500

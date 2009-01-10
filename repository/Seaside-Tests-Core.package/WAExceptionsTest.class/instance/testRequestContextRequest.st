@@ -1,11 +1,11 @@
 testing
 testRequestContextRequest
 	| resumedValue |
-	self should: [ WARequestContextRequest signal ] raise: WARequestContextNotFound.
+	self should: [ WARequestContextRequest raiseSignal ] raise: WARequestContextNotFound.
 	
 	self
 		shouldnt: [
-			[ resumedValue := WARequestContextRequest signal ]
+			[ resumedValue := WARequestContextRequest raiseSignal ]
 				on: WARequestContextRequest
 				do: [ :exception | exception resume: 1 ] ]
 		raise: WARequestContextNotFound.

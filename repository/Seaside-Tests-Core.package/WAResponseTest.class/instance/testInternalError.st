@@ -1,6 +1,6 @@
 testing
 testInternalError
-	[ WAError signal: 'foo'.
+	[ WAError raiseSignal: 'foo'.
 	self assert: false ]
 			on: Error
 			do: [ :error |
