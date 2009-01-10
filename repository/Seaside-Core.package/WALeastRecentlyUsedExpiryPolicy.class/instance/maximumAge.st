@@ -1,3 +1,3 @@
 configuration
 maximumAge
-	^ 20
+	^ self configuration at: #cacheCapacity

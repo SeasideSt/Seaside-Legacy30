@@ -3,6 +3,6 @@ createSearchContextFor: aSymbol
 	| context |
 	context := WAAttributeSearchContext key: aSymbol target: self.
 	
-	context attribute isNil ifTrue: [ WAAttributeNotFound signalKey: aSymbol ].
+	context attribute isNil ifTrue: [ (WAAttributeNotFound key: aSymbol) raiseSignal ].
 	
 	^ context

@@ -1,5 +1,5 @@
 protocol
-isExpired: anObject key: aString
+isExpired: anObject key: anExternalID
 	| lastAccess |
-	lastAccess := lastAccessTable at: aString ifAbsent: [ Time totalSeconds ].
+	lastAccess := lastAccessTable at: anExternalID ifAbsent: [ Time totalSeconds ].
 	^ (Time totalSeconds - lastAccess) > self timeout

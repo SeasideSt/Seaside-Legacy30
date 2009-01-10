@@ -1,3 +1,3 @@
 protocol
-isExpired: anObject key: aString
+isExpired: anObject key: anExternalID
 	^ false

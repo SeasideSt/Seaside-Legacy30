@@ -1,3 +1,3 @@
 evaluation
 signalRenderNotification
-	WARenderNotification signal
+	WARenderNotification raiseSignal

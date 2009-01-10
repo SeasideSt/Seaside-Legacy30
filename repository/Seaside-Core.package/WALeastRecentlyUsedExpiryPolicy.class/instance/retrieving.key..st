@@ -1,3 +1,3 @@
 notifications
-retrieving: anObject key: aString
-	ageTable at: aString put: 0
+retrieving: anObject key: anExternalID
+	ageTable at: anExternalID put: 0

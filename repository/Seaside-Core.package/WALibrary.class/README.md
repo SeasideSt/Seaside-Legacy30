@@ -1,0 +1,1 @@
+I'm the common superclass of file and string libraries.

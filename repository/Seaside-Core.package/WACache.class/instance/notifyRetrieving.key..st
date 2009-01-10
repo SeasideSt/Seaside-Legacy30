@@ -1,3 +1,3 @@
 private
-notifyRetrieving: anObject key: aString
-	self pluginsDo: [ :each | each retrieving: anObject key: aString ]
+notifyRetrieving: anObject key: anExternalID
+	self pluginsDo: [ :each | each retrieving: anObject key: anExternalID ]
