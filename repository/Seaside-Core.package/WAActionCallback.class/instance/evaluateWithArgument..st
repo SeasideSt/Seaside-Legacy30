@@ -1,4 +1,4 @@
 evaluation
 evaluateWithArgument: anObject
-	block valueWithPossibleArgument: anObject.
+	block valueWithPossibleArguments: (Array with: anObject).
 	self signalRenderNotification

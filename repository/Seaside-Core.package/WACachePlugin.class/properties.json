@@ -6,8 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"cache",
-		"configuration"
+		"cache"
 	],
 	"name" : "WACachePlugin",
 	"type" : "normal"

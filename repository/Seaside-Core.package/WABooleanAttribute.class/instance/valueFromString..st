@@ -1,7 +1,8 @@
 converting
 valueFromString: aString
 	^ aString = 'true'
-		ifTrue: [true]
-		ifFalse: [aString = 'false'
-				 ifTrue: [false]
-				 ifFalse: [self error: 'Invalid value for boolean attribute']]
+		ifTrue: [ true ]
+		ifFalse: [
+			aString = 'false'
+				 ifTrue: [ false ]
+				 ifFalse: [ WAIllegalArgumentError signal: 'Invalid value for boolean attribute' ] ]

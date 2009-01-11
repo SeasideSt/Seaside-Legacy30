@@ -1,3 +1,3 @@
 configuration
 timeout
-	^ self configuration at: #cacheTimeout
+	^ 600
