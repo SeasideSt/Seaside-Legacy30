@@ -4,5 +4,5 @@ addParent: aConfiguration
 		ifTrue: [ ^ aConfiguration ].
 	(self canAddParent: aConfiguration) 
 		ifTrue: [ parents add: aConfiguration ]
-		ifFalse: [ WAIllegalArgumentError signal: 'Cannot add this configuration as a parent. Would this cause a circular ancestry graph?' ].
+		ifFalse: [ WAConfigurationError signal: 'Cannot add this configuration as a parent. Would this cause a circular ancestry graph?' ].
 	^ aConfiguration

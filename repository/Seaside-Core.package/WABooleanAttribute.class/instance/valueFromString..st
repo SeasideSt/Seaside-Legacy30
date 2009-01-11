@@ -5,4 +5,4 @@ valueFromString: aString
 		ifFalse: [
 			aString = 'false'
 				 ifTrue: [ false ]
-				 ifFalse: [ WAIllegalArgumentError signal: 'Invalid value for boolean attribute' ] ]
+				 ifFalse: [ WAConfigurationError signal: 'Invalid value for boolean attribute' ] ]

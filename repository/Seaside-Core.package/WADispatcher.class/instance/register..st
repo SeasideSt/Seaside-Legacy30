@@ -1,7 +1,7 @@
 registration
 register: anEntryPoint
 	anEntryPoint name
-		ifNil: [ WAIllegalArgumentError signal: 'Unable to add unnamed entry point.' ].
+		ifNil: [ WAError signal: 'Unable to add unnamed entry point.' ].
 	entryPoints
 		at: anEntryPoint name
 		put: (anEntryPoint setParent: self).
