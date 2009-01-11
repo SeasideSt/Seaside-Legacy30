@@ -2,7 +2,7 @@ transformations
 handleRequest
 	| rewriteRule |
 	rewriteRule := ParseTreeRewriter new
-		replaceMethod: 'handleRequest: `aContext | `@temps | `@.statements' withValueFrom: [ :node |
+		replaceMethod: 'handleRequest: `aRequest | `@temps | `@.statements' withValueFrom: [ :node |
 			ParseTreeRewriter new
 				replace: node arguments first name with: 'aRequestContext';
 				executeTree: node.
@@ -10,10 +10,10 @@ handleRequest
 				replace: 'aRequestContext' with: 'aRequestContext request';
 				executeTree: node body.
 			node
-				selector: #responseForContext:;
+				selector: #handleFiltered:;
 				arguments: (Array with: (RBVariableNode named: 'aRequestContext'));
 				yourself ].
 	^ self new
-		name: 'WARequestHandler >> #handleRequest: ';
+		name: 'Rename WARequestHandler>>#handleRequest: to #handleFiltered:';
 		rewriteUsing: rewriteRule;
 		yourself

@@ -17,6 +17,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "Slime",
+	"name" : "WASlime",
 	"type" : "normal"
 }

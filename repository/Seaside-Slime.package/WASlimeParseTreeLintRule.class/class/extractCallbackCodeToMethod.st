@@ -3,11 +3,11 @@ extractCallbackCodeToMethod
 	| matcher |
 	matcher := ParseTreeSearcher new.
 	matcher 
-		matchesAnyOf: (Slime callbackSelectors collect: [ :each |
-			'`html `msg' , (self genericPatternForSelector: each) ])
-		do: [ :node :answer |
-			(answer isNil and: [ Slime isBrushSelector: node receiver selector ]) ifTrue: [
-				node arguments 
+		matchesAnyOf: (WASlime callbackSelectors collect: [ :each | '`html `msg' , (self genericPatternForSelector: each) ])
+		do: 
+			[ :node :answer | 
+			(answer isNil and: [ WASlime isBrushSelector: node receiver selector ]) ifTrue: 
+				[ node arguments 
 					detect: [ :each | each isBlock and: [ each body statements size > 1 ] ]
 					ifNone: [ nil ] ] ].
 	^ self new

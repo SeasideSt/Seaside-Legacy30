@@ -10,4 +10,4 @@ sessionExpired
 					| `@temps | 
 					`@.Statements'))
 		methods: true
-		name: 'Rename session #expired -> #unregistered'
+		name: 'Rename WASession>>#expired to #unregistered'

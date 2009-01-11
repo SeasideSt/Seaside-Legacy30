@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "TransformationRule",
+	"super" : "BlockLintRule",
 	"category" : "Seaside-Slime",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "SlimeTransformationRule",
+	"name" : "WASlimeBlockLintRule",
 	"type" : "normal"
 }
