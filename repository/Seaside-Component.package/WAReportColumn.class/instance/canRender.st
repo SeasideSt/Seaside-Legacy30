@@ -1,3 +1,3 @@
 rendering
 canRender
-	^valueBlock numArgs > 1
+	^valueBlock argumentCount > 1

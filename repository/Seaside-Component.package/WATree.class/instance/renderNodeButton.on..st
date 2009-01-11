@@ -8,7 +8,7 @@ renderNodeButton: aNode on: html
 				isExpanded := self isExpanded: aNode.
 				self
 					renderNodeButtonLink: aNode
-					action: (MessageSend
+					action: (WADelayedSend
 						receiver: self
 						selector: (isExpanded
 							ifTrue: [ #collapse: ]

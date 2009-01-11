@@ -13,7 +13,7 @@ renderNodeLabel: aNode on: html
 				ifTrue: [
 					self
 						renderNodeLabelLink: aNode
-						action: (MessageSend
+						action: (WADelayedSend
 							receiver: self
 							selector: #select:
 							argument: aNode)
