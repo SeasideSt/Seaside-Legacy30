@@ -13,4 +13,4 @@ request: aDictionary
 	context := WARequestContext request: request.
 	WACurrentRequestContext
 		use: context
-		during: [ registry handleRequest: context ]
+		during: [ registry handle: context ]

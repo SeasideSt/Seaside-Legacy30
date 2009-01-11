@@ -1,11 +1,11 @@
 testing
 testHandleListing
 	| response |
-	response := handler handleRequest: (self requestContextWithUrl: '/root/files/WATestingFiles/').
+	response := handler handle: (self requestContextWithUrl: '/root/files/WATestingFiles/').
 	self assertListing: response.
-	response := handler handleRequest: (self requestContextWithUrl: '/root/files/WATestingFiles').
+	response := handler handle: (self requestContextWithUrl: '/root/files/WATestingFiles').
 	self assertListing: response.
-	response := handler handleRequest: (self requestContextWithUrl: '/root/files/').
+	response := handler handle: (self requestContextWithUrl: '/root/files/').
 	self assertListing: response.
-	response := handler handleRequest: (self requestContextWithUrl: '/root/files').
+	response := handler handle: (self requestContextWithUrl: '/root/files').
 	self assertListing: response.
