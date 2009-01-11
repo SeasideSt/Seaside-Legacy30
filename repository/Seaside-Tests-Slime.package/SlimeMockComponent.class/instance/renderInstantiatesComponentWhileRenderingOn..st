@@ -1,3 +1,3 @@
 rendering
 renderInstantiatesComponentWhileRenderingOn: html
-	html div: WABrowser new
+	html div: WAComponentMock new
