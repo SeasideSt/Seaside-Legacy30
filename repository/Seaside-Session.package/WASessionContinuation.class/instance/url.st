@@ -1,6 +1,7 @@
-accessing
+deprecated
 url
-	| url |
-	url := self session actionUrlForContinuation: self.
-	self updateUrl: url.
-	^ url
+	self
+		seasideDeprecatedApi: 'WASessionContinuation>>url'
+		details: 'Use WASessionContinuation>>registerForUrl'.
+	
+	^ self registerForUrl

@@ -1,3 +1,3 @@
-accessing
+initialization
 setStates: aSnapshot
 	states := aSnapshot
