@@ -1,5 +1,5 @@
-testing-misc
+testing-portability
 testUsesCurlyBraceArrays
 	self 
-		run: WASlimeBlockLintRule usesCurlyBraceArrays
-		selectors: #()
+		run: WASlimeBlockLintRule usesCurlyBraceArrays 
+		selectors: #(braceMessage)
