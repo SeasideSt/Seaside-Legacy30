@@ -1,11 +1,11 @@
 {
-	"commentStamp" : "rew 10/7/2007 12:51",
-	"super" : "WAAttribute",
+	"commentStamp" : "",
+	"super" : "WAObject",
 	"category" : "Seaside-Core-Configuration",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WANumberAttribute",
+	"name" : "WAAttributeVisitor",
 	"type" : "normal"
 }

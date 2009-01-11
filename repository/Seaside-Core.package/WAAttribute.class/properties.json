@@ -12,6 +12,6 @@
 		"default",
 		"advanced"
 	],
-	"name" : "WAAttributeDescription",
+	"name" : "WAAttribute",
 	"type" : "normal"
 }
