@@ -1,4 +1,4 @@
 callbacks
 on: aSelector of: anObject
 	self value: (anObject perform: aSelector).
-	self callback: (MessageSend receiver: anObject selector: aSelector asMutator)
+	self callback: (WADelayedSend receiver: anObject selector: aSelector asMutator)
