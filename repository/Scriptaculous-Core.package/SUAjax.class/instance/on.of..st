@@ -1,3 +1,3 @@
 callbacks
 on: aSelector of: anObject
-	self callback: (MessageSend receiver: anObject selector: aSelector)
+	self callback: (WADelayedSend receiver: anObject selector: aSelector)
