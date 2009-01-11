@@ -1,5 +1,5 @@
 callbacks
 callback: aNiladicValuable
 	aNiladicValuable argumentCount > 0
-		ifTrue: [ WAIllegalArgumentError signal: 'Submit buttons expect a niladic callback.' ].
+		ifTrue: [ WAInvalidArgumentCount signal: 'Submit buttons expect a niladic callback.' ].
 	self name: (canvas callbacks registerActionCallback: aNiladicValuable)
