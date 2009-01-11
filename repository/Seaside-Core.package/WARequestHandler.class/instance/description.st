@@ -1,5 +1,9 @@
-accessing
+deprecated
 description
-	"Answer a descriptive text of the receiver."
-
-	^ String new
+	self
+		seasideDeprecatedApi: 'WARequestHandler>>description'
+		details: 'Use WAEntryPoint class>>description'.
+		
+	^ (self isKindOf: WAEntryPoint)
+		ifTrue: [ self class description ]
+		ifFalse: [ String new ]
