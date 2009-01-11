@@ -1,3 +1,0 @@
-uploaded
-backgroundPng
-	^ super backgroundPng

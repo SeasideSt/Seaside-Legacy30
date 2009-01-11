@@ -1,3 +1,0 @@
-uploaded
-framePng
-	^ super framePng

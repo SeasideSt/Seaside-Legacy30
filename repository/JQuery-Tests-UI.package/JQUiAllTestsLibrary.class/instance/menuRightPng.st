@@ -1,3 +1,0 @@
-uploaded
-menuRightPng
-	^ super menuRightPng

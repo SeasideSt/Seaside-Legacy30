@@ -1,3 +1,0 @@
-styles
-defaultCss
-	^ super defaultCss
