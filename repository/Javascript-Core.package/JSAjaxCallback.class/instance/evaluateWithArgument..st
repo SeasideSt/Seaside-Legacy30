@@ -1,6 +1,6 @@
 evaluation
 evaluateWithArgument: anObject
 	block isNil
-		ifFalse: [ block valueWithPossibleArgument: anObject ].
+		ifFalse: [ block valueWithPossibleArguments: (Array with: anObject) ].
 	self requestContext
 		respond: WAResponse new doNotCache
