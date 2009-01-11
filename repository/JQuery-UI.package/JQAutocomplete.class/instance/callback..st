@@ -12,7 +12,7 @@ callback: aBlock
 			at: 'limit' ifAbsent: [ 
 				self options at: 'max' ifAbsent: [ 10 ] ].
 		limit := limit asInteger.
-		items := aBlock valueWithPossibleArgs: (Array with: query with: limit).
+		items := aBlock valueWithArguments: (Array with: query with: limit).
 		items := items size > limit 
 			ifTrue: [ items asArray first: limit ]
 			ifFalse: [ items asArray ].
