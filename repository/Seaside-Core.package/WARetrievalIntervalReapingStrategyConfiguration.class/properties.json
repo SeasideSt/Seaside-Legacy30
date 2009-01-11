@@ -1,14 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "WAObject",
+	"super" : "WASystemConfiguration",
 	"category" : "Seaside-Core-Cache",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"cache",
-		"configuration"
-	],
-	"name" : "WACachePlugin",
+	"instvars" : [ ],
+	"name" : "WARetrievalIntervalReapingStrategyConfiguration",
 	"type" : "normal"
 }

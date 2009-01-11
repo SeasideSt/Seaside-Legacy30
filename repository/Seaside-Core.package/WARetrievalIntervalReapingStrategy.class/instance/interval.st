@@ -1,3 +1,3 @@
 configuration
 interval
-	^ 10
+	^ self configuration at: #cacheReapInterval
