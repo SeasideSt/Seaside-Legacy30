@@ -1,13 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "WAComponent",
+	"super" : "WAObject",
 	"category" : "Seaside-Tests-Slime",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"foo"
-	],
-	"name" : "SlimeMockComponent",
+	"instvars" : [ ],
+	"name" : "WASlimeMockWAObject",
 	"type" : "normal"
 }

@@ -1,5 +1,5 @@
 testing-misc
 testUsesCurlyBraceArrays
 	self 
-		run: SlimeBlockLintRule usesCurlyBraceArrays
+		run: WASlimeBlockLintRule usesCurlyBraceArrays
 		selectors: #()

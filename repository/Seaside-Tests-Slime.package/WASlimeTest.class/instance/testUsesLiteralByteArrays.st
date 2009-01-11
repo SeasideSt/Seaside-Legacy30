@@ -1,5 +1,5 @@
 testing-misc
 testUsesLiteralByteArrays
 	self 
-		run: SlimeBlockLintRule usesLiteralByteArrays
+		run: WASlimeBlockLintRule usesLiteralByteArrays
 		selectors: #()
