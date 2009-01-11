@@ -1,3 +1,3 @@
-actions
-responseForContext: aRequestContext 
+processing
+handleFiltered: aRequestContext 
 	^ WAResponseFactory notFoundForContext: aRequestContext

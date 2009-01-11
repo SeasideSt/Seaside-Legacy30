@@ -1,7 +1,7 @@
 private
-responseForContext: aRequestContext key: aString
+handleFiltered: aRequestContext key: aString
 	| handler |
 	handler := self cache at: aString.
 	^ handler notNil
-		ifTrue: [handler handleRequest: aRequestContext]
+		ifTrue: [handler handle: aRequestContext]
 		ifFalse: [self handleExpiredRequest: aRequestContext]

@@ -1,5 +1,5 @@
 processing
-responseForContext: aRequestContext 
+handleFiltered: aRequestContext 
 	^ (self verifyRequest: aRequestContext request) 
-		ifTrue: [ super responseForContext: aRequestContext ]
+		ifTrue: [ super handleFiltered: aRequestContext ]
 		ifFalse: [ aRequestContext entryPoint forbiddenResponseFor: aRequestContext ]
