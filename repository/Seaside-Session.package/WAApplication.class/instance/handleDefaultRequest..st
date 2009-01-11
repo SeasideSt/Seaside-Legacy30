@@ -3,4 +3,4 @@ handleDefaultRequest: aRequestContext
 	| session |
 	session := self sessionClass new.
 	self register: session.
-	^ session handleRequest: aRequestContext
+	^ session handle: aRequestContext

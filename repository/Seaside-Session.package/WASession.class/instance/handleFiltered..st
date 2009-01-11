@@ -1,5 +1,5 @@
-request handling
-responseForContext: aRequestContext
+processing
+handleFiltered: aRequestContext
 	| key continuation |
 	^ WACurrentRequestContext use: aRequestContext during: [
 		key := aRequestContext request fields
