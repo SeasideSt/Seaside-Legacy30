@@ -1,5 +1,5 @@
 processing
-responseForContext: aRequestContext
+handleFiltered: aRequestContext
 	startTime := Time millisecondClockValue.
-	^ [ super responseForContext: aRequestContext ]
+	^ [ super handleFiltered: aRequestContext ]
 		ensure: [ previousTiming := self currentTiming ]

@@ -1,5 +1,5 @@
 processing
-responseForContext: aRequestContext
-	^ [ super responseForContext: aRequestContext ]
+handleFiltered: aRequestContext
+	^ [ super handleFiltered: aRequestContext ]
 		on: WADeprecatedApi
 		do: [ :notification | self deprecated: notification ]
