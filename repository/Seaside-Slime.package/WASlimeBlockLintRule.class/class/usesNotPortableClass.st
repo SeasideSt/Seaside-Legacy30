@@ -5,7 +5,7 @@ usesNotPortableClass
 		rationale: 'Some classes are not portable accross different Smalltalk dialects.';
 		classBlock: 
 			[ :context :result | 
-			(WASlime notPortableClasses includes: context selectedClass superclass) ifTrue: 
+			(context selectedClass allSuperclasses anySatisfy: [ :each | WASlime notPortableClasses includes: each name ]) ifTrue: 
 				[ result addClass: context selectedClass.
 				result addSearchString: context selectedClass superclass name ] ];
 		methodBlock: 
