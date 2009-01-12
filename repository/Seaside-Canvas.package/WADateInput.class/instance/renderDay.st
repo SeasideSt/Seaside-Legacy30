@@ -1,4 +1,4 @@
-private rendering
+private-rendering
 renderDay
 	| brush |
 	brush := canvas textInput

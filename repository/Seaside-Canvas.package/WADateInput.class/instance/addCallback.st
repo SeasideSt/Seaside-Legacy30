@@ -1,4 +1,4 @@
-private rendering
+private-rendering
 addCallback
 	self hasCallback ifFalse: [
 		canvas flush.

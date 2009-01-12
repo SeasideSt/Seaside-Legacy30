@@ -1,4 +1,4 @@
-private rendering
+private-rendering
 renderMinutes
 	| brush |
 	brush := canvas textInput

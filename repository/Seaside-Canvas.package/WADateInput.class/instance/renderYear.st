@@ -1,4 +1,4 @@
-private rendering
+private-rendering
 renderYear
 	| brush |
 	brush := (canvas textInput)

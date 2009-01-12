@@ -1,4 +1,4 @@
-private rendering
+private-rendering
 renderMonth
 	| brush |
 	brush := canvas select
