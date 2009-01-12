@@ -1,4 +1,4 @@
-response-creation
+response creation
 refreshAfter: aNumber location: aUrlOrString message: aString
 	^ WAResponse new
 		refreshAfter: aNumber

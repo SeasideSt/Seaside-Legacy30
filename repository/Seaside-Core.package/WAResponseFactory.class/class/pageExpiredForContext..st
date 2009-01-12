@@ -1,4 +1,4 @@
-response-creation
+response creation
 pageExpiredForContext: aRequestContext
 	^WAResponse new
 		contentType: WAMimeType textPlain;
