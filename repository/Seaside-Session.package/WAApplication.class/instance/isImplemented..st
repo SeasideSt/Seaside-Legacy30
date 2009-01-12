@@ -1,4 +1,5 @@
 private
-isImplemented: aMethodName
-	"answer whether Seaside implements the given HTTP method name"
-	^#('GET' 'POST') includes: aMethodName
+isImplemented: aString
+	"Answer whether the receiver implements the given HTTP method."
+
+	^ #('GET' 'POST') includes: aString

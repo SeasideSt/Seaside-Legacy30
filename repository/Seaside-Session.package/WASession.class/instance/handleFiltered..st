@@ -1,7 +1,7 @@
 processing
 handleFiltered: aRequestContext
 	| key continuation |
-	^ WACurrentRequestContext use: aRequestContext during: [
+	WACurrentRequestContext use: aRequestContext during: [
 		key := aRequestContext request fields
 			at: self actionField
 			ifAbsent: [ ^ self start ].

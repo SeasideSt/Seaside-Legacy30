@@ -1,7 +1,8 @@
 processing
 handleFiltered: aRequestContext
-	"Setup a return response escape handler. This simply unwinds the execution stack and returns the response to the initiator of this request."
+	"Setup a return response escape handler. This is simply a marker in the execution stack."
 
-	^ [ super handleFiltered: aRequestContext ]
-		on: WAReturnResponse
-		do: [ :err | err response ]
+	[ super handleFiltered: aRequestContext ]
+		on: WAResponseNotification
+		do: [ :err | ^ self ].
+	self error: self printString , ' did not return a response.'

@@ -1,5 +1,7 @@
 private
 redirectToContinuation: aSessionContinuation
 	self respond: [ :response |
-		aSessionContinuation setStates: self newStates.
+		| snapshot |
+		snapshot := WASnapshot new.
+		aSessionContinuation setStates: snapshot; updateStates: snapshot.
 		response redirectTo: aSessionContinuation registerForUrl ]

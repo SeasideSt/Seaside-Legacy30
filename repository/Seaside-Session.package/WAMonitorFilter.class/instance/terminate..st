@@ -1,4 +1,7 @@
 private
 terminate: aRequestContext
 	monitor terminate.
-	^ WAResponse new nextPutAll: 'Process terminated'
+	aRequestContext response
+		contentType: WAMimeType textPlain;
+		nextPutAll: 'Process terminated'.
+	aRequestContext return
