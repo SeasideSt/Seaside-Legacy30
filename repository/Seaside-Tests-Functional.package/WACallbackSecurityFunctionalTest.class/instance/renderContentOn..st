@@ -15,5 +15,6 @@ renderContentOn: html
 		| url |
 		url := html context actionUrl seasideString.
 		html anchor
+			url: '#';
 			onClick: 'swapCallbacks("',url,'","letter-list", "number-list")';
 			with: 'Try to break it' ]
