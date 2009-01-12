@@ -1,4 +1,4 @@
-instance-creation
+instance creation
 selector: aSymbol title: aString onClick: aBlock
 	^ self new
 		title: aString;

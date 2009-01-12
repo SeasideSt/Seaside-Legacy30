@@ -1,4 +1,4 @@
-instance-creation
+instance creation
 root: anObject path: anArray
 	^ (self root: anObject)
 		expandAll: anArray;

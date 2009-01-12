@@ -1,4 +1,4 @@
-instance-creation
+instance creation
 items: aCollection link: linkSelector text: textSelector
 	^ self new
 		items: aCollection;

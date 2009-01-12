@@ -1,3 +1,3 @@
-instance-creation
+instance creation
 snapshot: aSnapshot
 	^ self new setSnapshot: aSnapshot; yourself
