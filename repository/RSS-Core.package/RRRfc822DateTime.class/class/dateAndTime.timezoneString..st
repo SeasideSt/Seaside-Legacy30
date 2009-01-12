@@ -1,4 +1,4 @@
-instance-creation
+instance creation
 dateAndTime: aDateAndTime timezoneString: aString
 	^self new
 		dateAndTime: aDateAndTime;

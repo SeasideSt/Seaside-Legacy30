@@ -1,4 +1,4 @@
-dublin-core
+dublin core
 creator
 	"An entity primarily responsible for making the resource.
 	Examples of a Creator include a person, an organization, or a service. Typically, the name of a Creator should be used to indicate the entity.

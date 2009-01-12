@@ -1,4 +1,4 @@
-instance-creation
+instance creation
 newUtc: aDateAndTime
 	^self
 		dateAndTime: aDateAndTime asUTC

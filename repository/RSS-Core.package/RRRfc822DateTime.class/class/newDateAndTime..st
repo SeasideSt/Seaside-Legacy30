@@ -1,4 +1,4 @@
-instance-creation
+instance creation
 newDateAndTime: aDateAndTime
 	^self
 		newDateAndTime: aDateAndTime

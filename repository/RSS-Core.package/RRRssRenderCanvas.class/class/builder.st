@@ -1,4 +1,4 @@
-instance-creation
+instance creation
 builder
 	^super builder
 		rootClass: RRRssRoot;
