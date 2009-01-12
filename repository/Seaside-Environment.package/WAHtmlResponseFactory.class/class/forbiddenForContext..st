@@ -1,4 +1,4 @@
-response-generation
+response generation
 forbiddenForContext: aRequestContext
 	| response content |
 	response := WAResponse new.

@@ -1,4 +1,4 @@
-response-generation
+response generation
 refreshAfter: aNumber location: aUrlOrString message: aString
 	| response document |
 	response := WAResponse new.

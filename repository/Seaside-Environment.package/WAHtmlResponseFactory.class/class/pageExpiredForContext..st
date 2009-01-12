@@ -1,4 +1,4 @@
-response-generation
+response generation
 pageExpiredForContext: aRequestContext
 	| content |
 	content := WARenderCanvas builder
