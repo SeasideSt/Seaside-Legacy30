@@ -1,5 +1,5 @@
 processing
-handleFiltered: aRequestContext 
+responseForContext: aRequestContext 
 	^ self isClosed 
-		ifFalse: [ super handleFiltered: aRequestContext ]
+		ifFalse: [ super responseForContext: aRequestContext ]
 		ifTrue: [ WAResponseFactory pageExpiredForContext: aRequestContext ]

@@ -1,5 +1,5 @@
 processing
-handleFiltered: aRequestContext 
+responseForContext: aRequestContext 
 	| path baseUrl requestUrl |
 	baseUrl := WAUrl new
 		addAllToPath: self path;

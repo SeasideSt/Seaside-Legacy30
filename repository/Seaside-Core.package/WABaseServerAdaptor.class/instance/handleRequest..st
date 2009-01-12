@@ -1,5 +1,5 @@
 serving
-handle: aNativeRequest
+handleRequest: aNativeRequest
 	^ [
 		| request response |
 		request := self convertRequest: aNativeRequest.

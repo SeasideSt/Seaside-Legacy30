@@ -1,3 +1,3 @@
 private
 dispatchContext: aRequestContext
-	^ self requestHandler handle: aRequestContext
+	^ self requestHandler handleRequest: aRequestContext

@@ -1,5 +1,5 @@
 processing
-handle: aRequestContext
+handleRequest: aRequestContext
 	| sorted |
 	sorted := SortedCollection new.
 	aRequestContext request fields keysDo: [ :key |
