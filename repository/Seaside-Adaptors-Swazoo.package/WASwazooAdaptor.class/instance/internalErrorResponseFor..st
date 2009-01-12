@@ -1,4 +1,4 @@
-private-response-creation
+private-response creation
 internalErrorResponseFor: anError
 	^HTTPResponse internalServerError
 		contentType: 'text/plain';
