@@ -1,3 +1,3 @@
-instance-creation
+instance creation
 top
 	^ self new top

@@ -1,3 +1,3 @@
-instance-creation
+instance creation
 before
 	^ self new before
