@@ -6,6 +6,6 @@ handleFiltered: aRequestContext
 		yourself.
 	requestUrl := aRequestContext request url.
 	path := baseUrl relativeTo: requestUrl.
-	^ self 
+	self 
 		responseAt: path
 		forContext: aRequestContext

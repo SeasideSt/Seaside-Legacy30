@@ -1,3 +1,3 @@
-private-response creation
+private-response-creation
 internalErrorResponseFor: anError
 	self subclassResponsibility

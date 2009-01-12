@@ -1,4 +1,4 @@
-initialization
+actions
 newCookie
 	"Creates a new cookie. Tries to put as many restrictions on it as possible and make stealing it has hard a possible. Some of these restrictions might be too severe for your application, you can always loosen them."
 	| cookie baseUrl |

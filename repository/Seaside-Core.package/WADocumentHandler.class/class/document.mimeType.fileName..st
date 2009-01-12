@@ -1,4 +1,4 @@
-instance creation
+instance-creation
 document: anObject mimeType: aMimeType fileName: aString
 	^ self document: (anObject seasideMimeDocument
 		mimeType: aMimeType;

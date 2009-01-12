@@ -1,4 +1,4 @@
-instance creation
+instance-creation
 fromString: aString
 	^Array streamContents: [ :stream |
 		| values |

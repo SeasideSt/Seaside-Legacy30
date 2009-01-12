@@ -1,4 +1,4 @@
-instance creation
+instance-creation
 unregister: aConfiguration
 	"Removes aConfiguration from the list of known configurations."
 	

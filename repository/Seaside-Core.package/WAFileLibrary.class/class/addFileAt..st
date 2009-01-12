@@ -1,4 +1,4 @@
-file addition
+adding-files
 addFileAt: aPath
 	"adds the file specified by aFilename to the current file library"
 	self

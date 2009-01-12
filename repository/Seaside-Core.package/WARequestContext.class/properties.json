@@ -6,13 +6,11 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"codec",
 		"handlers",
 		"request",
 		"response",
-		"responseStream",
-		"properties",
-		"subscribers"
+		"codec",
+		"properties"
 	],
 	"name" : "WARequestContext",
 	"type" : "normal"

@@ -1,8 +1,9 @@
 accessing
 entryPointAt: aString ifAbsent: aBlock
 	^ self
-		entryPointAt: aString
+		entryPointAt: (aString
+			ifNil: [ ^ aBlock value ])
 		with: [ :dispatcher :token |
 			dispatcher entryPoints
 				at: token
-				ifAbsent: [ ^ aBlock value ] ] 
+				ifAbsent: [ ^ aBlock value ] ]

@@ -1,3 +1,0 @@
-public
-isResumable
-	^ false

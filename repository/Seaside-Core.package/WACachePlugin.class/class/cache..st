@@ -1,3 +1,3 @@
-instance creation
+instance-creation
 cache: aCache
 	^ self new setCache: aCache; yourself

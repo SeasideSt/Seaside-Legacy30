@@ -1,3 +1,0 @@
-private
-notFoundHandler
-	^ WANotFoundHandler new
