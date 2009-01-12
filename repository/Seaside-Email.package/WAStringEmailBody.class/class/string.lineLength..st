@@ -1,4 +1,4 @@
-instance-creation
+instance creation
 string: aString lineLength: anInteger
 	| string |
 	string := String streamContents: [ :stream |

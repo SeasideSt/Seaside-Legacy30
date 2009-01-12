@@ -1,4 +1,4 @@
-instance-creation
+instance creation
 from: aFromEmailAddress to: aToEmailAddress subject: aString
 	^self new
 		from: aFromEmailAddress;
