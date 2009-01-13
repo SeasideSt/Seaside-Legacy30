@@ -1,4 +1,4 @@
-instance-creation
+instance creation
 manager: aServerManager
 	^ aServerManager register: 
 		(self basicNew

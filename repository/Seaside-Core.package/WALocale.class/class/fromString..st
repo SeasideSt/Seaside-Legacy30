@@ -1,4 +1,4 @@
-instance-creation
+instance creation
 fromString: aString
 	| language country delimeter |
 	delimeter := (aString includes: $_)

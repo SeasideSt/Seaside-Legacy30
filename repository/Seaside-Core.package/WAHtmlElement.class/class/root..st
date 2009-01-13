@@ -1,3 +1,3 @@
-instance-creation
+instance creation
 root: aRoot
 	^ self basicNew initializeWithRoot: aRoot
