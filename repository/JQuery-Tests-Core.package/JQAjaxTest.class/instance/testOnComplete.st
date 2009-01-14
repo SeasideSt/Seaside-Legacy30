@@ -5,4 +5,4 @@ testOnComplete
 		equals: self function , '.ajax({complete:function(){alert("loaded")}})'.
 	self
 		assert: ((self jQuery: 'li') load onComplete: (self javascript alert: 'loaded'))
-		equals: self function , '("li").load("/",function(){alert("loaded")})'
+		equals: self function , '("li").load("/","",function(){alert("loaded")})'

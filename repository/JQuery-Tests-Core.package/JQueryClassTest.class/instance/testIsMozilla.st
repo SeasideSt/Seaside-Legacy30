@@ -1,4 +1,4 @@
-testing-agent
+testing-deprecated
 testIsMozilla
 	self
 		assert: self jQuery isMozilla

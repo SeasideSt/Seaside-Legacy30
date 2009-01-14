@@ -1,4 +1,4 @@
-testing-agent
+testing-deprecated
 testIsOpera
 	self
 		assert: self jQuery isOpera

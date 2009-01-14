@@ -1,4 +1,4 @@
-testing-agent
+testing-deprecated
 testHasBoxModel
 	self
 		assert: self jQuery hasBoxModel
