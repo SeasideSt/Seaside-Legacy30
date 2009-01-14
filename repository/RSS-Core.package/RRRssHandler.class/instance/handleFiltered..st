@@ -9,7 +9,7 @@ handleFiltered: aRequestContext
 	canvas := RRRssRenderCanvas context: context.
 	rootComponent := self createRootComponent.
 	
-	^ WACurrentRequestContext use: aRequestContext during: [
+	WACurrentRequestContext use: aRequestContext during: [
 		self exceptionHandler
 			handleExceptionsDuring: [
 				rootComponent updateRoot: root.
