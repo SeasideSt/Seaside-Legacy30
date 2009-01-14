@@ -1,4 +1,4 @@
-agent
+deprecated
 isMozilla
 	"A boolean if the rendering engine is Mozilla."
 	

@@ -1,5 +1,5 @@
 accessors
-size
+length
 	"The number of elements in the jQuery object."
 	
-	self length
+	self access: 'length'
