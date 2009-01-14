@@ -4,6 +4,7 @@ renderContentOn: html
 		self renderHandlerConfigurationOn: html.
 		self renderHaltOn: html.
 		self renderErrorOn: html.
+		self renderErrorWithCallOn: html.
 		self renderResumableErrorOn: html.
 		self renderWarningOn: html.
 		self renderDeprecatedOn: html.
