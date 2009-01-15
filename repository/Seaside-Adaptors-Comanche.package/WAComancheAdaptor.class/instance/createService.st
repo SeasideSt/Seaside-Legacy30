@@ -1,6 +1,6 @@
 private-controlling
 createService
 	^(HttpService on: self port)
-		name: 'seaside';
+		name: 'seaside-', self port seasideString;
 		plug: self;
 		yourself
