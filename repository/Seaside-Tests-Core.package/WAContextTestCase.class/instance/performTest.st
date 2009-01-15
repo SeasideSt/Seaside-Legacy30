@@ -1,8 +1,7 @@
 running
 performTest
 	| context |
-	context := WARequestContext new.
-	self configureContext: context.
+	context := self createRequestContext.
 	WACurrentRequestContext 
 		use: context
 		during: [ self pushHandlers: self handlersToPush for: context ]
