@@ -3,6 +3,6 @@ hasBoxModel
 	"States if the current page, in the user's browser, is being rendered using the W3C CSS Box Model."
 	
 	self
-		seasideDeprecatedApi: 'JQueryClass>>#browser'
+		seasideDeprecatedApi: 'JQueryClass>>#hasBoxModel'
 		details: 'Use #support properties instead.'.
 	self access: 'boxModel'
