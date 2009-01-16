@@ -1,1 +1,0 @@
-Autocomplete an input field to enable users quickly finding and selecting some value, leveraging searching and filtering.
