@@ -7,7 +7,7 @@ renderSmalltalkOn: html
 			source := (contents class sourceCodeAt: selector)
 				asString readStream.
 			html code: [
-				html strong: contents class name , '>>' , source nextLine; break.
+				html strong: [ html text: contents class name; text: '>>'; text: source nextLine; break ].
 				[ source atEnd ] whileFalse: [
 					[ source peek = Character tab ]
 						whileTrue: [ html space; space; space. source next ].
