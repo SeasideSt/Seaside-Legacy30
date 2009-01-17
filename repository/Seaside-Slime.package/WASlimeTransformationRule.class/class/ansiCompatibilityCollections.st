@@ -1,8 +1,10 @@
 transformations
 ansiCompatibilityCollections
 	^ self
-		rewrite: #(	
+		rewrite: #(
 			('``@collection withIndexDo: [ :`each :`index |  | `@temps | ``@body ]'
+			 '``@collection keysAndValuesDo: [ :`index :`each |  | `@temps | ``@body ]')
+			('``@collection doWithIndex: [ :`each :`index |  | `@temps | ``@body ]'
 			 '``@collection keysAndValuesDo: [ :`index :`each |  | `@temps | ``@body ]')
 			('``@collection collect: ``@block1 thenDo: ``@block2'
 			 '(``@collection collect: ``@block1) do: ``@block2')
