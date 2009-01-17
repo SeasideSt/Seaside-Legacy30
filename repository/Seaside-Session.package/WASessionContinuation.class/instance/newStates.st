@@ -1,3 +1,0 @@
-creational
-newStates
-	^ WASnapshot new
