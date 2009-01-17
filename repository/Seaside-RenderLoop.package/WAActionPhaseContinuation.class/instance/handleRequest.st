@@ -1,10 +1,10 @@
 processing
 handleRequest
 	| renderContinuation |
-	self request isXmlHttpRequest 
-		ifTrue: [ self requestContext onRespond: [ :r | states snapshot ] ].
-	self withNotificationHandlerDo: [ 
-		self renderingContext callbacks handle: self requestContext ].
+	[ self withNotificationHandlerDo: [ 
+		self renderingContext callbacks handle: self requestContext ] ]
+			ensure: ["this code is not yet tested with the response refactoring because the javascript code isn't working with it yet. but I think it will work -- jf'" 
+				self request isXmlHttpRequest ifTrue: [ self states snapshot ] ].
 	renderContinuation := self newRenderPhaseContinuation.
 	(self shouldRedirect) 
 		ifTrue: [ self redirectToContinuation: renderContinuation ]
