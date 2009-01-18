@@ -8,15 +8,15 @@ processRendering: aResponse
 		visitor: (WARenderingGuide client: renderingContext visitor);
 		document: document.
 		
-	actionContinuation := self newActionPhaseContinuation
+	actionContinuation := self createActionContinuation
+		setStates: self states;
 		renderingContext: renderingContext;
 		yourself.
 	renderingContext actionUrl: actionContinuation registerForUrl.
 
 	htmlRoot := self newHtmlRootWithContext: renderingContext.
 	document open: htmlRoot.
-	[ self root renderWithContext: renderingContext ]
-		ensure: [ actionContinuation updateStates ].
+	self root renderWithContext: renderingContext.
 	self writeOnLoadOn: document.
 	document close: htmlRoot.
 	renderingContext release
