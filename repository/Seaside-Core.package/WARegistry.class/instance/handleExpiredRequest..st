@@ -1,3 +1,3 @@
 processing
 handleExpiredRequest: aRequestContext
-	aRequestContext responseFactory expiredKey return
+	^ self responseFactory expiredKeyForContext: aRequestContext

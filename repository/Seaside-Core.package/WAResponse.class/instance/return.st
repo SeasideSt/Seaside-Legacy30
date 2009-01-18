@@ -1,3 +1,0 @@
-convenience
-return
-	WAResponseNotification signal

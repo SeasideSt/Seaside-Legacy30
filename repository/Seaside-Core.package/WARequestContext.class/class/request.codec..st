@@ -1,3 +1,5 @@
-instance-creation
+instance creation
 request: aRequest codec: aCodec
-	^ self request: aRequest response: WAResponse new codec: aCodec
+	^ (self request: aRequest)
+		codec: aCodec;
+		yourself

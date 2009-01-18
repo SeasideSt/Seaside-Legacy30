@@ -1,1 +1,0 @@
-A WAReturnResponseRequest is singalled whenever the application server wants to return a response back to the client.

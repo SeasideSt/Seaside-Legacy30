@@ -1,3 +1,3 @@
-instance-creation
+instance creation
 request: aRequest
-	^ self request: aRequest response: WAResponse new
+	^ self basicNew initializeWithRequest: aRequest; yourself

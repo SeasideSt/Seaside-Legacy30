@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "WAEvent",
+	"category" : "Seaside-Core-Contexts",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"response"
+	],
+	"name" : "WAResponseEvent",
+	"type" : "normal"
+}
