@@ -1,3 +1,0 @@
-private
-createRequestContext
-	^ self requestContextWithUrl: '/'

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "pmm 1/18/2009 14:45",
+	"super" : "WAObject",
+	"category" : "Seaside-Tests-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"string"
+	],
+	"name" : "WAGemStoneMockString",
+	"type" : "normal"
+}
