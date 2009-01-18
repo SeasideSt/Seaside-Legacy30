@@ -11,7 +11,7 @@ processRendering: aResponse
 		document: document;
 		actionUrl: actionContinuation registerForUrl.
 	actionContinuation renderingContext: renderingContext.
-	htmlRoot := self newHtmlRootWithContext: renderingContext.
+	htmlRoot := self createHtmlRootWithContext: renderingContext.
 
 	"Render"
 	document open: htmlRoot.
