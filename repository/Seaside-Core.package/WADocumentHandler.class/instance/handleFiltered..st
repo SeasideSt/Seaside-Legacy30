@@ -3,4 +3,4 @@ handleFiltered: aRequestContext
 	aRequestContext response
 		cacheForever;
 		document: self document.
-	aRequestContext return
+	aRequestContext respond

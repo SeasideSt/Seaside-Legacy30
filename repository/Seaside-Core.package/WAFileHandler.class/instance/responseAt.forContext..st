@@ -14,6 +14,6 @@ responseAt: aPath forContext: aRequestContext
 			" won't be executed if a document is found "
 			aRequestContext responseFactory 
 				notFound;
-				return ]
+				respond ]
 		ifFalse: [ (self fileHandlerListingClass on: self context: aRequestContext)
 					responseForLibrary: libraryClass default ]

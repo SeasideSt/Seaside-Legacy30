@@ -8,4 +8,4 @@ documentAt: aFilename forContext: aRequestContext
 				document: (self documentForFile: aFilename)
 				mimeType: (self mimetypeForFile: aFilename);
 				cacheFor: self cacheDuration.
-			aRequestContext return ]
+			aRequestContext respond ]

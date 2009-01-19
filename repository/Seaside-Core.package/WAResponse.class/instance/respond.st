@@ -1,3 +1,3 @@
 convenience
-return
+respond
 	WAResponseNotification signal

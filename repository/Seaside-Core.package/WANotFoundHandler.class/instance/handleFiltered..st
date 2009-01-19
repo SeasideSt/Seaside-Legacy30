@@ -1,3 +1,3 @@
 processing
 handleFiltered: aRequestContext
-	aRequestContext responseFactory notFound; return
+	aRequestContext responseFactory notFound; respond

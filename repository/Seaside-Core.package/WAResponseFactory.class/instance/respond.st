@@ -1,5 +1,5 @@
 actions
-return
+respond
 	"Tell the current request context to return the response."
 
-	self requestContext return
+	self requestContext respond

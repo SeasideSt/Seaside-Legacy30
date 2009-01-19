@@ -2,4 +2,4 @@ processing
 handleFiltered: aRequestContext 
 	self isClosed 
 		ifFalse: [ super handleFiltered: aRequestContext ]
-		ifTrue: [ aRequestContext responseFactory pageExpired; return ]
+		ifTrue: [ aRequestContext responseFactory pageExpired; respond ]
