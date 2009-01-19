@@ -1,3 +1,3 @@
 processing
-handleFiltered: aRequestContext 
-	^ WAResponseFactory notFoundForContext: aRequestContext
+handleFiltered: aRequestContext
+	aRequestContext responseFactory notFound; return

@@ -1,3 +1,5 @@
 accessing
 codec
-	^ codec ifNil: [ codec := self defaultCodec ]
+	"Answer the codec used to process this request context, that is how strings are converted to a given encoding."
+
+	^ codec

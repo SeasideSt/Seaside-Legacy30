@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "lr 1/12/2009 08:25",
+	"super" : "WANotification",
+	"category" : "Seaside-Core-Exceptions",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAResponseNotification",
+	"type" : "normal"
+}

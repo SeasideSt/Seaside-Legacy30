@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"requestContext"
+	],
 	"name" : "WAResponseFactory",
 	"type" : "normal"
 }

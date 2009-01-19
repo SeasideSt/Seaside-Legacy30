@@ -8,6 +8,6 @@ valueForField: anObject
 	x := Integer readFrom: stream.
 	(stream atEnd not and: [ stream next = $, ])
 		ifFalse: [ ^ nil ].
-	stream atEnd ifTrue: [  ^nil ].
+	stream atEnd ifTrue: [ ^ nil ].
 	y := Integer readFrom: stream.
 	^ x @ y
