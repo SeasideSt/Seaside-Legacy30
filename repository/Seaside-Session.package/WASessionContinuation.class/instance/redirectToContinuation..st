@@ -1,5 +1,3 @@
 private
 redirectToContinuation: aSessionContinuation
-	self respond: [ :response |
-		aSessionContinuation updateStates.
-		response redirectTo: aSessionContinuation registerForUrl ]
+	self respond: [ :response | response redirectTo: aSessionContinuation registerForUrl ]
