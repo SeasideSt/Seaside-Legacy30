@@ -1,6 +1,7 @@
 processing
 processWith: argumentString
-	| response |
-	response := self defaultResponse.
-	self processOn: response stream with: argumentString.
-	self requestContext respond: response
+	| context |
+	context := self requestContext.
+	context response doNotCache; contentType: self defaultContentType.
+	self processOn: context response contents with: argumentString.
+	context respond
