@@ -1,0 +1,3 @@
+private
+createRequestContext
+	^ self requestContextWithUrl: '/'
