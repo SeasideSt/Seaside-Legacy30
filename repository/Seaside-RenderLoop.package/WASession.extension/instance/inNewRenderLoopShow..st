@@ -1,3 +1,7 @@
 *seaside-renderloop
 inNewRenderLoopShow: aComponent
-	((self preferenceAt: #renderPhaseContinuationClass) root: aComponent) value
+	"This is buggy. With partial continuations it doesn't result in the original root
+	being restored."
+	((self preferenceAt: #renderPhaseContinuationClass) root: aComponent)
+		updateStates;
+		value
