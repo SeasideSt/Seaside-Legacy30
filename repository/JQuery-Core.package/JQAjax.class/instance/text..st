@@ -5,9 +5,9 @@ text: aBlock
 	aBlock fixCallbackTemps.
 	self dataType: 'text'.
 	self callback: [
-		| response |
-		response := WAResponse new.
-		response contentType: (WAMimeType textPlain
+		| context |
+		context := self requestContext.
+		context response doNotCache; contentType: (WAMimeType textPlain
 			charset: self application charSet).
-		aBlock value: response stream.
-		owner requestContext respond: response ]
+		aBlock value: context response stream.
+		context respond ]
