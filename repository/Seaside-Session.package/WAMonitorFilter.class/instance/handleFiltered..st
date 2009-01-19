@@ -11,4 +11,4 @@ handleFiltered: aRequestContext
 					WAExceptionHandler
 						internalError: error 
 						context: aRequestContext ].
-			aRequestContext return ]
+			aRequestContext respond ]

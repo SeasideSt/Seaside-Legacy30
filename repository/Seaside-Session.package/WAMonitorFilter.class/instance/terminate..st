@@ -4,4 +4,4 @@ terminate: aRequestContext
 	aRequestContext response
 		contentType: WAMimeType textPlain;
 		nextPutAll: 'Process terminated'.
-	aRequestContext return
+	aRequestContext respond

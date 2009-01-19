@@ -4,4 +4,4 @@ handleFiltered: aRequestContext
 
 	(self isImplemented: aRequestContext request method)
 		ifTrue: [ super handleFiltered: aRequestContext ]
-		ifFalse: [ aRequestContext response notImplemented; return ]
+		ifFalse: [ aRequestContext responseFactory notImplemented; respond ]
