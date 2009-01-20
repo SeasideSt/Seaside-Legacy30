@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "pmm 4/6/2008 15:22",
-	"super" : "WAContextTestCase",
+	"super" : "WAContextTest",
 	"category" : "Seaside-Tests-Session",
 	"classinstvars" : [ ],
 	"pools" : [ ],
