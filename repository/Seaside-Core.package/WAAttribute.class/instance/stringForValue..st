@@ -1,3 +1,3 @@
 converting
 stringForValue: anObject 
-	^ anObject seasideString
+	^ anObject isNil ifFalse: [ anObject seasideString ]
