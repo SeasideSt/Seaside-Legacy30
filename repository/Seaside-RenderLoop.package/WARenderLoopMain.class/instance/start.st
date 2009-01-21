@@ -6,5 +6,5 @@ start
 		(WAInitialRequestVisitor request: self requestContext request))
 		start: root.
 	((self session preferenceAt: #renderPhaseContinuationClass) root: root)
-		updateStates;
+		captureState;
 		value

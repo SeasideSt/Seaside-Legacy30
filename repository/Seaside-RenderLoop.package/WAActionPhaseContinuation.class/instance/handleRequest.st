@@ -4,11 +4,9 @@ handleRequest
 	[ self withNotificationHandlerDo: [ 
 		self renderingContext callbacks handle: self requestContext ] ]
 			ensure: [
-				self request isXmlHttpRequest ifTrue: [ 
-					self states reset.
-					self updateStates ] ].
+				self request isXmlHttpRequest ifTrue: [ self captureState ] ].
 	renderContinuation := self createRenderContinuation.
-	renderContinuation updateStates.
+	renderContinuation captureState.
 	(self shouldRedirect) 
 		ifTrue: [ self redirectToContinuation: renderContinuation ]
 		ifFalse: [ renderContinuation value ]
