@@ -4,4 +4,4 @@ internalError: anException
 		internalError;
 		contentType: WAMimeType textPlain;
 		nextPutAll: 'Internal Error: ';
-		nextPutAll: anException messageText
+		nextPutAll: (anException messageText ifNil: [ String new ])
