@@ -1,9 +1,14 @@
 testing
 testHandleDoesNotExist
 	| response |
-	response := handler handle: (self requestContextWithUrl: '/root/files/Cheeseburger/').
+	self requestContextWithUrl: '/root/files/Cheeseburger/'.
+	response := self responseAfter: [ handler handle: self requestContext ].
 	self assertNotExisiting: response.
-	response := handler handle: (self requestContextWithUrl: '/root/files/Cheeseburger').
+	
+	self requestContextWithUrl: '/root/files/Cheeseburger'.
+	response := self responseAfter: [ handler handle: self requestContext ].
 	self assertNotExisiting: response.
-	response := handler handle: (self requestContextWithUrl: '/root/files/WAStandardFiles/cheeseburger.jpeg').
+	
+	self requestContextWithUrl: '/root/files/WAStandardFiles/cheeseburger.jpeg'.
+	response := self responseAfter: [ handler handle: self requestContext ].
 	self assertNotExisiting: response
