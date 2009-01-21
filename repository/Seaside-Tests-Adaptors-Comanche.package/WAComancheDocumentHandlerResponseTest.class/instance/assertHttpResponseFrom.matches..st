@@ -4,9 +4,9 @@ assertHttpResponseFrom: aResponse matches: aHandler
 	super 
 		assertHttpResponseFrom: aResponse
 		matches: aHandler.
-	[ kom := WAComancheAdaptor new.
-	httpResponse := kom convertResponse: aResponse ]
-		ensure: [ kom ifNotNil: [ kom unregister ] ].
+	kom := WAComancheAdaptor new.
+	[ httpResponse := kom convertResponse: aResponse ]
+		ensure: [ kom unregister ].
 	self assert: httpResponse status == #ok.
 	self assert: httpResponse contentType = aHandler document mimeType seasideString.
 	self assert: httpResponse contentLength = aHandler document contents size.
