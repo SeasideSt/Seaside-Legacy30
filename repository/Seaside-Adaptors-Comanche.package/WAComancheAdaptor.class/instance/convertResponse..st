@@ -5,13 +5,13 @@ convertResponse: aResponse
 		ifTrue:  [ ^ self requestHandlingAborted ].
 	komResponse := HttpResponse new.
 		
-	aResponse headers associationsDo:  [ :associaction | 
-		komResponse 
-			fieldAt: associaction key
-			put: associaction value ].
+	aResponse headers keysAndValuesDo: [ :key :value |
+		key = 'Content-Type'
+			ifTrue: [ komResponse contentType: value seasideString ]
+			ifFalse: [ komResponse fieldAt: key put: value seasideString ] ].
 	self convertCookiesFrom: aResponse to: komResponse.
 	
 	komResponse status: (HttpResponse statusSymbolFor: aResponse status).
 	komResponse contents: (self contentsOfResponse: aResponse).
-	komResponse contentType: aResponse contentType seasideString.
+	
 	^ komResponse
