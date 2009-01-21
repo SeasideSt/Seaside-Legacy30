@@ -1,7 +1,7 @@
 testing
 testNewCookie
 	| cookie |
-	cookie := self context newCookie.
+	cookie := self requestContext newCookie.
 	self assert: cookie path = self application baseUrl pathString.
 	self assert: cookie ports isNil.
 	self assert: cookie httpOnly.
@@ -9,7 +9,7 @@ testNewCookie
 	self assert: cookie domain isNil.
 	
 	self application preferenceAt: #serverPath put: '/en/private_kunden/wealth_management'.
-	cookie := self context newCookie.
+	cookie := self requestContext newCookie.
 	self assert: cookie path = '/en/private_kunden/wealth_management'.
 	self assert: cookie ports isNil.
 	self assert: cookie httpOnly.
@@ -19,7 +19,7 @@ testNewCookie
 	self application preferenceAt: #serverPort put: 8080.
 	self application preferenceAt: #serverProtocol put: 'https'.
 	self application preferenceAt: #serverHostname put: 'www.lgt.com'.
-	cookie := self context newCookie.
+	cookie := self requestContext newCookie.
 	self assert: cookie path = '/en/private_kunden/wealth_management'.
 	self deny: cookie ports isNil.
 	self assert: cookie ports size = 1.
