@@ -1,3 +1,3 @@
 responding
 responseForLibraries
-	^ handler forbiddenResponseFor: context
+	self requestContext responseFactory forbidden; respond

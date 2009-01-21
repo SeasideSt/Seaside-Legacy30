@@ -5,7 +5,7 @@ responseAt: aPath forContext: aRequestContext
 		ifTrue: [ ^ (self fileHandlerListingClass on: self context: aRequestContext) responseForLibraries ].
 	libraryClass := self
 		libraryAt: aPath first asSymbol
-		ifAbsent: [ ^ self notFoundForContext: aRequestContext ].
+		ifAbsent: [ ^ aRequestContext responseFactory notFound; respond  ].
 	aPath size > 1
 		ifTrue: [
 			libraryClass

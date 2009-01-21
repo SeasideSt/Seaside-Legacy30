@@ -1,3 +1,5 @@
 responding
 responseForLibrary: aLibrary
-	^ handler forbiddenResponseFor: context
+	context responseFactory
+		forbidden;
+		respond
