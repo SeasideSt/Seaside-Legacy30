@@ -1,7 +1,5 @@
 accessing-headers
 headerAt: aKeyString putDate: aDateAndTime
-	"sets a header who's value is a DateAndTime
-	correctly formats the date"
-	self
-		headerAt: aKeyString
-		put: (WAPrinter httpDate print: aDateAndTime)
+	"Convenience method that sets a response header with aString and aDateAndTime. If the header had already been set, the new value overwrites the previous one."
+	
+	^ self headerAt: aKeyString put: (WAPrinter httpDate print: aDateAndTime)

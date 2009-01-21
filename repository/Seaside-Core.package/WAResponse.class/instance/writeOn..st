@@ -2,5 +2,6 @@ writing
 writeOn: aStream
 	self writeStatusOn: aStream.
 	self writeHeadersOn: aStream.
+	self writeCookiesOn: aStream.
 	aStream crlf.
-	aStream nextPutAll: stream contents
+	self writeContentOn: aStream

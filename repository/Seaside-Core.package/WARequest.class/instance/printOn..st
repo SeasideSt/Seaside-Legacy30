@@ -1,5 +1,5 @@
 printing
 printOn: aStream
 	super printOn: aStream.
-	aStream space; nextPutAll: self method.
-	aStream space; nextPutAll: self url seasideString
+	aStream nextPutAll: ' method: '; nextPutAll: self method.
+	aStream nextPutAll: ' url: '; nextPutAll: self url seasideString

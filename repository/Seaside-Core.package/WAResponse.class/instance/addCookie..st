@@ -1,4 +1,5 @@
 accessing-cookies
 addCookie: aCookie
-	cookies ifNil: [ cookies := Set new ].
-	cookies add: aCookie
+	"Add the cookie aCookies to the receiver."
+
+	^ self cookies add: aCookie

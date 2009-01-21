@@ -1,3 +1,5 @@
-convenience
+configuration
 httpVersion
-	^self class defaultHttpVersion
+	"Answer the HTTP version to be used."
+
+	^ 'HTTP/1.1'

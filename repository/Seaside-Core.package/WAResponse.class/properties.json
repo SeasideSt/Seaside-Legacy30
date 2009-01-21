@@ -4,13 +4,14 @@
 	"category" : "Seaside-Core-HTTP",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"StatusMessages"
+	],
 	"instvars" : [
-		"contentType",
 		"headers",
 		"cookies",
 		"status",
-		"stream"
+		"message"
 	],
 	"name" : "WAResponse",
 	"type" : "normal"

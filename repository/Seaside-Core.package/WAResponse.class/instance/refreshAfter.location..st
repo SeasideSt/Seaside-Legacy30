@@ -1,3 +1,3 @@
-accessing-headers
+convenience-status
 refreshAfter: aNumber location: aUrlOrString
-	self headerAt: 'Refresh' put: aNumber seasideString, '; ', aUrlOrString seasideString
+	self headerAt: 'Refresh' put: aNumber seasideString , '; ' , aUrlOrString seasideString

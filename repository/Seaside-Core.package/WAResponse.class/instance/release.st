@@ -1,4 +1,3 @@
 initialization
 release
-	stream := cookies := headers := nil.
-	super release
+	cookies := headers := nil

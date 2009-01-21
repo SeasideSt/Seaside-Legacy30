@@ -1,3 +1,3 @@
 testing
 isPost
-	^ self method asUppercase = 'POST'
+	^ self method = 'POST'

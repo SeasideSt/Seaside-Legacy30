@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WASmallDictionary",
+	"category" : "Seaside-Core-HTTP",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAHeaderFields",
+	"type" : "normal"
+}

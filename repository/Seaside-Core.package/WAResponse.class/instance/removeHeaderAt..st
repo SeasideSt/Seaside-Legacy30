@@ -1,7 +1,5 @@
 accessing-headers
 removeHeaderAt: aString
-	headers isNil ifTrue: [
-		^self ].	
+	"Removes all occurences of the header value aString."
 
-	headers := self headers reject: [ :each |
-		each key = aString ]
+	^ self headers removeKey: aString

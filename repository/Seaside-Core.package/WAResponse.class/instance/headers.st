@@ -1,5 +1,5 @@
-accessing-headers
+accessing
 headers
-	headers isNil ifTrue: [
-		headers := OrderedCollection new ].
-	^headers
+	"Answer the headers of this response."
+	
+	^ headers

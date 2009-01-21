@@ -1,3 +1,5 @@
-accessing-cookies
+accessing
 cookies
-	^ cookies ifNil: [ #() ]
+	"Answer the cookies of this response."
+
+	^ cookies

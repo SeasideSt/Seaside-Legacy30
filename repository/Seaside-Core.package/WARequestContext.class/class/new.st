@@ -1,3 +1,3 @@
-instance creation
+instance-creation
 new
-	^ self request: nil
+	self error: self name , ' has to be instantiated with a request and response object.'

@@ -1,7 +1,7 @@
 convenience-caching
 cacheFor: aDuration
-	"tells the user agent to cache the response for the given duration"
+	"Configure the receiver to be cached for aDuration."
+
 	self removeHeaderAt: 'Pragma'. "Proxies"
-	self removeHeaderAt: 'Expires'. "HTTP 1.0"
-	self cacheControl: 'max-age=', aDuration asSeconds printString. "HTTP 1.1"
-	self expiresAt: (DateAndTime now + aDuration).
+	self headerAt: 'Expires' putDate: DateAndTime now + aDuration. "HTTP 1.0"
+	self headerAt: 'Cache-Control' put: 'max-age=' , aDuration asSeconds printString. "HTTP 1.1"

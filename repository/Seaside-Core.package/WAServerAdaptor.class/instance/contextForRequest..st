@@ -1,3 +1,6 @@
 private
 contextForRequest: aRequest
-	^ WARequestContext request: aRequest codec: self codec
+	^ WARequestContext 
+		request: aRequest
+		response: (self responseForRequest: aRequest)
+		codec: self codec

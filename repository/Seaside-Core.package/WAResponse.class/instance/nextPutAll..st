@@ -1,3 +1,5 @@
 streaming
 nextPutAll: aString
-	aString do: [:ea | self nextPut: ea]
+	"Append the elements of aCollection to the body part of the response."
+	
+	self stream nextPutAll: aString

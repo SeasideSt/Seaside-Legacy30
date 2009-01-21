@@ -1,3 +1,3 @@
-accessing
-contentType: mimeTypeOrString
-	contentType := mimeTypeOrString seasideMimeType
+convenience-accessing
+contentType: aMimeType
+	self headerAt: 'Content-Type' put: aMimeType

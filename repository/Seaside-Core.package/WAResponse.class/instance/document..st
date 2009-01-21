@@ -1,7 +1,7 @@
-convenience
-document: anObject
+documents
+document: aDocument
 	| document |
-	document := anObject seasideMimeDocument.
+	document := aDocument seasideMimeDocument.
 	self attachmentWithFileName: document fileName.
 	self contentType: document mimeType.
 	self nextPutAll: document content

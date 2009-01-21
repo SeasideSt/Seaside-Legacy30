@@ -1,3 +1,3 @@
-accessing
+convenience-accessing
 contentType
-	^ contentType
+	^ self headerAt: 'Content-Type' ifAbsent: [ WAMimeType textPlain ]

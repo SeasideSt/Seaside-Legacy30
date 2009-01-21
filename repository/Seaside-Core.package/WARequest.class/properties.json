@@ -8,11 +8,11 @@
 	"instvars" : [
 		"url",
 		"fields",
-		"headers",
-		"cookies",
 		"method",
 		"nativeRequest",
-		"remoteAddress"
+		"remoteAddress",
+		"headers",
+		"cookies"
 	],
 	"name" : "WARequest",
 	"type" : "normal"

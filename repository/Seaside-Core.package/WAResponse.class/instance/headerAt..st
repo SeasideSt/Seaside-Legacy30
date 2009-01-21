@@ -1,5 +1,5 @@
 accessing-headers
 headerAt: aString
-	^self headers
-		detect: [ :each | each key = aString ]
-		ifNone: [ nil ]
+	"Answer the header with aString."
+	
+	^ self headers at: aString

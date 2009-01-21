@@ -1,5 +1,6 @@
-convenience
-document: anObject mimeType: mimeString fileName: fileString
-	^ (self document: anObject mimeType: mimeString)
-		attachmentWithFileName: fileString;
-		yourself
+documents
+document: anObject mimeType: aMimeType fileName: aString
+	self document: (anObject seasideMimeDocument 
+		mimeType: aMimeType;
+		fileName: aString;
+		yourself)
