@@ -1,3 +1,3 @@
-private
+configuration
 createRequestContext
-	^ self requestContextWithUrl: '/'
+	^ WARequestContext request: self createRequest response: self createResponse codec: self createCodec

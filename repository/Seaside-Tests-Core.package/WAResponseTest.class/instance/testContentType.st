@@ -1,3 +1,4 @@
 testing
 testContentType
-	self assert: response contentType = WAResponse defaultValueForContentType
+	self response contentType: WAMimeType textHtml.
+	self assert: (self response headerAt: 'Content-Type') seasideString = 'text/html'

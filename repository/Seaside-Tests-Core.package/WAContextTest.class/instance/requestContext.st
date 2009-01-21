@@ -1,3 +1,3 @@
 accessing
 requestContext
-	^ WACurrentRequestContext value
+	^ requestContext

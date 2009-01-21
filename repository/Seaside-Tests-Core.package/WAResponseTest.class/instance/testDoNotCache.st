@@ -1,8 +1,6 @@
-testing
+testing-cache
 testDoNotCache
-	self assert: response headers isEmpty.
-	response doNotCache.
-	self assert: (response headerAt: 'Cache-Control') value = 'no-cache, must-revalidate'.
-	self assert: (response headerAt: 'Expires') value = self doNotCacheExpiryString.
-	self assert: (response headerAt: 'Pragma') value = 'no-cache'.
-	self assert: response headers size = 3
+	self response doNotCache.
+	self assert: (self response headerAt: 'Pragma') = 'no-cache'.
+	self assert: (self response headerAt: 'Expires') notNil.
+	self assert: (self response headerAt: 'Cache-Control') = 'no-cache, must-revalidate'

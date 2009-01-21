@@ -1,0 +1,3 @@
+configuration
+createCodec
+	^ WANullCodec new

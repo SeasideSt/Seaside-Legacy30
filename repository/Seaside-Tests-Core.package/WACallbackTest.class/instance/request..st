@@ -10,7 +10,7 @@ request: aDictionary
 		fields: aDictionary
 		cookies: nil
 		remoteAddress: nil.
-	context := WARequestContext request: request.
+	context := WARequestContext request: request response: WAResponse new.
 	WACurrentRequestContext
 		use: context
 		during: [ registry handle: context ]
