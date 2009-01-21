@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "TestCase",
+	"super" : "WAContextTest",
 	"category" : "Javascript-Tests-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
