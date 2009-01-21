@@ -1,0 +1,3 @@
+accessing
+createRequestContext
+	^ WARequestContext new

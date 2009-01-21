@@ -1,3 +1,3 @@
 accessing
 createHandler
-	^ self handlerClass context: self requestContext
+	^ self handlerClass context: self createRequestContext

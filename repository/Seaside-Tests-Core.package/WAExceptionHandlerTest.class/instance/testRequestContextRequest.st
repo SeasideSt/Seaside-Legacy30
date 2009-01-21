@@ -1,7 +1,7 @@
 testing
 testRequestContextRequest
 	| context |
-	context := self requestContext.
+	context := self createRequestContext.
 	self handlerClass
 		handleExceptionsDuring: [
 			self assert: context == WARequestContextRequest signal.

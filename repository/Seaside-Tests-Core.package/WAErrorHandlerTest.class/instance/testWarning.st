@@ -1,8 +1,9 @@
 testing
 testWarning
-	| response |
-	response := self handlerClass
+	| context |
+	context := self createRequestContext.
+	self handlerClass
 		handleExceptionsDuring: [ Warning signal ]
-		context: self requestContext.
+		context: context.
 		
-	self assert: response status = 500
+	self assert: context response status = 500
