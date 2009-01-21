@@ -3,13 +3,13 @@ A WAHtmlRoot is the root element of an HTML Document (<html>).
 Instance Variables
 	bodyAttrs:		<WAHtmlAttributes>
 	context:			<WARenderingContext>
-	docType:			<String>
+	docType:		<String>
 	headAttrs:		<WAHtmlAttributes>
 	headElements:	<OrderedCollection<WAHtmlElement>>
 	htmlAttrs:		<WAHtmlAttributes>
 	scripts:			<Set<String>>
 	styles:			<Set<String>>
-	title:				<String>
+	title:			<String>
 
 bodyAttrs
 	- the attributes of the <body> element

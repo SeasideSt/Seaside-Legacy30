@@ -1,4 +1,4 @@
 initialization
 initialize
 	super initialize.
-	contentsStream := SeasidePlatformSupport readWriteStream
+	contentsStream := WriteStream on: String new.

@@ -3,4 +3,4 @@ writeCookiesOn: aStream
 	cookies do: [ :each | 
 		aStream nextPutAll: 'Set-Cookie: '.
 		each writeOn: aStream.
-		aStream crlf ]
+		aStream nextPut: Character cr; nextPut: Character lf ]
