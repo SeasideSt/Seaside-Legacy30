@@ -6,7 +6,7 @@ createAndVerifyDocumentNamed: aFilename content: anObject mimeType: aMimeTypeStr
 		mimeType: aMimeTypeString
 		fileName: aFilename.
 	self assert: handler document contents = anObject.
-	response := handler response.
+	response := self responseAfter: [ handler handle: self requestContext ].
 	self assert: (self headerAt: 'Expires' forResponse: response) notNil.
 	self assert: (self headerAt: 'Content-Disposition' forResponse: response) = aHttpHeaderValue.
 	self assertHttpResponseFrom: response matches: handler
