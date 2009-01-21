@@ -1,5 +1,5 @@
 private
-handlersToPush
+createHandlers
 	| dispatcher application session |
 	dispatcher := WADispatcher named: 'rails'.
 	application := (WAApplication named: 'homepage')
@@ -7,4 +7,4 @@ handlersToPush
 		yourself.
 	session := WASession new.
 
-	^super handlersToPush, (Array with: dispatcher with: application with: session)
+	^super createHandlers, (Array with: dispatcher with: application with: session)
