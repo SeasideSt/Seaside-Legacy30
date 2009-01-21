@@ -9,4 +9,4 @@ handleRequest
 	renderContinuation captureState.
 	(self shouldRedirect) 
 		ifTrue: [ self redirectToContinuation: renderContinuation ]
-		ifFalse: [ renderContinuation value ]
+		ifFalse: [ renderContinuation basicValue ]
