@@ -1,3 +1,3 @@
 *seaside-session
 redirect
-	^ self respondAndContinue: [ :url | self redirectResponseFor: url ]
+	^ self respondAndContinue: [ :url | self redirectTo: url ]

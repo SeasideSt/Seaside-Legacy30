@@ -1,3 +1,3 @@
 *seaside-session
 redirectTo: aUrlOrString
-	self respond: (self redirectResponseFor: aUrlOrString)
+	self responseFactory redirectTo: aUrlOrString; respond

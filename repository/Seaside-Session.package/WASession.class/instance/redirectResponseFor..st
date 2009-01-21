@@ -2,5 +2,5 @@ deprecated
 redirectResponseFor: aUrlOrString
 	self
 		seasideDeprecatedApi: 'WASession>>#redirectResponseFor:'
-		details: 'Use redirectResponseFor:.'.
-	^ self requestContext redirectResponseFor: aUrlOrString
+		details: 'Use WARequestContext>>redirectTo:.'.
+	^ self requestContext redirectTo: aUrlOrString

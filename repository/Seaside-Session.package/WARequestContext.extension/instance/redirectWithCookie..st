@@ -1,7 +1,5 @@
 *seaside-session
 redirectWithCookie: aCookie
-	| r |
 	self respondAndContinue: [ :url |
-		r := self requestContext redirectResponseFor: url.
-		r addCookie: aCookie.
-		r ]
+		self response addCookie: aCookie.
+		self redirectTo: url ]

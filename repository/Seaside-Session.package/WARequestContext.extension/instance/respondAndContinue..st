@@ -1,7 +1,5 @@
 *seaside-session
 respondAndContinue: aBlock 
-	| r |
 	^ WAContinuation currentDo: [ :cc |
-		r := aBlock value: (self session actionUrlForContinuation: cc).
-	
-		self respond: r ]
+		aBlock value: (self session actionUrlForContinuation: cc).
+		self respond ]
