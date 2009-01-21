@@ -1,11 +1,8 @@
 actions
 addBoth
-	| response |
-	self requestContext respondAndContinue: [ :url |
-		response := self requestContext redirectResponseFor: url.
-		response addCookie: self firstCookie.
-		response addCookie: self secondCookie.
-		response ].
+	self requestContext response addCookie: self firstCookie.
+	self requestContext response addCookie: self secondCookie.
+	self requestContext redirect.
 	
 	self firstKey: nil.
 	self firstValue: nil.
