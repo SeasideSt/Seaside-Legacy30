@@ -4,14 +4,14 @@ describeOn: config
 		beAdvanced;
 		label: 'Charater Set';
 		comment: 'The character set reported to the browser. You may additionally need to configure your server that this is also the character set used by your server.';
-		default: WAResponse defaultValueForCharSet.
+		default: 'utf-8'.
 	(config collection: #libraries)
 		options: [ self libraryClasses ].
 	(config string: #mimeType)
 		beAdvanced;
 		label: 'MIME Type';
-		comment: 'the Internet media type of HTML documents reported to the browser';
-		default: WAResponse defaultValueForMimeType.
+		comment: 'The media type of HTML documents reported to the browser.';
+		default: 'text/html'.
 	(config string: #resourceBaseUrl)
 		group: #server;
 		comment: 'Sets the base URL for URLS generated with #resourceUrl:'.
