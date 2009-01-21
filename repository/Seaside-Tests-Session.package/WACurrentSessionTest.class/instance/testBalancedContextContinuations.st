@@ -6,7 +6,7 @@ testBalancedContextContinuations
 	alternateSession := WASession new.
 	tertiarySession := WASession new.
 	quatenarySession := WASession new.
-	context := WARequestContext new.
+	context := WARequestContext request: nil response: nil.
 	WACurrentRequestContext 
 		use: context
 		during: 

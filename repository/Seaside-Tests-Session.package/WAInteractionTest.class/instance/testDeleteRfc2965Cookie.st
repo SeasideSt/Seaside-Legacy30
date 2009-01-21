@@ -1,14 +1,14 @@
 testing
 testDeleteRfc2965Cookie
-	| requestCookie responseCookies responseCookie context |
+	| requestCookie responseCookies responseCookie |
 	requestCookie := (WARequestCookie key: 'password' value: 'sex')
 		path: '/en/private_kunden/wealth_management';
 		version: 1;
 		yourself.
-	context := self requestContextWithUrl: '/' cookies: (Array with: requestCookie).
-	context response deleteCookie: requestCookie.
+	self requestContextWithUrl: '/' cookies: (Array with: requestCookie).
+	self requestContext response deleteCookie: requestCookie.
 	
-	responseCookies := context response cookies.
+	responseCookies := self requestContext response cookies.
 	self assert: responseCookies size = 1.
 	responseCookie := responseCookies anyOne.
 	

@@ -3,7 +3,7 @@ testSimpleContinuation
 	"verify that continuation reuses the process variable from the current process."
 	| x continuation session context |
 	session := WASession new.
-	context := WARequestContext new.
+	context := WARequestContext request: nil response: nil.
 	WACurrentRequestContext 
 		use: context
 		during: 

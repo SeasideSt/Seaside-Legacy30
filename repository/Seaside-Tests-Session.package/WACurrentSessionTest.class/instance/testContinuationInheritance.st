@@ -4,7 +4,7 @@ testContinuationInheritance
 	| x session alternateSession context |
 	session := WASession new.
 	alternateSession := WASession new.
-	context := WARequestContext new.
+	context := WARequestContext request: nil response: nil.
 	WACurrentRequestContext 
 		use: context
 		during: 

@@ -3,7 +3,7 @@ testNotImplemented
 	| context |
 	#('OPTIONS' 'HEAD' 'PUT' 'DELETE' 'TRACE' 'CONNECT') do: [ :each |
 		request := self requestWithMethod: each.
-		context := WARequestContext request: request.
+		context := WARequestContext request: request response: WABufferedResponse new.
 		[ handler handleFiltered: context ]
 			on: WAResponseNotification
 			do: [ :notification | ].
@@ -11,7 +11,7 @@ testNotImplemented
 	
 	#('GET' 'POST') do: [ :each |
 		request := self requestWithMethod: each.
-		context := WARequestContext request: request.
+		context := WARequestContext request: request response: WABufferedResponse new.
 		[ handler handleFiltered: context ]
 			on: WAResponseNotification
 			do: [ :notification | ].

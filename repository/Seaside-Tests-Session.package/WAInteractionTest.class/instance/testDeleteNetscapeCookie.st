@@ -1,12 +1,12 @@
 testing
 testDeleteNetscapeCookie
-	| requestCookie responseCookies responseCookie context |
+	| requestCookie responseCookies responseCookie |
 	self application preferenceAt: #serverPath put: '/en/private_kunden/wealth_management'.
 	requestCookie := WARequestCookie key: 'password' value: 'sex'.
-	context := self requestContextWithUrl: '/' cookies: (Array with: requestCookie).
-	context response deleteCookie: requestCookie.
+	self requestContextWithUrl: '/' cookies: (Array with: requestCookie).
+	self requestContext response deleteCookie: requestCookie.
 	
-	responseCookies := context response cookies.
+	responseCookies := self requestContext response cookies.
 	self assert: responseCookies size = 1.
 	responseCookie := responseCookies anyOne.
 	
