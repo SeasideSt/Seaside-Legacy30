@@ -1,3 +1,3 @@
 private
 baseName
-	^ SeasidePlatformSupport defaultDispatcherName
+	^ WAPlatform current defaultDispatcherName
