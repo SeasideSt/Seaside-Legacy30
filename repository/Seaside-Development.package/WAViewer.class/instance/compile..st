@@ -1,6 +1,6 @@
 actions
 compile: aString
-	SeasidePlatformSupport
+	WAPlatform current
 		compile: aString
 		into: presenter class
 		classified: #rendering

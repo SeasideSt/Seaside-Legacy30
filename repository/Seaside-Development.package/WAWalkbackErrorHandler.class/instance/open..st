@@ -8,7 +8,7 @@ open: anException
 	behaviour."
 	[answer := self session isNil or:
 				[ self session inNewRenderLoopCall:
-					(SeasidePlatformSupport walkbackClass exception: anException) ].
+					(WAPlatform current walkbackClass exception: anException) ].
 	answer ifTrue: [ super open: anException ] ]
 		on: WARequestContextRequest
 		do: [ :err | super open: anException ]

@@ -1,3 +1,3 @@
 actions
 open: anException
-	SeasidePlatformSupport openDebuggerOn: anException
+	WAPlatform current openDebuggerOn: anException

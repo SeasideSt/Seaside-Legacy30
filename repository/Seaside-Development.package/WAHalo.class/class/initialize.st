@@ -1,3 +1,3 @@
 class initialization
 initialize
-	Halos := SeasidePlatformSupport weakDictionaryOfSize: 20
+	Halos := WAPlatform current weakDictionaryOfSize: 20
