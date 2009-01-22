@@ -1,7 +1,7 @@
 testing
 testNullCodec
 	| codec string |
-	codec := SeasidePlatformSupport codecForEncoding: nil.
+	codec := WAPlatform current codecForEncoding: nil.
 	string := 'Übèrstrîñgé'.
 	self assert: codec notNil.
 	self assert: codec class = WANullCodec.

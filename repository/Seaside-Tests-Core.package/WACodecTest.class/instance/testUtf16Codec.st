@@ -1,7 +1,7 @@
 testing
 testUtf16Codec
 	| codec |
-	codec := SeasidePlatformSupport codecForEncoding: 'UTF-16'.
+	codec := WAPlatform current codecForEncoding: 'UTF-16'.
 	self assert: codec notNil.
 	
 	self assert: (codec encode: self latin1String) = self utf16String.

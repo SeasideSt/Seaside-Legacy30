@@ -1,7 +1,7 @@
 testing
 testUtf8Codec
 	| codec |
-	codec := SeasidePlatformSupport codecForEncoding: 'UTF-8'.
+	codec := WAPlatform current codecForEncoding: 'UTF-8'.
 	self assert: codec notNil.
 	
 	self assert: (codec encode: 'Übèrstrîñgé') = 'ÃbÃ¨rstrÃ®Ã±gÃ©'.

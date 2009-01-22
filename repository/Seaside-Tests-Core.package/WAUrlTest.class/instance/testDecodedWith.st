@@ -3,7 +3,7 @@ testDecodedWith
 	| pathArray |
 	"http://ùser:paß@localhost:8080/foo/äbc/dêf?õ=stîgetc&ô#tårget"
 	url := (WAUrl absolute: 'http://%c3%b9ser:pa%c3%9f@localhost:8080/foo/%C3%A4bc/d%c3%aaf?%c3%b5=st%c3%aegetc&%c3%b4#t%c3%a5rget')
-		decodedWith: (SeasidePlatformSupport codecForEncoding: 'utf-8').
+		decodedWith: (WAPlatform current codecForEncoding: 'utf-8').
 	
 	self assert: url scheme = 'http'.
 	self assert: url username = 'ùser'.
