@@ -1,5 +1,5 @@
 initialization
 initialize
-	SeasidePlatformSupport
+	WAPlatform current
 		addToStartUpList: self;
 		addToShutDownList: self

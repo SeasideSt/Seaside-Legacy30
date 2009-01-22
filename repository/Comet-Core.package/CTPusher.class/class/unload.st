@@ -1,6 +1,6 @@
 initialization
 unload
-	SeasidePlatformSupport
+	WAPlatform current
 		removeFromStartUpList: self;
 		removeFromShutDownList: self.
 	self shutDown

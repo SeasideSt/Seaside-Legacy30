@@ -1,5 +1,5 @@
 initialization
 shutDown
 	process ifNil: [ ^ self ].
-	SeasidePlatformSupport terminateProcess: process.
+	WAPlatform current terminateProcess: process.
 	process := nil

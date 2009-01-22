@@ -1,5 +1,5 @@
 initialization
 initialize
 	super initialize.
-	mutex := SeasidePlatformSupport semaphoreClass forMutualExclusion.
+	mutex := WAPlatform current semaphoreClass forMutualExclusion.
 	handlers := Array new
