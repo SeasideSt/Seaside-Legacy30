@@ -1,3 +1,3 @@
 rendering
 canHaveHalo
-	^ SeasidePlatformSupport haloClass notNil
+	^ WAPlatform current haloClass notNil
