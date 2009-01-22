@@ -1,3 +1,3 @@
 model
 recentChanges
-	^SeasidePlatformSupport recentChanges
+	^WAPlatform current recentChanges
