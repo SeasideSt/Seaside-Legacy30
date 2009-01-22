@@ -1,6 +1,9 @@
 processing
 processRendering: aResponse 
 	| document htmlRoot renderingContext actionContinuation |
+	"Prepare the response"
+	aResponse contentType: self application contentType.
+
 	"Create objects we need"
 	document := self createDocumentFor: aResponse.
 	actionContinuation := self createActionContinuation.
