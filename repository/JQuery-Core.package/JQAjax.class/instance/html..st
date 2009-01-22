@@ -7,6 +7,8 @@ html: aBlock
 	self callback: [
 		| context |
 		context := self requestContext.
-		context response doNotCache; contentType: self application contentType.
-		owner render: aBlock on: context response contents.
+		context response
+			doNotCache;
+			contentType: self application contentType.
+		owner render: aBlock on: context response stream.
 		context respond ]

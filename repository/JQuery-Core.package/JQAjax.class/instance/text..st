@@ -7,7 +7,9 @@ text: aBlock
 	self callback: [
 		| context |
 		context := self requestContext.
-		context response doNotCache; contentType: (WAMimeType textPlain
-			charset: self application charSet).
+		context response 
+			doNotCache;
+			contentType: (WAMimeType textPlain
+				charset: self application charSet).
 		aBlock value: context response stream.
 		context respond ]

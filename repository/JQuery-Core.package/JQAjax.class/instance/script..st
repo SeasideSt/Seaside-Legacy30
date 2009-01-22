@@ -7,7 +7,9 @@ script: aBlock
 	self callback: [
 		| context |
 		context := self requestContext.
-		context response doNotCache; contentType: (WAMimeType textJavascript
-			charset: self application charSet).
-		owner script: aBlock on: context response contents.
+		context response
+			doNotCache; 
+			contentType: (WAMimeType textJavascript
+				charset: self application charSet).
+		owner script: aBlock on: context response stream.
 		context respond ]
