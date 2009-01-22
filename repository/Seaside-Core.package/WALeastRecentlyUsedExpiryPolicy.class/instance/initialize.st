@@ -1,4 +1,4 @@
 initialization
 initialize
 	super initialize.
-	ageTable := SeasidePlatformSupport reducedConflictDictionary new
+	ageTable := WAPlatform current reducedConflictDictionary new

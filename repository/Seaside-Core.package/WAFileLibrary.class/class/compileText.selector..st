@@ -15,7 +15,7 @@ compileText: aByteArrayOrString selector: aSymbol
 			each = $' ifTrue: [ stream nextPut: $' ].
 			stream nextPut: each ].
 		stream nextPutAll: '''' ].
-	SeasidePlatformSupport 
+	WAPlatform current 
 		compile: code
 		into: self
 		classified: self methodCategory

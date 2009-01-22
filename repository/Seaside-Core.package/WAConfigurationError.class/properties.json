@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "DataCurator 01/21/2009 13:35",
+	"commentStamp" : "",
 	"super" : "WAError",
 	"category" : "Seaside-Core-Configuration",
 	"classinstvars" : [ ],

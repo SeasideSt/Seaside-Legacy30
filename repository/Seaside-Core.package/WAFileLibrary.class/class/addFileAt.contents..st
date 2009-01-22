@@ -1,5 +1,5 @@
 private
 addFileAt: aPath contents: aByteArrayOrString
 	self
-		addFileNamed: (SeasidePlatformSupport localNameOf: aPath)
+		addFileNamed: (WAPlatform current localNameOf: aPath)
 		contents: aByteArrayOrString

@@ -18,4 +18,4 @@ verifyPassword: password forUser: username
 		ifTrue: [^ false].
 	
 	^ (loginPref = username)
-		and: [ hashPref = (SeasidePlatformSupport secureHashFor: password) ]
+		and: [ hashPref = (WAPlatform current secureHashFor: password) ]

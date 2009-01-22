@@ -1,4 +1,4 @@
 initialization
 initialize
 	super initialize.
-	lastAccessTable := SeasidePlatformSupport reducedConflictDictionary new
+	lastAccessTable := WAPlatform current reducedConflictDictionary new

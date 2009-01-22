@@ -2,8 +2,8 @@ public
 reap
 	| expired newObjectsByKey newKeysByObject |
 	expired := OrderedCollection new.
-	newObjectsByKey := SeasidePlatformSupport reducedConflictDictionary new.
-	newKeysByObject := SeasidePlatformSupport reducedConflictDictionary new.
+	newObjectsByKey := WAPlatform current reducedConflictDictionary new.
+	newKeysByObject := WAPlatform current reducedConflictDictionary new.
 	self mutex critical: [
 		objectsByKey keysAndValuesDo: [ :key :object |
 			(self expiryPolicy isExpired: object key: key)

@@ -1,3 +1,3 @@
 initialization
 initializeMutex
-	mutex := SeasidePlatformSupport semaphoreClass forMutualExclusion
+	mutex := WAPlatform current semaphoreClass forMutualExclusion

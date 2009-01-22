@@ -4,7 +4,7 @@ critical: aBlock ifError: anErrorBlock
 
 	mutex critical: [
 		value := nil.
-		semaphore := SeasidePlatformSupport semaphoreClass new.
+		semaphore := WAPlatform current semaphoreClass new.
 		process := [
 			[ value := aBlock on: Error do: anErrorBlock ]
 				ensure: [ semaphore signal ] ] newProcess.

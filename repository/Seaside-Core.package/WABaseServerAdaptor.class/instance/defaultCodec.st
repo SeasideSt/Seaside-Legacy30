@@ -1,3 +1,3 @@
 accessing
 defaultCodec
-	^ SeasidePlatformSupport codecForEncoding: 'utf-8'
+	^ WAPlatform current codecForEncoding: 'utf-8'

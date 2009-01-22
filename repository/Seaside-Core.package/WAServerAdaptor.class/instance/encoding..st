@@ -8,4 +8,4 @@ encoding: aStringOrNil
 	any other encoding supported by Squeak
 		uses whatever TextConverter Squeak uses for this encoding
 	see class comment for more information"
-	codec := SeasidePlatformSupport codecForEncoding: aStringOrNil
+	codec := WAPlatform current codecForEncoding: aStringOrNil

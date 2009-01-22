@@ -1,3 +1,3 @@
 private
 isBinaryAt: aPath
-	^self isBinary: (SeasidePlatformSupport localNameOf: aPath)
+	^self isBinary: (WAPlatform current localNameOf: aPath)
