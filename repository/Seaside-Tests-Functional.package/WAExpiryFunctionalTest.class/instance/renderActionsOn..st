@@ -15,18 +15,18 @@ renderActionsOn: html
 			with: 'Reset Counters'.
 		html break.
 		html anchor
-			callback: [ SeasidePlatformSupport garbageCollect ];
+			callback: [ WAPlatform current garbageCollect ];
 			with: 'Garbage Collect'.
 		html break.
 		html anchor
 			callback: [
 				self application clear.
-				SeasidePlatformSupport garbageCollect ];
+				WAPlatform current garbageCollect ];
 			with: 'Clear Cache'.
 		html break.
 		html anchor
 			callback: [
 				self application clear.
 				WAExpirySession resetCounters.
-				SeasidePlatformSupport garbageCollect ];
+				WAPlatform current garbageCollect ];
 			with: 'Reset All' ].

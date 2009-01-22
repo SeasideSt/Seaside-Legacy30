@@ -1,4 +1,4 @@
 private
 stackDepth
 
-	^SeasidePlatformSupport stackDepth
+	^WAPlatform current stackDepth
