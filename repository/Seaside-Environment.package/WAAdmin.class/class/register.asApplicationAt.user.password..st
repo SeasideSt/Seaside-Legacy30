@@ -9,7 +9,7 @@ register: aComponentClass asApplicationAt: aString user: user password: password
 		put: user.
 	application 
 		preferenceAt: #passwordHash
-		put: (SeasidePlatformSupport secureHashFor: password).
+		put: (WAPlatform current secureHashFor: password).
 	application
 		addFilter: WAAuthenticationFilter new.
 	^ application
