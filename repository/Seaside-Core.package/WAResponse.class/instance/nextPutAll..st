@@ -2,4 +2,4 @@ streaming
 nextPutAll: aString
 	"Append the elements of aCollection to the body part of the response."
 	
-	self subclassResponsibility.
+	self stream nextPutAll: aString

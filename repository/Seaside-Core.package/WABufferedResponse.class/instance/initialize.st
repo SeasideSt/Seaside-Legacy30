@@ -1,4 +1,4 @@
 initialization
 initialize
 	super initialize.
-	contentsStream := WriteStream on: String new.
+	contentsStream := WAPlatform current readWriteStream

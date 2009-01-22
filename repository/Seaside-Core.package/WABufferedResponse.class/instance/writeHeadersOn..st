@@ -2,5 +2,5 @@ writing
 writeHeadersOn: aStream 
 	self 
 		headerAt: 'Content-Length'
-		put: contentsStream contents size.
+		put: contentsStream size.
 	super writeHeadersOn: aStream
