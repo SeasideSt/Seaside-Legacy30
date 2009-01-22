@@ -7,7 +7,7 @@ simulateWithDebugBlock: debugBlock progress: desiredProgress result: desiredResu
 	| progress semaphore result |
 	progress := OrderedCollection new.
 	
-	semaphore := SeasidePlatformSupport semaphoreClass new.
+	semaphore := WAPlatform current semaphoreClass new.
 	
 	[[ result := [
 		progress add: #a.
