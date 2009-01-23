@@ -1,13 +1,13 @@
 {
-	"commentStamp" : "jf 1/23/2009 20:47",
-	"super" : "WAEncoder",
+	"commentStamp" : "",
+	"super" : "WARoot",
 	"category" : "Seaside-Core-Document",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"codec"
+		"charSet"
 	],
-	"name" : "WAUrlEncoder",
+	"name" : "WAXmlRoot",
 	"type" : "normal"
 }
