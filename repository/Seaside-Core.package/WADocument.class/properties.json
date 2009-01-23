@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "WAObject",
+	"category" : "Seaside-Core-Document",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"root",
+		"stream",
+		"codec"
+	],
+	"name" : "WADocument",
+	"type" : "normal"
+}

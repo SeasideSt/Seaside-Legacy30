@@ -6,7 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"stream",
 		"htmlEncoder",
 		"urlEncoder"
 	],
