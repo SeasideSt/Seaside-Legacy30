@@ -8,4 +8,4 @@ testEncodedSupplementaryMultilingualPlaneUrl
 	self 
 		assert: zero
 		encoder: WAUrlEncoder
-		gives: '%F0%90%86%8A'
+		gives: '%f0%90%86%8a'
