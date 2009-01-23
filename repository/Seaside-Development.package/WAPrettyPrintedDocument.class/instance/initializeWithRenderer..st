@@ -1,6 +1,6 @@
 initialization
 initializeWithRenderer: aRenderer
-	self initialize.
+	self initializeWithStream: nil codec: nil.
 	html := aRenderer.
 	indentCloseTags := OrderedCollection with: false.
 	indentLevel := 0.
