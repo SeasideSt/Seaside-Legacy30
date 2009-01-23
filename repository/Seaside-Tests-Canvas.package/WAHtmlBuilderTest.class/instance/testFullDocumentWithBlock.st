@@ -7,4 +7,4 @@ testFullDocumentWithBlock
 		render: [ :html |
 			html unorderedList: [
 				html listItem: 'an item' ] ].
-	self assert: actual = '<html><head><title>title</title></head><body><ul><li>an item</li></ul></body></html>'
+	self assert: actual = '<html><head><title>title</title></head><body><ul><li>an item</li></ul><script type="text/javascript">/*<![CDATA[*/function onLoad(){}/*]]>*/</script></body></html>'
