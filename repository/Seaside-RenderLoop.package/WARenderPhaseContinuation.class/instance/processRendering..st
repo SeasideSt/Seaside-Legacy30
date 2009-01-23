@@ -1,23 +1,23 @@
 processing
 processRendering: aResponse 
-	| document htmlRoot renderingContext actionContinuation |
+	| document htmlRoot renderContext actionContinuation |
 	"Prepare the response"
 	aResponse contentType: self application contentType.
 
 	"Create objects we need"
 	document := self createDocumentFor: aResponse.
 	actionContinuation := self createActionContinuation.
-	renderingContext := self createRenderingContext.
+	renderContext := self createRenderContext.
 	
 	"Hook objects together"
-	renderingContext
+	renderContext
 		document: document;
 		actionUrl: actionContinuation registerForUrl.
-	actionContinuation renderingContext: renderingContext.
-	htmlRoot := self createHtmlRootWithContext: renderingContext.
+	actionContinuation renderContext: renderContext.
+	htmlRoot := self createHtmlRootWithContext: renderContext.
 
 	"Render"
 	document open: htmlRoot.
-	self root renderWithContext: renderingContext.
+	self root renderWithContext: renderContext.
 	document close: htmlRoot.
-	renderingContext release
+	renderContext release
