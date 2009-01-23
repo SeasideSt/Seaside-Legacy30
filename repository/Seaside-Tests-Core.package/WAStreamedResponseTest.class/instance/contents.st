@@ -1,4 +1,4 @@
 accessing
 contents
 	self response flush.
-	^ self stream contents
+	^ self response stream contents
