@@ -1,23 +1,7 @@
-I am a server independent http response object. I am used in conjunction with WASession >> returnResponse:
+A WAResponse is an abstract HTTP response objects. It is independent of the used server adapter.
 
 Instance Variables
-	contentType:	<WAMimeType>
-	headers:		<Dictionary<String, Object>>
-	cookies:			<Set<WACookie>>
-	status:			<Integer>
-	stream:			<Stream>
-				
-contentType
-	- the content type of the body
-				
-headers
-	- the HTTP headers to be sent to the client
-				
-cookies
-	- the cookies to be sent to the client. Either a Set of cookies or an empty array.
-	
-status
-	- the HTTP status code, the default is 200 (OK)
-	
-stream
-	- a read stream on the contents of the body to be sent to the client 
+	status:		<Integer> The HTTP status code.
+	message:	<String> The HTTP status message.
+	headers:	<WAHeaderFileds> A dictionary with the header fields.
+	cookies:		<OrderedCollection> A collection of cookies.

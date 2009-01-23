@@ -1,7 +1,5 @@
-A WAStreamResponse is a WAResponse that directly writes to the response stream. This can be used to implement HTTP response streaming.
+A WAStreamedResponse is a HTTP response that directly writes to an external write stream. This response class is used to implement efficient HTTP response streaming, as it can directly write do the socket while content is still generated.
 
 Instance Variables
-	writtenHeaders:		<Boolean>
-
-writtenHeaders
-	- whether the HTTP headers where alread written on the stream
+	committed:		<Boolean>	Whether the status and header was written to the stream.
+	externalStream:		<WriteStream>	The external stream to write to.
