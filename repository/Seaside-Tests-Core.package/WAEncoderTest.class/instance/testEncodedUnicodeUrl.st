@@ -15,12 +15,12 @@ testEncodedUnicodeUrl
 	self 
 		assert: hiraA
 		encoder: WAUrlEncoder
-		gives: '%E3%81%82'.
+		gives: '%e3%81%82'.
 	self 
 		assert: hiraO
 		encoder: WAUrlEncoder
-		gives: '%E3%81%8A'.
+		gives: '%e3%81%8a'.
 	self 
 		assert: hiraAO
 		encoder: WAUrlEncoder
-		gives: '%E3%81%82' , '%E3%81%8A'
+		gives: '%e3%81%82' , '%e3%81%8a'
