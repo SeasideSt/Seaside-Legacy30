@@ -6,5 +6,4 @@ renderContentOn: html
 		id: 'lightbox';
 		style: 'display: none';
 		with: self delegate.
-	self requestContext loadScripts
-		addFirst: self lighter
+	html document addLoadScriptFirst: self lighter
