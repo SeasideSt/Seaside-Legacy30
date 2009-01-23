@@ -3,7 +3,7 @@ tooltipScriptOn: html window: aWindow
 	"add an event handler to all anchors which have the class tt"
 	"use the html rel attribute as tooltip index"
 	
-	self requestContext addLoadScript: (html selector
+	html document addLoadScript: (html selector
      	add: 'a.tt';
      	do: [ :each | each element on: 'mouseover' do: ((JSStream on: 'event.target._showState = true'),
 				((JSStream on: 'event.target._showState') then:
