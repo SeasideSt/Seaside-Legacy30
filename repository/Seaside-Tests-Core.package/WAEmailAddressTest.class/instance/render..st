@@ -1,4 +1,4 @@
 private
 render: anObject
-	^WARenderer builder render: [ :html |
+	^WARenderCanvas builder render: [ :html |
 		html render: anObject ]
