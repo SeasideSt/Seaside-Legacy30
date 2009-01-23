@@ -1,0 +1,3 @@
+load scripts
+loadScripts
+	^ loadScripts
