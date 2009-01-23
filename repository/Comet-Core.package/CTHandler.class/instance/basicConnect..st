@@ -12,7 +12,7 @@ basicConnect: aRequestContext
 				cacheForever;
 				contents: (String streamContents: [ :contents |
 					session updateRoot: root. 
-					(WAHtmlStreamDocument
+					(WAHtmlDocument
 						on: contents
 						codec: aRequestContext codec)
 							open: root.
