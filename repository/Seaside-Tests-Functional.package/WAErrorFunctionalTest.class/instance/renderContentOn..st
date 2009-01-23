@@ -7,6 +7,4 @@ renderContentOn: html
 		self renderErrorWithCallOn: html.
 		self renderResumableErrorOn: html.
 		self renderWarningOn: html.
-		self renderDeprecatedOn: html.
-		self renderNilOn: html.
-		self renderObjectOn: html ]
+		self renderDeprecatedOn: html ]
