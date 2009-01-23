@@ -1,5 +1,5 @@
 rendering
 renderDoNotUseWithinCallbackOn: html
 	html anchor
-		callback: [ self session addLoadScript: nil ];
+		callback: [ html document addLoadScript: nil ];
 		with: 'foo'
