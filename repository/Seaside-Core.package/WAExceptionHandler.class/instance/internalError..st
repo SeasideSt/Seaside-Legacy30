@@ -4,4 +4,4 @@ internalError: anError
 	want to modify the behaviour for for other exceptions without
 	changing the simple fallback internal error behaviour."
 	
-	self requestContext responseFactory internalError: anError; respond
+	self requestContext responseFactory internalError: anError

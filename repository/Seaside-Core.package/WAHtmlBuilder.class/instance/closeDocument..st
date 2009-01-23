@@ -1,3 +1,3 @@
 private
 closeDocument: aDocument
-	self fullDocument ifTrue: [ aDocument close ]
+	self fullDocument ifTrue: [ aDocument close: documentRoot ]
