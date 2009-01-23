@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"renderContext"
+		"renderingContext"
 	],
 	"name" : "WARenderVisitor",
 	"type" : "normal"

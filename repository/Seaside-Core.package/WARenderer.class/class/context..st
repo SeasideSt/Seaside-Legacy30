@@ -1,3 +1,3 @@
 instance creation
-context: aRenderContext
-	^ self basicNew initializeWithContext: aRenderContext; yourself
+context: aRenderingContext
+	^ self basicNew initializeWithContext: aRenderingContext; yourself

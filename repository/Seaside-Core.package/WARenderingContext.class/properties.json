@@ -12,6 +12,6 @@
 		"document",
 		"mode"
 	],
-	"name" : "WARenderContext",
+	"name" : "WARenderingContext",
 	"type" : "normal"
 }

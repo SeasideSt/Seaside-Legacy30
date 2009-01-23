@@ -1,3 +1,3 @@
 initialization
-initializeWithContext: aRenderContext
-	context := aRenderContext
+initializeWithContext: aRenderingContext
+	context := aRenderingContext
