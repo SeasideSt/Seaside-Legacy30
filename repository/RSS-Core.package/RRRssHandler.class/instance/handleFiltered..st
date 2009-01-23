@@ -7,7 +7,7 @@ handleFiltered: aRequestContext
 			stream).
 	root := RRRssRoot new.
 	document open: root.
-	context := WARenderingContext new document: document.
+	context := WARenderContext new document: document.
 	canvas := RRRssRenderCanvas context: context.
 	rootComponent := self createRootComponent.
 	

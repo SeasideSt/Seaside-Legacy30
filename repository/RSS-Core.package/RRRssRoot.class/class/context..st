@@ -1,3 +1,3 @@
 instance creation
-context: aRenderingContext
+context: aRenderContext
 	^ self new
