@@ -1,4 +1,4 @@
 private callbacks
 addMinutesCallbackToBrush: aBrush
 	self hasCallback ifFalse: [^self].
-	aBrush on: #minutes of: self
+	aBrush callback: [ :v | self minutes: v ]
