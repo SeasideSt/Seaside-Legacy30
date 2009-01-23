@@ -2,16 +2,16 @@ testing-encoding
 testQueryEncoding
 	self
 		assert: (url withParameter: '/' value: ' ')
-			printString = '/?%2F=%20'.
+			printString = '/?%2f=%20'.
 	self
 		assert: (url withParameter: '+' value: '%')
-			printString = '/?%2B=%25'.
+			printString = '/?%2b=%25'.
 	self
 		assert: (url withParameter: '?' value: '&')
-			printString = '/?%3F=%26'.
+			printString = '/?%3f=%26'.
 	self
 		assert: (url withParameter: '[' value: ']')
-			printString = '/?%5B=%5D'.
+			printString = '/?%5b=%5d'.
 	self
 		assert: (url withParameter: '=' value: '<')
-			printString = '/?%3D=%3C'
+			printString = '/?%3d=%3c'
