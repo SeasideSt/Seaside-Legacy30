@@ -1,3 +1,3 @@
 writing
-open: aDocument
+openOn: aDocument
 	self writeHeadOn: aDocument

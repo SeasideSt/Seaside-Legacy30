@@ -1,3 +1,3 @@
 writing
-close: aDocument
+closeOn: aDocument
 	self writeFootOn: aDocument

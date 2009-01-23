@@ -1,10 +1,8 @@
 processing
 handleFiltered: aRequestContext
 	| document context canvas root rootComponent |
-	document := self newDocumentOn:
-		(aRequestContext response
-			contentType: RRRssRoot defaultContentType;
-			stream).
+	aRequestContext response contentType: RRRssRoot defaultContentType.
+	document := aRequestContext newDocument.
 	root := RRRssRoot new.
 	document open: root.
 	context := WARenderContext new document: document.
@@ -16,6 +14,6 @@ handleFiltered: aRequestContext
 			handleExceptionsDuring: [
 				rootComponent updateRoot: root.
 				canvas render: rootComponent.
-				document close: root.
+				document close.
 				aRequestContext respond ]
 			context: aRequestContext ]
