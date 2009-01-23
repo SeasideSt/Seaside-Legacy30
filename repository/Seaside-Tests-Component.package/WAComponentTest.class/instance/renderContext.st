@@ -2,7 +2,5 @@ accessing
 renderContext
 	^ WARenderContext new
 		actionUrl: WAUrl new;
-		document: (WAHtmlStreamDocument new
-			stream: String new writeStream;
-			yourself);
+		document: (WAHtmlStreamDocument on: String new writeStream);
 		yourself
