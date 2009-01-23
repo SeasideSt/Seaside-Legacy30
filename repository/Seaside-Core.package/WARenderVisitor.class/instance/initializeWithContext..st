@@ -1,4 +1,4 @@
 initialization
-initializeWithContext: aRenderingContext
+initializeWithContext: aRenderContext
 	self initialize.
-	renderingContext := aRenderingContext
+	renderContext := aRenderContext

@@ -1,5 +1,5 @@
 instance creation
-context: aRenderingContext
+context: aRenderContext
 	^ self basicNew
-		initializeWithContext: aRenderingContext;
+		initializeWithContext: aRenderContext;
 		yourself

@@ -7,7 +7,7 @@ render: anObject
 	^ String streamContents: [ :stream |
 		| context docRoot document html callbacks |
 		document := self documentClass new stream: stream.
-		context := WARenderingContext new.
+		context := WARenderContext new.
 		context document: document.
 		context actionUrl: self actionUrl.
 		html := self rendererClass context: context.

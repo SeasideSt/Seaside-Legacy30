@@ -1,5 +1,5 @@
 deprecated
 session: aSession
 	self 
-		seasideDeprecatedApi: 'WARenderingContext>>#session:'
+		seasideDeprecatedApi: 'WARenderContext>>#session:'
 		details: 'The session is no longer stored in the render context.'
