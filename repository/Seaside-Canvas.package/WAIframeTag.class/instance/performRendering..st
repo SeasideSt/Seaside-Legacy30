@@ -6,11 +6,11 @@ performRendering: anObject
 	docRoot base target: '_top'.
 	response := WAResponse new.
 	response doNotCache.
-	document := self requestContext entryPoint newDocumentOn: response stream.
+	document := self requestContext entryPoint documentClass on: response stream codec: self requestContext codec.
 	canvas context document: document.
-	docRoot open: document.
+	document open: docRoot.
 	renderer := canvas species context: canvas context.
 	renderer render: anObject;
 		 flush.
-	docRoot close: document.
+	document close.
 	self requestContext respond: response

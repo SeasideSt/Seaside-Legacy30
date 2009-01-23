@@ -1,4 +1,4 @@
 private callbacks
 addYearCallbackToBrush: aBrush
 	self hasCallback ifFalse: [^self].
-	aBrush callback: [ :v | self year: v ]
+	aBrush on: #year of: self

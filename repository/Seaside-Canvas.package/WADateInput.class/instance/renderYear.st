@@ -2,10 +2,8 @@ private-rendering
 renderYear
 	| brush |
 	brush := (canvas textInput)
-		id: (self id isNil ifFalse: [self id , '-year']);
-		value: (WANumberPrinter new
-			padding: $0; digits: 4;
-			print: year);
+		id: (self id isNil ifTrue: [nil] ifFalse: [self id , '-year']);
+		value: year;
 		yourself.
 	self addYearCallbackToBrush: brush.
 	brush

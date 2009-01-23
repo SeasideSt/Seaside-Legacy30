@@ -1,4 +1,4 @@
 private callbacks
 addMonthCallbackToBrush: aBrush
 	self hasCallback ifFalse: [^self].
-	aBrush callback: [ :v | self month: v ]
+	aBrush on: #month of: self

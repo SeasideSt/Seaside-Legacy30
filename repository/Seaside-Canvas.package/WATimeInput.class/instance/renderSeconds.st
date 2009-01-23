@@ -2,11 +2,10 @@ private-rendering
 renderSeconds
 	| brush |
 	brush := canvas textInput
-		id: (self id isNil ifFalse: [self id , '-secs']);
-		value: (WANumberPrinter new
-			padding: $0; digits: 2;
-			print: seconds);
-		yourself.
+				id: (self id isNil
+						ifFalse: [self id , '-secs']);
+				 value: seconds asTwoCharacterString;
+				 yourself.
 	self addSecondsCallbackToBrush: brush.
 	brush attributeAt: 'size' put: 2;
 		 attributeAt: 'maxlength' put: 2

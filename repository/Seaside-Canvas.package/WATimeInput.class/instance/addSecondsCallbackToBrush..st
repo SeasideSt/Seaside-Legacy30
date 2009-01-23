@@ -1,4 +1,4 @@
 private callbacks
 addSecondsCallbackToBrush: aBrush
 	self hasCallback ifFalse: [^self].
-	aBrush callback: [ :v | self seconds: v ]
+	aBrush on: #seconds of: self
