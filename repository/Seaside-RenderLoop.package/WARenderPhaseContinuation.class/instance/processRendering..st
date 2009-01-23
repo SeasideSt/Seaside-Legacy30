@@ -5,7 +5,7 @@ processRendering: aResponse
 	aResponse contentType: self application contentType.
 
 	"Create objects we need"
-	document := self createDocumentFor: aResponse.
+	document := self requestContext newDocument.
 	actionContinuation := self createActionContinuation.
 	renderContext := self createRenderContext.
 	
@@ -19,5 +19,5 @@ processRendering: aResponse
 	"Render"
 	document open: htmlRoot.
 	self root renderWithContext: renderContext.
-	document close: htmlRoot.
+	document close.
 	renderContext release

@@ -1,6 +1,6 @@
 private
-createHtmlRootWithContext: aRenderinContext
+createHtmlRootWithContext: aRenderContext
 	| htmlRoot |
-	htmlRoot := WAHtmlRoot context: aRenderinContext.
+	htmlRoot := WAHtmlRoot context: aRenderContext.
 	self updateRoot: htmlRoot.
 	^ htmlRoot
