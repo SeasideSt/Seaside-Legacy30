@@ -1,13 +1,12 @@
 initialization
 initializeEncoding
-	| printer escapes |
-	printer := WANumberPrinter new.
-	printer base: 16; padding: $0; digits: 2.
+	| escapes |
 	JavascriptCharacters := Array new: 127.
 	0 to: 31 do: [ :each |
 		JavascriptCharacters
 			at: each + 1
-			put: '\x' , (printer print: each) ].
+			put: '\x' , ((each printStringBase: 16)
+				padded: #left to: 2 with: $0) ].
 	32 to: 126 do: [ :each |
 		JavascriptCharacters
 			at: each + 1
