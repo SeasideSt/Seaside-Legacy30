@@ -2,8 +2,10 @@ testing
 testWarning
 	| context |
 	context := self createRequestContext.
-	self handlerClass
+	[ self handlerClass
 		handleExceptionsDuring: [ Warning signal ]
-		context: context.
-		
-	self assert: context response status = 500
+		context: context ]
+			on: WAResponseNotification
+			do: [ :n | self assert: context response status = 500. ^ self ].
+			
+	self assert: false

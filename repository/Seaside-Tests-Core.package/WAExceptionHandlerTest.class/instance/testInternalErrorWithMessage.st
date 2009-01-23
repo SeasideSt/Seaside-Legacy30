@@ -1,9 +1,9 @@
 testing
-testInternalError
+testInternalErrorWithMessage
 	| context |
 	context := self createRequestContext.
 	[ self handlerClass
-			internalError: (WATestError new)
+			internalError: (WATestError new messageText: 'test'; yourself)
 			context: context ]
 		on: WAResponseNotification
 		do: [
