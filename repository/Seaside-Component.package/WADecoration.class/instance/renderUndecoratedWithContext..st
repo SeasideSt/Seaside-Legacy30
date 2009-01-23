@@ -1,3 +1,3 @@
 rendering
-renderUndecoratedWithContext: aRenderingContext
-	self renderWithContext: aRenderingContext
+renderUndecoratedWithContext: aRenderContext
+	self renderWithContext: aRenderContext

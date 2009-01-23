@@ -1,3 +1,3 @@
 rendering
-renderUndecoratedWithContext: aRenderingContext
-	self accept: aRenderingContext visitor
+renderUndecoratedWithContext: aRenderContext
+	self accept: aRenderContext visitor
