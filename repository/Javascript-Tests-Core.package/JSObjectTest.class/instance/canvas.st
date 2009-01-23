@@ -1,8 +1,8 @@
 accessing
 canvas
-	^ WARenderCanvas context: (WARenderingContext new
+	^ WARenderCanvas context: (WARenderContext new
 		actionUrl: (WAUrl absolute: 'http://www.seaside.st/?_s=1&_k=a');
-		document: (WAHtmlStreamDocument new
-			stream: String new writeStream;
-			yourself);
+		document: (WAHtmlStreamDocument 
+			on: String new writeStream
+			codec: self requestContext codec);
 		yourself)
