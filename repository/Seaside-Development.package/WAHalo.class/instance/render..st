@@ -1,3 +1,3 @@
 rendering-modes
 render: html
-	self root renderContentOn: html
+	self renderRootWithContext: html context
