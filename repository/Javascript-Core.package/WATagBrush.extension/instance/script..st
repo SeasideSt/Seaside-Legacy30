@@ -6,5 +6,4 @@ script: anObject
 		ifTrue: [ ^ self ].
 	(anObject respondsTo: #id:)
 		ifTrue: [ anObject id: self ensureId ].
-	anObject requestContext 
-		addLoadScript: anObject
+	canvas document addLoadScript: anObject
