@@ -31,14 +31,14 @@ ambigousExamples
 		
 		 "query"
 		 ( 'http://www.seaside.st/?' 'http://www.seaside.st/' )
-		 ( 'http://www.seaside.st/??' 'http://www.seaside.st/?%3f' )
+		 ( 'http://www.seaside.st/??' 'http://www.seaside.st/?%3F' )
 		 ( 'http://www.seaside.st/?=2' 'http://www.seaside.st/' )
 		 ( 'http://www.seaside.st/?&' 'http://www.seaside.st/' )
-		 ( 'http://www.seaside.st/?1==' 'http://www.seaside.st/?1=%3d' )
+		 ( 'http://www.seaside.st/?1==' 'http://www.seaside.st/?1=%3D' )
 		 ( 'http://www.seaside.st/?1=2&' 'http://www.seaside.st/?1=2' )
 		 
 		
 		 "fragment"
 		 ( 'http://www.seaside.st/#' 'http://www.seaside.st/' )
 		 ( 'http://www.seaside.st/##' 'http://www.seaside.st/#%23' )
-		 ( 'http://www.seaside.st/#?a=b' 'http://www.seaside.st/#%3fa%3db' ) )
+		 ( 'http://www.seaside.st/#?a=b' 'http://www.seaside.st/#%3Fa%3Db' ) )
