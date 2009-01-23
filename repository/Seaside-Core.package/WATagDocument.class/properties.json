@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WADocument",
+	"category" : "Seaside-Core-Document",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WATagDocument",
+	"type" : "normal"
+}

@@ -9,7 +9,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"stream",
-		"table"
+		"table",
+		"codec"
 	],
 	"name" : "WAEncoder",
 	"type" : "normal"

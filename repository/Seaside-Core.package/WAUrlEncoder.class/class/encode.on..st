@@ -1,9 +1,8 @@
 private
 encode: aCharacter on: aStream
-	| printer |
+	| value |
 	('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_.~' includes: aCharacter)
 		ifTrue: [ ^ aStream nextPut: aCharacter ].
+	value := aCharacter asInteger.
 	aStream nextPut: $%.
-	printer := WANumberPrinter new.
-	printer base: 16; padding: $0; digits: 2.
-	printer print: aCharacter asInteger on: aStream
+	aStream nextPutAll: ((value printStringBase: 16) padded: #left to: 2 with: $0)

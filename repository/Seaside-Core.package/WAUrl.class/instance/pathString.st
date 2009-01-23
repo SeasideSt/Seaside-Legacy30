@@ -4,6 +4,5 @@ pathString
 
 	| document |
 	^ String streamContents: [ :stream | 
-		document := WAHtmlStreamDocument new.
-		document stream: stream.
+		document := WAHtmlStreamDocument on: stream.
 		self encodePathOn: document ]

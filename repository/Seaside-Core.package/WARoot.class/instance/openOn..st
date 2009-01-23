@@ -1,0 +1,2 @@
+writing
+openOn: aDocument

@@ -1,3 +1,3 @@
 private
 absoluteUrlForResource: aString
-	^ context absoluteUrlForResource: aString
+	^ self context absoluteUrlForResource: aString
