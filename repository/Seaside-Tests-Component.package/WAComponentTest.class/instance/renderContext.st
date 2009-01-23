@@ -1,6 +1,6 @@
 accessing
-renderingContext
-	^ WARenderingContext new
+renderContext
+	^ WARenderContext new
 		actionUrl: WAUrl new;
 		document: (WAHtmlStreamDocument new
 			stream: String new writeStream;
