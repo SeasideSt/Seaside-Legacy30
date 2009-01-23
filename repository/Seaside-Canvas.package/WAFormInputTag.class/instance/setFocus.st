@@ -5,5 +5,5 @@ setFocus
 	self
 		seasideDeprecatedApi: 'WAFormInputTag>>#setFocus'
 		details: 'Use an appropriate Javascript library instead.'.
-	self requestContext
+	canvas document
 		addLoadScript: 'document.getElementById(' , self ensureId printString , ').focus()'
