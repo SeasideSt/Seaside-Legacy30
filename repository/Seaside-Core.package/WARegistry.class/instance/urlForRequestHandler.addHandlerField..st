@@ -9,5 +9,5 @@ urlForRequestHandler: aRequestHandler addHandlerField: aBoolean
 	aBoolean ifTrue: [
 		url 
 			addParameter: self handlerField
-			value: key seasideString ].
+			value: key ].
 	^ url

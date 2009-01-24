@@ -1,5 +1,5 @@
 printing
 printOn: aStream
 	| document |
-	document := WAHtmlDocument on: aStream.
+	document := WAHtmlStreamDocument on: aStream.
 	self encodeOn: document usingHtmlEntities: false

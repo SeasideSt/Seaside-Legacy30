@@ -1,13 +1,14 @@
 {
-	"commentStamp" : "",
-	"super" : "WARoot",
+	"commentStamp" : "pmm 6/1/2008 00:23",
+	"super" : "WAHtmlDocument",
 	"category" : "Seaside-Core-Document",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"charSet"
+		"htmlEncoder",
+		"urlEncoder"
 	],
-	"name" : "WAXmlRoot",
+	"name" : "WAHtmlStreamDocument",
 	"type" : "normal"
 }

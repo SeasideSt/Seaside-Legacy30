@@ -5,10 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"htmlEncoder",
-		"urlEncoder"
-	],
+	"instvars" : [ ],
 	"name" : "WATagDocument",
 	"type" : "normal"
 }

@@ -14,8 +14,8 @@ deleteCookie: aCookie path: aString
 		path: aCookie path;
 		version: aCookie version;
 		yourself.
-	(aCookie version isNil and: [ aString notNil ]) ifTrue: 
-		[ "old Netscape cookie with no path information"
-		cookie path: aString seasideString ].
+	(aCookie version isNil and: [ aString notNil ]) ifTrue:  [
+		"old Netscape cookie with no path information"
+		cookie path: aString ].
 	cookie expireInPast.
 	self addCookie: cookie
