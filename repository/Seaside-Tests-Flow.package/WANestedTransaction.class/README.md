@@ -1,0 +1,1 @@
+A WANestedTransaction is a test that uses two nested #isolate: blocks
