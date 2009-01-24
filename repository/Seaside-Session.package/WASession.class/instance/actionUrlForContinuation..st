@@ -1,3 +1,3 @@
 accessing
 actionUrlForContinuation: aContinuation
-	^ self actionUrlForKey: (continuations store: aContinuation) seasideString
+	^ self actionUrlForKey: (continuations store: aContinuation)

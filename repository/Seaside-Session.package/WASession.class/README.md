@@ -7,4 +7,10 @@ If the session has not been used for #defaultTimeoutSeconds, it is garbage colle
 A good way to clear all sessions is the following code:
 
 WARegistry clearAllHandlers.
-Smalltalk garbageCollect
+WAPlatform current garbageCollect
+
+Instance Variables
+	cookiesEnabled:		<Boolean>
+			
+cookiesEnabled
+	- Whether the client has a session cookie. This can only be true if #useSessionCookie is enabled.
