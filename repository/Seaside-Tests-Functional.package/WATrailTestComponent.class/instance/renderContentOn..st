@@ -5,7 +5,7 @@ renderContentOn: html
 		with: self trailName.
 
 	html anchor
-		callback: [ self call: (self class new count: count+1; yourself) ];
+		callback: [ self show: (self class new count: count+1; yourself) ];
 		with: 'Call'.
 		
 	html space.
