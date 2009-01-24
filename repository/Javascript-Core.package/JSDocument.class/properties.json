@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "lr 4/28/2008 09:47",
-	"super" : "WAHtmlDocument",
+	"super" : "WAHtmlStreamDocument",
 	"category" : "Javascript-Core-Object",
 	"classinstvars" : [ ],
 	"pools" : [ ],
