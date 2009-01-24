@@ -3,7 +3,7 @@ describeOn: config
 	(config list: #documentClass)
 		beAdvanced;
 		options: [ self documentClasses ];
-		default: WAHtmlStreamDocument.
+		default: WAHtmlDocument.
 	(config list: #responseFactory)
 		beAdvanced;
 		options: [ self responseFactories ];

@@ -1,3 +1,3 @@
 private
 documentClasses
-	^ WAHtmlStreamDocument withAllSubclasses asSortedCollection: [ :a :b | a name <= b name ]
+	^ WADocument withAllSubclasses asSortedCollection: [ :a :b | a name <= b name ]

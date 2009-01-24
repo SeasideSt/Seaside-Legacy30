@@ -1,3 +1,5 @@
 load scripts
 wrapLoadScripts: aBlock
-	aBlock value
+	self nextPutAll: '/*<![CDATA[*/function onLoad(){'.
+	aBlock value.
+	self nextPutAll: '}/*]]>*/'

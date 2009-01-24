@@ -1,3 +1,3 @@
 accessing
 documentClass
-	^ documentClass ifNil: [ documentClass := WAHtmlStreamDocument ]
+	^ documentClass ifNil: [ documentClass := WAHtmlDocument ]
