@@ -5,7 +5,7 @@ documentAt: aFilename forContext: aRequestContext
 	(self fileSelectors includes: selector)
 		ifTrue: [ 
 			aRequestContext response 
+				cacheFor: self cacheDuration;
 				document: (self documentForFile: aFilename)
-				mimeType: (self mimetypeForFile: aFilename);
-				cacheFor: self cacheDuration.
+				mimeType: (self mimetypeForFile: aFilename).
 			aRequestContext respond ]

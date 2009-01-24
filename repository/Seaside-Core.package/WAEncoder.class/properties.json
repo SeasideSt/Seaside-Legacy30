@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "lr 4/8/2007 15:49",
+	"commentStamp" : "jf 1/23/2009 19:50",
 	"super" : "WAObject",
 	"category" : "Seaside-Core-Document",
 	"classinstvars" : [
@@ -9,8 +9,7 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"stream",
-		"table",
-		"codec"
+		"table"
 	],
 	"name" : "WAEncoder",
 	"type" : "normal"

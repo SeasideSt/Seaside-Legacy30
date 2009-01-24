@@ -1,7 +1,7 @@
 writing
 writeStatusOn: aStream
 	aStream nextPutAll: self httpVersion.
-	aStream nextPut: $ ; print: self status.
+	aStream nextPut: $ ; nextPutAll: self status seasideString.
 	self message isNil
 		ifFalse: [ aStream nextPut: $ ; nextPutAll: self message ].
 	aStream crlf

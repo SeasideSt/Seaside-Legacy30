@@ -1,6 +1,5 @@
 initialization
-initializeOn: aStream codec: aCodec table: anArray
+initializeOn: aStream table: anArray
 	self initialize.
 	stream := aStream.
-	codec := aCodec.
 	table := anArray
