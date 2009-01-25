@@ -5,9 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"stream"
-	],
+	"instvars" : [ ],
 	"name" : "WAStreamedResponseTest",
 	"type" : "normal"
 }

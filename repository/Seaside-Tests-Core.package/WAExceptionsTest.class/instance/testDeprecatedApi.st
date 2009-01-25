@@ -2,7 +2,7 @@ testing
 testDeprecatedApi
 	| exception seen |
 	exception := seen := nil.
-	[ self seasideDeprecatedApi: 'WAExceptionsTest>>#testDeprecatedApi' details: 'Message in a bottle'. 
+	[ self seasideDeprecatedApi: 'WAExceptionsTest>>#testDeprecatedApi' details: 'Message in a bottle.'. 
 	  seen := true ]
 		on: WADeprecatedApi
 		do: [ :notification |
