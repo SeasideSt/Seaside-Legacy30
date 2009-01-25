@@ -3,5 +3,7 @@ handleFiltered: aRequestContext
 	| key |
 	key := self
 		keyFromContext: aRequestContext
-		ifAbsent: [ self handleDefaultRequest: aRequestContext ].
-	self handleFiltered: aRequestContext key: key
+		ifAbsent: [ nil ].
+	key isNil
+		ifTrue: [ self handleDefaultRequest: aRequestContext ]
+		ifFalse: [ self handleFiltered: aRequestContext key: key ]
