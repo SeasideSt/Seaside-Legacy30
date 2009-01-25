@@ -6,6 +6,7 @@ initializeAttributeSelectors
 		matchesAnyOf: #(
 			'self addClass: `@value'
 			'self addStyle: `@value'
+			'self addMedia: `@value'
 			'self attributeAt: `@key put: `@value'
 			'self attributeAt: `@key ifAbsentPut: `@block'
 			'self attributes at: `@key put: `@value'
@@ -14,7 +15,7 @@ initializeAttributeSelectors
 			'self attributes at: `@key append: `@value separator: `@separator' )
 		do: [ :context :node | true ].
 	attributeSelectors := Set new.
-	WABrush allSubclassesDo: [ :class | 
+	WABrush withAllSubclasses , WAHtmlElement withAllSubclasses do: [ :class | 
 		class methodDictionary keysAndValuesDo: [ :selector :method | 
 			(matcher executeTree: method parseTree initialAnswer: false) 
 				ifTrue: [ attributeSelectors add: selector ] ] ].
