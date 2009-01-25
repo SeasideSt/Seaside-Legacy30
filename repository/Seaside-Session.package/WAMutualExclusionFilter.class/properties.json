@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "WARequestFilter",
+	"category" : "Seaside-Session-Filter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"semaphore",
+		"owner"
+	],
+	"name" : "WAMutualExclusionFilter",
+	"type" : "normal"
+}
