@@ -4,9 +4,9 @@ initializeBMP
 
 	| stream characterLimit |
 	characterLimit := self maximumCharacterValue.
-	table := Array new: characterLimit.
+	table := Array new: characterLimit + 1.
 	stream := WriteStream on: (String new: 6).
-	1 to: characterLimit do: [ :index |
+	1 to: characterLimit + 1 do: [ :index |
 		| encoded |
 		self encode: (Character value: index - 1) on: stream reset.
 		encoded := stream contents.
