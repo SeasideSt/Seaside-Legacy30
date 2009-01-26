@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "WAContextTest",
+	"super" : "TestCase",
 	"category" : "Seaside-Tests-Canvas",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WAHtmlRootTest",
+	"name" : "WAEmailAddressTest",
 	"type" : "normal"
 }
