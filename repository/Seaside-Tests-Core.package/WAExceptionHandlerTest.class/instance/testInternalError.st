@@ -6,7 +6,7 @@ testInternalError
 			internalError: (WATestError new)
 			context: context ]
 		on: WAResponseNotification
-		do: [
+		do: [ :n |
 			self assert: (context response isKindOf: WAResponse).
 			self assert: context response status = 500.
 			^ self ].
