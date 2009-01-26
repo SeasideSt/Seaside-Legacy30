@@ -7,7 +7,9 @@ initializeBMP
 	table := Array new: characterLimit.
 	stream := WriteStream on: (String new: 6).
 	1 to: characterLimit do: [ :index |
+		| encoded |
 		self encode: (Character value: index - 1) on: stream reset.
-		table at: index put: (stream position = 1
-			ifTrue: [ stream contents first ]
-			ifFalse: [ stream contents ]) ]
+		encoded := stream contents.
+		table at: index put: (encoded size = 1
+			ifTrue: [ encoded first ]
+			ifFalse: [ encoded ]) ]
