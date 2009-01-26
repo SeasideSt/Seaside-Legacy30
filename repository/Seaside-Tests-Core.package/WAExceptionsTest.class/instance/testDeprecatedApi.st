@@ -12,4 +12,4 @@ testDeprecatedApi
 	self assert: seen.
 	self assert: exception notNil.
 	self assert: exception messageText = 'WAExceptionsTest>>#testDeprecatedApi'.
-	self assert: exception details = 'Message in a bottle'
+	self assert: exception details = 'Message in a bottle.'
