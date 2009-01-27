@@ -2,6 +2,7 @@
 seasideTestsFlow
 	^ self new
 		name: 'Seaside-Tests-Flow';
-		description: 'Functional and unit tests for Seaside-Flow.';
+		description: 'Functional tests for Seaside-Flow.';
 		addDependency: 'Seaside-Flow';
+		addDependency: 'Seaside-Tests-Functional';
 		yourself
