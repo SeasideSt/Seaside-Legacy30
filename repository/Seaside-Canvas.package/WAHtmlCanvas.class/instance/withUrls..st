@@ -3,7 +3,7 @@ withUrls: aString
 	| stream url |
 	stream := aString readStream.
 	[ stream atEnd ] whileFalse: [
-		self text: (stream upToAndSkipThroughAll: 'http://').
+		self text: (stream seasideUpToAll: 'http://').
 			stream atEnd ifFalse: [
 				url := 'http://', (stream upTo: Character space).
 				self anchor
