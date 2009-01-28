@@ -9,7 +9,9 @@
 	"classvars" : [
 		"MimeTypes"
 	],
-	"instvars" : [ ],
+	"instvars" : [
+		"cache"
+	],
 	"name" : "WAFileLibrary",
 	"type" : "normal"
 }
