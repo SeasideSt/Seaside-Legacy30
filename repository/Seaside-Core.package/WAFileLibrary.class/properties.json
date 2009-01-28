@@ -10,7 +10,7 @@
 		"MimeTypes"
 	],
 	"instvars" : [
-		"cache"
+		"localCache"
 	],
 	"name" : "WAFileLibrary",
 	"type" : "normal"
