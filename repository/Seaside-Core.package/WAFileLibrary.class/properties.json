@@ -3,15 +3,14 @@
 	"super" : "WAObject",
 	"category" : "Seaside-Core-Libraries",
 	"classinstvars" : [
-		"default"
+		"default",
+		"cache"
 	],
 	"pools" : [ ],
 	"classvars" : [
 		"MimeTypes"
 	],
-	"instvars" : [
-		"localCache"
-	],
+	"instvars" : [ ],
 	"name" : "WAFileLibrary",
 	"type" : "normal"
 }
