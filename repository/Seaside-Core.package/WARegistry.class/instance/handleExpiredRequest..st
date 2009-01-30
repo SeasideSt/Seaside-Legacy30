@@ -1,3 +1,0 @@
-processing
-handleExpiredRequest: aRequestContext
-	aRequestContext responseFactory expiredKey; respond

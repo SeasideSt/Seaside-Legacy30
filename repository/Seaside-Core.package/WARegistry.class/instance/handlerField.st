@@ -1,3 +1,0 @@
-processing
-handlerField
-	self subclassResponsibility

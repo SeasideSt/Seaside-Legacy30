@@ -1,8 +1,5 @@
 actions
 removeFile: aFilename
-	| selector |
-	selector := self asSelector: aFilename.
-	self localCache removeKey: selector ifAbsent: [].
 	WAPlatform current
-		removeSelector: selector
+		removeSelector: (self asSelector: aFilename)
 		from: self class

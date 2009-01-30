@@ -1,3 +1,3 @@
 public
-keyFor: aRequestHandler ifAbsent: aBlock
-	^ (self cache keyFor: aRequestHandler) ifNil: aBlock
+keyFor: aRequestHandler ifAbsent: absentBlock
+	^ (self cache keyFor: aRequestHandler) ifNil: absentBlock
