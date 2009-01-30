@@ -1,3 +1,6 @@
-instance creation
+deprecated
 renderer: aRenderer
-	^ self basicNew initializeWithRenderer: aRenderer
+	self	seasideDeprecatedApi: 'WAPrettyPrintedDocument class>>#renderer:'
+		details: 'Use WAPrettyPrintedDocument class>>#context:.'.
+		
+	^ self context: aRenderer context
