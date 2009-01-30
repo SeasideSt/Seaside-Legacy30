@@ -3,7 +3,8 @@
 	"super" : "WAObject",
 	"category" : "Seaside-Core-Libraries",
 	"classinstvars" : [
-		"default"
+		"default",
+		"cache"
 	],
 	"pools" : [ ],
 	"classvars" : [

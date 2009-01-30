@@ -1,3 +1,3 @@
 notifications
 retrieving: anObject key: aString
-	ageTable at: aString put: 0
+	(ageTable at: aString) at: 1 put: 0

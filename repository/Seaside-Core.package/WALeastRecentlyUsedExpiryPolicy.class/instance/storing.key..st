@@ -1,4 +1,6 @@
 notifications
 storing: anObject key: aString
-	ageTable associationsDo: [ :assoc | assoc value: assoc value + 1 ].
-	ageTable at: aString put: 0.
+	"Avoid #associationsDo: to maintain cross-platform portability (see Issue #312 for details)."
+	
+	ageTable do: [:each | each at: 1 put: (each at: 1) + 1].
+	ageTable at: aString put: (Array with: 0).
