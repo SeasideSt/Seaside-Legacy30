@@ -1,4 +1,4 @@
-processing
+handling
 handleFiltered: aRequestContext
 	| requestUrl baseUrl relativePath |
 	requestUrl := aRequestContext request url.

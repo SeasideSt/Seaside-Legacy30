@@ -1,4 +1,4 @@
-processing
+handling
 handleFiltered: aRequestContext named: aString
 	(self 
 		entryPointAt: aString 

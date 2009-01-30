@@ -1,4 +1,4 @@
-processing
+handling
 handleFiltered: aRequestContext 
 	| path baseUrl requestUrl |
 	baseUrl := WAUrl new

@@ -1,4 +1,4 @@
-processing
+handling
 handleFiltered: aRequestContext
 	| cookie key handler urlKey |
 	urlKey := self urlKeyFromContext: aRequestContext ifAbsent: [ nil ].
