@@ -1,3 +1,3 @@
 testing
 isActive
-	^ self session sessionAllowTermination
+	^ self application preferenceAt: #sessionAllowTermination

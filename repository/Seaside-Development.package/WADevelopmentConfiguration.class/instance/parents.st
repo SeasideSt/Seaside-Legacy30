@@ -1,3 +1,3 @@
 description
 parents
-	^ Array with: WARenderLoopConfiguration instance with: WAApplicationConfiguration instance
+	^ Array with: WARenderLoopConfiguration instance
