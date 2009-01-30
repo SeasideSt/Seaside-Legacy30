@@ -1,4 +1,4 @@
-processing
+handling
 handleFiltered: aRequestContext
 	| key continuation |
 	WACurrentRequestContext use: aRequestContext during: [

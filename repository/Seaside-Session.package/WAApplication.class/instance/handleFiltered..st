@@ -1,4 +1,4 @@
-processing
+handling
 handleFiltered: aRequestContext
 	"WAApplication instances only understand GET and POST requests."
 
