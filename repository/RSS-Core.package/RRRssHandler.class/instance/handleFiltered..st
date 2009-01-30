@@ -1,4 +1,4 @@
-processing
+handling
 handleFiltered: aRequestContext
 	| document context canvas root rootComponent |
 	aRequestContext response contentType: RRRssRoot defaultContentType.
