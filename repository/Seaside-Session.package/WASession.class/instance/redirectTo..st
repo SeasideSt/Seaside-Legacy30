@@ -3,4 +3,4 @@ redirectTo: aUrlOrString
 	self
 		seasideDeprecatedApi: 'WASession>>#redirectTo:'
 		details: 'Use WARequestContext>>#redirectTo:.'.
-	^ self requestContext redirectTo: aUrlOrString
+	self requestContext redirectTo: aUrlOrString

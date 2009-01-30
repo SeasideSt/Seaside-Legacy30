@@ -2,5 +2,6 @@ deprecated
 redirectWithCookie: aCookie
 	self 
 		seasideDeprecatedApi: 'WASession>>#redirectWithCookie:'
-		details: 'Do self requestContent response #addCooke:.'.
-	^ self requestContext redirectWithCookie: aCookie
+		details: 'Use "self requestContent response addCookie: aCookie. self requestContext redirect" (requires the Seaside-Flow package).'.
+	self requestContext response addCookie: aCookie.
+	self requestContext redirect
