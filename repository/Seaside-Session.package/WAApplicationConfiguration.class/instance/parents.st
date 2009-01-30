@@ -1,3 +1,3 @@
 ancestry
 parents
-	^ Array with: WARequestHandlingConfiguration instance
+	^ Array with: WARegistryConfiguration instance

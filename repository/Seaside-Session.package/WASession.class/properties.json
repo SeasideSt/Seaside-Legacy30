@@ -7,8 +7,7 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"continuations",
-		"jumpTo",
-		"cookiesEnabled"
+		"jumpTo"
 	],
 	"name" : "WASession",
 	"type" : "normal"

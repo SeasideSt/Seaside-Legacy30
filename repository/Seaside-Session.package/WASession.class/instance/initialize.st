@@ -2,5 +2,4 @@ initializing
 initialize
 	super initialize.
 	self initializeFilters.
-	continuations := self createCache.
-	cookiesEnabled := false
+	continuations := self createCache

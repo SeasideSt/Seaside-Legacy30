@@ -1,7 +1,7 @@
 configuration
 defaultConfiguration
 	^ super defaultConfiguration
-		removeParent: WARequestHandlingConfiguration instance;
+		removeParent: WARegistryConfiguration instance;
 		addParent: WAApplicationConfiguration instance;
 		addParent: WASessionConfiguration instance;
 		yourself

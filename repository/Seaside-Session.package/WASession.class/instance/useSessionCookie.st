@@ -1,3 +1,3 @@
 configuration
 useSessionCookie
-	^ self preferenceAt: #useSessionCookie
+	^ self preferenceAt: #useCookies

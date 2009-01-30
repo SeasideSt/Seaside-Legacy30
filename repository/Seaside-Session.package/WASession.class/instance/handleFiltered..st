@@ -1,7 +1,6 @@
 processing
 handleFiltered: aRequestContext
 	| key continuation |
-	self handleSessionCookie: aRequestContext.
 	WACurrentRequestContext use: aRequestContext during: [
 		key := aRequestContext request fields
 			at: self actionField
