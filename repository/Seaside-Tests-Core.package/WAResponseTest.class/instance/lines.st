@@ -6,5 +6,5 @@ lines
 	result := OrderedCollection new.
 	stream := self contents readStream.
 	[ stream atEnd ]
-		whileFalse: [ result add: (stream seasideUpToAll: String crlf) ].
+		whileFalse: [ result add: (stream upToAndSkipThroughAll: String crlf) ].
 	^ result asArray

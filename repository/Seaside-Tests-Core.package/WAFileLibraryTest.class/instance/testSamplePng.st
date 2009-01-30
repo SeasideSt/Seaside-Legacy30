@@ -10,4 +10,4 @@ testSamplePng
 	stream := WriteStream on: String new.
 	response writeContentOn: stream.
 	contents := stream contents.
-	self assert: contents asByteArray = (library perform: #samplePng).
+	self assert: contents asByteArray = library samplePng.  "Is there a reason this was using a #perform:?"
