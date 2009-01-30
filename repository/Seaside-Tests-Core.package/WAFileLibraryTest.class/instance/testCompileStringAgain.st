@@ -1,5 +1,5 @@
 testing
-testCompileString
+testCompileStringAgain
 	| library file |
 	[
 		| data first second |
@@ -7,6 +7,19 @@ testCompileString
 		self deny: (library class selectors includes: #demoTxt).
 	
 		data := 'this is a string'.
+		file := WAFile new
+			contentType: WAMimeType textPlain;
+			contents: data;
+			fileName: 'demo.txt';
+			yourself.
+	
+		library addFile: file.
+		self assert: (library class selectors includes: #demoTxt).
+		first := library perform: #demoTxt.
+		self assert: first = data.
+		second := library perform: #demoTxt.
+		self assert: first == second.
+		data := 'this is another string'.
 		file := WAFile new
 			contentType: WAMimeType textPlain;
 			contents: data;
