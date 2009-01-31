@@ -1,5 +1,5 @@
 private
-openDocumentDocument: aDocument context: aContext 
+openDocument: aDocument context: aContext 
 	| documentRoot |
 	self fullDocument ifFalse: [ ^ self ].
 	documentRoot := self rootClass context: aContext.

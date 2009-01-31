@@ -12,6 +12,6 @@ render: anObject
 		context actionUrl: self actionUrl.
 		html := self rendererClass context: context.
 		
-		self openDocumentDocument: document context: context.
+		self openDocument: document context: context.
 		html render: anObject; flush.
 		self closeDocument: document ]
