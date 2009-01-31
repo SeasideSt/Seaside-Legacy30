@@ -1,3 +1,3 @@
 documents
 registry
-	^ self application
+	^ self requestContext registry
