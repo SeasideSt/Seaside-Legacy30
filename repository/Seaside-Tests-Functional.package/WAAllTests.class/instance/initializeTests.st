@@ -1,6 +1,5 @@
 initialization
 initializeTests
-	classes := SortedCollection sortBlock: [ :a :b | a name < b name ].
-	WAFunctionalTest allSubclassesDo: [ :each | classes add: each ].
-	WAFunctionalTaskTest allSubclassesDo: [ :each | classes add: each ].
+	classes := (WAPresenter allSubclasses select: [ :each | each isFunctionalTest ])
+				asSortedCollection: [ :a :b | a name < b name ].
 	current := WAValueHolder with: classes first new
