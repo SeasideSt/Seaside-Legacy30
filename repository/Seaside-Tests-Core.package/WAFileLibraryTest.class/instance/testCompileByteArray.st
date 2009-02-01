@@ -16,7 +16,7 @@ testCompileByteArray
 		first := library perform: #demoJpeg.
 		self assert: first = data.
 		second := library perform: #demoJpeg.
-		self assert: first == second.
+		self assert: first = second.
 	] ensure: [
 		library removeFile: file fileName.
 		self deny: (library class selectors includes: #demoJpeg).
