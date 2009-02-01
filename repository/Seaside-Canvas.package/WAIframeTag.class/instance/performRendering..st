@@ -2,8 +2,6 @@ private
 performRendering: anObject
 	| innerContext docRoot document response renderer |
 	innerContext := canvas context copy.
-	innerContext visitor: nil.
-	innerContext visitor: (WARenderingGuide client: innerContext visitor).
 	docRoot := WAHtmlRoot context: innerContext.
 	docRoot base target: '_top'.
 	response := self requestContext response.
