@@ -4,8 +4,7 @@ renderJavascriptOn: html
 	html heading level: 4; with: 'Javascript'.
 	html code: [
 		context := html context copy.
-		context clearMode; visitor: nil.
-		context visitor: (WARenderingGuide client: context visitor).
+		context clearMode.
 		
 		context document: (WAPrettyPrintedDocument context: html context).
 		contents renderWithContext: context.
