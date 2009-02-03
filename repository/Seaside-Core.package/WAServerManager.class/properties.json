@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "WAObject",
-	"category" : "Seaside-Core-HTTP",
+	"category" : "Seaside-Core-Server",
 	"classinstvars" : [
 		"instance"
 	],

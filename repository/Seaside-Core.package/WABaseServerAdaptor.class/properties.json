@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "pmm 11/27/2008 07:48",
 	"super" : "WAStartableServerAdaptor",
-	"category" : "Seaside-Core-HTTP",
+	"category" : "Seaside-Core-Server",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

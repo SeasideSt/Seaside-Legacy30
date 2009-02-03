@@ -1,7 +1,6 @@
 SystemOrganization addCategory: #'Seaside-Core-Cache'!
 SystemOrganization addCategory: #'Seaside-Core-Callbacks'!
 SystemOrganization addCategory: #'Seaside-Core-Configuration'!
-SystemOrganization addCategory: #'Seaside-Core-Contexts'!
 SystemOrganization addCategory: #'Seaside-Core-Document'!
 SystemOrganization addCategory: #'Seaside-Core-Document-Elements'!
 SystemOrganization addCategory: #'Seaside-Core-Exceptions'!
@@ -10,4 +9,5 @@ SystemOrganization addCategory: #'Seaside-Core-HTTP'!
 SystemOrganization addCategory: #'Seaside-Core-Libraries'!
 SystemOrganization addCategory: #'Seaside-Core-Rendering'!
 SystemOrganization addCategory: #'Seaside-Core-RequestHandler'!
+SystemOrganization addCategory: #'Seaside-Core-Server'!
 SystemOrganization addCategory: #'Seaside-Core-Utilities'!
