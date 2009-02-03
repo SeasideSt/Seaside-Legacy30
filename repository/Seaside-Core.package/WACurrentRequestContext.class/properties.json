@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "pmm 6/1/2008 00:38",
 	"super" : "WADynamicVariable",
 	"category" : "Seaside-Core-RequestHandler",
 	"classinstvars" : [ ],
