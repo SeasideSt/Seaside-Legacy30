@@ -1,3 +1,3 @@
-public
-defaultAction
+defaults
+defaultValue
 	^ WARequestContextNotFound signal

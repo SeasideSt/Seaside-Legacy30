@@ -1,5 +1,5 @@
 *seaside-core
 requestContext
-	"Answer the current request context, instance of WARequestContext."
+	"Answer the current WARequestContext instance."
 
-	^ WACurrentRequestContext value ifNil: [ WARequestContextRequest signal ]
+	^ WACurrentRequestContext value
