@@ -1,3 +1,0 @@
-testing
-testHandlesRequestContextRequest
-	self assertHandles: WARequestContextRequest new
