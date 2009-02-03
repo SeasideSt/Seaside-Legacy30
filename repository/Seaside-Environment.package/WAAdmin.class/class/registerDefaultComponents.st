@@ -1,5 +1,5 @@
 registration
 registerDefaultComponents
-	WAPresenter allSubclasses do: [ :each |
+	WAPainter allSubclasses do: [ :each |
 		(each class includesSelector: #initialize)
 			ifTrue: [ each initialize ] ]
