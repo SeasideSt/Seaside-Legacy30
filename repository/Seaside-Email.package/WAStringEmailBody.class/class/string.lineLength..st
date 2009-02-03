@@ -10,8 +10,8 @@ string: aString lineLength: anInteger
 				ifFalse: [
 					(self splitString: each intoChunksNoLongerThan: anInteger)
 						do: [ :chunk | stream nextPutAll: chunk ]
-						separatedBy: [ stream cr ] ] ]
-			separatedBy: [ stream cr ] ].
+						separatedBy: [ stream nextPut: Character cr ] ] ]
+			separatedBy: [ stream nextPut: Character cr ] ].
 	^self new
 		string: string;
 		yourself

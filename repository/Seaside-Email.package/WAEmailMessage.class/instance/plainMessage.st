@@ -27,7 +27,8 @@ plainMessage
 		stream
 			nextPutAll: 'Subject: ';
 			nextPutAll: self subject;
-			cr; cr.
+			nextPut: Character cr;
+			nextPut: Character cr.
 			
 		self body isNil ifFalse: [
 			stream nextPutAll: self body seasideString ] ]
