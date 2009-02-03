@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 parents
 	^ Array with: WARequestHandlingConfiguration instance
