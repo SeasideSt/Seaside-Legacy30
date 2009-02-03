@@ -1,3 +1,3 @@
 testing
-testWithoutValue
+testWithoutContext
 	self assert: WACurrentSession value isNil
