@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "DataCurator 02/03/2009 15:07",
+	"commentStamp" : "",
 	"super" : "WAEmailBody",
 	"category" : "Seaside-Email",
 	"classinstvars" : [ ],
