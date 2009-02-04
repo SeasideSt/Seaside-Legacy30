@@ -1,4 +1,4 @@
 initialization
 initialize
 	super initialize.
-	stream := String new writeStream
+	stream := WriteStream on: String new
