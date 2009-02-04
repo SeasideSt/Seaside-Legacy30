@@ -1,3 +1,3 @@
 accessing
 append: aString
-	transcript nextPutAll: aString; cr
+	transcript nextPutAll: aString; nextPut: Character cr

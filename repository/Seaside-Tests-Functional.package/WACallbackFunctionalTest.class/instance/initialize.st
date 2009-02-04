@@ -1,4 +1,4 @@
 initialization
 initialize
 	super initialize.
-	transcript := String new writeStream
+	transcript := WriteStream on: String new
