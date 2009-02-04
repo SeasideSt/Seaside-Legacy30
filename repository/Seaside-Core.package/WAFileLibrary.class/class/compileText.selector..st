@@ -7,7 +7,7 @@ compileText: aByteArrayOrString selector: aSymbol
 	code := String streamContents: [ :stream | 
 		stream
 			nextPutAll: aSymbol;
-			cr.
+			nextPut: Character cr.
 		stream
 			tab;
 			nextPutAll: '^ '''.
