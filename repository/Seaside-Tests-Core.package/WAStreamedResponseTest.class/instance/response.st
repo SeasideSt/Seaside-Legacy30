@@ -1,3 +1,3 @@
 accessing
 response
-	^ super response ifNil: [ response := WAStreamedResponse on: String new writeStream ]
+	^ super response ifNil: [ response := WAStreamedResponse on: (WriteStream on: String new) ]

@@ -1,6 +1,6 @@
 accessing
 contents
 	| stream |
-	stream := String new writeStream.
+	stream := WriteStream on: String new.
 	self response writeOn: stream.
 	^ stream contents
