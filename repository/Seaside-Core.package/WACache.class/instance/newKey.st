@@ -1,5 +1,6 @@
 private
 newKey
 	| key |
-	[ objectsByKey includesKey: (key := WAKeyGenerator current keyOfLength: self keySize) ] whileTrue.
+	self mutex critical: [
+		[ objectsByKey includesKey: (key := WAKeyGenerator current keyOfLength: self keySize) ] whileTrue ].
 	^ key

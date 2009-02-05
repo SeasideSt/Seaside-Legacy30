@@ -1,3 +1,3 @@
 initialization
 initializeMutex
-	mutex := WAPlatform current semaphoreClass forMutualExclusion
+	mutex := WAMutex new
