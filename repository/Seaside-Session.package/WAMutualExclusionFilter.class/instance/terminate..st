@@ -1,6 +1,6 @@
 private
 terminate: aRequestContext
-	self terminateOwner.
+	mutex terminateOwner.
 	aRequestContext response
 		contentType: WAMimeType textPlain;
 		nextPutAll: 'Process terminated'.
