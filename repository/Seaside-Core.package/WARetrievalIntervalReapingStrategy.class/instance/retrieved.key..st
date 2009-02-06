@@ -1,4 +1,4 @@
 notifications
-retrieving: anObject key: anExternalId
+retrieved: anObject key: anExternalId
 	count := count + 1.
 	(count >= self interval) ifTrue: [ self reap ]

@@ -7,4 +7,4 @@ clear
 		keysByObject := WAPlatform current reducedConflictDictionary new ].
 	
 	objects isNil ifFalse: [
-		[ objects keysAndValuesDo: [ :key :object | self reap: object key: key ] ] fork ]
+		[ objects keysAndValuesDo: [ :key :object | self notifyReaped: object key: key ] ] fork ]

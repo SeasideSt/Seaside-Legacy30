@@ -6,6 +6,6 @@ store: anObject
 		objectsByKey at: key put: anObject.
 		keysByObject at: anObject put: key ].
 	
-	self notifyStoring: anObject key: key.
+	self notifyStored: anObject key: key.
 	
 	^ key

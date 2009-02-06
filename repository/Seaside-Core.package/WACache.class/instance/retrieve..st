@@ -6,6 +6,6 @@ retrieve: aString
 	
 	object isNil ifFalse: [
 		(self expiryPolicy isExpired: object key: aString) ifTrue: [ ^ nil ].
-		self notifyRetrieving: object key: aString ].
+		self notifyRetrieved: object key: aString ].
 	
 	^ object

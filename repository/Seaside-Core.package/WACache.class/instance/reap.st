@@ -14,4 +14,4 @@ reap
 		objectsByKey := newObjectsByKey.
 		keysByObject := newKeysByObject ].
 	
-	[ expired do: [ :each | self reap: each value key: each key ] ] fork
+	[ expired do: [ :each | self notifyReaped: each value key: each key ] ] fork

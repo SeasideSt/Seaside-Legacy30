@@ -1,3 +1,3 @@
 notifications
-retrieving: anObject key: aString
+retrieved: anObject key: aString
 	(ageTable at: aString) at: 1 put: 0
