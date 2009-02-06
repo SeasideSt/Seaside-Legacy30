@@ -10,4 +10,4 @@ testTerminate
 	mutex terminateOwner.
 	self assert: mutex owner isNil.
 	self assert: value isNil.
-	self assert: process isTerminated
+	self assert: (WAPlatform current isProcessTerminated: process)
