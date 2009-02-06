@@ -13,8 +13,7 @@ renderLabel: aString control: aBlock model: anObject on: html
 					parents: 'fieldset';
 					find: 'p') load
 						" serialize all nearby form elements "
-						addParameter: (html jQuery this		
+						serialize: (html jQuery this		
 							parents: 'span';
-							find: ':input';
-							serialize)) ].
+							find: ':input')) ].
 		html paragraph: anObject ]
