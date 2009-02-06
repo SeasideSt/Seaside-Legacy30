@@ -11,7 +11,7 @@ postCopy
 		
 		self setExpiryPolicy: self expiryPolicy copy.
 		self setMissStrategy: self missStrategy copy.
-		self setReapAction: self reapAction copy.
+		self setRemovalAction: self removalAction copy.
 		self setReapingStrategy: self reapingStrategy copy ].
 	"Now we're done and have all our own data so we want our own mutex."
 	self initializeMutex

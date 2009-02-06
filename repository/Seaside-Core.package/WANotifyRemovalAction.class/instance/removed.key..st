@@ -1,4 +1,4 @@
 protocol
-reaped: anObject key: aString
+removed: anObject key: aString
 	(anObject respondsTo: #unregistered) ifTrue: [ anObject unregistered ]
 	

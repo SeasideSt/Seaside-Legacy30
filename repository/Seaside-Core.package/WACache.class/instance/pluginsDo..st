@@ -3,4 +3,4 @@ pluginsDo: aBlock
 	aBlock value: self expiryPolicy.
 	aBlock value: self reapingStrategy.
 	aBlock value: self missStrategy.
-	aBlock value: self reapAction.
+	aBlock value: self removalAction.

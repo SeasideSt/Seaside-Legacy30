@@ -5,6 +5,6 @@ removeKey: aString
 		object := objectsByKey removeKey: aString ifAbsent: [ nil ].
 		keysByObject removeKey: object ifAbsent: [ nil ] ].
 	
-	object isNil ifFalse: [ self notifyReaped: object key: aString ].
+	object isNil ifFalse: [ self notifyRemoved: object key: aString ].
 	
 	^ object

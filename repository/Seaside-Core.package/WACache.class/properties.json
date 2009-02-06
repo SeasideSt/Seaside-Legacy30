@@ -12,7 +12,7 @@
 		"expiryPolicy",
 		"reapingStrategy",
 		"missStrategy",
-		"reapAction"
+		"removalAction"
 	],
 	"name" : "WACache",
 	"type" : "normal"

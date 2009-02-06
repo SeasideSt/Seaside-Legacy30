@@ -7,6 +7,6 @@ remove: anObject
 			keysByObject removeKey: anObject ifAbsent: [ nil ].
 			objectsByKey removeKey: key ifAbsent: [ nil ] ] ].
 	
-	key isNil ifFalse: [ self notifyReaped: anObject key: key ].
+	key isNil ifFalse: [ self notifyRemoved: anObject key: key ].
 	
 	^ anObject

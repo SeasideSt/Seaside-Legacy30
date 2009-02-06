@@ -1,3 +1,3 @@
 notifications
-reaped: anObject key: aString
+removed: anObject key: aString
 	ageTable removeKey: aString ifAbsent: []

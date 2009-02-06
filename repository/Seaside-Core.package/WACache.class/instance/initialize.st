@@ -5,5 +5,5 @@ initialize
 	self setExpiryPolicy: WALastAccessExpiryPolicy new.
 	self setReapingStrategy: WARetrievalIntervalReapingStrategy new.
 	self setMissStrategy: WACacheMissStrategy new.
-	self setReapAction: WANotifyReapAction new.
+	self setRemovalAction: WANotifyRemovalAction new.
 	self clear

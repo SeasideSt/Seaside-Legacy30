@@ -1,11 +1,11 @@
 {
-	"commentStamp" : "",
-	"super" : "WACacheReapAction",
+	"commentStamp" : "jf 2/6/2009 16:33",
+	"super" : "WACachePlugin",
 	"category" : "Seaside-Core-Cache",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WANotifyReapAction",
+	"name" : "WACacheRemovalAction",
 	"type" : "normal"
 }
