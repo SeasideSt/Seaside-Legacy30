@@ -1,17 +1,16 @@
 public
 reap
-	| expired newObjectsByKey newKeysByObject |
-	expired := OrderedCollection new.
+	"Iterate through the cache and remove objects that have expired."
+
+	| newObjectsByKey newKeysByObject |
 	newObjectsByKey := WAPlatform current reducedConflictDictionary new.
 	newKeysByObject := WAPlatform current reducedConflictDictionary new.
-	self mutex critical: [
+	mutex critical: [
 		objectsByKey keysAndValuesDo: [ :key :object |
 			(self expiryPolicy isExpired: object key: key)
-				ifTrue: [ expired add: (key -> object) ]
+				ifTrue: [ self notifyRemoved: object key: key ]
 				ifFalse: [
 					newObjectsByKey at: key put: object.
 					newKeysByObject at: object put: key ] ].
 		objectsByKey := newObjectsByKey.
-		keysByObject := newKeysByObject ].
-	
-	[ expired do: [ :each | self notifyRemoved: each value key: each key ] ] fork
+		keysByObject := newKeysByObject ]

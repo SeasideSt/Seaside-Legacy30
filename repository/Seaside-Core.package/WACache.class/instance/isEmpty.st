@@ -1,3 +1,3 @@
 testing
 isEmpty
-	^self size = 0
+	^ self size = 0
