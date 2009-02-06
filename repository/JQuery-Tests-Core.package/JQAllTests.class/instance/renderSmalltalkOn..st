@@ -6,8 +6,11 @@ renderSmalltalkOn: html
 		do: [ :selector |
 			source := (contents class sourceCodeAt: selector)
 				asString readStream.
-			html code: [
-				html strong: [ html text: contents class name; text: '>>'; text: source nextLine; break ].
+			html div class: 'code'; with: [
+				html span
+					class: 'signature';
+					with: [ html text: contents class name; text: '>>'; text: source nextLine ].
+				html break.
 				[ source atEnd ] whileFalse: [
 					[ source peek = Character tab ]
 						whileTrue: [ html space; space; space. source next ].

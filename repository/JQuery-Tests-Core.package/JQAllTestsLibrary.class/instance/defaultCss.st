@@ -43,8 +43,9 @@ h1, h2, h3, h4, h5, h6 { border: 0; margin: 0; font-weight: normal; letter-spaci
 #content .main h3 { font-size: 20px; margin-bottom: 10px; }
 #content .main h4 { font-size: 16px; border-bottom: 1px solid #eee; margin-top: 20px; margin-bottom: 10px; }
 #content .main .demo { position: relative; }
-#content .main code { font-size: 12px; }
-#content .main code .tag-known { font-weight: bold; color: purple; }
-#content .main code .attribute-known { font-weight: bold; color: black; }
-#content .main code .attribute-value { color: blue; }
-#content .main code .attribute-value a { color: blue; text-decoration: underline; }'
+#content .main .code { font-family: "Bitstream Vera Sans Mono", Courier, monospace; font-size: 1.2em; line-height: 1.2; overflow-x: hidden; overflow-y: auto; white-space: pre; width: 735px; }
+#content .main .code .signature { font-weight: bold; }
+#content .main .code .tag-known { font-weight: bold; color: purple; }
+#content .main .code .attribute-known { font-weight: bold; color: black; }
+#content .main .code .attribute-value { color: blue; }
+#content .main .code .attribute-value a { color: blue; text-decoration: underline; }'
