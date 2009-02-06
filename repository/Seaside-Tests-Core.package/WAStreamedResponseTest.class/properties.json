@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "DataCurator 02/06/2009 08:37",
+	"commentStamp" : "",
 	"super" : "WAResponseTest",
 	"category" : "Seaside-Tests-Core",
 	"classinstvars" : [ ],

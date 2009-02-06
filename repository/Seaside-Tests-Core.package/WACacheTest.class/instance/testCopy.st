@@ -19,5 +19,5 @@ testCopy
 	self deny: cache mutex == copy mutex.
 	self deny: cache expiryPolicy == copy expiryPolicy.
 	self deny: cache missStrategy == copy missStrategy.
-	self deny: cache reapAction == copy reapAction.
+	self deny: cache removalAction == copy removalAction.
 	self deny: cache reapingStrategy == copy reapingStrategy.
