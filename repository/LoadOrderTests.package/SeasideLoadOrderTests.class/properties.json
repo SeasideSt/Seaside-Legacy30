@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "LoadOrderTests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"userName",
+		"password",
+		"seaside29",
+		"komHttpServer",
+		"baseTests",
+		"baseUndeclared"
+	],
+	"name" : "SeasideLoadOrderTests",
+	"type" : "normal"
+}
