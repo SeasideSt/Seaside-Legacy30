@@ -1,4 +1,4 @@
-initialize-release
+repositories
 seaside29
 
 	^MCHttpRepository

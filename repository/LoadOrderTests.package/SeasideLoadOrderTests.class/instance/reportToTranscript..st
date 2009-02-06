@@ -1,4 +1,4 @@
-initialize-release
+load and test
 reportToTranscript: aString
 
 	| list |

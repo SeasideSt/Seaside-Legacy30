@@ -1,4 +1,4 @@
-initialize-release
+repositories
 komHttpServer
 
 	^MCHttpRepository

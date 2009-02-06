@@ -11,7 +11,7 @@ basicPackages
 		"Core"
 		add: (Array 
 			with: seaside29 -> 'Seaside-Core-jf.453.mcz'
-			with: seaside29 -> 'Seaside-Tests-Core-jf.89.mcz'
+			with: seaside29 -> 'Seaside-Tests-Core-jgf.91.mcz'
 			with: seaside29 -> 'Seaside-Squeak-Core-jgf.75.mcz'
 			with: seaside29 -> 'Seaside-Tests-Squeak-Core-jgf.12.mcz');
 		"Canvas"

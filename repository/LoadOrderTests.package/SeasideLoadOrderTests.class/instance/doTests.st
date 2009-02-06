@@ -1,4 +1,4 @@
-initialize-release
+load and test
 doTests
 
 	| suite result |

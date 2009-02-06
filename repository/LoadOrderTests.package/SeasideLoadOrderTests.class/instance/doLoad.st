@@ -1,10 +1,9 @@
-initialize-release
+load and test
 doLoad
 
 	self groups do: [:aList | 
 		self 
 			loadPackages: aList;
 			doTests;
-			showUndeclared;
 			yourself.
 	].

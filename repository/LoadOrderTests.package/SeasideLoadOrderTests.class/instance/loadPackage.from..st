@@ -1,4 +1,4 @@
-initialize-release
+load and test
 loadPackage: aString from: aRepository
 
 	| version repositoryGroup transcript stream |
@@ -15,3 +15,5 @@ loadPackage: aString from: aRepository
 	repositoryGroup := version workingCopy repositoryGroup.
 	repositoryGroup addRepository: aRepository.
 	Transcript cr; show: 'Loaded ' , aString.
+	self showUndeclared.
+	
