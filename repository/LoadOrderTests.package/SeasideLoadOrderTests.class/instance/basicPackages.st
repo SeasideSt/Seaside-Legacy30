@@ -10,7 +10,7 @@ basicPackages
 			with: seaside29 -> 'Seaside-Tests-Squeak-Platform-jf.15.mcz');
 		"Core"
 		add: (Array 
-			with: seaside29 -> 'Seaside-Core-jf.453.mcz'
+			with: seaside29 -> 'Seaside-Core-jf.454.mcz'
 			with: seaside29 -> 'Seaside-Tests-Core-jgf.91.mcz'
 			with: seaside29 -> 'Seaside-Squeak-Core-jgf.75.mcz'
 			with: seaside29 -> 'Seaside-Tests-Squeak-Core-jgf.12.mcz');
@@ -20,7 +20,7 @@ basicPackages
 			with: seaside29 -> 'Seaside-Tests-Canvas-lr.21.mcz');
 		"Continuation"
 		add: (Array 
-			with: seaside29 -> 'Seaside-Squeak-Continuation-lr.17.mcz'
+			with: seaside29 -> 'Seaside-Squeak-Continuation-jf.18.mcz'
 			with: seaside29 -> 'Seaside-Tests-Squeak-Continuation-lr.5.mcz');
 		"Session"
 		add: (Array 
