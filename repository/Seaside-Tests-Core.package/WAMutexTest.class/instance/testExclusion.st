@@ -26,8 +26,10 @@ testExclusion
 	semaphore2 wait.
 	self assert: mutex owner == process.
 	self assert: value isNil.
-	semaphore1 signal.		"this used to be (process resume), which is not portable"
+	semaphore1 signal.
 	semaphore2 wait.
+	self assert: mutex owner == process2.
+	self assert: value = 1.
 	semaphore2 signal.
 	semaphore2 wait.
 	self assert: mutex owner isNil.
