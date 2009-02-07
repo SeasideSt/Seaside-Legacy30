@@ -5,10 +5,10 @@ postFieldsOf: aNativeRequest into: aDictionaryMerger
 	aNativeRequest postData keysAndValuesDo: [ :key :value |
 		| previousData data |
 		data := value filename isEmptyOrNil
-			ifTrue: [ self decodeUrl: value value ]
+			ifTrue: [ self url decode: value value ]
 			ifFalse: [
 				WAFile new
-					fileName: (self decodeUrl: value filename);
+					fileName: (self url decode: value filename);
 					contentType: value contentType seasideMimeType;
 					contents: value value;
 					yourself ].
