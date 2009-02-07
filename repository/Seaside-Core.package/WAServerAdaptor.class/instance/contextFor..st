@@ -5,4 +5,4 @@ contextFor: aNativeRequest
 	^ WARequestContext
 		request: (self requestFor: aNativeRequest)
 		response: (self responseFor: aNativeRequest)
-		codec: (self codecFor: aNativeRequest)
+		codec: self codec
