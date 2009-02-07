@@ -1,14 +1,13 @@
 {
-	"commentStamp" : "pmm 10/14/2006 14:37",
-	"super" : "WAObject",
+	"commentStamp" : "jf 1/4/2009 22:39",
+	"super" : "WAComancheRequestConverter",
 	"category" : "Seaside-Adaptors-Comanche",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"stream",
-		"codec"
+		"process"
 	],
-	"name" : "WAEncodingStream",
+	"name" : "WAListenerAdaptor",
 	"type" : "normal"
 }

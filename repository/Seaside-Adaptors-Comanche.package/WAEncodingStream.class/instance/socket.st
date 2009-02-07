@@ -1,3 +1,0 @@
-accessing
-socket
-	^stream socket
