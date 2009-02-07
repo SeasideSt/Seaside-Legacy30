@@ -2,4 +2,5 @@ converting
 responseFor: aNativeRequest
 	"Answer a response object for aNativeRequest."
 
-	^ WABufferedResponse new
+	^ WABufferedResponse on: ((self codecFor: aNativeRequest)
+		encoderFor: (WriteStream on: String new))
