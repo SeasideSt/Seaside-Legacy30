@@ -1,4 +1,4 @@
-private
+old
 fieldsOf: aKomRequest
 	"returns all the GET and POST parameters of the given request decoded"
 	| merger |

@@ -1,4 +1,4 @@
-printing
+accessing
 statusString
 	^ self isRunning
 		ifTrue: [ service asString ]

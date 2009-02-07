@@ -1,4 +1,4 @@
-private
+old
 remoteAddressOf: aKomRequest
 	"converts a Squeak address (ByteArray) to an IPv4 String"
 	| remoteAddress |

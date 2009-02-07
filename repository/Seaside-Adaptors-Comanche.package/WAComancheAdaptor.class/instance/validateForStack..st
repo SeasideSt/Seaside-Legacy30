@@ -1,2 +1,2 @@
-kom
+adapting
 validateForStack: anArray

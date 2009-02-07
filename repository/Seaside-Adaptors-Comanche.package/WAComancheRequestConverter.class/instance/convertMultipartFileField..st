@@ -1,5 +1,5 @@
-private
+old
 convertMultipartFileField: aChunk
 	^(self fileClass fromChunk: aChunk)
-		fileName: (self decodeUrl: aChunk fileName);
+		fileName: (self codec url decode: aChunk fileName);
 		yourself

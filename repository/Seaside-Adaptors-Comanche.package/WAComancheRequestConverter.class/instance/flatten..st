@@ -1,4 +1,4 @@
-private
+old
 flatten: aDictionary
 	^(aDictionary isKindOf: HttpFormDictionary)
 		ifTrue: [

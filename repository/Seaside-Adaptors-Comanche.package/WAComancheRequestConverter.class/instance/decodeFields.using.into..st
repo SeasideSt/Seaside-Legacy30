@@ -1,4 +1,4 @@
-private
+old
 decodeFields: aDictionary using: aOneArgumentBlock into: aDictionaryMerger
 	aDictionary keysAndValuesDo: [ :key :value |
 		| decoded |

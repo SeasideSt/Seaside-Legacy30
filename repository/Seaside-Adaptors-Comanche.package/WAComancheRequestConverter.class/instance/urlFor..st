@@ -1,7 +1,7 @@
-old
-urlFrom: aKomRequest
+converting-internal
+urlFor: aNativeRequest
 	^ WAUrl absolute: (String streamContents: [:stream |
-		(self pathSegmentsFrom: aKomRequest)
+		(self pathSegmentsFrom: aNativeRequest)
 			do:	[ :each |
 				stream nextPut: $/.
 				stream nextPutAll: each ] ])
