@@ -3,7 +3,7 @@ performTest
 	| context |
 	context := WARequestContext
 		request: nil response: nil 
-		codec: (WAPlatform current codecForEncoding: 'utf-8').
+		codec: WANullCodec new.
 	WACurrentRequestContext 
 		use: context
 		during: [ super performTest ]
