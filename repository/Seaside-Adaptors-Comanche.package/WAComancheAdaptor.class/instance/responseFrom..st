@@ -8,5 +8,5 @@ responseFrom: aRequestContext
 			ifFalse: [ response fieldAt: key put: value seasideString ] ].
 	self convertCookiesFrom: aRequestContext response to: response.
 	response status: (HttpResponse statusSymbolFor: aRequestContext response status).
-	response contents: (self contentsOfResponse: aRequestContext response).
+	response contents: aRequestContext response stream contents readStream.
 	^ response
