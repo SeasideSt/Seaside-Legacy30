@@ -1,3 +1,3 @@
 configuration
 createCodec
-	^ WAPlatform current codecForEncoding: 'utf-8'
+	^ WANullCodec new
