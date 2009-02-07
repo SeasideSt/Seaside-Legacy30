@@ -1,3 +1,3 @@
 accessing
 nextPutAll: aString
-	super nextPutAll: (codec encodeUrl: aString)
+	super nextPutAll: (codec url encode: aString)

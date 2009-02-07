@@ -10,18 +10,18 @@ decodedWith: aCodec
 	
 	"userinfo (username + password) can be percent encoded"
 	self username isNil ifFalse: [
-		url username: (aCodec decodeUrl: self username) ].
+		url username: (aCodec url decode: self username) ].
 	self password isNil ifFalse: [
-		url password: (aCodec decodeUrl: self password) ].
+		url password: (aCodec url decode: self password) ].
 	
 	self path isEmpty ifFalse: [
-		url path: (self path collect: [ :each | aCodec decodeUrl: each ]) ].
+		url path: (self path collect: [ :each | aCodec url decode: each ]) ].
 	url parameters: nil.
 	self parameters keysAndValuesDo: [ :key :value |
 		url
-			addParameter: (aCodec decodeUrl: key)
-			value: (value isNil ifFalse: [ aCodec decodeUrl: value ]) ].
+			addParameter: (aCodec url decode: key)
+			value: (value isNil ifFalse: [ aCodec url decode: value ]) ].
 	self fragment isNil ifFalse: [
-		url fragment: (aCodec decodeUrl: self fragment) ].
+		url fragment: (aCodec url decode: self fragment) ].
 	
 	^ url

@@ -2,8 +2,10 @@ copying
 postCopy
 	super postCopy.
 	"At this point we are sharing the mutex with the original object. This means
-	we can safely copy our dictionaries and our plugins."
-	mutex critical: [
+	we can safely copy our dictionaries and our plugins. The plugins are copied
+	within the mutex because they depend on our mutex rather than having their
+	own."
+	self mutex critical: [
 		keysByObject := keysByObject copy.
 		objectsByKey := objectsByKey copy.
 		

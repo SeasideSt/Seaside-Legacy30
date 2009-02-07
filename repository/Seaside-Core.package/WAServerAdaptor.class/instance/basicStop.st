@@ -1,3 +1,3 @@
-private-controlling
+private
 basicStop
 	self subclassResponsibility
