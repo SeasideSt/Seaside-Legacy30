@@ -1,3 +1,3 @@
 public
-at: aStringOrExternalID
-	^ self retrieve: aStringOrExternalID
+at: aString
+	^ self at: aString ifAbsent: [ nil ]
