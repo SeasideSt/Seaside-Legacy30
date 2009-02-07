@@ -1,4 +1,3 @@
 registration
 unregister
-	self manager unregister: self.
-	manager := nil
+	self manager unregister: self

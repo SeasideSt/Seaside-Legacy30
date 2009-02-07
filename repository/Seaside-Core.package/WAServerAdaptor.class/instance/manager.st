@@ -1,3 +1,3 @@
-accessing-dynamic
+accessing
 manager
 	^ manager
