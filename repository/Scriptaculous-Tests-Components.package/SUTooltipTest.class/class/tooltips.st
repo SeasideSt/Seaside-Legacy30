@@ -1,7 +1,7 @@
 accessing
 tooltips
-	| dict |
-	dict := Dictionary new.
-	dict at: #hello put: 'Hello world!'.
-	dict at: #ok put: 'This is not the ok button!'.
-	^dict
+	| dictionary |
+	dictionary := Dictionary new.
+	dictionary at: #hello put: 'Hello world!'.
+	dictionary at: #ok put: 'This is not the ok button!'.
+	^ dictionary
