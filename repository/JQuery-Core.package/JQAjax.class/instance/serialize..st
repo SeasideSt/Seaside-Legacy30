@@ -1,4 +1,4 @@
-conveniance
+convenience
 serialize: aQuery
 	"Serialize the elements matching aQuery and evaluates the associated callbacks."
 

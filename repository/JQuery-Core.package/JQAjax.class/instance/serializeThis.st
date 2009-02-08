@@ -1,4 +1,4 @@
-conveniance
+convenience
 serializeThis
 	"Serialize the receiving element."
 
