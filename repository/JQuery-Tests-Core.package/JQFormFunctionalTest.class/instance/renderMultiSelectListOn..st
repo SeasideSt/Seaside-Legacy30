@@ -1,14 +1,14 @@
 rendering-elements
-renderMultiSelectListOn: html
-	self
+renderMultiSelectListOn: html 
+	self 
 		renderLabel: 'Multi-Select-List'
-		control: [ :id :script |
+		control: [ :id :script | 
 			html multiSelect
 				id: id;
 				size: 3;
 				list: (1 to: 9);
-				selected: mutliSelectList;
-				callback: [ :value | mutliSelectList := value ];
-				onChange: (script html: [ :h | h render: mutliSelectList ]) ]
-		model: mutliSelectList
+				selected: multiSelectList;
+				callback: [ :value | multiSelectList := value ];
+				onChange: (script html: [ :h | h render: multiSelectList ]) ]
+		model: multiSelectList
 		on: html
