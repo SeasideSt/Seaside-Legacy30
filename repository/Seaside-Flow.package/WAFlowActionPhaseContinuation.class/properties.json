@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WAActionPhaseContinuation",
+	"category" : "Seaside-Flow",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAFlowActionPhaseContinuation",
+	"type" : "normal"
+}

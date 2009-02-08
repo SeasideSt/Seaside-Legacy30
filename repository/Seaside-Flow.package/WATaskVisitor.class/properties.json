@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WAPainterVisitor",
+	"category" : "Seaside-Flow",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WATaskVisitor",
+	"type" : "normal"
+}

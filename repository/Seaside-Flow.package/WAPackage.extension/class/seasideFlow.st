@@ -6,4 +6,5 @@ seasideFlow
 		addDependency: 'Seaside-Core'; "Methods are added to WARequestContext"
 		addDependency: 'Seaside-Component'; "Methods are added to WAComponent"
 		addDependency: 'Seaside-RenderLoop'; "Methods are added to WASession that depend on RenderLoop"
+		addDependency: 'Seaside-Environment'; "We currently us WAFlowMain class>>initialize to configure the application defaults to use out Main and ActionPhaseContinuation"
 		yourself
