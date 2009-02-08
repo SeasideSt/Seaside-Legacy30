@@ -6,4 +6,4 @@ initialize
 	checkBox := false.
 	radioButton := 1.
 	selectList := 1.
-	mutliSelectList := 1 to: 2
+	multiSelectList := 1 to: 2

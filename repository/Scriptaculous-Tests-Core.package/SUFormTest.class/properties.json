@@ -11,7 +11,7 @@
 		"checkBox",
 		"radioButton",
 		"selectList",
-		"mutliSelectList"
+		"multiSelectList"
 	],
 	"name" : "SUFormTest",
 	"type" : "normal"
