@@ -1,1 +1,1 @@
-This is an abstract canvas base class for build canvae for custom XML dialects.
+This is an abstract canvas base class for build canvas for custom XML dialects.
