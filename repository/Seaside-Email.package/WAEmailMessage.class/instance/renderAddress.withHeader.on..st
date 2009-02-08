@@ -1,5 +1,5 @@
 private
-renderAddress: anEmailAddress withHeander: aString on: aStream
+renderAddress: anEmailAddress withHeader: aString on: aStream
 	aStream
 		nextPutAll: aString;
 		nextPutAll: anEmailAddress seasideString;

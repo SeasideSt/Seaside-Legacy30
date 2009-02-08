@@ -4,25 +4,25 @@ plainMessage
 		
 		self
 			renderAddress: self from
-			withHeander: 'From: '
+			withHeader: 'From: '
 			on: stream.
 			
 		self to do: [ :each |
 			self
 				renderAddress: each
-				withHeander: 'To: '
+				withHeader: 'To: '
 				on: stream ].
 			
 		self cc do: [ :each |
 			self
 				renderAddress: each
-				withHeander: 'Cc: '
+				withHeader: 'Cc: '
 				on: stream ].
 			
 		self bcc do: [ :each |
 			self
 				renderAddress: each
-				withHeander: 'Bcc: '
+				withHeader: 'Bcc: '
 				on: stream ].
 		stream
 			nextPutAll: 'Subject: ';
