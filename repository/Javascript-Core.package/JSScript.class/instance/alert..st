@@ -1,4 +1,4 @@
-conveniance
+convenience
 alert: anObject 
 	self add: (JSStream new
 		nextPutAll: 'alert';
