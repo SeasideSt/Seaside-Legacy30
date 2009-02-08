@@ -1,3 +1,3 @@
-conveniance
+convenience
 beRightToLeft
 	self textDirection: 'RTL'

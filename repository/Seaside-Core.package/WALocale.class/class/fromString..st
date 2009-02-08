@@ -1,11 +1,11 @@
 instance creation
 fromString: aString
-	| language country delimeter |
-	delimeter := (aString includes: $_)
+	| language country delimiter |
+	delimiter := (aString includes: $_)
 		ifTrue: [ $_ ]
 		ifFalse: [ $- ].
-	language := aString copyUpTo: delimeter.
-	country := aString copyAfter: delimeter.
+	language := aString copyUpTo: delimiter.
+	country := aString copyAfter: delimiter.
 	country isEmpty ifTrue: [ country := nil ].
 	^self
 		language: language

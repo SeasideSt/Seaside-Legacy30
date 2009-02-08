@@ -1,3 +1,3 @@
-conveniance
+convenience
 beLeftToRight
 	self textDirection: 'LTR'

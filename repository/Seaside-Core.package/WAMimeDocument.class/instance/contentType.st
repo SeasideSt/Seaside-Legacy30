@@ -1,3 +1,3 @@
-compatiblity
+compatibility
 contentType
 	^ self mimeType
