@@ -1,3 +1,3 @@
 accessing
 children
-	^Array with: nestedTransation
+	^ Array with: nestedTransaction

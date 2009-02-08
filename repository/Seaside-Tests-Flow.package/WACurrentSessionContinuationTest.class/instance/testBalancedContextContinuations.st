@@ -1,11 +1,11 @@
 testing
 testBalancedContextContinuations
 	"Cause the ensure blocks in WAContext to fire - use balanced nesting and things work fine"
-	| x session alternateSession tertiarySession quatenarySession context |
+	| x session alternateSession tertiarySession quaternarySession context |
 	session := WASession new.
 	alternateSession := WASession new.
 	tertiarySession := WASession new.
-	quatenarySession := WASession new.
+	quaternarySession := WASession new.
 	context := WARequestContext request: nil response: nil.
 	WACurrentRequestContext 
 		use: context
@@ -25,7 +25,7 @@ testBalancedContextContinuations
 								ifTrue: [ self assert: WACurrentRequestContext value session == session ]
 								ifFalse: 
 									[ self assert: x = 1.
-									self assert: WACurrentRequestContext value session == quatenarySession ] ].
+									self assert: WACurrentRequestContext value session == quaternarySession ] ].
 					x == 0 ifTrue: 
 						[ self assert: WACurrentRequestContext value session == tertiarySession ].
 					x == 1 ifTrue: 
@@ -38,5 +38,5 @@ testBalancedContextContinuations
 					push: alternateSession
 					while: 
 						[ WACurrentRequestContext value 
-							push: quatenarySession
+							push: quaternarySession
 							while: [ savedContinuation value: 1 ] ] ] ]

@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"nestedTransation"
+		"nestedTransaction"
 	],
 	"name" : "WATransactionFunctionalTest",
 	"type" : "normal"
