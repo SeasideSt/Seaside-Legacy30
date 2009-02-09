@@ -1,3 +1,3 @@
 instance creation
 snapshot: aSnapshot
-	^ self new setSnapshot: aSnapshot; yourself
+	^ self basicNew initializeWithSnapshot: aSnapshot; yourself
