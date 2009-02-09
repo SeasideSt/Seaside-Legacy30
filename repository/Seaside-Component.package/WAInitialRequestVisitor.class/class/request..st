@@ -1,3 +1,3 @@
 instance creation
 request: aRequest
-	^ self new setRequest: aRequest; yourself
+	^ self basicNew initializeWithRequest: aRequest; yourself
