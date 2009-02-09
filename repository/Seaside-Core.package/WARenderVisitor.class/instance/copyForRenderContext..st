@@ -1,3 +1,3 @@
 copying
-copyForContext: aRenderContext
+copyForRenderContext: aRenderContext 
 	^ self class context: aRenderContext

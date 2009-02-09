@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "WAVisitor",
+	"super" : "WAPainterVisitor",
 	"category" : "Seaside-Core-Rendering",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "WAPainterVisitor",
+	"instvars" : [
+		"root"
+	],
+	"name" : "WAUpdateRootVisitor",
 	"type" : "normal"
 }
