@@ -5,6 +5,6 @@ urlForDocument: anObject mimeType: mimeType fileName: fileName
 		document: anObject
 		mimeType: mimeType
 		fileName: fileName).
-	^self registry
+	^self requestContext registry
 		register: handler;
 		urlFor: handler
