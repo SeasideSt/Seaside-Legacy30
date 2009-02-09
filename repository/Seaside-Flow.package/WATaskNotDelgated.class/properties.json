@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WAError",
+	"category" : "Seaside-Flow",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WATaskNotDelgated",
+	"type" : "normal"
+}
