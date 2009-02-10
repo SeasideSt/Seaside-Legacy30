@@ -11,7 +11,8 @@
 		"seaside29",
 		"komHttpServer",
 		"baseTests",
-		"baseUndeclared"
+		"baseUndeclared",
+		"doTests"
 	],
 	"name" : "SeasideLoadOrderTests",
 	"type" : "normal"

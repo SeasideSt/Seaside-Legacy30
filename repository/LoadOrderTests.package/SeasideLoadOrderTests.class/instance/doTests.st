@@ -2,6 +2,7 @@ load and test
 doTests
 
 	| suite result |
+	doTests ifFalse: [^self].
 	suite := TestCase suite.
 	baseTests do: [:oldTest | 
 		| duplicate |

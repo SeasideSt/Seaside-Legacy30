@@ -10,5 +10,8 @@ initialize
 		initialAnswer: ''.
 	seaside29 := self seaside29.
 	komHttpServer := self komHttpServer.
-	baseTests := TestCase suite tests.
-	baseUndeclared := Undeclared keys.
+	doTests := UIManager default confirm: 'Run tests as packages are loaded?'.
+	doTests ifTrue: [
+		baseTests := TestCase suite tests.
+		baseUndeclared := Undeclared keys.
+	].
