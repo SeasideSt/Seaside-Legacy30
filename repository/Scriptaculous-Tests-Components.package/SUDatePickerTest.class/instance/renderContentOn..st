@@ -14,8 +14,8 @@ renderContentOn: html
 						with: [html textInput id: theId].
 					html tableData: [
 						html button value: 'Set date';
-							onClick: (html evaluator
-								callback: [:v | self setupDatePickerOn: theId div: divId origin: v] value: (html element id: theId; cumulativeOffset);
+							onClick: (html scriptaculous evaluator
+								callback: [:v | self setupDatePickerOn: theId div: divId origin: v] value: (html scriptaculous element id: theId; cumulativeOffset);
 								callback: [:script | self openDatePickerOn: script];
 											return: false) ] ].
 				html tableRow: [
@@ -23,7 +23,7 @@ renderContentOn: html
 						with: [html textInput id: theId2].
 					html tableData: [
 						html button value: 'Set date & time';
-							onClick: (html evaluator
-								callback: [:v | self setupDateTimePickerOn: theId2 div: divId origin: v] value: (html element id: theId2; cumulativeOffset);
+							onClick: (html scriptaculous evaluator
+								callback: [:v | self setupDateTimePickerOn: theId2 div: divId origin: v] value: (html scriptaculous element id: theId2; cumulativeOffset);
 								callback: [:script | self openDateTimePickerOn: script];
 											return: false) ] ] ] ].

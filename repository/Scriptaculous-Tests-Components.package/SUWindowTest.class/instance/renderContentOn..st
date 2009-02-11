@@ -5,15 +5,15 @@ renderContentOn: html
 	html big: 'Window Test:'.
 	html space.
 	html anchor
-		onClick: (html evaluator callback: [ : script | windows first openOn: script ]) ;
+		onClick: (html scriptaculous evaluator callback: [ : script | windows first openOn: script ]) ;
 		with: 'Open window 1'.
 	html space: 2.
 	html anchor
-		onClick: (html evaluator callback: [ : script | (windows at: 2) openOn: script ]) ;
+		onClick: (html scriptaculous evaluator callback: [ : script | (windows at: 2) openOn: script ]) ;
 		with: 'Open window 2'.
 	html space: 2.
 	html anchor
-		onClick: (html evaluator
+		onClick: (html scriptaculous evaluator
 					callback: [ : script | 
 						script add: (JSStream on: 'Element.fullscreen("overlay")'). 
 						(windows at: 4) openOn: script.
