@@ -11,7 +11,7 @@ html table class: 'monthTable';
 					with: [
 						html anchor
 							callback: [self previousMonth];
-							onClick: (html evaluator
+							onClick: (html scriptaculous evaluator
 										callback: [:script |
 										self previousMonthUpdateOn: script];
 										return: false);
@@ -21,7 +21,7 @@ html table class: 'monthTable';
 					class: 'calendarNext';
 					with: [html anchor
 							callback: [self nextMonth];
-							onClick: (html evaluator
+							onClick: (html scriptaculous evaluator
 										callback: [:script | 
 											self nextMonthUpdateOn: script];
 											return: false);

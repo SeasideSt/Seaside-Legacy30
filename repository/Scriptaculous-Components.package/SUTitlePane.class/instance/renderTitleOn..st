@@ -2,7 +2,7 @@ rendering
 renderTitleOn: html
 	html anchor class: 'title'; 
 		callback: [open := open not];
-		onClick: (html evaluator
+		onClick: (html scriptaculous evaluator
 						callback: [:script | self scriptToggleOn: script];
 						return: false);
 		 with: [

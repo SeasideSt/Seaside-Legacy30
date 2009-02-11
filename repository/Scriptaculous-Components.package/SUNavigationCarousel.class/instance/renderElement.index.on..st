@@ -7,7 +7,7 @@ renderElement: element index: index on: html
 		class: 'active' if: self selected = element;
 		style: 'height:', self elementHeight asString, 'px';
 		with: [html anchor
-						onClick: (html evaluator
+						onClick: (html scriptaculous evaluator
 									callback: [:script |
 										self scriptSelected: element id: currentId on: script];
 										return: false);

@@ -4,11 +4,11 @@ expand: anObject level: anInteger on: aScript
 	children := childrenBlock value: anObject.
 	children isEmpty ifTrue: [ ^ self ].
 	parentId := self uid: anObject on: aScript.
-	aScript element
+	aScript scriptaculous element
 		id: parentId; 
 		down: '.indent a';
 		addClassName: 'expanded'.
-	aScript insertion
+	aScript scriptaculous insertion
 		id: parentId;
 		after: [ :html | 
 			children do: [ :each |

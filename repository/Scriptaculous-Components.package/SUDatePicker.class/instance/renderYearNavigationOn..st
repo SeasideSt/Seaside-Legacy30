@@ -10,7 +10,7 @@ renderYearNavigationOn: html
 					with: [
 						html anchor
 							callback: [self previousYear];
-							onClick:	(html evaluator
+							onClick:	(html scriptaculous evaluator
 										callback: [:script |
 											self previousYearUpdateOn: script];
 											return: false);
@@ -24,7 +24,7 @@ renderYearNavigationOn: html
 					with: [
 						html anchor
 							callback: [self nextYear];
-							onClick: ((html evaluator)
+							onClick: ((html scriptaculous evaluator)
 										callback: [:script | self nextYearUpdateOn: script];
 										return: false);
 							with: (self year + 1) ] ] ]

@@ -1,6 +1,6 @@
 scripts
 draggable: aBeforeItem and: anAfterItem on: html
-	^ html draggable
+	^ html scriptaculous draggable
 		revert: true;
 		endEffect: nil;
 		startEffect: nil;

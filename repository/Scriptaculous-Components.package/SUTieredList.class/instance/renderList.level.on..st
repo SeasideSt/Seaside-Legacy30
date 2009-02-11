@@ -15,7 +15,7 @@ renderList: aCollection level: anInteger on: html
 			[ selectionPath size < anInteger ]
 		 		whileFalse: [ selectionPath removeLast ].
 			selectionPath addLast: value ];
-		onChange: (html updater
+		onChange: (html scriptaculous updater
 			id: uid;
 			triggerFormElement: id;
 			callback: [ :r | self renderListOn: r ]).

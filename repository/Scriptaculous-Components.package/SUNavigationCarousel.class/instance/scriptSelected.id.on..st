@@ -1,12 +1,12 @@
 scripting
 scriptSelected: aComponent id: currentId on: aScript
-	aScript element
+	aScript scriptaculous element
 		id: (self uid: 'head' at: (self findIndex: self selected ifAbsent: []));
 		removeClassName: 'active'.
 	self selected: aComponent.
-	aScript element
+	aScript scriptaculous element
 		id: currentId;
 		addClassName: 'active'.
-	aScript element
+	aScript scriptaculous element
 		id: (self uid: 'body' at: 0);
 		update: self selected

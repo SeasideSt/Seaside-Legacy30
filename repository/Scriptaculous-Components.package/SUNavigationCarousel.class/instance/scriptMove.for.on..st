@@ -7,7 +7,7 @@ scriptMove: anInteger for: id on: script
 					offset := offset - elementsToMove]
 			ifFalse: [(offset + elementsToMove abs) > items size ifTrue: [^self].
 					offset := offset + elementsToMove].
-	script effect
+	script scriptaculous effect
 		id: id;
 		duration: 0.2;
 		x: 0; y: (self elementHeight * elementsToMove * anInteger);

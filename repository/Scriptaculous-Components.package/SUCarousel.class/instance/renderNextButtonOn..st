@@ -4,7 +4,7 @@ renderNextButtonOn: html
 		id: uid, '_next';
 		style: self buttonStyle;
 		class: self cssButton;
-		onClick: (html evaluator
+		onClick: (html scriptaculous evaluator
 					callback: [:script |
 						self scriptMove: -1 for: uid on: script];
 						return: false);

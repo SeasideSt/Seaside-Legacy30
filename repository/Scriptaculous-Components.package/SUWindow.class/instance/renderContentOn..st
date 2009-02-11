@@ -3,7 +3,7 @@ renderContentOn: html
 	self close.
 	collapsed := false.
 	html div id: self windowId;
-		script: (html draggable handle: self titleId; revert: false);
+		script: (html scriptaculous draggable handle: self titleId; revert: false);
 		class: self cssClass;
 		style: 'display: none';
 		style: 'z-index:' , self zIndex asString,';', self cssOrigin, self cssExtent;

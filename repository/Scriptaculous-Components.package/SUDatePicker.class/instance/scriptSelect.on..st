@@ -3,11 +3,11 @@ scriptSelect: aDate on: script
 	"Ajax select"
 	self select: aDate.
 	widgetId ifNotNil: 
-		[ script element
+		[ script scriptaculous element
 			id: widgetId;
 			access: 'value';
 			assign: self formattedResult.
-		script element
+		script scriptaculous element
 			id: uid;
 			remove.
 		open := false ]

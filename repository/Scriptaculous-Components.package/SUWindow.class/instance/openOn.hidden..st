@@ -4,11 +4,11 @@ openOn: aScript hidden: aBoolean
 		ifFalse: [
 			visible := true.
 			aBoolean ifFalse: [self showOn: aScript ].
-			aScript element
+			aScript scriptaculous element
 				id: self windowId;
 				styleAt: 'left' put: origin x asString, 'px';
 				styleAt: 'top' put: origin y asString, 'px'.
-			aScript element
+			aScript scriptaculous element
 				id: self containerId;
 				insert: [:html |
 					self setComponent.

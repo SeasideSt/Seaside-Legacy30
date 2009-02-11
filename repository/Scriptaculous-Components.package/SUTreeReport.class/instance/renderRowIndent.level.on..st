@@ -8,7 +8,7 @@ renderRowIndent: anObject level: anInteger on: html
 				ifTrue: 
 					[(html anchor)
 						class: 'expanded' if: (expanded includes: anObject);
-						onClick: (html evaluator
+						onClick: (html scriptaculous evaluator
 									callback: 
 											[:script | 
 											self 

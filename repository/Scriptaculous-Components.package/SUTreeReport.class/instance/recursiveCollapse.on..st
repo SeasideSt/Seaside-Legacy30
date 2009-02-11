@@ -2,7 +2,7 @@ private
 recursiveCollapse: anObject on: aScript
 	expanded remove: anObject.
 	(childrenBlock value: anObject) do: [ :each |
-		aScript element
+		aScript scriptaculous element
 			id: (self uid: each on: aScript);
 			remove.
 		(expanded includes: each)

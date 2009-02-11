@@ -6,7 +6,7 @@ render: anObject indent: anInteger on: html
 			(owner isExpandable: anObject) ifTrue: [
 				html anchor
 					class: 'expanded' if: (owner isExpanded: anObject);
-					onClick: (html evaluator 
+					onClick: (html scriptaculous evaluator 
 						callback: [ :script | owner toggle: anObject level: anInteger on: script ];
 						return: false) ] ].
 		html div class: 'text'; with: [ self render: anObject on: html ] ]
