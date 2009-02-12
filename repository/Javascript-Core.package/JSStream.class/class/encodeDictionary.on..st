@@ -1,5 +1,5 @@
 encoding
-encodeDictionary: aDictionary to: aStream 
+encodeDictionary: aDictionary on: aStream 
 	"Dictionary or hash-maps common structures in JavaScript, try to optimize their serialization."
 	
 	| first |
@@ -9,5 +9,5 @@ encodeDictionary: aDictionary to: aStream
 		first
 			ifTrue: [ first := false ]
 			ifFalse: [ aStream nextPut: $, ].
-		self encodeKey: key value: value to: aStream ].
+		self encodeKey: key value: value on: aStream ].
 	aStream nextPut: $}

@@ -1,7 +1,7 @@
 encoding
-encodeString: aString to: aStream
+encodeString: aString on: aStream
 	"Strings have a complicated encoding in Javascript, try to optimize their serialization."
-	
+
 	| char value encoded |
 	aStream nextPut: $".
 	1 to: aString size do: [ :index |

@@ -1,3 +1,3 @@
 *javascript-core
 javascriptOn: aStream
-	JSStream encodeKey: self key value: self value to: aStream
+	JSStream encodeKey: self key value: self value on: aStream

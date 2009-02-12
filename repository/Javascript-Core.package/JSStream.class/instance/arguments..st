@@ -1,3 +1,5 @@
-streaming
+convenience
 arguments: aCollection
-	self stream arguments: aCollection
+	"Write aCollection of arguments onto the stream."
+
+	self class encodeArguments: aCollection on: self

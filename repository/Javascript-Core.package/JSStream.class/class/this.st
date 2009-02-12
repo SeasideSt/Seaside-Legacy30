@@ -1,3 +1,3 @@
-snippets
+instance creation
 this
 	^ This copy
