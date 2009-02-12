@@ -1,11 +1,9 @@
 visiting
 visitPainter: aPainter 
-	| renderer halo |
+	| halo |
 	(self renderContext halosEnabled and: [ aPainter canHaveHalo ]) 
 		ifTrue: [
 			halo := self toolDecoration haloFor: aPainter.
-			renderer := halo rendererClass context: self renderContext.
-			renderer render: halo.
-			renderer flush ]
+			halo renderWithContext: self renderContext ]
 		ifFalse: [ visitor visit: aPainter ]
 	
