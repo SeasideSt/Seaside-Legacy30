@@ -1,0 +1,3 @@
+*seaside-development
+canHaveHalo
+	^ true

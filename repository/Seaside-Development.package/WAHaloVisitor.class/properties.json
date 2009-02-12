@@ -1,15 +1,15 @@
 {
 	"commentStamp" : "",
-	"super" : "WADecoration",
+	"super" : "WAPainterVisitor",
 	"category" : "Seaside-Development-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"plugins",
-		"showHalos",
-		"halos"
+		"toolDecoration",
+		"renderContext",
+		"visitor"
 	],
-	"name" : "WAToolDecoration",
+	"name" : "WAHaloVisitor",
 	"type" : "normal"
 }

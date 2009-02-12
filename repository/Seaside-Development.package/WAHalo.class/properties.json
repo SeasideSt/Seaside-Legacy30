@@ -4,9 +4,7 @@
 	"category" : "Seaside-Development-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [
-		"Halos"
-	],
+	"classvars" : [ ],
 	"instvars" : [
 		"root",
 		"mode",
