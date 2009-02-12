@@ -10,7 +10,7 @@
 		"actionUrl",
 		"callbacks",
 		"document",
-		"mode"
+		"properties"
 	],
 	"name" : "WARenderContext",
 	"type" : "normal"
