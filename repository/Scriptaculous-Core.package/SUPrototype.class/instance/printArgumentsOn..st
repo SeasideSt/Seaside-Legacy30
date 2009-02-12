@@ -1,5 +1,6 @@
 printing
 printArgumentsOn: aStream
 	| arguments |
-	(arguments := self defaultArguments) isNil
-		ifFalse: [ aStream arguments: arguments ]
+	arguments := self defaultArguments
+		ifNil: [ ^ self ].
+	JSStream encodeArguments: arguments on: aStream

@@ -1,3 +1,4 @@
 printing
 printContentOn: aStream
-	aStream nextPut: $$; arguments: (Array with: self id)
+	aStream nextPut: $$.
+	JSStream encodeArguments: (Array with: self id) on: aStream

@@ -1,3 +1,4 @@
 printing
 printContentOn: aStream
-	aStream nextPutAll: '$$'; arguments: self selectors
+	aStream nextPutAll: '$$'.
+	JSStream encodeArguments: self selectors on: aStream
