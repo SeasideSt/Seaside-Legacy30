@@ -7,7 +7,7 @@ sendsRenderContentOn
 		do: [ :node :answer |
 			(answer isNil
 				and: [ (node receiver isVariable and: [ node receiver name = 'super' ]) not
-				and: [ (#( visitPainter: renderRootWithContext: ) includes: node methodNode selector) not ] ])
+				and: [ (#( visitPainter: ) includes: node methodNode selector) not ] ])
 					ifTrue: [ node ] ].
 	^ self new
 		name: 'Sends #renderContentOn:';
