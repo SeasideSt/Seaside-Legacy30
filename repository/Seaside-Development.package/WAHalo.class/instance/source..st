@@ -1,5 +1,8 @@
 rendering-modes
 source: html
+	"Render the HTML source of the object we are wrapping using a pretty printed
+	document. See #modes."
+	
 	| context |
 	html div class: 'halo-source'; with: [
 		context := html context copy.
