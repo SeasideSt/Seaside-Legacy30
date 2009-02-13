@@ -1,5 +1,5 @@
 *seaside-flow
 inNewRenderLoopCall: aComponent
-	^ WAPlatform current suspendCallbackDo: [ :cc | 
+	^ WAPlatform current suspendFlowDo: [ :cc | 
 		aComponent onAnswer: cc.
 		self inNewRenderLoopShow: aComponent ] 

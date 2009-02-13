@@ -1,5 +1,5 @@
 *seaside-flow
 respondAndContinue: aBlock 
-	^ WAPlatform current suspendCallbackDo: [ :cc |
+	^ WAPlatform current suspendFlowDo: [ :cc |
 		aBlock value: (self session actionUrlForContinuation: cc).
 		self respond ]
