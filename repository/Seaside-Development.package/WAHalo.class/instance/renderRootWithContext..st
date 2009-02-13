@@ -5,4 +5,7 @@ renderRootWithContext: aRenderContext
 	the Halo of our root. Since that is us we get infinite recursion!
 	So we bypass the visitor by creating the root's renderer ourselves."
 	
-	self root renderContentOn: (self root rendererClass context: aRenderContext)
+	| renderer |
+	renderer := self root rendererClass context: aRenderContext.
+	self root renderContentOn: renderer.
+	renderer flush

@@ -1,4 +1,4 @@
-as yet unclassified
+copying
 postCopyForRenderContext: aRenderContext
 	super postCopyForRenderContext: aRenderContext.
 	renderContext := aRenderContext.
