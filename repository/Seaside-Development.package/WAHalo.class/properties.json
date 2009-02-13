@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "WAPainter",
+	"super" : "WAObject",
 	"category" : "Seaside-Development-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],

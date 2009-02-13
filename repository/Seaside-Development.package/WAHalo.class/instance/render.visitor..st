@@ -1,5 +1,5 @@
 rendering-modes
-render: html
+render: html visitor: aPainterVisitor
 	"Render the object we are wrapping normally. See #modes."
 	
-	(WARenderVisitor context: html context) start: self root
+	aPainterVisitor visit: self root

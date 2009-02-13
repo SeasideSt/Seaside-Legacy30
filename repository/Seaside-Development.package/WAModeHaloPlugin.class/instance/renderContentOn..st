@@ -6,7 +6,7 @@ renderContentOn: html
 			do: [ :each |
 				html anchor
 					class: 'active' if: self requestor mode = each;
-					title: (self labelForSelector: each allButLast);
+					title: (self labelForSelector: each);
 					callback: [ self requestor mode: each ];
 					with: each first asUppercase ]
 			separatedBy: [ html text: '|' ].
