@@ -1,3 +1,0 @@
-rendering
-renderUndecoratedWithContext: aRenderContext
-	self accept: aRenderContext visitor
