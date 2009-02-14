@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "jf 2/13/2009 19:55",
+	"commentStamp" : "",
 	"super" : "WAObject",
 	"category" : "Seaside-Core-Rendering",
 	"classinstvars" : [ ],
@@ -10,7 +10,7 @@
 		"actionUrl",
 		"callbacks",
 		"document",
-		"properties"
+		"mode"
 	],
 	"name" : "WARenderContext",
 	"type" : "normal"
