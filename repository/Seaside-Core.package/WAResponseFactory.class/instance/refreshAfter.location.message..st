@@ -1,6 +1,8 @@
 generation
-refreshAfter: aNumber location: aUrlOrString message: aString
+refreshAfter: aDuration location: aUrl message: aString
+	"Show aString for aDuration, then redirect to aUrl."
+	
 	self response
 		contentType: WAMimeType textPlain;
-		refreshAfter: aNumber location: aUrlOrString
-		message: aString , String cr , 'You are being redirected to ', aUrlOrString seasideString
+		refreshAfter: aDuration location: aUrl
+		message: aString , String cr , 'You are being redirected to ', aUrl seasideString

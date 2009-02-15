@@ -1,5 +1,7 @@
 generation
 forbidden
+	"The resource is forbidden to access and the request was not processed."
+
 	self response 
 		forbidden;
 		contentType: WAMimeType textPlain;

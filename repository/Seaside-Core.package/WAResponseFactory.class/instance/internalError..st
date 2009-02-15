@@ -1,5 +1,7 @@
 generation
 internalError: anException
+	"An internal error occured while processing the request."
+
 	self response 
 		internalError;
 		contentType: WAMimeType textPlain;

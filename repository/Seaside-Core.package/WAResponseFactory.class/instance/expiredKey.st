@@ -1,5 +1,7 @@
 generation
 expiredKey
+	"The session key has expired, redirect the request to the home directory preserving the path as good as possible."
+
 	| url |
 	self request isXmlHttpRequest
 		ifTrue: [ ^ self forbidden ].

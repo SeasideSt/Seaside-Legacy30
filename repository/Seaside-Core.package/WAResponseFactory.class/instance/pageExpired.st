@@ -1,5 +1,7 @@
 generation
 pageExpired
+	"The page is no longer in the cache and the request could not be processed."
+
 	self response
 		doNotCache;
 		contentType: WAMimeType textPlain;

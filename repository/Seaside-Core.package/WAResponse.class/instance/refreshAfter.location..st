@@ -1,3 +1,3 @@
 convenience-status
-refreshAfter: aNumber location: aUrlOrString
-	self headerAt: 'Refresh' put: aNumber seasideString , '; ' , aUrlOrString seasideString
+refreshAfter: aDuration location: aUrl
+	self headerAt: 'Refresh' put: aDuration asSeconds seasideString , '; ' , aUrl seasideString
