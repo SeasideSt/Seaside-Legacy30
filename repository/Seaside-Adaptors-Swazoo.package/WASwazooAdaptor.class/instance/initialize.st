@@ -1,7 +1,7 @@
 initialization
 initialize
 	super initialize.
-	site := WAPlugableSite
+	site := WAPluggableSite
 		named: (WAKeyGenerator current keyOfLength: 32)
 		on: self.
 	site ip: '*'.

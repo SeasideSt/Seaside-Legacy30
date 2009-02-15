@@ -4,6 +4,6 @@ resetAll
 	| server toRemove |
 	server := SwazooServer singleton.
 	toRemove := server allSites select: [ :each |
-		each isKindOf: WAPlugableSite ].
+		each isKindOf: WAPluggableSite ].
 	toRemove do: [ :each |
 		server removeSite: each ]
