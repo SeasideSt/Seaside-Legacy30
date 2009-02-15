@@ -1,3 +1,3 @@
 testing
 isRunning
-	^site isServing
+	^ site isServing

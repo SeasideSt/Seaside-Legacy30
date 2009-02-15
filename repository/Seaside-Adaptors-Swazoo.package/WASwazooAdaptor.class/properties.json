@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "WABaseServerAdaptor",
+	"super" : "WAStartableServerAdaptor",
 	"category" : "Seaside-Adaptors-Swazoo",
 	"classinstvars" : [ ],
 	"pools" : [ ],

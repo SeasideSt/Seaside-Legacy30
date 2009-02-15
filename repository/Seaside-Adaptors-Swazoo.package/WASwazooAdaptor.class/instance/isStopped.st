@@ -1,3 +1,3 @@
 testing
 isStopped
-	^site isServing not
+	^ site isServing not

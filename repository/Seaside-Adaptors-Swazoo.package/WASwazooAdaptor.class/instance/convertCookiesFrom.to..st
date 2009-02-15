@@ -1,4 +1,4 @@
-private-converting
+private
 convertCookiesFrom: aWAResonse to: aSwazooResponse
 	| cookies setCookieField setCookie2Field |
 	cookies := aWAResonse cookies.

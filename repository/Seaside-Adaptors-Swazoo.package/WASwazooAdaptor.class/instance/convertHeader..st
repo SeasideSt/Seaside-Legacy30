@@ -1,4 +1,4 @@
-private-converting
+private
 convertHeader: aSwazooRequest
 	| swazooFields fields |
 	swazooFields := aSwazooRequest headers fields.
