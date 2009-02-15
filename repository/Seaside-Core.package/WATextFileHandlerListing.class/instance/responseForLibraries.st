@@ -1,13 +1,12 @@
 responding
 responseForLibraries
 	| response |
-	response := WAResponse new
-		contentType: WAMimeType textPlain;
-		yourself.
+	response := context response.
+	response contentType: WAMimeType textPlain.
 		
 	handler libraries do: [ :each |
-		response
+		response stream
 			nextPutAll: each name;
-			nextPut: Character cr; nextPut: Character lf ].
+			crlf ].
 	
-	^ response
+	context respond

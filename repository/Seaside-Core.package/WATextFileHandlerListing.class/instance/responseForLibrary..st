@@ -1,13 +1,12 @@
 responding
 responseForLibrary: aLibrary
 	| response |
-	response := WAResponse new
-		contentType: WAMimeType textPlain;
-		yourself.
+	response := context response.
+	response contentType: WAMimeType textPlain.
 		
 	aLibrary fileSelectors do: [ :each |
-		response
+		response stream
 			nextPutAll: (aLibrary asFilename: each);
-			nextPut: Character cr; nextPut: Character lf ].
+			crlf ].
 		
-	^ response
+	context respond
