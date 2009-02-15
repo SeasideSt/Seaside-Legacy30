@@ -11,8 +11,9 @@ ajaxifierJs
 $(function () {
 	
 	// constants
-	var TITLE_EXTRACTOR = /<title[^>]*>(.*)<\/title>/im;
+	var HEAD_EXTRACTOR = /<head[^>]*>(.*)<\/head>/im;
 	var BODY_EXTRACTOR = /<body[^>]*>(.*)<\/body>/im;
+	var SCRIPT_EXTRACTOR = /<script(.|\s)*?\/script>/ig;
 	
 	// ajax action
 	function load(type, url, data) {
@@ -21,9 +22,14 @@ $(function () {
 			beforeSend: function (xhr) {
 				xhr.setRequestHeader("X-Requested-With", "Ajaxifier");
 			},
-			success: function (response) {
-				$("title").html(TITLE_EXTRACTOR.exec(response)[1]);
-				$("body").html(BODY_EXTRACTOR.exec(response)[1]);
+			complete: function (response, status) {
+				if (status == "success" || status == "notmodified") {
+					$("head").html(HEAD_EXTRACTOR
+						.exec(response.responseText)[1]
+						.replace(SCRIPT_EXTRACTOR, ""));
+					$("body").html(BODY_EXTRACTOR
+						.exec(response.responseText)[1]);
+				}
 			}
 		});
 	}
