@@ -1,4 +1,5 @@
 private
 render: anObject
-	^WARenderer builder render: [ :html |
-		html render: anObject ]
+	^ WARenderer builder
+		documentClass: WAHtmlDocument;
+		render: anObject
