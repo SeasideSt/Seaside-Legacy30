@@ -1,3 +1,3 @@
-accessing
+accessing-readonly
 manager
 	^ manager
