@@ -1,4 +1,4 @@
-old
+private
 pathSegmentsFrom: aKomRequest
 	"We need to use #rawUrl because Comanche has already unescaped #url without
 	splitting on /. This means that we can't identify the difference between a real /

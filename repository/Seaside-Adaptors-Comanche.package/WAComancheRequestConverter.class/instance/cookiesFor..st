@@ -1,4 +1,4 @@
-converting-internal
+private
 cookiesFor: aNaiveRequest
 	"Directly access header fields to work around naïve Kom cookie handling."
 

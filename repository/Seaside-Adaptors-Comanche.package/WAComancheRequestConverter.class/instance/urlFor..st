@@ -1,4 +1,4 @@
-converting-internal
+private
 urlFor: aNativeRequest
 	^ WAUrl absolute: (String streamContents: [:stream |
 		(self pathSegmentsFrom: aNativeRequest)

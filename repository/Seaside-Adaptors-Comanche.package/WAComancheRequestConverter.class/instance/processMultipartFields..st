@@ -1,4 +1,4 @@
-old
+private
 processMultipartFields: aKomRequest
 	| merger |
 	merger := WADictionaryMerger new.	

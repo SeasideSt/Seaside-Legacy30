@@ -1,4 +1,4 @@
-converting-internal
+private
 fieldsFor: aNativeRequest
 	"Answer all the GET and POST parameters of the given request decoded."
 	

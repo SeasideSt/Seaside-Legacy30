@@ -1,4 +1,4 @@
-old
+private
 fileClass
 	^streamUploads
 		ifTrue: [ WATemporaryFile ]

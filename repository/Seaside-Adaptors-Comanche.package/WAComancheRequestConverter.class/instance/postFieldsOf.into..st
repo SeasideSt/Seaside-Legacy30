@@ -1,4 +1,4 @@
-old
+private
 postFieldsOf: aNativeRequest into: aDictionaryMerger
 	"puts all the POST parameters of the given request decoded into a dictionary merger"
 	| isUrlEncoded |

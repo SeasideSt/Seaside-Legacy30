@@ -1,4 +1,4 @@
-converting-internal
+private
 remoteAddressFor: aNativeRequest
 	"Converts a Squeak address (ByteArray) to an IPv4 String."
 	
