@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "jf 2/13/2009 19:52",
 	"super" : "WAPainterVisitor",
 	"category" : "Seaside-Core-Rendering",
 	"classinstvars" : [ ],

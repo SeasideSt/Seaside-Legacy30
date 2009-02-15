@@ -1,3 +1,0 @@
-modes
-clearMode
-	mode := nil

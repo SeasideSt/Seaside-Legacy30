@@ -1,4 +1,5 @@
 copying
 postCopy
 	super postCopy.
-	visitor := visitor copyForRenderContext: self
+	visitor := visitor copyForRenderContext: self.
+	properties := properties copy
