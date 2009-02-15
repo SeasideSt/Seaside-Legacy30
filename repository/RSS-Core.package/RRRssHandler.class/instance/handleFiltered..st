@@ -13,7 +13,9 @@ handleFiltered: aRequestContext
 		self exceptionHandler
 			handleExceptionsDuring: [
 				rootComponent updateRoot: root.
-				canvas render: rootComponent.
-				document close.
-				aRequestContext respond ]
-			context: aRequestContext ]
+				canvas render: rootComponent ]
+			context: aRequestContext ].
+		
+	document close.
+	context release.
+	aRequestContext respond
