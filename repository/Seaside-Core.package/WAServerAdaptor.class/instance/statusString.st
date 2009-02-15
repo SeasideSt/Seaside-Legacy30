@@ -1,3 +1,5 @@
-accessing-dynamic
+accessing
 statusString
-	^ 'no service information'
+	^ self isRunning
+		ifTrue: [ 'running' ]
+		ifFalse: [ 'stopped' ]
