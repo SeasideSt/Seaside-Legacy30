@@ -1,10 +1,11 @@
 responding
 responseForLibrary: aLibrary
-	| title |
+	| title contents |
 	title := 'Index of ', aLibrary name.
-	^ WARenderCanvas builder
+	contents := WARenderCanvas builder
+		fullDocument: true;
 		rootBlock: [ :html | html title: title ];
-		renderResponse: [ :html |
+		render: [ :html |
 			html heading level: 1; with: title.
 			html table: [
 				html tableRow: [
@@ -18,4 +19,8 @@ responseForLibrary: aLibrary
 								url: (aLibrary urlOf: each);
 								with: (aLibrary asFilename: each) ].
 						html tableData: (aLibrary perform: each) size.
-						html tableData: (aLibrary mimetypeForFile: (aLibrary asFilename: each)) ] ] ] ]
+						html tableData: (aLibrary mimetypeForFile: (aLibrary asFilename: each)) ] ] ] ].
+	context response
+		contentType: WAMimeType textHtml;
+		nextPutAll: contents;
+		respond

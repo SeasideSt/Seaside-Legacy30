@@ -1,14 +1,19 @@
 responding
 responseForLibraries
-	| title |
+	| title contents |
 	title := 'Index of ', handler basePath.
-	^ WARenderCanvas builder
+	contents := WARenderCanvas builder
+		fullDocument: true;
 		rootBlock: [ :html | html title: title ];
-		renderResponse: [ :html |
+		render: [ :html |
 			html heading: title.
 			html unorderedList: [
 				handler libraries do: [ :each |
 					html listItem: [
 						html anchor
 							url: (each urlOf: '');
-							with: each name ] ] ] ]
+							with: each name ] ] ] ].
+	context response
+		contentType: WAMimeType textHtml;
+		nextPutAll: contents;
+		respond
