@@ -1,0 +1,3 @@
+private
+remoteAddressOf: aNativeRequest
+	self subclassResponsibility

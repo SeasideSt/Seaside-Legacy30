@@ -1,0 +1,3 @@
+private-converting
+convertResponse: aSeasideResponse
+	self subclassResponsibility

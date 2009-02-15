@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "jf 10/19/2008 02:50",
+	"commentStamp" : "jf 2/15/2009 21:41",
 	"super" : "WAObject",
 	"category" : "Seaside-Core-Rendering",
 	"classinstvars" : [ ],
@@ -11,8 +11,9 @@
 		"rootClass",
 		"documentClass",
 		"rendererClass",
-		"codec"
+		"codec",
+		"actionUrl"
 	],
-	"name" : "WAHtmlBuilder",
+	"name" : "WABuilder",
 	"type" : "normal"
 }

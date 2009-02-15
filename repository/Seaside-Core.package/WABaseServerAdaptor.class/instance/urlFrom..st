@@ -1,0 +1,3 @@
+private
+urlFrom: aNativeRequest
+	self subclassResponsibility

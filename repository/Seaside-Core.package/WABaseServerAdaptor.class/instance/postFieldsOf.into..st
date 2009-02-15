@@ -1,0 +1,3 @@
+private
+postFieldsOf: aNativeRequest into: aDictionaryMerger
+	self subclassResponsibility

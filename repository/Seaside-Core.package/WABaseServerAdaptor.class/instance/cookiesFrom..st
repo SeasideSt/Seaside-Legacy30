@@ -1,0 +1,3 @@
+private
+cookiesFrom: aNativeRequest
+	self subclassResponsibility

@@ -1,3 +1,3 @@
 instance creation
 builder
-	^WAHtmlBuilder on: self
+	^ WABuilder on: self
