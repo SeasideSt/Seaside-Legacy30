@@ -1,3 +1,3 @@
 private
 render: aBlock
-	^RRRssRenderCanvas builder render: aBlock
+	^ RRRssRenderCanvas builder render: aBlock
