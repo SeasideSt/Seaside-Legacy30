@@ -3,5 +3,6 @@ requestFieldsFor: aNativeRequest
 	| merger |
 	merger := WADictionaryMerger new.
 	self getFieldsOf: aNativeRequest into: merger.
-	self postFieldsOf: aNativeRequest into: merger.
+	aNativeRequest isPostRequest
+		ifTrue: [ self postFieldsOf: aNativeRequest into: merger ].
 	^ merger dictionary

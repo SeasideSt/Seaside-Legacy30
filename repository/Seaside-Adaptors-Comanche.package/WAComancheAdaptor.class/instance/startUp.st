@@ -1,3 +1,3 @@
-system startup
+private
 startUp
 	service ifNotNil: [ service start ]

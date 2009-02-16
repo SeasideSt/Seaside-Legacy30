@@ -1,3 +1,3 @@
-system startup
+private
 shutDown
 	service ifNotNil: [ service stop ]
