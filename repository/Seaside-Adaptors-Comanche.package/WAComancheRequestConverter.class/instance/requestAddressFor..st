@@ -1,10 +1,8 @@
-private
-remoteAddressFor: aNativeRequest
-	"Converts a Squeak address (ByteArray) to an IPv4 String."
-	
+converting-request
+requestAddressFor: aNativeRequest
 	| remoteAddress |
 	remoteAddress := aNativeRequest remoteAddress.
-	remoteAddress isString 
+	remoteAddress isString
 		ifTrue: [ ^ remoteAddress ].
 	^ String streamContents: [ :stream |
 		remoteAddress

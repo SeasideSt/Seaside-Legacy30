@@ -1,7 +1,7 @@
 private
-convertCookiesFrom: aWAResonse to: aKomResponse
+convertCookiesFrom: aWAResponse to: aKomResponse
 	| cookies |
-	cookies := aWAResonse cookies.
+	cookies := aWAResponse cookies.
 	cookies isEmpty ifTrue: [ ^self ].
 
 	cookies do: [ :each |

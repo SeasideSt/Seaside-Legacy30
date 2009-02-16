@@ -1,7 +1,5 @@
-private
-fieldsFor: aNativeRequest
-	"Answer all the GET and POST parameters of the given request decoded."
-	
+converting-request
+requestFieldsFor: aNativeRequest
 	| merger |
 	merger := WADictionaryMerger new.
 	self getFieldsOf: aNativeRequest into: merger.

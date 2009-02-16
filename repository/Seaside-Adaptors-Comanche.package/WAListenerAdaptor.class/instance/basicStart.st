@@ -1,4 +1,4 @@
-private-controlling
+private
 basicStart
 	process := [ [ self listenLoop ] repeat ] newProcess.
 	process priority: Processor userBackgroundPriority.

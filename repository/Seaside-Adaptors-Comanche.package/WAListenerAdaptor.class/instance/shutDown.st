@@ -1,3 +1,3 @@
-system startup
+private
 shutDown
 	process ifNotNil: [ process terminate ]
