@@ -1,4 +1,4 @@
-accessing
+accessing-readonly
 statusString
 	^ self isRunning
 		ifTrue: [ 'running' ]
