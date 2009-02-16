@@ -1,8 +1,8 @@
-private
-fieldsFor: aNativeRequest
+converting-request
+requestFieldsFor: aNativeRequest
 	| merger |
 	merger := WADictionaryMerger new.
 	self getFieldsOf: aNativeRequest into: merger.
-	(self isPost: aNativeRequest) 
+	aNativeRequest isPost
 		ifTrue: [ self postFieldsOf: aNativeRequest into: merger ].
 	^ merger dictionary

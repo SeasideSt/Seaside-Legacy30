@@ -1,8 +1,8 @@
-private
-remoteAddressOf: aSwazooRequest
+converting-request
+requestAddressFor: aNativeRequest
 	"converts a Squeak address (ByteArray) to an IPv4 String"
 	| remoteAddress |
-	remoteAddress := aSwazooRequest peer.
+	remoteAddress := aNativeRequest peer.
 	remoteAddress isString ifTrue: [
 		"so apparently someone has a new VM with IPv6 support"
 		^remoteAddress ].

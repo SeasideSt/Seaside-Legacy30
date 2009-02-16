@@ -1,7 +1,7 @@
-private
-convertHeader: aSwazooRequest
+converting-request
+requestHeadersFor: aNativeRequest
 	| swazooFields fields |
-	swazooFields := aSwazooRequest headers fields.
+	swazooFields := aNativeRequest headers fields.
 	fields := Dictionary new: swazooFields size.
 	swazooFields keysAndValuesDo: [ :key :field |
 		| value |

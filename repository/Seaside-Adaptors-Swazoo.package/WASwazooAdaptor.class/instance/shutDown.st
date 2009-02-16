@@ -1,3 +1,3 @@
-private-controlling
+private
 shutDown
 	SwazooServer stop
