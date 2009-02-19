@@ -1,11 +1,12 @@
 testing
 testTerminate
-	| value semaphore |
-	semaphore := WAPlatform current semaphoreClass new.
-	process := [value := mutex critical: [ semaphore signal. semaphore wait. 1 ] ] newProcess.
+	| value semaphore1 semaphore2 |
+	semaphore1 := WAPlatform current semaphoreClass new.
+	semaphore2 := WAPlatform current semaphoreClass new.
+	process := [value := mutex critical: [ semaphore1 signal. semaphore2 wait. 1 ] ] newProcess.
 	
 	process resume.
-	semaphore wait.
+	semaphore1 wait.
 	self assert: mutex owner == process.
 	mutex terminateOwner.
 	self assert: mutex owner isNil.

@@ -1,11 +1,12 @@
 testing
 testCopy
-	| semaphore copy |
-	semaphore := WAPlatform current semaphoreClass new.
-	process := [mutex critical: [ semaphore signal. semaphore wait ] ] newProcess.
+	| semaphore1 semaphore2 copy |
+	semaphore1 := WAPlatform current semaphoreClass new.
+	semaphore2 := WAPlatform current semaphoreClass new.
+	process := [mutex critical: [ semaphore1 signal. semaphore2 wait ] ] newProcess.
 	
 	process resume.
-	semaphore wait.
+	semaphore1 wait.
 	copy := mutex copy.
 	
 	self deny: copy == mutex.
