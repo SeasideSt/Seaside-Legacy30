@@ -1,5 +1,5 @@
 accessing
-possibleCauses
+seasidePossibleCauses
 	^ #(
 		'The Task has an empty #go method.'
 		'The Task does not call another Component in its #go method.'
