@@ -1,3 +1,3 @@
 registration
 registerDispatchCallback
-	^ self storeCallback: WADispatchCallback new
+	^ self store: WADispatchCallback new

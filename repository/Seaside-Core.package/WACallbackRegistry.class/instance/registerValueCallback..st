@@ -1,3 +1,3 @@
 registration
-registerValueCallback: aBlock
-	^ self storeCallback: (WAValueCallback new block: aBlock)
+registerValueCallback: aBlock 
+	^ self store: (WAValueCallback new block: aBlock)

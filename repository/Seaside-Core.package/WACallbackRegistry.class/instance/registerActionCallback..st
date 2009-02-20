@@ -1,3 +1,3 @@
 registration
-registerActionCallback: aBlock
-	^ self storeCallback: (WAActionCallback new block: aBlock)
+registerActionCallback: aBlock 
+	^ self store: (WAActionCallback new block: aBlock)

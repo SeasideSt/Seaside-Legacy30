@@ -1,3 +1,3 @@
 registration
-registerImageCallback: aBlock
-	^ self storeCallback: (WAImageCallback new block: aBlock)
+registerImageCallback: aBlock 
+	^ self store: (WAImageCallback new block: aBlock)
