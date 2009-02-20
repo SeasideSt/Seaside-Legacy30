@@ -4,9 +4,8 @@ renderColumn: aColumn row: aRow on: html
 	aColumn canRender ifTrue: [
 		html tableData
 			class: aColumn cssClass;
-			with: [
-				aColumn renderValue: aRow on: html ].
-		^self ].
+			with: [ aColumn renderValue: aRow on: html ].
+		^ self ].
 	text := aColumn textForRow: aRow.
 	text isEmpty ifTrue: [ text := ' ' ].
 	html tableData

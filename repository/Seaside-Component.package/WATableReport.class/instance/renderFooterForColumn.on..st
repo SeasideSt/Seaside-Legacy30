@@ -1,3 +1,5 @@
 rendering
 renderFooterForColumn: aColumn on: html
-	html tableHeading: (aColumn totalForRows: rows)
+	html tableData
+		class: aColumn cssClass;
+		with: (aColumn totalForRows: rows)

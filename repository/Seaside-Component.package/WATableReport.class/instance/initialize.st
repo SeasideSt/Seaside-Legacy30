@@ -5,5 +5,5 @@ initialize
 	rows := #().
 	columns := #().
 	sortColumn := WAValueHolder new.
-	rowColors := #('white' 'lightyellow').
-	rowPeriod := 3
+	rowColors := #('#fff' '#eee').
+	rowPeriod := 1

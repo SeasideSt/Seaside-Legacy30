@@ -1,6 +1,6 @@
 rendering
 renderContentOn: html
 	html table: [
-		self renderTableHeaderOn: html.
-		self renderRowsOn: html.
-		self renderTableFooterOn: html ]
+		html tableHead: [ self renderTableHeaderOn: html ].
+		html tableFoot: [ self renderTableFooterOn: html ].
+		html tableBody: [ self renderRowsOn: html ] ]
