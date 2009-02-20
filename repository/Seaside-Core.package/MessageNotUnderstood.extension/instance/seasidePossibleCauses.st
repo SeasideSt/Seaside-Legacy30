@@ -1,5 +1,5 @@
 *seaside-core
-possibleCauses
+seasidePossibleCauses
 	| causes |
 	self receiver isNil ifFalse: [
 		^ #('you sent a message this type of object doesn''t understand' )].

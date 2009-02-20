@@ -1,5 +1,5 @@
 accessing
-possibleCauses
+seasidePossibleCauses
 	^#(
 		'No WAAuthConfiguration has been added to the application.'
 	)
