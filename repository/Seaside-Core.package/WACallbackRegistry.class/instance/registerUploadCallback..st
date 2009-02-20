@@ -1,3 +1,3 @@
 registration
 registerUploadCallback: aBlock 
-	^ self store: (WAUploadCallback new block: aBlock)
+	^ self store: (WAUploadCallback on: aBlock)

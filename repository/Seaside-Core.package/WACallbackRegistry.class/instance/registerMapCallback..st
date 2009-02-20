@@ -1,3 +1,3 @@
 registration
 registerMapCallback: aBlock 
-	^ self store: (WAMapCallback new block: aBlock)
+	^ self store: (WAMapCallback on: aBlock)
