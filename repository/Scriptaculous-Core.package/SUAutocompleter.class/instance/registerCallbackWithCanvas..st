@@ -1,3 +1,3 @@
 initialization
 registerCallbackWithCanvas: aCanvas
-	self paramName: (aCanvas callbacks registerAjaxCallback: [:v | self processWith: v])
+	self paramName: (aCanvas callbacks store: (JSAjaxCallback on: [:v | self processWith: v ]))
