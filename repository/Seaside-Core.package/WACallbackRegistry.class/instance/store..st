@@ -1,4 +1,4 @@
-private
+registration
 store: aCallback 
 	| key |
 	key := self advanceKey.
