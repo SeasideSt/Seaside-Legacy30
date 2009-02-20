@@ -5,4 +5,4 @@ process: aNativeRequest
 	| context |
 	context := self contextFor: aNativeRequest.
 	^ [ self handle: context; responseFrom: context ]
-		ensure: [ context release ]
+		ensure: [ context destroy ]

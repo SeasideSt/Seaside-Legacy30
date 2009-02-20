@@ -3,7 +3,7 @@ blankRequest
 	^ self
 		method: 'GET'
 		url: WAUrl new
-		headers: Dictionary new
-		fields: Dictionary new
+		headers: WAHeaderFields new
+		fields: WAHeaderFields new
 		cookies: Array new
-		remoteAddress: '' 
+		remoteAddress: nil

@@ -1,9 +1,10 @@
 instance creation
 method: methodString url: aUrlOrString headers: headerDictionary fields: fieldDictionary cookies: cookieCollection remoteAddress: addressString
-	^ self new
-		setMethod: methodString
+	^ self
+		method: methodString
 		url: aUrlOrString
 		headers: headerDictionary
 		fields: fieldDictionary
 		cookies: cookieCollection
 		remoteAddress: addressString
+		nativeRequest: nil
