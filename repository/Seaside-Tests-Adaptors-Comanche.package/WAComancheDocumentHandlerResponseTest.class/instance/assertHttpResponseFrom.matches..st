@@ -5,7 +5,7 @@ assertHttpResponseFrom: aResponse matches: aHandler
 		assertHttpResponseFrom: aResponse
 		matches: aHandler.
 	kom := WAComancheAdaptor new.
-	[ httpResponse := kom convertResponse: aResponse ]
+	[ httpResponse := kom responseFrom: self requestContext ]
 		ensure: [ kom unregister ].
 	self assert: httpResponse status == #ok.
 	self assert: httpResponse contentType = aHandler document mimeType seasideString.
