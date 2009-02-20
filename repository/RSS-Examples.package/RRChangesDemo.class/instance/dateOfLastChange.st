@@ -1,3 +1,0 @@
-model
-dateOfLastChange
-	^DateAndTime now

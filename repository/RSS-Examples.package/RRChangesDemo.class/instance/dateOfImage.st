@@ -1,3 +1,0 @@
-model
-dateOfImage
-	^DateAndTime now
