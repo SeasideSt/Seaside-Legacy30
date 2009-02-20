@@ -4,4 +4,4 @@ applicationDefaults
 		config
 			addParent: WARenderLoopConfiguration instance;
 			at: #exceptionHandler put: WAHtmlErrorHandler;
-			at: #responseFactory put: WAHtmlResponseFactory ]
+			at: #responseGenerator put: WAHtmlResponseGenerator ]
