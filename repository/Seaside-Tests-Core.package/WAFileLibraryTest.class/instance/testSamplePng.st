@@ -7,7 +7,7 @@ testSamplePng
 	response := self responseAfter: [ handler handle: self requestContext ].
 	self assert: response status = 200.
 	self assert: response contentType = WAMimeType imagePng.
-	stream := WriteStream on: String new.
+	stream := WriteStream on: ByteArray new.
 	response writeContentOn: stream.
 	contents := stream contents.
 	self assert: contents asByteArray = (library perform: #samplePng).
