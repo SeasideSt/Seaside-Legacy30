@@ -1,3 +1,6 @@
 *javascript-core
 registerAjaxCallback: aBlock 
-	^ self store: (JSAjaxCallback new block: aBlock)
+	self
+		seasideDeprecatedApi: 'WACallbackRegistry>>#registerAjaxCallback:'
+		details: 'Use WACallbackRegistry>>#store: instead.'.
+	^ self store: (JSAjaxCallback on: aBlock)
