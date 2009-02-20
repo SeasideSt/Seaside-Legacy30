@@ -1,3 +1,3 @@
 *javascript-core
 registerAjaxCallback: aBlock 
-	^ self storeCallback: (JSAjaxCallback new block: aBlock)
+	^ self store: (JSAjaxCallback new block: aBlock)
