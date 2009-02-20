@@ -1,6 +1,6 @@
 testing
 testNullCodec
-	| codec readStream writeStream |
+	| codec readStream writeStream strings |
 	codec := WANullCodec new.
 	readStream := self latin1String readStream.
 	writeStream := WriteStream on: String new.
@@ -10,7 +10,14 @@ testNullCodec
 	self assert: (codec decoderFor: readStream) == readStream.
 	self assert: (codec url decoderFor: readStream) == readStream.
 	
-	(Array with: self latin1String with: self utf8String with: self utf16String with: self macromanString) do: [ :string |	
+	strings := OrderedCollection new
+		add: self latin1String;
+		add: self utf8String;
+		add: self utf16leString;
+		add: self utf16beString;
+		add: self macromanString;
+		yourself. 
+	strings do: [ :string |	
 		self assert: (codec encode: string) == string.
 		self assert: (codec url encode: string) == string.
 		self assert: (codec decode: string) == string.
