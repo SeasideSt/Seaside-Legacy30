@@ -1,3 +1,3 @@
 actions
 calendarLoop
-	self session inNewRenderLoopShow: WAMiniCalendar new
+	self session presenter show: WAMiniCalendar new
