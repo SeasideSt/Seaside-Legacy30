@@ -4,4 +4,4 @@ enableCallbacks
 	self url: owner canvas context actionUrl withoutParameters.
 	self addParameters: owner canvas context actionUrl parameters.
 	self addParameter: (callbackId := owner canvas callbacks
-		registerAjaxCallback: [ self processCallback ])
+		store: (JSAjaxCallback on: [ self processCallback ]))
