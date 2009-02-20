@@ -1,13 +1,13 @@
 description
-describeOn: config
+describeOn: config 
 	(config list: #documentClass)
 		beAdvanced;
 		options: [ self documentClasses ];
 		default: WAHtmlDocument.
-	(config list: #responseFactory)
+	(config list: #responseGenerator)
 		beAdvanced;
-		options: [ self responseFactories ];
-		default: WAResponseFactory.
+		options: [ self responseGenerators ];
+		default: WAResponseGenerator.
 	(config list: #serverProtocol)
 		beAdvanced;
 		group: #server;

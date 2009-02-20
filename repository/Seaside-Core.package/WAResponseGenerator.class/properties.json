@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "lr 2/20/2009 11:16",
 	"super" : "WAObject",
 	"category" : "Seaside-Core-RequestHandler",
 	"classinstvars" : [ ],
@@ -8,6 +8,6 @@
 	"instvars" : [
 		"requestContext"
 	],
-	"name" : "WAResponseFactory",
+	"name" : "WAResponseGenerator",
 	"type" : "normal"
 }

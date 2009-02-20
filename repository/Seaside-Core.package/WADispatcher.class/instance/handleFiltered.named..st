@@ -2,5 +2,5 @@ handling
 handleFiltered: aRequestContext named: aString
 	(self 
 		entryPointAt: aString 
-		ifAbsent: [ aRequestContext responseFactory notFound; respond ])
+		ifAbsent: [ aRequestContext responseGenerator notFound; respond ])
 			handle: aRequestContext

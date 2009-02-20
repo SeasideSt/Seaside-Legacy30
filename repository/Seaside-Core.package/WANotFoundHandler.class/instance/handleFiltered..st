@@ -1,3 +1,5 @@
 handling
-handleFiltered: aRequestContext
-	aRequestContext responseFactory notFound; respond
+handleFiltered: aRequestContext 
+	aRequestContext responseGenerator
+		notFound;
+		respond

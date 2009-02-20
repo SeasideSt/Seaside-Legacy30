@@ -1,19 +1,18 @@
 private
-responseAt: aPath forContext: aRequestContext
+responseAt: aPath forContext: aRequestContext 
 	| libraryClass |
 	aPath isEmpty
 		ifTrue: [ ^ (self fileHandlerListingClass on: self context: aRequestContext) responseForLibraries ].
-	libraryClass := self
+	libraryClass := self 
 		libraryAt: aPath first asSymbol
-		ifAbsent: [ ^ aRequestContext responseFactory notFound; respond  ].
-	aPath size > 1
+		ifAbsent: [ ^ aRequestContext responseGenerator notFound; respond ].
+	aPath size > 1 
 		ifTrue: [
-			libraryClass
+			libraryClass 
 				documentAt: aPath second
 				forContext: aRequestContext.
 			" won't be executed if a document is found "
-			aRequestContext responseFactory 
+			aRequestContext responseGenerator
 				notFound;
 				respond ]
-		ifFalse: [ (self fileHandlerListingClass on: self context: aRequestContext)
-					responseForLibrary: libraryClass default ]
+		ifFalse: [ (self fileHandlerListingClass on: self context: aRequestContext) responseForLibrary: libraryClass default ]

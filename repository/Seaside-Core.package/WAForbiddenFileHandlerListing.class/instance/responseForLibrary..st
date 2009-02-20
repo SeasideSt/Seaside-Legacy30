@@ -1,5 +1,5 @@
 responding
-responseForLibrary: aLibrary
-	context responseFactory
+responseForLibrary: aLibrary 
+	context responseGenerator
 		forbidden;
 		respond
