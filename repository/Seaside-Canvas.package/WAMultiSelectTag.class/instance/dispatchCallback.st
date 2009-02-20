@@ -1,3 +1,3 @@
 private
 dispatchCallback
-	^ canvas callbacks registerMultiDispatchCallback
+	^ self storeCallback: WAMultiDispatchCallback new.

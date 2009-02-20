@@ -1,3 +1,3 @@
 callbacks
 callback: aBlock
-	self value: (canvas callbacks registerValueCallback: aBlock)
+	self value: (self storeCallback: (WAValueCallback on: aBlock))

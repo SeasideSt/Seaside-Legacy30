@@ -1,3 +1,3 @@
 callbacks
 callback: aBlock
-	self name: (canvas callbacks registerUploadCallback: aBlock)
+	self name: (self storeCallback: (WAUploadCallback on: aBlock))

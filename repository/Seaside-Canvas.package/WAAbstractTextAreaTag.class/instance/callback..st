@@ -1,4 +1,4 @@
 callbacks
 callback: aBlock
-	self name: (canvas callbacks registerValueCallback: aBlock).
+	self name: (self storeCallback: (WAValueCallback on: aBlock)).
 	self value: self value
