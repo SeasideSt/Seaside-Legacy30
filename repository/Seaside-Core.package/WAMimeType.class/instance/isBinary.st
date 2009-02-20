@@ -1,6 +1,5 @@
 testing
 isBinary
-	"answers whether the contents of a document of the receiving mime type are binary"
 	| subTypes |
 	self main = 'text' ifTrue: [ ^false ].
 	self main = 'application' ifFalse: [ ^true ].
