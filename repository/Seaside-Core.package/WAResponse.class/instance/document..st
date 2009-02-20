@@ -1,7 +1,10 @@
 documents
 document: aDocument
-	| document |
+	| document mimeType |
 	document := aDocument seasideMimeDocument.
-	self contentType: document mimeType.
 	self attachmentWithFileName: document fileName.
-	self stream binary; nextPutAll: document content asString
+	mimeType := document mimeType.
+	self contentType: mimeType.
+	mimeType isBinary
+		ifTrue: [ self stream binary ].
+	self nextPutAll: document content
