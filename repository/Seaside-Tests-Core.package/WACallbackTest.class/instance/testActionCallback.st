@@ -1,8 +1,8 @@
 testing-callbacks
 testActionCallback
 	| key1 key2 |
-	key1 := registry registerActionCallback: [ log add: 1 ].
-	key2 := registry registerActionCallback: [ log add: 2 ].
+	key1 := registry store: (WAActionCallback on: [ log add: 1 ]).
+	key2 := registry store: (WAActionCallback on: [ log add: 2 ]).
 	
 	" trigger first callback "
 	self 

@@ -1,8 +1,8 @@
 testing-callbacks
 testValueCallback
 	| key1 key2 |
-	key1 := registry registerValueCallback: [ :v | log add: 1; add: v ].
-	key2 := registry registerValueCallback: [ :v | log add: 2; add: v ].
+	key1 := registry store: (WAValueCallback on: [ :v | log add: 1; add: v ]).
+	key2 := registry store: (WAValueCallback on: [ :v | log add: 2; add: v ]).
 	
 	" a single value callback with nil "
 	self

@@ -1,7 +1,7 @@
 testing-callbacks
 testMapCallback
 	| key |
-	key := registry registerMapCallback: [ :v | log add: v ].
+	key := registry store: (WAMapCallback on: [ :v | log add: v ]).
 	
 	" valid "
 	self

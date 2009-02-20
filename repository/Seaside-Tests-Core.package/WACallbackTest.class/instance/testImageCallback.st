@@ -1,7 +1,7 @@
 testing-callbacks
 testImageCallback
 	| key |
-	key := registry registerImageCallback: [ log add: 1 ].
+	key := registry store: (WAImageCallback on: [ log add: 1 ]).
 
 	" an invalid callback "
 	self

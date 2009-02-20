@@ -1,9 +1,9 @@
 testing-callbacks
 testDefaultCallback
 	| keyValue keySave keyDefault |
-	keyValue := registry registerValueCallback: [ :v | log add: v ].
-	keySave := registry registerActionCallback: [ log add: 'save' ].
-	keyDefault := registry registerDefaultActionCallback: [ log add: 'default' ].
+	keyValue := registry store: (WAValueCallback on: [ :v | log add: v ]).
+	keySave := registry store: (WAActionCallback on: [ log add: 'save' ] ).
+	keyDefault := registry store: (WADefaultActionCallback on: [ log add: 'default' ]).
 
 	" a save callback "
 	self

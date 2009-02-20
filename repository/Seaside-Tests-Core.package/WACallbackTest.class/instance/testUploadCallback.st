@@ -1,7 +1,7 @@
 testing-callbacks
 testUploadCallback
 	| key file |
-	key := registry registerUploadCallback: [ :v | log add: v ].
+	key := registry store: (WAUploadCallback on: [ :v | log add: v ]).
 	
 	" nil uploads are ignored "
 	self 

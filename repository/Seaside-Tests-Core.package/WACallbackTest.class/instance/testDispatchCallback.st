@@ -1,9 +1,9 @@
 testing-callbacks
 testDispatchCallback
 	| key key1 key2 |
-	key := registry registerDispatchCallback.
-	key1 := registry registerValueCallback: [ :v | log add: 1; add: v ].
-	key2 := registry registerValueCallback: [ :v | log add: 2; add: v ].
+	key := registry store: WADispatchCallback new.
+	key1 := registry store: (WAValueCallback on: [ :v | log add: 1; add: v ]).
+	key2 := registry store: (WAValueCallback on: [ :v | log add: 2; add: v ]).
 	
 	" an empty callback "
 	self

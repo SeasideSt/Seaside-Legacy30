@@ -1,9 +1,9 @@
 testing-callbacks
 testCancelCallback
 	| keyValue keySave keyCancel |
-	keyValue := registry registerValueCallback: [ :v | log add: v ].
-	keySave := registry registerActionCallback: [ log add: 'save' ].
-	keyCancel := registry registerCancelActionCallback: [ log add: 'cancel' ].
+	keyValue := registry store: (WAValueCallback on: [ :v | log add: v ]).
+	keySave := registry store: (WAActionCallback on: [ log add: 'save' ]).
+	keyCancel := registry store: (WACancelActionCallback on: [ log add: 'cancel' ]).
 
 	" a save callback "
 	self
