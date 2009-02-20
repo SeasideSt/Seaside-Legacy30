@@ -1,3 +1,5 @@
 *seaside-session
-redirectTo: aUrlOrString
-	self responseFactory redirectTo: aUrlOrString; respond
+redirectTo: aUrlOrString 
+	self responseGenerator
+		redirectTo: aUrlOrString;
+		respond
