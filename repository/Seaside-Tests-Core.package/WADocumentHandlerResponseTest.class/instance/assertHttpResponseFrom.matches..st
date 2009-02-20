@@ -1,6 +1,10 @@
 private
 assertHttpResponseFrom: aResponse matches: aHandler
+	| expectedContents actualContents |
 	self assert: aResponse status = 200.
 	self assert: aResponse contentType = aHandler document mimeType.
-	self assert: aResponse contents contents size = aHandler document contents size.
+	expectedContents := aHandler document contents.
+	actualContents := aResponse contents.
+	self assert: actualContents size = expectedContents size.
+	self assert: actualContents species = expectedContents species.
 	self assert: aResponse cookies isEmpty

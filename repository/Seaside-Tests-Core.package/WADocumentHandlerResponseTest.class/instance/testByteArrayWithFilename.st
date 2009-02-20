@@ -1,8 +1,5 @@
 testing
-testByteArray
-	self
-		createAndVerifyBinaryDocumentNamed: nil
-		hasAttachement: nil.
+testByteArrayWithFilename
 	self
 		createAndVerifyBinaryDocumentNamed: 'sample.png'
 		hasAttachement: 'attachment; filename="sample.png"'

@@ -1,8 +1,5 @@
 testing
-testString
-	self
-		createAndVerifyTextDocumentNamed: nil
-		hasAttachement: nil.
+testStringWithFilename
 	self
 		createAndVerifyTextDocumentNamed: 'toolbar.css'
 		hasAttachement: 'attachment; filename="toolbar.css"'
