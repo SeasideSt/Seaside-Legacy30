@@ -20,4 +20,4 @@ processRendering: aResponse
 	document open: htmlRoot.
 	self presenter renderWithContext: renderContext.
 	document close.
-	renderContext release
+	renderContext destroy
