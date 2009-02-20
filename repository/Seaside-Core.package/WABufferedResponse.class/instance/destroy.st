@@ -1,4 +1,4 @@
 initialization
-release
-	super release.
+destroy
+	super destroy.
 	contentsStream := nil
