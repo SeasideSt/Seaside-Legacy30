@@ -2,4 +2,4 @@ updating
 updateUrl: anUrl
 	super updateUrl: anUrl.
 	(WAVisiblePresenterGuide client: (WAUpdateUrlVisitor url: anUrl))
-		start: self root
+		start: self presenter

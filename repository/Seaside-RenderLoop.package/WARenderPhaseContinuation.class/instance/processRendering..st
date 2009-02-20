@@ -18,6 +18,6 @@ processRendering: aResponse
 
 	"Render"
 	document open: htmlRoot.
-	self root renderWithContext: renderContext.
+	self presenter renderWithContext: renderContext.
 	document close.
 	renderContext release
