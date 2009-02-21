@@ -1,3 +1,3 @@
 private
 resourceBaseUrl
-	^'https:/www.seaside.st/resources/'
+	^ 'https://www.seaside.st/resources/'
