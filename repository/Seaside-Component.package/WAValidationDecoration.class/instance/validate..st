@@ -1,8 +1,9 @@
 request processing
 validate: anObject
-	[ validationBlock value: anObject.
+	^ [ validationBlock value: anObject.
 	message contents: nil.
-	^ true ]
+	true ]
 		on: self exceptionClass
-		do: [ :exception | message contents: exception messageText ].
-	^ false
+		do: [ :exception |
+			message contents: exception messageText.
+			exception return: false ]
