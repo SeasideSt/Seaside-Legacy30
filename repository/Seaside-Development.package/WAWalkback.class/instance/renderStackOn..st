@@ -1,0 +1,5 @@
+rendering-stack
+renderStackOn: html
+	"Render the walkback itself"
+	
+	self subclassResponsibility

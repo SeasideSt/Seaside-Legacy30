@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "jf 2/21/2009 00:00",
+	"super" : "WAComponent",
+	"category" : "Seaside-Development-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"Current"
+	],
+	"instvars" : [
+		"exception",
+		"limit"
+	],
+	"name" : "WAWalkback",
+	"type" : "normal"
+}
