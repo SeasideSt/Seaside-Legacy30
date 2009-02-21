@@ -1,0 +1,14 @@
+testing
+testAbsoluteUrlForResourceWithoutBase
+	| context |
+	context := WARenderContext new.
+	context resourceUrl: nil.
+	self assert: (context absoluteUrlForResource: nil) isNil.
+	self assert: ((context absoluteUrlForResource: 'bar') isKindOf: WAUrl).
+	self assert: (context absoluteUrlForResource: 'bar') seasideString = '/bar'.
+	self assert: ((context absoluteUrlForResource: '/bar') isKindOf: WAUrl).
+	self assert: (context absoluteUrlForResource: '/bar') seasideString = '/bar'.
+	self assert: ((context absoluteUrlForResource: '') isKindOf: WAUrl).
+	self assert: (context absoluteUrlForResource: '') seasideString = '/'.
+	self assert: ((context absoluteUrlForResource: 'http://localhost/foo') isKindOf: WAUrl).
+	self assert: (context absoluteUrlForResource: 'http://localhost/foo') seasideString = 'http://localhost/foo'.
