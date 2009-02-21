@@ -1,5 +1,5 @@
 private
 defaultUrl
-	^ self canvas context actionUrl
+	^ self canvas actionUrl
 		addParameter: self class headerField
 		value: self pusher id
