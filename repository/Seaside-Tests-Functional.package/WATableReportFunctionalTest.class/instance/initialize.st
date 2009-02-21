@@ -6,7 +6,7 @@ initialize
 		columns: (OrderedCollection new
 			add: (WAReportColumn
 				selector: #fullName title: 'Name'
-				onClick: [ :each | self inform: each description ]);
+				onClick: [ :each | self inform: each description onAnswer: [ :v | ] ]);
 			add: ((WAReportColumn
 				selector: #canBeRoot title: 'Can Be Root')
 				sortBlock: [ :a :b | a ]);

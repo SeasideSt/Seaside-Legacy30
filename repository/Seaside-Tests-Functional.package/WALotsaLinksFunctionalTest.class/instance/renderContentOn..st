@@ -7,6 +7,6 @@ renderContentOn: html
 				html anchor
 					name: each seasideString;
 					callback: [
-						self inform: each.
-						self session jumpToAnchor: each seasideString ];
+						self inform: each onAnswer: [ :v |
+							self session jumpToAnchor: each seasideString ] ];
 					with: each ] ] ]

@@ -8,7 +8,8 @@ renderContentOn: html
 	html paragraph: [
 		html map title: 'Click anywhere on the style editor icon';
 			callback: [ :aPoint |
-				self clickedAt: aPoint id: 'the Style Editor Icon'];
+				self inform: 'Clicked at ', aPoint seasideString, ' on the Style Editor Icon'
+					onAnswer: [ :v | ] ];
 			with: [
 				html image
 				altText: 'Style Editor Icon';

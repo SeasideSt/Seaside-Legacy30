@@ -15,5 +15,5 @@ renderDateSelectorsOn: html
 					tableData: endDate ] ].
 		html div: [
 			html submitButton
-				callback: [ self inform: (endDate date - beginDate date) days seasideString, ' day(s)' ];
+				callback: [ self inform: (endDate date - beginDate date) days seasideString, ' day(s)' onAnswer: [ :v | ] ];
 				text: 'Compute duration' ] ]

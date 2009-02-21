@@ -1,4 +1,4 @@
 actions
 raiseWarning
 	self notify: 'Test Warning'.
-	self inform: 'To be displayed'
+	self inform: 'To be displayed' onAnswer: [ :v | ]

@@ -2,4 +2,4 @@ actions
 raiseError
 	| result |
 	result := self error: 'Test Error'.
-	self inform: 'Signalling the error returned: ', result seasideString
+	self inform: ('Signalling the error returned: ', result seasideString) onAnswer: [ :v | ]

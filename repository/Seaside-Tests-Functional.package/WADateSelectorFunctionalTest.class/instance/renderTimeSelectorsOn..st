@@ -15,5 +15,5 @@ renderTimeSelectorsOn: html
 					tableData: endTime ] ].
 		html div: [
 			html submitButton
-				callback:  [ self inform: (endTime time subtractTime: beginTime time) asSeconds seasideString, ' seconds(s)' ];
+				callback:  [ self inform: (endTime time subtractTime: beginTime time) asSeconds seasideString, ' seconds(s)' onAnswer: [ :v | ] ];
 				text: 'Compute duration' ] ]

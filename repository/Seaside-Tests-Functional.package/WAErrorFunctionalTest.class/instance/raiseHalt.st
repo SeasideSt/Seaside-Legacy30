@@ -9,4 +9,4 @@ raiseHalt
 	Finally, you should be able to restart this method in the Debugger and do the above
 	again successfully."
 	context := self requestContext.
-	self inform: 'To be displayed'
+	self inform: 'To be displayed' onAnswer: [ :v | ]
