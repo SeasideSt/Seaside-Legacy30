@@ -1,3 +1,3 @@
 accessing
-actionUrl: anObject
-	actionUrl := anObject
+actionUrl: aUrl
+	actionUrl := aUrl

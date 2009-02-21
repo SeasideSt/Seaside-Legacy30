@@ -1,3 +1,3 @@
 attributes
 resourceUrl: aString
-	self url: (root context absoluteUrlForResource: aString)
+	self url: (root absoluteUrlForResource: aString)

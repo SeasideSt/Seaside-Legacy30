@@ -12,7 +12,8 @@
 		"documentClass",
 		"rendererClass",
 		"codec",
-		"actionUrl"
+		"actionUrl",
+		"resourceUrl"
 	],
 	"name" : "WABuilder",
 	"type" : "normal"

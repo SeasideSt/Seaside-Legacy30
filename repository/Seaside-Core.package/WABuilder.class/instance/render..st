@@ -9,7 +9,7 @@ render: anObject
 		document := self documentClass on: stream codec: self codec.
 		context := WARenderContext new.
 		context document: document.
-		context actionUrl: self actionUrl.
+		context actionUrl: self actionUrl; resourceUrl: self resourceUrl.
 		renderer := self rendererClass context: context.
 		
 		self openDocument: document context: context.

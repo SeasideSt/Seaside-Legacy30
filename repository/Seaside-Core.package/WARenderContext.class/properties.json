@@ -8,6 +8,7 @@
 	"instvars" : [
 		"visitor",
 		"actionUrl",
+		"resourceUrl",
 		"callbacks",
 		"document",
 		"properties"
