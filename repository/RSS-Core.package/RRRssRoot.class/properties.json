@@ -6,8 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"rssAttrs",
-		"channelAttrs",
+		"rssAttributes",
+		"channelAttributes",
 		"styles"
 	],
 	"name" : "RRRssRoot",

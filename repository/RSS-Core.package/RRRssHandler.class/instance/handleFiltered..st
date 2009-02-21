@@ -1,12 +1,12 @@
 handling
 handleFiltered: aRequestContext
 	| document context canvas root rootComponent |
-	aRequestContext response contentType: RRRssRoot defaultContentType.
+	self setContentType: aRequestContext response.
 	document := aRequestContext newDocument.
-	root := RRRssRoot new.
+	root := self createDocumentRoot.
 	document open: root.
 	context := WARenderContext new document: document.
-	canvas := RRRssRenderCanvas context: context.
+	[ canvas := RRRssRenderCanvas context: context.
 	rootComponent := self createRootComponent.
 	
 	WACurrentRequestContext use: aRequestContext during: [
@@ -16,6 +16,5 @@ handleFiltered: aRequestContext
 				canvas render: rootComponent ]
 			context: aRequestContext ].
 		
-	document close.
-	context release.
+	document close ] ensure: [ context destroy ].
 	aRequestContext respond

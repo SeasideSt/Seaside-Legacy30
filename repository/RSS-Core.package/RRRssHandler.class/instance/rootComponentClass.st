@@ -1,3 +1,3 @@
-accessing
+configuration
 rootComponentClass
 	^ self preferenceAt: #rootComponentClass
