@@ -1,3 +1,3 @@
 accessing
 url
-	^ url ifNil: [ url := canvas context actionUrl copy ]
+	^ url ifNil: [ url := canvas actionUrl copy ]
