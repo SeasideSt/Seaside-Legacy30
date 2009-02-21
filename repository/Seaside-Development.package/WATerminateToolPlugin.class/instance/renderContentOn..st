@@ -1,6 +1,6 @@
 rendering
 renderContentOn: html
 	html anchor
-		url: (html context actionUrl
+		url: (html actionUrl
 			withParameter: 'terminate');
 		with: self label
