@@ -13,7 +13,7 @@ renderContentOn: html
 	
 	html paragraph: [
 		| url |
-		url := html context actionUrl seasideString.
+		url := html actionUrl seasideString.
 		html anchor
 			url: '#';
 			onClick: 'swapCallbacks("',url,'","letter-list", "number-list")';
