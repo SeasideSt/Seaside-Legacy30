@@ -1,3 +1,3 @@
 convenience
 refresh
-	self goto: canvas context actionUrl
+	self goto: canvas actionUrl

@@ -1,4 +1,4 @@
 convenience
 callback: aBlock
-	self goto: (canvas context actionUrl
+	self goto: (canvas actionUrl
 		withParameter: (canvas callbacks store: (WAActionCallback on: aBlock)))
