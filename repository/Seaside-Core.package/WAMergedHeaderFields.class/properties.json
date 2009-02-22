@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "lr 2/22/2009 16:08",
+	"super" : "WAObject",
+	"category" : "Seaside-Core-HTTP",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"delegates"
+	],
+	"name" : "WAMergedHeaderFields",
+	"type" : "normal"
+}
