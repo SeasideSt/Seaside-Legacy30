@@ -14,7 +14,8 @@
 		"nestedSelection",
 		"checkbox",
 		"radio",
-		"upload"
+		"upload",
+		"hiddenInput"
 	],
 	"name" : "WAInputElementContainer",
 	"type" : "normal"
