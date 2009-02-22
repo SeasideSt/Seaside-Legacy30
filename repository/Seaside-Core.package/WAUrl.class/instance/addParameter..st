@@ -1,3 +1,5 @@
 adding
-addParameter: aString
-	self addParameter: aString value: nil
+addParameter: aValue
+	"Add the parameter aValue to the receiving url."
+
+	self addParameter: aValue value: nil

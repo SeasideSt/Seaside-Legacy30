@@ -1,4 +1,6 @@
 adding
-addParameter: keyString value: valueString
-	keyString isEmpty 
-		ifFalse: [ self parameters at: keyString put: valueString ]
+addParameter: aKey value: aValue
+	"Add the parameter aKey with aValue to the receiving url."
+	
+	aKey isEmpty 
+		ifFalse: [ self parameters at: aKey append: aValue ]
