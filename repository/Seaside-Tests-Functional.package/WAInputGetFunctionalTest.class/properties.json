@@ -8,6 +8,6 @@
 	"instvars" : [
 		"inputElements"
 	],
-	"name" : "WAMultipartInputFunctionalTest",
+	"name" : "WAInputGetFunctionalTest",
 	"type" : "normal"
 }

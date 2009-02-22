@@ -13,7 +13,8 @@
 		"multiSelection",
 		"nestedSelection",
 		"checkbox",
-		"radio"
+		"radio",
+		"upload"
 	],
 	"name" : "WAInputElementContainer",
 	"type" : "normal"

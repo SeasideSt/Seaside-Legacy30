@@ -8,4 +8,5 @@ renderContentOn: html
 	self renderSingleSelectionOn: html.
 	self renderSingleSelectionOptionalOn: html.
 	self renderMultiSelectionOn: html.
-	self renderNestedSelectionOn: html
+	self renderNestedSelectionOn: html.
+	self renderUploadOn: html
