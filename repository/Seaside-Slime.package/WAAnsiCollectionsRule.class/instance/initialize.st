@@ -1,0 +1,20 @@
+initialization
+initialize
+	super initialize.
+	self rewriteRule
+		replace: '``@collection withIndexDo: [ :`each :`index |  | `@temps | ``@body ]'
+			with: '``@collection keysAndValuesDo: [ :`index :`each |  | `@temps | ``@body ]';
+		replace: '``@collection doWithIndex: [ :`each :`index |  | `@temps | ``@body ]'
+			with: '``@collection keysAndValuesDo: [ :`index :`each |  | `@temps | ``@body ]';
+		replace: '``@collection collect: ``@block1 thenDo: ``@block2'
+			with: '(``@collection collect: ``@block1) do: ``@block2';
+		replace: '``@collection collect: ``@block1 thenSelect: ``@block2'
+			with: '(``@collection collect: ``@block1) select: ``@block2';
+		replace: '``@collection pairsDo: [ :`t1 :`t2 | ``@statements ]'
+			with: '1 to: ``@collection size by: 2 do:  [ :index | | `t1 `t2 | t1 := ``@collection at: index. t2 := ``@collection at: index + 1. ``@statements ]';
+		replace: '``@collection reject: ``@block1 thenDo: ``@block2'
+			with: '(``@collection reject: ``@block1) do: ``@block2';
+		replace: '``@collection select: ``@block1 thenCollect: ``@block2'
+			with: '(``@collection select: ``@block1) collect: ``@block2';
+		replace: '``@collection select: ``@block1 thenDo: ``@block2'
+			with: '(``@collection select: ``@block1) do: ``@block2'

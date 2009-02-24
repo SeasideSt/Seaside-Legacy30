@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "TransformationRule",
+	"super" : "RBTransformationRule",
 	"category" : "Seaside-Slime",
 	"classinstvars" : [ ],
 	"pools" : [ ],

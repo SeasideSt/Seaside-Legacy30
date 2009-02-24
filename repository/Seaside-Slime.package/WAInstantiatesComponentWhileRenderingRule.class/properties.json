@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "RBParseTreeLintRule",
+	"super" : "WASlimeBlockLintRule",
 	"category" : "Seaside-Slime",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "WASlimeParseTreeLintRule",
+	"instvars" : [
+		"matcher"
+	],
+	"name" : "WAInstantiatesComponentWhileRenderingRule",
 	"type" : "normal"
 }
