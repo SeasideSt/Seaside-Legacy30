@@ -1,5 +1,5 @@
-testing-possible
+testing
 testFixCallbackTempsMissing
 	self 
-		run: WASlimeParseTreeLintRule fixCallbackTempsMissing
-		selectors: #(#callbackTemps )
+		run: WAFixCallbackTempsMissingRule new
+		selectors: #(callbackTemps)

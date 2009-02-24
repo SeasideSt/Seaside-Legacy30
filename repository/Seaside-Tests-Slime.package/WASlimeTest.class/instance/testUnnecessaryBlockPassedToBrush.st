@@ -1,5 +1,5 @@
-testing-misc
+testing
 testUnnecessaryBlockPassedToBrush
 	self 
-		run: WASlimeParseTreeLintRule unnecessaryBlockPassedToBrush
-		selectors: #(#renderUnnecessaryBlockPassedToBrushOn: )
+		run: WAUnnecessaryBlockPassedToBrushRule new
+		selectors: #(renderUnnecessaryBlockPassedToBrushOn:)

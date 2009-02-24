@@ -1,5 +1,5 @@
-testing-misc
+testing
 testSendsRenderContentOn
 	self 
-		run: WASlimeParseTreeLintRule sendsRenderContentOn
-		selectors: #(#sendsRenderContentOn )
+		run: WASendsRenderContentOnRule new
+		selectors: #(sendsRenderContentOn)

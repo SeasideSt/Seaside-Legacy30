@@ -1,5 +1,5 @@
-testing-misc
+testing
 testAvoidUnnecessaryWith
 	self 
-		run: WASlimeParseTreeLintRule avoidUnnecessaryWith
-		selectors: #(#renderAvoidUnnecessaryWithOn: )
+		run: WAAvoidUnnecessaryWithRule new
+		selectors: #(renderAvoidUnnecessaryWithOn:)

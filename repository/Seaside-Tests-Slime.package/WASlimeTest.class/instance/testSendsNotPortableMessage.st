@@ -1,5 +1,5 @@
-testing-misc
+testing
 testSendsNotPortableMessage
 	self 
-		run: WASlimeParseTreeLintRule sendsNotPortableMessage
-		selectors: #(#someMessage )
+		run: WASendsNotPortableMessageRule new
+		selectors: #(someMessage)

@@ -1,5 +1,5 @@
-testing-possible
+testing
 testChangesStateWhileRendering
 	self 
-		run: WASlimeBlockLintRule changesStateWhileRendering
-		selectors: #(#renderChangesStateWhileRenderingOn: )
+		run: WAChangesStateWhileRenderingRule new
+		selectors: #(renderChangesStateWhileRenderingOn:)

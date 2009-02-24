@@ -1,5 +1,5 @@
-testing-misc
+testing
 testExtractCallbackCodeToMethod
 	self 
-		run: WASlimeParseTreeLintRule extractCallbackCodeToMethod
-		selectors: #(#renderExtractCallbackCodeToMethodOn: )
+		run: WAExtractCallbackCodeToMethodRule new
+		selectors: #(renderExtractCallbackCodeToMethodOn:)

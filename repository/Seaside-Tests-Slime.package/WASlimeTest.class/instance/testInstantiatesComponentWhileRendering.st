@@ -1,5 +1,5 @@
-testing-bugs
+testing
 testInstantiatesComponentWhileRendering
 	self 
-		run: WASlimeBlockLintRule instantiatesComponentWhileRendering
-		selectors: #(#renderInstantiatesComponentWhileRenderingOn: )
+		run: WAInstantiatesComponentWhileRenderingRule new
+		selectors: #(renderInstantiatesComponentWhileRenderingOn:)

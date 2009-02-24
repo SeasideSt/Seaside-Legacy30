@@ -1,5 +1,5 @@
-testing-misc
+testing
 testUsesLiteralByteArrays
 	self 
-		run: WASlimeBlockLintRule usesLiteralByteArrays
+		run: WAUsesLiteralByteArraysRule new
 		selectors: #()

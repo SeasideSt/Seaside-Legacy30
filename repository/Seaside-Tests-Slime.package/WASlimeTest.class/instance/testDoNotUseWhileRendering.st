@@ -1,5 +1,5 @@
-testing-bugs
+testing
 testDoNotUseWhileRendering
 	self 
-		run: WASlimeBlockLintRule doNotUseWhileRendering
-		selectors: #(#renderDoNotUseWhileRenderingOn: )
+		run: WADoNotUseWhileRenderingRule new
+		selectors: #(renderDoNotUseWhileRenderingOn:)

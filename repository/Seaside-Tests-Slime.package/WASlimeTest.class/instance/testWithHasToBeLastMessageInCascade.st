@@ -1,5 +1,5 @@
-testing-bugs
+testing
 testWithHasToBeLastMessageInCascade
 	self 
-		run: WASlimeParseTreeLintRule withHasToBeLastMessageInCascade
-		selectors: #(#renderWithHasToBeLastMessageInCascadeOn: )
+		run: WAWithHasToBeLastMessageInCascadeRule new
+		selectors: #(renderWithHasToBeLastMessageInCascadeOn:)

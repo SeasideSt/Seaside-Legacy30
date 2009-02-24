@@ -1,5 +1,5 @@
-testing-bugs
+testing
 testDoNotUseWithinCallback
 	self 
-		run: WASlimeBlockLintRule doNotUseWithinCallback
-		selectors: #(#renderDoNotUseWithinCallbackOn: )
+		run: WADoNotUseWithinCallbackRule new
+		selectors: #(renderDoNotUseWithinCallbackOn:)

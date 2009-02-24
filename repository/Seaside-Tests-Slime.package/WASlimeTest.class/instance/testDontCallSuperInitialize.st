@@ -1,5 +1,5 @@
-testing-misc
+testing
 testDontCallSuperInitialize
 	self 
-		run: WASlimeBlockLintRule invalidObjectInitialization
-		selectors: #(#initialize )
+		run: WAInvalidObjectInitializationRule new
+		selectors: #(initialize)

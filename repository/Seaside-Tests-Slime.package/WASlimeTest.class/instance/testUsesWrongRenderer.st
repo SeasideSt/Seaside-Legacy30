@@ -1,5 +1,5 @@
-testing-bugs
+testing
 testUsesWrongRenderer
 	self 
-		run: WASlimeParseTreeLintRule usesWrongRenderer
-		selectors: #(#renderUsesWrongRendererOn: )
+		run: WAUsesWrongRendererRule new
+		selectors: #(renderUsesWrongRendererOn:)

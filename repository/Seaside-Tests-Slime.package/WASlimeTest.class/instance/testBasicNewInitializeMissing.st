@@ -1,5 +1,5 @@
-testing-misc
+testing
 testBasicNewInitializeMissing
 	self 
-		run: WASlimeBlockLintRule basicNewInitializeMissing
-		selectors: #(#initialize )
+		run: WABasicNewInitializeMissingRule new
+		selectors: #(initialize)

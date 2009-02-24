@@ -1,5 +1,5 @@
-testing-misc
+testing
 testUsesNotPortableClass
 	self 
-		run: WASlimeBlockLintRule usesNotPortableClass
-		selectors: #(#someClass )
+		run: WAUsesNotPortableClassRule new
+		selectors: #(someClass)
