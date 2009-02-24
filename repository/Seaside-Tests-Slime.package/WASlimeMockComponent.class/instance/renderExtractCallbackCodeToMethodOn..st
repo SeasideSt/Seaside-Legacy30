@@ -1,3 +1,3 @@
 rendering
 renderExtractCallbackCodeToMethodOn: html
-	html anchor callback: [ self foo. self bar ]; with: 'foo'
+	html anchor callback: [ 1. 2 ]; with: 'foo'
