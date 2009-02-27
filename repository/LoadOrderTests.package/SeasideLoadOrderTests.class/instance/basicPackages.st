@@ -10,14 +10,14 @@ basicPackages
 			with: seaside29 -> 'Seaside-Tests-Squeak-Platform-lr.17.mcz');
 		"Core"
 		add: (Array 
-			with: seaside29 -> 'Seaside-Core-lr.495.mcz'
-			with: seaside29 -> 'Seaside-Tests-Core-lr.117.mcz'
+			with: seaside29 -> 'Seaside-Core-lr.496.mcz'
+			with: seaside29 -> 'Seaside-Tests-Core-lr.118.mcz'
 			with: seaside29 -> 'Seaside-Squeak-Core-jf.76.mcz'
 			with: seaside29 -> 'Seaside-Tests-Squeak-Core-pmm.21.mcz');
 		"Canvas"
 		add: (Array 
 			with: seaside29 -> 'Seaside-Canvas-jf.53.mcz'
-			with: seaside29 -> 'Seaside-Tests-Canvas-jf.23.mcz');
+			with: seaside29 -> 'Seaside-Tests-Canvas-jf.25.mcz');
 		"Continuation"
 		add: (Array 
 			with: seaside29 -> 'Seaside-Squeak-Continuation-jf.19.mcz'
@@ -25,14 +25,14 @@ basicPackages
 		"Session"
 		add: (Array 
 			with: seaside29 -> 'Seaside-Session-lr.102.mcz'
-			with: seaside29 -> 'Seaside-Tests-Session-jf.22.mcz');
+			with: seaside29 -> 'Seaside-Tests-Session-jf.23.mcz');
 		"Component"
 		add: (Array 
 			with: seaside29 -> 'Seaside-Component-jf.56.mcz'
 			with: seaside29 -> 'Seaside-Tests-Component-jf.21.mcz');
 		"RenderLoop"
 		add: (Array 
-			with: seaside29 -> 'Seaside-RenderLoop-jf.58.mcz'
+			with: seaside29 -> 'Seaside-RenderLoop-jf.59.mcz'
 			with: seaside29 -> 'Seaside-Tests-RenderLoop-jf.7.mcz');
 		"Environment"
 		add: (Array 
