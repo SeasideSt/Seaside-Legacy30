@@ -1,3 +1,4 @@
 private
 startUp
-	process ifNotNil: [ self restart ]
+	process isNil
+		ifFalse: [ self restart ]

@@ -1,4 +1,5 @@
 private
 basicStop
-	process ifNotNil: [ process terminate ].
+	process isNil
+		ifFalse: [ process terminate ].
 	process := nil

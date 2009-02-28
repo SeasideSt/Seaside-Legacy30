@@ -1,3 +1,4 @@
 private
 shutDown
-	service ifNotNil: [ service stop ]
+	service isNil
+		ifFalse: [ service stop ]

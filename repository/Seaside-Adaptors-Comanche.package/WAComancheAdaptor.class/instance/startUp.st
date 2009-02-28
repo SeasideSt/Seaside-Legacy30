@@ -1,3 +1,4 @@
 private
 startUp
-	service ifNotNil: [ service start ]
+	service isNil
+		ifFalse: [ service start ]

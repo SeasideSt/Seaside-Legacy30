@@ -1,4 +1,5 @@
 private
 basicStop
-	service ifNotNil: [ service unregister ].
+	service isNil
+		ifFalse: [ service unregister ].
 	service := nil
