@@ -1,4 +1,6 @@
 private
 setComponent
-	component ifNil: [component := componentBlock value: self].
-	updateBlock ifNotNil: [updateBlock value: self value: component]
+	component isNil
+		ifTrue: [ component := componentBlock value: self ].
+	updateBlock notNil
+		ifTrue: [ updateBlock value: self value: component ]

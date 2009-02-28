@@ -4,7 +4,7 @@ renderTabsOn: html
 	html unorderedList
 		class: 'head';
 		with: [
-			items withIndexDo: [ :element :index | 
+			items keysAndValuesDo: [ :index :element | 
 				active := self selected = element.
 				html listItem: [
 					html anchor
