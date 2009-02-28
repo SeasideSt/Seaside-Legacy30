@@ -1,7 +1,8 @@
 private
 after
 	super after.
-	callback ifNotNil: [
-		canvas hiddenInput callback: [
+	callback isNil ifTrue: [ ^ self ].
+	canvas hiddenInput 
+		callback: [
 			callback value: value.
-			value := false ] ]
+			value := false ]

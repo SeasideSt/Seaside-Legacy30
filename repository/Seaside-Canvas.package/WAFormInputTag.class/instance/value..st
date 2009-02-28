@@ -1,3 +1,4 @@
 attributes
 value: anObject
-	anObject ifNotNil: [ self attributes at: 'value' put: anObject ]
+	anObject isNil
+		ifFalse: [ self attributes at: 'value' put: anObject ]

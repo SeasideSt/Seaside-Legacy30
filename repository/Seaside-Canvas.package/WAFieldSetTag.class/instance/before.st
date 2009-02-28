@@ -1,4 +1,5 @@
 private
 before
 	super before.
-	legend ifNotNil: [ canvas legend: legend ]
+	legend isNil
+		ifFalse: [ canvas legend: legend ]

@@ -1,6 +1,7 @@
 private
 flush
 	super flush.
-	currentBrush ifNotNil:
-		[currentBrush close.
-		currentBrush := nil]
+	currentBrush isNil
+		ifTrue: [ ^ self ].
+	currentBrush close.
+	currentBrush := nil
