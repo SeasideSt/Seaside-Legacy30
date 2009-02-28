@@ -10,8 +10,7 @@ renderContentOn: html
 	html form: [
 		html table: [
 				html tableRow: [
-					html tableData
-						with: [html textInput id: theId].
+					html tableData: [ html textInput id: theId ].
 					html tableData: [
 						html button value: 'Set date';
 							onClick: (html scriptaculous evaluator
@@ -19,8 +18,7 @@ renderContentOn: html
 								callback: [:script | self openDatePickerOn: script];
 											return: false) ] ].
 				html tableRow: [
-					html tableData
-						with: [html textInput id: theId2].
+					html tableData: [ html textInput id: theId2 ].
 					html tableData: [
 						html button value: 'Set date & time';
 							onClick: (html scriptaculous evaluator
