@@ -1,13 +1,13 @@
 decorations
-addDecoration: newDecoration
-	| prev dec |
-	prev := nil.
-	dec := self decoration.
-	[dec ~~ self and: [self decoration: dec shouldWrap: newDecoration]] whileTrue:
-		[prev := dec.
-		dec := dec next].
-	newDecoration setNext: dec.
-	prev
-		ifNil: [self decoration: newDecoration]
-		ifNotNil: [prev setNext: newDecoration].
-	^ newDecoration
+addDecoration: aDecoration
+	| previous current |
+	previous := nil.
+	current := self decoration.
+	[ current ~~ self and: [ self decoration: current shouldWrap: aDecoration ] ] whileTrue: [
+		previous := current.
+		current := current next ].
+	aDecoration setNext: current.
+	previous isNil
+		ifTrue: [ self decoration: aDecoration ]
+		ifFalse: [ previous setNext: aDecoration ].
+	^ aDecoration

@@ -1,3 +1,4 @@
 actions
 removeForm
-	form ifNotNil: [self removeDecoration: form]
+	form isNil
+		ifFalse: [ self removeDecoration: form ]

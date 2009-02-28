@@ -1,3 +1,4 @@
 private
 startDateSelection
-	^ dateSelectionStart ifNotNil: [dateSelectionStart min: dateSelectionEnd]
+	^ dateSelectionStart isNil
+		ifFalse: [ dateSelectionStart min: dateSelectionEnd ]

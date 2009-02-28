@@ -1,3 +1,4 @@
 private
 startRowSelection
-	^ rowSelectionStart ifNotNil: [rows at: (rowSelectionStart min: rowSelectionEnd)]
+	^ rowSelectionStart isNil
+		ifFalse: [ rows at: (rowSelectionStart min: rowSelectionEnd) ]

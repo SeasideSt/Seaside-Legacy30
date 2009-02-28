@@ -16,6 +16,8 @@ renderContentOn: html
 						html span
 							class: 'separator';
 							with: self separator. ] ] ] .
-			selected := last ifNil: [ root ] ifNotNil: [ last delegate ].
+			selected := last isNil
+				ifTrue: [ root ]
+				ifFalse: [ last delegate ].
 			(selected respondsTo: #trailName) ifTrue: [
 				html text: selected trailName ]]

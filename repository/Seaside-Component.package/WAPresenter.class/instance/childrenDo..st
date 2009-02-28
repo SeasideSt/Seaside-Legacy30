@@ -1,3 +1,5 @@
 iterating
 childrenDo: aBlock
-	self children do: [:ea | ea ifNotNil: [aBlock value: ea]]
+	self children do: [ :each | 
+		each isNil
+			ifFalse: [ aBlock value: each ] ]

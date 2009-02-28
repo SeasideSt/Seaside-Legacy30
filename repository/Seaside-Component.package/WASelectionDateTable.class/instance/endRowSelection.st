@@ -1,3 +1,4 @@
 private
 endRowSelection
-	^ rowSelectionStart ifNotNil: [rows at: (rowSelectionStart max: rowSelectionEnd)]
+	^ rowSelectionStart isNil
+		ifFalse: [ rows at: (rowSelectionStart max: rowSelectionEnd) ]
