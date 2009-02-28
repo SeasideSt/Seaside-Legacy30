@@ -1,3 +1,5 @@
 private
 defaultArguments
-	^ options ifNil: [ Array new ] ifNotNil: [ Array with: options ]
+	^ options isNil
+		ifTrue: [ Array new ] 
+		ifFalse: [ Array with: options ]
