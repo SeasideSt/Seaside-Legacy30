@@ -1,5 +1,7 @@
 actions
-run: aRule selectors: aSelectorCollection in: aClassCollection 
+run: aRule selectors: aSelectorCollection in: aClassCollection
+	"aRule open"
+
 	| searchEnvironment resultEnvironment |
 	searchEnvironment := ClassEnvironment 
 		onEnvironment: BrowserEnvironment new
@@ -8,6 +10,7 @@ run: aRule selectors: aSelectorCollection in: aClassCollection
 		runRule: aRule
 		onEnvironment: searchEnvironment.
 	resultEnvironment := aRule result.
+	self assert: resultEnvironment name = aRule name.
 	self assert: resultEnvironment problemCount = aSelectorCollection size.
 	aSelectorCollection do: [ :selector |
 		self assert: (resultEnvironment classes

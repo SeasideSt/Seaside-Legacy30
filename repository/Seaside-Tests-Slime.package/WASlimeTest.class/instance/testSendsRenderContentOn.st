@@ -1,4 +1,4 @@
-testing
+testing-parsetree
 testSendsRenderContentOn
 	self 
 		run: WASendsRenderContentOnRule new

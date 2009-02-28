@@ -1,4 +1,4 @@
-testing
+testing-parsetree
 testFixCallbackTempsMissing
 	self 
 		run: WAFixCallbackTempsMissingRule new

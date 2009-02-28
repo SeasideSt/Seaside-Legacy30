@@ -1,4 +1,4 @@
-testing
+testing-block
 testUsesCurlyBraceArrays
 	self 
 		run: WAUsesCurlyBraceArraysRule new 

@@ -1,4 +1,4 @@
-testing
+testing-block
 testDoNotUseWithinCallback
 	self 
 		run: WADoNotUseWithinCallbackRule new

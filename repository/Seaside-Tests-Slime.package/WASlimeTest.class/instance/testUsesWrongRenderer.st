@@ -1,4 +1,4 @@
-testing
+testing-parsetree
 testUsesWrongRenderer
 	self 
 		run: WAUsesWrongRendererRule new

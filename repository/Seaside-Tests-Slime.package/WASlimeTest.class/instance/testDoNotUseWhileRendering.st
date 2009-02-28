@@ -1,4 +1,4 @@
-testing
+testing-block
 testDoNotUseWhileRendering
 	self 
 		run: WADoNotUseWhileRenderingRule new

@@ -1,4 +1,4 @@
-testing
+testing-block
 testBasicNewInitializeMissing
 	self 
 		run: WABasicNewInitializeMissingRule new

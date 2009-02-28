@@ -1,5 +1,5 @@
-testing
+testing-parsetree
 testUnnecessaryBlockPassedToBrush
 	self 
 		run: WAUnnecessaryBlockPassedToBrushRule new
-		selectors: #(renderUnnecessaryBlockPassedToBrushOn:)
+		selectors: #( renderUnnecessaryBlockPassedToBrush1On: renderUnnecessaryBlockPassedToBrush2On: renderUnnecessaryBlockPassedToBrush3On: renderUnnecessaryBlockPassedToBrush4On: renderUnnecessaryBlockPassedToBrush5On: renderUnnecessaryBlockPassedToBrush6On: renderUnnecessaryBlockPassedToBrush7On: )

@@ -1,4 +1,4 @@
-testing
+testing-parsetree
 testExtractCallbackCodeToMethod
 	self 
 		run: WAExtractCallbackCodeToMethodRule new

@@ -1,4 +1,4 @@
-testing
+testing-block
 testDeprecatedApiProtocol
 	self 
 		run: WADeprecatedApiProtocolRule new

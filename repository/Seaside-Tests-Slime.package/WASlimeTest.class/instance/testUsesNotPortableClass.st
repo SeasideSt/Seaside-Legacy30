@@ -1,4 +1,4 @@
-testing
+testing-block
 testUsesNotPortableClass
 	self 
 		run: WAUsesNotPortableClassRule new

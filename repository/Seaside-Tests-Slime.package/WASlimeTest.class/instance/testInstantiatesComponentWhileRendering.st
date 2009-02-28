@@ -1,4 +1,4 @@
-testing
+testing-block
 testInstantiatesComponentWhileRendering
 	self 
 		run: WAInstantiatesComponentWhileRenderingRule new
