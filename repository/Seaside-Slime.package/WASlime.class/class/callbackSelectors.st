@@ -1,3 +1,3 @@
 accessing
 callbackSelectors
-	^ callbackSelectors
+	^ callbackSelectors ifNil: [ callbackSelectors := self findCallbackSelectors ]

@@ -3,16 +3,9 @@
 	"super" : "Object",
 	"category" : "Seaside-Slime",
 	"classinstvars" : [
-		"deprecatedClasses",
-		"forbiddenRenderingSelectors",
-		"braceSelectors",
-		"notPortableSelectors",
-		"superSelectors",
-		"notPortableClasses",
 		"brushSelectors",
 		"callbackSelectors",
-		"attributeSelectors",
-		"forbiddenCallbackSelectors"
+		"attributeSelectors"
 	],
 	"pools" : [ ],
 	"classvars" : [ ],

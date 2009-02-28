@@ -1,6 +1,6 @@
-initialization
-initializeBrushSelectors
-	| matcher |
+private
+findBrushSelectors
+	| matcher result |
 	matcher := ParseTreeSearcher new.
 	matcher
 		matchesAnyMethodOf: #(
@@ -9,8 +9,9 @@ initializeBrushSelectors
 			'`selector: `aBlock self `selector with: `aBlock'
 			'`selector ^ `class on: self' )
 		do: [ :context :node | true ].
-	brushSelectors := Set new.
-	WACanvas allSubclassesDo: [ :class | 
+	result := IdentitySet new.
+	(self findClasses: #WACanvas) do: [ :class | 
 		class methodDictionary keysAndValuesDo: [ :selector :method | 
 			(matcher executeTree: method parseTree initialAnswer: false) 
-				ifTrue: [ brushSelectors add: selector ] ] ]
+				ifTrue: [ result add: selector ] ] ].
+	^ result

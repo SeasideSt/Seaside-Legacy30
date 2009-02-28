@@ -1,7 +1,8 @@
 initialization
-initializeSuperSelectors
-	superSelectors := Dictionary new.
-	superSelectors
+initialize
+	super initialize.
+	classesAndSelectors := Dictionary new.
+	classesAndSelectors
 		at: #WAObject put: #( initialize postCopy );
 		at: #WAPainter put: #( updateRoot: updateUrl: );
 		at: #WAPresenter put: #( updateStates: );

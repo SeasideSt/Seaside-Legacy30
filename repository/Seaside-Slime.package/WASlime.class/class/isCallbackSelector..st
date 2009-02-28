@@ -2,5 +2,5 @@ testing
 isCallbackSelector: aString 
 	Symbol 
 		hasInterned: aString
-		ifTrue: [ :symbol | ^ callbackSelectors includes: symbol ].
+		ifTrue: [ :symbol | ^ self callbackSelectors includes: symbol ].
 	^ false

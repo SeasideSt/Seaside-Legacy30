@@ -1,6 +1,6 @@
-initialization
-initializeAttributeSelectors
-	| matcher |
+private
+findAttributeSelectors
+	| matcher result |
 	matcher := ParseTreeSearcher new.
 	matcher
 		matchesAnyOf: #(
@@ -14,10 +14,11 @@ initializeAttributeSelectors
 			'self attributes at: `@key append: `@value'
 			'self attributes at: `@key append: `@value separator: `@separator' )
 		do: [ :context :node | true ].
-	attributeSelectors := Set new.
-	WABrush withAllSubclasses , WAHtmlElement withAllSubclasses do: [ :class | 
+	result := IdentitySet new.
+	(self findClasses: #WABrush) , (self findClasses: #WAHtmlElement) do: [ :class | 
 		class methodDictionary keysAndValuesDo: [ :selector :method | 
 			(matcher executeTree: method parseTree initialAnswer: false) 
-				ifTrue: [ attributeSelectors add: selector ] ] ].
+				ifTrue: [ result add: selector ] ] ].
 	#( callback: enabled: labels: value: )
-		do: [ :each | attributeSelectors add: each ]
+		do: [ :each | result add: each ].
+	^ result

@@ -1,3 +1,3 @@
 accessing
 attributeSelectors
-	^ attributeSelectors
+	^ attributeSelectors ifNil: [ attributeSelectors := self findAttributeSelectors ]

@@ -1,3 +1,3 @@
 accessing
 brushSelectors
-	^ brushSelectors
+	^ brushSelectors ifNil: [ brushSelectors := self findBrushSelectors ]
