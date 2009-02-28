@@ -1,3 +1,4 @@
 accessing-children
 childrenDo: aBlock
-	children ifNotNil: [ children do: aBlock ]
+	children isNil
+		ifFalse: [ children do: aBlock ]

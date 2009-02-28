@@ -1,3 +1,3 @@
 convenience
 port
-	^ default ifNotNil: [ default port ]
+	^ default isNil ifFalse: [ default port ]

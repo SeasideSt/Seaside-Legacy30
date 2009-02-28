@@ -10,6 +10,6 @@ encodeParametersOn: aDocument usingHtmlEntities: aBoolean
 					ifTrue: [ '&amp;' ]
 					ifFalse: [ '&' ] ]).
 		aDocument urlEncoder nextPutAll: key.
-		value ifNotNil: [
+		value isNil ifFalse: [
 			aDocument nextPut: $=.
 			aDocument urlEncoder nextPutAll: value seasideString ] ]

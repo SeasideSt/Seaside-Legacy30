@@ -1,3 +1,4 @@
 convenience
 stop
-	default ifNotNil: [ default stop ]
+	default isNil
+		ifFalse: [ default stop ]
