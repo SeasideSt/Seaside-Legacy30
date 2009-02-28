@@ -2,7 +2,7 @@ rendering
 renderContentOn: html
 	html form: [ html div: [
 		html select
-			list: (WATask allSubclasses asSortedCollection: [ :a :b | a name <= b name ]);
+			list: (self taskClasses asSortedCollection: [ :a :b | a name <= b name ]);
 			on: #contents of: selection.
 		html submitButton
 			callback: [ self addTask ];

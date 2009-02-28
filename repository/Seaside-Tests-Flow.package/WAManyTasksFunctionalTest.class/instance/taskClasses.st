@@ -1,0 +1,3 @@
+accessing
+taskClasses
+	^ WATask allSubclasses
