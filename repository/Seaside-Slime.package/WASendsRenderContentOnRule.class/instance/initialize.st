@@ -5,6 +5,7 @@ initialize
 		matches: '`@object renderContentOn: `@html'
 		do: [ :node :answer |
 			(answer isNil
-				and: [ (node receiver isVariable and: [ node receiver name = 'super' ]) not
-				and: [ (#( visitPainter: ) includes: node methodNode selector) not ] ])
-					ifTrue: [ node ] ]
+				and: [ (node methodNode selector ~= #visitPainter:)
+				and: [ (node receiver isVariable and: [ node receiver name = 'super' ]) not ] ])
+					ifTrue: [ node ]
+					ifFalse: [ answer ] ]

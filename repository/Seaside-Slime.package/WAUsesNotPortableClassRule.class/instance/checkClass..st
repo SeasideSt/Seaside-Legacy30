@@ -1,6 +1,6 @@
 running
 checkClass: aContext 
-	(aContext selectedClass allSuperclasses
-		anySatisfy: [ :each | WASlime notPortableClasses includes: each name ]) ifTrue: [
+	aContext selectedClass allSuperclassesDo: [ :each |
+		(self classNames includes: each name) ifTrue: [
 			result addClass: aContext selectedClass.
-			result addSearchString: aContext selectedClass superclass name ]
+			result addSearchString: each name ] ]

@@ -8,7 +8,8 @@ initialize
 			'`html `msg: [ `html render: ``@arg ]' )
 		do: [ :node :answer | 
 			(answer isNil and: [ WASlime isBrushSelector: node selector ])
-				ifTrue: [ node arguments first ] ].
+				ifTrue: [ node arguments first ]
+				ifFalse: [ answer ] ].
 	self matcher 
 		matchesAnyOf: #(
 			'`html `msg with: [ ]'
@@ -16,4 +17,5 @@ initialize
 			'`html `msg with: [ `html render: ``@arg ]' )
 		do: [ :node :answer | 
 			(answer isNil and: [ WASlime isBrushSelector: node receiver selector ])
-				ifTrue: [ node arguments first ] ]
+				ifTrue: [ node arguments first ]
+				ifFalse: [ answer ] ]

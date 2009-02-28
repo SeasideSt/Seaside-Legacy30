@@ -1,7 +1,7 @@
 running
 checkMethod: aContext 
 	aContext compiledMethod literals do: [ :each | 
-		(each isSymbol and: [ WASlime braceSelectors includes: each ]) ifTrue: [
+		(each isSymbol and: [ self selectors includes: each ]) ifTrue: [
 			result 
 				addClass: aContext selectedClass
 				selector: aContext selector.

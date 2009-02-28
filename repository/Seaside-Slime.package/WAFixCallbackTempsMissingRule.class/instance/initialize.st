@@ -1,8 +1,6 @@
 initialization
 initialize
-	| saveSelectors |
 	super initialize.
-	saveSelectors := #( allSatisfy: anySatisfy: at:ifAbsent: at:ifAbsentPut: at:ifPresent: count: critical: detect:ifNone: do: do:separatedBy: ensure: fixCallbackTemps fixTemps ifCurtailed: inject:into: noneSatisfy: on:do: reject: render: select: should: should:description: should:raise: should:raise:description: should:raise:whoseDescriptionDoesNotInclude:description: should:raise:whoseDescriptionIncludes:description: shouldnt: shouldnt:description: shouldnt:raise: shouldnt:raise:description: shouldnt:raise:whoseDescriptionDoesNotInclude:description: shouldnt:raise:whoseDescriptionIncludes:description: timesRepeat: use:during: with: ) asSet.
 	matcher := ParseTreeSearcher new.
 	matcher 
 		matches: '[ | `@temps | `@.statements ]'
@@ -10,10 +8,10 @@ initialize
 			| found |
 			found := false.
 			(answer isNil and: [ node isInlined not and: [ node parent isMessage ] ]) ifTrue: [
-				((saveSelectors includes: node parent selector) 
+				((self selectors includes: node parent selector) 
 					or: [ (WASlime brushSelectors includes: node parent selector)
 					or: [ (WASlime attributeSelectors includes: node parent selector)
-					or: [ WASlime callbackSelectors includes: node parent selector ] ] ]) ifFalse: [
+					or: [ (WASlime callbackSelectors includes: node parent selector) ] ] ]) ifFalse: [
 						| dangerousNames |
 						dangerousNames := Set new.
 						node parent parents do: [ :parent | 
@@ -21,4 +19,4 @@ initialize
 							parent isSequence ifTrue: [ dangerousNames addAll: parent temporaryNames ] ].
 							(dangerousNames anySatisfy: [ :each | node references: each ]) 
 								ifTrue: [ found := true ] ] ].
-			found ifTrue: [ node ] ]
+			found ifTrue: [ node ] ifFalse: [ answer ] ]

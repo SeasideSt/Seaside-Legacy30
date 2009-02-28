@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WASendsNotPortableMessageRule",
+	"name" : "WAUnnecessaryWithSentToBrushRule",
 	"type" : "normal"
 }

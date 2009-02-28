@@ -1,3 +1,0 @@
-initialization
-initializeNotPortableSelectors
-	notPortableSelectors :=  #( and:and: and:and:and: and:and:and:and: collect:thenDo: collect:thenSelect: doIfNotNil: fixTemps ifNil:ifNotNil: ifNil:ifNotNilDo: ifNotNil: ifNotNil:ifNil: ifNotNilDo: ifNotNilDo:ifNil: match: or:or:or: or:or:or:or: or:or:or:or:or: pairsDo: reject:thenDo: select:thenCollect: select:thenDo: raiseSignal raiseSignal: with:collect: ) asSet
