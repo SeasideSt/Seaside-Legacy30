@@ -7,7 +7,7 @@ open: anException
 	behaviour, which should be to open a debugger.."
 	answer := true.
 	[ self session isNil ifFalse: 
-		[ answer := self session presenter call: (WAWalkback exception: anException).
+		[ answer := self session presenter call: (WAWalkback current exception: anException).
 		"Exception handlers hold the request context because they are used in places where
 		the dynamic variable is not present. Since this particular class depends on RenderLoop, 		however, it will be present and we need to update the stored value after doing a call."
 		requestContext := WACurrentRequestContext value ] ] 
