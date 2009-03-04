@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "WASmallDictionary",
-	"category" : "Seaside-Core-HTTP",
+	"super" : "WAConfiguredRequestFilter",
+	"category" : "Seaside-Core-Filter",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WAHeaderFields",
+	"name" : "WAExceptionFilter",
 	"type" : "normal"
 }
