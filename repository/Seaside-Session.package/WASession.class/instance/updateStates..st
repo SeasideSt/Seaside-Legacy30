@@ -1,8 +1,4 @@
 updating
 updateStates: aSnapshot
-	| current |
-	current := self filter.
-	[ current = self ] whileFalse: [
-		current updateStates: aSnapshot.
-		current := current next ].
-	aSnapshot register: filter
+	self filters do: [ :each | each updateStates: aSnapshot ].
+	aSnapshot register: self filter
