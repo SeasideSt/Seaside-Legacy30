@@ -10,11 +10,8 @@ handleFiltered: aRequestContext
 	rootComponent := self createRootComponent.
 	
 	WACurrentRequestContext use: aRequestContext during: [
-		self exceptionHandler
-			handleExceptionsDuring: [
-				rootComponent updateRoot: root.
-				canvas render: rootComponent ]
-			context: aRequestContext ].
+		rootComponent updateRoot: root.
+		canvas render: rootComponent ].
 		
 	document close ] ensure: [ context destroy ].
 	aRequestContext respond
