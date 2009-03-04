@@ -9,7 +9,8 @@ describeOn: config
 		options: [ self libraryClasses ].
 	(config list: #mainClass)
 		beAdvanced;
-		options: [ self mainClasses ].
+		options: [ self mainClasses ];
+		default: WAMain.
 	(config string: #mimeType)
 		beAdvanced;
 		label: 'MIME Type';
