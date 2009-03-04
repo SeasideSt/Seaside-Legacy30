@@ -1,5 +1,5 @@
 instance creation
 on: aComponent
-	^self new
+	^self basicNew
 		initializeWith: aComponent;
 		yourself
