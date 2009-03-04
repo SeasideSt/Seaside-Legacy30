@@ -1,3 +1,3 @@
 handling
 start
-	self mainClass new start
+	self application mainClass new start
