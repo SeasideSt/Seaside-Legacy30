@@ -1,11 +1,11 @@
 rendering
 renderHandlerConfigurationOn: html
-	| attribute |
-	attribute := self application configuration
-		attributeAt: #exceptionHandler
-		ifAbsent: [
-			html paragraph: 'Exception handler configuration attribute not found!'.
-			^ self ].
+	| attribute filter |
+	filter := self exceptionFilter.
+	filter isNil ifTrue: [
+		html paragraph: 'Exception handler configuration attribute not found!'.
+		^ self ].
+	attribute := filter configuration attributeAt: #exceptionHandler.
 
 	html form: [
 		html div: [
@@ -13,6 +13,9 @@ renderHandlerConfigurationOn: html
 				beOptional;
 				optionalLabel: '(inherited default)';
 				list: attribute options asArray;
-				selected: (self application configuration at: attribute key);
-				callback: [ :value | self application configuration takeValue: value forAttribute: attribute ].
+				selected: (filter configuration at: attribute key);
+				callback: [ :value | 
+					value isNil
+						ifTrue: [ filter configuration removeExpressionAt: attribute key ifAbsent: [] ]
+						ifFalse: [ filter configuration takeValue: value forAttribute: attribute ] ].
 			html submitButton with: 'Set Handler' ] ]
