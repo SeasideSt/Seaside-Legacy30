@@ -3,8 +3,8 @@ renderChatInputOn: html
 	html textArea
 		id: 'input';
 		callback: [ :value | self message: value ];
-		onEnter: (html request
+		onEnter: (html scriptaculous request
 			triggerFormElement: 'input';
-			onSuccess: (html formElement
+			onSuccess: (html scriptaculous formElement
 				id: 'input';
 				clear))
