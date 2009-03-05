@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testForkCometProcessDo
 	| semaphore seen |
 	semaphore := WAPlatform current semaphoreClass new.
