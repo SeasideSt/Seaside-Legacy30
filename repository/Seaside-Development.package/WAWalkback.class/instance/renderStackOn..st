@@ -1,4 +1,4 @@
-rendering-stack
+rendering
 renderStackOn: html
 	"Render the walkback itself"
 	
