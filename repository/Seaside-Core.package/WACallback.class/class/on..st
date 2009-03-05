@@ -1,3 +1,3 @@
-as yet unclassified
+instance creation
 on: aBlock
 	^ self new block: aBlock
