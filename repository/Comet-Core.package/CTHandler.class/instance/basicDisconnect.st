@@ -1,5 +1,5 @@
 private
 basicDisconnect
-	socket ifNil: [ ^ self ].
-	socket destroy.
-	socket := nil
+	response ifNil: [ ^ self ].
+	response destroy.
+	response := nil

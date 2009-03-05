@@ -1,4 +1,8 @@
 actions
 push: aString
-	socket ifNil: [ ^ false ].
-	^ socket pushData: aString
+	response isNil
+		ifTrue: [ ^ false ].
+	[ response nextPutAll: aString; flush ]
+		on: Error
+		do: [ :err | ^ false ].
+	^ true

@@ -8,9 +8,7 @@
 	"instvars" : [
 		"id",
 		"pusher",
-		"socket",
-		"session",
-		"context"
+		"response"
 	],
 	"name" : "CTHandler",
 	"type" : "normal"
