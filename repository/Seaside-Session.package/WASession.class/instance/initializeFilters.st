@@ -1,3 +1,3 @@
-initializing
+initialization
 initializeFilters
 	self addFilter: WAMutualExclusionFilter new
