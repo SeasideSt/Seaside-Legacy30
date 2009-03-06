@@ -1,5 +1,5 @@
-options
-containment: aString
-	"Constrains dragging to within the bounds of the specified element. Possible values: 'parent', 'document', jQuery String."
-
-	self optionAt: 'containment' put: aString
+options-generated
+containment: anElementOrStringOrSelector
+	"Constrains dragging to within the bounds of the specified element - can be a DOM element, 'parent', 'document', 'window', or a jQuery selector."
+	
+	self optionAt: 'containment' put: anElementOrStringOrSelector

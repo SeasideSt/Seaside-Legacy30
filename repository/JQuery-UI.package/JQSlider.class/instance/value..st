@@ -1,6 +1,5 @@
-actions
+options-generated
 value: aNumber
-	"Moves a slider's handle to the given position."
+	"Determines the value of the slider, if there's only one handle. If there is more than one handle, determines the value of the first handle."
 	
-	action := 'moveTo'.
-	arguments := Array with: aNumber
+	self optionAt: 'value' put: aNumber

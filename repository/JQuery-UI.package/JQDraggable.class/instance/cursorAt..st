@@ -1,5 +1,5 @@
-options
-cursorAt: aObjectOrArray
-	"Moves the dragging element/helper so the cursor always appears to drag from the same position. Coordinates can be given as a hash using a combination of the keys 'top', 'left', 'right', 'bottom'."
-
-	self optionAt: 'cursorAt' put: aObjectOrArray
+options-generated
+cursorAt: anObject
+	"Moves the dragging helper so the cursor always appears to drag from the same position. Coordinates can be given as a hash using a combination of one or two keys: <code>{ top, left, right, bottom }</code>."
+	
+	self optionAt: 'cursorAt' put: anObject

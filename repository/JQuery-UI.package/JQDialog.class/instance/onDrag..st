@@ -1,5 +1,5 @@
-events
+events-generated
 onDrag: anObject
-	"Callback for during the dialog being dragged."
-
+	"This event is triggered when the dialog is dragged."
+	
 	self optionAt: 'drag' put: anObject asFunction

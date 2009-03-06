@@ -1,5 +1,5 @@
-options
-animateDuration: aDuration
-	"Duration time for animating. Time in milliseconds or slow/normal/fast."
+options-generated
+animateDuration: anIntegerOrString
+	"Duration time for animating, in milliseconds. Other possible values: 'slow', 'normal', 'fast'."
 	
-	self optionAt: 'animateDuration' put: aDuration
+	self optionAt: 'animateDuration' put: anIntegerOrString

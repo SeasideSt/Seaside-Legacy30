@@ -1,5 +1,5 @@
-options
+options-generated
 handle: aSelectorOrElement
-	"See draggable options for an explanation."
-
+	"Restricts sort start click to the specified element."
+	
 	self optionAt: 'handle' put: aSelectorOrElement

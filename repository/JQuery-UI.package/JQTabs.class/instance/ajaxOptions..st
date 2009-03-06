@@ -1,5 +1,5 @@
-options
-ajaxOptions: aOptions
+options-generated
+ajaxOptions: anOptions
 	"Additional Ajax options to consider when loading tab content (see $.ajax)."
-
-	self optionAt: 'ajaxOptions' put: aOptions
+	
+	self optionAt: 'ajaxOptions' put: anOptions

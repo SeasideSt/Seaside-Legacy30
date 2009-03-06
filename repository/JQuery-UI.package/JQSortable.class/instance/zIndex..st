@@ -1,5 +1,5 @@
-options
+options-generated
 zIndex: anInteger
-	"z-index for element/helper while being sorted."
-
+	"Z-index for element/helper while being sorted."
+	
 	self optionAt: 'zIndex' put: anInteger

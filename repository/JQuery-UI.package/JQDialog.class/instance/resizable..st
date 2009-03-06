@@ -1,5 +1,5 @@
-options
+options-generated
 resizable: aBoolean
-	"Specifies whether the dialog will be resizeable. Possible values: ''true'', ''false''."
-
+	"If set to true, the dialog will be resizeable."
+	
 	self optionAt: 'resizable' put: aBoolean

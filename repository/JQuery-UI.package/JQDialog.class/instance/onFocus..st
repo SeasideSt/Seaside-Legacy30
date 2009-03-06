@@ -1,5 +1,5 @@
-events
+events-generated
 onFocus: anObject
-	"Callback for the dialogfocus event."
-
+	"This event is triggered when the dialog gains focus."
+	
 	self optionAt: 'focus' put: anObject asFunction

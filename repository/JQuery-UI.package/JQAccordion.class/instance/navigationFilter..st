@@ -1,5 +1,5 @@
-options
-navigationFilter: anObject
+options-generated
+navigationFilter: aFunction
 	"Overwrite the default location.href-matching with your own matcher."
-
-	self optionAt: 'navigationFilter' put: anObject asFunction
+	
+	self optionAt: 'navigationFilter' put: aFunction

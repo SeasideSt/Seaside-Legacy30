@@ -1,5 +1,5 @@
-events
+events-generated
 onEnable: anObject
-	"Function that gets called when a tab was enabled."
-
+	"This event is triggered when a tab is enabled."
+	
 	self optionAt: 'enable' put: anObject asFunction

@@ -1,5 +1,5 @@
-events
+events-generated
 onStop: anObject
-	"This function is called at the end of a resize operation."
+	"This event is triggered at the end of a resize operation."
 	
 	self optionAt: 'stop' put: anObject asFunction

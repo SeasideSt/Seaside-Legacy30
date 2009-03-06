@@ -1,5 +1,5 @@
-events
+events-generated
 onStop: anObject
-	"Function that gets called when dragging stops."
-
+	"This event is triggered when dragging stops."
+	
 	self optionAt: 'stop' put: anObject asFunction

@@ -1,5 +1,5 @@
-events
+events-generated
 onClose: anObject
-	"Callback for the close.dialog event."
-
+	"This event is triggered when the dialog is closed."
+	
 	self optionAt: 'close' put: anObject asFunction

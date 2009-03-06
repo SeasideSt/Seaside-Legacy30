@@ -1,5 +1,5 @@
-events
+events-generated
 onDisable: anObject
-	"Function that gets called when a tab was disabled."
-
+	"This event is triggered when a tab is disabled."
+	
 	self optionAt: 'disable' put: anObject asFunction

@@ -1,5 +1,5 @@
-options
-appendTo: aElementOrSelector
-	"For a draggable with a 'helper' specified, the matched element passed to 'appendTo' will be used as the helper's container. If not specified, the helper is appended to the same container as the draggable."
-
-	self optionAt: 'appendTo' put: aElementOrSelector
+options-generated
+appendTo: anElementOrSelector
+	"The element passed to or selected by the <code>appendTo</code> option will be used as the draggable helper's container during dragging. By default, the helper is appended to the same container as the draggable."
+	
+	self optionAt: 'appendTo' put: anElementOrSelector

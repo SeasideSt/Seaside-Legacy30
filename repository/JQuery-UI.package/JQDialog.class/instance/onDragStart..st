@@ -1,5 +1,5 @@
-events
+events-generated
 onDragStart: anObject
-	"Callback for the beginning of the dialog being dragged."
-
+	"This event is triggered at the beginning of the dialog being dragged."
+	
 	self optionAt: 'dragStart' put: anObject asFunction

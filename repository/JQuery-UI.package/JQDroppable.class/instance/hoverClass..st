@@ -1,5 +1,5 @@
-options
+options-generated
 hoverClass: aString
-	"The class that should be added to the droppable while being hovered by an acceptable draggable."
-
+	"If specified, the class will be added to the droppable while an acceptable draggable is being hovered."
+	
 	self optionAt: 'hoverClass' put: aString

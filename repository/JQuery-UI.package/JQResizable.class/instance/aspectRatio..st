@@ -1,5 +1,5 @@
-options
-aspectRatio: aNumberOrBoolean
-	"When set to true, resizing is constrained by the original aspect ratio. If an alternate ratio is desired, you can submit a number and then the aspect ratio will be constrained by height \ width."
+options-generated
+aspectRatio: aBooleanOrFloat
+	"If set to true, resizing is constrained by the original aspect ratio. Otherwise a custom aspect ratio can be specified, such as 9 / 16, or 0.5."
 	
-	self optionAt: 'aspectRatio' put: aNumberOrBoolean
+	self optionAt: 'aspectRatio' put: aBooleanOrFloat

@@ -1,5 +1,5 @@
-options
+options-generated
 scroll: aBoolean
-	"If true, container auto-scrolls while dragging."
-
+	"If set to true, container auto-scrolls while dragging."
+	
 	self optionAt: 'scroll' put: aBoolean

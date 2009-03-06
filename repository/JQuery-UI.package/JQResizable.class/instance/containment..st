@@ -1,5 +1,5 @@
-options
-containment: aQuery
-	"Constrains resizing to within the bounds of the specified element - can be a DOM element, 'parent', 'document' or a jQuery selector."
+options-generated
+containment: aStringOrElementOrSelector
+	"Constrains resizing to within the bounds of the specified element. Possible values: 'parent', 'document', a DOMElement, or a Selector."
 	
-	self optionAt: 'containment' put: aQuery
+	self optionAt: 'containment' put: aStringOrElementOrSelector

@@ -1,5 +1,5 @@
-options
+options-generated
 autoHide: aBoolean
-	"When set to true, automatically hides the handles except when the mouse hovers over the element."
+	"If set to true, automatically hides the handles except when the mouse hovers over the element."
 	
 	self optionAt: 'autoHide' put: aBoolean

@@ -1,5 +1,5 @@
-events
+events-generated
 onAdd: anObject
-	"Function that gets called when a tab was added."
-
+	"This event is triggered when a tab is added."
+	
 	self optionAt: 'add' put: anObject asFunction

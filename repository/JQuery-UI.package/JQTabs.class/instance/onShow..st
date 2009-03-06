@@ -1,5 +1,5 @@
-events
+events-generated
 onShow: anObject
-	"Function that gets called when a tab is shown."
-
+	"This event is triggered when a tab is shown."
+	
 	self optionAt: 'show' put: anObject asFunction

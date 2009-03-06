@@ -1,5 +1,5 @@
-events
+events-generated
 onStop: anObject
-	"Function that gets called when sorting has stopped."
-
+	"This event is triggered when sorting has stopped."
+	
 	self optionAt: 'stop' put: anObject asFunction

@@ -1,6 +1,6 @@
 actions
 remove: anInteger
-	"Remove a tab."
+	"Remove a tab. The second argument is the zero-based index of the tab to be removed."
 	
 	action := 'remove'.
 	arguments := Array with: anInteger

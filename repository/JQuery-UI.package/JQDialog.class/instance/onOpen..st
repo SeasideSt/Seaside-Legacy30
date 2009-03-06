@@ -1,5 +1,5 @@
-events
+events-generated
 onOpen: anObject
-	"Callback for the dialogopen event."
-
+	"This event is triggered when dialog is opened."
+	
 	self optionAt: 'open' put: anObject asFunction

@@ -1,4 +1,4 @@
-options
+options-generated
 minHeight: anInteger
 	"This is the minimum height the resizable should be allowed to resize to."
 	

@@ -1,5 +1,5 @@
 actions
 disable
-	"Temporarily disable the functionality."
+	"Disable the functionality."
 	
 	self action: 'disable'

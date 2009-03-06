@@ -1,5 +1,5 @@
-events
+events-generated
 onSelect: anObject
-	"Function that gets called when clicking a tab."
-
+	"This event is triggered when clicking a tab."
+	
 	self optionAt: 'select' put: anObject asFunction

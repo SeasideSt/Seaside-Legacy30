@@ -1,5 +1,5 @@
-options
+options-generated
 cursor: aString
-	"The css cursor for the helper during the drag operation."
-
+	"The css cursor during the drag operation."
+	
 	self optionAt: 'cursor' put: aString

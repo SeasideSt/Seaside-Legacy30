@@ -1,5 +1,5 @@
-events
+events-generated
 onStart: anObject
-	"Function that gets called when dragging starts."
-
+	"This event is triggered when dragging starts."
+	
 	self optionAt: 'start' put: anObject asFunction

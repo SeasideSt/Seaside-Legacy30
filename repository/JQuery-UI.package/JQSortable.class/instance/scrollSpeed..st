@@ -1,5 +1,5 @@
-options
+options-generated
 scrollSpeed: anInteger
-	"Defines how many pixels the page will scroll when coming to an edge."
-
+	"The speed at which the window should scroll once the mouse pointer gets within the scrollSensitivity distance."
+	
 	self optionAt: 'scrollSpeed' put: anInteger

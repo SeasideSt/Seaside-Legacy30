@@ -1,5 +1,5 @@
-events
+events-generated
 onStart: anObject
-	"Function that gets called when sorting starts."
-
+	"This event is triggered when sorting starts."
+	
 	self optionAt: 'start' put: anObject asFunction

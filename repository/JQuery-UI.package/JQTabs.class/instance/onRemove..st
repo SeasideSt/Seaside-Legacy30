@@ -1,5 +1,5 @@
-events
+events-generated
 onRemove: anObject
-	"Function that gets called when a tab was removed."
-
+	"This event is triggered when a tab is removed."
+	
 	self optionAt: 'remove' put: anObject asFunction

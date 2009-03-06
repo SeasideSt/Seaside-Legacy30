@@ -1,5 +1,5 @@
-options
+options-generated
 greedy: aBoolean
-	"If true, will prevent event propagation on nested droppables. Default value: false."
-
+	"If true, will prevent event propagation on nested droppables."
+	
 	self optionAt: 'greedy' put: aBoolean

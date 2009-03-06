@@ -1,5 +1,5 @@
-events
+events-generated
 onSort: anObject
-	"Function that gets called during sorting."
-
+	"This event is triggered during sorting."
+	
 	self optionAt: 'sort' put: anObject asFunction

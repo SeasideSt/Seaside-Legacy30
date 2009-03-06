@@ -1,5 +1,5 @@
-options
-snap: aBoolean
-	"If set to a selector or to true (same as selector '.ui-draggable'), the new draggable will snap to the edges of the selected elements when coming to an edge of the element."
-
-	self optionAt: 'snap' put: aBoolean
+options-generated
+snap: aBooleanOrSelector
+	"If set to a selector or to true (equivalent to '.ui-draggable'), the draggable will snap to the edges of the selected elements when near an edge of the element."
+	
+	self optionAt: 'snap' put: aBooleanOrSelector

@@ -1,5 +1,5 @@
-events
+events-generated
 onStart: anObject
-	"Function that gets called when the user starts sliding."
-
+	"This event is triggered when the user starts sliding."
+	
 	self optionAt: 'start' put: anObject asFunction

@@ -1,5 +1,5 @@
-options
+options-generated
 ghost: aBoolean
-	"When set to true, shows a substitute element when resizing."
+	"If set to true, a semi-transparent helper element is shown for resizing."
 	
 	self optionAt: 'ghost' put: aBoolean

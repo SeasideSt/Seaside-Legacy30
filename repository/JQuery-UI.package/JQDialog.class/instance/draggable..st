@@ -1,5 +1,5 @@
-options
+options-generated
 draggable: aBoolean
-	"When ''draggable'' is ''true'' the resulting dialog will be draggable. If ''false'' the dialog will not be draggable."
-
+	"If set to true, the dialog will be draggable will be draggable by the titlebar."
+	
 	self optionAt: 'draggable' put: aBoolean

@@ -1,5 +1,5 @@
-events
+events-generated
 onResizeStart: anObject
-	"Callback for the beginning of the dialog being resize."
-
+	"This event is triggered at the beginning of the dialog being resized."
+	
 	self optionAt: 'resizeStart' put: anObject asFunction

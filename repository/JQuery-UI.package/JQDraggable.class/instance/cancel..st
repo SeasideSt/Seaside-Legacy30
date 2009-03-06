@@ -1,5 +1,5 @@
-options
+options-generated
 cancel: aSelector
-	"Prevents dragging if you start on elements matching the selector."
-
+	"Prevents dragging from starting on specified elements."
+	
 	self optionAt: 'cancel' put: aSelector

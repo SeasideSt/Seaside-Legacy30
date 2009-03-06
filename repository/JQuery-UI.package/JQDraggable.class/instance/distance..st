@@ -1,5 +1,5 @@
-options
+options-generated
 distance: anInteger
-	"Tolerance, in pixels, for when dragging should start. If specified, dragging will not start until after mouse is dragged beyond distance."
-
+	"Distance in pixels after mousedown the mouse must move before dragging should start. This option can be used to prevent unwanted drags when clicking on an element."
+	
 	self optionAt: 'distance' put: anInteger

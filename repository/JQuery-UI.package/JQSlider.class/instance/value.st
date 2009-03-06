@@ -1,5 +1,5 @@
 actions
 value
-	"Retrieve handles value."
+	"Gets or sets the value of the slider. For single handle sliders."
 	
 	action := 'value'

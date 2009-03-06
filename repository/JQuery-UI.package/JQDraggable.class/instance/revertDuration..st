@@ -1,5 +1,5 @@
-options
+options-generated
 revertDuration: anInteger
-	"The duration of the revert animation. Since version 1.6 stable."
-
+	"The duration of the revert animation, in milliseconds. Ignored if revert is false."
+	
 	self optionAt: 'revertDuration' put: anInteger

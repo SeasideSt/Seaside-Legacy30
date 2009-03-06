@@ -1,4 +1,4 @@
-options
+options-generated
 animateEasing: aString
 	"Easing effect for animating."
 	
