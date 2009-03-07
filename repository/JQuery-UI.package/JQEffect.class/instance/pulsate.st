@@ -1,4 +1,4 @@
-effects-toggle
+effects
 pulsate
 	"Pulsates the opacity of the element multiple times."
 	
