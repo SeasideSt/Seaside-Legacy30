@@ -3,11 +3,11 @@ attribute: aKey with: aValue
 	aValue == false ifTrue: [ ^ self ].
 	html space.
 	html span
-		class: (self cssClassForAttribute: aKey);
+		class: 'wa-attribute-key';
 		with: aKey.
 	html text: '='.
 	html span
-		class: 'attribute-value';
+		class: 'wa-attribute-value';
 		with: [
 			html text: '"'.
 			(self knownRefs includes: aKey) 

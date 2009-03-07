@@ -1,3 +1,3 @@
 accessing
 selectorsToInclude
-	^ #( toolbarCss haloCss toolsCss )
+	^ #( developmentCss )

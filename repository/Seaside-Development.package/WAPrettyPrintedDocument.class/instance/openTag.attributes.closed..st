@@ -3,7 +3,7 @@ openTag: aString attributes: anAttributes closed: aBoolean
 	self indent.
 	html text: '<'.
 	html span
-		class: (self cssClassFor: aString);
+		class: 'wa-tag';
 		with: aString.
 	self attributes: anAttributes.
 	aBoolean

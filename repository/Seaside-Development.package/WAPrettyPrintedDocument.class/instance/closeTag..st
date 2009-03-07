@@ -4,5 +4,7 @@ closeTag: aString
 	indentCloseTags removeLast
 		ifTrue: [ self indent ].
 	html text: '</'.
-	html span class: (self cssClassFor: aString); with: aString.
+	html span 
+		class: 'wa-tag'; 
+		with: aString.
 	html text: '>'

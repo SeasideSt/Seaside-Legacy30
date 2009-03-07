@@ -7,7 +7,7 @@ source: html visitor: aPainterVisitor
 	things rolling. Rendering will then continue with the visitors in the context."
 	
 	| context |
-	html div class: 'halo-source'; with: [
+	html div class: 'wa-halo-source'; with: [
 		context := html context copy.
 		context disableHalos.
 
