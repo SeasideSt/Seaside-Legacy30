@@ -1,3 +1,0 @@
-accessing
-cssClass
-	^ 'configuration-plugin'

@@ -1,3 +1,3 @@
 accessing
 label
-	^ 'Toggle Halos'
+	^ 'Halos'
