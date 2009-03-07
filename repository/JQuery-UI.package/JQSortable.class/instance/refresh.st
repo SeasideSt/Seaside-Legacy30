@@ -2,4 +2,4 @@ actions
 refresh
 	"Refresh the sortable items."
 	
-	action := 'refresh'
+	self action: 'refresh'

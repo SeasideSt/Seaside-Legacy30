@@ -2,4 +2,4 @@ actions
 refresh
 	"Refresh the position and size of each selectee element."
 	
-	action := 'refresh'
+	self action: 'refresh'

@@ -1,5 +1,5 @@
-actions
+options-generated
 value: aNumber
-	"This method gets or sets the current value of the progressbar."
+	"The value of the progressbar."
 	
-	self action: 'value' arguments: (Array with: aNumber)
+	self optionAt: 'value' put: aNumber

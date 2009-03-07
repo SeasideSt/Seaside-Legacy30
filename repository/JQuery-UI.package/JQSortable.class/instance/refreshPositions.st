@@ -2,4 +2,4 @@ actions
 refreshPositions
 	"Refresh the cached positions of the sortables' items."
 	
-	action := 'refreshPositions'
+	self action: 'refreshPositions'
