@@ -1,3 +1,3 @@
 configuration
 menu
-	^ #(('http://www.seaside.st/' 'Seaside') ('http://jquery.com/' 'JQuery') ('http://ui.jquery.com/' 'JQuery UI') ('http://docs.jquery.com/UI' 'Documentation'))
+	^ #(('http://www.seaside.st/' 'Seaside') ('http://jquery.com/' 'jQuery') ('http://ui.jquery.com/' 'jQuery UI') ('http://docs.jquery.com/UI' 'Documentation'))

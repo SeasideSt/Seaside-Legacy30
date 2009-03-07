@@ -2,7 +2,7 @@ rendering
 renderContentOn: html
 	self renderBoxOn: html.
 	html paragraph class: 'actions'; with: [
-		#(green wide bold) do: [ :each |
+		#( green wide bold ) do: [ :each |
 			html anchor
 				onClick: ((html jQuery: '.box')
 					toggleClass: each

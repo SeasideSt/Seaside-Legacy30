@@ -1,3 +1,3 @@
 accessing
 selectors
-	^ #(renderContentOn: bounce: shake: highlight: shrink: grow: target:)
+	^ #(renderContentOn: bounce: highlight: pulsate: shake: size: transfer:)

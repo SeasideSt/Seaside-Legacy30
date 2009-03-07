@@ -21,3 +21,7 @@ tests
 			add: 'Toggle' -> JQToggleFunctionalTest new;
 			add: 'Transition' -> JQTransitionFunctionalTest new;
 			yourself)
+		with: 'Theming' -> (OrderedCollection new
+			add: 'Icons' -> JQIconsFunctionalTest new;
+			add: 'Visuals' -> JQVisualsFunctionalTest new;
+			yourself)
