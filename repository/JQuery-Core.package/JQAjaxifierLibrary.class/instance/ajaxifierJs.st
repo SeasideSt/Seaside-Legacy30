@@ -1,6 +1,6 @@
 uploads
 ajaxifierJs
-	^ '/* JQuery based Ajaxifier
+	^ '/* jQuery based Ajaxifier
  * Copyright (c) 2008 Lukas Renggli, renggli@gmail.com
  *
  * For additional documentation see:
