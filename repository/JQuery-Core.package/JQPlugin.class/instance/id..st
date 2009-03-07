@@ -1,3 +1,3 @@
 private
 id: aString
-	owner id: aString
+	self owner id: aString
