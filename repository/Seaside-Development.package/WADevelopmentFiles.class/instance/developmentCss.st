@@ -9,8 +9,8 @@ body {
 	right: 0;
 	bottom: 0;
 	z-index: 20;
-	padding: 2px;
 	position: fixed;
+	padding: 2px 4px;
 	background-color: #eee;
 	border-top: 1px solid #aaa;
 }
@@ -21,8 +21,7 @@ body {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 .wa-toolbar a {
-	padding-left: 3px;
-	padding-right: 3px;
+	padding-right: 4px;
 	text-decoration: none;
 }
 .wa-toolbar a:hover {
