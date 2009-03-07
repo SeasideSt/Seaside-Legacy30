@@ -4,8 +4,5 @@ renderContentOn: html
 		script: html jQuery new accordion;
 		with: [
 			self berries keysAndValuesDo: [ :name :description |
-				html heading
-					level: 3;
-					with: [ html anchor: name ].
-				html div: [ 
-					html paragraph: description ] ] ]
+				html div: [ html anchor: name ].
+				html div: [ html paragraph: description ] ] ]

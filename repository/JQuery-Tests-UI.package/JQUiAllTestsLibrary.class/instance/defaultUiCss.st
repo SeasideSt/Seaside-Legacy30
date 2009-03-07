@@ -1,4 +1,4 @@
-styles
+uploaded
 defaultUiCss
 	^ '/* colors */
 .blue { background-color: #68bfef; border: 2px solid #0090df; }

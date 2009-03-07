@@ -5,4 +5,5 @@ initialize
 	application
 		addLibrary: JQDeploymentLibrary;
 		addLibrary: JQUiDeploymentLibrary;
+		addLibrary: JQUiSmoothnessTheme;
 		addLibrary: JQUiAllTestsLibrary

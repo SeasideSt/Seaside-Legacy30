@@ -1,7 +1,7 @@
 rendering
 renderContentOn: html
 	html div
-		script: (html jQuery new tabs spinner: '');
+		script: html jQuery new tabs;
 		with: [
 			html unorderedList: [
 				self berries keysAndValuesDo: [ :name :description |

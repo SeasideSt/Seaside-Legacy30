@@ -1,3 +1,3 @@
 accessing
 selectorsToInclude
-	^ super selectorsToInclude , #(defaultUiCss themeCss)
+	^ super selectorsToInclude , #(defaultUiCss)
