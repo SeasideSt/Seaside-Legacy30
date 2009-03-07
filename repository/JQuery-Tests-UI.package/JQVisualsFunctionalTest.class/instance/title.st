@@ -1,3 +1,3 @@
 accessing
 title
-	^ 'Icons'
+	^ 'Visual Theming'
