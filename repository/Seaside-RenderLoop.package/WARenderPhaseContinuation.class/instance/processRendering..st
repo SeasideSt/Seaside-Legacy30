@@ -12,7 +12,7 @@ processRendering: aResponse
 	"Hook objects together"
 	renderContext
 		document: document;
-		actionUrl: actionContinuation registerForUrl;
+		actionUrl: (actionContinuation registerForUrl: false);
 		resourceUrl: self application resourceBaseUrl.
 	actionContinuation renderContext: renderContext.
 	htmlRoot := self createHtmlRootWithContext: renderContext.
