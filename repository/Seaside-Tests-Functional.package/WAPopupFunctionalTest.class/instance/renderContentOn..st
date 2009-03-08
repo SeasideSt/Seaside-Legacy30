@@ -23,4 +23,11 @@ renderContentOn: html
 		html popupAnchor
 			resizable: false;
 			callback: [ self calendarLoop ];
-			with: 'popup not resizable' ]
+			with: 'popup not resizable'.
+		html break.
+		html popupAnchor
+			resizable: false;
+			extent: 300 @ 300;
+			position: 50 @ 50;
+			callback: [ self popupCloseTest  ];
+			with: 'popup with close button']
