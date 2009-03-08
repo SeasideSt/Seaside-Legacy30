@@ -1,3 +1,3 @@
 actions
 popupCloseTest
-	self session presenter show: WAPopupCloseFunctionalTest new
+	self session presenter show: WAPopupCloseTestComponent new
