@@ -1,4 +1,4 @@
 updating
 updateUrl: aUrl
 	super updateUrl: aUrl.
-	aUrl addToPath: contents title asLowercase
+	aUrl addToPath: (self pathFor: contents title)

@@ -3,5 +3,5 @@ initialRequest: aRequest
 	super initialRequest: aRequest.
 	tests do: [ :category |
 		category value do: [ :entry |
-			aRequest url path last = entry value title asLowercase
+			(self pathFor: entry value title) = aRequest url path last
 				ifTrue: [ contents := entry value ] ] ]
