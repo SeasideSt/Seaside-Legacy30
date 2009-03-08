@@ -10,4 +10,5 @@ renderTestsOn: html
 						with: [ 
 							html anchor
 								callback: [ contents := titleAndClass value ];
+								extraPath: (self pathFor: titleAndClass value title);
 								with: titleAndClass key ] ] ] ] ]
