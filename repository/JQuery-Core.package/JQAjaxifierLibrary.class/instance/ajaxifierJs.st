@@ -11,25 +11,24 @@ ajaxifierJs
 $(function () {
 	
 	// constants
-	var HEAD_EXTRACTOR = /<head[^>]*>(.*)<\/head>/im;
-	var BODY_EXTRACTOR = /<body[^>]*>(.*)<\/body>/im;
+	var HEAD_EXTRACTOR = /<head[^>]*>((.|\s)*?)<\/head>/im;
+	var BODY_EXTRACTOR = /<body[^>]*>((.|\s)*?)<\/body>/im;
 	var SCRIPT_EXTRACTOR = /<script(.|\s)*?\/script>/ig;
-	
+
 	// ajax action
 	function load(type, url, data) {
+		var url = url + (type == "GET" ? "&_n" : "");
 		$.ajax({
 			type: type, url: url, data: data,
 			beforeSend: function (xhr) {
 				xhr.setRequestHeader("X-Requested-With", "Ajaxifier");
 			},
-			complete: function (response, status) {
-				if (status == "success" || status == "notmodified") {
-					$("head").html(HEAD_EXTRACTOR
-						.exec(response.responseText)[1]
-						.replace(SCRIPT_EXTRACTOR, ""));
-					$("body").html(BODY_EXTRACTOR
-						.exec(response.responseText)[1]);
-				}
+			success: function (data) {
+				$("head").html(HEAD_EXTRACTOR
+					.exec(data)[1]
+					.replace(SCRIPT_EXTRACTOR, ""));
+				$("body").html(BODY_EXTRACTOR
+					.exec(data)[1]);
 			}
 		});
 	}
