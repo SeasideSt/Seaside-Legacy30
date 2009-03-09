@@ -9,6 +9,7 @@ renderTestsOn: html
 						class: 'active' if: contents = titleAndClass value;
 						with: [ 
 							html anchor
+								useBaseUrl;
 								callback: [ contents := titleAndClass value ];
 								extraPath: (self pathFor: titleAndClass value title);
 								with: titleAndClass key ] ] ] ] ]
