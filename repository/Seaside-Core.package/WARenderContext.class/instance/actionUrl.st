@@ -1,5 +1,5 @@
 accessing
 actionUrl
-	"Answer the value of actionUrl"
+	"Answer the action URL that was modified by #updateUrl:."
 
 	^ actionUrl
