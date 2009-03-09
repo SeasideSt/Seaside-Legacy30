@@ -1,6 +1,6 @@
 processing
 processRendering: aResponse 
-	| document htmlRoot renderContext actionContinuation |
+	| document actionContinuation renderContext actionUrl actionBaseUrl htmlRoot |
 	"Prepare the response"
 	aResponse contentType: self application contentType.
 
@@ -9,10 +9,16 @@ processRendering: aResponse
 	actionContinuation := self createActionContinuation.
 	renderContext := self createRenderContext.
 	
+	"Create URL"
+	actionUrl := actionContinuation registerForUrl: false.
+	actionBaseUrl := actionUrl copy.
+	self updateUrl: actionUrl.
+
 	"Hook objects together"
 	renderContext
 		document: document;
-		actionUrl: (actionContinuation registerForUrl: false);
+		actionUrl: actionUrl;
+		actionBaseUrl: actionBaseUrl;
 		resourceUrl: self application resourceBaseUrl.
 	actionContinuation renderContext: renderContext.
 	htmlRoot := self createHtmlRootWithContext: renderContext.
