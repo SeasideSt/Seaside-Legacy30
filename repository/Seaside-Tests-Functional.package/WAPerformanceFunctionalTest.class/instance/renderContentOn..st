@@ -10,7 +10,9 @@ renderContentOn: html
 	self renderFormOn: html.
 	self renderIdTestOn: html.
 	self renderTextOn: html.
+	self renderHtmlTextOn: html.
 	self renderHtmlOn: html.
+	self renderBreakOn: html.
 	
 	html div style: 'clear:both'.
-	html heading level: 2; with: 'Duration: ', duration asString, ' ms'
+	html heading level: 2; with: 'Performance Index: ', duration asString

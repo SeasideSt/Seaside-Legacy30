@@ -1,7 +1,7 @@
 rendering
 renderTextOn: canvas
-	self renderDurationFor: [:html | 
-			html heading: 'Text Rendering Test'.
-			1 to: 1000 do: [ :each | 
-				html text: 'abcdefghijklmnopqrstuvwxyz<>öüä?ß@#!"§$%&/()="'.
-				]  ] on: canvas
+	self renderDurationFor: [:html :idx | | id1 |
+			html text: 'abcdefghijklmnopqrstuvwxyz0123456789' ]
+		title: 'Seaside Text Rendering Test'
+		on: canvas
+		

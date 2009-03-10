@@ -1,9 +1,9 @@
 rendering
-renderHtmlOn: canvas
+renderBreakOn: canvas
 	self renderDurationFor: [:html :idx | | id1 |
-			html html: '<br/>' ]
+			html break]
 		factor: 1/100
-		title: 'Pure (br) Rendering Test'
+		title: 'Seaside (br) Rendering Test'
 		on: canvas
 		
 	

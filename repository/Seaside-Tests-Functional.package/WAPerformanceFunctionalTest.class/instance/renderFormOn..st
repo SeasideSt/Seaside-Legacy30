@@ -1,8 +1,6 @@
 rendering
 renderFormOn: canvas
-	self renderDurationFor: [:html | 
-		html heading: 'Form Test'.
-		1 to: 100 do: [:each | 
+	self renderDurationFor: [:html :idx | 
 			html form: [
 				html button value: 'OK'.
 				html submitButton value: 'Submit'.
@@ -17,4 +15,6 @@ renderFormOn: canvas
 						columns: 17;
 						value: ''.
 				html checkbox value: true.
-				html passwordInput value: 'pw' ] ] ] on: canvas
+				html passwordInput value: 'pw' ]  ] 
+		title: 'Form test'
+		on: canvas

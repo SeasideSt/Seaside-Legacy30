@@ -1,11 +1,11 @@
 rendering
 renderAnchorsOn: canvas
-	self renderDurationFor: [:html | 
-		html heading: 'Anchor Test'.
+	self renderDurationFor: [:html :idx | 
 		html unorderedList: [
-			1 to: 500 do: [ :each | 
-				html listItem: [
+			html listItem: [
 					html anchor
-						name: each seasideString;
+						name: idx seasideString;
 						callback: [];
-						with: each ] ] ] ] on: canvas
+						with: idx ] ] ]
+		title: 'Anchor Test'
+		on: canvas
