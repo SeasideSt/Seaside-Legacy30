@@ -1,3 +1,3 @@
 accessing
 selectors
-	^ #(renderContentOn:)
+	^ #(renderContentOn: renderIconsOn:)

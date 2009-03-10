@@ -1,16 +1,13 @@
 rendering
 renderContentOn: html
 	html unorderedList
-		id: 'icons';
+		class: 'icons';
 		class: 'ui-widget';
 		class: 'ui-helper-clearfix';
-		with: [
-			self iconClasses do: [:each |
-				html listItem
-					class: 'ui-state-default';
-					class: 'ui-corner-all';
-					title: '.',each;
-					with: [html span
-							class: 'ui-icon';
-							class: each] ] ]
-	
+		script: (html jQuery new
+			find: 'li';
+			hover: (html jQuery new 
+				addClass: 'ui-state-hover')
+			out: (html jQuery new
+				removeClass: 'ui-state-hover'));
+		with: [ self renderIconsOn: html ]
