@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"duration"
+		"duration",
+		"referenceDict"
 	],
 	"name" : "WAPerformanceFunctionalTest",
 	"type" : "normal"

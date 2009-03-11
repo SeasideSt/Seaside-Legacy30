@@ -4,6 +4,7 @@ renderIdTestOn: canvas
 			id1 := html nextId.
 			html span id: id1; with: id1.
 			html break ]
-		title: 'ID''s Test' on: canvas
+		key: #id 
+		on: canvas
 		
 	

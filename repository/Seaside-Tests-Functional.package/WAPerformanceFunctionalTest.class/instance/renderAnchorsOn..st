@@ -7,5 +7,5 @@ renderAnchorsOn: canvas
 						name: idx seasideString;
 						callback: [];
 						with: idx ] ] ]
-		title: 'Anchor Test'
+		key: #anchor
 		on: canvas

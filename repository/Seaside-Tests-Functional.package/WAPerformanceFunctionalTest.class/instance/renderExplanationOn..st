@@ -1,8 +1,3 @@
 rendering
 renderExplanationOn: html
-	html paragraph: [
-		html text: 'This test serves two purposes:'.
-		html orderedList: [
-			html listItem: 'Test rendering speed'.
-			html listItem: 'Test all different html elements'.
-			] ]
+	html paragraph: 'Test rendering speed (Reference: Intel Core 2 Duo E6750, Pharo Image)'
