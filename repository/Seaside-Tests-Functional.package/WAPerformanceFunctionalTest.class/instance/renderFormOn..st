@@ -16,5 +16,5 @@ renderFormOn: canvas
 						value: ''.
 				html checkbox value: true.
 				html passwordInput value: 'pw' ]  ] 
-		title: 'Form test'
+		title: 'Form Test'
 		on: canvas

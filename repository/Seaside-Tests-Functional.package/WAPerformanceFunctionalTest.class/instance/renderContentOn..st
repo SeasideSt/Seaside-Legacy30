@@ -11,8 +11,8 @@ renderContentOn: html
 	self renderIdTestOn: html.
 	self renderTextOn: html.
 	self renderHtmlTextOn: html.
-	self renderHtmlOn: html.
 	self renderBreakOn: html.
+	self renderHtmlOn: html.
 	
 	html div style: 'clear:both'.
 	html heading level: 2; with: 'Performance Index: ', duration asString
