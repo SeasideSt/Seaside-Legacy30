@@ -1,4 +1,4 @@
 printing
 printContentOn: aStream
 	super printContentOn: aStream.
-	JSStream encodeArguments: arguments on: aStream
+	aStream arguments: arguments

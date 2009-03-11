@@ -1,9 +1,7 @@
 accessing
 arguments
 	| arguments |
-	arguments := OrderedCollection 
-		with: self selectorUrl
-		with: self data.
+	arguments := OrderedCollection with: self javascriptUrl.
 	self options
 		at: 'complete'
 		ifPresent: [ :value | arguments add: value ].

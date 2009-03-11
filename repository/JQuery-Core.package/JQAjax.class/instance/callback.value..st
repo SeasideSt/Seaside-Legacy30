@@ -4,5 +4,4 @@ callback: aBlock value: anObject
 
 	self enableCallbacks.
 	self addParameter: (owner canvas callbacks
-		store: (WAValueCallback on: aBlock)) 
-			-> anObject
+		registerValueCallback: aBlock) -> anObject

@@ -1,10 +1,10 @@
 private
 iteratorFor: anObject return: aBoolean
-	| result |
+	| this |
 	anObject isBlock
 		ifFalse: [ ^ anObject asFunction return: true ].
-	result := (JQueryClass on: canvas) this.
+	this := (JQueryClass on: canvas) this.
 	anObject numArgs = 1
-		ifTrue: [ anObject value: result ]
-		ifFalse: [ anObject value: result value: (JSStream argument: 0) ].
-	^ result asFunction return: aBoolean
+		ifTrue: [ anObject value: this ]
+		ifFalse: [ anObject value: this value: (JSStream argument: 0) ].
+	^ this asFunction return: aBoolean

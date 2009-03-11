@@ -1,4 +1,3 @@
 printing
 printOn: aStream
-	aStream javascript: self owner; nextPut: $.; nextPutAll: self method.
-	JSStream encodeArguments: self arguments on: aStream
+	aStream javascript: owner; nextPut: $.; nextPutAll: self method; arguments: self arguments

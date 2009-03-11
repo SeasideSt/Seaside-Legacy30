@@ -1,4 +1,4 @@
-deprecated
+agent
 isSafari
 	"A boolean if the rendering engine is Safari."
 	

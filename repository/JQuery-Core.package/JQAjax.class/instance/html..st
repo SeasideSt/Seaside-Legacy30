@@ -5,10 +5,8 @@ html: aBlock
 	aBlock fixCallbackTemps.
 	self dataType: 'html'.
 	self callback: [
-		| context |
-		context := self requestContext.
-		context response
-			doNotCache;
-			contentType: self application contentType.
-		owner render: aBlock on: context response stream.
-		context respond ]
+		| response |
+		response := WAResponse new.
+		response contentType: self application contentType.
+		owner render: aBlock on: response contents.
+		owner requestContext respond: response ]
