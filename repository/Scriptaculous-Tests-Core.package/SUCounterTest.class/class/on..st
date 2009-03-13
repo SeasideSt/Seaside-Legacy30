@@ -1,3 +1,3 @@
 instance creation
 on: anInteger
-	^ self basicNew initialize; initializeOn: anInteger; yourself
+	^ self basicNew initializeOn: anInteger; yourself
