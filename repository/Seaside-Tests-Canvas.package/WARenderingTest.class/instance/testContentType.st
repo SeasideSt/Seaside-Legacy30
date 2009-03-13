@@ -2,9 +2,9 @@ testing
 testContentType
 	self
 		assert: [ :html |
-			html meta contentType: 'application/xhml+xml' seasideMimeType  ]
-		gives: '<title></title><meta http-equiv="Content-Type" content="application/xhml+xml"/>'.
+			html meta contentType: 'application/xhtml+xml' seasideMimeType  ]
+		gives: '<title></title><meta http-equiv="Content-Type" content="application/xhtml+xml"/>'.
 	self
 		assert: [ :html |
-			html meta contentType: 'application/xhml+xml'  ]
-		gives: '<title></title><meta http-equiv="Content-Type" content="application/xhml+xml"/>'
+			html meta contentType: 'application/xhtml+xml'  ]
+		gives: '<title></title><meta http-equiv="Content-Type" content="application/xhtml+xml"/>'
