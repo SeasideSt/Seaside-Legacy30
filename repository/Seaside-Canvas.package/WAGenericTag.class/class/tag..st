@@ -1,3 +1,3 @@
 instance creation
 tag: aString
-	^ self new initializeWithTag: aString
+	^ self basicNew initializeWithTag: aString; yourself
