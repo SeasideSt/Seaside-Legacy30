@@ -1,4 +1,4 @@
-*seaside-tests-core
+testing
 testRequestContext
 	| context |
 	self should: [ WAObject new requestContext ] raise: WARequestContextNotFound.
