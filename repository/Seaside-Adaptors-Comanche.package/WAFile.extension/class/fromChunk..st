@@ -1,3 +1,3 @@
 *seaside-adaptors-comanche
 fromChunk: aChunk
-	^ self new initializeFromChunk: aChunk
+	^ self basicNew initializeFromChunk: aChunk; yourself
