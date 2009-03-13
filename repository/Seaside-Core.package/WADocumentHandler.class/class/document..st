@@ -1,3 +1,3 @@
 instance creation
 document: anObject
-	^ self new initializeOn: anObject seasideMimeDocument
+	^ self basicNew initializeOn: anObject seasideMimeDocument; yourself

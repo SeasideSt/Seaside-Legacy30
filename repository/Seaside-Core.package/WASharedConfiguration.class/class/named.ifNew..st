@@ -6,9 +6,8 @@ named: aString ifNew: anUnaryBlock
 		detect: [ :each | each name = aString ]
 		ifNone: [
 			| config |
-			config := self basicNew 
-				initialize;
-				initializeName: aString;
+			config := self basicNew
+				initializeWithName: aString;
 				yourself.
 			anUnaryBlock value: config.
 			instances add: config.
