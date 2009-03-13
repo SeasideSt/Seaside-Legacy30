@@ -1,11 +1,12 @@
 rendering
 renderAnchorsOn: canvas
-	self renderDurationFor: [:html :idx | 
+	self renderInline: [:html | 
 		html unorderedList: [
 			html listItem: [
 					html anchor
-						name: idx seasideString;
+						name: 'name';
 						callback: [];
-						with: idx ] ] ]
+						with: 'Anchor' ] ] ]
+		factor: 1
 		key: #anchor
 		on: canvas

@@ -1,7 +1,7 @@
 rendering
 renderScriptOn: canvas
 	self
-		renderDurationFor: [:html :idx | 
+		renderInline: [:html | 
 				html script: 'self.close()']
 		key: #script
 		on: canvas

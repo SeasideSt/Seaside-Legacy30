@@ -1,6 +1,6 @@
 rendering
 renderTableOn: canvas
-	self renderDurationFor: [:html :idx | 
-				html table: [html tableRow: [ html tableData with: idx ] ] ] 
+	self renderInline: [:html | 
+				html table: [html tableRow: [ html tableData with: 'data' ] ] ] 
 		key: #table
 		on: canvas

@@ -1,6 +1,6 @@
 rendering
 renderNativeBreakOn: canvas
-	self renderDurationFor: [:html :idx | | id1 |
+	self renderInline: [:html |
 			html html: '<br/>' ]
 		factor: 1/50
 		key: #nativeBR

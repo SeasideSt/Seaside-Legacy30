@@ -1,6 +1,6 @@
 rendering
 renderBreakOn: canvas
-	self renderDurationFor: [:html :idx | | id1 |
+	self renderInline: [:html | 
 			html break]
 		factor: 1/50
 		key: #seasideBR

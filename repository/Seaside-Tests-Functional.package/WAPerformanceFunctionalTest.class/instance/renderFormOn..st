@@ -1,6 +1,6 @@
 rendering
 renderFormOn: canvas
-	self renderDurationFor: [:html :idx | 
+	self renderInline: [:html | 
 			html form: [
 				html button value: 'OK'.
 				html fileUpload.

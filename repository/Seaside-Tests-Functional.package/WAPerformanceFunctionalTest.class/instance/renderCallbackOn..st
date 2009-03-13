@@ -1,6 +1,6 @@
 rendering
 renderCallbackOn: canvas
-	self renderDurationFor: [:html :idx | 
+	self renderInline: [:html | 
 			html button callback: []; with: '' ]
 		key: #callback
 		on: canvas
