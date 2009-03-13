@@ -6,8 +6,5 @@ urlKeyFromContext: aRequestContext ifAbsent: absentBlock
 	| keyString |
 	keyString := aRequestContext request at: self keyField ifAbsent: [ ^ absentBlock value ].
 	^ (keyString isString not and: [ keyString isSequenceable ])
-		ifTrue: [ 
-			keyString isEmpty
-				ifTrue: [ absentBlock value ]
-				ifFalse: [ keyString first ] ]
+		ifTrue: [ keyString first ]
 		ifFalse: [ keyString ]

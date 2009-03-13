@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "pmm 9/1/2008 13:27",
+	"super" : "WAPlatformObject",
+	"category" : "Seaside-Core-Utilities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAObject",
+	"type" : "normal"
+}

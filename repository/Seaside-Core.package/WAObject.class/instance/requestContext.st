@@ -1,4 +1,4 @@
-*seaside-core
+dynamic variables
 requestContext
 	"Answer the current WARequestContext instance."
 
