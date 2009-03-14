@@ -1,4 +1,4 @@
 private
 handleException: anException debuggerSimulation: debugBlock
-	debugBlock ifCurtailed: [^  #aborted].
+	debugBlock value.
 	anException resume

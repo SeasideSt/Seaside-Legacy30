@@ -6,4 +6,4 @@ testMechanismAbort
 	self
 		simulateWithDebugBlock: [Processor activeProcess terminate]
 		progress: #(a c d)
-		result: #aborted
+		result: nil
