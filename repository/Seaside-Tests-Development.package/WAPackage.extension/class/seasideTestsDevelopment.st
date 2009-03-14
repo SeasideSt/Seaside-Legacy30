@@ -4,5 +4,5 @@ seasideTestsDevelopment
 		name: 'Seaside-Tests-Development';
 		description: 'Unit tests for the package Seaside-Development.';
 		addDependency: 'Seaside-Development';
-		addDependency: 'Seaside-Tests-WebTools';
+		addDependency: 'Seaside-Tests-Tools-Web';
 		yourself
