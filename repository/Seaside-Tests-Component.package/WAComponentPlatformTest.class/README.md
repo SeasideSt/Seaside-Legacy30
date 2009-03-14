@@ -1,1 +1,0 @@
-Tests of Platform methods required specifically by the Component package.
