@@ -5,4 +5,4 @@ assertCookieAddition: aResponse
 	cookie := aResponse cookies first.
 	self assert: cookie path = self path.
 	self assert: cookie key = self cookieKey.
-	self assert: cookie discard = true
+	self assert: cookie discard
