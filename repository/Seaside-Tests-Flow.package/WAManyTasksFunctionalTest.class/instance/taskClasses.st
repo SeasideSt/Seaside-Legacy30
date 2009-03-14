@@ -1,3 +1,3 @@
 accessing
 taskClasses
-	^ WATask allSubclasses
+	^ WATask allSubclasses select: [:each | each subclasses isEmpty]
