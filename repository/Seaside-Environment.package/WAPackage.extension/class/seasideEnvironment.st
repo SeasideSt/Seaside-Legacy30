@@ -2,7 +2,8 @@
 seasideEnvironment
 	^ self new
 		name: 'Seaside-Environment';
-		description: 'Administrative tools, useful to have for productive and development environments.';
+		description: 'The standard Seaside distribution environment. This package can depend on all other code packages as needed.';
+		addDependency: 'Seaside-Tools-Core';
 		addDependency: 'Seaside-Core';
 		addDependency: 'Seaside-Component';
 		addDependency: 'Seaside-RenderLoop';
