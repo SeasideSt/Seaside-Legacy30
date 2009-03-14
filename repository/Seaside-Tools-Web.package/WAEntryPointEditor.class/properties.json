@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "WAHandlerEditor",
+	"category" : "Seaside-Tools-Web",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"configurationEditor"
+	],
+	"name" : "WAEntryPointEditor",
+	"type" : "normal"
+}

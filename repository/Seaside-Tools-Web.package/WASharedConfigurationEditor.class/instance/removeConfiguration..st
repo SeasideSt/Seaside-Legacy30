@@ -1,0 +1,3 @@
+actions
+removeConfiguration: aConfiguration
+	aConfiguration unregister
