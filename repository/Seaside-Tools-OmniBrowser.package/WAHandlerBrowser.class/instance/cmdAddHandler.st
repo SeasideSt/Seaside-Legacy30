@@ -1,0 +1,3 @@
+commands
+cmdAddHandler
+	^ WACmdAddHandler instances

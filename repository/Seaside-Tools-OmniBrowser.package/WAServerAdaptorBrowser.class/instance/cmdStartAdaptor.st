@@ -1,0 +1,3 @@
+commands
+cmdStartAdaptor
+	^ WACmdStartAdaptor

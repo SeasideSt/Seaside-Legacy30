@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WACmdMode",
+	"category" : "Seaside-Tools-OmniBrowser-Commands",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WACmdModeDebug",
+	"type" : "normal"
+}

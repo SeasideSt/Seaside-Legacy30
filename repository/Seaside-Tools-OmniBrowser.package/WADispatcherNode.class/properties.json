@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WAEntryPointNode",
+	"category" : "Seaside-Tools-OmniBrowser",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WADispatcherNode",
+	"type" : "normal"
+}

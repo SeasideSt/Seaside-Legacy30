@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "OBCommand",
+	"category" : "Seaside-Tools-OmniBrowser-Commands",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"type"
+	],
+	"name" : "WACmdAddHandler",
+	"type" : "normal"
+}

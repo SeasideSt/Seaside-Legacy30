@@ -1,0 +1,3 @@
+commands
+cmdBrowseRequestHandler
+	^ WACmdBrowseRequestHandler
