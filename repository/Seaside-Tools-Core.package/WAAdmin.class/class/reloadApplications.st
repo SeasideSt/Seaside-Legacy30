@@ -1,0 +1,6 @@
+development
+reloadApplications
+	WADispatcher resetDefault.
+	WASystemConfiguration clearAllDescriptions.
+	self registerDefaultRequestHandlers.
+	self registerDefaultComponents

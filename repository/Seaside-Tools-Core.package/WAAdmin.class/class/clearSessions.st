@@ -1,0 +1,3 @@
+development
+clearSessions
+	WARegistry clearAll
