@@ -1,3 +1,3 @@
 private
 defaultDispatcher
-	^ WADispatcher default
+	^ WAAdmin defaultDispatcher

@@ -2,7 +2,6 @@ testing
 testDefaultRoot
 	| app |
 	app := self defaultDispatcher.
-	self assert: app == WADispatcher default.
 	self assert: app class == WADispatcher.
 	self assert: app isDispatcher.
 	self assert: app isRoot.
