@@ -1,3 +1,3 @@
 instance creation
 new
-	^ self on: WADispatcher default
+	^ self on: WAAdmin defaultDispatcher
