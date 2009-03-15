@@ -1,0 +1,4 @@
+class initialization
+configureApplicationExceptionHandlingDefaults
+	WAAdmin applicationExceptionHandlingDefaults
+			at: #exceptionHandler put: WAHtmlErrorHandler
