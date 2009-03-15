@@ -4,4 +4,5 @@ seasideTestsCore
 		name: 'Seaside-Tests-Core';
 		description: 'Unit tests for the package Seaside-Core.';
 		addDependency: 'Seaside-Core';
+		addDependency: 'Seaside-Tests-Platform';
 		yourself
