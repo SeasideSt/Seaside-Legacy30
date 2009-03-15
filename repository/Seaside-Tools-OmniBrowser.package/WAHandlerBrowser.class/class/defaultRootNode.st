@@ -1,3 +1,3 @@
 configuration
 defaultRootNode
-	^ WADispatcher default asNode
+	^ WAAdmin defaultDispatcher asNode
