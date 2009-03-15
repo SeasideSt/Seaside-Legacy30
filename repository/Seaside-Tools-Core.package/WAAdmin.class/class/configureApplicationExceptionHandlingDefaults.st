@@ -1,0 +1,4 @@
+initialization
+configureApplicationExceptionHandlingDefaults
+	self applicationExceptionHandlingDefaults
+		addParent: WAExceptionFilterConfiguration instance

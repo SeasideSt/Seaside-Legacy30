@@ -1,3 +1,3 @@
-private
+configuration
 defaultDispatcher
 	^ WADispatcher default

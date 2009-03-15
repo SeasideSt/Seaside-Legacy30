@@ -1,3 +1,5 @@
 initialization
 initialize
-	self reloadApplications
+	self clearAll.
+	self configureApplicationDefaults.
+	self configureApplicationExceptionHandlingDefaults
