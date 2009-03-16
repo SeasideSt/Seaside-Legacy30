@@ -1,3 +1,8 @@
 configuration
 applicationDefaults
-	^ WASharedConfiguration named: 'Application Defaults'
+	| config |
+	config := WASharedConfiguration named: 'Application Defaults'.
+	(configuredApplicationDefaults ifNil: [ false ]) ifFalse: [
+		self configureApplicationDefaults: config.
+		configuredApplicationDefaults := true ].
+	^ config

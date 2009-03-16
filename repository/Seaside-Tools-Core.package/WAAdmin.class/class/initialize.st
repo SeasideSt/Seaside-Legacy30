@@ -1,5 +1,0 @@
-initialization
-initialize
-	self clearAll.
-	self configureApplicationDefaults.
-	self configureApplicationExceptionHandlingDefaults

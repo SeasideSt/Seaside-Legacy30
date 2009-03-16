@@ -1,4 +1,0 @@
-initialization
-configureApplicationDefaults
-	WAAdmin applicationDefaults
-		addParent: WARenderLoopConfiguration instance
