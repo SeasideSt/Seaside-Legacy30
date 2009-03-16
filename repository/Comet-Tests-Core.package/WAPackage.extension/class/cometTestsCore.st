@@ -2,7 +2,7 @@
 cometTestsCore
 	^ self new
 		name: 'Comet-Tests-Core';
-		description: 'Unit tests for the Comet-Tests-Core package.';
+		description: 'Unit tests for the Comet-Core package.';
 		addDependency: 'Comet-Core';
 		addDependency: 'Seaside-Tests-Core';
 		yourself
