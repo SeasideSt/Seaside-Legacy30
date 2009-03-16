@@ -1,10 +1,9 @@
 rendering-chat
 renderChatInputOn: html
 	html textArea
-		id: 'input';
+		id: #input;
 		callback: [ :value | self message: value ];
-		onEnter: (html scriptaculous request
-			triggerFormElement: 'input';
-			onSuccess: (html scriptaculous formElement
-				id: 'input';
-				clear))
+		onEnter: (html jQuery ajax
+			onSuccess: ((html jQuery: #input) 
+				value: nil);
+			serializeThis)

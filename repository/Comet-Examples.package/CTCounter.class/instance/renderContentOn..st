@@ -1,17 +1,18 @@
 rendering
 renderContentOn: html
 	html heading
-		id: 'count';
+		id: #count;
 		with: self model count.
-	html anchor
-		onClick: (html scriptaculous request 
-			callback: [ self increase ]);
-		with: '++'.
-	html space.
-	html anchor
-		onClick: (html scriptaculous request
-			callback: [ self decrease ]);
-		with: '--'.
+	html paragraph: [
+		html anchor
+			onClick: (html jQuery ajax
+				callback: [ self decrease ]);
+			with: 'dec'.
+		html space; space; space.
+		html anchor
+			onClick: (html jQuery ajax
+				callback: [ self increase ]);
+			with: 'inc' ].
 	html script: (html comet
 		pusher: self pusher;
 		connect)

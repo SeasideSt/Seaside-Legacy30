@@ -3,4 +3,4 @@ initialize
 	| application |
 	application := self registerAsApplication: 'comet/chat'.
 	application preferenceAt: #sessionClass put: CTChatSession.
-	application addLibrary: SUDeploymentLibrary; addLibrary: CTLibrary
+	application addLibrary: JQDeploymentLibrary; addLibrary: CTLibrary
