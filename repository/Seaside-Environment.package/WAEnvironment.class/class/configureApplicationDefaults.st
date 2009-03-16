@@ -1,4 +1,7 @@
 class initialization
 configureApplicationDefaults
-	WAAdmin applicationDefaults
-		at: #responseGenerator put: WAHtmlResponseGenerator
+	(configuredApplicationDefaults ifNil: [ false ]) ifFalse: [
+		WAAdmin applicationDefaults
+			at: #responseGenerator put: WAHtmlResponseGenerator.
+		configuredApplicationDefaults := true ].
+	

@@ -1,4 +1,7 @@
 class initialization
 configureApplicationExceptionHandlingDefaults
-	WAAdmin applicationExceptionHandlingDefaults
-			at: #exceptionHandler put: WAHtmlErrorHandler
+	(configuredExceptionHandlingDefaults ifNil: [ false ]) ifFalse: [
+		WAAdmin applicationExceptionHandlingDefaults
+			at: #exceptionHandler put: WAHtmlErrorHandler.
+		configuredExceptionHandlingDefaults := true ].
+	
