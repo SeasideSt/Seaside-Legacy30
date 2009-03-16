@@ -11,6 +11,7 @@ body {
 	z-index: 20;
 	padding: 2px;
 	position: fixed;
+	text-align: left;
 	background-color: #eee;
 	border-top: 1px solid #aaa;
 }
