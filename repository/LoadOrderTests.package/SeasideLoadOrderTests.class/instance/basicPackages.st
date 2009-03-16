@@ -21,7 +21,7 @@ basicPackages
 		"Session"
 		add: (Array 
 			with: seaside29 -> 'Seaside-Session-lr.110.mcz'
-			with: seaside29 -> 'Seaside-Squeak-Continuation-jf.19.mcz'		"temporary; also in traditionalPackages"
+			with: seaside29 -> 'Seaside-Squeak-Continuation-jf.21.mcz'		"temporary; also in traditionalPackages"
 			with: seaside29 -> 'Seaside-Tests-Session-jf.23.mcz');
 		"Component"
 		add: (Array 
