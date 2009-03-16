@@ -2,6 +2,6 @@ packages
 adminToolsPackages
 
 	^OrderedCollection new
-		add: seaside29 -> 'Seaside-OmniBrowserTools-lr.25.mcz';
-		add: seaside29 -> 'Seaside-Squeak-OmniBrowserTools-jgf.1.mcz';
+		add: seaside29 -> 'Seaside-Tools-OmniBrowser-jf.3.mcz';
+		add: seaside29 -> 'Seaside-Squeak-Tools-OmniBrowser-jf.1.mcz';
 		yourself.
