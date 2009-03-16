@@ -1,4 +1,4 @@
 running
 checkMethod: aContext
-	(aContext selectedClass includesBehavior: WASession)
+	(WASlime class: aContext selectedClass includesBehaviorNamed: #WASession)
 		ifTrue: [ super checkMethod: aContext ]

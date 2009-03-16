@@ -1,4 +1,4 @@
 running
 checkMethod: aContext
-	(aContext selectedClass includesBehavior: WARequestHandler)
+	(WASlime class: aContext selectedClass includesBehaviorNamed: #WARequestHandler)
 		ifTrue: [ super checkMethod: aContext ]
