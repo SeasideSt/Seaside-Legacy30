@@ -1,5 +1,5 @@
 instance creation
-port: aNumber
+port: anInteger
 	^ self new
-		port: aNumber;
+		port: anInteger;
 		yourself
