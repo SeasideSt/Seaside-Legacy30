@@ -1,4 +1,4 @@
 initialization
 configureApplicationExceptionHandlingDefaults: aSharedConfiguration
-	(aSharedConfiguration parents includes: WAExceptionFilterConfiguration instance) ifTrue: [
+	(aSharedConfiguration parents includes: WAExceptionFilterConfiguration instance) ifFalse: [
 		aSharedConfiguration addParent: WAExceptionFilterConfiguration instance ]
