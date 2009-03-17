@@ -22,7 +22,7 @@ traditionalPackages
 			with: seaside29 -> 'Seaside-Tests-Tools-Web-lr.2.mcz');
 		"Development"
 		add: (Array 
-			with: seaside29 -> 'Seaside-Development-jf.106.mcz'
+			with: seaside29 -> 'Seaside-Development-lr.107.mcz'
 			with: seaside29 -> 'Seaside-Squeak-Development-jf.86.mcz'
 			with: seaside29 -> 'Seaside-Tests-Development-jf.31.mcz'
 			with: seaside29 -> 'Seaside-Tests-Squeak-Development-jf.10.mcz');

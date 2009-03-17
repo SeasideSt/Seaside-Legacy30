@@ -10,7 +10,7 @@ basicPackages
 			with: seaside29 -> 'Seaside-Tests-Squeak-Platform-lr.17.mcz');
 		"Core"
 		add: (Array 
-			with: seaside29 -> 'Seaside-Core-jf.506.mcz'
+			with: seaside29 -> 'Seaside-Core-jf.507.mcz'
 			with: seaside29 -> 'Seaside-Tests-Core-jf.122.mcz'
 			with: seaside29 -> 'Seaside-Squeak-Core-jf.77.mcz'
 			with: seaside29 -> 'Seaside-Tests-Squeak-Core-pmm.21.mcz');
@@ -33,7 +33,7 @@ basicPackages
 			with: seaside29 -> 'Seaside-Tests-RenderLoop-lr.8.mcz');
 		"Tools"
 		add: (Array
-			with: seaside29 -> 'Seaside-Tools-Core-jf.4.mcz');
+			with: seaside29 -> 'Seaside-Tools-Core-jgf.7.mcz');
 		"Environment"
 		add: (Array 
 			with: seaside29 -> 'Seaside-Environment-jf.52.mcz'
