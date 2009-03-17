@@ -1,5 +1,3 @@
-I provide an adapter between Seaside and the Comanche web server and by default do response/request conversion from UTF-8 to Squeak encoding (minus the leading char) and back in Squeak 3.8 and above. The same behavior can be achieved by evaluating:
+Compatibility class to maintain WAKomEncoded interface from Seaside 2.8 and older.
 
-WAComancheAdaptor default encoding: 'uft-8'
-
-See the class comments of WAComancheAdaptor and WAComacheRequestConverter for more information regarding encoding.
+Creates an instance of WAComancheAdaptor configured to convert requests/responses from/to UTF-8 to/from Squeak's native internal encoding.
