@@ -5,5 +5,5 @@ renderChatInputOn: html
 		callback: [ :value | self message: value ];
 		onEnter: (html jQuery ajax
 			onSuccess: ((html jQuery: #input) 
-				value: nil);
+				value: String new);
 			serializeThis)
