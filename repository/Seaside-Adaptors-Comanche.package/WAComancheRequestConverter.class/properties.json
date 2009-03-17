@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "jf 1/4/2009 22:38",
-	"super" : "WAStartableServerAdaptor",
+	"super" : "WAServerAdaptor",
 	"category" : "Seaside-Adaptors-Comanche",
 	"classinstvars" : [ ],
 	"pools" : [ ],

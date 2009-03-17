@@ -1,3 +1,3 @@
 compatibility
 port
-	^ WAComancheAdaptor port
+	^ self default isNil ifFalse: [ self default port ]

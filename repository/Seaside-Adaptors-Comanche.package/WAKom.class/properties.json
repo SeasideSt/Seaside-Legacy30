@@ -2,7 +2,9 @@
 	"commentStamp" : "jf 1/4/2009 22:36",
 	"super" : "WAObject",
 	"category" : "Seaside-Adaptors-Comanche",
-	"classinstvars" : [ ],
+	"classinstvars" : [
+		"default"
+	],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],

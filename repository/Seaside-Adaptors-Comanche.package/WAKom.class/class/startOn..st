@@ -1,5 +1,8 @@
 compatibility
-startOn: aNumber
-	WAComancheAdaptor startOn: aNumber.
+startOn: portInteger
 	self default isNil
-		ifFalse: [ self default codec: self default defaultCodec ]
+		ifFalse: [ self default stop; port: portInteger ]
+		ifTrue: [
+			default := self adaptorClass port: portInteger.
+			default codec: self defaultCodec ].
+	^ self start
