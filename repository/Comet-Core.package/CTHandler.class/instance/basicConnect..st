@@ -1,5 +1,6 @@
 private
 basicConnect: aRequestContext
+	session := aRequestContext session.
 	response := aRequestContext response.
 	response
 		doNotCache;
