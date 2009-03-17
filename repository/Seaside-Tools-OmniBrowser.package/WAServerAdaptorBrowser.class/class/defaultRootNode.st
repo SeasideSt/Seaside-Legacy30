@@ -1,3 +1,3 @@
 configuration
 defaultRootNode
-	^ WAServerManagerNode on: WAServerManager instance
+	^ WAServerManagerNode on: WAAdmin defaultServerManager
