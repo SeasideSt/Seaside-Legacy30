@@ -1,5 +1,6 @@
 rendering-chat
 renderChatPusherOn: html
-	html script: (html comet
-		pusher: self pusher;
-		connect)
+	html document 
+		addLoadScript: (html comet
+			pusher: self pusher;
+			connect)

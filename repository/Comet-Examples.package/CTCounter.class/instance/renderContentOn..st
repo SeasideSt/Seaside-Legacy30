@@ -13,6 +13,7 @@ renderContentOn: html
 			onClick: (html jQuery ajax
 				callback: [ self increase ]);
 			with: 'inc' ].
-	html script: (html comet
-		pusher: self pusher;
-		connect)
+	html document 
+		addLoadScript: (html comet
+			pusher: self pusher;
+			connect)
