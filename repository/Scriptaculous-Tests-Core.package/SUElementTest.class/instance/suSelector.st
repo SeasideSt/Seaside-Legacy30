@@ -1,3 +1,3 @@
 accessing
-selector
+suSelector
 	^ SUSelector on: self canvas
