@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "JSDecoration",
+	"category" : "Javascript-Core-Decorations",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"name",
+		"arguments"
+	],
+	"name" : "JSCall",
+	"type" : "normal"
+}
