@@ -17,7 +17,7 @@ traditionalPackages
 			with: seaside29 -> 'Seaside-Tests-Flow-obi.13.mcz');
 		"WebTools"
 		add: (Array 
-			with: seaside29 -> 'Seaside-Tools-Web-jf.3.mcz'
+			with: seaside29 -> 'Seaside-Tools-Web-jf.4.mcz'
 			with: seaside29 -> 'Seaside-Squeak-Tools-Web-jf.2.mcz'
 			with: seaside29 -> 'Seaside-Tests-Tools-Web-lr.2.mcz');
 		"Development"
