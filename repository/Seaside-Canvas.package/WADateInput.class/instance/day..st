@@ -1,3 +1,3 @@
 private callbacks
 day: anIntegerOrString
-	day := [ anIntegerOrString asInteger ] on: Error do: [ :e | 1 ]
+	day := anIntegerOrString seasideInteger ifNil: [ 1 ]

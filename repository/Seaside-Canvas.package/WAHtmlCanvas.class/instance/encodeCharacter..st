@@ -1,3 +1,3 @@
 convenience
 encodeCharacter: aCharacter 
-	self html: '&#', aCharacter asInteger seasideString, ';'
+	self html: '&#' , aCharacter seasideInteger seasideString , ';'

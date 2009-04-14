@@ -1,3 +1,3 @@
 private callbacks
 minutes: anIntegerOrString
-	minutes := [ anIntegerOrString asInteger ] on: Error do: [ :error | 0]
+	minutes := anIntegerOrString seasideInteger ifNil: [ 0 ]
