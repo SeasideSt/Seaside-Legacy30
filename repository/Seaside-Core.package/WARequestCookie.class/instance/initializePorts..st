@@ -1,3 +1,3 @@
 initialization
 initializePorts: aString
-	self ports: ((aString findTokens: $,) collect: [ :each | each asInteger ]).
+	self ports: ((aString findTokens: $,) collect: [ :each | each seasideInteger ]).

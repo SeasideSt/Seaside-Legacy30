@@ -6,4 +6,4 @@ encode: aCharacter on: aStream
 	aStream nextPut: $%.
 	printer := WANumberPrinter new.
 	printer base: 16; padding: $0; digits: 2; uppercase.
-	printer print: aCharacter asInteger on: aStream
+	printer print: aCharacter seasideInteger on: aStream

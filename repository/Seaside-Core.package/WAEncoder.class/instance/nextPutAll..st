@@ -6,7 +6,7 @@ nextPutAll: aString
 	and #to:do: shows measurable speed improvements for rendering seaside pages"
 	1 to: aString size do: [ :index |
 		character := aString at: index.
-		value := character asInteger.
+		value := character seasideInteger.
 		value < table size
 			ifFalse: [ self class encode: character on: stream ]
 			ifTrue: [

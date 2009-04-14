@@ -1,7 +1,7 @@
 accessing
 nextPut: aCharacter
 	| value encoded |
-	value := aCharacter asInteger.
+	value := aCharacter seasideInteger.
 	value < table size
 		ifFalse: [ self class encode: aCharacter on: stream ]
 		ifTrue: [

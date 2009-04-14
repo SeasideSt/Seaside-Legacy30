@@ -1,3 +1,3 @@
 converting
 valueFromString: aString
-	^ aString isEmptyOrNil ifFalse: [ aString asInteger ]
+	^ aString isEmptyOrNil ifFalse: [ aString seasideInteger ]

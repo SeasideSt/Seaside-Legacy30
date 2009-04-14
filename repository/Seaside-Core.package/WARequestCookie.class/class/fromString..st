@@ -12,7 +12,7 @@ fromString: aString
 			key := self keyFrom: each.
 			value := self valueFrom: each.
 			key = '$Version'
-				ifTrue: [ version := value asInteger ]
+				ifTrue: [ version := value seasideInteger ]
 				ifFalse: [
 					action := self actions
 						at: key
