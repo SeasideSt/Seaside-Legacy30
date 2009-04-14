@@ -13,6 +13,6 @@ execute
 		template: class basicNew defaultPort asString.
 	(port isNil or: [ port isEmpty or: [ port isAllDigits not ] ])
 		ifTrue: [ ^ self ].
-	adaptor := class port: port asInteger.
+	adaptor := class port: port seasideInteger.
 	requestor browser announce: (OBNodeCreated 
 		node: adaptor asNode)
