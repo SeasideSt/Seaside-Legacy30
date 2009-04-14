@@ -6,7 +6,7 @@ encodeString: aString on: aStream
 	aStream nextPut: $".
 	1 to: aString size do: [ :index |
 		char := aString at: index.
-		value := char asInteger.
+		value := char seasideInteger.
 		value < JavascriptCharacters size
 			ifFalse: [ aStream nextPut: char ]
 			ifTrue: [
