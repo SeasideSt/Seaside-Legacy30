@@ -4,19 +4,19 @@ basicPackages
 	^OrderedCollection new
 		"Platform"
 		add: (Array 
-			with: seaside29 -> 'Seaside-Platform-jok.60.mcz'
-			with: seaside29 -> 'Seaside-Squeak-Platform-jf.69.mcz'
-			with: seaside29 -> 'Seaside-Tests-Platform-jok.70.mcz'
-			with: seaside29 -> 'Seaside-Tests-Squeak-Platform-lr.17.mcz');
+			with: seaside29 -> 'Seaside-Platform-lr.61.mcz'
+			with: seaside29 -> 'Seaside-Squeak-Platform-lr.72.mcz'
+			with: seaside29 -> 'Seaside-Tests-Platform-pmm.72.mcz'
+			with: seaside29 -> 'Seaside-Tests-Squeak-Platform-pmm.18.mcz');
 		"Core"
 		add: (Array 
-			with: seaside29 -> 'Seaside-Core-jf.507.mcz'
+			with: seaside29 -> 'Seaside-Core-lr.508.mcz'
 			with: seaside29 -> 'Seaside-Tests-Core-jf.122.mcz'
-			with: seaside29 -> 'Seaside-Squeak-Core-jf.77.mcz'
-			with: seaside29 -> 'Seaside-Tests-Squeak-Core-pmm.21.mcz');
+			with: seaside29 -> 'Seaside-Squeak-Core-lr.78.mcz'
+			with: seaside29 -> 'Seaside-Tests-Squeak-Core-pmm.22.mcz');
 		"Canvas"
 		add: (Array 
-			with: seaside29 -> 'Seaside-Canvas-jf.57.mcz'
+			with: seaside29 -> 'Seaside-Canvas-lr.58.mcz'
 			with: seaside29 -> 'Seaside-Tests-Canvas-jf.26.mcz');
 		"Session"
 		add: (Array 
@@ -25,7 +25,7 @@ basicPackages
 			with: seaside29 -> 'Seaside-Tests-Session-jf.23.mcz');
 		"Component"
 		add: (Array 
-			with: seaside29 -> 'Seaside-Component-lr.61.mcz'
+			with: seaside29 -> 'Seaside-Component-lr.62.mcz'
 			with: seaside29 -> 'Seaside-Tests-Component-lr.22.mcz');
 		"RenderLoop"
 		add: (Array 
