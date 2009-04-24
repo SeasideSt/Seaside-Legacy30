@@ -1,4 +1,4 @@
-events-dom
+events-register
 onError: anObject
 	"Binds a function to the error event of each matched element."
 	

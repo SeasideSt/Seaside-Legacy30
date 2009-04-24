@@ -1,4 +1,4 @@
-events-dom
+events-register
 onMouseMove: anObject
 	"Bind a function to the mousemove event of each matched element."
 	

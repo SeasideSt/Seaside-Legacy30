@@ -1,4 +1,4 @@
-events-dom
+events-register
 onDoubleClick: anObject
 	"Binds a function to the dblclick event of each matched element."
 	

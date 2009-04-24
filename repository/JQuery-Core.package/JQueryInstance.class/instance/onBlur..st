@@ -1,4 +1,4 @@
-events-dom
+events-register
 onBlur: anObject
 	"Bind a function to the blur event of each matched element."
 	

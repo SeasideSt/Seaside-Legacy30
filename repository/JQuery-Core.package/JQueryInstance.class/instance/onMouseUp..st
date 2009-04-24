@@ -1,4 +1,4 @@
-events-dom
+events-register
 onMouseUp: anObject
 	"Bind a function to the mouseup event of each matched element."
 	

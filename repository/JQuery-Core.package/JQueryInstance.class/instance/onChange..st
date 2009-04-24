@@ -1,4 +1,4 @@
-events-dom
+events-register
 onChange: anObject
 	"Binds a function to the change event of each matched element."
 	

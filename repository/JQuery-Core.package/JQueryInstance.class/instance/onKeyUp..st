@@ -1,4 +1,4 @@
-events-dom
+events-register
 onKeyUp: anObject
 	"Bind a function to the keyup event of each matched element."
 	

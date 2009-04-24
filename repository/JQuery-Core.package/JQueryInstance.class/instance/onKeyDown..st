@@ -1,4 +1,4 @@
-events-dom
+events-register
 onKeyDown: anObject
 	"Bind a function to the keydown event of each matched element."
 	
