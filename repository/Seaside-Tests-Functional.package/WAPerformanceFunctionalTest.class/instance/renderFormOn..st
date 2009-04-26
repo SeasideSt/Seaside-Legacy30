@@ -4,7 +4,7 @@ renderFormOn: canvas
 			html form: [
 				html button value: 'OK'.
 				html fileUpload.
-				html select list: #('a' 'b'); labels: [:v | v asString].
+				html select list: #('a' 'b'); labels: [:v | v seasideString].
 				html radioButton.
 				html textInput size: 20; value: ''.
 				html textArea

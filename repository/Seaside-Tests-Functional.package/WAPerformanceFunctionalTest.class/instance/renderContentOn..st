@@ -17,4 +17,4 @@ renderContentOn: html
 	
 	html div
 		class: 'result';
-		with: 'Seaside Performance Index: ', duration asString
+		with: 'Seaside Performance Index: ', duration seasideString

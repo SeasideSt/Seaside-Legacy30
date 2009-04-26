@@ -32,10 +32,10 @@ renderInline: aBlock factor: factor key: key on: html
 	duration := duration + spi.
 	html
 		div style: 'float:left;padding:4px';
-		with: [html big: spi asString, ' SPI'.
-				html span class: 'iteration'; with: '(', count asString ,' iterations)'.
+		with: [html big: spi seasideString, ' SPI'.
+				html span class: 'iteration'; with: '(', count seasideString ,' iterations)'.
 				html break.
 				html div
 					class: 'rect';
-					style: 'background:', backColor , ';width:' , (spi * 2) asString, 'px'].
+					style: 'background:', backColor , ';width:' , (spi * 2) seasideString, 'px'].
 	html div style: 'clear:both'	
