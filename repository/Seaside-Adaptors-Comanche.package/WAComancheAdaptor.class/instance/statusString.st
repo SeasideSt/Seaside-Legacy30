@@ -1,5 +1,5 @@
 accessing-readonly
 statusString
 	^ self isRunning
-		ifTrue: [ service asString ]
+		ifTrue: [ service seasideString ]
 		ifFalse: [ super statusString ]
