@@ -3,7 +3,7 @@ printElement: anObject on: aStream
 	anObject isVariableBinding
 		ifFalse: [ aStream javascript: anObject ]
 		ifTrue: [
-			aStream nextPut: $"; nextPutAll: anObject key asString.
+			aStream nextPut: $"; nextPutAll: anObject key seasideString.
 			anObject key isNil
 				ifTrue: [ aStream nextPut: $" ]
 				ifFalse: [
