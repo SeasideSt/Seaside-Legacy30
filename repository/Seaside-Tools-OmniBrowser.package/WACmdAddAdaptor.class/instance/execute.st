@@ -10,7 +10,7 @@ execute
 		ifTrue: [ ^ self ].
 	port := OBTextRequest
 		prompt: 'Enter port number'
-		template: class basicNew defaultPort asString.
+		template: class basicNew defaultPort seasideString.
 	(port isNil or: [ port isEmpty or: [ port isAllDigits not ] ])
 		ifTrue: [ ^ self ].
 	adaptor := class port: port seasideInteger.

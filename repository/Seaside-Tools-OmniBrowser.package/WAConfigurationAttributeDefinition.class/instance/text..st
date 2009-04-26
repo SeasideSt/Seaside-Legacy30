@@ -1,6 +1,6 @@
 callbacks
 text: aText
 	configuration
-		takeValueFromString: aText asString
+		takeValueFromString: aText seasideString
 		forAttribute: attribute.
 	^ true
