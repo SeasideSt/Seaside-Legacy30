@@ -5,7 +5,7 @@ renderSmalltalkOn: html
 	contents selectors 
 		do: [ :selector |
 			source := (contents class sourceCodeAt: selector)
-				asString readStream.
+				seasideString readStream.
 			html div class: 'code'; with: [
 				html span
 					class: 'signature';
