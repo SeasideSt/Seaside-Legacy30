@@ -1,3 +1,3 @@
 accessing
 modeSelector
-	^ (self mode asString, ':visitor:') asSymbol
+	^ (self mode seasideString , ':visitor:') asSymbol
