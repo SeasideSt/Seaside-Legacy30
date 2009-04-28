@@ -1,5 +1,5 @@
 testing-function
-testFunctionReturn
+testReturn
 	| function |
 	function := self function.
 	function add: (self stream nextPutAll: 'foo').

@@ -14,4 +14,10 @@ testAssert
 		equals: 'console.assertNull(null)'.
 	self
 		assert: (self logger assertNotNull: 1)
-		equals: 'console.assertNotNull(1)'
+		equals: 'console.assertNotNull(1)'.
+	self
+		assert: (self logger assertUndefined: nil)
+		equals: 'console.assertUndefined(null)'.
+	self
+		assert: (self logger assertNotUndefined: 1)
+		equals: 'console.assertNotUndefined(1)'

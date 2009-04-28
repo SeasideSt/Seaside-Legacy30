@@ -11,11 +11,11 @@ testDictionary
 		assert: (WASmallDictionary new at: '' put: 'empty'; yourself)
 		equals: '{"":"empty"}'.
 	self
-		assert: (WASmallDictionary new at: 1 put: 'not-a-string'; yourself)
+		assert: (Dictionary new at: 1 put: 'not-a-string'; yourself)
 		equals: '{"1":"not-a-string"}'.
 	self
-		assert: (WASmallDictionary new at: '1abc' put: 'not-an-id'; yourself)
+		assert: (Dictionary new at: '1abc' put: 'not-an-id'; yourself)
 		equals: '{"1abc":"not-an-id"}'.
 	self
-		assert: (WASmallDictionary new at: 'abc1' put: 'totally sexy'; yourself)
+		assert: (Dictionary new at: 'abc1' put: 'totally sexy'; yourself)
 		equals: '{abc1:"totally sexy"}'
