@@ -1,3 +1,3 @@
 initialization
 initialize
-	FunctionName := '$'
+	self functionName: '$'
