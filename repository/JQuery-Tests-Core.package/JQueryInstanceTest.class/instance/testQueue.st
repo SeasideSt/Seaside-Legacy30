@@ -8,4 +8,4 @@ testQueue
 		equals: self function , '("button").queue("fx")'.
 	self
 		assert: ((self jQuery: 'button') queue: 'fx' do: (self jQuery: 'p') hide)
-		equals: self function , '("button").queue("fx",function(){$("p").hide()})'
+		equals: self function , '("button").queue("fx",function(){' , self function , '("p").hide()})'
