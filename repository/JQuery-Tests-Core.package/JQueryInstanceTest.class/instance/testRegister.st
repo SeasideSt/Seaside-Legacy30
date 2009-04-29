@@ -1,6 +1,24 @@
 testing-events
 testRegister
 	self
+		assert: ((self jQuery: 'a') onAjaxSuccess: self mock)
+		equals: self function , '("a").ajaxSuccess(function(){mock})'.
+	self
+		assert: ((self jQuery: 'a') onAjaxComplete: self mock)
+		equals: self function , '("a").ajaxComplete(function(){mock})'.
+	self
+		assert: ((self jQuery: 'a') onAjaxSend: self mock)
+		equals: self function , '("a").ajaxSend(function(){mock})'.
+	self
+		assert: ((self jQuery: 'a') onAjaxStart: self mock)
+		equals: self function , '("a").ajaxStart(function(){mock})'.
+	self
+		assert: ((self jQuery: 'a') onAjaxStop: self mock)
+		equals: self function , '("a").ajaxStop(function(){mock})'.
+	self
+		assert: ((self jQuery: 'a') onAjaxError: self mock)
+		equals: self function , '("a").ajaxError(function(){mock})'.
+	self
 		assert: ((self jQuery: 'a') onBlur: self mock)
 		equals: self function , '("a").blur(function(){mock})'.
 	self
@@ -40,6 +58,9 @@ testRegister
 		assert: ((self jQuery: 'a') onMouseLeave: self mock)
 		equals: self function , '("a").mouseleave(function(){mock})'.
 	self
+		assert: ((self jQuery: 'a') onMouseMove: self mock)
+		equals: self function , '("a").mousemove(function(){mock})'.
+	self
 		assert: ((self jQuery: 'a') onMouseOut: self mock)
 		equals: self function , '("a").mouseout(function(){mock})'.
 	self
@@ -48,6 +69,9 @@ testRegister
 	self
 		assert: ((self jQuery: 'a') onMouseUp: self mock)
 		equals: self function , '("a").mouseup(function(){mock})'.
+	self
+		assert: ((self jQuery: 'a') onResize: self mock)
+		equals: self function , '("a").resize(function(){mock})'.
 	self
 		assert: ((self jQuery: 'a') onScroll: self mock)
 		equals: self function , '("a").scroll(function(){mock})'.
