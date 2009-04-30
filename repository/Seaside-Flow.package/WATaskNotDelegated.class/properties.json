@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WATaskNotDelgated",
+	"name" : "WATaskNotDelegated",
 	"type" : "normal"
 }
