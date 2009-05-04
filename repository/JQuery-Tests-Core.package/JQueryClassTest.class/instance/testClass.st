@@ -1,5 +1,5 @@
-testing
+testing-creation
 testClass
 	self
-		assert: self jQuery
-		equals: self function
+		assert: (self jQuery class: 'foo')
+		equals: self function , '(".foo")'
