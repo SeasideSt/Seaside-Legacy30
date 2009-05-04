@@ -4,7 +4,7 @@ basicPackages
 	^OrderedCollection new
 		"Platform"
 		add: (Array 
-			with: seaside29 -> 'Seaside-Platform-lr.61.mcz'
+			with: seaside29 -> 'Seaside-Platform-jgf.62.mcz'
 			with: seaside29 -> 'Seaside-Squeak-Platform-lr.73.mcz'
 			with: seaside29 -> 'Seaside-Tests-Platform-lr.75.mcz'
 			with: seaside29 -> 'Seaside-Tests-Squeak-Platform-pmm.18.mcz');
