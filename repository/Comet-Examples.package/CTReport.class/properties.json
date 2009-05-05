@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "WAComponent",
+	"category" : "Comet-Examples",
+	"classinstvars" : [
+		"items",
+		"pusher"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CTReport",
+	"type" : "normal"
+}
