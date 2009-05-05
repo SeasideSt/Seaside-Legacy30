@@ -12,8 +12,8 @@ renderRowEdit: anItem on: html
 		html anchor
 			url: '#';
 			onClick: (html jQuery ajax
-				" serialize the form elements in the table row "
-				serialize: ((html jQuery this closest: 'tr') find: ':input');
+				" serialize all form elements in the table "
+				serialize: ((html jQuery this closest: 'table') find: ':input');
 				" trigger a refresh on all connected tables "
 				html: [ :r |
 					self pusher javascript: [ :s |
