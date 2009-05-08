@@ -1,4 +1,4 @@
-WAPresenter holds the functionality that is common to WAPresenter and WADecoration. Subclasses of this class may have state and can be stored in instance variables of other Presenters.
+WAPresenter holds the functionality that is common to WAComponent and WADecoration. Subclasses of this class may have state and can be stored in instance variables of other Presenters.
 
 You might want to subclass WAPresenter if you do not need the special abilities (decoration and call/answer) of WAComponent but do need one or more of the following:
 
