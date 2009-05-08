@@ -1,4 +1,4 @@
-call/answer
+delegation
 onAnswer: aBlock
 	"Adds an answer handler aBlock to the receiver."
 

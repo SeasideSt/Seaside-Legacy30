@@ -1,3 +1,3 @@
-call/answer
+delegation
 answer
 	self answer: self

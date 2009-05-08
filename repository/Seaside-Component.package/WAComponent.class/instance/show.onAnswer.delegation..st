@@ -1,4 +1,4 @@
-call/answer
+delegation
 show: aComponent onAnswer: aBlock delegation: aDelegation
 	| event |
 	event := nil.
