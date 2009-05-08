@@ -1,3 +1,3 @@
-call/answer
+delegation
 handleAnswer: anObject
 	^ false
