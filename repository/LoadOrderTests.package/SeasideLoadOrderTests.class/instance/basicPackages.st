@@ -4,7 +4,7 @@ basicPackages
 	^OrderedCollection new
 		"Platform"
 		add: (Array 
-			with: seaside29 -> 'Seaside-Platform-jgf.62.mcz'
+			with: seaside29 -> 'Seaside-Platform-lr.63.mcz'
 			with: seaside29 -> 'Seaside-Squeak-Platform-lr.73.mcz'
 			with: seaside29 -> 'Seaside-Tests-Platform-lr.75.mcz'
 			with: seaside29 -> 'Seaside-Tests-Squeak-Platform-pmm.18.mcz');
@@ -25,7 +25,7 @@ basicPackages
 			with: seaside29 -> 'Seaside-Tests-Session-jf.23.mcz');
 		"Component"
 		add: (Array 
-			with: seaside29 -> 'Seaside-Component-lr.62.mcz'
+			with: seaside29 -> 'Seaside-Component-jf.65.mcz'
 			with: seaside29 -> 'Seaside-Tests-Component-lr.22.mcz');
 		"RenderLoop"
 		add: (Array 
