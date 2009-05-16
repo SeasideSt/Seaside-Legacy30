@@ -1,6 +1,6 @@
 convenience
 serialize: aQuery
-	"Serialize the elements matching aQuery and evaluates the associated callbacks."
+	"Serializes a set of input elements matching aQuery and trigger the associated Seaside callbacks."
 
 	self enableCallbacks.
 	self addParameter: aQuery serialize

@@ -1,5 +1,5 @@
 convenience
 serializeForm
-	"Serialize the complete owning form."
+	"Serialize all input fields of the form the receiving element is contained in."
 
-	self serialize: ((owner canvas jQuery this closest: 'form') find: ':input')
+	self serializeForm: owner canvas jQuery this
