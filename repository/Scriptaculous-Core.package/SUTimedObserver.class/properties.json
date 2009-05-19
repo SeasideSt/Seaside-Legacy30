@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "kdt 1/19/2009 10:58",
+	"super" : "SUNamed",
+	"category" : "Scriptaculous-Core-Observers",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"frequency",
+		"function"
+	],
+	"name" : "SUTimedObserver",
+	"type" : "normal"
+}

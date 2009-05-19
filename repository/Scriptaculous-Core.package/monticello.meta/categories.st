@@ -4,3 +4,4 @@ SystemOrganization addCategory: #'Scriptaculous-Core-Dragging'!
 SystemOrganization addCategory: #'Scriptaculous-Core-Elements'!
 SystemOrganization addCategory: #'Scriptaculous-Core-Libraries'!
 SystemOrganization addCategory: #'Scriptaculous-Core-Objects'!
+SystemOrganization addCategory: #'Scriptaculous-Core-Observers'!
