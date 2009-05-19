@@ -9,7 +9,7 @@ renderListItems: aSelector on: html
 			containment: #( left right );
 			onUpdate: (html scriptaculous updater
 				id: aSelector , 'status';
-				triggerSortable: aSelector asString
+				triggerSortable: aSelector seasideString
 					callback: [ :values | self perform: aSelector asMutator with: values ];
 				callback: [ :renderer | self renderListModel: aSelector on: renderer ]));
 		with: [
