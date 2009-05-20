@@ -13,7 +13,7 @@ responseForLibraries
 						html anchor
 							url: (each urlOf: '');
 							with: each name ] ] ] ].
-	context response
-		contentType: WAMimeType textHtml;
-		nextPutAll: contents;
-		respond
+	context respond: [ :response |
+		response
+			contentType: WAMimeType textHtml;
+			nextPutAll: contents ]

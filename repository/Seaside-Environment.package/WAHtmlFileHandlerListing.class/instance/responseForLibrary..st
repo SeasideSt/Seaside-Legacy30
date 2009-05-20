@@ -20,7 +20,7 @@ responseForLibrary: aLibrary
 								with: (aLibrary asFilename: each) ].
 						html tableData: (aLibrary perform: each) size.
 						html tableData: (aLibrary mimetypeForFile: (aLibrary asFilename: each)) ] ] ] ].
-	context response
-		contentType: WAMimeType textHtml;
-		nextPutAll: contents;
-		respond
+	context respond: [ :response |
+		response
+			contentType: WAMimeType textHtml;
+			nextPutAll: contents ]
