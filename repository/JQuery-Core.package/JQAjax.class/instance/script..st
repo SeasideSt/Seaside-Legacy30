@@ -5,11 +5,9 @@ script: aBlock
 	aBlock fixCallbackTemps.
 	self dataType: 'script'.
 	self callback: [
-		| context |
-		context := self requestContext.
-		context response
-			doNotCache; 
-			contentType: (WAMimeType textJavascript
-				charset: self application charSet).
-		owner script: aBlock on: context response stream.
-		context respond ]
+		self requestContext respond: [ :response |
+			response
+				doNotCache; 
+				contentType: (WAMimeType textJavascript
+					charset: self application charSet).
+			owner script: aBlock on: response stream ] ]
