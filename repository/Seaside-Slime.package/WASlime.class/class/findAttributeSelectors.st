@@ -19,6 +19,6 @@ findAttributeSelectors
 		class methodDictionary keysAndValuesDo: [ :selector :method | 
 			(matcher executeTree: method parseTree initialAnswer: false) 
 				ifTrue: [ result add: selector ] ] ].
-	#( callback: enabled: labels: value: )
+	#(callback: enabled: labels:)
 		do: [ :each | result add: each ].
 	^ result
