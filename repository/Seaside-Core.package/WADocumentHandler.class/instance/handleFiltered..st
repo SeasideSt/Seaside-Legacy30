@@ -1,6 +1,6 @@
 handling
 handleFiltered: aRequestContext
-	aRequestContext response
-		cacheForever;
-		document: self document.
-	aRequestContext respond
+	aRequestContext respond: [ :response |
+		response
+			cacheForever;
+			document: self document ]
