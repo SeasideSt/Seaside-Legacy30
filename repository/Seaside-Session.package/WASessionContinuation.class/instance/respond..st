@@ -1,6 +1,3 @@
 processing
 respond: aBlock 
-	| context |
-	context := self requestContext.
-	aBlock value: context response.
-	context respond
+	self requestContext respond: aBlock
