@@ -2,7 +2,6 @@ callbacks
 text: aBlock
 	"Defines a text rendering callback."
 
-	aBlock fixCallbackTemps.
 	self dataType: 'text'.
 	self callback: [
 		self requestContext respond: [ :response |

@@ -2,7 +2,6 @@ callbacks
 script: aBlock
 	"Defines a script rendering callback."
 
-	aBlock fixCallbackTemps.
 	self dataType: 'script'.
 	self callback: [
 		self requestContext respond: [ :response |

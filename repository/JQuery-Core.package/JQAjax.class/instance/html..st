@@ -1,12 +1,11 @@
 callbacks
-html: aBlock
+html: aRenderable
 	"Defines a html rendering callback."
 
-	aBlock fixCallbackTemps.
 	self dataType: 'html'.
 	self callback: [
 		self requestContext respond: [ :response |
 			response
 				doNotCache;
 				contentType: self application contentType.
-			owner render: aBlock on: response stream ] ]
+			owner render: aRenderable on: response stream ] ]
