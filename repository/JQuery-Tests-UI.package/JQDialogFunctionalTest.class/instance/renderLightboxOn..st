@@ -4,8 +4,8 @@ renderLightboxOn: html
 	html div
 		id: (id := html nextId);
 		script: (html jQuery new dialog
+			html: JQCounterFunctionalTest new;
 			title: 'Lightbox Dialog';
-			html: [ :r | r unorderedList list: self vegetables ];
 			resizable: false;
 			modal: true).
 	html submitButton
