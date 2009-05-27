@@ -1,5 +1,5 @@
 modifying
-append: anObject 
+append: aRenderable 
 	"Append content to the inside of every matched element."
 	
-	self call: 'append' with: (self render: anObject)
+	self call: 'append' with: (self render: aRenderable)
