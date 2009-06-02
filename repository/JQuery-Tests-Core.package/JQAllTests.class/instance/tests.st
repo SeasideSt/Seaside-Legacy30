@@ -1,9 +1,10 @@
 configuration
 tests
 	^ Array 
-		with: 'Examples' -> (Array 
+		with: 'Ajax' -> (Array 
 			with: 'Ajax' -> JQAjaxFunctionalTest new
 			with: 'Form' -> JQFormFunctionalTest new
-			with: 'Counter' -> JQCounterFunctionalTest new)
+			with: 'Counter' -> JQCounterFunctionalTest new
+			with: 'Repeating' -> JQRepeatingFunctionalTest new)
 		with: 'Other' -> (Array
 			with: 'Animate' -> JQAnimateFunctionalTest new)
