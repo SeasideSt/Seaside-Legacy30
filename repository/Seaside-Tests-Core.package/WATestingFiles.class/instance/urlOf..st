@@ -5,3 +5,4 @@ urlOf: aSymbol
 	^self 
 		urlOf: aSymbol
 		using: self defaultFileHandler.
+		
