@@ -5,6 +5,9 @@ javascriptUrl
 	| stream |
 	stream := JSStream new.
 	stream javascript: self url.
-	self data collection isEmpty
-		ifFalse: [ stream nextPutAll: '+"?"+'; javascript: self data ].
+	self data collection isEmpty ifFalse: [
+		stream nextPutAll: '+"'.
+		stream nextPut: (self url parameters isEmpty
+			ifTrue: [ $? ] ifFalse: [ $& ]).
+		stream nextPutAll: '"+'; javascript: self data ].
 	^ stream
