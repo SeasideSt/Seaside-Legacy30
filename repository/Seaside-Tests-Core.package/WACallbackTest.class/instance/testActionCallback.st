@@ -27,3 +27,4 @@ testActionCallback
 		should: [ self request: (WASmallDictionary new at: key1 put: nil; at: key1 put: nil; yourself) ]
 		raise: WARenderNotification.
 	self assertLog: #(1)
+

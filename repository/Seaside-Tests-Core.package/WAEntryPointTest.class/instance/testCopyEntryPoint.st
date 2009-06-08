@@ -14,3 +14,4 @@ testCopyEntryPoint
 	self assert: copy parent isNil.
 	self deny: copy configuration == handler configuration.
 	self deny: copy configuration isNil.
+	
