@@ -5,6 +5,5 @@ renderContentOn: html
 		width: 600;
 		height: 800;
 		standby: 'loading tiger';
-		classId: 'http://www.adobe.com/svg/viewer/install/main.html';
-		url: 'http://croczilla.com/svg/samples/tiger/tiger.svg';
+		url: 'http://croczilla.com/bits_and_pieces/svg/samples/tiger/tiger.svg';
 		with: 'Your browser doesn''t support SVG'
