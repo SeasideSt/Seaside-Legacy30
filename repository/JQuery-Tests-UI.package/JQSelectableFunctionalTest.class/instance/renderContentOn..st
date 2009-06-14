@@ -8,6 +8,7 @@ renderContentOn: html
 		with: [
 			self vegetables do: [ :each |
 				html listItem
+					class: 'ui-corner-all';
 					class: 'ui-selected' if: (selected includes: each);
 					passenger: each;
 					with: each ] ]

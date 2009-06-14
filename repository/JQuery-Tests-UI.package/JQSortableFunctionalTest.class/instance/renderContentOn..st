@@ -8,5 +8,6 @@ renderContentOn: html
 		with: [
 			items do: [ :each |
 				html listItem
+					class: 'ui-corner-all';
 					passenger: each;
 					with: each ] ]

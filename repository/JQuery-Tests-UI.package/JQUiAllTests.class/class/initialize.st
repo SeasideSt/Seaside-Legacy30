@@ -4,6 +4,4 @@ initialize
 	application := WAAdmin register: self asApplicationAt: 'tests/jquery-ui'.
 	application
 		addLibrary: JQDeploymentLibrary;
-		addLibrary: JQUiDeploymentLibrary;
-		addLibrary: JQUiSmoothnessTheme;
-		addLibrary: JQUiAllTestsLibrary
+		addLibrary: JQUiDeploymentLibrary
