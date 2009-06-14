@@ -1,11 +1,11 @@
 {
-	"commentStamp" : "pmm 3/16/2007 13:38",
-	"super" : "WAClosedRangeTag",
+	"commentStamp" : "",
+	"super" : "WAAbstractTextAreaTag",
 	"category" : "Seaside-HTML5-Tags",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WANumberInputTag",
+	"name" : "WAColorInputTag",
 	"type" : "normal"
 }
