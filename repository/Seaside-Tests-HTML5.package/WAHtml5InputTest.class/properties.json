@@ -6,10 +6,22 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
+		"required",
+		"autofocus",
+		"pattern",
 		"search",
 		"range",
 		"email",
-		"url"
+		"url",
+		"number",
+		"datetimelocal",
+		"datetime",
+		"date",
+		"time",
+		"month",
+		"week",
+		"color",
+		"telephone"
 	],
 	"name" : "WAHtml5InputTest",
 	"type" : "normal"
