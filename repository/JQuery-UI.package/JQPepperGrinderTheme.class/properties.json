@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "JQBaseTheme",
+	"category" : "JQuery-UI-Libraries",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "JQPepperGrinderTheme",
+	"type" : "normal"
+}

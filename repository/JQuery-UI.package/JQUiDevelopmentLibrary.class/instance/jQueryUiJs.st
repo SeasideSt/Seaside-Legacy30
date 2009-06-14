@@ -1,7 +1,7 @@
 uploads
 jQueryUiJs
 	^ '/*
- * jQuery UI 1.7.1
+ * jQuery UI 1.7.2
  *
  * Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -16,7 +16,7 @@ var _remove = $.fn.remove,
 
 //Helper functions and ui object
 $.ui = {
-	version: "1.7.1",
+	version: "1.7.2",
 
 	// $.ui.plugin is deprecated.  Use the proxy pattern instead.
 	plugin: {
@@ -520,7 +520,7 @@ $.ui.mouse.defaults = {
 
 })(jQuery);
 /*
- * jQuery UI Draggable 1.7.1
+ * jQuery UI Draggable 1.7.2
  *
  * Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -921,7 +921,7 @@ $.widget("ui.draggable", $.extend({}, $.ui.mouse, {
 }));
 
 $.extend($.ui.draggable, {
-	version: "1.7.1",
+	version: "1.7.2",
 	eventPrefix: "drag",
 	defaults: {
 		addClasses: true,
@@ -1286,7 +1286,7 @@ $.ui.plugin.add("draggable", "zIndex", {
 
 })(jQuery);
 /*
- * jQuery UI Droppable 1.7.1
+ * jQuery UI Droppable 1.7.2
  *
  * Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -1420,7 +1420,7 @@ $.widget("ui.droppable", {
 });
 
 $.extend($.ui.droppable, {
-	version: "1.7.1",
+	version: "1.7.2",
 	eventPrefix: ''drop'',
 	defaults: {
 		accept: ''*'',
@@ -1568,7 +1568,7 @@ $.ui.ddmanager = {
 
 })(jQuery);
 /*
- * jQuery UI Resizable 1.7.1
+ * jQuery UI Resizable 1.7.2
  *
  * Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -2067,7 +2067,7 @@ $.widget("ui.resizable", $.extend({}, $.ui.mouse, {
 }));
 
 $.extend($.ui.resizable, {
-	version: "1.7.1",
+	version: "1.7.2",
 	eventPrefix: "resize",
 	defaults: {
 		alsoResize: false,
@@ -2368,7 +2368,7 @@ var isNumber = function(value) {
 
 })(jQuery);
 /*
- * jQuery UI Selectable 1.7.1
+ * jQuery UI Selectable 1.7.2
  *
  * Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -2611,7 +2611,7 @@ $.widget("ui.selectable", $.extend({}, $.ui.mouse, {
 }));
 
 $.extend($.ui.selectable, {
-	version: "1.7.1",
+	version: "1.7.2",
 	defaults: {
 		appendTo: ''body'',
 		autoRefresh: true,
@@ -2625,7 +2625,7 @@ $.extend($.ui.selectable, {
 
 })(jQuery);
 /*
- * jQuery UI Sortable 1.7.1
+ * jQuery UI Sortable 1.7.2
  *
  * Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -3611,7 +3611,7 @@ $.widget("ui.sortable", $.extend({}, $.ui.mouse, {
 
 $.extend($.ui.sortable, {
 	getter: "serialize toArray",
-	version: "1.7.1",
+	version: "1.7.2",
 	eventPrefix: "sort",
 	defaults: {
 		appendTo: "parent",
@@ -3644,7 +3644,7 @@ $.extend($.ui.sortable, {
 
 })(jQuery);
 /*
- * jQuery UI Effects 1.7.1
+ * jQuery UI Effects 1.7.2
  *
  * Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -3655,7 +3655,7 @@ $.extend($.ui.sortable, {
 ;jQuery.effects || (function($) {
 
 $.effects = {
-	version: "1.7.1",
+	version: "1.7.2",
 
 	// Saves a set of properties in a data storage
 	save: function(element, set) {
@@ -3820,9 +3820,11 @@ $.fn.extend({
 	},
 
 	toggle: function(){
-		if(!arguments[0] || (arguments[0].constructor == Number || (/(slow|normal|fast)/).test(arguments[0])) || (arguments[0].constructor == Function))
+		if(!arguments[0] ||
+			(arguments[0].constructor == Number || (/(slow|normal|fast)/).test(arguments[0])) ||
+			($.isFunction(arguments[0]) || typeof arguments[0] == ''boolean'')) {
 			return this.__toggle.apply(this, arguments);
-		else {
+		} else {
 			return this.effect.apply(this, _normalizeArguments(arguments, ''toggle''));
 		}
 	},
@@ -4187,7 +4189,7 @@ $.extend($.easing,
 
 })(jQuery);
 /*
- * jQuery UI Effects Blind 1.7.1
+ * jQuery UI Effects Blind 1.7.2
  *
  * Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -4236,7 +4238,7 @@ $.effects.blind = function(o) {
 
 })(jQuery);
 /*
- * jQuery UI Effects Bounce 1.7.1
+ * jQuery UI Effects Bounce 1.7.2
  *
  * Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -4314,7 +4316,7 @@ $.effects.bounce = function(o) {
 
 })(jQuery);
 /*
- * jQuery UI Effects Clip 1.7.1
+ * jQuery UI Effects Clip 1.7.2
  *
  * Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -4368,7 +4370,7 @@ $.effects.clip = function(o) {
 
 })(jQuery);
 /*
- * jQuery UI Effects Drop 1.7.1
+ * jQuery UI Effects Drop 1.7.2
  *
  * Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -4418,7 +4420,7 @@ $.effects.drop = function(o) {
 
 })(jQuery);
 /*
- * jQuery UI Effects Explode 1.7.1
+ * jQuery UI Effects Explode 1.7.2
  *
  * Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -4497,7 +4499,7 @@ $.effects.explode = function(o) {
 
 })(jQuery);
 /*
- * jQuery UI Effects Fold 1.7.1
+ * jQuery UI Effects Fold 1.7.2
  *
  * Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -4553,7 +4555,7 @@ $.effects.fold = function(o) {
 
 })(jQuery);
 /*
- * jQuery UI Effects Highlight 1.7.1
+ * jQuery UI Effects Highlight 1.7.2
  *
  * Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -4601,7 +4603,7 @@ $.effects.highlight = function(o) {
 
 })(jQuery);
 /*
- * jQuery UI Effects Pulsate 1.7.1
+ * jQuery UI Effects Pulsate 1.7.2
  *
  * Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -4657,7 +4659,7 @@ $.effects.pulsate = function(o) {
 
 })(jQuery);
 /*
- * jQuery UI Effects Scale 1.7.1
+ * jQuery UI Effects Scale 1.7.2
  *
  * Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -4837,7 +4839,7 @@ $.effects.size = function(o) {
 
 })(jQuery);
 /*
- * jQuery UI Effects Shake 1.7.1
+ * jQuery UI Effects Shake 1.7.2
  *
  * Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -4894,7 +4896,7 @@ $.effects.shake = function(o) {
 
 })(jQuery);
 /*
- * jQuery UI Effects Slide 1.7.1
+ * jQuery UI Effects Slide 1.7.2
  *
  * Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -4944,7 +4946,7 @@ $.effects.slide = function(o) {
 
 })(jQuery);
 /*
- * jQuery UI Effects Transfer 1.7.1
+ * jQuery UI Effects Transfer 1.7.2
  *
  * Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -4989,7 +4991,7 @@ $.effects.transfer = function(o) {
 
 })(jQuery);
 /*
- * jQuery UI Accordion 1.7.1
+ * jQuery UI Accordion 1.7.2
  *
  * Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -5370,7 +5372,7 @@ $.widget("ui.accordion", {
 
 
 $.extend($.ui.accordion, {
-	version: "1.7.1",
+	version: "1.7.2",
 	defaults: {
 		active: null,
 		alwaysOpen: true, //deprecated, use collapsible
@@ -5466,7 +5468,7 @@ $.extend($.ui.accordion, {
 
 })(jQuery);
 /*
- * jQuery UI Datepicker 1.7.1
+ * jQuery UI Datepicker 1.7.2
  *
  * Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -5480,7 +5482,7 @@ $.extend($.ui.accordion, {
 
 (function($) { // hide the namespace
 
-$.extend($.ui, { datepicker: { version: "1.7.1" } });
+$.extend($.ui, { datepicker: { version: "1.7.2" } });
 
 var PROP_NAME = ''datepicker'';
 
@@ -5633,13 +5635,16 @@ $.extend(Datepicker.prototype, {
 	/* Attach the date picker to an input field. */
 	_connectDatepicker: function(target, inst) {
 		var input = $(target);
+		inst.append = $([]);
 		inst.trigger = $([]);
 		if (input.hasClass(this.markerClassName))
 			return;
 		var appendText = this._get(inst, ''appendText'');
 		var isRTL = this._get(inst, ''isRTL'');
-		if (appendText)
-			input[isRTL ? ''before'' : ''after''](''<span class="'' + this._appendClass + ''">'' + appendText + ''</span>'');
+		if (appendText) {
+			inst.append = $(''<span class="'' + this._appendClass + ''">'' + appendText + ''</span>'');
+			input[isRTL ? ''before'' : ''after''](inst.append);
+		}
 		var showOn = this._get(inst, ''showOn'');
 		if (showOn == ''focus'' || showOn == ''both'') // pop-up date picker when in the marked field
 			input.focus(this._showDatepicker);
@@ -5744,9 +5749,9 @@ $.extend(Datepicker.prototype, {
 		var nodeName = target.nodeName.toLowerCase();
 		$.removeData(target, PROP_NAME);
 		if (nodeName == ''input'') {
+			inst.append.remove();
 			inst.trigger.remove();
-			$target.siblings(''.'' + this._appendClass).remove().end().
-				removeClass(this.markerClassName).
+			$target.removeClass(this.markerClassName).
 				unbind(''focus'', this._showDatepicker).
 				unbind(''keydown'', this._doKeyDown).
 				unbind(''keypress'', this._doKeyPress);
@@ -5764,11 +5769,10 @@ $.extend(Datepicker.prototype, {
 		}
 		var nodeName = target.nodeName.toLowerCase();
 		if (nodeName == ''input'') {
-		target.disabled = false;
-			inst.trigger.filter("button").
-			each(function() { this.disabled = false; }).end().
-				filter("img").
-				css({opacity: ''1.0'', cursor: ''''});
+			target.disabled = false;
+			inst.trigger.filter(''button'').
+				each(function() { this.disabled = false; }).end().
+				filter(''img'').css({opacity: ''1.0'', cursor: ''''});
 		}
 		else if (nodeName == ''div'' || nodeName == ''span'') {
 			var inline = $target.children(''.'' + this._inlineClass);
@@ -5788,11 +5792,10 @@ $.extend(Datepicker.prototype, {
 		}
 		var nodeName = target.nodeName.toLowerCase();
 		if (nodeName == ''input'') {
-		target.disabled = true;
-			inst.trigger.filter("button").
-			each(function() { this.disabled = true; }).end().
-				filter("img").
-				css({opacity: ''0.5'', cursor: ''default''});
+			target.disabled = true;
+			inst.trigger.filter(''button'').
+				each(function() { this.disabled = true; }).end().
+				filter(''img'').css({opacity: ''0.5'', cursor: ''default''});
 		}
 		else if (nodeName == ''div'' || nodeName == ''span'') {
 			var inline = $target.children(''.'' + this._inlineClass);
@@ -5830,31 +5833,33 @@ $.extend(Datepicker.prototype, {
 		}
 	},
 
-	/* Update the settings for a date picker attached to an input field or division.
+	/* Update or retrieve the settings for a date picker attached to an input field or division.
 	   @param  target  element - the target input field or division or span
 	   @param  name    object - the new settings to update or
-	                   string - the name of the setting to change or
-	   @param  value   any - the new value for the setting (omit if above is an object) */
+	                   string - the name of the setting to change or retrieve,
+	                   when retrieving also ''all'' for all instance settings or
+	                   ''defaults'' for all global defaults
+	   @param  value   any - the new value for the setting
+	                   (omit if above is an object or to retrieve a value) */
 	_optionDatepicker: function(target, name, value) {
+		var inst = this._getInst(target);
+		if (arguments.length == 2 && typeof name == ''string'') {
+			return (name == ''defaults'' ? $.extend({}, $.datepicker._defaults) :
+				(inst ? (name == ''all'' ? $.extend({}, inst.settings) :
+				this._get(inst, name)) : null));
+		}
 		var settings = name || {};
 		if (typeof name == ''string'') {
 			settings = {};
 			settings[name] = value;
 		}
-		var inst = this._getInst(target);
 		if (inst) {
 			if (this._curInst == inst) {
 				this._hideDatepicker(null);
 			}
+			var date = this._getDateDatepicker(target);
 			extendRemove(inst.settings, settings);
-			var date = new Date();
-			extendRemove(inst, {rangeStart: null, // start of range
-				endDay: null, endMonth: null, endYear: null, // end of range
-				selectedDay: date.getDate(), selectedMonth: date.getMonth(),
-				selectedYear: date.getFullYear(), // starting point
-				currentDay: date.getDate(), currentMonth: date.getMonth(),
-				currentYear: date.getFullYear(), // current selection
-				drawMonth: date.getMonth(), drawYear: date.getFullYear()}); // month being drawn
+			this._setDateDatepicker(target, date);
 			this._updateDatepicker(inst);
 		}
 	},
@@ -7077,6 +7082,9 @@ $.fn.datepicker = function(options){
 	if (typeof options == ''string'' && (options == ''isDisabled'' || options == ''getDate''))
 		return $.datepicker[''_'' + options + ''Datepicker''].
 			apply($.datepicker, [this[0]].concat(otherArgs));
+	if (options == ''option'' && arguments.length == 2 && typeof arguments[1] == ''string'')
+		return $.datepicker[''_'' + options + ''Datepicker''].
+			apply($.datepicker, [this[0]].concat(otherArgs));
 	return this.each(function() {
 		typeof options == ''string'' ?
 			$.datepicker[''_'' + options + ''Datepicker''].
@@ -7088,7 +7096,7 @@ $.fn.datepicker = function(options){
 $.datepicker = new Datepicker(); // singleton instance
 $.datepicker.initialized = false;
 $.datepicker.uuid = new Date().getTime();
-$.datepicker.version = "1.7.1";
+$.datepicker.version = "1.7.2";
 
 // Workaround for #4055
 // Add another global to avoid noConflict issues with inline event handlers
@@ -7096,7 +7104,7 @@ window.DP_jQuery = $;
 
 })(jQuery);
 /*
- * jQuery UI Dialog 1.7.1
+ * jQuery UI Dialog 1.7.2
  *
  * Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -7269,6 +7277,17 @@ $.widget("ui.dialog", {
 		$.ui.dialog.overlay.resize();
 
 		self._isOpen = false;
+		
+		// adjust the maxZ to allow other modal dialogs to continue to work (see #4309)
+		if (self.options.modal) {
+			var maxZ = 0;
+			$(''.ui-dialog'').each(function() {
+				if (this != self.uiDialog[0]) {
+					maxZ = Math.max(maxZ, $(this).css(''z-index''));
+				}
+			});
+			$.ui.dialog.maxZ = maxZ;
+		}
 	},
 
 	isOpen: function() {
@@ -7580,7 +7599,7 @@ $.widget("ui.dialog", {
 });
 
 $.extend($.ui.dialog, {
-	version: "1.7.1",
+	version: "1.7.2",
 	defaults: {
 		autoOpen: true,
 		bgiframe: false,
@@ -7630,10 +7649,13 @@ $.extend($.ui.dialog.overlay, {
 			// we use a setTimeout in case the overlay is created from an
 			// event that we''re going to be cancelling (see #2804)
 			setTimeout(function() {
-				$(document).bind($.ui.dialog.overlay.events, function(event) {
-					var dialogZ = $(event.target).parents(''.ui-dialog'').css(''zIndex'') || 0;
-					return (dialogZ > $.ui.dialog.overlay.maxZ);
-				});
+				// handle $(el).dialog().dialog(''close'') (see #4065)
+				if ($.ui.dialog.overlay.instances.length) {
+					$(document).bind($.ui.dialog.overlay.events, function(event) {
+						var dialogZ = $(event.target).parents(''.ui-dialog'').css(''zIndex'') || 0;
+						return (dialogZ > $.ui.dialog.overlay.maxZ);
+					});
+				}
 			}, 1);
 
 			// allow closing by pressing the escape key
@@ -7666,6 +7688,13 @@ $.extend($.ui.dialog.overlay, {
 		}
 
 		$el.remove();
+		
+		// adjust the maxZ to allow other modal dialogs to continue to work (see #4309)
+		var maxZ = 0;
+		$.each(this.instances, function() {
+			maxZ = Math.max(maxZ, this.css(''z-index''));
+		});
+		this.maxZ = maxZ;
 	},
 
 	height: function() {
@@ -7746,7 +7775,7 @@ $.extend($.ui.dialog.overlay.prototype, {
 
 })(jQuery);
 /*
- * jQuery UI Progressbar 1.7.1
+ * jQuery UI Progressbar 1.7.2
  *
  * Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -7802,8 +7831,12 @@ $.widget("ui.progressbar", {
 	},
 
 	value: function(newValue) {
-		arguments.length && this._setData("value", newValue);
-		return this._value();
+		if (newValue === undefined) {
+			return this._value();
+		}
+		
+		this._setData(''value'', newValue);
+		return this;
 	},
 
 	_setData: function(key, value) {
@@ -7850,7 +7883,7 @@ $.widget("ui.progressbar", {
 });
 
 $.extend($.ui.progressbar, {
-	version: "1.7.1",
+	version: "1.7.2",
 	defaults: {
 		value: 0
 	}
@@ -7858,7 +7891,7 @@ $.extend($.ui.progressbar, {
 
 })(jQuery);
 /*
- * jQuery UI Slider 1.7.1
+ * jQuery UI Slider 1.7.2
  *
  * Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -7936,10 +7969,26 @@ $.widget("ui.slider", $.extend({}, $.ui.mouse, {
 		this.handle = this.handles.eq(0);
 
 		this.handles.add(this.range).filter("a")
-			.click(function(event) { event.preventDefault(); })
-			.hover(function() { $(this).addClass(''ui-state-hover''); }, function() { $(this).removeClass(''ui-state-hover''); })
-			.focus(function() { $(".ui-slider .ui-state-focus").removeClass(''ui-state-focus''); $(this).addClass(''ui-state-focus''); })
-			.blur(function() { $(this).removeClass(''ui-state-focus''); });
+			.click(function(event) {
+				event.preventDefault();
+			})
+			.hover(function() {
+				if (!o.disabled) {
+					$(this).addClass(''ui-state-hover'');
+				}
+			}, function() {
+				$(this).removeClass(''ui-state-hover'');
+			})
+			.focus(function() {
+				if (!o.disabled) {
+					$(".ui-slider .ui-state-focus").removeClass(''ui-state-focus''); $(this).addClass(''ui-state-focus'');
+				} else {
+					$(this).blur();
+				}
+			})
+			.blur(function() {
+				$(this).removeClass(''ui-state-focus'');
+			});
 
 		this.handles.each(function(i) {
 			$(this).data("index.ui-slider-handle", i);
@@ -8164,8 +8213,8 @@ $.widget("ui.slider", $.extend({}, $.ui.mouse, {
 			value: this.value()
 		};
 		if (this.options.values && this.options.values.length) {
-			uiHash.value = this.values(index)
-			uiHash.values = this.values()
+			uiHash.value = this.values(index);
+			uiHash.values = this.values();
 		}
 		this._trigger("start", event, uiHash);
 	},
@@ -8178,8 +8227,10 @@ $.widget("ui.slider", $.extend({}, $.ui.mouse, {
 
 			var otherVal = this.values(index ? 0 : 1);
 
-			if ((index == 0 && newVal >= otherVal) || (index == 1 && newVal <= otherVal))
-				newVal = otherVal;
+			if ((this.options.values.length == 2 && this.options.range === true) && 
+				((index == 0 && newVal > otherVal) || (index == 1 && newVal < otherVal))){
+ 				newVal = otherVal;
+			}
 
 			if (newVal != this.values(index)) {
 				var newValues = this.values();
@@ -8220,8 +8271,8 @@ $.widget("ui.slider", $.extend({}, $.ui.mouse, {
 			value: this.value()
 		};
 		if (this.options.values && this.options.values.length) {
-			uiHash.value = this.values(index)
-			uiHash.values = this.values()
+			uiHash.value = this.values(index);
+			uiHash.values = this.values();
 		}
 		this._trigger("stop", event, uiHash);
 	},
@@ -8232,8 +8283,8 @@ $.widget("ui.slider", $.extend({}, $.ui.mouse, {
 			value: this.value()
 		};
 		if (this.options.values && this.options.values.length) {
-			uiHash.value = this.values(index)
-			uiHash.values = this.values()
+			uiHash.value = this.values(index);
+			uiHash.values = this.values();
 		}
 		this._trigger("change", event, uiHash);
 	},
@@ -8274,6 +8325,14 @@ $.widget("ui.slider", $.extend({}, $.ui.mouse, {
 		$.widget.prototype._setData.apply(this, arguments);
 
 		switch (key) {
+			case ''disabled'':
+				if (value) {
+					this.handles.filter(".ui-state-focus").blur();
+					this.handles.removeClass("ui-state-hover");
+					this.handles.attr("disabled", "disabled");
+				} else {
+					this.handles.removeAttr("disabled");
+				}
 			case ''orientation'':
 
 				this._detectOrientation();
@@ -8372,7 +8431,7 @@ $.widget("ui.slider", $.extend({}, $.ui.mouse, {
 
 $.extend($.ui.slider, {
 	getter: "value values",
-	version: "1.7.1",
+	version: "1.7.2",
 	eventPrefix: "slide",
 	defaults: {
 		animate: false,
@@ -8390,7 +8449,7 @@ $.extend($.ui.slider, {
 
 })(jQuery);
 /*
- * jQuery UI Tabs 1.7.1
+ * jQuery UI Tabs 1.7.2
  *
  * Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -9003,7 +9062,7 @@ $.widget("ui.tabs", {
 });
 
 $.extend($.ui.tabs, {
-	version: ''1.7.1'',
+	version: ''1.7.2'',
 	getter: ''length'',
 	defaults: {
 		ajaxOptions: null,

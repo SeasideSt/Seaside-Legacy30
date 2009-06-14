@@ -1,5 +1,5 @@
 events-generated
 onChange: anObject
-	"This event is triggered when on slide stop, but only if the slider position has changed. Takes arguments e and ui, for event and user-interface respectively. Use ui.value (single-handled sliders) to obtain the value of the current handle, $(..).slider('value', index) to get another handles' value."
-	
+	"This event is triggered on slide stop, or if the value is changed programmatically (by the <code>value</code> method). Takes arguments event and ui. Use event.orginalEvent to detect whether the value changed by mouse, keyboard, or programmatically. Use ui.value (single-handled sliders) to obtain the value of the current handle, $(this).slider('values', index) to get another handle's value."
+
 	self optionAt: 'change' put: anObject asFunction
