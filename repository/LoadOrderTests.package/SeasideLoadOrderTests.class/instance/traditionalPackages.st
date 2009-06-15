@@ -4,7 +4,7 @@ traditionalPackages
 	^OrderedCollection new
 		"Functional Tests"	
 		add: (Array 
-			with: seaside29 -> 'Seaside-Tests-Functional-lr.78.mcz'
+			with: seaside29 -> 'Seaside-Tests-Functional-pmm.79.mcz'
 			with: seaside29 -> 'Seaside-Tests-Squeak-Functional-jf.10.mcz');
 		"Continuation are also in Basic"
 		add: (Array 
@@ -23,7 +23,7 @@ traditionalPackages
 		"Development"
 		add: (Array 
 			with: seaside29 -> 'Seaside-Development-lr.109.mcz'
-			with: seaside29 -> 'Seaside-Squeak-Development-lr.87.mcz'
+			with: seaside29 -> 'Seaside-Squeak-Development-jf.88.mcz'
 			with: seaside29 -> 'Seaside-Tests-Development-jf.31.mcz'
 			with: seaside29 -> 'Seaside-Tests-Squeak-Development-jf.10.mcz');
 		"Examples"
