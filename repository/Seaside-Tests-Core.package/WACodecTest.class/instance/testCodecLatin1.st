@@ -4,9 +4,7 @@ testCodecLatin1
 		| codec |
 		codec := WACodec forEncoding:  each.
 		
-		self assert: codec converter notNil.
 		self assert: codec name = each.
-		self assert: codec url converter notNil.
 		self assert: codec url name = each.
 		
 		self assert: (codec encode: self latin1String) = self latin1String.
