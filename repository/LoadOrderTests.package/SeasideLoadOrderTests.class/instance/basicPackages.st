@@ -4,16 +4,16 @@ basicPackages
 	^OrderedCollection new
 		"Platform"
 		add: (Array 
-			with: seaside29 -> 'Seaside-Platform-pmm.71.mcz'
-			with: seaside29 -> 'Seaside-Squeak-Platform-pmm.74.mcz'
+			with: seaside29 -> 'Seaside-Platform-pmm.72.mcz'
+			with: seaside29 -> 'Seaside-Squeak-Platform-pmm.75.mcz'
 			with: seaside29 -> 'Seaside-Tests-Platform-pmm.80.mcz'
 			with: seaside29 -> 'Seaside-Tests-Squeak-Platform-pmm.18.mcz');
 		"Core"
 		add: (Array 
 			with: seaside29 -> 'Seaside-Core-lr.511.mcz'
-			with: seaside29 -> 'Seaside-Tests-Core-pmm.128.mcz'
+			with: seaside29 -> 'Seaside-Tests-Core-pmm.130.mcz'
 			with: seaside29 -> 'Seaside-Squeak-Core-lr.78.mcz'
-			with: seaside29 -> 'Seaside-Tests-Squeak-Core-pmm.23.mcz');
+			with: seaside29 -> 'Seaside-Tests-Squeak-Core-pmm.24.mcz');
 		"Canvas"
 		add: (Array 
 			with: seaside29 -> 'Seaside-Canvas-lr.59.mcz'
