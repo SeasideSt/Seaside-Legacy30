@@ -1,3 +1,3 @@
 *jquery-core
 jQuery
-	^ JQueryClass on: canvas
+	^ JQueryClass on: self canvas
