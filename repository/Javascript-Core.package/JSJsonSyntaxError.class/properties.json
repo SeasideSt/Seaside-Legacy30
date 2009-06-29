@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "pmm 12/15/2008 19:45",
+	"super" : "WAError",
+	"category" : "Javascript-Core-Parser",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "JSJsonSyntaxError",
+	"type" : "normal"
+}
