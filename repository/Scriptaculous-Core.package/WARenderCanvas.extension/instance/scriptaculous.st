@@ -1,5 +1,5 @@
 *scriptaculous-core
 scriptaculous
-	"Answer a Scriptaculous factory in the context of the receiver."
+	"Answer a script.aculo.us factory in the context of the receiver."
 
-	^ SUFactory on: self
+	^ self prototype

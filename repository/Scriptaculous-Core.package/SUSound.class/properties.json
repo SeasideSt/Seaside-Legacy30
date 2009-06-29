@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
-	"super" : "SUNamed",
-	"category" : "Scriptaculous-Core-Elements",
+	"super" : "PTNamed",
+	"category" : "Scriptaculous-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

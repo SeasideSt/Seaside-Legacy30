@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "SUNamed",
+	"super" : "PTNamed",
 	"category" : "Scriptaculous-Core-Dragging",
 	"classinstvars" : [ ],
 	"pools" : [ ],

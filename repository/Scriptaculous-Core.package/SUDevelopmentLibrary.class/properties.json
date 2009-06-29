@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "PTNamed",
-	"category" : "Scriptaculous-Core",
+	"super" : "WAFileLibrary",
+	"category" : "Scriptaculous-Core-Libraries",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "SUEffect",
+	"name" : "SUDevelopmentLibrary",
 	"type" : "normal"
 }

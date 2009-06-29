@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "SUUpdater",
+	"super" : "PTUpdater",
 	"category" : "Scriptaculous-Core-Controls",
 	"classinstvars" : [ ],
 	"pools" : [ ],

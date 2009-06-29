@@ -1,3 +1,0 @@
-private
-defaultOptions
-	^ WASmallDictionary new

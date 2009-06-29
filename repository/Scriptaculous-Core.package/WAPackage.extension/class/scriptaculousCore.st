@@ -2,6 +2,6 @@
 scriptaculousCore
 	^ self new
 		name: 'Scriptaculous-Core';
-		description: 'Prototype and script.aculo.us integration for Seaside. Aims to ease development of dynamic web applications.';
-		addDependency: 'Javascript-Core';
+		description: 'script.aculo.us integration for Seaside. script.aculo.us provides you with easy-to-use, cross-browser user interface JavaScript libraries to make your web sites and web applications fly.';
+		addDependency: 'Prototype-Core';
 		yourself
