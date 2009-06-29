@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "lr 4/28/2008 09:46",
+	"super" : "WAObject",
+	"category" : "Prototype-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"context",
+		"block"
+	],
+	"name" : "PTFactory",
+	"type" : "normal"
+}

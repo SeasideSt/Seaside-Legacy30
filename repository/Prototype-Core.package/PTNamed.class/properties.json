@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "PTPrototype",
+	"category" : "Prototype-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"id",
+		"method",
+		"arguments"
+	],
+	"name" : "PTNamed",
+	"type" : "normal"
+}

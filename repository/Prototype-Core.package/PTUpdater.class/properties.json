@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "lr 2/27/2007 20:38",
+	"super" : "PTAjax",
+	"category" : "Prototype-Core-Ajax",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"id"
+	],
+	"name" : "PTUpdater",
+	"type" : "normal"
+}
