@@ -1,4 +1,4 @@
-modifying
+displaying
 cleanWhitespace
 	"Removes all of element's text nodes which contain only whitespace."
 
