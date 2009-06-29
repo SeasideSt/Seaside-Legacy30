@@ -20,9 +20,6 @@ assertEnumerable: aBlock prefix: aString
 		assert: (aBlock value detectMin: [ :each | each element height ])
 		equals: aString , '.min(function(){return $(arguments[0]).getHeight()})'.
 	self
-		assert: (aBlock value do: [ :each | each effect scroll ])
-		equals: aString , '.each(function(){new Effect.ScrollTo(arguments[0])})'.
-	self
 		assert: (aBlock value select: [ :each | each element empty ])
 		equals: aString , '.findAll(function(){return $(arguments[0]).empty()})'.
 	self
