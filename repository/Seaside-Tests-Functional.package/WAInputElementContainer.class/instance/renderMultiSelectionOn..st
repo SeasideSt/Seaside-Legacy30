@@ -5,6 +5,7 @@ renderMultiSelectionOn: html
 		input: [
 			html multiSelect
 				list: self elements;
+				titles: [ :each | 'Title: ', each asString ];
 				selected: multiSelection;
 				callback: [ :value | multiSelection := value ] ]
 		output: [
