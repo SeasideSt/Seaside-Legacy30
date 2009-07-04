@@ -8,7 +8,8 @@
 	"instvars" : [
 		"enabledBlock",
 		"isOptional",
-		"optionalLabel"
+		"optionalLabel",
+		"titleBlock"
 	],
 	"name" : "WASelectTag",
 	"type" : "normal"
