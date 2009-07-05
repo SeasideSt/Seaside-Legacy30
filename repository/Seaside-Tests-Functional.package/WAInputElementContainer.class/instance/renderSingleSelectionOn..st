@@ -5,8 +5,8 @@ renderSingleSelectionOn: html
 		input: [
 			html select
 				list: self elements;
-				titles: [ :each | 'Title: ', each asString ];
+				titles: [ :each | 'Title: ', each seasideString ];
 				selected: singleSelection;
 				callback: [ :value | singleSelection := value ] ]
 		output: singleSelection printString
-		on: html.
+		on: html
