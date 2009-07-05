@@ -1,5 +1,5 @@
 callbacks
-titles: aBlock
-	"Allows title attribute for the option tag"
+titles: aOneArgumentBlock
+	"The given block will be used to generated title attributes for any of the options."
 
-	titleBlock := aBlock fixCallbackTemps
+	titleBlock := aOneArgumentBlock fixCallbackTemps
