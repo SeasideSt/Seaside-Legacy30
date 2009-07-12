@@ -1,6 +1,12 @@
 testing
 testActions
 	self
+		assert: ((self jQuery: 'div') dialog close)
+		equals: self function , '("div").dialog("close")'.
+	self
+		assert: ((self jQuery: 'div') dialog isOpen)
+		equals: self function , '("div").dialog("isOpen")'.
+	self
 		assert: ((self jQuery: 'div') dialog moveToTop)
 		equals: self function , '("div").dialog("moveToTop")'.
 	self
