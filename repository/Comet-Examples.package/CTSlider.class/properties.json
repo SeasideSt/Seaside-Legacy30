@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "WAComponent",
+	"category" : "Comet-Examples",
+	"classinstvars" : [
+		"value",
+		"pusher"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CTSlider",
+	"type" : "normal"
+}
