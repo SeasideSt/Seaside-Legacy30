@@ -1,5 +1,5 @@
 options-generated
 dropOnEmpty: aBoolean
-	"If empty allows for an item to be dropped from a linked selectable."
+	"If false items from this sortable can't be dropped to an empty linked sortable."
 
 	self optionAt: 'dropOnEmpty' put: aBoolean

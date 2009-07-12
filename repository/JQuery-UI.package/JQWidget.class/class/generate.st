@@ -64,6 +64,12 @@ generate
 				removals remove: selector ifAbsent: [ ].
 				(class sourceCodeFor: selector) = source
 					ifFalse: [ class compile: source classified: #'events-generated' ] ] ].
+			
+		" generate methods "
+		matcher := '\{\{UIAPIPluginMethod\|' asRegex.
+		matcher matchesIn: string do: [ :match |
+			tokens := string copyFrom: (matcher subEnd: 1) to: string size.
+			Transcript show: class name; show: (tokens readStream upToAll: '}}'); cr; cr ].
 
 		" remove methods not present anymore "
 		removals do: [ :rselector | class removeMethod: rselector ] ].
