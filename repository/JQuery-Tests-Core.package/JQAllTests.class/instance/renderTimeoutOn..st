@@ -1,6 +1,6 @@
 rendering
 renderTimeoutOn: html
-	"Warn the user if an error occurs during an AJAX action (mostly this is a session timeout) and refresh the current page."
+	"Warn the user if an error occurs during an AJAX action (mostly this is a session timeout) and refreshes the current page (causing the default error/expiry handling to kick in)."
 
 	html document addLoadScript: (html jQuery ajaxSetup
 		onError: (html javascript
