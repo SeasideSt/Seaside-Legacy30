@@ -7,4 +7,5 @@ renderContentOn: html
 			self renderTopOn: html.
 			self renderHeadOn: html.
 			self renderBodyOn: html.
-			self renderBottomOn: html ] ]
+			self renderBottomOn: html ] ].
+	self renderTimeoutOn: html
