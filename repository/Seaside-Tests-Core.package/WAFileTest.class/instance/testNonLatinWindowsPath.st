@@ -4,9 +4,9 @@ testNonLatinWindowsPath
 	"If the following assertion fails, your Smalltalk dialect most probably does not support non-latin characters. This is true for Squeak 3.7. If your Smalltalk dialect does support non-latin characters adjust the test."
 	self shouldnt:  [
 		koreanName := (String
-			with: (Character value: 50976)
-			with: (Character value: 47532)
-			with: (Character value: 47484)), '.txt' ]
+			with: (Character codePoint: 50976)
+			with: (Character codePoint: 47532)
+			with: (Character codePoint: 47484)), '.txt' ]
 		raise: Error.
 
 	file fileName: koreanName.
