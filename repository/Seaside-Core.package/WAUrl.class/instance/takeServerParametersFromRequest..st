@@ -8,4 +8,5 @@ takeServerParametersFromRequest: aRequest
 	self hostname isNil ifTrue: [
 		aRequest headers
 			at: 'host'
-			ifPresent: [ :value | self parseHost: value ] ]
+			ifPresent: [ :value | self parseHost: value ] ].
+	aRequest scheme isNil ifFalse: [ self scheme: aRequest scheme ].

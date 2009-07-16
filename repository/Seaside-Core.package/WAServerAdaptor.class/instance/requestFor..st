@@ -9,3 +9,4 @@ requestFor: aNativeRequest
 		fields: (self requestFieldsFor: aNativeRequest)
 		cookies: (self requestCookiesFor: aNativeRequest)
 		remoteAddress: (self requestAddressFor: aNativeRequest)
+		scheme: (self requestSchemeFor: aNativeRequest)
