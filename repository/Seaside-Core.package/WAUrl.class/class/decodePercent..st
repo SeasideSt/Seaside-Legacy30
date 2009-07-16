@@ -11,7 +11,7 @@ decodePercent: aString
 			ifFalse: [
 				char = $%
 					ifTrue: [
-						Character value: input next asUppercase digitValue * 16
+						Character codePoint: input next asUppercase digitValue * 16
 							+ input next asUppercase digitValue ]
 					ifFalse: [ char ] ]) ].
 	^ output contents

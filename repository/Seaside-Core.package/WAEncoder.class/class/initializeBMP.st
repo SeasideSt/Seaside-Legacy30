@@ -9,7 +9,7 @@ initializeBMP
 	stream := WriteStream on: (String new: 6).
 	0 to: characterLimit do: [ :index |
 		| encoded |
-		self encode: (Character value: index) on: stream reset.
+		self encode: (Character codePoint: index) on: stream reset.
 		encoded := stream contents.
 		"Smalltalk indices are one based but character values start at 0"
 		table at: index + 1 put: (encoded size = 1
