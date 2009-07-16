@@ -4,7 +4,7 @@ traditionalPackages
 	^OrderedCollection new
 		"Functional Tests"	
 		add: (Array 
-			with: seaside29 -> 'Seaside-Tests-Functional-lr.80.mcz'
+			with: seaside29 -> 'Seaside-Tests-Functional-pmm.82.mcz'
 			with: seaside29 -> 'Seaside-Tests-Squeak-Functional-jf.10.mcz');
 		"Continuation are also in Basic"
 		add: (Array 
@@ -14,7 +14,7 @@ traditionalPackages
 		add: (Array 
 			with: seaside29 -> 'Seaside-Flow-lr.14.mcz'
 			with: seaside29 -> 'Seaside-Squeak-Flow-lr.9.mcz'
-			with: seaside29 -> 'Seaside-Tests-Flow-mls.16.mcz');
+			with: seaside29 -> 'Seaside-Tests-Flow-lr.17.mcz');
 		"WebTools"
 		add: (Array 
 			with: seaside29 -> 'Seaside-Tools-Web-mls.6.mcz'
