@@ -1,3 +1,3 @@
 configuration
 terminator
-	^ Character value: 0
+	^ Character codePoint: 0
