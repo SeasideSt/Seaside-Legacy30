@@ -7,4 +7,3 @@ blankRequest
 		fields: WAHeaderFields new
 		cookies: Array new
 		remoteAddress: nil
-		scheme: 'http'

@@ -8,7 +8,6 @@ Instance Variables
 	cookies:			<Collection<WARequestCookie>>
 	method:			<String>
 	remoteAddress:	<String>
-	scheme:			<String>
 
 url
 	- The request url. For example if the client requested 'http://www.google.com/search?q=seaside' then the contents of url would be '/search?q=seaside'. This url is fully decoded. Use the #host method to get the host name.
@@ -30,6 +29,3 @@ method
 	
 remoteAddress
 	- the IP address of the client. If the server is behind a reverse proxy then this is '127.0.0.1'. This could in theory also be an IPv6 address.
-	
-scheme
-	- the scheme used for the request, e.g., 'http' or 'https'.

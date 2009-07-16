@@ -1,7 +1,7 @@
 encoding
 encodeServerOn: aDocument
 	hostname ifNil: [ ^ self ].
-	aDocument nextPutAll: scheme; nextPutAll: '://'.
+	aDocument nextPutAll: self scheme; nextPutAll: '://'.
 	username notNil ifTrue: [
 		aDocument urlEncoder nextPutAll: username.
 		password notNil ifTrue: [
@@ -10,6 +10,6 @@ encodeServerOn: aDocument
 		aDocument nextPut: $@ ].
 	aDocument urlEncoder nextPutAll: hostname.
 	port notNil ifTrue: [
-		((scheme = 'http' and: [ port = 80 ])
-			or: [ scheme = 'https' and: [ port = 443 ] ])
+		((self scheme = 'http' and: [ port = 80 ])
+			or: [ self scheme = 'https' and: [ port = 443 ] ])
 			ifFalse: [ aDocument nextPut: $:; print: port ] ]

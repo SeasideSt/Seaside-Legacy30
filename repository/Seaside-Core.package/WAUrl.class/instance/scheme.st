@@ -2,4 +2,4 @@ accessing
 scheme
 	"Answer the URL's scheme."
 
-	^ scheme
+	^ scheme ifNil: [ 'http' ]

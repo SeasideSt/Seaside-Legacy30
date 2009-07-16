@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "css 7/16/2009 18:44",
+	"commentStamp" : "pmm 9/28/2008 20:29",
 	"super" : "WAObject",
 	"category" : "Seaside-Core-HTTP",
 	"classinstvars" : [ ],
@@ -11,8 +11,7 @@
 		"method",
 		"remoteAddress",
 		"headers",
-		"cookies",
-		"scheme"
+		"cookies"
 	],
 	"name" : "WARequest",
 	"type" : "normal"
