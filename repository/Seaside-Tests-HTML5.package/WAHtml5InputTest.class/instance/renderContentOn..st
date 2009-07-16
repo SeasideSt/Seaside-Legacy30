@@ -43,8 +43,7 @@ renderContentOn: html
 				html tableData: [
 					html emailInput
 						on: #email of: self ].
-				html tableData: [
-					html render: self email class name ] ].
+				html tableData: self email class name ].
 			html tableRow: [
 				html tableHeading: [ html label: 'url' ].
 				html tableData: [
