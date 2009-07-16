@@ -5,7 +5,7 @@ match: aString
 	| position |
 	position := stream position.
 	aString do: [ :each |
-		stream next = each ifFalse: [ 
+		(stream atEnd or: [ stream next ~= each ]) ifTrue: [ 
 			stream position: position.
 			^ false ] ].
 	self whitespace.
