@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WASlimeTransformationRule",
+	"category" : "Seaside-Slime",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAAnsiCharactersRule",
+	"type" : "normal"
+}
