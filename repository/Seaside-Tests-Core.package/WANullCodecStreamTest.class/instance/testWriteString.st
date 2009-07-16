@@ -1,7 +1,7 @@
 testing
 testWriteString
 	| stream codecStream |
-	stream := String new writeStream.
+	stream := WriteStream on: String new.
 	codecStream := WANullCodec new encoderFor: stream.
 	codecStream
 		nextPut: $A;
