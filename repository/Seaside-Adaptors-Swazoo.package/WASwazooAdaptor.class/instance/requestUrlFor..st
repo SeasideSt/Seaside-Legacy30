@@ -4,6 +4,6 @@ requestUrlFor: aNativeRequest
 	url := ((WAUrl absolute: aNativeRequest uri printString)
 		decodedWith: self codec)
 		withoutParameters.
-	aNativeRequest encrypted notNil
+	aNativeRequest isEncrypted
 		ifTrue: [ url scheme: 'https' ].
 	^ url
