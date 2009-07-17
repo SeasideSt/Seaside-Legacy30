@@ -11,9 +11,10 @@ basicPackages
 		"Core"
 		add: (Array 
 			with: seaside29 -> 'Seaside-Core-lr.516.mcz'
-			with: seaside29 -> 'Seaside-Tests-Core-lr.135.mcz'
+			with: seaside29 -> 'Seaside-Tests-Core-pmm.137.mcz'
+			with: seaside29 -> 'Seaside-Tests-UTF8-lr.3.mcz'
 			with: seaside29 -> 'Seaside-Squeak-Core-lr.78.mcz'
-			with: seaside29 -> 'Seaside-Tests-Squeak-Core-lr.26.mcz');
+			with: seaside29 -> 'Seaside-Tests-Squeak-Core-pmm.27.mcz');
 		"Canvas"
 		add: (Array 
 			with: seaside29 -> 'Seaside-Canvas-lr.62.mcz'
