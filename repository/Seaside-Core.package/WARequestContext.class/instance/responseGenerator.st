@@ -1,6 +1,6 @@
 accessing-dynamic
 responseGenerator
-	"Answer a response generator as configured in the closest handler."
+	"Answer a ResponseGenerator as configured in the closest RequestHandler."
 
 	^ (self entryPoint isNil 
 		ifTrue: [ WAResponseGenerator ]

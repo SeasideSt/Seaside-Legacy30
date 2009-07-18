@@ -1,5 +1,5 @@
 accessing
 response
-	"Answer the current response object."
+	"Answer the current Response object."
 	
 	^ response

@@ -1,5 +1,5 @@
 accessing
 request
-	"Answer the current request object."
+	"Answer the current Request object."
 	
 	^ request
