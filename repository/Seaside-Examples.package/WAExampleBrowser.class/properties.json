@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "<historical>",
-	"super" : "WAComponent",
+	"super" : "WAExampleComponent",
 	"category" : "Seaside-Examples-Misc",
 	"classinstvars" : [ ],
 	"pools" : [ ],
