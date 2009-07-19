@@ -4,5 +4,5 @@ triggerAutocompleter: aBlock
 
 	aBlock fixCallbackTemps.
 	self
-		callback: [ :value | aBlock value: (canvas context callbacks passengerAt: value) ]
+		callback: [ :value | aBlock value: (self renderContext callbacks passengerAt: value) ]
 		value: (JSStream on: 'arguments[1].id')
