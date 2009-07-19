@@ -1,3 +1,3 @@
 accessing
 sound
-	^ SUSound on: self canvas
+	^ SUSound context: self renderContext

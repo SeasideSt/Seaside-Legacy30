@@ -3,7 +3,7 @@ renderContentOn: html
 	| elementId |
 	elementId := html nextId.
 	html paragraph: [
-		self insertions do: [ :each |
+		(self insertionsFromFactory: html prototype) do: [ :each |
 			html anchor
 				onClick: (html scriptaculous updater
 					id: elementId;

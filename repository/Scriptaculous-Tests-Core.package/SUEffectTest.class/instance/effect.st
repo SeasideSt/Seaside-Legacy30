@@ -1,3 +1,3 @@
 accessing
 effect
-	^ SUEffect on: self canvas
+	^ SUEffect context: self renderContext
