@@ -1,3 +1,5 @@
 *jquery-core
 jQuery
-	^ JQueryClass on: self
+	^ (JQueryClass context: self context)
+		rendererClass: self species;
+		yourself

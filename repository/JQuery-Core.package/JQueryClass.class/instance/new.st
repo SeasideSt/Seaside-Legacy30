@@ -2,4 +2,8 @@ creation
 new
 	"Wrap jQuery functionality around this DOM Element."
 
-	^ JQueryInstance on: canvas constructor: (Array with: JSStream this)
+	^ (JQueryInstance
+		context: self renderContext
+		constructor: (Array with: JSStream this))
+			rendererClass: self rendererClass;
+			yourself

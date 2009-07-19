@@ -1,7 +1,7 @@
 private
 enableCallbacks
 	self hasCallback ifTrue: [ ^ self ].
-	self url: owner canvas actionUrl withoutParameters.
-	self addParameters: owner canvas actionUrl parameters.
-	self addParameter: (callbackId := owner canvas callbacks
+	self url: self renderContext actionUrl withoutParameters.
+	self addParameters: self renderContext actionUrl parameters.
+	self addParameter: (callbackId := self renderContext callbacks
 		store: (JSAjaxCallback on: [ self processCallback ]))
