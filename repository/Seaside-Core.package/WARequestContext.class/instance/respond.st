@@ -1,5 +1,5 @@
 actions
 respond
-	"Signal a desire to end request processing and return the current Response to the user agent."
+	"Abort the current calculation and notify the current response handler to process generated response."
 	
 	WAResponseNotification signal

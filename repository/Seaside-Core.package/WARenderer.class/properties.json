@@ -2,7 +2,9 @@
 	"commentStamp" : "jf 2/13/2009 19:57",
 	"super" : "WAObject",
 	"category" : "Seaside-Core-Rendering",
-	"classinstvars" : [ ],
+	"classinstvars" : [
+		"default"
+	],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [

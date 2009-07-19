@@ -1,7 +1,6 @@
-accessing-dynamic
+actions
 newCookie
-	"Create a new cookie. Try to restrict it as much as possible to make stealing it as hard as possible. Some of these restrictions may be too severe for some applications, in which case the sender can relax them."
-	
+	"Creates a new cookie. Tries to put as many restrictions on it as possible and make stealing it has hard a possible. Some of these restrictions might be too severe for your application, you can always loosen them."
 	| cookie baseUrl |
 	baseUrl := self entryPoint baseUrl.
 	cookie := WACookie new
