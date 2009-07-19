@@ -1,3 +1,5 @@
 *comet-core
 comet
-	^ CTComet on: self
+	^ (CTComet context: self context)
+		rendererClass: self species;
+		yourself

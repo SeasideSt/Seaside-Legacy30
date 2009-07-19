@@ -1,7 +1,7 @@
 accessing
 pusher: aPusher
-	self url: (self canvas actionUrl
+	self url: (self renderContext actionUrl
 		withParameter: self class headerField
 		value: (self filter
 			registerPusher: (pusher := aPusher)
-			context: self canvas context))
+			context: self requestContext))

@@ -1,5 +1,5 @@
 accessing-readonly
 filter
-	^ canvas session filters
+	^ self session filters
 		detect: [ :each | each isCometFilter ]
-		ifNone: [ canvas session addFilterFirst: CTFilter new ]
+		ifNone: [ self session addFilterFirst: CTFilter new ]
