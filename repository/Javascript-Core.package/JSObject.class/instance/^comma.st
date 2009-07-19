@@ -1,5 +1,4 @@
 convenience
-, anObject
+, anObject 
 	"Concatenate the receiver with anObject."
-
-	self addDecoration: (JSConcate on: anObject)
+	self addDecoration: (JSConcatenation on: anObject)

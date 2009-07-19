@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "JSConcate",
+	"name" : "JSConcatenation",
 	"type" : "normal"
 }
