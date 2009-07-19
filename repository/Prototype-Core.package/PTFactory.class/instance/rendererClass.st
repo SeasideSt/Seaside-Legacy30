@@ -1,3 +1,3 @@
 accessing
 rendererClass
-	^ rendererClass ifNil: [ rendererClass := WARenderCanvas ]
+	^ rendererClass ifNil: [ rendererClass := WARenderer default ]
