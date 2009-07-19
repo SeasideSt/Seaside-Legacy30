@@ -2,4 +2,4 @@
 slider
 	"Makes a slider from the nodeset supplied by the query."
 	
-	^ JQSlider on: self
+	^ self create: JQSlider

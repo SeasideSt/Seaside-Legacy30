@@ -2,4 +2,4 @@
 resizable
 	"Creates new resizables on the nodeset supplied by the query."
 	
-	^ JQResizable on: self
+	^ self create: JQResizable

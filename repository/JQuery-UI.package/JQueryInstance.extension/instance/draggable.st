@@ -2,4 +2,4 @@
 draggable
 	"Creates new draggables on the nodeset supplied by the query."
 	
-	^ JQDraggable on: self
+	^ self create: JQDraggable

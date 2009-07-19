@@ -2,4 +2,4 @@
 selectable
 	"Creates new selectable on the nodeset supplied by the query."
 	
-	^ JQSelectable on: self
+	^ self create: JQSelectable

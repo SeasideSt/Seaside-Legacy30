@@ -2,4 +2,4 @@
 accordion
 	"Make the selected elements Accordion widgets."
 	
-	^ JQAccordion on: self
+	^ self create: JQAccordion

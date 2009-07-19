@@ -2,4 +2,4 @@
 effect
 	"This is the core dependency of the effects of jQuery UI."
 	
-	^ JQEffect on: self
+	^ self create: JQEffect
