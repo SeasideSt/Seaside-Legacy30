@@ -4,6 +4,6 @@ callback: aBlock value: anObject
 
 	aBlock numArgs = 1
 		ifFalse: [ self error: 'aBlock expects one argument' ].
-	self addParameter: (self canvas callbacks
+	self addParameter: (self renderContext callbacks
 		store: (WAValueCallback on: aBlock)) 
 			-> anObject

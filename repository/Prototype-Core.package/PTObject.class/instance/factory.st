@@ -2,4 +2,6 @@ accessing
 factory
 	"Answer a factory object for Prototype objects."
 
-	^ PTFactory on: self canvas
+	^ (PTFactory context: self renderContext)
+		rendererClass: self rendererClass;
+		yourself

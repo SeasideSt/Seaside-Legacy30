@@ -2,4 +2,6 @@
 prototype
 	"Answer a Prototype factory in the context of the receiver."
 
-	^ PTFactory on: self
+	^ (PTFactory context: self context)
+		rendererClass: self species;
+		yourself
