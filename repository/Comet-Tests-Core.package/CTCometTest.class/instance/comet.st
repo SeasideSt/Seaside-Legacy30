@@ -1,3 +1,3 @@
 accessing
 comet
-	^ CTComet on: self canvas
+	^ CTComet context: self renderContext
