@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WAEnvironmentDefaultHandlersTest",
+	"category" : "Seaside-Tests-Examples",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAExamplesDefaultHandlersTest",
+	"type" : "normal"
+}
