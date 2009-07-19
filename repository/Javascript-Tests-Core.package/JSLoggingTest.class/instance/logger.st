@@ -1,3 +1,3 @@
 accessing
 logger
-	^ JSLogger on: self canvas
+	^ JSLogger context: self renderContext

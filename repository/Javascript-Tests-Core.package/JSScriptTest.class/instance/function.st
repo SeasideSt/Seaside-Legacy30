@@ -1,3 +1,3 @@
 accessing
 function
-	^ JSFunction on: self canvas
+	^ JSFunction context: self renderContext

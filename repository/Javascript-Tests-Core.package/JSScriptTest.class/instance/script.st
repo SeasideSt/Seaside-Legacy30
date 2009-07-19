@@ -1,3 +1,3 @@
 accessing
 script
-	^ JSScript on: self canvas
+	^ JSScript context: self renderContext
