@@ -1,3 +1,3 @@
 accessing
 responders
-	^ PTResponders on: self canvas
+	^ PTResponders context: self renderContext

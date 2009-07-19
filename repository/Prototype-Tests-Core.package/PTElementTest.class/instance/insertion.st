@@ -1,3 +1,3 @@
 accessing
 insertion
-	^ PTInsertion on: self canvas
+	^ PTInsertion context: self renderContext

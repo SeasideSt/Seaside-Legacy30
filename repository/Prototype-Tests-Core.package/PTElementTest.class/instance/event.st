@@ -1,3 +1,3 @@
 accessing
 event
-	^ PTEvent on: self canvas
+	^ PTEvent context: self renderContext

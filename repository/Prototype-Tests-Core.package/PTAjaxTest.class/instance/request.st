@@ -1,3 +1,3 @@
 accessing
 request
-	^ PTRequest on: self canvas
+	^ PTRequest context: self renderContext

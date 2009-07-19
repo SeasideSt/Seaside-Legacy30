@@ -1,3 +1,3 @@
 accessing
 formElementObserver
-	^ PTFormElementObserver on: self canvas
+	^ PTFormElementObserver context: self renderContext

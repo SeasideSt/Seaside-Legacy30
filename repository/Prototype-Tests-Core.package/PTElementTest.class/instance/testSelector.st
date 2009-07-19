@@ -1,12 +1,12 @@
 testing
 testSelector
 	| selector |
-	selector := self suSelector add: '*'.
+	selector := self ptSelector add: '*'.
 	self assert: selector equals: '$$("*")'.
 
-	selector := self suSelector add: 'div.zork'; add: 'p#zork'.
+	selector := self ptSelector add: 'div.zork'; add: 'p#zork'.
 	self assert: selector equals: '$$("div.zork","p#zork")'.
 
 	self
-		assertEnumerable: [ self suSelector add: 'p>a' ]
+		assertEnumerable: [ self ptSelector add: 'p>a' ]
 		prefix: '$$("p>a")'

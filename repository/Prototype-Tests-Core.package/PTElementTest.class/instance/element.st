@@ -1,3 +1,3 @@
 accessing
 element
-	^ PTElement on: self canvas
+	^ PTElement context: self renderContext

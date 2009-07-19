@@ -1,3 +1,3 @@
 accessing
 form
-	^ PTForm on: self canvas
+	^ PTForm context: self renderContext
