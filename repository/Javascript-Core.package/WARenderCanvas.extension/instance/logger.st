@@ -1,3 +1,5 @@
 *javascript-core
 logger
-	^ JSLogger on: self
+	^ (JSLogger context: self context)
+		rendererClass: self species;
+		yourself

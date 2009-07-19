@@ -1,3 +1,5 @@
 *javascript-core
 javascript
-	^ JSScript on: self
+	^ (JSScript context: self context)
+		rendererClass: self species;
+		yourself

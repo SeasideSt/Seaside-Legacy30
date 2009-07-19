@@ -5,8 +5,10 @@ script: aBlock on: aStream
 	| script document |
 	document := JSDocument on: aStream codec: self requestContext codec.
 	document open.
-	canvas context document: document during: [ 
-		script := JSScript on: canvas.
+	self renderContext document: document during: [ 
+		script := (JSScript context: self renderContext)
+			rendererClass: self rendererClass;
+			yourself.
 		aBlock value: script.
 		script addAll: document loadScripts ].
 	script printOn: aStream

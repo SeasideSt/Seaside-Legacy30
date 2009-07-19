@@ -1,3 +1,6 @@
 convenience
 logger
-	^ self add: (JSLogger on: canvas)
+	^ self add:
+		((JSLogger context: self renderContext)
+			rendererClass: self rendererClass;
+			yourself)

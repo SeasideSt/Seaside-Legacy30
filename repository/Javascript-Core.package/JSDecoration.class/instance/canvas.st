@@ -1,3 +1,0 @@
-accessing
-canvas
-	^ owner canvas
