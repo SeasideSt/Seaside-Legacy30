@@ -1,3 +1,3 @@
 accessing
 jQuery
-	^ JQueryClass on: self canvas
+	^ JQueryClass context: self renderContext
