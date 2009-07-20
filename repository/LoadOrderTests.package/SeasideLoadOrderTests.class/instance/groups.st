@@ -7,6 +7,8 @@ groups
 		add: self adminToolsPackages;
 		add: self rssPackages;
 		add: self javascriptPackages;
+		add: self jQueryPackages;
+		add: self prototypePackages;
 		add: self scriptaculousPackages;
 		add: self htmlPackages;
 		add: self internetExplorerPackages;
