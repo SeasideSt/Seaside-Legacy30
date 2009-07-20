@@ -8,4 +8,4 @@ script: aBlock
 			doNotCache; 
 			contentType: (WAMimeType textJavascript
 				charset: self application charSet).
-		owner script: aBlock on: response stream ]
+		self script: aBlock on: response stream ]

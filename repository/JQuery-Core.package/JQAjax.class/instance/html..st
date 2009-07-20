@@ -7,4 +7,4 @@ html: aRenderable
 		response
 			doNotCache;
 			contentType: self application contentType.
-		owner render: aRenderable on: response stream ]
+		self render: aRenderable on: response stream ]
