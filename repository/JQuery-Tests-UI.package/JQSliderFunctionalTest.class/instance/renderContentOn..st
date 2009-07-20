@@ -4,4 +4,4 @@ renderContentOn: html
 		value: current;
 		onChange: (html jQuery ajax
 			callback: [ :value | current := value asNumber ]
-			value: (html jQuery this slider value)))
+			value: (html jQuery this slider getValue)))
