@@ -1,6 +1,6 @@
 actions
 respond: aBlock
-	"Evaluate aBlock by passing in the current response and notify the current response handler to process generated response."
+	"Evaluate aBlock with the current Response as a parameter and then signal a desire to end request processing and return the Response to the user agent."
 
 	aBlock value: self response.
-	WAResponseNotification signal
+	self respond

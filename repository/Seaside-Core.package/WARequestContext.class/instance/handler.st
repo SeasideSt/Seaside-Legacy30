@@ -1,5 +1,5 @@
 accessing-dynamic
 handler
-	"Answer the current request handler or nil."
+	"Answer the current RequestHandler or nil."
 
 	^ self handlers isEmpty ifFalse: [ self handlers first ]

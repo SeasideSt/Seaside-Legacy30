@@ -1,6 +1,6 @@
 accessing-dynamic
 entryPoint
-	"Answer the closest subclass of WAEntryPoint in the handler stack"
+	"Answer the closest EntryPoint or nil."
 
 	^ handlers 
 		detect: [ :each | each isEntryPoint ]

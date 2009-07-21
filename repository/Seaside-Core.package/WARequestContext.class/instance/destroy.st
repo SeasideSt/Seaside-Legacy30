@@ -1,6 +1,6 @@
-actions
+initialization
 destroy
-	"Release the memory referenced by the receiver. This is used to avoid having tangling references hanging around and thus saving memory."
+	"Clear references to objects when the receiver is no longer required. This helps avoid circular references and reduces memory consumption. This method is called by the ServerAdaptor after request processing is finished."
 	
 	self request destroy.
 	self response destroy.
