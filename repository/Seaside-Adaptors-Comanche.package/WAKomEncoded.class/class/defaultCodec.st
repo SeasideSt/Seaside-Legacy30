@@ -1,3 +1,3 @@
 private
 defaultCodec
-	^ WAUtf8Codec
+	^ WAUtf8Codec new
