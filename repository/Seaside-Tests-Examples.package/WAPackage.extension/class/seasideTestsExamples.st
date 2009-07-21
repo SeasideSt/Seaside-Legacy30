@@ -4,5 +4,5 @@ seasideTestsExamples
 		name: 'Seaside-Tests-Examples';
 		description: 'Unit tests for Seaside-Examples.';
 		addDependency: 'Seaside-Examples';
-		addDependency: 'Seaside-Tests-Core';
+		addDependency: 'Seaside-Tests-Environment';
 		yourself
