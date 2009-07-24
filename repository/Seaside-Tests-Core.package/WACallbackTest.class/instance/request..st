@@ -11,6 +11,4 @@ request: aDictionary
 		cookies: nil
 		remoteAddress: nil.
 	context := WARequestContext request: request response: WAResponse new.
-	WACurrentRequestContext
-		use: context
-		during: [ registry handle: context ]
+	registry handle: context
