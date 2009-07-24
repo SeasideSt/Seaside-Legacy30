@@ -9,9 +9,8 @@ handleFiltered: aRequestContext
 	[ canvas := RRRssRenderCanvas context: context.
 	rootComponent := self createRootComponent.
 	
-	WACurrentRequestContext use: aRequestContext during: [
-		rootComponent updateRoot: root.
-		canvas render: rootComponent ].
+	rootComponent updateRoot: root.
+	canvas render: rootComponent.
 		
 	document close ] ensure: [ context destroy ].
 	aRequestContext respond
