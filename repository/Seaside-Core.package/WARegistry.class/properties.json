@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "jf 10/7/2008 18:15",
+	"commentStamp" : "jf 7/24/2009 09:36",
 	"super" : "WAEntryPoint",
 	"category" : "Seaside-Core-RequestHandler",
 	"classinstvars" : [ ],

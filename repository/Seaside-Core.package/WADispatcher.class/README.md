@@ -8,6 +8,4 @@ The VW port maintains multiple copies of the tree of dispatchers rooted at WADis
 
 Instance Variables:
 	defaultName	<String>
-	entryPoints	<(Dictionary of: (WAApplication | WADispatcher | WAFileHandler))>	 the keys are strings, which are the names and URL path segments for the handler at that key
-	lastUpdate	<TimeStamp>	Time the dispatcher was last changed
-	version	<SmallInteger>	Each time the dispatcher is changed the version is increased by 1
+	entryPoints	<(Dictionary of: WAEntryPoint)>	 the keys are strings, which are the names and URL path segments for the handler at that key
