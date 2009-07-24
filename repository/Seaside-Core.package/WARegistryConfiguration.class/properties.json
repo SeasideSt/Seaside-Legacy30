@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "WASystemConfiguration",
-	"category" : "Seaside-Core-RequestHandler",
+	"category" : "Seaside-Core-RequestHandling",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

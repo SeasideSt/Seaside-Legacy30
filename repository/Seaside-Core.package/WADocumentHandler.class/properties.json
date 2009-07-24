@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "jf 7/24/2009 09:32",
 	"super" : "WARequestHandler",
-	"category" : "Seaside-Core-RequestHandler",
+	"category" : "Seaside-Core-RequestHandling",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
