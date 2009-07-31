@@ -4,6 +4,8 @@ expression: aString context: anObject
 	
 	^ (JQueryInstance
 		context: self renderContext
-		constructor: (Array with: aString with: anObject))
-			rendererClass: self rendererClass;
-			yourself
+		constructor: (anObject isNil
+			ifTrue: [ Array with: aString ]
+			ifFalse: [ Array with: aString with: anObject ]))
+				rendererClass: self rendererClass;
+				yourself
