@@ -11,17 +11,13 @@ testOneOfManySlashInUrl
 	cookie4 := (WARequestCookie key: handler keyCookieName value: '1234')
 		path: '/1/2/3';
 		yourself.
-	request := WARequest
-		method: 'GET'
-		url: '/1/2/'
-		headers: Dictionary new
-		fields: Dictionary new
-		cookies: (Array
+	request := (WARequest method: 'GET' uri: '/1/2/')
+		setCookies: (Array
 			with: cookie1
 			with: cookie2
 			with: cookie3
-			with: cookie4)
-		remoteAddress: '127.0.0.1'.
+			with: cookie4);
+		yourself..
 	context := self requestContextFor: request.
 	actual := handler cookieFromContext: context ifAbsent: [ nil ].
 	self assert: actual == cookie3

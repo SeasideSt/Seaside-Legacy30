@@ -1,15 +1,11 @@
 testing
 testTakeServerParametersFromRequest
 	| request |
-	request := WARequest
-		method: 'GET'
-		url: WAUrl new
-		headers: (Dictionary new
+	request := WARequest new
+		setHeaders: (Dictionary new
 			at: 'host' put: 'www.seaside.st:8080';
-			yourself)
-		fields: Dictionary new
-		cookies: Array new
-		remoteAddress: '127.0.0.1'.
+			yourself);
+		yourself.
 		
 	url takeServerParametersFromRequest: request.
 	self assert: url hostname = 'www.seaside.st'.

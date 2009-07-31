@@ -3,12 +3,6 @@ request: aDictionary
 	"Processes a request with the fields given in aDictionary."
 	
 	| request context |
-	request := WARequest 
-		method: 'GET'
-		url: WAUrl new
-		headers: WASmallDictionary new
-		fields: aDictionary
-		cookies: nil
-		remoteAddress: nil.
+	request := WARequest new setFields: aDictionary; yourself.
 	context := WARequestContext request: request response: WAResponse new.
 	registry handle: context

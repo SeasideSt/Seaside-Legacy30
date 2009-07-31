@@ -1,3 +1,3 @@
 accessing
 createRequestContext
-	^ WARequestContext request: WARequest blankRequest response: WABufferedResponse new
+	^ WARequestContext request: WARequest new response: WABufferedResponse new

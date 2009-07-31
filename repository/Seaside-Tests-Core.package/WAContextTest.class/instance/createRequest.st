@@ -1,3 +1,3 @@
 configuration
 createRequest
-	^ WARequest blankRequest
+	^ WARequest new

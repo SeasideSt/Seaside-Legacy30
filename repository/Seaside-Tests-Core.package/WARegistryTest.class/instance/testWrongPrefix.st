@@ -6,15 +6,11 @@ testWrongPrefix
 		path: '/one';
 		yourself.
 
-	request := WARequest
-		method: 'GET'
-		url: '/oneo'
-		headers: Dictionary new
-		fields: Dictionary new
-		cookies: (Array
+	request := (WARequest method: 'GET' uri: '/oneo')
+		setCookies: (Array
 			with: cookie1
-			with: cookie2)
-		remoteAddress: '127.0.0.1'.
+			with: cookie2);
+		yourself.
 	context := self requestContextFor: request.
 	actual := handler cookieFromContext: context ifAbsent: [ nil ].
 	self assert: actual == cookie1
