@@ -8,5 +8,5 @@ readFrom: aStream
 	minor := aStream upTo: Character space.
 	
 	^ self
-		major: (Integer readFrom: major readStream)
-		minor: (Integer readFrom: minor readStream)
+		major: major seasideInteger
+		minor: minor seasideInteger
