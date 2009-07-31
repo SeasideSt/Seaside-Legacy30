@@ -1,19 +1,14 @@
 {
-	"commentStamp" : "pmm 9/28/2008 20:29",
+	"commentStamp" : "",
 	"super" : "WAObject",
 	"category" : "Seaside-Core-HTTP",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"method",
-		"uri",
-		"version",
-		"fields",
-		"remoteAddress",
-		"headers",
-		"cookies"
+		"major",
+		"minor"
 	],
-	"name" : "WARequest",
+	"name" : "WAHttpVersion",
 	"type" : "normal"
 }
