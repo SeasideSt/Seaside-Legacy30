@@ -1,9 +1,5 @@
 running
 requestWithMethod: aString
-	^WARequest
+	^ WARequest
 		method: aString
-		url: '/oneo'
-		headers: Dictionary new
-		fields: Dictionary new
-		cookies: Array new
-		remoteAddress: '127.0.0.1'
+		uri: '/oneo'
