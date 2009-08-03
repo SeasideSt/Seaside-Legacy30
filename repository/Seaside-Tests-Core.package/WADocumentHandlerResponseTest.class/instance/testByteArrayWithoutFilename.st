@@ -2,4 +2,4 @@ testing
 testByteArrayWithoutFilename
 	self
 		createAndVerifyBinaryDocumentNamed: nil
-		hasAttachement: nil
+		hasAttachment: nil

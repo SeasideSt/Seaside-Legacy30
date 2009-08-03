@@ -1,5 +1,5 @@
 private
-createAndVerifyDocumentNamed: aFilename content: anObject mimeType: aMimeTypeString hasAttachement: aHttpHeaderValue
+createAndVerifyDocumentNamed: aFilename content: anObject mimeType: aMimeTypeString hasAttachment: aHttpHeaderValue
 	| handler response |
 	handler := WADocumentHandler
 		document: anObject
