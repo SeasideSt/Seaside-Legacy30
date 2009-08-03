@@ -1,6 +1,6 @@
 rendering
 renderContentOn: html
 	html select
-		list: options;
-		selected: selection;
-		callback: [ :value | selection := value ]
+		list: self options;
+		selected: self selection;
+		callback: [ :value | self selection: value ]

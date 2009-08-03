@@ -1,3 +1,3 @@
 examples
 example
-	^ self options: #('Smalltalk' 'Perl' 'Python' 'Ruby')
+	^ self options: #('Perl' 'Python' 'Ruby' 'Smalltalk') selection: 'Smalltalk'

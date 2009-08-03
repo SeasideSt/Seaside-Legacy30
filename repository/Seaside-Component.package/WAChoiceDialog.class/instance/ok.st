@@ -1,3 +1,3 @@
 actions
 ok
-	self answer: selection
+	self answer: self selection
