@@ -7,5 +7,6 @@ Instance Variables
 	hostname:		<String> or nil
 	port:			<Integer> or nil
 	path:			<OrderedCollection> or nil
+	slash:			<Boolean>
 	parameters:		<Dictionary>
 	fragment:		<String> or nil

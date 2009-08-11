@@ -1,3 +1,3 @@
 accessing
-scheme: aString 
+scheme: aString
 	scheme := aString asLowercase

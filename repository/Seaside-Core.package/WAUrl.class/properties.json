@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "lr 3/26/2008 14:20",
+	"commentStamp" : "lr 8/11/2009 09:46",
 	"super" : "WAObject",
 	"category" : "Seaside-Core-HTTP",
 	"classinstvars" : [ ],
@@ -12,6 +12,7 @@
 		"hostname",
 		"port",
 		"path",
+		"slash",
 		"parameters",
 		"fragment"
 	],

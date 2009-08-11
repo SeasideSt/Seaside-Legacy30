@@ -9,4 +9,5 @@ parsePath: aString
 		part isEmpty ifFalse: [
 			part = '..'
 				ifTrue: [ self path isEmpty ifFalse: [ self path removeLast ] ]
-				ifFalse: [ part = '.' ifFalse: [ self path addLast: (self decode: part) ] ] ] ]
+				ifFalse: [ part = '.' ifFalse: [ self path addLast: (self decode: part) ] ] ] ].
+	slash := aString notEmpty and: [ aString last = $/ ]

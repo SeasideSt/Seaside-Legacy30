@@ -1,7 +1,8 @@
 encoding
 encodePathOn: aDocument
-	aDocument nextPut: $/.
-	path ifNil: [ ^ self ].
-	path
-		do: [ :each | aDocument urlEncoder nextPutAll: each ]
-		separatedBy: [ aDocument nextPut: $/ ]
+	path isNil ifFalse: [
+		path do: [ :each |
+			aDocument nextPut: $/.
+			aDocument urlEncoder nextPutAll: each ] ].
+	(path isNil or: [ path isEmpty or: [ slash ] ])
+		ifTrue: [ aDocument nextPut: $/ ]
