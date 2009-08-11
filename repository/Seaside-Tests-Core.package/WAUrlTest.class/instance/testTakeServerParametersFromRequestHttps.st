@@ -1,14 +1,11 @@
 testing
 testTakeServerParametersFromRequestHttps
 	| request |
-	
-	request := (WARequest method: 'GET' uri: (WAUrl new scheme: 'https'; yourself))
+	request := WARequest new
 		setHeaders: (Dictionary new
-			at: 'host' put: 'www.thehost.com:1337';
+			at: 'host' put: 'www.seaside.st';
+			at: 'base' put: 'foo/bar';
 			yourself);
-		yourself..
-		
+		yourself.
 	url takeServerParametersFromRequest: request.
-	self assert: url hostname = 'www.thehost.com'.
-	self assert: url port = 1337.
-	self assert: url scheme = 'https'.
+	self assert: url seasideString = 'http://www.seaside.st/foo/bar'
