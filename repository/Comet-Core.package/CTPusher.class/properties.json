@@ -10,7 +10,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"mutex",
-		"handlers"
+		"handlers",
+		"rendererClass"
 	],
 	"name" : "CTPusher",
 	"type" : "normal"

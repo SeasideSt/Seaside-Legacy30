@@ -4,7 +4,7 @@ cometJs
  * (c) 2006-2009 Lukas Renggli (renggli@gmail.com)
  */
 
-Comet = function(url, options) {
+var Comet = function(url) {
 	this.url = url;
 	this.iframe = this.createIframe();
 	document.body.appendChild(this.iframe);
@@ -33,5 +33,5 @@ Comet.prototype.createIframe = function() {
 };
 
 Comet.eval = function(code) {
-	return eval(code);
+ 	return eval(code);
 };'
