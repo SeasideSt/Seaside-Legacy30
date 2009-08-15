@@ -10,7 +10,7 @@ Instance Variables
 	remoteAddress:	<String>
 
 url
-	- The request url. For example if the client requested 'http://www.google.com/search?q=seaside' then the contents of url would be '/search?q=seaside'. This url is fully decoded. Use the #host method to get the host name.
+	- The request url without parameters. For example if the client requested 'http://www.google.com/search?q=seaside' then the contents of url would be '/search'. To get the parameters use #fields. This url is fully decoded. Use the #host method to get the host name. Dependening on the server adapter the #scheme may be 'http' or 'https' if the original request was HTTPS.
 
 headers
 	- The header of the HTTP request. This is a Dictionary mapping lowercase strings to other strings.
