@@ -1,7 +1,10 @@
 actions
 run: aRule changes: anArray in: aClassCollection
 	"aRule open"
+	
 	| expected selectors tree |
+	aRule class isVisible
+		ifFalse: [ ^ self ].
 	expected := anArray 
 		collect: [ :each | RBParser parseMethod: each ].
 	selectors := expected

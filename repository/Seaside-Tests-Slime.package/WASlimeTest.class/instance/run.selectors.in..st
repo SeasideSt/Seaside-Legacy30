@@ -3,6 +3,8 @@ run: aRule selectors: aSelectorCollection in: aClassCollection
 	"aRule open"
 
 	| searchEnvironment resultEnvironment |
+	aRule class isVisible
+		ifFalse: [ ^ self ].
 	searchEnvironment := ClassEnvironment 
 		onEnvironment: BrowserEnvironment new
 		classes: aClassCollection.
