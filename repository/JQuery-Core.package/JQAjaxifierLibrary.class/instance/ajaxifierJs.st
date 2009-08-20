@@ -14,6 +14,11 @@ $(function () {
 	var HEAD_EXTRACTOR = /<head[^>]*>((.|\s)*?)<\/head>/im;
 	var BODY_EXTRACTOR = /<body[^>]*>((.|\s)*?)<\/body>/im;
 	var SCRIPT_EXTRACTOR = /<script(.|\s)*?\/script>/ig;
+	var PARAM_EXTRACTOR = /\?(.*)$/i;
+	var PARAM_CLEANER = /&_n/ig;
+	
+	// variables
+	var activeHash = "";
 
 	// ajax action
 	function load(type, url, data) {
@@ -29,6 +34,11 @@ $(function () {
 					.replace(SCRIPT_EXTRACTOR, ""));
 				$("body").html(BODY_EXTRACTOR
 					.exec(data)[1]);
+				window.location.hash = activeHash = (type == "GET" ?
+					PARAM_EXTRACTOR
+						.exec(url)[1]
+						.replace(PARAM_CLEANER, "")
+					: "");
 			}
 		});
 	}
@@ -54,5 +64,12 @@ $(function () {
 		}
 		
 	});
+	
+	// check for changes in the hash
+	setInterval(function () {
+		var currentHash = window.location.hash.substr(1);
+		if (currentHash != activeHash)
+			load("GET", "?" + (activeHash = currentHash));
+	}, 250);
 
 });'
