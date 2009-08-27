@@ -1,3 +1,3 @@
 accessing
 description
-	^ nil
+	^ self name seasideString
