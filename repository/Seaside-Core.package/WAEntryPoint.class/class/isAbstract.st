@@ -1,3 +1,3 @@
 testing
 isAbstract
-	^ self description isNil
+	^ self name = #WAEntryPoint
