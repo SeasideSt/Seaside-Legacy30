@@ -8,5 +8,5 @@ fromString: aString
 			value := self valueClass fromString: (each copyUpTo: $;) trimBoth.
 			quality := (each includes: $;)
 				ifTrue: [ Float readFrom: ((each copyAfter: $;) copyAfter: $=) readStream ]
-				ifFalse: [ Float infinity ].
+				ifFalse: [ 1.0 ].
 			stream nextPut: (self value: value quality: quality) ] ]
