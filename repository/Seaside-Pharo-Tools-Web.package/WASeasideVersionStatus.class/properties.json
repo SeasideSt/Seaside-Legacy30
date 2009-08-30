@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WASqueakStatusItem",
+	"category" : "Seaside-Pharo-Tools-Web",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WASeasideVersionStatus",
+	"type" : "normal"
+}
