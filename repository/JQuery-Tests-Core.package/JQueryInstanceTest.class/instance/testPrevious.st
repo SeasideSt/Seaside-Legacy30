@@ -1,8 +1,8 @@
 testing-navigating
-testPrev
+testPrevious
 	self
-		assert: (((self jQuery: 'div')) prev)
+		assert: (((self jQuery: 'div')) previous)
 		equals: self function , '("div").prev()'.
 	self
-		assert: ((self jQuery: 'div') prev: 'p')
+		assert: ((self jQuery: 'div') previous: 'p')
 		equals: self function , '("div").prev("p")'
