@@ -38,5 +38,6 @@ basicPackages
 		"Environment"
 		add: (Array 
 			with: seaside29 -> 'Seaside-Environment-lr.53.mcz'
+			with: seaside29 -> 'Seaside-Squeak-Environment-lr.29.mcz'
 			with: seaside29 -> 'Seaside-Tests-Environment-jf.15.mcz');
 		yourself.
