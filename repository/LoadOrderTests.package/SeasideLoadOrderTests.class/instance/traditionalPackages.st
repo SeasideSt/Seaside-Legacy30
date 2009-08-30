@@ -9,7 +9,7 @@ traditionalPackages
 		"Continuation are also in Basic"
 		add: (Array 
 			with: seaside29 -> 'Seaside-Squeak-Continuation-jf.21.mcz'
-			with: seaside29 -> 'Seaside-Tests-Squeak-Continuation-lr.8.mcz');
+			with: seaside29 -> 'Seaside-Tests-Squeak-Continuation-lr.9.mcz');
 		"Flow"
 		add: (Array 
 			with: seaside29 -> 'Seaside-Flow-lr.15.mcz'
