@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "pmm 9/14/2008 17:06",
+	"super" : "WAErrorHandler",
+	"category" : "Seaside-Pharo-Email",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAEmailErrorHandler",
+	"type" : "normal"
+}
