@@ -5,13 +5,13 @@ basicPackages
 		"Platform"
 		add: (Array 
 			with: seaside29 -> 'Seaside-Platform-jf.77.mcz'
-			with: seaside29 -> 'Seaside-Squeak-Platform-jf.81.mcz'
-			with: seaside29 -> 'Seaside-Tests-Platform-jok.84.mcz'
+			with: seaside29 -> 'Seaside-Squeak-Platform-pmm.82.mcz'
+			with: seaside29 -> 'Seaside-Tests-Platform-pmm.85.mcz'
 			with: seaside29 -> 'Seaside-Tests-Squeak-Platform-lr.19.mcz');
 		"Core"
 		add: (Array 
-			with: seaside29 -> 'Seaside-Core-pmm.532.mcz'
-			with: seaside29 -> 'Seaside-Tests-Core-lr.142.mcz'
+			with: seaside29 -> 'Seaside-Core-pmm.534.mcz'
+			with: seaside29 -> 'Seaside-Tests-Core-pmm.143.mcz'
 			with: seaside29 -> 'Seaside-Tests-UTF8-lr.3.mcz'
 			with: seaside29 -> 'Seaside-Squeak-Core-lr.78.mcz'
 			with: seaside29 -> 'Seaside-Tests-Squeak-Core-jf.28.mcz');
