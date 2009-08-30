@@ -5,4 +5,5 @@ seasideToolsWeb
 		description: 'Web-based tools for administering Seaside.';
 		addDependency: 'Seaside-Tools-Core';
 		addDependency: 'Seaside-RenderLoop';
+		addDependency: 'Seaside-SwineFoo'
 		yourself
