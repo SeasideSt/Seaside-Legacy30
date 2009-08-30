@@ -1,0 +1,3 @@
+inspecting
+openNativeInspectorOn: anObject
+	anObject inspect

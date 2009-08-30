@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "WATool",
+	"category" : "Seaside-Pharo-Development-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"IgnoredClasses"
+	],
+	"instvars" : [
+		"instances",
+		"table",
+		"formatter"
+	],
+	"name" : "WAMemory",
+	"type" : "normal"
+}

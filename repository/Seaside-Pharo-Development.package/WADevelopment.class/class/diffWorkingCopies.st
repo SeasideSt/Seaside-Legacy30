@@ -1,0 +1,3 @@
+monticello
+diffWorkingCopies
+	self diffWorkingCopies: self workingCopies
