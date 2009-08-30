@@ -22,6 +22,8 @@ processRendering: aResponse
 		resourceUrl: self application resourceBaseUrl.
 	actionContinuation renderContext: renderContext.
 	htmlRoot := self createHtmlRootWithContext: renderContext.
+	self updateHtmlRoot: htmlRoot.
+	self toPresenterSendRoot: htmlRoot.
 
 	"Render"
 	document open: htmlRoot.
