@@ -10,6 +10,7 @@ groups
 		add: self jQueryPackages;
 		add: self prototypePackages;
 		add: self scriptaculousPackages;
+		add: self cometPackages;
 		add: self htmlPackages;
 		add: self internetExplorerPackages;
 		add: self emailPackages;
