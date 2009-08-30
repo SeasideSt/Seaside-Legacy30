@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "jf 11/10/2008 10:09",
+	"super" : "WAHtmlErrorHandler",
+	"category" : "Seaside-Pharo-Environment",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAHtmlHaltAndErrorHandler",
+	"type" : "normal"
+}
