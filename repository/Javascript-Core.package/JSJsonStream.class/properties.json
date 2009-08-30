@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "pmm 8/30/2009 18:59",
+	"super" : "JSStream",
+	"category" : "Javascript-Core-Object",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "JSJsonStream",
+	"type" : "normal"
+}
