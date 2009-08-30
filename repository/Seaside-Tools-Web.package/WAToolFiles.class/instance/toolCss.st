@@ -17,7 +17,7 @@ toolCss
 	text-align: right;
 }
 
-.window-titlebar .wa-configuretoolplugin {
+.window-titlebar .wa-configuretoolplugin, .window-titlebar .wa-configuredispatcherplugin {
 	background: url(config.png) no-repeat;
 }
 .window-titlebar .wa-deprecationtoolplugin {
