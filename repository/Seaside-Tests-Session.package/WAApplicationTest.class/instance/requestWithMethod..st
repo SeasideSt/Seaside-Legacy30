@@ -2,4 +2,4 @@ running
 requestWithMethod: aString
 	^ WARequest
 		method: aString
-		uri: '/oneo'
+		uri: '/app/oneo'
