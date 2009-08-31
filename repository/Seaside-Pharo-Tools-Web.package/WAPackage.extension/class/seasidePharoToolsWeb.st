@@ -1,5 +1,5 @@
 *seaside-pharo-tools-web
-seasideSqueakToolsWeb
+seasidePharoToolsWeb
 	^ self new
 		name: 'Seaside-Pharo-Tools-Web';
 		description: 'Pharo-specific web-based administration tools for Seaside.';
