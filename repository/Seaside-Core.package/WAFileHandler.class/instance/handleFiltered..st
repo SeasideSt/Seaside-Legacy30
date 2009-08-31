@@ -1,11 +1,4 @@
 handling
 handleFiltered: aRequestContext 
-	| path baseUrl requestUrl |
-	baseUrl := WAUrl new
-		addAllToPath: self path;
-		yourself.
-	requestUrl := aRequestContext request url.
-	path := baseUrl relativeTo: requestUrl.
-	self 
-		responseAt: path
-		forContext: aRequestContext
+	self consumeNameFrom: aRequestContext.
+	self responseForContext: aRequestContext

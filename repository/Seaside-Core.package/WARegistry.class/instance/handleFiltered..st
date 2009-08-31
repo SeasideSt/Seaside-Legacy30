@@ -1,6 +1,7 @@
 handling
 handleFiltered: aRequestContext
 	| cookie key handler urlKey |
+	self consumeNameFrom: aRequestContext.
 	urlKey := self urlKeyFromContext: aRequestContext ifAbsent: [ nil ].
 	cookie := self useCookies
 		ifFalse: [ nil ]
