@@ -1,5 +1,5 @@
 *seaside-pharo-flow
-seasideSqueakFlow
+seasidePharoFlow
 	^ self new
 		name: 'Seaside-Pharo-Flow';
 		addDependency: 'Seaside-Flow';
