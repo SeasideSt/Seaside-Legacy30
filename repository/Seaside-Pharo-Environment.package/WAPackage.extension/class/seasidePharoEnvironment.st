@@ -1,5 +1,5 @@
 *seaside-pharo-environment
-seasideSqueakEnvironment
+seasidePharoEnvironment
 	^ self new
 		name: 'Seaside-Pharo-Environment';
 		addDependency: 'Seaside-Environment';
