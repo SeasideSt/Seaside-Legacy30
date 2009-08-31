@@ -1,0 +1,3 @@
+monticello-repositories
+addSeasideRepository
+	self addRepository: self defaultRepository toWorkingCopies: self workingCopies

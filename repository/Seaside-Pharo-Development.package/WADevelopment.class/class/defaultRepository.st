@@ -1,0 +1,3 @@
+monticello-repositories
+defaultRepository
+	^ self seaside29Repository

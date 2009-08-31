@@ -2,11 +2,12 @@ monticello
 commitWorkingCopies: aCollection
 	"Send changes from your working copy to the repository."
 
-	| pair repository version |
+	| pair version repository |
 	pair := nil.
-	repository := MCRepositoryGroup default repositories
-		detect: [ :each | (each isKindOf: MCHttpRepository) and: [ (each locationWithTrailingSlash endsWith: 'www.squeaksource.com/Seaside29/') and: [ each user notEmpty and: [ each password notEmpty ] ] ] ]
-		ifNone: [ self error: 'No Seaside repository with login information found.' ]. 
+	repository := self defaultRepository.
+	(repository user isEmpty or: [ repository password isEmpty ])
+		ifTrue: [ ^ self error: 'Username and password required for Seaside repository.'].
+	
 	aCollection
 		do: [ :each | 
 			each needsSaving ifTrue: [ 
