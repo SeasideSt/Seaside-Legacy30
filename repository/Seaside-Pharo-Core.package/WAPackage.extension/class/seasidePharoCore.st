@@ -1,5 +1,5 @@
 *seaside-pharo-core
-seasideSqueakCore
+seasidePharoCore
 	^ self new
 		name: 'Seaside-Pharo-Core';
 		addDependency: 'Seaside-Core';
