@@ -1,5 +1,5 @@
 *seaside-tests-pharo-development
-seasideTestsSqueakDevelopment
+seasideTestsPharoDevelopment
 	^ self new
 		name: 'Seaside-Tests-Pharo-Development';
 		addDependency: 'Seaside-Pharo-Development';
