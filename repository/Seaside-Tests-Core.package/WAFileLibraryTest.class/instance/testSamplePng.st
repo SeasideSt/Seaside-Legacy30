@@ -4,6 +4,7 @@ testSamplePng
 	handler := WAFileHandler named: '/i/dont/care/'.
 	library := WATestingFiles default.
 	self requestContextWithUrl: '/i/dont/care/WATestingFiles/sample.png'.
+	requestContext consumer next; next.
 	response := self responseAfter: [ handler handle: self requestContext ].
 	self assert: response status = 200.
 	self assert: response contentType = WAMimeType imagePng.

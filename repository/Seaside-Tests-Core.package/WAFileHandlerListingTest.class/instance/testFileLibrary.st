@@ -4,6 +4,7 @@ testFileLibrary
 	handler := WAFileHandler named: '/i/dont/care/'.
 	handler preferenceAt: #fileHandlerListingClass put: self handlerClass.
 	self requestContextWithUrl: '/i/dont/care/WATestingFiles'.
+	self requestContext consumer next; next.
 
 	response := self responseAfter: [ handler handle: self requestContext ].
 

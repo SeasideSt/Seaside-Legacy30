@@ -5,6 +5,7 @@ testFileLibraries
 	handler preferenceAt: #fileHandlerListingClass put: self handlerClass.
 
 	self requestContextWithUrl: '/i/dont/care/'.
+	self requestContext consumer next; next.
 
 	response := self responseAfter: [ handler handle: self requestContext ].
 

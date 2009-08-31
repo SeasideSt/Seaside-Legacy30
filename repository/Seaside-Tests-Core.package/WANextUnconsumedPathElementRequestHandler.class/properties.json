@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "WAEntryPoint",
+	"category" : "Seaside-Tests-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"nextUnconsumedPathElement"
+	],
+	"name" : "WANextUnconsumedPathElementRequestHandler",
+	"type" : "normal"
+}
