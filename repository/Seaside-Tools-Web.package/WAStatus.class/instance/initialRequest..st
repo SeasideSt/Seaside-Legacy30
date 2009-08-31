@@ -1,10 +1,10 @@
 initialization
 initialRequest: aRequest
-	| className relativePath |
+	| className consumer |
 	super initialRequest: aRequest.
-	relativePath := self application baseUrl relativeTo: aRequest url.
-	relativePath isEmpty ifTrue: [ ^self ].
-	className := relativePath first.
+	consumer := self requestContext consumer.
+	consumer atEnd ifTrue: [ ^self ].
+	className := consumer next.
 	navigation components do: [ :each |
 		"#seasideString is required because of Symbol <-> String comparison"
 		each value class name seasideString = className
