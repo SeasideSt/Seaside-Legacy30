@@ -1,6 +1,7 @@
 handling
 handleFiltered: aRequestContext
 	| document context canvas root rootComponent |
+	self consumeNameFrom: aRequestContext.
 	self setContentType: aRequestContext response.
 	document := aRequestContext newDocument.
 	root := self createDocumentRoot.
