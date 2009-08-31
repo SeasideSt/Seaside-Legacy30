@@ -1,4 +1,4 @@
 handling
 handleDefault: aRequestContext
-	self handle: aRequestContext	registering: self sessionClass new
+	self handle: aRequestContext registering: self sessionClass new
 		
