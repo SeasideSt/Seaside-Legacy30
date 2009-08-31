@@ -11,6 +11,10 @@ handleFiltered: aRequestContext
 					| peek |
 					peek := consumer peek.
 					peek = self name
-						ifTrue: [ consumer next; peek ]
+						ifTrue: [
+							consumer next.
+							consumer atEnd
+								ifTrue: [ self defaultName ]
+								ifFalse: [ consumer peek ] ]
 						ifFalse: [ self defaultName ] ] ].
 	self handleFiltered: aRequestContext named: handlerName
