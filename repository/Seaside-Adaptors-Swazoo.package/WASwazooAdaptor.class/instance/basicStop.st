@@ -1,3 +1,3 @@
 private
 basicStop
-	site stop
+	SwazooServer singleton removeSite: site
