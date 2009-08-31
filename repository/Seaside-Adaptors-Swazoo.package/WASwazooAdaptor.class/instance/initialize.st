@@ -5,5 +5,4 @@ initialize
 		named: (WAKeyGenerator current keyOfLength: 32)
 		on: self.
 	site ip: '*'.
-	site host: '*'.
-	SwazooServer singleton addSite: site
+	site host: '*'
