@@ -1,5 +1,5 @@
 *seaside-tests-pharo-core
-seasideTestsSqueakCore
+seasideTestsPharoCore
 	^ self new
 		name: 'Seaside-Tests-Pharo-Core';
 		addDependency: 'Seaside-Pharo-Core';
