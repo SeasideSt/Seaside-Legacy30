@@ -1,5 +1,5 @@
 *seaside-tests-pharo-functional
-seasideTestsSqueakFunctional
+seasideTestsPharoFunctional
 	^ self new
 		name: 'Seaside-Tests-Pharo-Functional';
 		description: 'Pharo specific functional Seaside test suite.';
