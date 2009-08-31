@@ -1,5 +1,5 @@
 *seaside-pharo-email
-seasideSqueakEmail
+seasidePharoEmail
 	^ self new
 		name: 'Seaside-Pharo-Email';
 		description: 'Pharo implementation classes for the package "Seaside-Email".';
