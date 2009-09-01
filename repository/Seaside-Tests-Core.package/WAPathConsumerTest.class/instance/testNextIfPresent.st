@@ -1,5 +1,5 @@
 testing
-testNextIfPresend
+testNextIfPresent
 	| evaluated |
 	evaluated := false.
 	consumer nextIfPresentDo: [ :next |
