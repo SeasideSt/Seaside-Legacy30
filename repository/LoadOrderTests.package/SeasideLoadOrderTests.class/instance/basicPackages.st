@@ -5,24 +5,24 @@ basicPackages
 		"Platform"
 		add: (Array 
 			with: seaside29 -> 'Seaside-Platform-pmm.78.mcz'
-			with: seaside29 -> 'Seaside-Pharo-Platform-lr.1.mcz'
+			with: seaside29 -> 'Seaside-Pharo-Platform-jf.2.mcz'
 			with: seaside29 -> 'Seaside-Tests-Platform-pmm.86.mcz'
-			with: seaside29 -> 'Seaside-Tests-Pharo-Platform-lr.1.mcz');
+			with: seaside29 -> 'Seaside-Tests-Pharo-Platform-jf.2.mcz');
 		"Core"
 		add: (Array 
-			with: seaside29 -> 'Seaside-Core-pmm.534.mcz'
-			with: seaside29 -> 'Seaside-Tests-Core-pmm.143.mcz'
+			with: seaside29 -> 'Seaside-Core-pmm.539.mcz'
+			with: seaside29 -> 'Seaside-Tests-Core-jf.148.mcz'
 			with: seaside29 -> 'Seaside-Tests-UTF8-lr.3.mcz'
-			with: seaside29 -> 'Seaside-Pharo-Core-lr.1.mcz'
-			with: seaside29 -> 'Seaside-Tests-Pharo-Core-lr.1.mcz');
+			with: seaside29 -> 'Seaside-Pharo-Core-jf.2.mcz'
+			with: seaside29 -> 'Seaside-Tests-Pharo-Core-jf.2.mcz');
 		"Canvas"
 		add: (Array 
 			with: seaside29 -> 'Seaside-Canvas-pmm.64.mcz'
 			with: seaside29 -> 'Seaside-Tests-Canvas-pmm.28.mcz');
 		"Session"
 		add: (Array 
-			with: seaside29 -> 'Seaside-Session-pmm.113.mcz'
-			with: seaside29 -> 'Seaside-Tests-Session-jf.25.mcz');
+			with: seaside29 -> 'Seaside-Session-pmm.114.mcz'
+			with: seaside29 -> 'Seaside-Tests-Session-pmm.26.mcz');
 		"Component"
 		add: (Array 
 			with: seaside29 -> 'Seaside-Component-jf.69.mcz'
@@ -34,9 +34,12 @@ basicPackages
 		"Tools"
 		add: (Array
 			with: seaside29 -> 'Seaside-Tools-Core-jf.8.mcz');
+		"??"
+		add: (Array
+			with: seaside29 -> 'Seaside-SwineFoo-jf.1.mcz');
 		"Environment"
 		add: (Array 
-			with: seaside29 -> 'Seaside-Environment-jf.54.mcz'
-			with: seaside29 -> 'Seaside-Pharo-Environment-lr.1.mcz'
+			with: seaside29 -> 'Seaside-Environment-jf.55.mcz'
+			with: seaside29 -> 'Seaside-Pharo-Environment-jf.2.mcz'
 			with: seaside29 -> 'Seaside-Tests-Environment-jf.15.mcz');
 		yourself.
