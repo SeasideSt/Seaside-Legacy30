@@ -3,13 +3,13 @@ testNextIfPresend
 	| evaluated |
 	evaluated := false.
 	consumer nextIfPresentDo: [ :next |
-		 self assert: consumer next = 'tweets'.
+		 self assert: next = 'tweets'.
 		evaluated := true ].
 	self assert: evaluated.
 	
 	evaluated := false.
 	consumer nextIfPresentDo: [ :next |
-		 self assert: consumer next = 'kentbeck'.
+		 self assert: next = 'kentbeck'.
 		evaluated := true ].
 	self assert: evaluated.
 	
