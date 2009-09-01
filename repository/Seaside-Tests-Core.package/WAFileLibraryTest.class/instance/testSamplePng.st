@@ -1,7 +1,7 @@
 testing
 testSamplePng
 	| handler library response stream contents |
-	handler := WAFileHandler named: '/i/dont/care/'.
+	handler := WAFileHandler named: 'care'.
 	library := WATestingFiles default.
 	self requestContextWithUrl: '/i/dont/care/WATestingFiles/sample.png'.
 	requestContext consumer next; next.
