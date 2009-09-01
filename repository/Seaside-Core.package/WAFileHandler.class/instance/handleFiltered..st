@@ -1,4 +1,3 @@
 handling
-handleFiltered: aRequestContext 
-	self consumeNameFrom: aRequestContext.
+handleFiltered: aRequestContext
 	self responseForContext: aRequestContext
