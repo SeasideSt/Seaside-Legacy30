@@ -1,9 +1,7 @@
 styles
 developmentCss
 	^ '/* toolbar */
-body {
-	margin-bottom: 25px !important;
-}
+body { margin-bottom: 25px !important; }
 .wa-toolbar {
 	left: 0;
 	right: 0;
@@ -36,6 +34,7 @@ body {
 /* halos */
 .wa-halo {
 	margin: 4px;
+	text-align: left;
 	border: 1px solid #aaa;
 }
 
