@@ -8,11 +8,11 @@
 	"instvars" : [
 		"userName",
 		"password",
-		"seaside29",
 		"komHttpServer",
 		"baseTests",
 		"baseUndeclared",
-		"doTests"
+		"doTests",
+		"seaside30"
 	],
 	"name" : "SeasideLoadOrderTests",
 	"type" : "normal"

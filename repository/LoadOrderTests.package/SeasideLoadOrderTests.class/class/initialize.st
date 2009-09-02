@@ -1,6 +1,6 @@
 initialization
 initialize
 
-	(UIManager default confirm: 'Load Seaside 2.9?') ifTrue: [
+	(UIManager default confirm: 'Load Seaside 3.0?') ifTrue: [
 		self new doLoad.
 	].

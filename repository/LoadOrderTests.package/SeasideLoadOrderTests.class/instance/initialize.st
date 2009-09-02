@@ -8,7 +8,7 @@ initialize
 	password := UIManager default
 		request: 'SqueakSource Password (empty is fine)?'
 		initialAnswer: ''.
-	seaside29 := self seaside29.
+	seaside30 := self seaside30.
 	komHttpServer := self komHttpServer.
 	doTests := UIManager default confirm: 'Run tests as packages are loaded?'.
 	doTests ifTrue: [
