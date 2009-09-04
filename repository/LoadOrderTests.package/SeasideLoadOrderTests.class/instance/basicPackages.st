@@ -5,23 +5,23 @@ basicPackages
 		"Platform"
 		add: (Array 
 			with: seaside30 -> 'Seaside-Platform-pmm.78.mcz'
-			with: seaside30 -> 'Seaside-Pharo-Platform-jf.2.mcz'
-			with: seaside30 -> 'Seaside-Tests-Platform-yann_monclair.87.mcz'
+			with: seaside30 -> 'Seaside-Pharo-Platform-dkh.3.mcz'
+			with: seaside30 -> 'Seaside-Tests-Platform-dkh.88.mcz'
 			with: seaside30 -> 'Seaside-Tests-Pharo-Platform-jf.2.mcz');
 		"Core"
 		add: (Array 
-			with: seaside30 -> 'Seaside-Core-lr.546.mcz'
+			with: seaside30 -> 'Seaside-Core-dkh.547.mcz'
 			with: seaside30 -> 'Seaside-Tests-Core-JamesFoster.150.mcz'
 			with: seaside30 -> 'Seaside-Tests-UTF8-lr.3.mcz'
 			with: seaside30 -> 'Seaside-Pharo-Core-jf.2.mcz'
 			with: seaside30 -> 'Seaside-Tests-Pharo-Core-jf.2.mcz');
 		"Canvas"
 		add: (Array 
-			with: seaside30 -> 'Seaside-Canvas-NickAger.66.mcz'
-			with: seaside30 -> 'Seaside-Tests-Canvas-NickAger.29.mcz');
+			with: seaside30 -> 'Seaside-Canvas-yann_monclair.67.mcz'
+			with: seaside30 -> 'Seaside-Tests-Canvas-yann_monclair.30.mcz');
 		"Session"
 		add: (Array 
-			with: seaside30 -> 'Seaside-Session-dkh.115.mcz'
+			with: seaside30 -> 'Seaside-Session-dkh.116.mcz'
 			with: seaside30 -> 'Seaside-Tests-Session-pmm.26.mcz');
 		"Component"
 		add: (Array 
