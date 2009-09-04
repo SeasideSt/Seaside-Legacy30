@@ -17,7 +17,7 @@ traditionalPackages
 			with: seaside30 -> 'Seaside-Tests-Flow-lr.17.mcz');
 		"WebTools"
 		add: (Array 
-			with: seaside30 -> 'Seaside-Tools-Web-pmm.10.mcz'
+			with: seaside30 -> 'Seaside-Tools-Web-jf.11.mcz'
 			with: seaside30 -> 'Seaside-Pharo-Tools-Web-jf.2.mcz'
 			with: seaside30 -> 'Seaside-Tests-Tools-Web-pmm.4.mcz');
 		"Development"
