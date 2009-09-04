@@ -49,8 +49,7 @@ renderContentOn: html
 				html tableData: [
 					html urlInput
 					on: #url of: self ].
-				html tableData: [
-					html render: self url class name ] ].
+				html tableData: self url class name ].
 			html tableRow: [
 				html tableHeading: [ html label: 'number' ].
 				html tableData: [
