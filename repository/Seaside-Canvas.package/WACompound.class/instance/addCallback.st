@@ -1,0 +1,3 @@
+private
+addCallback
+	self subclassresponsibility
