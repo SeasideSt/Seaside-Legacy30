@@ -1,10 +1,5 @@
 description
 describeOn: config
-	(config string: #charSet)
-		beAdvanced;
-		label: 'Charater Set';
-		comment: 'The character set reported to the browser. You may additionally need to configure your server that this is also the character set used by your server.';
-		default: 'utf-8'.
 	(config collection: #libraries)
 		options: [ self libraryClasses ].
 	(config list: #mainClass)
