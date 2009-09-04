@@ -6,7 +6,7 @@ basicPackages
 		add: (Array 
 			with: seaside30 -> 'Seaside-Platform-pmm.78.mcz'
 			with: seaside30 -> 'Seaside-Pharo-Platform-jf.2.mcz'
-			with: seaside30 -> 'Seaside-Tests-Platform-yann_monclair.87'
+			with: seaside30 -> 'Seaside-Tests-Platform-yann_monclair.87.mcz'
 			with: seaside30 -> 'Seaside-Tests-Pharo-Platform-jf.2.mcz');
 		"Core"
 		add: (Array 
