@@ -1,3 +1,3 @@
 rendering
-renderInstantiatesComponentWhileRenderingOn: html
-	html div: WAComponentMock new
+renderInstantiatesComponentWhileRenderingOn: html 
+	html div: WAComponentStub new
