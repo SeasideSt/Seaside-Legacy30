@@ -1,8 +1,8 @@
 initialization
 initialize
-	| application |
+	| entryPoint |
 	super initialize.
-	application := self application.
-	application isNil
-		ifTrue: [self acceptCharset: self defaultUrlCharset]
-		ifFalse: [self acceptCharset: application charSet]
+	entryPoint := self requestContext entryPoint.
+	entryPoint isNil
+		ifTrue: [ self acceptCharset: self defaultUrlCharset ]
+		ifFalse: [ self acceptCharset: entryPoint charSet ]

@@ -6,4 +6,4 @@ multipart
 		put: 'multipart/form-data'.
 		
 	"set the request encoding to the body encoding"
-	self acceptCharset: self application charSet
+	self acceptCharset: self requestContext entryPoint charSet
