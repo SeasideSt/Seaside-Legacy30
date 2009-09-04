@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
-	"super" : "WAComponent",
-	"category" : "Seaside-Tests-Component-Mocks",
+	"super" : "WADecoration",
+	"category" : "Seaside-Tests-Component-Stubs",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
@@ -13,6 +13,6 @@
 		"renderBlock",
 		"childrenBlock"
 	],
-	"name" : "WAComponentMock",
+	"name" : "WADecorationStub",
 	"type" : "normal"
 }
