@@ -1,4 +1,8 @@
 initialization
 initialize
+	| application |
 	super initialize.
-	self acceptCharset: self defaultUrlCharset
+	application := self application.
+	application isNil
+		ifTrue: [self acceptCharset: self defaultUrlCharset]
+		ifFalse: [self acceptCharset: application charSet]
