@@ -1,5 +1,5 @@
 initialization
 initializeOn: aStream 
-	self initialize.
+	super initializeOn: aStream.
 	committed := false.
 	externalStream := aStream

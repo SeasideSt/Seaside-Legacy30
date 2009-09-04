@@ -1,4 +1,4 @@
 initialize-release
 initializeWith: aCollectionOfStrings
-	super initialize.
+	self initialize.
 	path := aCollectionOfStrings

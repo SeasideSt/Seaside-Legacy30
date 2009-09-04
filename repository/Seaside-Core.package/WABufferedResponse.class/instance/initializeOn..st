@@ -1,4 +1,4 @@
 initialization
 initializeOn: aStream
-	self initialize.
+	super initializeOn: aStream.
 	contentsStream := aStream
