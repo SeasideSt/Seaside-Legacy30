@@ -17,7 +17,7 @@ testOneOfManySlashInUrl
 			with: cookie2
 			with: cookie3
 			with: cookie4);
-		yourself..
+		yourself.
 	context := self requestContextFor: request.
 	actual := handler cookieFromContext: context ifAbsent: [ nil ].
 	self assert: actual == cookie3
