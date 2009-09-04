@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "jf 9/4/2009 15:54",
+	"super" : "WAComponent",
+	"category" : "Seaside-Widgets-Components",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WACanvasWidget",
+	"type" : "normal"
+}

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "jf 1/11/2009 19:15",
+	"super" : "WANavigation",
+	"category" : "Seaside-Widgets-Components",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"components"
+	],
+	"name" : "WASimpleNavigation",
+	"type" : "normal"
+}

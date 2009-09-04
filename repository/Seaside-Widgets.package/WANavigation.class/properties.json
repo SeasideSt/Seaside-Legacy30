@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "WACanvasWidget",
+	"category" : "Seaside-Widgets-Components",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"selection"
+	],
+	"name" : "WANavigation",
+	"type" : "normal"
+}
