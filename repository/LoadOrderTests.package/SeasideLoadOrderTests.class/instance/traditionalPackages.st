@@ -23,7 +23,7 @@ traditionalPackages
 		"Development"
 		add: (Array 
 			with: seaside30 -> 'Seaside-Development-lr.110.mcz'
-			with: seaside30 -> 'Seaside-Pharo-Development-jf.3.mcz'
+			with: seaside30 -> 'Seaside-Pharo-Development-jf.5.mcz'
 			with: seaside30 -> 'Seaside-Tests-Development-jf.31.mcz'
 			with: seaside30 -> 'Seaside-Tests-Pharo-Development-jf.2.mcz');
 		"Examples"
