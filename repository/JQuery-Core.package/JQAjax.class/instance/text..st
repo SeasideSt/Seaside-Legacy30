@@ -7,5 +7,5 @@ text: aBlock
 		response
 			doNotCache;
 			contentType: (WAMimeType textPlain 
-				charset: self application charSet).
+				charset: self requestContext entryPoint charSet).
 		aBlock value: response stream ]
