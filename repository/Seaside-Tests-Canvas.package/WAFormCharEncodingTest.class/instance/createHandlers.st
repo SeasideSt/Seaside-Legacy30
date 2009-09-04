@@ -1,6 +1,6 @@
 as yet unclassified
 createHandlers
-	|application|
-	application := WAApplication new.
-	application preferenceAt: #charSet put: 'utf-16'.
-	^ Array with: application.
+	| entryPoint |
+	entryPoint := WAEntryPoint new.
+	entryPoint preferenceAt: #charSet put: 'utf-16'.
+	^ Array with: entryPoint
