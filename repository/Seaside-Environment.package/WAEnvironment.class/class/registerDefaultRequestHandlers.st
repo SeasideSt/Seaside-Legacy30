@@ -1,5 +1,7 @@
 registration
 registerDefaultRequestHandlers
-	WAFileHandler default: (WAFileHandler named: 'files').
+	WAFileHandler default: WAFileHandler new.
 	WAFileHandler default preferenceAt: #fileHandlerListingClass put: WAHtmlFileHandlerListing.
-	WAAdmin defaultDispatcher register: WAFileHandler default
+	WAAdmin defaultDispatcher
+		register: WAFileHandler default
+		at: 'files'
