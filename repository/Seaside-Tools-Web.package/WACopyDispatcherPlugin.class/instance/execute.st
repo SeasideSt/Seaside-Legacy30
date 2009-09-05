@@ -7,6 +7,5 @@ execute
 		onAnswer: [ :name |
 			name isNil ifFalse: [
 				self requestor dispatcher
-					register: (self target cloneHandler
-						setName: name;
-						yourself) ] ]
+					register: self target cloneHandler
+					at: name ] ]
