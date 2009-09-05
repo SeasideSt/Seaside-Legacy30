@@ -6,4 +6,4 @@ consumeNameFrom: aRequestContext
 		consumer := aRequestContext consumer.
 		(consumer atEnd not and: [ consumer peek = self name ])
 			ifTrue: [ consumer next ]
-			ifFalse: [ aRequestContext responseGenerator notFound ] ]
+			ifFalse: [ aRequestContext responseGenerator notFound; respond ] ]
