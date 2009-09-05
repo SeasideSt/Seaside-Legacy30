@@ -6,5 +6,5 @@ document: aDocument
 	mimeType := document mimeType.
 	self contentType: mimeType.
 	mimeType isBinary
-		ifTrue: [ self stream binary ].
+		ifTrue: [ self binary ].
 	self nextPutAll: document content
