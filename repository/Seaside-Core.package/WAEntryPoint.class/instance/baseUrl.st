@@ -3,12 +3,10 @@ baseUrl
 	| serverPath url |
 	serverPath := self serverPath.
 
-	url := (serverPath isNil and: [ self parent notNil ])
-			ifTrue: [ self parent baseUrl ]
-			ifFalse: [ WAUrl new ].
+	url := WAUrl new.
 	serverPath isNil
 		ifFalse: [ url addToPath: serverPath ]
-		ifTrue: [ url addToPath: self name ].
+		ifTrue: [ url addAllToPath: self path ].
 		
 	self serverProtocol isNil ifFalse: [ url scheme: self serverProtocol ].
 	self serverHostname isNil ifFalse: [ url hostname: self serverHostname ].
