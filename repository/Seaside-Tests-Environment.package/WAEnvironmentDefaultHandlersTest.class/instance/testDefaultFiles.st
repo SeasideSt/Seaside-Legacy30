@@ -7,4 +7,4 @@ testDefaultFiles
 	self deny: app isApplication.
 	self deny: app parent isNil.
 	self assert: app name = 'files'.
-	self assert: app basePath = ('/' , self baseName , '/files')
+	self assert: app basePath = '/files'

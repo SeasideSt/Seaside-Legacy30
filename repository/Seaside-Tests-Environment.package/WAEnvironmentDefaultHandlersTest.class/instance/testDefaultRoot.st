@@ -7,5 +7,5 @@ testDefaultRoot
 	self assert: app isRoot.
 	self deny: app isApplication.
 	self assert: app parent isNil.
-	self assert: app name = self baseName.
-	self assert: app basePath = ('/' , self baseName)
+	self assert: app name = ''.
+	self assert: app basePath = '/'
