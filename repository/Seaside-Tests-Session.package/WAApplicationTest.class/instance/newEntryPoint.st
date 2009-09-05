@@ -1,3 +1,3 @@
 running
 newEntryPoint
-	^ WAApplication named: 'app'
+	^ WAApplication new
