@@ -8,4 +8,4 @@ testDefaultTests
 	self deny: app isApplication.
 	self deny: app parent isNil.
 	self assert: app name = 'tests'.
-	self assert: app basePath = ('/' , self baseName , '/tests')
+	self assert: app basePath = '/tests'
