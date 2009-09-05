@@ -7,5 +7,5 @@ register: anEntryPointClass at: aString in: aDispatcher
 		into: [ :result :each |
 			result entryPoints 
 				at: each
-				ifAbsent: [ result register: (WADispatcher named: each) ] ].
-	^ dispatcher register: (anEntryPointClass named: path last)
+				ifAbsent: [ result register: WADispatcher new at: each ] ].
+	^ dispatcher register: anEntryPointClass new at: path last
