@@ -3,8 +3,8 @@ setUp
 	| normalApplication |
 	super setUp.
 	rootHandler := WADispatcher new.
-	rootHandler := rootHandler WADispatcher new at: 'seaside'.
-	childHandler := rootHandler register: WADispatcher at: 'child'.
+	rootHandler := rootHandler register: WADispatcher new at: 'seaside'.
+	childHandler := rootHandler register: WADispatcher new at: 'child'.
 	configApplication := WAAdmin register: WAApplication 
 		at: 'config'
 		in: rootHandler.
