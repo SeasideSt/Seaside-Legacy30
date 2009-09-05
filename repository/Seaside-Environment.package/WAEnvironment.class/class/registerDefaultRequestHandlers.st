@@ -4,4 +4,7 @@ registerDefaultRequestHandlers
 	WAFileHandler default preferenceAt: #fileHandlerListingClass put: WAHtmlFileHandlerListing.
 	WAAdmin defaultDispatcher
 		register: WAFileHandler default
-		at: 'files'
+		at: 'files'.
+	WAAdmin defaultDispatcher
+		register: WAOldPathComptibilityRequestHandler new
+		at: 'seaside'
