@@ -1,5 +1,6 @@
 private
 createHandlers
-	^super createHandlers, (Array
+	^Array
+		with: rootHandler
 		with: configApplication
-		with: WASession new)
+		with: WASession new
