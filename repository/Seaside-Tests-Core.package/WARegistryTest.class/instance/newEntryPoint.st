@@ -1,3 +1,3 @@
 private
 newEntryPoint
-	^ WARegistry named: 'foo'
+	^ WARegistry new
