@@ -8,4 +8,4 @@ testDefaultCounterDirect
 	self deny: app parent isNil.
 	self assert: app name = 'counter'.
 	self assert: app parent name = 'examples'.
-	self assert: app basePath = ('/' , self baseName , '/examples/counter')
+	self assert: app basePath = '/examples/counter'
