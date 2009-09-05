@@ -1,3 +1,3 @@
 system startup
 startUp
-	self instance adaptors do: [ :each | each startUp ]
+	self default adaptors do: [ :each | each startUp ]

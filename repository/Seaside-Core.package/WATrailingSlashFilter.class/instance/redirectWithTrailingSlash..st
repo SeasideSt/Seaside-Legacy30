@@ -4,5 +4,4 @@ redirectWithTrailingSlash: aRequestContext
 		redirectTo: (aRequestContext request url copy
 			takeServerParametersFromRequest: aRequestContext request;
 			slash: true;
-			yourself);
-		respond
+			yourself)

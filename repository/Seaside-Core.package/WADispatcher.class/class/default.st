@@ -1,3 +1,3 @@
 accessing
 default
-	^ default ifNil: [ default := self new ]
+	^ default ifNil: [ default := self named: WAPlatform current defaultDispatcherName ]

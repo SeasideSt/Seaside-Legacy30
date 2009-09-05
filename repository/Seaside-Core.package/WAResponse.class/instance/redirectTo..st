@@ -1,4 +1,4 @@
 convenience-status
 redirectTo: aUrlOrString
-	self location: aUrlOrString.
+	self headerAt: 'Location' put: aUrlOrString seasideString.
 	self found

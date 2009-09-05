@@ -1,9 +1,7 @@
 accessing
 basePath
 	^ self parent isNil
-		ifTrue: [ '/' ]
-		ifFalse: [
-			String streamContents: [ :stream |
-			 self path do: [ :each |
-				stream nextPut: $/.
-				stream nextPutAll: each ] ] ]
+		ifTrue: [self name isEmpty
+				ifTrue: ['']
+				ifFalse: ['/' , self name]]
+		ifFalse: [self parent basePath , '/' , self name]

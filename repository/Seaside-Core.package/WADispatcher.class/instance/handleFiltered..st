@@ -4,5 +4,5 @@ handleFiltered: aRequestContext
 	consumer := aRequestContext consumer.
 	handlerName := consumer atEnd
 		ifTrue: [ self defaultName ]
-		ifFalse: [ consumer next ].
+		ifFalse: [ consumer peek ].
 	self handleFiltered: aRequestContext named: handlerName
