@@ -1,8 +1,4 @@
 accessing
 handle: aRequestContext
-	| consumer |
-	consumer := aRequestContext consumer.
-	nextUnconsumedPathElement := consumer atEnd
-		ifTrue: [ nil ]
-		ifFalse: [ aRequestContext consumer peek ].
+	nextUnconsumedPathElement := aRequestContext consumer peek.
 	super handle: aRequestContext

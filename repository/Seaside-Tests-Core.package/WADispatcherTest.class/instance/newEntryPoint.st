@@ -1,10 +1,11 @@
 private
 newEntryPoint
 	| child |
-	child := WADispatcher new.
+	child := WADispatcher named: 'child'.
 	child
-		register: WAEntryPoint new at: 'foo';
-		register: (WADispatcher new
-					register: WAEntryPoint new at: 'baz';
-					yourself) at: 'bar'.
+		register: (WAEntryPoint named: 'foo');
+		register: ((WADispatcher named: 'bar')
+					register: (WAEntryPoint named: 'baz');
+					yourself).
+	
 	^ child

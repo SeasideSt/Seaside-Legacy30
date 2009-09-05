@@ -1,3 +1,3 @@
 private
 newEntryPoint
-	^ WAEntryPoint new
+	^ WAEntryPoint named: 'foo'

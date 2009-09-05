@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "yann.monclair 9/5/2009 17:26",
+	"super" : "WAServerAdaptor",
+	"category" : "Seaside-Tests-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"status"
+	],
+	"name" : "WATestServerAdaptor",
+	"type" : "normal"
+}

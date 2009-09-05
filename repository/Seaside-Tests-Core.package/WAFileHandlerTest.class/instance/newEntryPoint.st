@@ -1,3 +1,3 @@
 private
 newEntryPoint
-	^ WAFileHandler new
+	^ WAFileHandler named: 'files'

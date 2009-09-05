@@ -1,8 +1,9 @@
 testing
 testPathConsumption
 	| dispatcher |
-	dispatcher := WADispatcher new.
-	handler := dispatcher register: WANextUnconsumedPathElementRequestHandler new at: 'tweets'.
+	dispatcher := WADispatcher named: 'tweets'.
+	handler := WANextUnconsumedPathElementRequestHandler named: 'kentbeck'.
+	dispatcher register: handler.
 	[ dispatcher handle: self requestContext ]
 		on: WAResponseNotification
 		do: [ :notification | "everything is fine" ].
