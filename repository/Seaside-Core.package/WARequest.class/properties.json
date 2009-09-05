@@ -12,7 +12,8 @@
 		"fields",
 		"remoteAddress",
 		"headers",
-		"cookies"
+		"cookies",
+		"body"
 	],
 	"name" : "WARequest",
 	"type" : "normal"
