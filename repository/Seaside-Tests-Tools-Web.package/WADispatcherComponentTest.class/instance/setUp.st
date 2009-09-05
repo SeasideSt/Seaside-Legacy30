@@ -2,10 +2,11 @@ running
 setUp
 	| normalApplication |
 	super setUp.
-	rootHandler := WADispatcher named: 'seaside'.
-	childHandler := rootHandler register: (WADispatcher named: 'child').
-	configApplication := WAApplication 
-		register: 'config'
+	rootHandler := WADispatcher new.
+	rootHandler := rootHandler WADispatcher new at: 'seaside'.
+	childHandler := rootHandler register: WADispatcher at: 'child'.
+	configApplication := WAAdmin register: WAApplication 
+		at: 'config'
 		in: rootHandler.
 	configApplication configuration addParent: WARenderLoopConfiguration instance.
 	configApplication 

@@ -1,7 +1,7 @@
 testing
 testCloneApplication
 	| app handler key clone |
-	app := (WADispatcher named: 'root') register: (WAApplication named: 'app').
+	app := WADispatcher new register: WAApplication new at: 'app'.
 	handler := WARequestHandler new.
 	key := app register: handler.
 	
