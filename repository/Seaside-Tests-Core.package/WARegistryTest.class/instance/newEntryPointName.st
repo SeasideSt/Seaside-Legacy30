@@ -1,0 +1,3 @@
+private
+newEntryPointName
+	^ 'foo'

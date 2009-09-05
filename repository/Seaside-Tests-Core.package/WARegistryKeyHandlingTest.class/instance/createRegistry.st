@@ -1,3 +1,5 @@
 private
 createRegistry
-	^ WARegistry named: self registryName
+	^ WADispatcher new
+		register: WARegistry new
+		at: self registryName

@@ -1,3 +1,5 @@
 private
 newHandler
-	^ (WADispatcher named: 'root') register: self newEntryPoint
+	^ WADispatcher new
+		register: self newEntryPoint
+		at: self newEntryPointName

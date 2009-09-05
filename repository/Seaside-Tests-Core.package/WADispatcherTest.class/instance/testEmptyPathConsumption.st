@@ -1,10 +1,10 @@
 testing
 testEmptyPathConsumption
-	| dispatcher |
-	dispatcher := WADispatcher named: ''.
-	handler := WANextUnconsumedPathElementRequestHandler named: 'tweets'.
-	dispatcher register: handler.
-	[ dispatcher handle: self requestContext ]
+	| dispatcher root |
+	root := WADispatcher new.
+	dispatcher := root register: WADispatcher new at: 'tweets'.
+	handler := dispatcher register: WANextUnconsumedPathElementRequestHandler new at: 'kentbeck'.
+	[ root handle: self requestContext ]
 		on: WAResponseNotification
 		do: [ :notification | "everything is fine" ].
-	self assert: handler nextUnconsumedPathElement = 'tweets'.
+	self assert: handler nextUnconsumedPathElement isNil.

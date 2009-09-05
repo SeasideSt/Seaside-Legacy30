@@ -1,11 +1,11 @@
 testing
 testFileLibraries
 	| response |
-	handler := WAFileHandler named: 'care'.
+	handler := WAFileHandler new.
 	handler preferenceAt: #fileHandlerListingClass put: self handlerClass.
 
 	self requestContextWithUrl: '/i/dont/care/'.
-	self requestContext consumer next; next.
+	self requestContext consumer next; next; next.
 
 	response := self responseAfter: [ handler handle: self requestContext ].
 
