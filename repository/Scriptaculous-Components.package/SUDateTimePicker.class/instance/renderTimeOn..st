@@ -27,5 +27,5 @@ renderTimeOn: html
 						html space.
 						html anchor
 							class: 'button';
-							onClick: (self ajaxCallbackFor: self date on: html);
+							onClick: (self triggerFormOn: html);
 							with: 'Ok' ] ] ]
