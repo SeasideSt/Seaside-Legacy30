@@ -19,7 +19,7 @@ traditionalPackages
 		add: (Array 
 			with: seaside30 -> 'Seaside-Tools-Web-pmm.12.mcz'
 			with: seaside30 -> 'Seaside-Pharo-Tools-Web-jf.2.mcz'
-			with: seaside30 -> 'Seaside-Tests-Tools-Web-pmm.7.mcz');
+			with: seaside30 -> 'Seaside-Tests-Tools-Web-pmm.8.mcz');
 		"Development"
 		add: (Array 
 			with: seaside30 -> 'Seaside-Development-lr.111.mcz'
