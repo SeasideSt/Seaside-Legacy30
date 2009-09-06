@@ -1,7 +1,7 @@
 accessing
 actionUrlFor: html
 	| url |
-	url := html actionUrl withoutParameters.
+	url := html actionUrl copy.
 	url
 		addParameter: self parameterName
 		value: self firstParameterValue.
