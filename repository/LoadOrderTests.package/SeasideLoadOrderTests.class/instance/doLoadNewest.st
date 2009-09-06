@@ -1,11 +1,10 @@
 load and test
-doLoad
-	self requestUserAndPassword.
+doLoadNewest
 	self cacheRepositories.
 	self askForTesting.
 	self groups do: [:aList | 
 		self 
-			loadPackages: aList;
+			loadNewestPackages: aList;
 			doTests;
 			yourself.
 	].

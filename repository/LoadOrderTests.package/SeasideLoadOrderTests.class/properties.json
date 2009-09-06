@@ -12,7 +12,9 @@
 		"baseTests",
 		"baseUndeclared",
 		"doTests",
-		"seaside30"
+		"seaside30",
+		"versions",
+		"currentVersions"
 	],
 	"name" : "SeasideLoadOrderTests",
 	"type" : "normal"
