@@ -6,7 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"inputElements"
+		"inputElements",
+		"hasBody",
+		"ran"
 	],
 	"name" : "WAInputPostMultipartFunctionalTest",
 	"type" : "normal"

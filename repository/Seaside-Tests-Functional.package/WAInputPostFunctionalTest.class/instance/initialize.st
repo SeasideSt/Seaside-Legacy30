@@ -1,4 +1,5 @@
 initialization
 initialize
 	super initialize.
-	inputElements := WAInputElementContainer new
+	inputElements := WAInputElementContainer new.
+	ran := false
