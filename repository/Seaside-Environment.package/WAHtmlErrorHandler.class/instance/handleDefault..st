@@ -6,5 +6,5 @@ handleDefault: anException
 			contentType: WAMimeType textHtml;
 			nextPutAll: (self rendererClass builder
 				fullDocument: true;
-				rootBlock: [ :root | self updateHtmlRoot: root forException: anException ];
+				rootBlock: [ :root | root title: (self titleForException: anException) ];
 				render: [ :html | self renderContentForException: anException on: html ]) ]
