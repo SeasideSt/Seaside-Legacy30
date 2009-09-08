@@ -5,7 +5,7 @@ responseForContext: aRequestContext
 	consumer atEnd
 		ifTrue: [ ^ (self fileHandlerListingClass on: self context: aRequestContext) responseForLibraries ].
 	libraryClass := self 
-		libraryAt: consumer next asSymbol
+		libraryAt: consumer next
 		ifAbsent: [ ^ aRequestContext responseGenerator notFound; respond ].
 	consumer atEnd
 		ifTrue: [
