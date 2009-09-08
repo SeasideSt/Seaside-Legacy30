@@ -1,3 +1,3 @@
 actions
-play: anUrl
-	self url: anUrl; play
+play: aUrl
+	self url: aUrl; play
