@@ -1,3 +1,3 @@
 path
-updateRoot: aHtmlRoot
-	aHtmlRoot stylesheet beXsl url: (self urlOf: #styleXsl)
+updateRoot: anHtmlRoot
+	anHtmlRoot stylesheet beXsl url: (self urlOf: #styleXsl)

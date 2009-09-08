@@ -1,8 +1,8 @@
 api
-addParametersTo: anUrl
+addParametersTo: aUrl
 	self hasChangedClass ifFalse: [^self].
-	anUrl addParameter: 'class' value: self changedClassName.
+	aUrl addParameter: 'class' value: self changedClassName.
 	self hasChangedSelector ifTrue: [
-		anUrl addParameter: 'method' value: self changedSelector ].
+		aUrl addParameter: 'method' value: self changedSelector ].
 	self isMeta ifTrue: [
-		anUrl addParameter: 'meta']
+		aUrl addParameter: 'meta']
