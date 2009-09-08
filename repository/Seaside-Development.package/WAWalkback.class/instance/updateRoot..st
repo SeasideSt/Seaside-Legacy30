@@ -1,6 +1,6 @@
 updating
-updateRoot: aHtmlRoot
-	super updateRoot: aHtmlRoot.
-	aHtmlRoot title: self exceptionDescription.
-	aHtmlRoot bodyAttributes addClass: 'walkback'.
-	WAToolFiles default updateRoot: aHtmlRoot
+updateRoot: anHtmlRoot
+	super updateRoot: anHtmlRoot.
+	anHtmlRoot title: self exceptionDescription.
+	anHtmlRoot bodyAttributes addClass: 'walkback'.
+	WAToolFiles default updateRoot: anHtmlRoot
