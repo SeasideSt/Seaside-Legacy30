@@ -1,5 +1,5 @@
 updating
-updateRoot: aHtmlRoot
-	super updateRoot: aHtmlRoot.
+updateRoot: anHtmlRoot
+	super updateRoot: anHtmlRoot.
 	updateRootBlock isNil
-		ifFalse: [ updateRootBlock value: aHtmlRoot ]
+		ifFalse: [ updateRootBlock value: anHtmlRoot ]
