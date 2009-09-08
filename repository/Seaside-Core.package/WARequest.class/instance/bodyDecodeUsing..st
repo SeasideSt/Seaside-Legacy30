@@ -1,5 +1,5 @@
-accessing
+accessing-body
 bodyDecodeUsing: aCharSetName
-
-	body == nil ifTrue: [ self error: 'No request body' ].
-	^(WACodec forEncoding: aCharSetName) decode: body
+	"Answer the body decoded using the given character set name. Answer nil if there's no body."
+	
+	^ body isNil ifFalse: [ (WACodec forEncoding: aCharSetName) decode: body ]
