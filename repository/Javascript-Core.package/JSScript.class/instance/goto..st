@@ -1,5 +1,5 @@
 convenience
-goto: anUrl 
+goto: aUrl 
 	self add: (JSStream new
 		nextPutAll: 'window.location=';
-		javascript: anUrl)
+		javascript: aUrl)
