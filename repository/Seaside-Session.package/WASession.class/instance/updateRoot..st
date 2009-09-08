@@ -1,3 +1,2 @@
 updating
-updateRoot: anHtmlRoot
-	anHtmlRoot title: 'Seaside'
+updateRoot: aHtmlRoot
