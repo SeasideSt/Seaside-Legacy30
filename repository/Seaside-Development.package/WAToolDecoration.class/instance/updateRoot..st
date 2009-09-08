@@ -1,4 +1,4 @@
 updating
-updateRoot: anHtmlRoot
-	super updateRoot: anHtmlRoot.
-	WADevelopmentFiles default updateRoot: anHtmlRoot
+updateRoot: aHtmlRoot
+	super updateRoot: aHtmlRoot.
+	WADevelopmentFiles default updateRoot: aHtmlRoot

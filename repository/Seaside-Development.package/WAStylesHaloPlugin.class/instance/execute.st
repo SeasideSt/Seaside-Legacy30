@@ -1,3 +1,5 @@
 actions
 execute
-	self open: (WAPluggableTool on: (WAViewer on: self target))
+	EnableSeasideTools
+		ifTrue: [ self open: (WAPluggableTool on: (WAViewer on: self target)) ]
+		ifFalse: [ Browser fullOnClass: self target class selector: #style ]
