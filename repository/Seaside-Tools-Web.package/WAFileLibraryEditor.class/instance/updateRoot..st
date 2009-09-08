@@ -1,4 +1,4 @@
 path
-updateRoot: anHtmlRoot
-	super updateRoot: anHtmlRoot.
-	anHtmlRoot title: self library name
+updateRoot: aHtmlRoot
+	super updateRoot: aHtmlRoot.
+	aHtmlRoot title: self library name

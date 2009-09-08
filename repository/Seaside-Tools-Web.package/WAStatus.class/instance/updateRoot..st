@@ -1,4 +1,4 @@
 updating
-updateRoot: anHtmlRoot
-	super updateRoot: anHtmlRoot.
-	anHtmlRoot title: self selected title
+updateRoot: aHtmlRoot
+	super updateRoot: aHtmlRoot.
+	aHtmlRoot title: self selected title
