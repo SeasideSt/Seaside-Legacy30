@@ -1,24 +1,14 @@
 running
 checkMethod: aContext 
-	| body periods |
-	body := aContext parseTree body.
-	periods := body
-		propertyAt: #periods
-		ifAbsent: [ #() ].
-	(body firstToken notNil 
-		and: [ periods notEmpty 
-		and: [ periods first < body firstToken start ] ]) ifTrue: [
-			^ result
-				addClass: aContext selectedClass selector: aContext selector;
-				addSearchString: '.' ].
-	body nodesDo: [ :node |
-		node isSequence ifTrue: [ 
-			periods := node
+	| periods position |
+	aContext parseTree nodesDo: [ :node |
+		node isSequence ifTrue: [
+			periods := OrderedCollection withAll: (node
 				propertyAt: #periods
-				ifAbsent: [ #() ].
-			1 to: periods size - 1 do: [ :index | 
-				(periods at: index) + 1 = (periods at: index + 1) ifTrue: [
-					^ result
-						addClass: aContext selectedClass selector: aContext selector;
-						addSearchString: '..' ] ] ] ].
-	
+				ifAbsent: [ ^ self ]).
+			1 to: node statements size - 1 do: [ :index |
+				position := periods removeFirst.
+				((node statements at: index) stop < position and: [ position < (node statements at: index + 1) start ])
+					ifFalse: [ ^ result addClass: aContext selectedClass selector: aContext selector ] ].
+			(periods isEmpty or: [ periods size = 1 and: [ node statements notEmpty and: [ node statements last stop < periods first ] ] ])
+				ifFalse: [ ^ result addClass: aContext selectedClass selector: aContext selector ] ] ]
