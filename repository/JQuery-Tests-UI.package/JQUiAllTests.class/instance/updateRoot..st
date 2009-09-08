@@ -1,6 +1,6 @@
 updating
-updateRoot: aHtmlRoot
-	super updateRoot: aHtmlRoot.
-	self theme updateRoot: aHtmlRoot.
+updateRoot: anHtmlRoot
+	super updateRoot: anHtmlRoot.
+	self theme updateRoot: anHtmlRoot.
 	JQUiAllTestsLibrary default 
-		updateRoot: aHtmlRoot
+		updateRoot: anHtmlRoot
