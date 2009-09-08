@@ -1,3 +1,3 @@
 initialization
-setBody: aString
-	body := aString
+setBody: aByteArray
+	body := aByteArray

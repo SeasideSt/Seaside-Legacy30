@@ -1,4 +1,4 @@
 actions
-close: aHtmlRoot
+close: anHtmlRoot
 	self writeLoadScripts.
-	super close: aHtmlRoot
+	super close: anHtmlRoot

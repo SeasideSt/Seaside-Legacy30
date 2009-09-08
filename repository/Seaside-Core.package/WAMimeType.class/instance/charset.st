@@ -1,3 +1,3 @@
 parameters
-charSet
+charset
 	^self parameters at: 'charset'
