@@ -4,7 +4,7 @@ testPathConsumption
 	request := self requestWithMethod: 'GET'.
 	context := WARequestContext request: request response: WABufferedResponse new.
 	context consumer next.
-	context consumer peek = 'oneo'.
+	self assert: context consumer peek = 'oneo'.
 	[ handler handle: context ]
 		on: WAResponseNotification
 		do: [ :notification | ].
