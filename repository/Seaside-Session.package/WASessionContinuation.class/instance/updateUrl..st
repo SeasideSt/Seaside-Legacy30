@@ -1,4 +1,3 @@
 updating
-updateUrl: anUrl
-	self session updateUrl: anUrl.
-	self application updateUrl: anUrl
+updateUrl: aUrl
+	self session updateUrl: aUrl
