@@ -22,7 +22,7 @@ processRendering: aResponse
 		resourceUrl: self application resourceBaseUrl.
 	actionContinuation renderContext: renderContext.
 	htmlRoot := self createHtmlRootWithContext: renderContext.
-	self updateHtmlRoot: htmlRoot.
+	self updateRoot: htmlRoot.
 	self toPresenterSendRoot: htmlRoot.
 
 	"Render"
