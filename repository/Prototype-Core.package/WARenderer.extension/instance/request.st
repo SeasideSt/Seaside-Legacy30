@@ -1,6 +1,6 @@
 *prototype-core-deprecated
 request
 	self 
-		seasideDeprecatedApi: 'WARenderCanvas>>#request'
+		seasideDeprecatedApi: 'WARenderer>>#request'
 		details: 'Use "html prototype request".'.
 	^ self prototype request

@@ -1,6 +1,6 @@
 *prototype-core-deprecated
 selector
 	self 
-		seasideDeprecatedApi: 'WARenderCanvas>>#selector'
+		seasideDeprecatedApi: 'WARenderer>>#selector'
 		details: 'Use "html prototype selector".'.
 	^ self prototype selector

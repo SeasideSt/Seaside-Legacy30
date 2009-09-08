@@ -1,6 +1,6 @@
 *prototype-core-deprecated
 periodical
 	self 
-		seasideDeprecatedApi: 'WARenderCanvas>>#periodical'
+		seasideDeprecatedApi: 'WARenderer>>#periodical'
 		details: 'Use "html prototype periodical".'.
 	^ self prototype periodical

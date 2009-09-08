@@ -1,6 +1,6 @@
 *prototype-core-deprecated
 formObserver
 	self 
-		seasideDeprecatedApi: 'WARenderCanvas>>#formObserver'
+		seasideDeprecatedApi: 'WARenderer>>#formObserver'
 		details: 'Use "html prototype formObserver".'.
 	^ self prototype formObserver

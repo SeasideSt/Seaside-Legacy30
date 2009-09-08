@@ -1,6 +1,6 @@
 *prototype-core-deprecated
 periodicalEvaluator
 	self 
-		seasideDeprecatedApi: 'WARenderCanvas>>#periodicalEvaluator'
+		seasideDeprecatedApi: 'WARenderer>>#periodicalEvaluator'
 		details: 'Use "html prototype periodicalEvaluator".'.
 	^ self prototype periodicalEvaluator

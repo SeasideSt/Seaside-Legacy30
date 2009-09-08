@@ -1,6 +1,6 @@
 *prototype-core-deprecated
 insertion
 	self 
-		seasideDeprecatedApi: 'WARenderCanvas>>#insertion'
+		seasideDeprecatedApi: 'WARenderer>>#insertion'
 		details: 'Use "html prototype insertion".'.
 	^ self prototype insertion

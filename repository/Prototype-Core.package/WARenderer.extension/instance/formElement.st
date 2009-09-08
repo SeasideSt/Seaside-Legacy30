@@ -1,6 +1,6 @@
 *prototype-core-deprecated
 formElement
 	self 
-		seasideDeprecatedApi: 'WARenderCanvas>>#formElement'
+		seasideDeprecatedApi: 'WARenderer>>#formElement'
 		details: 'Use "html prototype formElement".'.
 	^ self prototype formElement
