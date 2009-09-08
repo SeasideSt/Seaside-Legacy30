@@ -1,3 +1,3 @@
 accessing
-url: anUrl
-	url := anUrl
+url: aUrl
+	url := aUrl
