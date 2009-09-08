@@ -1,3 +1,3 @@
 accessing
-emptyStatement2.
-	self and
+emptyStatement2
+	self and..

@@ -1,4 +1,3 @@
 accessing
-emptyStatement1
-	self and..
-	self or
+emptyStatement1.
+	self and
