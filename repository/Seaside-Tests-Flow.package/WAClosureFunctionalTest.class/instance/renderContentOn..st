@@ -6,8 +6,9 @@ renderContentOn: html
 			callback: [ self go ];
 			with: 'Go' ].
 
-	html paragraph style: 'color:red; font-weight:bold'; with: [
-		html text: 'WARNING: FOLLOWING SECTION IS FOR DEVELOPERS ONLY' ].
+	html paragraph 
+		style: 'color: red; font-weight: bold';
+		with: 'WARNING: FOLLOWING SECTION IS FOR DEVELOPERS ONLY'.
 	html paragraph: [
 		html text: 'The "Go with ensure" test is '.
 		html span style: 'color:red; font-weight:bold'; with: [ html text: 'expected to fail' ].
