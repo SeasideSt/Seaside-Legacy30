@@ -1,5 +1,3 @@
 testing
 isEnabled
-	^ (requestor isSelected: target)
-		and: [ target isServerAdaptor ]
-		and: [ target canStop ] 
+	^ (requestor isSelected: target) and: [ target isServerAdaptor and: [ target canStop ] ]
