@@ -1,3 +1,3 @@
 private
 addCallback
-	self subclassresponsibility
+	self subclassResponsibility
