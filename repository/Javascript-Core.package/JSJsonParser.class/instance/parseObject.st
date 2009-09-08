@@ -5,7 +5,7 @@ parseObject
 	result := self createObject.
 	(self match: '}')
 		ifTrue: [ ^ result ].
-	[ stream atEnd not ] whileTrue: [
+	[ stream atEnd ] whileFalse: [
 		result := self
 			addProperty: self parseProperty
 			to: result.

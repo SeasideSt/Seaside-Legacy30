@@ -5,7 +5,7 @@ parseArray
 	result := self createArray.
 	(self match: ']')
 		ifTrue: [ ^ result ].
-	[ stream atEnd not ] whileTrue: [
+	[ stream atEnd ] whileFalse: [
 		result := self
 			addValue: self parseValue
 			to: result.
