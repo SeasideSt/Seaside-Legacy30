@@ -1,6 +1,6 @@
 *scriptaculous-core-deprecated
 autocompleter
 	self 
-		seasideDeprecatedApi: 'WARenderCanvas>>#autocompleter'
+		seasideDeprecatedApi: 'WARenderer>>#autocompleter'
 		details: 'Use "html scriptaculous autocompleter".'.
 	^ self scriptaculous autocompleter

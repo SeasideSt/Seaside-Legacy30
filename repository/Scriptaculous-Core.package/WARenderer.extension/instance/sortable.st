@@ -1,6 +1,6 @@
 *scriptaculous-core-deprecated
 sortable
 	self 
-		seasideDeprecatedApi: 'WARenderCanvas>>#sortable'
+		seasideDeprecatedApi: 'WARenderer>>#sortable'
 		details: 'Use "html scriptaculous sortable".'.
 	^ self scriptaculous sortable
