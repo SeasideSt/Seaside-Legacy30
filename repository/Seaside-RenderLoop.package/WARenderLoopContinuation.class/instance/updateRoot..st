@@ -8,5 +8,8 @@ updateRoot: aHtmlRoot
 		at: 'xml:lang' put: 'en';
 		at: 'lang' put: 'en'.
 	aHtmlRoot beXhtml10Strict.
+	aHtmlRoot title: 'Seaside'.
+	self application libraries 
+		do: [ :each | each default updateRoot: aHtmlRoot ].
 	self session updateRoot: aHtmlRoot.
 	self application updateRoot: aHtmlRoot
