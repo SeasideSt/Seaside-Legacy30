@@ -1,5 +1,5 @@
 updating
-updateUrl: anUrl
-	super updateUrl: anUrl.
-	(WAVisiblePresenterGuide client: (WAUpdateUrlVisitor url: anUrl))
+updateUrl: aUrl
+	super updateUrl: aUrl.
+	(WAVisiblePresenterGuide client: (WAUpdateUrlVisitor url: aUrl))
 		start: self presenter

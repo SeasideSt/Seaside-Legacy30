@@ -1,15 +1,14 @@
 updating
-updateRoot: aHtmlRoot
-	aHtmlRoot bodyAttributes at: 'onload' append: 'onLoad()' separator: ';'.
-	aHtmlRoot meta contentType: self application contentType.
-	aHtmlRoot meta contentScriptType: WAMimeType textJavascript.
-	aHtmlRoot htmlAttributes
+updateRoot: anHtmlRoot
+	anHtmlRoot bodyAttributes at: 'onload' append: 'onLoad()' separator: ';'.
+	anHtmlRoot meta contentType: self application contentType.
+	anHtmlRoot meta contentScriptType: WAMimeType textJavascript.
+	anHtmlRoot htmlAttributes
 		at: 'xmlns' put: 'http://www.w3.org/1999/xhtml';
 		at: 'xml:lang' put: 'en';
 		at: 'lang' put: 'en'.
-	aHtmlRoot beXhtml10Strict.
-	aHtmlRoot title: 'Seaside'.
+	anHtmlRoot beXhtml10Strict.
+	anHtmlRoot title: 'Seaside'.
 	self application libraries 
-		do: [ :each | each default updateRoot: aHtmlRoot ].
-	self session updateRoot: aHtmlRoot.
-	self application updateRoot: aHtmlRoot
+		do: [ :each | each default updateRoot: anHtmlRoot ].
+	self session updateRoot: anHtmlRoot
