@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "rew 10/19/2007 10:45",
+	"commentStamp" : "mlucas-smith 9/8/2009 15:32",
 	"super" : "WARequestHandler",
 	"category" : "Seaside-Core-RequestHandling",
 	"classinstvars" : [ ],
