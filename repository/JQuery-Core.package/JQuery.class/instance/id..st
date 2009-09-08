@@ -1,3 +1,3 @@
 private
 id: aString
-	self subclassresponsibility
+	self subclassResponsibility

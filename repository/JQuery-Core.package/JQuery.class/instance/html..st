@@ -1,3 +1,3 @@
 private
 html: aRenderable
-	self subclassresponsibility
+	self subclassResponsibility
