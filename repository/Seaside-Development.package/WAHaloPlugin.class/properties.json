@@ -4,9 +4,7 @@
 	"category" : "Seaside-Development-Plugins",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [
-		"EnableSeasideTools"
-	],
+	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "WAHaloPlugin",
 	"type" : "normal"
