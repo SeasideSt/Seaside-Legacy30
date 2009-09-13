@@ -1,5 +1,5 @@
-accessors
+accessors-smalltalk
 first
 	"Answer the first matched element."
 	
-	self at: 0
+	self get: 0

@@ -1,5 +1,5 @@
-accessors-smalltalk
-atAll
+accessors
+get
 	"Access all matched DOM elements."
 	
-	self get
+	self call: 'get'

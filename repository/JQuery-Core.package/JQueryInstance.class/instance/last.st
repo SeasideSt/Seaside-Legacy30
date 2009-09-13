@@ -1,5 +1,5 @@
-accessors
+accessors-smalltalk
 last
 	"Answer the last matched element."
 	
-	self at: -1
+	self get: -1

@@ -1,5 +1,5 @@
-accessors-smalltalk
-at: anInteger
+accessors
+get: anInteger
 	"Access a single matched DOM element at a specified index in the matched set."
 	
-	self get: anInteger
+	self call: 'get' with: anInteger
