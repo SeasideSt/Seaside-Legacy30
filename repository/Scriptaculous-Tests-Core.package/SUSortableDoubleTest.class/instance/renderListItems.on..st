@@ -1,7 +1,7 @@
 rendering
 renderListItems: aSelector on: html
 	html unorderedList
-		id: aSelector asString;
+		id: aSelector seasideString;
 		style: 'width: 200px; min-height: 50px;';
 		script: (html scriptaculous sortable
 			constraint: false;
