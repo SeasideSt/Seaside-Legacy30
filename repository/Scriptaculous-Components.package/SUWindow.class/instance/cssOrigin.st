@@ -1,3 +1,3 @@
 private
 cssOrigin
-	^'left:',origin x asString,'px;top:', origin y asString,'px;'.
+	^'left:',origin x seasideString,'px;top:', origin y seasideString,'px;'.

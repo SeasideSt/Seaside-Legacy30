@@ -10,7 +10,7 @@ draggable: aBeforeItem and: anAfterItem on: html
 				leftWidth = leftElement.offsetWidth + offset;
 				rightElement = arguments[0]._next;
 				rightWidth = rightElement.offsetWidth - offset;
-				if (leftWidth > ' , aBeforeItem min asString, ' && rightWidth > ' ,anAfterItem min asString,') {
+				if (leftWidth > ' , aBeforeItem min seasideString, ' && rightWidth > ' ,anAfterItem min seasideString,') {
 					leftElement.style.width = leftWidth + "px";
 					rightElement.style.width = rightWidth + "px";
 				}');

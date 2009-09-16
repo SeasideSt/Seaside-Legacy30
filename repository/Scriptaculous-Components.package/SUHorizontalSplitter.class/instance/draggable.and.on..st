@@ -10,7 +10,7 @@ draggable: aBeforeItem and: anAfterItem on: html
 				leftHeight = leftElement.offsetHeight + offset;
 				rightElement = arguments[0]._next;
 				rightHeight = rightElement.offsetHeight - offset;
-				if (leftHeight > ' , aBeforeItem min asString, ' && rightHeight > ' , anAfterItem min asString, ') {
+				if (leftHeight > ' , aBeforeItem min seasideString, ' && rightHeight > ' , anAfterItem min seasideString, ') {
 					leftElement.style.height = leftHeight + "px";
 					rightElement.style.height = rightHeight + "px";
 				}');

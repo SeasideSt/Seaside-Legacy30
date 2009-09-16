@@ -5,5 +5,5 @@ renderElement: element index: index on: html
  	html div id: currentId;
 		class: 'carousel-element';
 		class: self cssFloat;
-		style: 'margin:' ,elementMargin asString ,'px;height:', self elementHeight asString, 'px;width:', self elementWidth asString ,'px;';
+		style: 'margin:' ,elementMargin seasideString ,'px;height:', self elementHeight seasideString, 'px;width:', self elementWidth seasideString ,'px;';
 		with: element

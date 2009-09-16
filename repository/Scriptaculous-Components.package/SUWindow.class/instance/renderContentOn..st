@@ -6,5 +6,5 @@ renderContentOn: html
 		script: (html scriptaculous draggable handle: self titleId; revert: false);
 		class: self cssClass;
 		style: 'display: none';
-		style: 'z-index:' , self zIndex asString,';', self cssOrigin, self cssExtent;
+		style: 'z-index:' , self zIndex seasideString,';', self cssOrigin, self cssExtent;
 		with: [self renderBodyOn: html ]

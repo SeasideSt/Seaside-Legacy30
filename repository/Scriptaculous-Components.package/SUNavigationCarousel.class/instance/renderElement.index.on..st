@@ -5,7 +5,7 @@ renderElement: element index: index on: html
  	html div
 		id: currentId;
 		class: 'active' if: self selected = element;
-		style: 'height:', self elementHeight asString, 'px';
+		style: 'height:', self elementHeight seasideString, 'px';
 		with: [html anchor
 						onClick: (html scriptaculous evaluator
 									callback: [:script |
