@@ -6,7 +6,7 @@ removeDecoration: aDecoration
 		[self decoration: dec next.
 		^ self].
 
-	[dec notNil] whileTrue:
+	[dec notNil and: [ dec isDecoration ]] whileTrue:
 		[dec next = aDecoration
 			ifTrue: [dec setNext: aDecoration next.  ^ self]
 			ifFalse: [dec := dec next]]
