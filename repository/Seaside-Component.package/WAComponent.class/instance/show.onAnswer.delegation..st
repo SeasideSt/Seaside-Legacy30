@@ -5,5 +5,5 @@ show: aComponent onAnswer: aBlock delegation: aDelegation
 	event := aComponent onAnswer: [ :value |
 		aDelegation remove.
 		event remove.
-		aBlock value: value ].
+		aBlock valueWithPossibleArguments: (Array with: value) ].
 	self addDecoration: aDelegation
