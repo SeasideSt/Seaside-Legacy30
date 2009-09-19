@@ -7,8 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"class",
-		"category",
-		"selector"
+		"selector",
+		"protocol"
 	],
 	"name" : "SUClassBrowser",
 	"type" : "normal"

@@ -1,6 +1,8 @@
 accessing
 selectors
-	^ (category isNil
+	^ (protocol isNil 
 		ifTrue: [ class selectors ]
-		ifFalse: [ class organization listAtCategoryNamed: category ])
-			asSortedCollection
+		ifFalse: 
+			[ [ class organization listAtCategoryNamed: protocol ] 
+				on: Error
+				do: [ :err | class selector ] ]) asSortedCollection

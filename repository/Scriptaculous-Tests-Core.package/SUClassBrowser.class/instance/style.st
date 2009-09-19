@@ -13,7 +13,7 @@ style
 	text-align: center;
 	padding-bottom: 1em;
 }
-#lightbox #categories, 
+#lightbox #protocols, 
 #lightbox #selectors {
 	float: left;
 	width: 50%;
@@ -22,7 +22,7 @@ style
 	clear: both;
 	height: 1em;
 }
-#lightbox #categories select, 
+#lightbox #protocols select, 
 #lightbox #selectors select {
 	width: 100%;
 }

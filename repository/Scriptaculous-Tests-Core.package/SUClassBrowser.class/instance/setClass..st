@@ -1,5 +1,5 @@
 initialization
-setClass: aClass
+setClass: aClass 
 	class := aClass.
-	self setCategory: #rendering.
+	self setProtocol: #rendering.
 	self setSelector: #renderContentOn:
