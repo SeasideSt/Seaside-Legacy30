@@ -1,7 +1,7 @@
 rendering
 renderContentOn: html 
-	html paragraph: 
-		[ html popupAnchor
+	html paragraph: [
+		html popupAnchor
 			callback: [ self calendarLoop ];
 			with: 'popup'.
 		html break.
