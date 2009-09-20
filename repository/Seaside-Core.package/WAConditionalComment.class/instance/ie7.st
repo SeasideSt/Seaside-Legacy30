@@ -1,3 +1,3 @@
 features
 ie7
-	self addToCondition: ' IE 7'
+	self ie: '7'

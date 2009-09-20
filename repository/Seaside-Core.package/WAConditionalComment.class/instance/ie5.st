@@ -1,3 +1,3 @@
 features
 ie5
-	self addToCondition: ' IE 5'
+	self addToCondition: '5'

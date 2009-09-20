@@ -1,3 +1,3 @@
 features
 ie6
-	self addToCondition: ' IE 6'
+	self ie: '6'

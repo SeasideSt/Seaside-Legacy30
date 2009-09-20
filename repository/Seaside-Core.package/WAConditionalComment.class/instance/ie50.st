@@ -1,3 +1,3 @@
 features
 ie50
-	self addToCondition: ' IE 5.0'
+	self addToCondition: '5.0'

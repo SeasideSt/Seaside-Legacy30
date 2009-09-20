@@ -1,3 +1,3 @@
 features
 ie55
-	self addToCondition: ' IE 5.5'
+	self ie: '5.5'
