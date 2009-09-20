@@ -1,7 +1,7 @@
 rendering
 renderSourceOn: html
 	| source |
-	source := (class sourceCodeAt: selector ifAbsent: [ ^ self ])
+	source := (self sourceCode ifNil: [ ^ self ])
 		seasideString readStream.
 	html strong: class name , '>>' , source nextLine; break.
 	[ source atEnd ] whileFalse: [

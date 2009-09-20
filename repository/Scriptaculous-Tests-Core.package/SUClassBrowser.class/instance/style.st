@@ -6,32 +6,26 @@ style
 	padding: 1em;
 	width: 640px;
 }
-#lightbox h1 {
+#browser h1 {
 	margin: 0;
 	padding: 0;
 	font-size: 15px;
 	text-align: center;
 	padding-bottom: 1em;
 }
-#lightbox #protocols, 
-#lightbox #selectors {
-	float: left;
-	width: 50%;
-}
-#lightbox div.clear {
-	clear: both;
-	height: 1em;
-}
-#lightbox #protocols select, 
-#lightbox #selectors select {
+#browser select {
 	width: 100%;
 }
-#lightbox #source {
+#browser .selectors {
+	margin-bottom: 1em;
+}
+#browser #source {
 	padding: 1em;
+	margin-bottom: 1em;
 	border: 1px solid #dddddd;
 	background-color: #f5f5f5;
 	font: 12px Lucida Sans Typewriter, Courier, monospace;
 }
-#lightbox #close {
+#browser .close {
 	text-align: center;
 }'

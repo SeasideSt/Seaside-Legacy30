@@ -1,6 +1,5 @@
 rendering
 renderCloseOn: html
-	html form: [
-		html submitButton
-			callback: [ self answer ];
-			text: 'close' ]
+	html submitButton
+		callback: [ self answer ];
+		with: 'Close'
