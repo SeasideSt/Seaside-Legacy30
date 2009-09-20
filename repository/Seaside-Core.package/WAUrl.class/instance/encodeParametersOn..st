@@ -1,14 +1,13 @@
 encoding
-encodeParametersOn: aDocument usingHtmlEntities: aBoolean 
+encodeParametersOn: aDocument
 	| first |
 	first := true.
 	parameters ifNil: [ ^ self ].
 	parameters keysAndValuesDo: [ :key :value | 
-		aDocument nextPutAll: (first 
-				ifTrue: [ first := false. '?' ]
-				ifFalse: [ aBoolean 
-					ifTrue: [ '&amp;' ]
-					ifFalse: [ '&' ] ]).
+		aDocument htmlEncoder nextPut:
+			(first 
+				ifTrue: [ first := false. $? ]
+				ifFalse: [ $& ]).
 		aDocument urlEncoder nextPutAll: key.
 		value isNil ifFalse: [
 			aDocument nextPut: $=.

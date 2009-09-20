@@ -1,3 +1,6 @@
 encoding
 encodeOn: aDocument
-	self encodeOn: aDocument usingHtmlEntities: true
+	self encodeServerOn: aDocument.
+	self encodePathOn: aDocument.
+	self encodeParametersOn: aDocument.
+	self encodeFragmentOn: aDocument

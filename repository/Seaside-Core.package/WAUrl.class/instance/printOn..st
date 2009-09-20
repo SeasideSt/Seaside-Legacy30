@@ -4,5 +4,5 @@ printOn: aStream
 	codec :=  [ self requestContext codec ]
 		on: WARequestContextNotFound
 		do: [ :e | WANullCodec new ].
-	document := WAHtmlDocument on: aStream codec: codec.
-	self encodeOn: document usingHtmlEntities: false
+	document := WAUnescapedDocument on: aStream codec: codec.
+	self encodeOn: document
