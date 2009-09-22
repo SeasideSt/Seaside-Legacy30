@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "pmm 12/15/2008 20:08",
 	"super" : "WAObject",
-	"category" : "Javascript-Core-Parser",
+	"category" : "Javascript-Core-JSON",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
