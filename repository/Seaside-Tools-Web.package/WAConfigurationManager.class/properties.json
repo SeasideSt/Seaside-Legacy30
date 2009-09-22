@@ -6,7 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"parentComponent"
+		"selection",
+		"currentPath",
+		"editor"
 	],
 	"name" : "WAConfigurationManager",
 	"type" : "normal"

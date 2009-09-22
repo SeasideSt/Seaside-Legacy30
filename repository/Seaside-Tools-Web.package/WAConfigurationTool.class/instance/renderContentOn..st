@@ -4,5 +4,5 @@ renderContentOn: html
 		with: [
 			self renderHeadingOn: html.
 			self renderTopBarOn: html.
-			html div style: 'padding:5px';
+			html div style: 'padding:0px';
 				with: [ self renderComponentOn: html ] ]

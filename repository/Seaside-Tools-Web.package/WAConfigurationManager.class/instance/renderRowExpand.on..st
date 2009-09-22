@@ -4,6 +4,8 @@ renderRowExpand: anEntryPoint  on: html
 	anEntryPoint isDispatcher
 		ifTrue: [
 			html anchor
-				callback: [ self dispatcher: anEntryPoint ];
+				callback: [	self selection: anEntryPoint.
+								self dispatcher: anEntryPoint.
+								self emptyPage ];
 				with:  '+'.]
 		ifFalse: []

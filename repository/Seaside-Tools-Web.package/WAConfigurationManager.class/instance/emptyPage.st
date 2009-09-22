@@ -1,0 +1,3 @@
+actions
+emptyPage
+	editor := nil
