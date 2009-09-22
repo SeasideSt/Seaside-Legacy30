@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "JSObject",
+	"category" : "Javascript-Core-Object",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "JSJson",
+	"type" : "normal"
+}

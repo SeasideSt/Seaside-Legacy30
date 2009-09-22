@@ -1,6 +1,5 @@
 convenience
 logger
-	^ self add:
-		((JSLogger context: self renderContext)
-			rendererClass: self rendererClass;
-			yourself)
+	^ self add: ((JSLogger context: self renderContext)
+		rendererClass: self rendererClass;
+		yourself)
