@@ -7,6 +7,6 @@ fullUrl
 	self parameters do: [ :each | 
 		(each isString)
 			ifTrue: [ url addParameter: each ].
-		(each isVariableBinding and: [ each value isLiteral ])
+		(each isVariableBinding and: [ each value isJavascript not ])
 			ifTrue: [ url addParameter: each key value: each value ] ].
 	^ url
