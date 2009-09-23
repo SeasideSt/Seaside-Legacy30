@@ -6,6 +6,7 @@ body, input, textarea, select {
 	font-size: 12px;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
+select.fix {width:340px}
 input, textarea, select {
 	margin-right: 0.5em;
 }
@@ -26,18 +27,28 @@ a.wa-action:hover {background:#fff}
 table.wa-config {width:100%;padding:0}
 table.wa-config td {padding:0px}
 
+
 /* headings */
 h1, h2, h3, h4, h5, h6 {
 	color: #01598d;
 	margin-bottom: 1ex;
 	font-weight: normal;
 }
+
+h2,h3,h4 {margin:2px 0px}
+
 table {
 	border: 0;
 	border-collapse: collapse;
 }
+
+.group {border:1px solid #e0e0e0;margin-bottom:4px}
+.groupTitle {height:20px;font-size:1.2em;background:#eee;color:#01598d}
+.groupContent {padding-left:4px}
+
 td, th { padding: 3px 1em 3px 0; }
-th { text-align: right; }
+label {font-weight:bold; padding: 3px 1em 3px 2px}
+th { text-align: left; }
 
 /* special */
 h1.logo a { 

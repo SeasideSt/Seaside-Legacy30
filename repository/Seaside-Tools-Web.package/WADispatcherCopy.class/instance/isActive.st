@@ -1,3 +1,3 @@
 actions
 isActive
-	^ self requestor dispatcher isDispatcher
+	^ self target notNil

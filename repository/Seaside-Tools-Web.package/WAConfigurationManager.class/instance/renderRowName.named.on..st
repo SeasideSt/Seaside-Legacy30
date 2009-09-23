@@ -4,6 +4,6 @@ renderRowName: anEntryPoint named: aString on: html
 			class: 'selected' if: anEntryPoint = selection ;
 			callback: [ self configure: anEntryPoint ];
 			with: [anEntryPoint isDispatcher
-						ifTrue: [	 html code: '/'  , aString]
-						ifFalse: [ html code: aString ] ]
+						ifTrue: [	 html  text: '/'  , aString]
+						ifFalse: [ html text: aString ] ]
 	

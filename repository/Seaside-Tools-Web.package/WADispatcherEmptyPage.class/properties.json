@@ -5,11 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"name",
-		"type",
-		"dispatcher"
-	],
-	"name" : "WADispatcherAddPage",
+	"instvars" : [ ],
+	"name" : "WADispatcherEmptyPage",
 	"type" : "normal"
 }

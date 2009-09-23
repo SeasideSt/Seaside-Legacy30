@@ -1,5 +1,6 @@
 rendering-ancestry
 renderAncestryOn: html
-	html heading level: 2; with: 'Ancestry'.
-	self renderParentSelectorOn: html.
-	self renderAncestryListOn: html
+	self renderGroup: [
+				self renderParentSelectorOn: html.
+				self renderAncestryListOn: html] named: 'Ancestry' on: html
+				

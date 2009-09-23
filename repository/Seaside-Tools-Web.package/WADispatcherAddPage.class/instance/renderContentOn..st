@@ -18,7 +18,7 @@ renderContentOn: html
 						labels: [ :each | each description ] ] ] ].
 			html break.
 				html submitButton
-					callback: [ self addEntryPoint. self answer ];
+					callback: [ self addEntryPoint ];
 					with: 'OK'.
 				html space.
 				html submitButton

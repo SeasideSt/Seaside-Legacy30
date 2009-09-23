@@ -1,5 +1,5 @@
 actions
-configure: anEntryPoint 
+configure: anEntryPoint
+	| |
 	self selection: anEntryPoint.
-	editor := anEntryPoint configuration configurationComponent.
-	"currentPath := oldPath"
+	self editor home; call: (anEntryPoint configuration configurationComponent).

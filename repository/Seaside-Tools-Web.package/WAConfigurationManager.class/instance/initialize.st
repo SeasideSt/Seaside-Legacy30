@@ -1,4 +1,5 @@
 initialize-release
 initialize 
 	super initialize.
-	currentPath := '/'
+	currentPath := '/'.
+	editor := WADispatcherEmptyPage on: self
