@@ -17,6 +17,15 @@ a {
 	text-decoration: none;
 }
 
+a.selected {font-weight:bold}
+
+a.wa-action {background:#eee;padding:3px 6px 3px 6px;border:1px solid #888;width:120px;-moz-border-radius: 5px; -webkit-border-radius: 5px;}
+a.wa-action:hover {background:#fff}
+/* special */
+.smallLogo {border:2px solid #ccc; background: url(smallLogo.png) no-repeat; height:54px; width:100px};
+table.wa-config {width:100%;padding:0}
+table.wa-config td {padding:0px}
+
 /* headings */
 h1, h2, h3, h4, h5, h6 {
 	color: #01598d;
