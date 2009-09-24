@@ -2,4 +2,5 @@ accessing
 displayAdvancedAttributes
 	"Answer if the advanced properties should be displayed or not."
 
-	^ displayAdvancedAttributes ifNil: [ false ]
+	^true
+	" displayAdvancedAttributes ifNil: [ false ]"

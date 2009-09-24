@@ -8,6 +8,7 @@ visitCollectionAttribute: anAttribute
 		ifTrue: [ 
 			self html multiSelect
 				list: anAttribute options;
+				size: 10;
 				on: #value of: expression ]
 		ifFalse: [
 			self html multiSelect

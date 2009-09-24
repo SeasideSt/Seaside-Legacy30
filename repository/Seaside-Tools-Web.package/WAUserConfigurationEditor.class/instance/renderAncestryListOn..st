@@ -17,8 +17,8 @@ renderAncestryListOn: html
 			html tableData: [
 				html button
 					title: 'Move parent up';
-					value: '/\';
-					callback: [self configuration moveParentUp: selectedConfig contents] .
+					callback: [self configuration moveParentUp: selectedConfig contents];
+					with: [html html: '&uarr;'].
 				html break.
 				html button
 					title: 'Remove parent configuration';
@@ -27,8 +27,8 @@ renderAncestryListOn: html
 				html break.
 				html button
 					title: 'Move parent down';
-					value: '\/';
-					callback: [self configuration moveParentDown: selectedConfig contents] .
+					callback: [self configuration moveParentDown: selectedConfig contents];
+					with: [html html: '&darr;'] .
 				]].
 	]
 	
