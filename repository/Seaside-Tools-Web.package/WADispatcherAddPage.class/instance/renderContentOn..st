@@ -1,6 +1,6 @@
 rendering
 renderContentOn: html
-	html heading level: 3; with: 'Add new entry point'.
+	html heading level: 2; with: 'Add new entry point to: ', dispatcher name.
 	html form: [
 		html table: [
 			html tableRow: [

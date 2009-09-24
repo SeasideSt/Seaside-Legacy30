@@ -2,4 +2,5 @@ actions
 configure: anEntryPoint
 	| |
 	self selection: anEntryPoint.
-	self editor home; call: (anEntryPoint configuration configurationComponent).
+	self editor home.
+	^self call: (anEntryPoint configuration configurationComponent).
