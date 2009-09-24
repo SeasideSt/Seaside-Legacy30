@@ -28,6 +28,7 @@ table.wa-config {width:100%;padding:0}
 table.wa-config td {padding:0px}
 
 
+
 /* headings */
 h1, h2, h3, h4, h5, h6 {
 	color: #01598d;
@@ -42,8 +43,10 @@ table {
 	border-collapse: collapse;
 }
 
-.group {border:1px solid #e0e0e0;margin-bottom:4px}
+.group {border:1px solid #e0e0e0;margin-bottom:4px;width:550px}
 .groupTitle {height:20px;font-size:1.2em;background:#eee;color:#01598d}
+.groupTitle .action {float:right;padding-right:4px}
+
 .groupContent {padding-left:4px}
 
 td, th { padding: 3px 1em 3px 0; }

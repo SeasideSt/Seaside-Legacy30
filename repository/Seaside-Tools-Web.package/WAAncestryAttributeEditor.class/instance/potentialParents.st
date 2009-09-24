@@ -1,4 +1,4 @@
-rendering-ancestry
+rendering
 potentialParents
 	| configurations |
 	configurations := WASystemConfiguration allSubclasses collect: [ :each | each instance ].

@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "WASimpleNavigation",
+	"super" : "WAAttributeEditor",
 	"category" : "Seaside-Tools-Web",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "WAConfigurationNavigator",
+	"instvars" : [
+		"selectedConfig"
+	],
+	"name" : "WAAncestryAttributeEditor",
 	"type" : "normal"
 }

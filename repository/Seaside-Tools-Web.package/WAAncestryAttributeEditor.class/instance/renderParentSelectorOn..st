@@ -1,4 +1,4 @@
-rendering-ancestry
+rendering
 renderParentSelectorOn: html 
 	| selectedParent parents |
 	parents := self potentialParents.

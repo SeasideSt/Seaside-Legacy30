@@ -1,7 +1,6 @@
-rendering-ancestry
+rendering
 renderAncestryListOn: html
-	|selectedConfig|
-	selectedConfig := WAValueHolder new.
+	
 	html label: 'Assigned parents: '.
 	html table:
 		[
@@ -32,10 +31,3 @@ renderAncestryListOn: html
 				]].
 	]
 	
-"	self configuration parents isEmpty ifTrue: [ ^ self ].
-	html unorderedList: 
-		[ self parents do: 
-			[ :each | 
-			self 
-				renderParent: each
-				on: html ] ]"

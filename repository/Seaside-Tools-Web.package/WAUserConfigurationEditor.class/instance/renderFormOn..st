@@ -1,4 +1,5 @@
 rendering
 renderFormOn: html
-	self renderAncestryOn: html.
-	self renderAttributesOn: html
+"	self renderAncestryOn: html."
+	groups do: [:each | html render: each].
+"	self renderAttributesOn: html"

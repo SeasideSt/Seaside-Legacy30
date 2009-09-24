@@ -2,15 +2,15 @@
 	"commentStamp" : "",
 	"super" : "WAComponent",
 	"category" : "Seaside-Tools-Web",
-	"classinstvars" : [
-		"displayAdvancedAttributes"
-	],
+	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
 		"configuration",
-		"groups"
+		"attributes",
+		"group",
+		"properties"
 	],
-	"name" : "WAUserConfigurationEditor",
+	"name" : "WAAttributeEditor",
 	"type" : "normal"
 }
