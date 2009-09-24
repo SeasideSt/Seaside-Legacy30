@@ -2,4 +2,6 @@ initialize-release
 initialize 
 	super initialize.
 	currentPath := '/'.
-	editor := WADispatcherEmptyPage on: self
+	editor := WAConfigurationNavigator new.
+	editor add: (WADispatcherEmptyPage on: self) label: 'Config'.
+	editor selectFirst
