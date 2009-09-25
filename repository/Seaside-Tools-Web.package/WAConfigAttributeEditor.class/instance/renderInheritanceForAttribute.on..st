@@ -11,19 +11,19 @@ renderInheritanceForAttribute: anAttribute on: html
 							onClick: 'return submitForm(this)';
 							title: 'revert to ' , value printString , ', overriden from ', source name;
 							callback: [ self clearAttribute: anAttribute ]; 
-							with: 'revert' ]
+							with: 'Revert' ]
 					ifFalse: [
 						html anchor
 							onClick: 'return submitForm(this)';
 							title: 'inherited from ', source name;
 							callback: [ self overrideAttribute: anAttribute ]; 
-							with: 'override'.
+							with: 'Override'.
 						(anAttribute isKindOf: WACollectionAttribute) ifTrue: [
 							html text: ' '.
 							html anchor
 								onClick: 'return submitForm(this)';
 								callback: [ self modifyCollectionAttribute: anAttribute ];
-								with: 'modify' ] ].
+								with: 'Modify' ] ].
 			wasInherited := true ] ].
 		wasInherited ifFalse: [
 			(self hasLocalValueForAttribute: anAttribute)
@@ -31,7 +31,7 @@ renderInheritanceForAttribute: anAttribute on: html
 					html anchor
 						onClick: 'return submitForm(this)';
 						callback: [ self clearAttribute: anAttribute ];
-						with: 'clear' ]
+						with: 'Clear' ]
 				ifFalse: [
 					anAttribute default isNil
 						ifTrue: [
@@ -43,10 +43,10 @@ renderInheritanceForAttribute: anAttribute on: html
 								onClick: 'return submitForm(this)';
 								title: 'inherited from attribute default';
 								callback: [ self overrideAttribute: anAttribute ]; 
-								with: 'override'.
+								with: 'Override'.
 							(anAttribute isKindOf: WACollectionAttribute) ifTrue: [
 								html text: ' '.
 								html anchor
 									onClick: 'return submitForm(this)';
 									callback: [ self modifyCollectionAttribute: anAttribute ];
-									with: 'modify' ] ] ] ] ]
+									with: 'Modify' ] ] ] ] ]

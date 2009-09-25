@@ -27,7 +27,7 @@ a.wa-action, .groupContent a  {
 		white-space:nowrap;
 		width:120px;-moz-border-radius: 5px; -webkit-border-radius: 5px;}
 .groupContent a {font-size:10px;padding:2px 5px 2px 5px;}
-.groupContent a.large {font-size:11px}
+.groupContent a.large {font-size:100%}
 
 a.wa-action:hover, .groupContent a:hover {background:#fff}
 /* special */
@@ -51,11 +51,11 @@ table {
 	border-collapse: collapse;
 }
 
-.group {border:1px solid #e0e0e0;margin-bottom:6px;width:550px}
-.groupTitle {height:20px;font-size:1.2em;background:#eee;color:#01598d}
+.group {border:1px solid #c0c0c0;margin-bottom:6px;width:550px}
+.groupTitle {height:20px;font-size:1.2em;background:#eee;color:#01598d;padding-left:3px}
 .groupTitle .action {float:right;padding-right:4px}
 
-.groupContent {padding-left:4px;margin-top:6px}
+.groupContent {padding-left:4px;margin-top:6px; margin-bottom: 4px}
 
 td, th { padding: 3px 1em 3px 0; }
 label {font-weight:bold; padding: 2px 4px 2px 0px}

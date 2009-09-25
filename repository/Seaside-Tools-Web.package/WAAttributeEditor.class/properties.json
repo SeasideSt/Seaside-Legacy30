@@ -11,7 +11,8 @@
 		"configuration",
 		"attributes",
 		"group",
-		"properties"
+		"properties",
+		"parent"
 	],
 	"name" : "WAAttributeEditor",
 	"type" : "normal"
