@@ -1,5 +1,5 @@
 private
 updatePropertiesCache
-	(self currentEditor isKindOf: WAUserConfigurationEditor)
+	(self currentEditor isKindOf: WAHandlerEditor)
 		ifTrue: [
-			self currentEditor groups do: [:each | propertiesCache at: each group put: each properties ]]
+			self currentEditor subComponents do: [:each | propertiesCache at: each group put: each properties ]]

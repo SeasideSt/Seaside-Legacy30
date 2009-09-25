@@ -1,4 +1,4 @@
 accessing
 setProperties: propertiesCache
 	super setProperties: propertiesCache.
-	configurationEditor setProperties: propertiesCache
+	cacheEditor setProperties: propertiesCache.
