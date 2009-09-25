@@ -1,3 +1,0 @@
-actions
-addDispatcherComponent
-	^WADispatcherAddPage new

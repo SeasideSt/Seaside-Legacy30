@@ -1,7 +1,7 @@
 settings
-setProperties: propertiesCache 
+setCachedProperties
 	| props | 
-	props := propertiesCache at: self group ifAbsent: [].
+	props := self class propertiesCache at: group ifAbsent: [].
 	props ifNotNil: [
 				self properties: props.
 				self showHelp: false ] 
