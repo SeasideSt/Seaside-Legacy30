@@ -4,12 +4,13 @@ initializeOn: aUserConfiguration
 	WASystemConfiguration clearAllDescriptions.
 	configuration := aUserConfiguration.
 	groups := OrderedCollection new.
-	groups add: (WAAncestryAttributeEditor new configuration: configuration; group: #ancestry; yourself).
+	groups add: (WAAncestryAttributeEditor new configuration: configuration; group: #ancestry; parent: self ; yourself).
 	self groupedAttributes do: [ :association |
 			groups add: (
 				WAConfigAttributeEditor new
 					configuration: configuration;
 					attributes: association value;
 					group: association key;
+					parent: self;
 					hasAdvancedAttributes: (self includesAdvanced: association value);
-					 yourself) ].
+					yourself) ].

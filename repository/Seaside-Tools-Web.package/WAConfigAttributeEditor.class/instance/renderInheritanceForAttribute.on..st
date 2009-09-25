@@ -18,7 +18,7 @@ renderInheritanceForAttribute: anAttribute on: html
 							title: 'inherited from ', source name;
 							callback: [ self overrideAttribute: anAttribute ]; 
 							with: 'Override'.
-						(anAttribute isKindOf: WACollectionAttribute) ifTrue: [
+						(self isCollectionAttribute: anAttribute ) ifTrue: [
 							html text: ' '.
 							html anchor
 								onClick: 'return submitForm(this)';
@@ -44,7 +44,7 @@ renderInheritanceForAttribute: anAttribute on: html
 								title: 'inherited from attribute default';
 								callback: [ self overrideAttribute: anAttribute ]; 
 								with: 'Override'.
-							(anAttribute isKindOf: WACollectionAttribute) ifTrue: [
+							(self isCollectionAttribute: anAttribute ) ifTrue: [
 								html text: ' '.
 								html anchor
 									onClick: 'return submitForm(this)';

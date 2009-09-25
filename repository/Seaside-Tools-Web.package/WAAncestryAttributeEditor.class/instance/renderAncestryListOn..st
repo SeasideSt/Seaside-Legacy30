@@ -3,6 +3,7 @@ renderAncestryListOn: html
 	
 	html paragraph.
 	html label: 'Assigned parents: '.
+
 	html table:
 		[
 		html tableRow: [
@@ -31,13 +32,13 @@ renderAncestryListOn: html
 					title: 'Move parent down';
 					onClick: 'return submitForm(this)';
 					callback: [self configuration moveParentDown: selectedConfig contents];
-					with: [html html: '&darr;'] .
-				]].
-	]
+					with: [html html: '&darr;'] ] ] ].
+	html break.
+	html anchor
+		class: 'large';
+		title: 'Configure shared parent';
+		onClick: 'return submitForm(this)';
+		callback: [selectedConfig contents ifNotNil: [ self show: selectedConfig contents configurationComponent ] ];
+		with: 'Configure'.
 	
-"html anchor
-						title: 'Configure selected file library';
-						class: 'large';
-						onClick: 'return submitForm(this)';
-						callback: [ selectedLib contents ifNotNil: [self configureLibrary: selectedLib contents default ] ];	
-						with: 'Configure'"
+ 
