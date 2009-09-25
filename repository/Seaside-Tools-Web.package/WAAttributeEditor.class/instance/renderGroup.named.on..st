@@ -8,6 +8,11 @@ renderGroup: aBlock named: aName on: html
 						self renderActionsOn: html].
 			self collapsed 
 				ifFalse: [
-					html div
-						class: 'groupContent';
-						with: aBlock ] ]
+					self showHelp 
+						ifTrue: [html div
+									class: 'help';
+									with: [html code: (self class helpTextFor: group)] ]
+						ifFalse: [
+							html div
+								class: 'groupContent';
+								with: aBlock ] ] ]

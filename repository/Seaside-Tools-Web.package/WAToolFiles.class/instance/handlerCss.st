@@ -20,13 +20,21 @@ a {
 
 a.selected {font-weight:bold}
 
-a.wa-action {background:#eee;padding:3px 6px 3px 6px;border:1px solid #888;width:120px;-moz-border-radius: 5px; -webkit-border-radius: 5px;}
-a.wa-action:hover {background:#fff}
+a.wa-action, .groupContent a  {
+		background:#eee;
+		padding:3px 6px 3px 6px;
+		border:1px solid #888;
+		white-space:nowrap;
+		width:120px;-moz-border-radius: 5px; -webkit-border-radius: 5px;}
+.groupContent a {font-size:10px;padding:2px 5px 2px 5px;}
+.groupContent a.large {font-size:11px}
+
+a.wa-action:hover, .groupContent a:hover {background:#fff}
 /* special */
 .smallLogo {border:2px solid #ccc; background: url(smallLogo.png) no-repeat; height:54px; width:100px};
 table.wa-config {width:100%;padding:0}
 table.wa-config td {padding:0px}
-
+div.help {padding:8px;white-space:pre}
 
 
 /* headings */
@@ -43,14 +51,14 @@ table {
 	border-collapse: collapse;
 }
 
-.group {border:1px solid #e0e0e0;margin-bottom:4px;width:550px}
+.group {border:1px solid #e0e0e0;margin-bottom:6px;width:550px}
 .groupTitle {height:20px;font-size:1.2em;background:#eee;color:#01598d}
 .groupTitle .action {float:right;padding-right:4px}
 
-.groupContent {padding-left:4px}
+.groupContent {padding-left:4px;margin-top:6px}
 
 td, th { padding: 3px 1em 3px 0; }
-label {font-weight:bold; padding: 3px 1em 3px 2px}
+label {font-weight:bold; padding: 2px 4px 2px 0px}
 th { text-align: left; }
 
 /* special */

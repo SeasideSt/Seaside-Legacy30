@@ -10,4 +10,5 @@ renderFiltersOn: html
 			(each isKindOf: WAConfiguredRequestFilter) ifTrue: [
 				html anchor
 					callback: [ self show: (WAUserConfigurationEditor on: each configuration) ];
-					with: '(configure)' ] ] ]
+					with: '(configure)' ] ] ].
+	html break

@@ -4,7 +4,9 @@
 	"category" : "Seaside-Tools-Web",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"HelpTexts"
+	],
 	"instvars" : [
 		"configuration",
 		"attributes",

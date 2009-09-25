@@ -7,8 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"selection",
-		"currentPath",
-		"editor"
+		"editor",
+		"propertiesCache"
 	],
 	"name" : "WAConfigurationManager",
 	"type" : "normal"

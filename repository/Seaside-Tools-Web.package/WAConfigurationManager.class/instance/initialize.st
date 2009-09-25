@@ -1,5 +1,5 @@
 initialize-release
 initialize 
 	super initialize.
-	currentPath := '/'.
-	editor := WADispatcherEmptyPage on: self
+	editor := WADispatcherEmptyPage on: self.
+	propertiesCache := Dictionary new

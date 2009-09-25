@@ -2,8 +2,7 @@ rendering
 renderParentSelectorOn: html 
 	| selectedParent parents |
 	parents := self potentialParents.
-	
-	html paragraph: [
+
 		html label: 'Possible parents: '.
 		html break.
 		selectedParent := WAValueHolder new.
@@ -16,4 +15,4 @@ renderParentSelectorOn: html
 		html submitButton
 			callback: [ self configuration addParent: selectedParent contents ];
 			title: 'Add new parent configuration';
-			text: 'Add' ]
+			text: 'Add' 

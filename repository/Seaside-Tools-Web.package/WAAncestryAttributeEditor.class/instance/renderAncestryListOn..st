@@ -1,6 +1,7 @@
 rendering
 renderAncestryListOn: html
 	
+	html paragraph.
 	html label: 'Assigned parents: '.
 	html table:
 		[

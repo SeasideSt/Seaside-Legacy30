@@ -1,3 +1,3 @@
 accessing
 collapsedByDefault
-	^true
+	^false

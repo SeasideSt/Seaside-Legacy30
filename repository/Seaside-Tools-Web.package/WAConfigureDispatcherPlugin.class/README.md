@@ -1,1 +1,0 @@
-I display the configuration dialog of an application. See WAApplication >> #configurationComponent
