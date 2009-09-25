@@ -15,20 +15,29 @@ renderAncestryListOn: html
 					list: self configuration parents;
 					callback: [:value | selectedConfig contents: value]].
 			html tableData: [
-				html button
+				html anchor
 					title: 'Move parent up';
+					onClick: 'return submitForm(this)';
 					callback: [self configuration moveParentUp: selectedConfig contents];
 					with: [html html: '&uarr;'].
-				html break.
-				html button
+				html break; break.
+				html anchor
 					title: 'Remove parent configuration';
-					value: 'X';
-					callback: [self configuration removeParent: selectedConfig contents].
-				html break.
-				html button
+					onClick: 'return submitForm(this)';
+					callback: [self configuration removeParent: selectedConfig contents];
+					with: 'X'.
+				html break; break.
+				html anchor
 					title: 'Move parent down';
+					onClick: 'return submitForm(this)';
 					callback: [self configuration moveParentDown: selectedConfig contents];
 					with: [html html: '&darr;'] .
 				]].
 	]
 	
+"html anchor
+						title: 'Configure selected file library';
+						class: 'large';
+						onClick: 'return submitForm(this)';
+						callback: [ selectedLib contents ifNotNil: [self configureLibrary: selectedLib contents default ] ];	
+						with: 'Configure'"

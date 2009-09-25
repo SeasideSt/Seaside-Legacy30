@@ -1,13 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "WAEntryPointEditor",
+	"super" : "WAAttributeEditor",
 	"category" : "Seaside-Tools-Web",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"fileEditor"
+		"handler"
 	],
-	"name" : "WAFileHandlerEditor",
+	"name" : "WAFileAttributeEditor",
 	"type" : "normal"
 }
