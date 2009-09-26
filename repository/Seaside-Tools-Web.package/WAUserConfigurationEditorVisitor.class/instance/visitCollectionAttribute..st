@@ -1,24 +1,12 @@
 visiting
 visitCollectionAttribute: anAttribute
-	| expression listSize |
-	expression := self configuration 
-		expressionAt: anAttribute key
-		ifAbsent: [ ^ self ].
-	listSize := (anAttribute options size min: 10) max: 2.
-	(expression isKindOf: WAValueExpression)
-		ifTrue: [ "its an override"
-			self html multiSelect
-				list: anAttribute options;
-				size: listSize;
-				on: #value of: expression ]
-		ifFalse: ["addition and removals, how to get the inherited ones"
-			self html multiSelect
-				size: listSize;
-				title: 'Removals';
-				list: anAttribute options;
-				on: #removals of: expression.
-			self html multiSelect
-				size: listSize;
-				title: 'Additions';
-				list: anAttribute options;
-				on: #additions of: expression ]
+
+	| attributeCollection listSize |
+	attributeCollection := self configuration currentCollectionAt: anAttribute key.
+	attributeCollection isEmpty ifTrue: [^self html text: '(none)'].	
+	listSize := (attributeCollection size min: 10) max: 2.
+	self html select
+			size: listSize;
+			title: 'Current';
+			labels: [:each | each value seasideString, ' [' ,each key seasideString , ']'];
+			list: attributeCollection

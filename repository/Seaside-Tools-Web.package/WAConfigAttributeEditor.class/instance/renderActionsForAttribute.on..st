@@ -1,5 +1,5 @@
 rendering
-renderInheritanceForAttribute: anAttribute on: html
+renderActionsForAttribute: anAttribute on: html
 	html tableData: [
 		| wasInherited |
 		wasInherited := false.

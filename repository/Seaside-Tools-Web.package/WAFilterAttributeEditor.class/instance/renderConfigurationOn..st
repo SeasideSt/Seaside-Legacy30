@@ -1,12 +1,13 @@
 rendering
 renderConfigurationOn: html
 	| filters |
-	filters := self configuration.
-	filters isEmpty ifTrue: [ html div: 'No filters are defined.' ].
-	html table
-		cellspacing: 0;
-		cellpadding: 0;
-		with: [
+	filters := self filters.
+	html form: [
+		self renderPossibleFiltersOn: html.
+		html table
+			cellspacing: 0;
+			cellpadding: 0;
+			with: [
 				filters do: [ :each |
 					html tableRow: [
 						html tableData: each class name.
@@ -15,4 +16,9 @@ renderConfigurationOn: html
 								ifTrue: [
 									html anchor
 										callback: [ self show: (WAUserConfigurationEditor on: each configuration) ];
-										with: 'Configure' ]] ] ] ]
+										with: 'Configure' ].
+								html space.
+								html anchor
+										callback: [ self removeFilter: each ];
+										with: 'Remove' ] ] ] ] ].
+	

@@ -1,0 +1,3 @@
+accessing
+potentialFilters
+	^WARequestFilter allSubclasses 

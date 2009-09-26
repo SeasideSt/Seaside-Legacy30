@@ -10,7 +10,6 @@
 	],
 	"instvars" : [
 		"configuration",
-		"attributes",
 		"group",
 		"properties",
 		"parent"
