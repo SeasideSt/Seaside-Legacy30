@@ -23,6 +23,7 @@ renderContentOn: html
 							verticalAlign: 'top';
 							with: [
 								html label: 'Current'.
+								
 								html break.
 								currentList := self currentList.
 								currentList isEmpty
@@ -34,7 +35,14 @@ renderContentOn: html
 									selected: selectionsCurrent;
 									labels: [:each | each value seasideString, ' [' ,each key seasideString , ']'];
 									size: 30;
-									callback: [:v | self selectionsCurrent: v] ] ] ] ].
+									callback: [:v | self selectionsCurrent: v] ] ].
+							html tableData
+								verticalAlign: 'top';
+								with: [
+									self isModify
+										ifTrue: [html break. self renderAddToRemovalOn: html. 11 timesRepeat: [html break]]
+										ifFalse: [14 timesRepeat: [html break]].
+									self renderMoveUpAndDownOn: html ] ] ].
 			
 			html submitButton
 				callback: [ self answer];

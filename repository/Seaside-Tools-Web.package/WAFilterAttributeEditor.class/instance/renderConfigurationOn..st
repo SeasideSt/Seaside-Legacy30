@@ -15,10 +15,10 @@ renderConfigurationOn: html
 							(each isKindOf: WAConfiguredRequestFilter)
 								ifTrue: [
 									html anchor
-										callback: [ self show: (WAUserConfigurationEditor on: each configuration) ];
-										with: 'Configure' ].
+										callback: [ self show: each configurationComponent ];
+										with: 'Configure'].
 								html space.
 								html anchor
-										callback: [ self removeFilter: each ];
-										with: 'Remove' ] ] ] ] ].
+									callback: [ self removeFilter: each ];
+									with: 'Remove' ] ] ] ] ].
 	
