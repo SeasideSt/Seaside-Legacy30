@@ -2,4 +2,4 @@ accessing
 name
 	^ self parent isNil
 		ifTrue: [ '' ]
-		ifFalse: [ self parent nameOfEntryPoint: self ]
+		ifFalse: [ self parent nameOfHandler: self ]

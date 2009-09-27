@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "rew 10/19/2007 10:48",
-	"super" : "WAEntryPoint",
+	"super" : "WARequestHandler",
 	"category" : "Seaside-Core-Libraries",
 	"classinstvars" : [
 		"default"

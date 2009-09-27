@@ -1,6 +1,6 @@
-accessing
+deprecated
 entryPointAt: aString
-	^ self
-			entryPointAt: aString
-			with: [ :dispatcher :token |
-				dispatcher entryPoints at: token ] 
+	self
+		seasideDeprecatedApi: 'WADispatcher>>#entryPointAt:'
+		details: 'Use WADispatcher>>#handlerAt:'.
+	^ self handlerAt: aString

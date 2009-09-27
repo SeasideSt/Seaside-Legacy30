@@ -6,7 +6,6 @@ clear
 	| objects |
 	mutex critical: [
 		objects := objectsByKey.
-		objectsByKey := WAPlatform current reducedConflictDictionary new.
-		keysByObject := WAPlatform current reducedConflictDictionary new.
+		self initializeCollections.
 		objects isNil ifFalse: [
 			objects keysAndValuesDo: [ :key :object | self notifyRemoved: object key: key ] ] ]

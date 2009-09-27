@@ -1,4 +1,4 @@
 initialization
 initialize
 	super initialize.
-	entryPoints := Dictionary new
+	handlers := Dictionary new

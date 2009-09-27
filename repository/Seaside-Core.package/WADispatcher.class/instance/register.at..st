@@ -1,7 +1,7 @@
 registration
-register: anEntryPoint at: aString
-	aString ifNil: [ WAError signal: 'Unable to add unnamed entry point.' ].
-	entryPoints
-		at:  aString
-		put: (anEntryPoint setParent: self).
-	^ anEntryPoint
+register: aRequestHandler at: aString 
+	aString ifNil: [ WAError signal: 'Registration key cannot be nil.' ].
+	handlers 
+		at: aString
+		put: (aRequestHandler setParent: self).
+	^ aRequestHandler

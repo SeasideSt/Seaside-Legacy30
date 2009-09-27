@@ -1,3 +1,3 @@
 public
 register: aRequestHandler
-	^ self cache store: aRequestHandler
+	^ self cache store: (aRequestHandler setParent: self)

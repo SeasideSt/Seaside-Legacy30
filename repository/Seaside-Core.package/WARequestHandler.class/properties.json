@@ -6,7 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"filter"
+		"filter",
+		"parent",
+		"configuration"
 	],
 	"name" : "WARequestHandler",
 	"type" : "normal"

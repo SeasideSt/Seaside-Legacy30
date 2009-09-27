@@ -4,4 +4,4 @@ path
 	
 	^Array streamContents: [ :stream |
 		self parentChildPairsDo: [ :p :child |
-			stream nextPut: (p nameOfEntryPoint: child) ] ]
+			stream nextPut: (p nameOfHandler: child) ] ]

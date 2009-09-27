@@ -1,4 +1,6 @@
 registration
-unregister: anEntryPoint
-	entryPoints removeKey: anEntryPoint name ifAbsent: [ ^ nil ].
-	^ anEntryPoint unregistered
+unregister: aRequestHandler
+	handlers 
+		removeKey: aRequestHandler name
+		ifAbsent: [ ^ nil ].
+	^ aRequestHandler unregistered

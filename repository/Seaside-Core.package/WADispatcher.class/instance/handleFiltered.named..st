@@ -1,6 +1,6 @@
 handling
 handleFiltered: aRequestContext named: aString
 	(self 
-		entryPointAt: aString 
+		handlerAt: aString 
 		ifAbsent: [ aRequestContext responseGenerator notFound; respond ])
 			handle: aRequestContext
