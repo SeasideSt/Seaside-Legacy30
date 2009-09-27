@@ -7,5 +7,5 @@ script: aBlock
 		response
 			doNotCache; 
 			contentType: (WAMimeType textJavascript
-				charset: self requestContext entryPoint charSet).
+				charset: self requestContext handler charSet).
 		self script: aBlock on: response stream ]
