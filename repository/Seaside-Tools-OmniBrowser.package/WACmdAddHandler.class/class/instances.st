@@ -1,3 +1,3 @@
 accessing
 instances
-	^ WAEntryPoint concreteSubclasses collect: [ :each | self new setType: each ]
+	^ WARequestHandler concreteSubclasses collect: [ :each | self new setType: each ]

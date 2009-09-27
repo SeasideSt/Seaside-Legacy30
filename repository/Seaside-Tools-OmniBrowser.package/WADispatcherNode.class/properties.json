@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "WAEntryPointNode",
+	"super" : "WAHandlerNode",
 	"category" : "Seaside-Tools-OmniBrowser",
 	"classinstvars" : [ ],
 	"pools" : [ ],

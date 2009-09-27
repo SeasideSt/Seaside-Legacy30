@@ -1,3 +1,3 @@
 accessing
 children
-	^ handler entryPoints collect: [ :each | each asNode ]
+	^ handler handlers collect: [ :each | each asNode ]
