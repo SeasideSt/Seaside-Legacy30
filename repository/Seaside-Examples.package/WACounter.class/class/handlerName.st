@@ -1,3 +1,3 @@
 accessing
-entryPointName
+handlerName
 	^'examples/counter'
