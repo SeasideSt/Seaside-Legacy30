@@ -1,3 +1,3 @@
 private
 defaultContentType
-	^ WAMimeType textJavascript charset: self requestContext entryPoint charSet
+	^ WAMimeType textJavascript charset: self requestContext handler charSet
