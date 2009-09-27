@@ -1,3 +1,3 @@
 running
-newEntryPoint
+newHandler
 	^ WAApplication new
