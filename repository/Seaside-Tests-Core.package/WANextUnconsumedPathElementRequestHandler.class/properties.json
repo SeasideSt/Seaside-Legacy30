@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "WAEntryPoint",
+	"super" : "WARequestHandler",
 	"category" : "Seaside-Tests-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],

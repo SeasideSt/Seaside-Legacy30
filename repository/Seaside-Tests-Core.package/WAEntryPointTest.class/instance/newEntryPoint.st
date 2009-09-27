@@ -1,3 +1,0 @@
-private
-newEntryPoint
-	^ WAEntryPoint new

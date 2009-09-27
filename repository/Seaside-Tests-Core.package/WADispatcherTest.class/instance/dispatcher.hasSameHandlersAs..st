@@ -1,10 +1,10 @@
 private
-dispatcher: aDispatcher hasSameEntryPointsAs: anotherDispatcher
+dispatcher: aDispatcher hasSameHandlersAs: anotherDispatcher
 	"VW does not have Set >> #=
 	OMFG! SRSLY? wtf...?"
 	| aSet anotherSet |
-	aSet := aDispatcher entryPoints keys.
-	anotherSet := anotherDispatcher entryPoints keys.
+	aSet := aDispatcher handlers keys.
+	anotherSet := anotherDispatcher handlers keys.
 	aSet == anotherSet ifTrue: [^ true].
 	(aSet class == anotherSet class) ifFalse: [^ false]. "not sure this is really clever but ..."
 	aSet size = anotherSet size ifFalse: [^ false].

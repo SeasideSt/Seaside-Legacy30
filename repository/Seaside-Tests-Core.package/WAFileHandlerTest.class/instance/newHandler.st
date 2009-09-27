@@ -1,3 +1,3 @@
 private
-newEntryPoint
+newHandler
 	^ WAFileHandler new

@@ -1,3 +1,0 @@
-private
-newEntryPointName
-	^ 'files'

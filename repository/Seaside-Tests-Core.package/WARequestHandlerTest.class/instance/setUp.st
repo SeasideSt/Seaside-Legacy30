@@ -1,4 +1,6 @@
 running
 setUp
 	super setUp.
-	handler := self newHandler
+	dispatcher := WADispatcher new.
+	handler := self newHandler.
+	dispatcher register: handler at: 'foo'

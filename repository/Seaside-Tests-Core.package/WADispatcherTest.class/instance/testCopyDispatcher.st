@@ -1,17 +1,17 @@
 testing
 testCopyDispatcher
-	| copy originalEntryPoint |
+	| copy originalHandler |
 	copy := handler copy.
 	
 	self deny: copy == handler.
 	self assert: copy defaultName = handler defaultName.
-	self assert: (self dispatcher: copy hasSameEntryPointsAs: handler).
+	self assert: (self dispatcher: copy hasSameHandlersAs: handler).
 	
-	copy entryPoints
-		do: [:entryPoint |
-			originalEntryPoint := handler entryPointAt: entryPoint name.
-			self assert: entryPoint class == originalEntryPoint class.
-			self deny: entryPoint == originalEntryPoint.
-			entryPoint isDispatcher
+	copy handlers
+		do: [:each |
+			originalHandler := handler handlerAt: each name.
+			self assert: each class == originalHandler class.
+			self deny: each == originalHandler.
+			each isDispatcher
 				ifTrue: [self
-						assert: (self dispatcher: entryPoint hasSameEntryPointsAs: originalEntryPoint)]]
+						assert: (self dispatcher: each hasSameHandlersAs: originalHandler)]]

@@ -1,3 +1,3 @@
 private
-newEntryPoint
+newHandler
 	^ WARegistry new

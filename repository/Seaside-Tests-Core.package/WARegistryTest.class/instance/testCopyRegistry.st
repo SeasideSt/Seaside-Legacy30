@@ -7,7 +7,8 @@ testCopyRegistry
 	copy := handler copy.
 	
 	self assert: key = (handler keyFor: stored).
-	self assert: key = (copy keyFor: stored).
+	"Since registry keys are dynamically assigned, we don't expect a copy to have the same
+	keys and values."
 	
 	stored2 := WARequestHandler new.
 	key2 := handler register: stored2.

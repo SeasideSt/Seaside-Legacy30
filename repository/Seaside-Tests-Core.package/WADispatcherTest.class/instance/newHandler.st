@@ -1,10 +1,10 @@
 private
-newEntryPoint
+newHandler
 	| child |
 	child := WADispatcher new.
 	child
-		register: WAEntryPoint new at: 'foo';
+		register: WARequestHandler new at: 'foo';
 		register: (WADispatcher new
-					register: WAEntryPoint new at: 'baz';
+					register: WARequestHandler new at: 'baz';
 					yourself) at: 'bar'.
 	^ child

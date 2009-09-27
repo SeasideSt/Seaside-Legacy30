@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"handler"
+		"handler",
+		"dispatcher"
 	],
 	"name" : "WARequestHandlerTest",
 	"type" : "normal"
