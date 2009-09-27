@@ -1,8 +1,8 @@
 initialization
 initialize
-	| entryPoint |
+	| handler |
 	super initialize.
-	entryPoint := self requestContext entryPoint.
-	entryPoint isNil
+	handler := self requestContext handler.
+	handler isNil
 		ifTrue: [ self acceptCharset: self defaultUrlCharset ]
-		ifFalse: [ self acceptCharset: entryPoint charSet ]
+		ifFalse: [ self acceptCharset: handler charSet ]

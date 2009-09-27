@@ -6,7 +6,7 @@ performRendering: anObject
 		docRoot := WAHtmlRoot context: innerContext.
 		docRoot base target: '_top'.
 		response doNotCache.
-		document := self requestContext entryPoint documentClass 
+		document := self requestContext handler documentClass 
 			on: response stream codec: self requestContext codec.
 		canvas context document: document.
 		document open: docRoot.
