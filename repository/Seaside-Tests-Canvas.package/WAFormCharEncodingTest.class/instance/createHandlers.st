@@ -1,6 +1,6 @@
 as yet unclassified
 createHandlers
-	| entryPoint |
-	entryPoint := WAEntryPoint new.
-	entryPoint preferenceAt: #charSet put: 'utf-16'.
-	^ Array with: entryPoint
+	| handler |
+	handler := WARequestHandler new.
+	handler preferenceAt: #charSet put: 'utf-16'.
+	^ Array with: handler

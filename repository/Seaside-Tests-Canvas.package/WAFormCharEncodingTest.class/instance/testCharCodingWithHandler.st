@@ -1,5 +1,5 @@
 as yet unclassified
-testCharCodingWithEntryPoint
+testCharCodingWithHandler
 	"445:WABasicFormTag does not honour character encoding setting"
 	self
 		assert: [ :html |
