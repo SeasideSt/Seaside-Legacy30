@@ -9,4 +9,5 @@ seasideEnvironment
 		addDependency: 'Seaside-RenderLoop';
 		addDependency: 'Seaside-Session';
 		addDependency: 'Seaside-Canvas';
+		addDependency: 'Seaside-Widgets';
 		yourself

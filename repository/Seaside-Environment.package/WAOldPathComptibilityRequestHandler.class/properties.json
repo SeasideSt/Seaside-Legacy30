@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "pmm 9/5/2009 16:44",
+	"super" : "WARequestHandler",
+	"category" : "Seaside-Environment",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAOldPathComptibilityRequestHandler",
+	"type" : "normal"
+}
