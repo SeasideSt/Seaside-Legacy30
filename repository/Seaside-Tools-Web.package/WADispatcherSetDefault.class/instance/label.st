@@ -1,3 +1,3 @@
 accessing
 label
-	^ 'Set as default'
+	^ 'Set default'

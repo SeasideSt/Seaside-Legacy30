@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "pmm 5/28/2007 23:06",
-	"super" : "AnObsoleteWADispatcherPlugin",
+	"super" : "WADispatcherPlugin",
 	"category" : "Seaside-Tools-Web",
 	"classinstvars" : [ ],
 	"pools" : [ ],

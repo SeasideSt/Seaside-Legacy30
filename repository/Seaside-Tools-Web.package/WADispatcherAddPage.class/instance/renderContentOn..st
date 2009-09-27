@@ -1,6 +1,6 @@
 rendering
 renderContentOn: html
-	html heading level: 2; with: 'Add new entry point to: ', dispatcher name.
+	html heading level: 3; with: 'Add new request handler'.
 	html form: [
 		html table: [
 			html tableRow: [
@@ -13,12 +13,12 @@ renderContentOn: html
 				html tableData: [
 					html select
 						selected: type;
-						list: self entryPointClasses;
+						list: self handlerClasses;
 						callback: [ :value | type := value ];
 						labels: [ :each | each description ] ] ] ].
 			html break.
 				html submitButton
-					callback: [ self addEntryPoint ];
+					callback: [ self addRequestHandler. self answer ];
 					with: 'OK'.
 				html space.
 				html submitButton

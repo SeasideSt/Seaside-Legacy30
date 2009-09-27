@@ -6,8 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"handler",
-		"filterEditor"
+		"handler"
 	],
 	"name" : "WAHandlerEditor",
 	"type" : "normal"

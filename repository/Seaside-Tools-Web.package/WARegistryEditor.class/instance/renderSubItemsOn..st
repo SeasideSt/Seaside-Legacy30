@@ -1,4 +1,4 @@
 rendering
 renderSubItemsOn: html
 	super renderSubItemsOn: html.
-	html render: cacheEditor
+	self renderCacheConfigurationOn: html

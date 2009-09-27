@@ -5,9 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"fileEditor"
-	],
+	"instvars" : [ ],
 	"name" : "WAFileHandlerEditor",
 	"type" : "normal"
 }

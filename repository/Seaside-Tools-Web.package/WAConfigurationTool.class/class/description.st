@@ -1,3 +1,3 @@
 accessing
 description
-	^ 'Configuration Tool'
+	^ 'Dispatcher Tool'

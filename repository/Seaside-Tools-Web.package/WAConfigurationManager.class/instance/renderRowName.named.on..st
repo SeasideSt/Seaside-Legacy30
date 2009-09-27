@@ -1,9 +1,12 @@
 rendering-rows
 renderRowName: anEntryPoint named: aString on: html
-	html anchor
-			class: 'selected' if: anEntryPoint = selection ;
-			callback: [ self configure: anEntryPoint ];
-			with: [anEntryPoint isDispatcher
-						ifTrue: [	 html  text: '/'  , aString]
-						ifFalse: [ html text: aString ] ]
-	
+
+	anEntryPoint isDispatcher
+		ifTrue: [	
+			html anchor
+				callback: [ self dispatcher: anEntryPoint ];
+				with: [ html code: '/'  , aString] ]
+		ifFalse: [
+			html anchor 
+				callback: [self configure: anEntryPoint ];
+				with: [ html code: aString ] ]
