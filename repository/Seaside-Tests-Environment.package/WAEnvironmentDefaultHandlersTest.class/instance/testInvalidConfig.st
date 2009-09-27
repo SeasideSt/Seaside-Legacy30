@@ -1,8 +1,8 @@
 testing
 testInvalidConfig
 	| app |
-	app := self defaultDispatcher entryPointAt: 'examplesxyz/counter' ifAbsent: [nil].
+	app := self defaultDispatcher handlerAt: 'examplesxyz/counter' ifAbsent: [nil].
 	self assert: app isNil.
-	app := self defaultDispatcher entryPointAt: 'examples/counterxyz' ifAbsent: [nil].
+	app := self defaultDispatcher handlerAt: 'examples/counterxyz' ifAbsent: [nil].
 	self assert: app isNil.
 	
