@@ -1,11 +1,11 @@
 registration
-register: anEntryPointClass at: aString in: aDispatcher
+register: aRequestHandlerClass at: aString in: aDispatcher
 	| path dispatcher |
 	path := aString findTokens: '/'.
 	dispatcher := path allButLast
 		inject: aDispatcher
 		into: [ :result :each |
-			result entryPoints 
+			result handlers 
 				at: each
 				ifAbsent: [ result register: WADispatcher new at: each ] ].
-	^ dispatcher register: anEntryPointClass new at: path last
+	^ dispatcher register: aRequestHandlerClass new at: path last
