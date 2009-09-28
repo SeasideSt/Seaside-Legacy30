@@ -1,3 +1,0 @@
-actions
-toggleAdvancedAttributes
-	self class displayAdvancedAttributes: self class displayAdvancedAttributes not

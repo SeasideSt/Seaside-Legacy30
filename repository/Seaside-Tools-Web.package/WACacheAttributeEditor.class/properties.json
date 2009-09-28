@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "WAAttributeEditor",
+	"category" : "Seaside-Tools-Web",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"handler"
+	],
+	"name" : "WACacheAttributeEditor",
+	"type" : "normal"
+}

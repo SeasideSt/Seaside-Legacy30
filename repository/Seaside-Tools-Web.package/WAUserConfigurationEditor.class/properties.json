@@ -2,13 +2,13 @@
 	"commentStamp" : "",
 	"super" : "WAComponent",
 	"category" : "Seaside-Tools-Web",
-	"classinstvars" : [
-		"displayAdvancedAttributes"
-	],
+	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"configuration"
+		"configuration",
+		"groups",
+		"parent"
 	],
 	"name" : "WAUserConfigurationEditor",
 	"type" : "normal"

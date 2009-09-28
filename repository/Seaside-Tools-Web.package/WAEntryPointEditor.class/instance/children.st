@@ -1,3 +1,3 @@
 accessing
 children
-	^ Array with: configurationEditor
+	^super children , (Array with: configurationEditor)

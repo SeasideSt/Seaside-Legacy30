@@ -6,8 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"name",
-		"type"
+		"selection",
+		"editor",
+		"propertiesCache"
 	],
 	"name" : "WAConfigurationBrowser",
 	"type" : "normal"

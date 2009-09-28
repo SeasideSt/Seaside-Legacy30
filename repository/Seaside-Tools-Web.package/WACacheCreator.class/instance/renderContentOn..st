@@ -1,7 +1,8 @@
 rendering
 renderContentOn: html
+	html heading level2; with: 'Create new cache'.
 	html form: [
-		html div: [
+		html table: [
 			self
 				renderInputForSelector: #expiryPolicy
 				withLabel: 'Expiry Policy'
@@ -21,11 +22,11 @@ renderContentOn: html
 				renderInputForSelector: #missStrategy
 				withLabel: 'Cache Miss Strategy'
 				options: WACacheMissStrategy withAllSubclasses
-				on: html.
-			
-			html submitButton
-				callback: [ self answer: self cache ];
-				with: 'Create Cache'.
-			html button
-				callback: [ self answer: nil ];
-				with: 'Cancel' ] ]
+				on: html ].
+		html break.
+		html submitButton
+			callback: [ self answer: self cache ];
+			with: 'OK'.
+		html button
+			callback: [ self answer: nil ];
+			with: 'Cancel' ] 

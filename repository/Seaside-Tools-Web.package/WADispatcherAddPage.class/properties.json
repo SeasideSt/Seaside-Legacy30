@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "WAComponent",
+	"super" : "WADispatcherSubPage",
 	"category" : "Seaside-Tools-Web",
 	"classinstvars" : [ ],
 	"pools" : [ ],
