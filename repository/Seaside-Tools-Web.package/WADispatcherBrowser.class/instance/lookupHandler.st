@@ -7,7 +7,7 @@ lookupHandler
 		requesthandler := requesthandler isDispatcher
 				ifFalse: [ ^ requesthandler ]
 				ifTrue: [
-					requesthandler entryPoints 
+					requesthandler handlers 
 						at: consumer next
 						ifAbsent: [ ^ nil ] ] ].
 	^ requesthandler

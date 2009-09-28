@@ -1,4 +1,4 @@
 rendering
 renderSettingsOn: html
-	self renderDefaultEntryPointOn: html.
-	self renderAddEntryPointOn: html
+	self renderDefaultRequestHandlerOn: html.
+	self renderAddRequestHandlerOn: html

@@ -1,6 +1,6 @@
-rendering
-renderContentOn: html
-	html heading level: 3; with: 'Add new request handler'.
+rendering-parts
+renderAddRequestHandlerOn: html
+	html heading level: 3; with: 'Add request handler'.
 	html form: [
 		html table: [
 			html tableRow: [
@@ -15,12 +15,8 @@ renderContentOn: html
 						selected: type;
 						list: self handlerClasses;
 						callback: [ :value | type := value ];
-						labels: [ :each | each description ] ] ] ].
-			html break.
-				html submitButton
-					callback: [ self addRequestHandler. self answer ];
-					with: 'OK'.
+						labels: [ :each | each description ].
 				html space.
 				html submitButton
-					callback: [ self answer: nil ];
-					with: 'Cancel'  ]  
+					callback: [ self addRequestHandler ];
+					text: 'Add' ] ] ] ]

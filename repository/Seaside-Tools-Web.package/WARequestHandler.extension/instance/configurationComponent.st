@@ -1,3 +1,3 @@
 *seaside-tools-web
 configurationComponent
-	^ WAHandlerEditor on: self
+	^ WAEntryPointEditor on: self
