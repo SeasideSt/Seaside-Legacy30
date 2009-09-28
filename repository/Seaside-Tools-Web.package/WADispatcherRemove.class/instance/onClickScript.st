@@ -1,3 +1,3 @@
 accessing
 onClickScript
-	^'return confirm("Really delete the entry point?")'
+	^'return confirm("Really delete this handler?")'

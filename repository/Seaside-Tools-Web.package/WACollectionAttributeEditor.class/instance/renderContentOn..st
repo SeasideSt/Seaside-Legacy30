@@ -1,6 +1,9 @@
 rendering
 renderContentOn: html
-| currentList |
+
+	| currentList fullList listSize |
+	fullList := self fullList.
+	listSize := (fullList size min: 30) max: 5.
 	html div class: 'groupContent';
 		with: [
 			html heading level2; with: 'Configure attribute: ', attribute key.
@@ -10,15 +13,19 @@ renderContentOn: html
 				html paragraph .
 				html table: [
 					html tableRow: [
-						html tableData: [
+						html tableData 
+							verticalAlign: 'top';
+							with: [
 							html label: 'Available'.
 							html break.
 							html multiSelect 
-								list: self fullList;
+								list: fullList;
 								selected: selections;
-								size: 30;
+								size: listSize;
 								callback: [:v | self selections: v] ].
-						html tableData: [ self renderMoveActionsOn: html ].
+						html tableData
+							verticalAlign: 'middle';
+							with: [ self renderMoveActionsOn: html ].
 						html tableData
 							verticalAlign: 'top';
 							with: [
@@ -34,14 +41,12 @@ renderContentOn: html
 									disabled: self isWriteable not;
 									selected: selectionsCurrent;
 									labels: [:each | each value seasideString, ' [' ,each key seasideString , ']'];
-									size: 30;
+									size: listSize;
 									callback: [:v | self selectionsCurrent: v] ] ].
 							html tableData
-								verticalAlign: 'top';
+								verticalAlign: 'middle';
 								with: [
-									self isModify
-										ifTrue: [html break. self renderAddToRemovalOn: html. 11 timesRepeat: [html break]]
-										ifFalse: [14 timesRepeat: [html break]].
+									
 									self renderMoveUpAndDownOn: html ] ] ].
 			
 			html submitButton

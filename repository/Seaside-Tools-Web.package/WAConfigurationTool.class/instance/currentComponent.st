@@ -1,3 +1,0 @@
-accessing
-currentComponent 
-	^component activeComponent

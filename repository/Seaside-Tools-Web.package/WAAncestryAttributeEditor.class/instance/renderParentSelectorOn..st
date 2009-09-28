@@ -16,6 +16,5 @@ renderParentSelectorOn: html
 				class: 'large';
 				title: 'Add new parent configuration';
 				onClick: 'return submitForm(this)';
-				callback: [self configuration addParent: selectedParent contents.
-							selectedConfig contents: selectedParent contents  ];	
+				callback: [ self addParent: selectedParent contents ];	
 				with: 'Add'

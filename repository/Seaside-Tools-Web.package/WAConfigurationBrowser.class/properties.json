@@ -7,8 +7,7 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"selection",
-		"editor",
-		"propertiesCache"
+		"editor"
 	],
 	"name" : "WAConfigurationBrowser",
 	"type" : "normal"

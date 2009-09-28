@@ -6,7 +6,7 @@ renderAddToRemovalOn: html
 			onClick: 'return submitForm(this)';
 			callback: [self addToRemovals ];
 			with: 'Remove inherited'.
-		html break; break.
+		html space: 2.
 		html anchor
 			title: 'Remove selected elements from the removal list';
 			onClick: 'return submitForm(this)';

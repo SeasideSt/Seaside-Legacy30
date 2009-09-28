@@ -6,5 +6,5 @@ setDefault
 		selection baseUrl path do: [:key | 
 			disp ifNotNil: [
 				disp defaultName: key.
-				disp := disp entryPointAt: key ifAbsent: [] ] ] ]
+				disp := disp handlerAt: key ifAbsent: [] ] ] ]
 								

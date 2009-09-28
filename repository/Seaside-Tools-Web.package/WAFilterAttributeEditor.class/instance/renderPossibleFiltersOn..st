@@ -1,8 +1,8 @@
 rendering
 renderPossibleFiltersOn: html 
+
 	| selectedFilter filters |
 	filters := self potentialFilters.
-
 	html label: 'Possible filters: '.
 	html break.
 	selectedFilter := WAValueHolder new.
@@ -16,6 +16,5 @@ renderPossibleFiltersOn: html
 			class: 'large';
 			title: 'Add new filter';
 			onClick: 'return submitForm(this)';
-			callback: [selectedFilter contents ifNotNil: [ self addFilterForClass: selectedFilter contents ].
-						"selectedConfig contents: selectedParent contents " ];	
+			callback: [selectedFilter contents ifNotNil: [ self addFilterForClass: selectedFilter contents ] ];	
 			with: 'Add'

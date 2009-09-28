@@ -7,7 +7,9 @@ renderActionsOn: html
 				title: 'Clear override';
 				onClick: 'return submitForm(this)';
 				callback: [self clear ];
-				with: 'Clear']
+				with: 'Clear'.
+			self isModify
+					ifTrue: [html space. self renderAddToRemovalOn: html] ]
 		ifFalse: [
 			html anchor
 				title: 'Override inherited values';

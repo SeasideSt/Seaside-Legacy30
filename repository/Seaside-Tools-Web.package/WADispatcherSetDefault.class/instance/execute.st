@@ -1,3 +1,3 @@
 accessing
 execute
-	self target setDefault
+	self requestor setDefault

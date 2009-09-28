@@ -1,3 +1,0 @@
-actions
-editConfiguration: aConfiguration
-	self show: aConfiguration configurationComponent

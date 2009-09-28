@@ -30,10 +30,14 @@ a.wa-action, .groupContent a  {
 .groupContent a.large {font-size:100%}
 
 a.wa-action:hover, .groupContent a:hover {background:#fff}
+
 /* special */
 .smallLogo {border:2px solid #ccc; background: url(smallLogo.png) no-repeat; height:54px; width:100px};
 table.wa-config {width:100%;padding:0}
 table.wa-config td {padding:0px}
+.wa-config .topbar {background:#ccc;height:22px;padding:8px 2px 1px 3px}
+.wa-config .header {background:#01598d; color: #fff; padding:5px;font-size:120%}
+
 div.help {padding:8px;white-space:pre}
 
 

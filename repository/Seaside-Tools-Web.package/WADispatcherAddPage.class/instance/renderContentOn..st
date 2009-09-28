@@ -18,7 +18,7 @@ renderContentOn: html
 						labels: [ :each | each description ] ] ] ].
 			html break.
 				html submitButton
-					callback: [ self addRequestHandler. self answer ];
+					callback: [ self addRequestHandler ];
 					with: 'OK'.
 				html space.
 				html submitButton
