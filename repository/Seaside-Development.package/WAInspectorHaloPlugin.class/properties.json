@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WAInspectorPlugin",
+	"name" : "WAInspectorHaloPlugin",
 	"type" : "normal"
 }
