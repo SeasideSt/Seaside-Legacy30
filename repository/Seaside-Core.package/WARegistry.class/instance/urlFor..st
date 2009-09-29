@@ -1,4 +1,4 @@
-public
+accessing
 urlFor: aRequestHandler
 	^ self
 		urlFor: aRequestHandler

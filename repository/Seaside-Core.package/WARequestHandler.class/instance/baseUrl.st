@@ -1,13 +1,9 @@
-public
+accessing
 baseUrl
-	| serverPath url |
-	serverPath := self serverPath.
-
-	url := WAUrl new.
-	serverPath isNil
-		ifFalse: [ url addToPath: serverPath ]
-		ifTrue: [ url addAllToPath: self path ].
-		
+	| url |
+	
+	url := self basicBaseUrl.
+	self serverPath isNil ifFalse: [ url path: self serverPath ].
 	self serverProtocol isNil ifFalse: [ url scheme: self serverProtocol ].
 	self serverHostname isNil ifFalse: [ url hostname: self serverHostname ].
 	self serverPort isNil ifFalse: [ url port: self serverPort ].
