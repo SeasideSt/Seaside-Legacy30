@@ -1,8 +1,8 @@
 actions
-configure: anEntryPoint
-	| configEditor |
-	self selection: anEntryPoint.
+configure: aHandler
+	self selection: aHandler.
 	self editor home.
-	configEditor := anEntryPoint configurationComponent.
-	^self call: configEditor.
+	(self editor activeComponent isKindOf: WADispatcherEmptyPage)
+		ifFalse: [self setEmptyPage].
+	^self call: aHandler configurationComponent.
 
