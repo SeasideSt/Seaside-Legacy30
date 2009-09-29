@@ -1,6 +1,5 @@
 rendering
 renderCacheReplaceOn: html
-	
 	html paragraph: [
 		html anchor
 			class: 'large';

@@ -1,6 +1,5 @@
 visiting
 visitCollectionAttribute: anAttribute
-
 	| attributeCollection listSize |
 	attributeCollection := self configuration currentCollectionAt: anAttribute key.
 	attributeCollection isEmpty ifTrue: [^self html text: '(none)'].	

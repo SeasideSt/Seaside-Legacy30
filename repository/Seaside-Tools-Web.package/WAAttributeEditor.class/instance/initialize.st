@@ -5,5 +5,4 @@ initialize
 	self hasAdvancedAttributes: self hasAdvancedAttributesDefault.
 	self displayAdvancedAttributes: false.
 	self collapsed: self collapsedByDefault.
-"	self setCachedProperties."
 	self showHelp: false.

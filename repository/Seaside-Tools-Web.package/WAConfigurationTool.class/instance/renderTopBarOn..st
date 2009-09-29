@@ -4,7 +4,7 @@ renderTopBarOn: html
 	html div class: 'topbar';
 		with: [
 			app := component selection.
-			app ifNotNil: [
+			app isNil ifFalse: [
 				app isApplication 
 					ifTrue: [
 							html anchor 
@@ -12,7 +12,7 @@ renderTopBarOn: html
 								url: app basePath , '/'; 
 								with: 'Open'.
 							html space. ] ].
-			((WADispatcherCommand allSubclassesOn: app for: component)
+			((WADispatcherPlugin allSubclassesOn: app for: component)
 				select: [ :each | each isActive ])
 					do: [ :each | html render: each ]
 					separatedBy: [ html space] ]

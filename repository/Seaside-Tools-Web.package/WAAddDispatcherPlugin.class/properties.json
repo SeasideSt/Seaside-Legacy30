@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "WADispatcherCommand",
+	"super" : "WADispatcherPlugin",
 	"category" : "Seaside-Tools-Web",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WADispatcherRemove",
+	"name" : "WAAddDispatcherPlugin",
 	"type" : "normal"
 }

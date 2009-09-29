@@ -1,10 +1,10 @@
 actions
 setDefault
 	| disp |
-	selection ifNotNil: [
+	selection isNil ifFalse: [
 		disp := WADispatcher default.
 		selection baseUrl path do: [:key | 
-			disp ifNotNil: [
+			disp isNil ifFalse: [
 				disp defaultName: key.
 				disp := disp handlerAt: key ifAbsent: [] ] ] ]
 								
