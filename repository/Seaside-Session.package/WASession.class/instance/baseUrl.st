@@ -1,6 +1,7 @@
-deprecated
+accessing
 baseUrl
-	self
-		seasideDeprecatedApi: 'WASession>>#baseUrl'
-		details: 'Use WAApplication>>#baseUrl.'.
-	^ self application baseUrl
+	| url |
+	url := super baseUrl.
+	jumpTo isNil
+		ifFalse: [ url fragment: jumpTo ].
+	^ url
