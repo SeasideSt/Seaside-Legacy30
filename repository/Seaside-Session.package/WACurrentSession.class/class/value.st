@@ -2,10 +2,9 @@ evaluating
 value
 	| context |
 	self 
-		seasideDeprecatedApi: 'WACurrentSession class>>#value'
+		greaseDeprecatedApi: 'WACurrentSession class>>#value'
 		details: 'Use "self session" on a subclass of WAObject or "WACurrentRequestContext value session".'.
-	[ context := WACurrentRequestContext value ]
+	[ context := WACurrentRequestContext value ] 
 		on: WARequestContextNotFound
 		do: [ :e | ^ nil ].
-		
 	^ context session

@@ -1,6 +1,8 @@
 deprecated
 redirectWithMessage: aString delay: aDuration 
-	self
-		seasideDeprecatedApi: 'WASession>>#redirectWithMessage:delay:'
+	self 
+		greaseDeprecatedApi: 'WASession>>#redirectWithMessage:delay:'
 		details: 'Use WARequestContext>>#redirectWithMessage:delay: (requires the Seaside-Flow package).'.
-	^ self requestContext redirectWithMessage: aString delay: aDuration
+	^ self requestContext 
+		redirectWithMessage: aString
+		delay: aDuration
