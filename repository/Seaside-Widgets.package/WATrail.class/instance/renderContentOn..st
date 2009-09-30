@@ -5,19 +5,18 @@ renderContentOn: html
 	html div
 		class: 'trail';
 		with: [
-			root visiblePresentersDo: [ :each |
-				(each isDecoration and: [each isDelegation]) ifTrue: [
-					(each component respondsTo: #trailName) ifTrue: [
+			root visiblePresentersDo: [ :each | 
+				(each isDecoration and: [ each isDelegation ]) ifTrue: [
+					(each decoratedComponent respondsTo: #trailName) ifTrue: [
 						last := each.
 						html anchor
 							callback: [ each remove ];
-							with: each component trailName.
-					
+							with: each decoratedComponent trailName.
 						html span
 							class: 'separator';
-							with: self separator. ] ] ] .
+							with: self separator ] ] ].
 			selected := last isNil
 				ifTrue: [ root ]
 				ifFalse: [ last delegate ].
 			(selected respondsTo: #trailName) ifTrue: [
-				html text: selected trailName ]]
+				html text: selected trailName ] ]

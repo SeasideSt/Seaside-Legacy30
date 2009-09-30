@@ -1,3 +1,3 @@
 actions
 defaultAction
-	self component perform: self component defaultButton
+	self decoratedComponent perform: self decoratedComponent defaultButton
