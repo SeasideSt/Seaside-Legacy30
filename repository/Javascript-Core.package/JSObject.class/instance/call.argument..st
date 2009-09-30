@@ -1,8 +1,9 @@
 deprecated
-call: aString argument: anObject
+call: aString argument: anObject 
 	"Call the method named aString with anObject as its argument."
-
-	self
-		seasideDeprecatedApi: 'JSObject>>#call:argument:'
+	self 
+		greaseDeprecatedApi: 'JSObject>>#call:argument:'
 		details: 'Use #call:with:.'.
-	self call: aString with: anObject
+	self 
+		call: aString
+		with: anObject

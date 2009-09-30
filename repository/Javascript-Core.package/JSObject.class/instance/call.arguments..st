@@ -1,8 +1,9 @@
 deprecated
-call: aString arguments: anArray
+call: aString arguments: anArray 
 	"Call the method named aString with aCollection as its arguments."
-
 	self 
-		seasideDeprecatedApi: 'JSObject>>#call:arguments:'
+		greaseDeprecatedApi: 'JSObject>>#call:arguments:'
 		details: 'Use #call:withArguments:.'.
-	self call: aString withArguments: anArray
+	self 
+		call: aString
+		withArguments: anArray
