@@ -1,6 +1,6 @@
 *seaside-pharo-canvas
-imageForm: aForm
+imageForm: aForm 
 	self 
-		seasideDeprecatedApi: 'WAHtmlCanvas>>#imageForm:'
+		greaseDeprecatedApi: 'WAHtmlCanvas>>#imageForm:'
 		details: 'Use WAImageTag>>form:. For example: "html image form: myForm".'.
 	self image form: aForm
