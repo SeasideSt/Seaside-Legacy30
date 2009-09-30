@@ -1,3 +1,3 @@
 private
 defaultCodec
-	^ WAUtf8Codec new
+	^ GRPharoUtf8Codec new

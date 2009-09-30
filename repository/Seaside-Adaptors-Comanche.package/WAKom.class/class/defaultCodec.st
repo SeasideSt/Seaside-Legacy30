@@ -1,3 +1,3 @@
 private
 defaultCodec
-	^ WANullCodec new
+	^ GRNullCodec new
