@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "lr 2/22/2009 11:10",
+	"super" : "GRObject",
+	"category" : "Grease-Core-Utilities",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"size",
+		"keys",
+		"values"
+	],
+	"name" : "GRSmallDictionary",
+	"type" : "normal"
+}

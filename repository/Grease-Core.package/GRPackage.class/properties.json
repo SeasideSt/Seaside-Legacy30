@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "GRObject",
+	"category" : "Grease-Core-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"name",
+		"description",
+		"dependencies"
+	],
+	"name" : "GRPackage",
+	"type" : "normal"
+}

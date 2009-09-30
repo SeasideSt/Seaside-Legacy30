@@ -1,0 +1,3 @@
+encoding
+base64Decode: aString
+	self subclassResponsibility
