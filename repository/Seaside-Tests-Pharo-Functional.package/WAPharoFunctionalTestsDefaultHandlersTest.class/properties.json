@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WASqueakFunctionalTestsDefaultHandlersTest",
+	"name" : "WAPharoFunctionalTestsDefaultHandlersTest",
 	"type" : "normal"
 }
