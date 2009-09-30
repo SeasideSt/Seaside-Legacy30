@@ -1,4 +1,3 @@
 private
 stackDepth
-
-	^WAPlatform current stackDepth
+	^ GRPlatform current stackDepth
