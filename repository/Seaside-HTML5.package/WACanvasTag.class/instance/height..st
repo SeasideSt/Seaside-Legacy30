@@ -1,3 +1,5 @@
 attributes
-height: aNumber
-	self attributeAt: 'height' put: aNumber seasideString
+height: aNumber 
+	self 
+		attributeAt: 'height'
+		put: aNumber greaseString
