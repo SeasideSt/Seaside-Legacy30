@@ -1,3 +1,3 @@
 accessing
 deprecated
-	self seasideDeprecatedApi: 'WASlimeMock>>#deprecatedMethod' details: 'Something.'
+	self greaseDeprecatedApi: 'WASlimeMock>>#deprecatedMethod' details: 'Something.'
