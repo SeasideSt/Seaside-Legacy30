@@ -1,8 +1,8 @@
 testing-adding
 testAddParameter
 	url addParameter: 'x'.
-	self assert: url seasideString = '/?x'.
+	self assert: url greaseString = '/?x'.
 	url addParameter: 'y'.
-	self assert: url seasideString = '/?x&y'.
+	self assert: url greaseString = '/?x&y'.
 	url addParameter: 'x'.
-	self assert: url seasideString = '/?x&y&x'
+	self assert: url greaseString = '/?x&y&x'

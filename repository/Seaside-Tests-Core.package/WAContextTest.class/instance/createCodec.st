@@ -1,3 +1,3 @@
 configuration
 createCodec
-	^ WANullCodec new
+	^ GRNullCodec new

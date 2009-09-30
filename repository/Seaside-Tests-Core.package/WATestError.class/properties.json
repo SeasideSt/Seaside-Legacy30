@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "WAPlatformError",
+	"super" : "GRError",
 	"category" : "Seaside-Tests-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],

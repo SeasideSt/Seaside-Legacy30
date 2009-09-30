@@ -1,8 +1,8 @@
 testing
 testPath
-	self assert: url seasideString = '/'.
+	self assert: url greaseString = '/'.
 	url path add: 'aa'.
-	self assert: url seasideString = '/aa'.
+	self assert: url greaseString = '/aa'.
 	url path add: 'bb'.
-	self assert: url seasideString = '/aa/bb'.
+	self assert: url greaseString = '/aa/bb'.
 	self assert: url path asArray = #('aa' 'bb' )

@@ -5,4 +5,4 @@ testBasic
 	self assert: mimeType main = 'image'.
 	self assert: mimeType sub = 'jpeg'.
 	self assert: mimeType parameters isEmpty.
-	self assert: mimeType seasideString = 'image/jpeg'
+	self assert: mimeType greaseString = 'image/jpeg'

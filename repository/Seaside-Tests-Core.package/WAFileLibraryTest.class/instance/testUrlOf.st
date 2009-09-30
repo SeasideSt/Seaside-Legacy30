@@ -1,3 +1,3 @@
 testing
 testUrlOf
-	self assert: (WATestingFiles / #samplePng) seasideString = '/files/WATestingFiles/sample.png'
+	self assert: (WATestingFiles / #samplePng) greaseString = '/files/WATestingFiles/sample.png'

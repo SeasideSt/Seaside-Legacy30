@@ -4,13 +4,21 @@ testImageCallback
 	key := registry store: (WAImageCallback on: [ log add: 1 ]).
 
 	" an invalid callback "
-	self
-		shouldnt: [ self request: (WASmallDictionary new at: key put: nil; yourself) ]
+	self 
+		shouldnt: 
+			[ self request: (GRSmallDictionary new
+					at: key
+						put: nil;
+					yourself) ]
 		raise: WARenderNotification.
 	self assertLog: #().
 
 	" a valid callback "
-	self
-		should: [ self request: (WASmallDictionary new at: key , '.x' put: nil; yourself) ]
+	self 
+		should: 
+			[ self request: (GRSmallDictionary new
+					at: key , '.x'
+						put: nil;
+					yourself) ]
 		raise: WARenderNotification.
-	self assertLog: #(1)
+	self assertLog: #(1 )

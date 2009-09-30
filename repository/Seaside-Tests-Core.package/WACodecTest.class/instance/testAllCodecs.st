@@ -1,6 +1,7 @@
 testing
 testAllCodecs
-	self assert: WACodec allCodecs notEmpty.
-	WACodec allCodecs do: [ :codec |
-		self deny: (codec class = WACodec).
-		self assert: (codec isKindOf: WACodec) ]
+	self assert: GRCodec allCodecs notEmpty.
+	GRCodec allCodecs do: 
+		[ :codec | 
+		self deny: codec class = GRCodec.
+		self assert: (codec isKindOf: GRCodec) ]

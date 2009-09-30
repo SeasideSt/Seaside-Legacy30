@@ -5,4 +5,4 @@ testPassword
 		username: 'foo';
 		password: 'bar'.
 	self assert: url password = 'bar'.
-	self assert: url seasideString = 'http://foo:bar@seaside.st/'
+	self assert: url greaseString = 'http://foo:bar@seaside.st/'
