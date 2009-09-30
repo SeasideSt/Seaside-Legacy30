@@ -1,3 +1,5 @@
 options
 from
-	^ self options at: 'from' ifAbsentPut: [ WASmallDictionary new ]
+	^ self options 
+		at: 'from'
+		ifAbsentPut: [ GRSmallDictionary new ]
