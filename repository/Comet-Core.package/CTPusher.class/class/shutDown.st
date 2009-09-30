@@ -1,5 +1,5 @@
 initialization
 shutDown
 	process ifNil: [ ^ self ].
-	WAPlatform current terminateProcess: process.
+	GRPlatform current terminateProcess: process.
 	process := nil

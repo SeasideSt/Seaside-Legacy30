@@ -1,6 +1,6 @@
 initialization
 unload
-	WAPlatform current
+	GRPlatform current
 		removeFromStartUpList: self;
 		removeFromShutDownList: self.
 	self shutDown
