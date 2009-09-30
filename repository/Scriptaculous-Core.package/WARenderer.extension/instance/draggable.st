@@ -1,6 +1,6 @@
 *scriptaculous-core-deprecated
 draggable
 	self 
-		seasideDeprecatedApi: 'WARenderer>>#draggable'
+		greaseDeprecatedApi: 'WARenderer>>#draggable'
 		details: 'Use "html scriptaculous draggable".'.
 	^ self scriptaculous draggable

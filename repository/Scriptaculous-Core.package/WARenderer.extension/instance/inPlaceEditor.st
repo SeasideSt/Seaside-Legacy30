@@ -1,6 +1,6 @@
 *scriptaculous-core-deprecated
 inPlaceEditor
 	self 
-		seasideDeprecatedApi: 'WARenderer>>#inPlaceEditor'
+		greaseDeprecatedApi: 'WARenderer>>#inPlaceEditor'
 		details: 'Use "html scriptaculous inPlaceEditor".'.
 	^ self scriptaculous inPlaceEditor

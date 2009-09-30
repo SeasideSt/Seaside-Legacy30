@@ -1,8 +1,8 @@
 deprecated
-okButton: aBoolean
-	self
-		seasideDeprecatedApi: 'SUInPlaceEditor>>#okButton:'
+okButton: aBoolean 
+	self 
+		greaseDeprecatedApi: 'SUInPlaceEditor>>#okButton:'
 		details: 'Use okControl:.'.
 	self okControl: (aBoolean 
-		ifTrue: [ 'button' ]
-		ifFalse: [ false ])
+			ifTrue: [ 'button' ]
+			ifFalse: [ false ])

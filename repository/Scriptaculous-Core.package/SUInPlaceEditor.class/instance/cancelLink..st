@@ -1,8 +1,8 @@
 deprecated
-cancelLink: aBoolean
-	self
-		seasideDeprecatedApi: 'SUInPlaceEditor>>#cancelLink:'
+cancelLink: aBoolean 
+	self 
+		greaseDeprecatedApi: 'SUInPlaceEditor>>#cancelLink:'
 		details: 'Use #cancelControl:.'.
 	self cancelControl: (aBoolean 
-		ifTrue: [ 'link' ]
-		ifFalse: [ false ])
+			ifTrue: [ 'link' ]
+			ifFalse: [ false ])

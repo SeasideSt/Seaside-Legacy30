@@ -1,8 +1,8 @@
 deprecated
-cancelButton: aBoolean
-	self
-		seasideDeprecatedApi: 'SUInPlaceEditor>>#cancelButton:'
+cancelButton: aBoolean 
+	self 
+		greaseDeprecatedApi: 'SUInPlaceEditor>>#cancelButton:'
 		details: 'Use cancelControl:.'.
 	self cancelControl: (aBoolean 
-		ifTrue: [ 'button' ]
-		ifFalse: [ false ])
+			ifTrue: [ 'button' ]
+			ifFalse: [ false ])
