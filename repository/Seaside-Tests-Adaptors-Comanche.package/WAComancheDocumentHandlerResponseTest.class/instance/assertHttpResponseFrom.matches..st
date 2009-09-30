@@ -5,13 +5,16 @@ assertHttpResponseFrom: aResponse matches: aHandler
 		assertHttpResponseFrom: aResponse
 		matches: aHandler.
 	kom := WAComancheAdaptor new.
-	[ httpResponse := kom responseFrom: self requestContext ]
-		ensure: [ kom unregister ].
+	[ httpResponse := kom responseFrom: self requestContext ] ensure: [ kom unregister ].
 	self assert: httpResponse status == #ok.
-	self assert: httpResponse contentType = aHandler document mimeType seasideString.
+	self assert: httpResponse contentType = aHandler document mimeType greaseString.
 	self assert: httpResponse contentLength = aHandler document contents size.
-	httpResponse fields keysAndValuesDo: [ :key :value | 
-		self assert: (self headerAt: key forResponse: aResponse) seasideString = value ].
-	aResponse headers keysAndValuesDo: [ :key :value |
-		self assert: (key = 'Content-Type' or: [ (httpResponse fields at: key) = value seasideString ]) ].
+	httpResponse fields keysAndValuesDo: 
+		[ :key :value | 
+		self assert: (self 
+				headerAt: key
+				forResponse: aResponse) greaseString = value ].
+	aResponse headers keysAndValuesDo: 
+		[ :key :value | 
+		self assert: (key = 'Content-Type' or: [ (httpResponse fields at: key) = value greaseString ]) ].
 	self assert: httpResponse cookies isEmpty
