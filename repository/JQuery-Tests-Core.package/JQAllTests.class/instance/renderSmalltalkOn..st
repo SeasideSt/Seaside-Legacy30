@@ -1,18 +1,32 @@
 rendering-browser
-renderSmalltalkOn: html
+renderSmalltalkOn: html 
 	| source |
-	html heading level: 4; with: 'Smalltalk'.
+	html heading
+		level: 4;
+		with: 'Smalltalk'.
 	contents selectors 
-		do: [ :selector |
-			source := (contents class sourceCodeAt: selector)
-				seasideString readStream.
-			html div class: 'code'; with: [
-				html span
-					class: 'signature';
-					with: [ html text: contents class name; text: '>>'; text: source nextLine ].
-				html break.
-				[ source atEnd ] whileFalse: [
-					[ source peek = Character tab ]
-						whileTrue: [ html space; space; space. source next ].
-					html render: source nextLine; break ] ] ]
+		do: 
+			[ :selector | 
+			source := (contents class sourceCodeAt: selector) greaseString readStream.
+			html div
+				class: 'code';
+				with: 
+					[ html span
+						class: 'signature';
+						with: 
+							[ html
+								text: contents class name;
+								text: '>>';
+								text: source nextLine ].
+					html break.
+					[ source atEnd ] whileFalse: 
+						[ [ source peek = Character tab ] whileTrue: 
+							[ html
+								space;
+								space;
+								space.
+							source next ].
+						html
+							render: source nextLine;
+							break ] ] ]
 		separatedBy: [ html break ]
