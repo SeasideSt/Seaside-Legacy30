@@ -1,6 +1,8 @@
 *seaside-tools-core
-register: aString
-	self
-		seasideDeprecatedApi: 'WAEntryPoint class>>#register:'
+register: aString 
+	self 
+		greaseDeprecatedApi: 'WAEntryPoint class>>#register:'
 		details: 'Use WAAdmin class>>#register:at:.'.
-	^ WAAdmin register: self at: aString
+	^ WAAdmin 
+		register: self
+		at: aString
