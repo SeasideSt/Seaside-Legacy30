@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "WAPlatformObject",
+	"super" : "GRObject",
 	"category" : "Comet-Examples",
 	"classinstvars" : [ ],
 	"pools" : [ ],
