@@ -1,5 +1,5 @@
 deprecated
-setCursorPosition: anInteger
-	self
-		seasideDeprecatedApi: 'WAAbstractTextAreaTag>>#setCursorPosition:'
+setCursorPosition: anInteger 
+	self 
+		greaseDeprecatedApi: 'WAAbstractTextAreaTag>>#setCursorPosition:'
 		details: 'Use an appropriate Javascript library instead.'

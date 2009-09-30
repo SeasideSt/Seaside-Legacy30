@@ -1,6 +1,6 @@
 deprecated
-keyboardInput: aBlock
-	self
-		seasideDeprecatedApi: 'WAHtmlCanvas>>#keyboardInput:'
+keyboardInput: aBlock 
+	self 
+		greaseDeprecatedApi: 'WAHtmlCanvas>>#keyboardInput:'
 		details: 'Use #keyboard:.'.
 	self keyboard: aBlock

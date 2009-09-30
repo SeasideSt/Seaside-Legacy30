@@ -1,3 +1,3 @@
 private callbacks
-year: anIntegerOrString
-	year := anIntegerOrString seasideInteger ifNil: [ 1900 ]
+year: anIntegerOrString 
+	year := anIntegerOrString greaseInteger ifNil: [ 1900 ]

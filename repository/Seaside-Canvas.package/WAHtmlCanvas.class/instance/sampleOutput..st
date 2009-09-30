@@ -1,6 +1,6 @@
 deprecated
-sampleOutput: aBlock
-	self
-		seasideDeprecatedApi: 'WAHtmlCanvas>>#sampleOutput:'
+sampleOutput: aBlock 
+	self 
+		greaseDeprecatedApi: 'WAHtmlCanvas>>#sampleOutput:'
 		details: 'Use #sample:.'.
 	self sample: aBlock

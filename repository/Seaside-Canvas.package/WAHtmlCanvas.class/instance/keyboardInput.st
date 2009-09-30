@@ -1,6 +1,6 @@
 deprecated
 keyboardInput
-	self
-		seasideDeprecatedApi: 'WAHtmlCanvas>>#keyboardInput'
+	self 
+		greaseDeprecatedApi: 'WAHtmlCanvas>>#keyboardInput'
 		details: 'Use #keyboard.'.
 	^ self keyboard

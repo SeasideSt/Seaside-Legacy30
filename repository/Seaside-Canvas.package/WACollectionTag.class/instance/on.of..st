@@ -1,4 +1,6 @@
 callbacks
-on: aSelector of: anObject
+on: aSelector of: anObject 
 	self selected: (anObject perform: aSelector).
-	self callback: (WADelayedSend receiver: anObject selector: aSelector asMutator)
+	self callback: (GRDelayedSend 
+			receiver: anObject
+			selector: aSelector asMutator)

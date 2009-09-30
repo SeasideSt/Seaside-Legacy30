@@ -1,6 +1,6 @@
 deprecated
-src: aString
+src: aString 
 	self 
-		seasideDeprecatedApi: 'WAImageTag>>#src:'
+		greaseDeprecatedApi: 'WAImageTag>>#src:'
 		details: 'Use #url:.'.
 	self url: aString

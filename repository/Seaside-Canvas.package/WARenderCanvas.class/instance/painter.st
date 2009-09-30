@@ -1,5 +1,5 @@
 deprecated
 painter
-	self
-		seasideDeprecatedApi: 'WARenderCanvas>>#painter'
+	self 
+		greaseDeprecatedApi: 'WARenderCanvas>>#painter'
 		details: 'This is not needed anymore.'

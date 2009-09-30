@@ -1,3 +1,3 @@
 private callbacks
-day: anIntegerOrString
-	day := anIntegerOrString seasideInteger ifNil: [ 1 ]
+day: anIntegerOrString 
+	day := anIntegerOrString greaseInteger ifNil: [ 1 ]

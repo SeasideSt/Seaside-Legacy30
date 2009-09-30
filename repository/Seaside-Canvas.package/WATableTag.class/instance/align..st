@@ -1,6 +1,8 @@
 deprecated
-align: aString
-	self
-		seasideDeprecatedApi: 'WATableTag>>#align:'
+align: aString 
+	self 
+		greaseDeprecatedApi: 'WATableTag>>#align:'
 		details: 'Use a CSS stylesheet.'.
-	self attributes at: 'align' put: aString
+	self attributes 
+		at: 'align'
+		put: aString

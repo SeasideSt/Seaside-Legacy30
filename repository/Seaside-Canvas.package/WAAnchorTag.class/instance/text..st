@@ -1,6 +1,6 @@
 deprecated
-text: aString
-	self
-		seasideDeprecatedApi: 'WAAnchorTag>>#text:'
+text: aString 
+	self 
+		greaseDeprecatedApi: 'WAAnchorTag>>#text:'
 		details: 'Use #with:.'.
 	self with: aString

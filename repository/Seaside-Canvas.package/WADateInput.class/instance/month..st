@@ -1,3 +1,3 @@
 private callbacks
-month: anIntegerOrString
-	month := anIntegerOrString seasideInteger ifNil: [ 1 ]
+month: anIntegerOrString 
+	month := anIntegerOrString greaseInteger ifNil: [ 1 ]

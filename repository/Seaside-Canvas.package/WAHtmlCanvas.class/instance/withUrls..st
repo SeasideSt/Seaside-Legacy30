@@ -1,12 +1,12 @@
 convenience
-withUrls: aString
+withUrls: aString 
 	| stream url |
 	stream := aString readStream.
-	[ stream atEnd ] whileFalse: [
-		self text: (stream seasideUpToAll: 'http://').
-			stream atEnd ifFalse: [
-				url := 'http://', (stream upTo: Character space).
-				self anchor
-					url: url;
-					with: url.
-				self text: ' '] ]
+	[ stream atEnd ] whileFalse: 
+		[ self text: (stream greaseUpToAll: 'http://').
+		stream atEnd ifFalse: 
+			[ url := 'http://' , (stream upTo: Character space).
+			self anchor
+				url: url;
+				with: url.
+			self text: ' ' ] ]

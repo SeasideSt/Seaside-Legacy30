@@ -1,3 +1,3 @@
 private callbacks
-minutes: anIntegerOrString
-	minutes := anIntegerOrString seasideInteger ifNil: [ 0 ]
+minutes: anIntegerOrString 
+	minutes := anIntegerOrString greaseInteger ifNil: [ 0 ]

@@ -1,5 +1,5 @@
 deprecated
-addShortcut: aString
+addShortcut: aString 
 	self 
-		seasideDeprecatedApi: 'WATagBrush>>#addShortcut:'
+		greaseDeprecatedApi: 'WATagBrush>>#addShortcut:'
 		details: 'Use WATagBrush>>#accessKey: or a dedicated Javascript library instead.'
