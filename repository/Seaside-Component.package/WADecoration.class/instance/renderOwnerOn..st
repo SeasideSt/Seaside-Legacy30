@@ -1,6 +1,6 @@
 deprecated
-renderOwnerOn: html
+renderOwnerOn: html 
 	self 
-		seasideDeprecatedApi: 'WADecoration>>#renderOwnerOn:'
+		greaseDeprecatedApi: 'WADecoration>>#renderOwnerOn:'
 		details: 'Use renderNextOn:.'.
 	self renderNextOn: html

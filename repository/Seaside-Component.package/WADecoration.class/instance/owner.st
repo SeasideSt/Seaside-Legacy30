@@ -1,6 +1,6 @@
 deprecated
 owner
-	self
-		seasideDeprecatedApi: 'WADecoration>>#owner'
+	self 
+		greaseDeprecatedApi: 'WADecoration>>#owner'
 		details: 'Use WADecoration>>#next or WADecoration>>#component.'.
 	^ next contents

@@ -1,6 +1,6 @@
 deprecated
 asComponent
 	self 
-		seasideDeprecatedApi: 'WADecoration>>#asComponent'
+		greaseDeprecatedApi: 'WADecoration>>#asComponent'
 		details: 'Use WADecoration>>#decoratedComponent.'.
 	^ self decoratedComponent

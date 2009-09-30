@@ -1,10 +1,10 @@
 deprecated
-allDecorationsDo: aBlock
+allDecorationsDo: aBlock 
 	| ea |
 	self 
-		seasideDeprecatedApi: 'WAComponent>>#allDecorationsDo:'
+		greaseDeprecatedApi: 'WAComponent>>#allDecorationsDo:'
 		details: 'Use aComponent decorations do: [ :each | ... ].'.
 	ea := self decoration.
-	[ea notNil and: [ea ~~ self]] whileTrue:
-		[aBlock value: ea.
-		ea := ea next]
+	[ ea notNil and: [ ea ~~ self ] ] whileTrue: 
+		[ aBlock value: ea.
+		ea := ea next ]
