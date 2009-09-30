@@ -1,3 +1,3 @@
 private
 defaultOptions
-	^ WASmallDictionary new
+	^ GRSmallDictionary new

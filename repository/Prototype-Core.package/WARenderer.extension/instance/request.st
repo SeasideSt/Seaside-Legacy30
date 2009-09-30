@@ -1,6 +1,6 @@
 *prototype-core-deprecated
 request
 	self 
-		seasideDeprecatedApi: 'WARenderer>>#request'
+		greaseDeprecatedApi: 'WARenderer>>#request'
 		details: 'Use "html prototype request".'.
 	^ self prototype request

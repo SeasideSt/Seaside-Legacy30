@@ -1,6 +1,6 @@
 *prototype-core-deprecated
 formElement
 	self 
-		seasideDeprecatedApi: 'JSScript>>#formElement'
+		greaseDeprecatedApi: 'JSScript>>#formElement'
 		details: 'Use "aScript prototype formElement".'.
 	^ self prototype formElement
