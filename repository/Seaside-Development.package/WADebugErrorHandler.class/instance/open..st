@@ -1,3 +1,3 @@
 actions
-open: anException
-	WAPlatform current openDebuggerOn: anException
+open: anException 
+	GRPlatform current openDebuggerOn: anException

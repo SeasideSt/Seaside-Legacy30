@@ -1,3 +1,5 @@
 accessing
-object: anObject
-	self chooseObject: anObject named: anObject seasideString
+object: anObject 
+	self 
+		chooseObject: anObject
+		named: anObject greaseString

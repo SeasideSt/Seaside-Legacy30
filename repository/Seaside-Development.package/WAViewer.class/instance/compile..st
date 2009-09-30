@@ -1,6 +1,6 @@
 actions
-compile: aString
-	WAPlatform current
+compile: aString 
+	GRPlatform current 
 		compile: aString
 		into: presenter class
 		classified: #rendering

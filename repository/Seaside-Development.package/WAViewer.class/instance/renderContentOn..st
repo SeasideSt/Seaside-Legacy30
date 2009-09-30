@@ -2,5 +2,5 @@ rendering
 renderContentOn: html 
 	html heading
 		level3;
-		with: presenter seasideString.
+		with: presenter greaseString.
 	super renderContentOn: html

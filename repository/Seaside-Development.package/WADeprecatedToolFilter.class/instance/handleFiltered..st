@@ -1,5 +1,5 @@
 processing
 handleFiltered: aRequestContext 
 	[ super handleFiltered: aRequestContext ] 
-		on: WADeprecatedApiNotification
+		on: GRDeprecatedApiNotification
 		do: [ :notification | self deprecated: notification ]
