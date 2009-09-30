@@ -1,6 +1,6 @@
 deprecated
-callbacksFor: anObject
+callbacksFor: anObject 
 	self 
-		seasideDeprecatedApi: 'WARenderContext>>#callbacksFor:'
+		greaseDeprecatedApi: 'WARenderContext>>#callbacksFor:'
 		details: 'Use #callbacks. Callbacks are no longer evaluated in the context of an owning object.'.
 	^ self callbacks

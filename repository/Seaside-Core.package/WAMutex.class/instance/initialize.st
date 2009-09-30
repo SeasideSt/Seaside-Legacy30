@@ -1,4 +1,4 @@
 initialization
 initialize
 	super initialize.
-	semaphore := WAPlatform current semaphoreClass forMutualExclusion
+	semaphore := GRPlatform current semaphoreClass forMutualExclusion

@@ -1,6 +1,6 @@
 deprecated
-ensureKeyForHandler: aRequestHandler
+ensureKeyForHandler: aRequestHandler 
 	self 
-		seasideDeprecatedApi: 'WARegistry>>#ensureKeyForHandler:'
+		greaseDeprecatedApi: 'WARegistry>>#ensureKeyForHandler:'
 		details: 'Use #ensureKeyFor:.'.
 	^ self ensureKeyFor: aRequestHandler

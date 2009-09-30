@@ -1,5 +1,5 @@
 class initialization
 initialize
-	WAPlatform current
+	GRPlatform current
 		addToStartUpList: self;
 		addToShutDownList: self

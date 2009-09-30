@@ -1,6 +1,6 @@
 deprecated
 registerDefaultActionCallback: aBlock 
-	self
-		seasideDeprecatedApi: 'WACallbackRegistry>>#registerDefaultActionCallback:'
+	self 
+		greaseDeprecatedApi: 'WACallbackRegistry>>#registerDefaultActionCallback:'
 		details: 'Use WACallbackRegistry>>#store: instead.'.
 	^ self store: (WADefaultActionCallback on: aBlock)

@@ -4,18 +4,20 @@ compileText: aByteArrayOrString selector: aSymbol
 	aSymbol
 		^ aByteArrayOrString"
 	| code |
-	code := String streamContents: [ :stream | 
+	code := String streamContents: 
+		[ :stream | 
 		stream
 			nextPutAll: aSymbol;
 			nextPut: Character cr.
 		stream
 			tab;
 			nextPutAll: '^ '''.
-		aByteArrayOrString seasideString do: [ :each | 
+		aByteArrayOrString greaseString do: 
+			[ :each | 
 			each = $' ifTrue: [ stream nextPut: $' ].
 			stream nextPut: each ].
 		stream nextPutAll: '''' ].
-	WAPlatform current 
+	GRPlatform current 
 		compile: code
 		into: self
 		classified: self methodCategory

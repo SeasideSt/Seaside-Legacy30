@@ -1,3 +1,3 @@
 private
 expiryString
-	^ WAPrinter cookieTimestamp print: expiry
+	^ GRPrinter cookieTimestamp print: expiry

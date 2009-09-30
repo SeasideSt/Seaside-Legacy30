@@ -1,3 +1,3 @@
 private
-isBinaryAt: aPath
-	^self isBinary: (WAPlatform current localNameOf: aPath)
+isBinaryAt: aPath 
+	^ self isBinary: (GRPlatform current localNameOf: aPath)

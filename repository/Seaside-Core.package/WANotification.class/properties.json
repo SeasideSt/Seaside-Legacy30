@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "WAPlatformNotification",
+	"super" : "GRNotification",
 	"category" : "Seaside-Core-Exceptions",
 	"classinstvars" : [ ],
 	"pools" : [ ],

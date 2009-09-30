@@ -1,6 +1,6 @@
 deprecated
 clearHandlers
 	self 
-		seasideDeprecatedApi: 'WARegistry>>#clearHandlers'
+		greaseDeprecatedApi: 'WARegistry>>#clearHandlers'
 		details: 'Use #clear.'.
 	^ self clear

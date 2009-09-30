@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "jf 1/23/2009 12:28",
-	"super" : "WASmallDictionary",
+	"super" : "GRSmallDictionary",
 	"category" : "Seaside-Core-Document",
 	"classinstvars" : [ ],
 	"pools" : [ ],

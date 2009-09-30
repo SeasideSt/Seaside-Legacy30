@@ -1,6 +1,6 @@
 deprecated
-registerRequestHandler: aRequestHandler
+registerRequestHandler: aRequestHandler 
 	self 
-		seasideDeprecatedApi: 'WARegistry>>#registerRequestHandler:'
+		greaseDeprecatedApi: 'WARegistry>>#registerRequestHandler:'
 		details: 'Use register:.'.
 	^ self register: aRequestHandler

@@ -1,3 +1,3 @@
 accessing
 codec
-	^ codec ifNil: [ codec := WANullCodec new ]
+	^ codec ifNil: [ codec := GRNullCodec new ]

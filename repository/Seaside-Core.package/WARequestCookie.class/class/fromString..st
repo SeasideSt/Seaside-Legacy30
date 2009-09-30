@@ -1,25 +1,33 @@
 instance creation
-fromString: aString
+fromString: aString 
 	"Creates an array of cookies from a HTTP Cookie: header value."
 	| version tokens cookieLine current |
 	cookieLine := aString.
-	aString isEmptyOrNil ifTrue: [ ^#() ]. 
+	aString isEmptyOrNil ifTrue: 
+		[ ^ #() ].
 	tokens := cookieLine findTokens: $;.
 	current := nil.
-	^Array streamContents: [ :cookies |
-		tokens do: [ :each |
+	^ Array streamContents: 
+		[ :cookies | 
+		tokens do: 
+			[ :each | 
 			| key value action |
 			key := self keyFrom: each.
 			value := self valueFrom: each.
-			key = '$Version'
-				ifTrue: [ version := value seasideInteger ]
-				ifFalse: [
-					action := self actions
+			key = '$Version' 
+				ifTrue: [ version := value greaseInteger ]
+				ifFalse: 
+					[ action := self actions 
 						at: key
 						ifAbsent: [ nil ].
-					action isNil
-						ifTrue: [
-							current := self key: key value: value.
+					action isNil 
+						ifTrue: 
+							[ current := self 
+								key: key
+								value: value.
 							current version: version.
 							cookies nextPut: current ]
-						ifFalse: [ action value: current value: value ] ] ] ]
+						ifFalse: 
+							[ action 
+								value: current
+								value: value ] ] ] ]

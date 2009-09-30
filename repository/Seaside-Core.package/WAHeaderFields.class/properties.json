@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "WASmallDictionary",
+	"super" : "GRSmallDictionary",
 	"category" : "Seaside-Core-HTTP",
 	"classinstvars" : [ ],
 	"pools" : [ ],

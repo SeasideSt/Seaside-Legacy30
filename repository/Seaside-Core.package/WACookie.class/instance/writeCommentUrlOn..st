@@ -3,5 +3,5 @@ writeCommentUrlOn: aStream
 	self commentUrl isNil ifTrue: [ ^ self ].
 	aStream nextPutAll: '; CommentURL='.
 	self 
-		write: self commentUrl seasideString
+		write: self commentUrl greaseString
 		asQuotedStringOn: aStream

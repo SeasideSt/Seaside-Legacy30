@@ -1,10 +1,9 @@
 generation
 forbidden
 	"The resource is forbidden to access and the request was not processed."
-
-	self response 
+	self response
 		forbidden;
 		contentType: WAMimeType textPlain;
 		nextPutAll: 'Error: you are forbidden to access "';
-		nextPutAll: self request url seasideString;
+		nextPutAll: self request url greaseString;
 		nextPutAll: '"'

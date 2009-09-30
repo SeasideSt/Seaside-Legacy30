@@ -1,8 +1,10 @@
 printing
-printOn: aStream
+printOn: aStream 
 	| document codec |
-	codec :=  [ self requestContext codec ]
+	codec := [ self requestContext codec ] 
 		on: WARequestContextNotFound
-		do: [ :e | WANullCodec new ].
-	document := WAUnescapedDocument on: aStream codec: codec.
+		do: [ :e | GRNullCodec new ].
+	document := WAUnescapedDocument 
+		on: aStream
+		codec: codec.
 	self encodeOn: document

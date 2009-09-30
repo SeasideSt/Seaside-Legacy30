@@ -5,4 +5,4 @@ refreshAfter: aDuration location: aUrl message: aString
 		contentType: WAMimeType textPlain;
 		refreshAfter: aDuration
 			location: aUrl
-			message: aString , (String with: Character cr) , 'You are being redirected to ' , aUrl seasideString
+			message: aString , (String with: Character cr) , 'You are being redirected to ' , aUrl greaseString

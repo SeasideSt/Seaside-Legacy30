@@ -1,6 +1,6 @@
 deprecated
 valueAt: aSymbol 
 	self 
-		seasideDeprecatedApi: 'WAConfiguration>>#valueAt:'
+		greaseDeprecatedApi: 'WAConfiguration>>#valueAt:'
 		details: 'Use #at:.'.
 	^ self at: aSymbol

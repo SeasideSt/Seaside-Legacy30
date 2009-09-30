@@ -1,6 +1,6 @@
 deprecated
 clearAllHandlers
-	self
-		seasideDeprecatedApi: 'WARegistry class>>#clearAllHandlers'
+	self 
+		greaseDeprecatedApi: 'WARegistry class>>#clearAllHandlers'
 		details: 'Use #clearAll instead.'.
 	^ self clearAll

@@ -1,5 +1,4 @@
 file addition
-addAllFilesIn: aPathString
+addAllFilesIn: aPathString 
 	"adds all files in the directory specified by aPathString to the current file library"
-	(WAPlatform current filesIn: aPathString)
-		do: [ :each | self addFileAt: each ]
+	(GRPlatform current filesIn: aPathString) do: [ :each | self addFileAt: each ]

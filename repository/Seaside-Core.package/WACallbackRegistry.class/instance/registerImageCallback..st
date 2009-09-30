@@ -1,6 +1,6 @@
 deprecated
 registerImageCallback: aBlock 
-	self
-		seasideDeprecatedApi: 'WACallbackRegistry>>#registerImageCallback:'
+	self 
+		greaseDeprecatedApi: 'WACallbackRegistry>>#registerImageCallback:'
 		details: 'Use WACallbackRegistry>>#store: instead.'.
 	^ self store: (WAImageCallback on: aBlock)

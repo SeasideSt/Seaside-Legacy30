@@ -1,3 +1,3 @@
 instance creation
 new
-	^ self on: WAPlatform current readWriteCharacterStream
+	^ self on: GRPlatform current readWriteCharacterStream

@@ -1,6 +1,8 @@
 deprecated
-keyOrNilForHandler: aRequestHandler
+keyOrNilForHandler: aRequestHandler 
 	self 
-		seasideDeprecatedApi: 'WARegistry>>#keyOrNilForHandler:'
+		greaseDeprecatedApi: 'WARegistry>>#keyOrNilForHandler:'
 		details: 'Use #keyFor:ifAbsent:.'.
-	^ self keyFor: aRequestHandler ifAbsent: [ nil ]
+	^ self 
+		keyFor: aRequestHandler
+		ifAbsent: [ nil ]

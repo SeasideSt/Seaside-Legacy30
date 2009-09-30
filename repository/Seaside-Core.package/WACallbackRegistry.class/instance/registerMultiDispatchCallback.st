@@ -1,6 +1,6 @@
 deprecated
 registerMultiDispatchCallback
-	self
-		seasideDeprecatedApi: 'WACallbackRegistry>>#registerMultiDispatchCallback'
+	self 
+		greaseDeprecatedApi: 'WACallbackRegistry>>#registerMultiDispatchCallback'
 		details: 'Use WACallbackRegistry>>#store: instead.'.
 	^ self store: WAMultiDispatchCallback new

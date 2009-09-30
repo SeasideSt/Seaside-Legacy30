@@ -1,3 +1,3 @@
 mutual exclusion
 terminateOwner
-	owner isNil ifFalse: [ WAPlatform current terminateProcess: owner ]
+	owner isNil ifFalse: [ GRPlatform current terminateProcess: owner ]

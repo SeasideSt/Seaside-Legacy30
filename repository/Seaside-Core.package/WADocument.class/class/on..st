@@ -1,3 +1,5 @@
 instance creation
-on: aStream
-	^ self on: aStream codec: WANullCodec new
+on: aStream 
+	^ self 
+		on: aStream
+		codec: GRNullCodec new

@@ -1,3 +1,3 @@
 *seaside-core
 encodeOn: aDocument 
-	aDocument print: self seasideString
+	aDocument print: self greaseString

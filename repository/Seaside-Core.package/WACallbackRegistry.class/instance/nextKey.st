@@ -1,3 +1,3 @@
 accessing
 nextKey
-	^ nextKey seasideString
+	^ nextKey greaseString

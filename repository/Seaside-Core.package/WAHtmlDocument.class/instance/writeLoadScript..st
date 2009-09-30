@@ -1,3 +1,3 @@
 load scripts
-writeLoadScript: anObject
-	self nextPutAll: anObject seasideString
+writeLoadScript: anObject 
+	self nextPutAll: anObject greaseString

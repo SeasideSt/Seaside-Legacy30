@@ -1,6 +1,6 @@
 deprecated
 registerMapCallback: aBlock 
-	self
-		seasideDeprecatedApi: 'WACallbackRegistry>>#registerMapCallback:'
+	self 
+		greaseDeprecatedApi: 'WACallbackRegistry>>#registerMapCallback:'
 		details: 'Use WACallbackRegistry>>#store: instead.'.
 	^ self store: (WAMapCallback on: aBlock)

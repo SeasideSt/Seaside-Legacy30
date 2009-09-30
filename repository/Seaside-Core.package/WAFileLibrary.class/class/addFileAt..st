@@ -1,8 +1,8 @@
 file addition
-addFileAt: aPath
+addFileAt: aPath 
 	"adds the file specified by aFilename to the current file library"
-	self
+	self 
 		addFileAt: aPath
-		contents: (WAPlatform current
-			contentsOfFile: aPath
-			binary: (self isBinaryAt: aPath))
+		contents: (GRPlatform current 
+				contentsOfFile: aPath
+				binary: (self isBinaryAt: aPath))

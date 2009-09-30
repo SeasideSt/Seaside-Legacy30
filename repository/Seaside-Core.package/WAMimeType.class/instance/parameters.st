@@ -1,5 +1,4 @@
 accessing
 parameters
-	parameters isNil ifTrue: [
-		parameters := WASmallDictionary new ].
+	parameters isNil ifTrue: [ parameters := GRSmallDictionary new ].
 	^ parameters

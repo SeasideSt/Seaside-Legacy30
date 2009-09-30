@@ -1,4 +1,6 @@
 convenience-headers
-attachmentWithFileName: aString
-	aString notNil
-		ifTrue: [ self headerAt: 'Content-Disposition' put: 'attachment; filename="' , aString seasideString , '"' ]
+attachmentWithFileName: aString 
+	aString notNil ifTrue: 
+		[ self 
+			headerAt: 'Content-Disposition'
+			put: 'attachment; filename="' , aString greaseString , '"' ]
