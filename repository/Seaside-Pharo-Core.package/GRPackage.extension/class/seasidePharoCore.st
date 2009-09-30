@@ -3,5 +3,5 @@ seasidePharoCore
 	^ self new
 		name: 'Seaside-Pharo-Core';
 		addDependency: 'Seaside-Core';
-		addDependency: 'Seaside-Pharo-Platform';
+		addDependency: 'Grease-Pharo-Core';
 		yourself
