@@ -1,6 +1,6 @@
 private
-renderAddress: anEmailAddress withHeader: aString on: aStream
+renderAddress: anEmailAddress withHeader: aString on: aStream 
 	aStream
 		nextPutAll: aString;
-		nextPutAll: anEmailAddress seasideString;
+		nextPutAll: anEmailAddress greaseString;
 		nextPut: Character cr

@@ -1,6 +1,6 @@
 actions
 send
-	WAPlatform current
-		deliverMailFrom: self from seasideString
+	GRPlatform current 
+		deliverMailFrom: self from greaseString
 		to: self receipents
 		text: self plainMessage
