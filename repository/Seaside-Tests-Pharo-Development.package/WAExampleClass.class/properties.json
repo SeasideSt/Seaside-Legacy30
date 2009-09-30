@@ -1,11 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "TestCase",
+	"super" : "GRObject",
 	"category" : "Seaside-Tests-Pharo-Development",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "WASqueakInspectorTest",
-	"type" : "normal"
+	"instvars" : [
+		"first",
+		"second"
+	],
+	"name" : "WAExampleClass",
+	"type" : "variable"
 }
