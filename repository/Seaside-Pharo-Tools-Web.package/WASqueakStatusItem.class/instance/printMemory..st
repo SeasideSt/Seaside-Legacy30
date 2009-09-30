@@ -1,3 +1,3 @@
 private
-printMemory: anInteger
-	^WAPrinter binaryFileSize print: anInteger
+printMemory: anInteger 
+	^ GRPrinter binaryFileSize print: anInteger

@@ -1,3 +1,3 @@
 accessing
 currentDisplay
-	^ self serverInstance displayNumber seasideString
+	^ self serverInstance displayNumber greaseString

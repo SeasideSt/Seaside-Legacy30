@@ -1,5 +1,5 @@
 private
 paddedSeconds
-	^ (WAMappedPrinter
+	^ (GRMappedPrinter 
 		block: [ :time | time seconds ]
-		next: (WAPrinter numberWithAtLeastDigits: 2)), ' sec'
+		next: (GRPrinter numberWithAtLeastDigits: 2)) , ' sec'

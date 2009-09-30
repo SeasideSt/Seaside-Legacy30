@@ -1,5 +1,7 @@
 private
 paddedMinutes
-	^ (WAMappedPrinter
+	^ (GRMappedPrinter 
 		block: [ :time | time minutes ]
-		next: (WANumberPrinter new padding: $0; digits: 2)), ' min '
+		next: (GRNumberPrinter new
+				padding: $0;
+				digits: 2)) , ' min '

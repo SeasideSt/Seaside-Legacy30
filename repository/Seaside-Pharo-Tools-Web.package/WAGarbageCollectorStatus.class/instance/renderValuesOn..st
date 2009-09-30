@@ -1,5 +1,5 @@
 rendering
-renderValuesOn: html
+renderValuesOn: html 
 	| incrementalGCs tenures parameters fullGCs fullGCTime incrementalGCTime |
 	parameters := SmalltalkImage current getVMParameters.
 	fullGCs := parameters at: 7.
@@ -7,23 +7,24 @@ renderValuesOn: html
 	incrementalGCs := parameters at: 9.
 	incrementalGCTime := parameters at: 10.
 	tenures := parameters at: 11.
-	
-	self
+	self 
 		renderLabel: 'Full GCs'
 		value: fullGCs
 		value: (self printMilliSeconds: fullGCTime)
 		value: (self printMilliSeconds: fullGCTime / fullGCs)
 		on: html.
-	
-	self
+	self 
 		renderLabel: 'Incremental GCs'
 		value: incrementalGCs
 		value: (self printMilliSeconds: incrementalGCTime)
 		value: (self printMilliSeconds: incrementalGCTime / incrementalGCs)
 		on: html.
-	self renderLabel: 'Tenures' value: tenures on: html.
-	tenures isZero ifFalse: [
-		self
+	self 
+		renderLabel: 'Tenures'
+		value: tenures
+		on: html.
+	tenures isZero ifFalse: 
+		[ self 
 			renderLabel: 'Avg. GCs/tenure'
-			value: (incrementalGCs / tenures) seasideInteger 
+			value: (incrementalGCs / tenures) greaseInteger
 			on: html ]
