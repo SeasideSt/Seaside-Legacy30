@@ -1,3 +1,3 @@
 initialization
 initialize
-	WAPlatform current addToStartUpList: self
+	GRPlatform current addToStartUpList: self

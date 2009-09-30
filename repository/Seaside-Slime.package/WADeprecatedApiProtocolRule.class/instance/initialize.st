@@ -4,6 +4,6 @@ initialize
 	matcher := ParseTreeSearcher new.
 	matcher 
 		matchesAnyOf: #(
-			'``@receiver seasideDeprecatedApi: ``@arg1'
-			'``@receiver seasideDeprecatedApi: ``@arg1 details: ``@arg2' )
+			'``@receiver greaseDeprecatedApi: ``@arg1'
+			'``@receiver greaseDeprecatedApi: ``@arg1 details: ``@arg2' )
 		do: [ :node :answer | answer add: node; yourself ]
