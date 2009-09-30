@@ -1,3 +1,3 @@
 public
 name
-	^ '[', adaptor port seasideString ,'] ', adaptor class name
+	^ '[' , adaptor port greaseString , '] ' , adaptor class name
