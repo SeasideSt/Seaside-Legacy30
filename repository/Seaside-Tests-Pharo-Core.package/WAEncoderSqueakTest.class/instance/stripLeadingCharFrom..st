@@ -1,6 +1,10 @@
 private
-stripLeadingCharFrom: aString
+stripLeadingCharFrom: aString 
 	"strips the leadingChar from every character in the given string"
-	^String streamContents: [ :stream |
-		aString do: [ :each |
-			stream nextPut: (Character leadingChar: 0 code: each seasideInteger) ] ]
+	^ String streamContents: 
+		[ :stream | 
+		aString do: 
+			[ :each | 
+			stream nextPut: (Character 
+					leadingChar: 0
+					code: each greaseInteger) ] ]

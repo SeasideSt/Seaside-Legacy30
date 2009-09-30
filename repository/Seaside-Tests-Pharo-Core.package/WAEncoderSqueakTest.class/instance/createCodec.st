@@ -1,3 +1,3 @@
 configuration
 createCodec
-	^ WACodec forEncoding: 'utf-8'
+	^ GRCodec forEncoding: 'utf-8'

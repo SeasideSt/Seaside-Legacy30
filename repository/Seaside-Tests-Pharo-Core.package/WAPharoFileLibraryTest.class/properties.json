@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WASqueakFileLibraryTest",
+	"name" : "WAPharoFileLibraryTest",
 	"type" : "normal"
 }

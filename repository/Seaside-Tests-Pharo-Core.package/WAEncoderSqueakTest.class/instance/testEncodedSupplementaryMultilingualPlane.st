@@ -4,7 +4,7 @@ testEncodedSupplementaryMultilingualPlane
 	http://www.unicode.org/charts/PDF/U10140.pdf
 	Ancient Greek Zero Sign"
 	| zero |
-	zero := (Character codePoint: 65930) seasideString.
+	zero := (Character codePoint: 65930) greaseString.
 	self 
 		assert: zero
 		encoder: WAHtmlEncoder

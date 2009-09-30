@@ -9,8 +9,8 @@ testEncodedUnicode
 		assert: ea
 		encoder: WAHtmlEncoder
 		gives: ea.
-	hiraA := (Character codePoint: 12354) seasideString.	"HIRAGANA LETTER A"
-	hiraO := (Character codePoint: 12362) seasideString.	"HIRAGANA LETTER O"
+	hiraA := (Character codePoint: 12354) greaseString.	"HIRAGANA LETTER A"
+	hiraO := (Character codePoint: 12362) greaseString.	"HIRAGANA LETTER O"
 	hiraAO := hiraA , hiraO.
 	self 
 		assert: hiraA

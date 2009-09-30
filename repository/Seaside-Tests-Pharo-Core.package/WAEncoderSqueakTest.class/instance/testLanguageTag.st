@@ -6,10 +6,10 @@ testLanguageTag
 	leading := (Smalltalk classNamed: #JapaneseEnvironment) leadingChar.
 	hiraA := (Character 
 		leadingChar: leading
-		code: 12354) seasideString.	"HIRAGANA LETTER A"
+		code: 12354) greaseString.	"HIRAGANA LETTER A"
 	hiraO := (Character 
 		leadingChar: leading
-		code: 12362) seasideString.	"HIRAGANA LETTER O"
+		code: 12362) greaseString.	"HIRAGANA LETTER O"
 	hiraAO := hiraA , hiraO.
 	self 
 		assert: hiraA
