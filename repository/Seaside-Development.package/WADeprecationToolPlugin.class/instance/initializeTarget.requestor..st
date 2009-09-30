@@ -1,4 +1,6 @@
 initialization
 initializeTarget: aTargetObject requestor: aRequestorObject
 	super initializeTarget: aTargetObject requestor: aRequestorObject.
-	self session addFilter: (filter := WADeprecatedToolFilter new)
+	filter := self session filters
+		detect: [ :each | each isKindOf: WADeprecatedToolFilter ]
+		ifNone: [ self session addFilter: WADeprecatedToolFilter new ]
