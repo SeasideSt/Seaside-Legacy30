@@ -1,4 +1,4 @@
-tests-utilites
+testing-utilites
 testSeparateRight
 	| converter |
 	converter := GRNumberPrinter new.

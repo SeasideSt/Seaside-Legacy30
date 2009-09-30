@@ -1,4 +1,4 @@
-tests-streams
+testing-streams
 testWriteStreamTab
 	"ANSI 5.9.4.6"
 	

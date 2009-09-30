@@ -1,4 +1,4 @@
-tests
+testing
 testSignPrinter
 	| converter |
 	converter := GRSignPrinter new.

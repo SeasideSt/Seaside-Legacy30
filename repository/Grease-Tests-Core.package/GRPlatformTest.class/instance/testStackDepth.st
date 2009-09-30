@@ -1,4 +1,4 @@
-tests
+testing
 testStackDepth
 	| stackDepth someBlock |
 	stackDepth := self platform stackDepth.

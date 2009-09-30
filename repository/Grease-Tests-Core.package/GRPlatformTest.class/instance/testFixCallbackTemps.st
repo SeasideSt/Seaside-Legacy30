@@ -1,4 +1,4 @@
-tests
+testing
 testFixCallbackTemps
 	"Make sure that #fixCallbackTemps is properly understood by block-contexts. Make sure that this is either a nop for Smalltalks with true block closures, or it properly fixes the context otherwise."
 

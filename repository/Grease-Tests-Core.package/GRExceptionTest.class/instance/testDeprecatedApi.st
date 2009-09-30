@@ -1,10 +1,10 @@
-tests
+testing
 testDeprecatedApi
 	| exception seen |
 	exception := seen := nil.
 	
 	[ self 
-		greaseDeprecatedApi: 'GRExceptionTest>>#testDeprecatedApi'
+		greaseDeprecatedApi: 'WAPlatformExceptionTest>>#testDeprecatedApi'
 		details: 'Message in a bottle.'.
 	seen := true ] 
 		on: GRDeprecatedApiNotification
@@ -15,5 +15,5 @@ testDeprecatedApi
 			seen := false ].
 	self assert: seen.
 	self assert: exception notNil.
-	self assert: exception messageText = 'GRExceptionTest>>#testDeprecatedApi'.
+	self assert: exception messageText = 'WAPlatformExceptionTest>>#testDeprecatedApi'.
 	self assert: exception details = 'Message in a bottle.'

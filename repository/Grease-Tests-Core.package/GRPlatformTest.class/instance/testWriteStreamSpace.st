@@ -1,4 +1,4 @@
-tests-streams
+testing-streams
 testWriteStreamSpace
 	"ANSI 5.9.4.5"
 	

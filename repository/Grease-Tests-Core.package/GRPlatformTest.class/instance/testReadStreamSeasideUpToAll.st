@@ -1,4 +1,4 @@
-tests-streams-seaside
+testing-streams-seaside
 testReadStreamSeasideUpToAll
 	| stream string1 string2 |
 	stream := 'abc12def' readStream.

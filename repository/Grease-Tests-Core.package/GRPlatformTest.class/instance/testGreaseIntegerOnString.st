@@ -1,4 +1,4 @@
-tests
+testing
 testGreaseIntegerOnString
 	self assert: '' greaseInteger isNil.
 	self assert: 'a' greaseInteger isNil.

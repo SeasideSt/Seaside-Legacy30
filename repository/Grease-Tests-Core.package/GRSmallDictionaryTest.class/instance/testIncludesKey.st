@@ -1,6 +1,5 @@
-tests-testing
+testing-testing
 testIncludesKey
-	self deny: (collection includesKey: '1').
-	collection add: '1' -> 'foo'.
-	collection add: '1' -> 'bar'.
-	self assert: (collection includesKey: '1')
+	self deny: (dictionary includesKey: '1').
+	dictionary at: '1' put: 'foo'.
+	self assert: (dictionary includesKey: '1')

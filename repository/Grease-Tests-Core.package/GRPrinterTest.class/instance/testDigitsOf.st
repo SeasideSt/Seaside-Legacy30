@@ -1,4 +1,4 @@
-tests-utilites
+testing-utilites
 testDigitsOf
 	| converter |
 	converter := GRNumberPrinter new.

@@ -1,4 +1,4 @@
-tests-timestamp
+testing-timestamp
 testHttp
 	| printer date offsetHour |
 	offsetHour := 2.

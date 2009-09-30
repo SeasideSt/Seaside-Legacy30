@@ -1,4 +1,4 @@
-tests
+testing
 testPluralize
 	self assert: (0 pluralize: 'person') = '0 people'.
 	self assert: (1 pluralize: 'person') = '1 person'.

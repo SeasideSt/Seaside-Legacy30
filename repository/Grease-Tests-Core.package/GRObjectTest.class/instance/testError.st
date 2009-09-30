@@ -1,4 +1,4 @@
-tests
+testing
 testError
 	"Make sure #error: signals a subclass of WAPlatformError."
 	self 

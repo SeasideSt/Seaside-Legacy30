@@ -1,4 +1,4 @@
-tests
+testing
 testFloatPrinterNaN
 	| converter |
 	converter := GRNumberPrinter new.

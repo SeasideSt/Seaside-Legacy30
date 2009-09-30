@@ -1,4 +1,4 @@
-tests-processes
+testing-processes
 testTerminate
 	| ensureRun ifCurtailedRun semaphore1 semaphore2 semaphore3 semaphore4 process |
 	ensureRun := false.

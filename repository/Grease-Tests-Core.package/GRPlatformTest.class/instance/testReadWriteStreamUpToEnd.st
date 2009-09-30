@@ -1,4 +1,4 @@
-tests-streams
+testing-streams
 testReadWriteStreamUpToEnd
 	"Not defined by ANSI."
 	| stream |

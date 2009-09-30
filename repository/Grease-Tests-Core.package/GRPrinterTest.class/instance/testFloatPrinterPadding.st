@@ -1,4 +1,4 @@
-tests
+testing
 testFloatPrinterPadding
 	| converter |
 	converter := GRNumberPrinter new.

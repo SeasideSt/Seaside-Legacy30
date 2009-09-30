@@ -1,4 +1,4 @@
-tests-currency
+testing-currency
 testUsCurrency
 	| printer |
 	printer := GRPrinter usCurrency.

@@ -1,4 +1,4 @@
-tests-trim
+testing-trim
 testTrimBoth
 	self assert: '' trimBoth = ''.
 	self assert: ' ' trimBoth = ''.

@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"collection"
+		"dictionary"
 	],
 	"name" : "GRSmallDictionaryTest",
 	"type" : "normal"

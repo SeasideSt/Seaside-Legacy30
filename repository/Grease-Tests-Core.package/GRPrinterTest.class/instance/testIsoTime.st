@@ -1,4 +1,4 @@
-tests-timestamp
+testing-timestamp
 testIsoTime
 	| printer |
 	printer := GRPrinter isoTime.

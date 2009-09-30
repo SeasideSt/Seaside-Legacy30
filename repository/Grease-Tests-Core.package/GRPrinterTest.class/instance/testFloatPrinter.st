@@ -1,4 +1,4 @@
-tests
+testing
 testFloatPrinter
 	| converter |
 	converter := GRNumberPrinter new precision: 2.

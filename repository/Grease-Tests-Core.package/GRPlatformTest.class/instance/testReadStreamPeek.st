@@ -1,4 +1,4 @@
-tests-streams
+testing-streams
 testReadStreamPeek
 	"ANSI 5.9.2.7"
 	

@@ -1,5 +1,4 @@
-tests-enumerating
+testing-enumerating
 testValues
-	collection add: '1' -> 'foo'; add: '2' -> 'bar'; add: '1' -> 'baz'.
-	self assert: collection values =
-		(self allowsDuplicateKeys ifTrue: [ #('foo' 'bar' 'baz') ] ifFalse: [ #('baz' 'bar') ])
+	dictionary at: '1' put: 'foo'; at: '2' put: 'bar'.
+	self assert: dictionary values = #( 'foo' 'bar' )

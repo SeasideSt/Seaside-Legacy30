@@ -1,4 +1,4 @@
-tests
+testing
 testIsUnary
 	self assert: #isUnary isUnary.
 	self deny: #+ isUnary.

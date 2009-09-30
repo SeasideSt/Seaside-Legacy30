@@ -1,7 +1,7 @@
-tests
+testing
 testNotEmpty
 	
-	self assert: self arbitraryCollection notEmpty.
-	self deny:  self emptyCollection notEmpty.
-	self assert: self arbitraryCollection notEmpty.
-	self deny:  self emptyCollection notEmpty
+	self assert: #(1) notEmpty.
+	self deny:  #() notEmpty.
+	self assert: '1' notEmpty.
+	self deny:  '' notEmpty

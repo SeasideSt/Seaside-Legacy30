@@ -1,4 +1,4 @@
-tests-streams
+testing-streams
 testReadWriteStreamReset
 	"ANSI 5.9.1.6"
 	| stream |

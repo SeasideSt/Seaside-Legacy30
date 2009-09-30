@@ -1,4 +1,4 @@
-tests
+testing
 testBlockContextWithPossibleArguments
 	| block |
 	block := [ :x | 1 + x ].

@@ -1,4 +1,4 @@
-tests-excerpt
+testing-excerpt
 testExcerptLeft
 	self assert: ('abcde' excerpt: 'd' radius: 0 ellipsis: 'x') = 'xdx'.
 	self assert: ('abcde' excerpt: 'd' radius: 1 ellipsis: 'x') = 'xcde'.

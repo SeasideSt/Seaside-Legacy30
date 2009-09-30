@@ -1,4 +1,4 @@
-tests-timestamp
+testing-timestamp
 testRfc822
 	| printer date |
 	printer := GRPrinter rfc822.

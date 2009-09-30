@@ -1,4 +1,4 @@
-tests
+testing
 testEmptyOrNil
 	self assert: '' isEmptyOrNil.
 	self assert: nil isEmptyOrNil.

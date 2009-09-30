@@ -1,4 +1,4 @@
-tests
+testing
 testToDoClosures
 	"#to:do: may be optimized and VAST currently has problems with closures
 	in this case. We would prefer to use the optimized version than than

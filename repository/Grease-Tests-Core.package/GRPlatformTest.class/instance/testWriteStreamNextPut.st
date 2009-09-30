@@ -1,4 +1,4 @@
-tests-streams
+testing-streams
 testWriteStreamNextPut
 	"ANSI 5.9.4.3"
 	

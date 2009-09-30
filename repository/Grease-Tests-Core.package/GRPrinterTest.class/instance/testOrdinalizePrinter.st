@@ -1,4 +1,4 @@
-tests
+testing
 testOrdinalizePrinter
 	| converter |
 	converter := GRNumberPrinter new , GROrdinalizePrinter new.
