@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "pmm 6/1/2008 00:59",
-	"super" : "WAPlatformObject",
+	"super" : "GRObject",
 	"category" : "Seaside-Pharo-Continuation",
 	"classinstvars" : [ ],
 	"pools" : [ ],

@@ -1,5 +1,6 @@
 evaluating
-valueWithArguments: anArray
-	^ anArray size = 1
+valueWithArguments: anArray 
+	^ anArray size = 1 
 		ifTrue: [ self value: anArray first ]
-		ifFalse: [ WAInvalidArgumentCount signal: 'Continuations can only be resumed with one argument.' ]
+		ifFalse: 
+			[ GRInvalidArgumentCount signal: 'Continuations can only be resumed with one argument.' ]

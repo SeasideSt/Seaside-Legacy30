@@ -3,5 +3,5 @@ seasidePharoContinuation
 	^ self new
 		name: 'Seaside-Pharo-Continuation';
 		description: 'Pharo implementation of full and partial first-class continuations';
-		addDependency: 'Seaside-Pharo-Platform';
+		addDependency: 'Grease-Pharo-Core';
 		yourself
