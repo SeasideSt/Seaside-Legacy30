@@ -1,5 +1,6 @@
-accessing
+deprecated
 component
-	"Answer the owning component."
-
-	^ self next component
+	self 
+		seasideDeprecatedApi: 'WADecoration>>#component'
+		details: 'Use WADecoration>>#decoratedComponent.'.
+	^ self decoratedComponent

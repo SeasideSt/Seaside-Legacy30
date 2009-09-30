@@ -1,3 +1,0 @@
-decorations
-component
-	^ self
