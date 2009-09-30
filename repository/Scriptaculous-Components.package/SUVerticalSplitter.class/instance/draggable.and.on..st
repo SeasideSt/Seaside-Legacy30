@@ -1,6 +1,9 @@
 rendering
-draggable: aBeforeItem and: anAfterItem on: html
-	^ (super draggable: aBeforeItem and: anAfterItem on: html)
+draggable: aBeforeItem and: anAfterItem on: html 
+	^ (super 
+		draggable: aBeforeItem
+		and: anAfterItem
+		on: html)
 		constraintHorizontal;
 		onDrag: (JSStream on: '
 				var splitter = arguments[0].element;
@@ -10,12 +13,12 @@ draggable: aBeforeItem and: anAfterItem on: html
 				leftWidth = leftElement.offsetWidth + offset;
 				rightElement = arguments[0]._next;
 				rightWidth = rightElement.offsetWidth - offset;
-				if (leftWidth > ' , aBeforeItem min seasideString, ' && rightWidth > ' ,anAfterItem min seasideString,') {
+				if (leftWidth > ' , aBeforeItem min greaseString , ' && rightWidth > ' , anAfterItem min greaseString , ') {
 					leftElement.style.width = leftWidth + "px";
 					rightElement.style.width = rightWidth + "px";
 				}');
 		onEnd: (html scriptaculous request
-			callback: [ :value | aBeforeItem size: value ]
-				value: (JSStream on: 'arguments[0].element.previous().offsetWidth + ''px''');
-			callback: [ :value | anAfterItem size: value ]
-				value: (JSStream on: 'arguments[0].element.next().offsetWidth + ''px'''))
+				callback: [ :value | aBeforeItem size: value ]
+					value: (JSStream on: 'arguments[0].element.previous().offsetWidth + ''px''');
+				callback: [ :value | anAfterItem size: value ]
+					value: (JSStream on: 'arguments[0].element.next().offsetWidth + ''px'''))
