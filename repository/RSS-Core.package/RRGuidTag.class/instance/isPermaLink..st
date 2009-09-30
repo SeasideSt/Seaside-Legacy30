@@ -4,4 +4,4 @@ isPermaLink: aBoolean
 	isPermaLink='isPermaLink'"
 	self 
 		attributeAt: 'isPermaLink'
-		put: aBoolean seasideString
+		put: aBoolean greaseString
