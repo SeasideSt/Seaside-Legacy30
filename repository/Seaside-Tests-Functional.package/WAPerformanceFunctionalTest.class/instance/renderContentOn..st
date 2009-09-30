@@ -1,7 +1,7 @@
 rendering
 renderContentOn: html 
 	duration := 0.
-	referenceDict ifNil: [referenceDict := self class referenceDict].
+	referenceDict ifNil: [ referenceDict := self class referenceDict ].
 	self renderExplanationOn: html.
 	self renderAnchorsOn: html.
 	self renderScriptOn: html.
@@ -14,7 +14,6 @@ renderContentOn: html
 	self renderHtmlTextOn: html.
 	self renderBreakOn: html.
 	self renderNativeBreakOn: html.
-	
 	html div
 		class: 'result';
-		with: 'Seaside Performance Index: ', duration seasideString
+		with: 'Seaside Performance Index: ' , duration greaseString

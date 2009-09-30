@@ -1,8 +1,9 @@
 initialization
-initialRequest: aRequest
+initialRequest: aRequest 
 	super initialRequest: aRequest.
-	self requestContext consumer nextIfPresentDo: [ :className |
-		classes do: [ :each |
+	self requestContext consumer nextIfPresentDo: 
+		[ :className | 
+		classes do: 
+			[ :each | 
 			"#seasideString is required because of Symbol <-> String comparison"
-			each name seasideString = className
-				ifTrue: [ self selected: each ] ] ]
+			each name greaseString = className ifTrue: [ self selected: each ] ] ]

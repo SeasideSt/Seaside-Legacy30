@@ -1,11 +1,13 @@
 actions
 raiseDeprecated
-	self
-		seasideDeprecatedApi: 'WAErrorFunctionalTest>>#raiseDeprecated'
+	self 
+		greaseDeprecatedApi: 'WAErrorFunctionalTest>>#raiseDeprecated'
 		details: 'Test action phase deprecation.'.
-	self inform: [ :html |
+	self 
+		inform: 
+			[ :html | 
 			self 
-				seasideDeprecatedApi: 'WAErrorFunctionalTest>>#raiseDeprecated'	
+				greaseDeprecatedApi: 'WAErrorFunctionalTest>>#raiseDeprecated'
 				details: 'Test render phase deprecation.'.
 			html paragraph: 'To be displayed' ]
-		onAnswer: [ :v | ]
+		onAnswer: [ :v |  ]

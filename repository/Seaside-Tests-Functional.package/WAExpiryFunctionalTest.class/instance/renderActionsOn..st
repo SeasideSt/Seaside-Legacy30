@@ -1,9 +1,8 @@
 rendering
-renderActionsOn: html
-	html paragraph: [
-		html anchor
-			url: (self application baseUrl
-				with: self class name);
+renderActionsOn: html 
+	html paragraph: 
+		[ html anchor
+			url: (self application baseUrl with: self class name);
 			with: 'New Session'.
 		html break.
 		html anchor
@@ -15,18 +14,18 @@ renderActionsOn: html
 			with: 'Reset Counters'.
 		html break.
 		html anchor
-			callback: [ WAPlatform current garbageCollect ];
+			callback: [ GRPlatform current garbageCollect ];
 			with: 'Garbage Collect'.
 		html break.
 		html anchor
-			callback: [
-				self application clear.
-				WAPlatform current garbageCollect ];
+			callback: 
+				[ self application clear.
+				GRPlatform current garbageCollect ];
 			with: 'Clear Cache'.
 		html break.
 		html anchor
-			callback: [
-				self application clear.
+			callback: 
+				[ self application clear.
 				WAExpirySession resetCounters.
-				WAPlatform current garbageCollect ];
-			with: 'Reset All' ].
+				GRPlatform current garbageCollect ];
+			with: 'Reset All' ]

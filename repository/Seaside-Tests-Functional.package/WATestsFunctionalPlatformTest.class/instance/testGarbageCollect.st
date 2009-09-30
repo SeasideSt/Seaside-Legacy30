@@ -1,5 +1,5 @@
 tests
 testGarbageCollect
-	self
-		shouldnt: [ WAPlatform current garbageCollect ]
+	self 
+		shouldnt: [ GRPlatform current garbageCollect ]
 		raise: MessageNotUnderstood

@@ -1,3 +1,3 @@
 accessing
 trailName
-	^ 'Item ', count seasideString, ' (', self identityHash seasideString, ')'
+	^ 'Item ' , count greaseString , ' (' , self identityHash greaseString , ')'

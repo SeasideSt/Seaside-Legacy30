@@ -1,12 +1,16 @@
 rendering
 renderContentOn: html 
 	self renderExplanationOn: html.
-	html unorderedList: [
-		1 to: 5000 do: [ :each | 
-			html listItem: [
-				html anchor
-					name: each seasideString;
-					callback: [
-						self inform: each onAnswer: [ :v |
-							self session jumpToAnchor: each seasideString ] ];
-					with: each ] ] ]
+	html unorderedList: 
+		[ 1 
+			to: 5000
+			do: 
+				[ :each | 
+				html listItem: 
+					[ html anchor
+						name: each greaseString;
+						callback: 
+							[ self 
+								inform: each
+								onAnswer: [ :v | self session jumpToAnchor: each greaseString ] ];
+						with: each ] ] ]
