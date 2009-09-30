@@ -1,5 +1,5 @@
 accessing
 name
 	^ self isRoot
-		ifFalse: [ '' ]
-		ifTrue: [ self parent nameOfHandler: self ]
+		ifTrue: [ '' ]
+		ifFalse: [ self parent nameOfHandler: self ]
