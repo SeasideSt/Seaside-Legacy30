@@ -1,7 +1,7 @@
 rendering
 style
 	^ '#lightbox {
-	background: url(' , (SUAllTestLibrary / #demoGif) seasideString , ') repeat white;
+	background: url(' , (SUAllTestLibrary / #demoGif) greaseString , ') repeat white;
 	border: 1px solid #e8a400;
 	padding: 1em;
 	width: 640px;
