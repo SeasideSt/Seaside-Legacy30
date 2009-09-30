@@ -7,9 +7,9 @@ diffWorkingCopies: aCollection
 	aCollection
 		do: [ :each |
 			patch := each package snapshot 
-				patchRelativeToBase: (each repositoryGroup 
-					versionWithInfo: each ancestors first) 
-						snapshot.
+				patchRelativeToBase: (each ancestors isEmpty
+					ifTrue: [ MCSnapshot empty ]
+					ifFalse: [ (each repositoryGroup versionWithInfo: each ancestors first) snapshot ]).
 			each modified: patch isEmpty not.
 			patches addAll: patch operations ]
 		displayingProgress: 'Diffing'.
