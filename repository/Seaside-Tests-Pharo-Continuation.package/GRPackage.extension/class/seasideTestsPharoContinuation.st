@@ -4,5 +4,5 @@ seasideTestsPharoContinuation
 		name: 'Seaside-Tests-Pharo-Continuation';
 		description: 'Tests of Pharo continuation implementation';
 		addDependency: 'Seaside-Pharo-Continuation';
-		addDependency: 'Seaside-Tests-Platform';
+		addDependency: 'Grease-Tests-Core';
 		yourself
