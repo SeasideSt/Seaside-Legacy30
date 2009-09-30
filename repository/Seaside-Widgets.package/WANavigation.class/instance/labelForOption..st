@@ -1,3 +1,3 @@
 query
 labelForOption: anObject 
-	^ anObject seasideString
+	^ anObject greaseString

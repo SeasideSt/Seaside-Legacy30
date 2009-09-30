@@ -7,4 +7,4 @@ updateRoot: anHtmlRoot
 					(WAActionCallback on: [ self decoratedComponent answer ])).
 	anHtmlRoot meta 
 		redirectAfter: self delay
-		to: url seasideString
+		to: url greaseString

@@ -1,3 +1,3 @@
 accessing-delegated
-year: anIntegerOrString
-	year contents: (anIntegerOrString seasideInteger ifNil: [ 1900 ])
+year: anIntegerOrString 
+	year contents: (anIntegerOrString greaseInteger ifNil: [ 1900 ])
