@@ -1,5 +1,5 @@
 accessing-urls
 selectorUrl
-	^ selector isNil
+	^ selector isNil 
 		ifTrue: [ self url ]
-		ifFalse: [ self url seasideString , ' ' , selector seasideString ]
+		ifFalse: [ self url greaseString , ' ' , selector greaseString ]

@@ -1,3 +1,3 @@
 parameters
 parameters
-	^ parameters ifNil: [ parameters := WASmallDictionary new ]
+	^ parameters ifNil: [ parameters := GRSmallDictionary new ]

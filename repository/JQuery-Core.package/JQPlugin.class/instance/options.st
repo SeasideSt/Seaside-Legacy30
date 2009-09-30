@@ -1,3 +1,3 @@
 options
 options
-	^ options ifNil: [ options := WASmallDictionary new ]
+	^ options ifNil: [ options := GRSmallDictionary new ]
