@@ -55,7 +55,7 @@ body { margin-bottom: 25px !important; }
 }
 .wa-halo .wa-halo-header .wa-classnamehaloplugin,
 .wa-halo .wa-halo-header .wa-browserhaloplugin,
-.wa-halo .wa-halo-header .wa-inspectorplugin,
+.wa-halo .wa-halo-header .wa-inspectorhaloplugin,
 .wa-halo .wa-halo-header .wa-styleshaloplugin {
 	float: left;
 	display: block;
@@ -68,14 +68,14 @@ body { margin-bottom: 25px !important; }
 .wa-halo .wa-halo-header .wa-browserhaloplugin {
 	background: url(codebrowser.png) no-repeat;
 }
-.wa-halo .wa-halo-header .wa-inspectorplugin {
+.wa-halo .wa-halo-header .wa-inspectorhaloplugin {
 	background: url(inspector.png) no-repeat;
 }
 .wa-halo .wa-halo-header .wa-styleshaloplugin {
 	background: url(styleeditor.png) no-repeat;
 }
 .wa-halo .wa-halo-header .wa-browserhaloplugin a,
-.wa-halo .wa-halo-header .wa-inspectorplugin a,
+.wa-halo .wa-halo-header .wa-inspectorhaloplugin a,
 .wa-halo .wa-halo-header .wa-styleshaloplugin a {
 	width: 16px;
 	outline: none;
