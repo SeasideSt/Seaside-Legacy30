@@ -37,7 +37,7 @@ renderAncestryListOn: html
 		class: 'large';
 		title: 'Configure shared parent';
 		onClick: 'return submitForm(this)';
-		callback: [selectedConfig contents isNil ifFalse: [ self show: selectedConfig contents configurationComponent ] ];
+		callback: [self openConfiguration: selectedConfig contents ];
 		with: 'Configure'.
 	
  
