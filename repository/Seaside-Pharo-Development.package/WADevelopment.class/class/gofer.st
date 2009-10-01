@@ -6,6 +6,6 @@ gofer
 	goferClass := (Smalltalk classNamed: #Gofer)
 		ifNil: [ self error: 'Please install Gofer.' ].
 	gofer := goferClass new.
-	self loadedVersionNames  
-		do: [:aName | gofer add: aName ].
+	self packages 
+		do: [ :package | gofer add: package packageName ].
 	^ gofer
