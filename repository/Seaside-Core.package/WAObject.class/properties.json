@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "pmm 9/1/2008 13:27",
 	"super" : "GRObject",
-	"category" : "Seaside-Core-Utilities",
+	"category" : "Seaside-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
