@@ -1,4 +1,6 @@
 actions
 addParent: aParent 
-	self configuration addParent: aParent.
-	selectedConfig contents: aParent  
+	aParent isNil
+		ifFalse: [
+			self configuration addParent: aParent.
+			selectedConfig contents: aParent ]
