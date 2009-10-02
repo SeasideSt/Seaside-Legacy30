@@ -5,23 +5,22 @@ renderActionsOn: html
 		self hasAdvancedAttributes
 			ifTrue: [
 				html anchor
+					class: 'minus' if: self displayAdvancedAttributes;
+					class: 'plus' if: self displayAdvancedAttributes not;
 					title: 'Show / Hide advanced attributes';
 					callback: [self displayAdvancedAttributes: self displayAdvancedAttributes not.
-								self displayAdvancedAttributes ifTrue: [self collapsed: false]];
-					with: [self displayAdvancedAttributes
-									ifTrue: [html code: '-']
-									ifFalse: [html code: '+']]].
+								self displayAdvancedAttributes ifTrue: [self collapsed: false ] ] ].
 			html space.
 			html anchor
+				class: 'down' if: self collapsed;
+				class: 'up' if: self collapsed not;
 				title: 'Collapse / Expand';
 				callback: [self collapsed: self collapsed not.
-						self collapsed ifTrue: [self showHelp: false ] ];
-				with: [self collapsed
-							ifTrue: [html html: '&darr;']
-							ifFalse: [html html: '&uarr;'] ].
+						self collapsed ifTrue: [self showHelp: false ] ].
 			html space.
+			
 			html anchor
+				class: 'help';
 				title: 'Show / Hide Help';
 				callback: [self showHelp: self showHelp not.
-							self showHelp ifTrue: [self collapsed: false] ];
-				with: '?']
+							self showHelp ifTrue: [self collapsed: false] ] ]

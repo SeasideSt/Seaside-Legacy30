@@ -7,9 +7,10 @@ renderFile: fileName on: html
 			with: fileName ].
 	html tableData: [
 		html anchor
+			onClick: 'return confirm("Really remove this file?")';
 			callback: [ self library removeFile: fileName ];
-			with: 'remove'.
+			with: 'Remove'.
 		html space.
 		html anchor
 			callback: [ renamingFile := fileName ];
-			with: 'rename' ]
+			with: 'Rename' ]

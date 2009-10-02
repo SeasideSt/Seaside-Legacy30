@@ -1,7 +1,13 @@
 rendering
 renderContentOn: html
-	self renderHeadingsOn: html.
-	self renderAddFileOn: html.
-	self renderFilesOn: html.
-	self renderWriteToDiskOn: html.
-	self renderDoneOn: html
+	html div
+		class: 'groupContent';
+		with: [
+			self renderHeadingsOn: html.
+			self renderAddFileOn: html.
+			html break.
+			self renderFilesOn: html.
+			html paragraph: [
+				self renderWriteToDiskOn: html.
+				html space.
+				self renderDoneOn: html ] ]

@@ -1,7 +1,7 @@
 rendering
 renderWriteToDiskOn: html
-	html form: [
-		html submitButton
-			callback: [ self library deployFiles ];
-			title: 'write all the files to disk';
-			text: 'write to disk' ]
+	html anchor
+		class: 'large';
+		callback: [ self library deployFiles ];
+		title: 'Wite all the files to disk';
+		with: 'Write to disk'

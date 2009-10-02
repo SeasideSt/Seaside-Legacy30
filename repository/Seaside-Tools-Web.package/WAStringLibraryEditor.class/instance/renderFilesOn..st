@@ -5,6 +5,6 @@ renderFilesOn: html
 			do: [:each |
 				html listItem: [
 					html anchor
-					class: 'download';
+						class: 'download';
 						url: (self urlFor: each);
 						with: each ] ] ]

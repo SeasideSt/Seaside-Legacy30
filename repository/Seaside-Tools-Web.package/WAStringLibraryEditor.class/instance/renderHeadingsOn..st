@@ -1,3 +1,3 @@
 rendering
 renderHeadingsOn: html
-	html heading: self library name
+	html heading level2; with: self library name

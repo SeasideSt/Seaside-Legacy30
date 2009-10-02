@@ -1,6 +1,7 @@
 rendering
 renderDoneOn: html
-	html form: [
-		html submitButton
-			callback: [ self answer ];
-			text: 'close' ]
+	html anchor
+		class: 'large';
+		title: 'Close and return';
+		callback: [ self answer ];
+		with: 'Close'

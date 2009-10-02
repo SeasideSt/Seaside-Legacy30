@@ -16,5 +16,5 @@ renderPossibleFiltersOn: html
 			class: 'large';
 			title: 'Add new filter';
 			onClick: 'return submitForm(this)';
-			callback: [selectedFilter contents isNil ifFalse: [ self addFilterForClass: selectedFilter contents ] ];	
+			callback: [ self addFilterForClass: selectedFilter contents ];	
 			with: 'Add'

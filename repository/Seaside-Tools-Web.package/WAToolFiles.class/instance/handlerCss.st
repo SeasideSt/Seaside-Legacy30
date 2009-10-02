@@ -32,7 +32,8 @@ a.wa-action, .groupContent a  {
 a.wa-action:hover, .groupContent a:hover {background:#fff}
 
 /* special */
-.smallLogo {border:2px solid #ccc; background: url(smallLogo.png) no-repeat; height:54px; width:100px};
+.smallLogo {border:2px solid #ccc; background: url(smallLogo.png) no-repeat; height:54px; width:100px}
+
 table.wa-config {width:100%;padding:0}
 table.wa-config td {padding:0px}
 .wa-config .topbar {background:#ccc;height:22px;padding:8px 2px 1px 3px}
@@ -47,8 +48,9 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 1ex;
 	font-weight: normal;
 }
-
+h1 {margin-top: 4px}
 h2,h3,h4 {margin:2px 0px}
+h2 {margin-bottom:0.5em}
 
 table {
 	border: 0;
@@ -57,7 +59,7 @@ table {
 
 .group {border:1px solid #c0c0c0;margin-bottom:6px;width:550px}
 .groupTitle {height:20px;font-size:1.2em;background:#eee;color:#01598d;padding-left:3px}
-.groupTitle .action {float:right;padding-right:4px}
+.groupTitle .action {float:right;padding-right:4px;white-space:nowrap}
 
 .groupContent {padding-left:4px;margin-top:6px; margin-bottom: 4px}
 
@@ -76,12 +78,29 @@ h1.logo a {
 }
 h1.title a { color: #01598d; }
 span.unspecified { color: #ff7000; }
-a.download {
+a.download, a.download:hover {
 	background: url(save.png) no-repeat;
 	background-position: 0 50%;
 	padding-left: 18px;
+	border:0px
 }
 
+a.help {background: url(help.png) no-repeat;
+	padding-left:16px;
+	border:0px}
+a.up {background: url(up.png) no-repeat;
+	padding-left:16px;
+	border:0px}
+a.down {background: url(down.png) no-repeat;
+	padding-left:16px;
+	border:0px}
+a.plus {background: url(plus.png) no-repeat;
+	padding-left:16px;
+	border:0px}
+a.minus {background: url(minus.png) no-repeat;
+	padding-left:16px;
+	border:0px}
+	
 /* walkback */
 .walkback th {
 	width: 150px;

@@ -1,3 +1,4 @@
 actions
 addFilterForClass: aFilterClass
- self handler addFilter: aFilterClass new 
+	aFilterClass isNil
+		ifFalse: [ self handler addFilter: aFilterClass new ]

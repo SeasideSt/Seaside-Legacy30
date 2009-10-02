@@ -9,7 +9,6 @@ renderContentOn: html
 			[ html heading
 				level2;
 				with: 'Configure attribute: ' , attribute key.
-			html break.
 			html form: 
 				[ self renderActionsOn: html.
 				html paragraph.
