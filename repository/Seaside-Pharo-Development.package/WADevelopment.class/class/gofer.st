@@ -7,5 +7,5 @@ gofer
 		ifNil: [ self error: 'Please install Gofer.' ].
 	gofer := goferClass new.
 	self packages 
-		do: [ :package | gofer add: package packageName ].
+		do: [ :package | gofer addPackage: package packageName ].
 	^ gofer
