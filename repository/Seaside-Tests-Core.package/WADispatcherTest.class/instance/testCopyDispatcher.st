@@ -5,7 +5,7 @@ testCopyDispatcher
 	
 	self deny: copy == handler.
 	self assert: copy defaultName = handler defaultName.
-	self assert: (self dispatcher: copy hasSameHandlersAs: handler).
+	self assert: copy handlers keys = handler handlers keys.
 	
 	copy handlers
 		do: [:each |
@@ -14,4 +14,4 @@ testCopyDispatcher
 			self deny: each == originalHandler.
 			each isDispatcher
 				ifTrue: [self
-						assert: (self dispatcher: each hasSameHandlersAs: originalHandler)]]
+						assert: each handlers keys = originalHandler handlers keys]]
