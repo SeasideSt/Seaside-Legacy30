@@ -1,0 +1,3 @@
+monticello-repositories
+defaultLGPLRepository
+	^ self seaside30LGPLRepository
