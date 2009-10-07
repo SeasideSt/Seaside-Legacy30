@@ -1,7 +1,9 @@
 decorations
 decorateWith: aDecoration during: aBlock
-	| val |
+	"Decorate the receiver with aDecoration during the execution of aBlock."
+
+	| result |
 	self addDecoration: aDecoration.
-	val := aBlock value.
+	result := aBlock value.
 	self removeDecoration: aDecoration.
-	^ val
+	^ result

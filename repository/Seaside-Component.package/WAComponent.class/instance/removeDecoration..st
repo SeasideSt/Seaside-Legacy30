@@ -1,12 +1,16 @@
 decorations
-removeDecoration: aDecoration
-	| dec |
-	dec := self decoration.
-	dec = aDecoration ifTrue:
-		[self decoration: dec next.
-		^ self].
+removeDecoration: aDecoration 
+	"Remove aDecoration from the chain of decorations. Answer nil if aDecoration is not present."
 
-	[dec notNil and: [ dec isDecoration ]] whileTrue:
-		[dec next = aDecoration
-			ifTrue: [dec setNext: aDecoration next.  ^ self]
-			ifFalse: [dec := dec next]]
+	| previous current |
+	previous := nil.
+	current := self decoration.
+	[ current = self ] whileFalse: [
+		current = aDecoration ifTrue: [
+			previous isNil
+				ifTrue: [ self decoration: current next ]
+				ifFalse: [ previous setNext: current next ].
+			^ aDecoration setNext: nil ].
+		previous := current.
+		current := current next ].
+	^ nil

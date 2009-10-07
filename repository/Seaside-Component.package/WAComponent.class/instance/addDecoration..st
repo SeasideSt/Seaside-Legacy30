@@ -1,5 +1,7 @@
 decorations
 addDecoration: aDecoration
+	"Add aDecoration to the receivers decoration chain. Answer the added decoration."
+	
 	| previous current |
 	previous := nil.
 	current := self decoration.
