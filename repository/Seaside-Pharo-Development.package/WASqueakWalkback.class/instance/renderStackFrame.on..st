@@ -13,6 +13,6 @@ renderStackFrame: aContext on: html
 			tempNamesAndValuesIn: aContext 
 			do: [ :name :value |
 				self 
-					renderObject: name
-					labelled: value
+					renderObject: value
+					labelled: name
 					on: html ] ]
