@@ -18,9 +18,9 @@ renderActionsOn: html
 				callback: [self collapsed: self collapsed not.
 						self collapsed ifTrue: [self showHelp: false ] ].
 			html space.
-			
-			html anchor
-				class: 'help';
-				title: 'Show / Hide Help';
-				callback: [self showHelp: self showHelp not.
-							self showHelp ifTrue: [self collapsed: false] ] ]
+			(self class helpTextFor: group) isNil ifFalse: [
+				html anchor
+					class: 'help';
+					title: 'Show / Hide Help';
+					callback: [self showHelp: self showHelp not.
+								self showHelp ifTrue: [self collapsed: false] ] ] ]

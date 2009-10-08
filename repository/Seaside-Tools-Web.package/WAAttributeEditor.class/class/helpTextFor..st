@@ -1,4 +1,4 @@
 accessing
 helpTextFor: group
  
-	^self helpTexts at: group ifAbsent: [ self defaultHelpText ]
+	^self helpTexts at: group ifAbsent: [ nil ]
