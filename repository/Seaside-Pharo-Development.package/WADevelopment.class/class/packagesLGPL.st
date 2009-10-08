@@ -1,4 +1,4 @@
 accessing
 packagesLGPL
-	"Answer a list of Seaside LGPL licensed packages as PackageInfo instances. Its a hack because only the description can be currently used to filter the LGPL packages"
-	^ ((GRPackage packages select: [:each | each description notNil and: [each description includesSubString: '(LGPL)'] ]) sortBy: [ :a :b | a name < b name ]) collect: [ :each | PackageInfo named: each name ]
+	"Answer a list of Seaside LGPL licensed packages as PackageInfo instances"
+	^ ((GRPackage packages select: [:each | each isLGPL ]) sortBy: [ :a :b | a name < b name ]) collect: [ :each | PackageInfo named: each name ]
