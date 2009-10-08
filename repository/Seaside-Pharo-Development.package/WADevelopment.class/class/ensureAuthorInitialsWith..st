@@ -10,7 +10,7 @@ ensureAuthorInitialsWith: aOneArgumentBlock
 			author := Smalltalk at: #Author.
 			author isNil
 				ifTrue: [ ^ self error: 'unsupported Pharo version' ].
-			author initialsPerSe isEmpty
+			author fullNamePerSe isEmpty
 				ifTrue: [ author initials: (aOneArgumentBlock value: 'Please enter your initials:') ] ]
 		ifFalse: [
 			Utilities authorInitialsPerSe isEmpty
