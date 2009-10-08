@@ -8,6 +8,7 @@
 	"instvars" : [
 		"name",
 		"description",
+		"license",
 		"dependencies"
 	],
 	"name" : "GRPackage",

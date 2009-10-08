@@ -1,0 +1,6 @@
+accessing
+license
+	"Answer the current license of this package, by default MIT is used"
+
+	license ifNil: [^#MIT].
+	^license 
