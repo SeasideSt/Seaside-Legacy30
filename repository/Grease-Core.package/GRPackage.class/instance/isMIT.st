@@ -1,3 +1,3 @@
 testing
 isMIT
-	^self license == #MIT
+	^ self license == #MIT

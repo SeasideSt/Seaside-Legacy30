@@ -1,3 +1,3 @@
 testing
 isLGPL
-	^self license == #LGPL
+	^ self license == #LGPL
