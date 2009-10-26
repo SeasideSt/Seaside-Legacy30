@@ -1,5 +1,6 @@
 public
-with: aBlock
+with: anObject
+	super with: anObject.
 	value isNil ifTrue: [value := Time now].
 	hours := value hour.
 	minutes := value minutes.

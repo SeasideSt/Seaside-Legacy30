@@ -1,5 +1,6 @@
 public
-with: aBlock
+with: anObject
+	super with: anObject.
 	value isNil ifTrue: [value := Date today].
 	day := value dayOfMonth.
 	month := value monthIndex.
@@ -7,4 +8,4 @@ with: aBlock
 	self options
 		do: [:each | self perform: ('render' , each asLowercase capitalized) asSymbol ]
 		separatedBy: [ canvas space ].
-	self addCallback
+	self addCallback 
