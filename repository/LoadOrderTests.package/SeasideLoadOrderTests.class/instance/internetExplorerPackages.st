@@ -2,6 +2,6 @@ packages
 internetExplorerPackages
 
 	^OrderedCollection new
-		add: seaside30 -> 'Seaside-InternetExplorer-lr.4.mcz';
-		add: seaside30 -> 'Seaside-Tests-InternetExplorer-mls.7.mcz';
+		add: seaside30 -> 'Seaside-InternetExplorer-jf.5.mcz';
+		add: seaside30 -> 'Seaside-Tests-InternetExplorer-jf.8.mcz';
 		yourself.

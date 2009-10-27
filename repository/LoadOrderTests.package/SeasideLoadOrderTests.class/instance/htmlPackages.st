@@ -2,6 +2,6 @@ packages
 htmlPackages
 
 	^OrderedCollection new
-		add: seaside30 -> 'Seaside-HTML5-pmm.6.mcz';
-		add: seaside30 -> 'Seaside-Tests-HTML5-lr.13.mcz';
+		add: seaside30 -> 'Seaside-HTML5-jf.7.mcz';
+		add: seaside30 -> 'Seaside-Tests-HTML5-jf.14.mcz';
 		yourself.

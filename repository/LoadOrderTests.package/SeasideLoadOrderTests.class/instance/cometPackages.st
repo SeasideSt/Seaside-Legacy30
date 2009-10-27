@@ -2,8 +2,8 @@ packages
 cometPackages
 
 	^OrderedCollection new
-		add: seaside30 -> 'Comet-Core-lr.38.mcz';
-		add: seaside30 -> 'Comet-Pharo-Core-lr.1.mcz';
-		add: seaside30 -> 'Comet-Tests-Core-jf.6.mcz';
-		add: seaside30 -> 'Comet-Examples-lr.13.mcz';
+		add: seaside30 -> 'Comet-Core-jf.42.mcz';
+		add: seaside30 -> 'Comet-Pharo-Core-jf.3.mcz';
+		add: seaside30 -> 'Comet-Tests-Core-jf.7.mcz';
+		add: seaside30 -> 'Comet-Examples-jf.14.mcz';
 		yourself.
