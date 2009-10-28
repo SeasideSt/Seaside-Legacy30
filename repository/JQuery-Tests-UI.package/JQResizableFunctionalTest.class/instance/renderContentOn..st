@@ -6,4 +6,4 @@ renderContentOn: html
 		url: (JQUiAllTestsLibrary urlOf: #seastarPng);
 		script: (html jQuery new resizable
 			onStop: (html jQuery ajax
-				triggerResizableSize: [ :value | size := value ]))
+				callbackResizable: [ :event | size := event at: #size ]))
