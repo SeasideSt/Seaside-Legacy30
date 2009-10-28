@@ -1,5 +1,7 @@
 *jquery-ui
-trigger: aBlock passengers: aQuery
+callback: aBlock passengers: aQuery
+	"Trigger the callback aBlock with the passengers of aQuery. Nodes that have no passenger are ignored."
+
 	self
 		callback: [ :value | 
 			aBlock value: (((value findTokens: $,)
