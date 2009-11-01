@@ -1,7 +1,7 @@
 load and test
 doLoadNewest
-	self cacheRepositories.
 	self askForTesting.
+	self cacheRepositories.
 	self groups do: [:aList | 
 		self 
 			loadNewestPackages: aList;

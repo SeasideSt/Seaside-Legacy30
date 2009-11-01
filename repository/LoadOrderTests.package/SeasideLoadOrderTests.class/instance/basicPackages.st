@@ -4,7 +4,7 @@ basicPackages
 	^OrderedCollection new
 		"Platform"
 		add: (Array 
-			with: seaside30 -> 'Grease-Core-lr.5.mcz'
+			with: seaside30 -> 'Grease-Core-lr.6.mcz'
 			with: seaside30 -> 'Grease-Pharo-Core-jf.1.mcz'
 			with: seaside30 -> 'Grease-Tests-Core-jf.1.mcz'
 			with: seaside30 -> 'Grease-Tests-Pharo-Core-jf.1.mcz');
