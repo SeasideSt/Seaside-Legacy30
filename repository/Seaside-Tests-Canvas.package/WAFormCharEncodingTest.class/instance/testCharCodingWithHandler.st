@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testCharCodingWithHandler
 	"445:WABasicFormTag does not honour character encoding setting"
 	self

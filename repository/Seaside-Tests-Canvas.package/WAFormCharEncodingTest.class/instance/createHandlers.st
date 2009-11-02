@@ -1,4 +1,4 @@
-as yet unclassified
+configuration
 createHandlers
 	| handler |
 	handler := WARequestHandler new.
