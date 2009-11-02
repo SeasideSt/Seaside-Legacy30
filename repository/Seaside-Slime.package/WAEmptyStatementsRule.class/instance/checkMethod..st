@@ -3,9 +3,7 @@ checkMethod: aContext
 	| periods position |
 	aContext parseTree nodesDo: [ :node |
 		node isSequence ifTrue: [
-			periods := OrderedCollection withAll: (node
-				propertyAt: #periods
-				ifAbsent: [ ^ self ]).
+			periods := OrderedCollection withAll: node periods.
 			1 to: node statements size - 1 do: [ :index |
 				position := periods removeFirst.
 				((node statements at: index) stop < position and: [ position < (node statements at: index + 1) start ])
