@@ -5,7 +5,7 @@ checkClass: aContext
 		ifTrue: [ ^ self ].
 	current := aContext selectedClass superclass.
 	superSelectors := OrderedCollection new.
-	[ current isNil ] whileTrue: [
+	[ current isNil ] whileFalse: [
 		classesAndSelectors
 			at: current name
 			ifPresent: [ :values | superSelectors addAll: values ].
