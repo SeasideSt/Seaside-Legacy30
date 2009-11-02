@@ -1,7 +1,7 @@
 initialization
 initialize
 	super initialize.
-	matcher := ParseTreeSearcher new.
+	matcher := RBParseTreeSearcher new.
 	matcher 
 		matches: '[ | `@temps | `@.statements ]'
 		do: [ :node :answer | 

@@ -1,7 +1,7 @@
 initialization
 initialize
 	super initialize.
-	matcher := ParseTreeSearcher new.
+	matcher := RBParseTreeSearcher new.
 	matcher 
 		matches: '`var'
 		do: [ :node :answer | 

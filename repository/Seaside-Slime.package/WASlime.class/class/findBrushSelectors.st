@@ -1,7 +1,7 @@
 private
 findBrushSelectors
 	| matcher result |
-	matcher := ParseTreeSearcher new.
+	matcher := RBParseTreeSearcher new.
 	matcher
 		matchesAnyMethodOf: #(
 			'`selector ^ self tag: `#tag'

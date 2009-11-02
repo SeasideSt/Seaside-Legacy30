@@ -4,10 +4,10 @@ initialize
 	self rewriteRule
 		replaceMethod: 'handleRequest: `aRequest | `@temps | `@.statements'
 		withValueFrom: [ :node |
-			ParseTreeRewriter new
+			RBParseTreeRewriter new
 				replace: node arguments first name with: 'aRequestContext';
 				executeTree: node.
-			ParseTreeRewriter new
+			RBParseTreeRewriter new
 				replace: 'aRequestContext' with: 'aRequestContext request';
 				executeTree: node body.
 			node

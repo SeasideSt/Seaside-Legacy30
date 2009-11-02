@@ -1,3 +1,3 @@
 *seaside-slime
 matcher
-	^ matcher ifNil: [ matcher := ParseTreeSearcher new ]
+	^ matcher ifNil: [ matcher := RBParseTreeSearcher new ]

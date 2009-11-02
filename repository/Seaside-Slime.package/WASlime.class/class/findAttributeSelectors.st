@@ -1,7 +1,7 @@
 private
 findAttributeSelectors
 	| matcher result |
-	matcher := ParseTreeSearcher new.
+	matcher := RBParseTreeSearcher new.
 	matcher
 		matchesAnyOf: #(
 			'self addClass: `@value'
