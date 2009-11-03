@@ -1,3 +1,3 @@
 accessing
 basePath
-	^ self baseUrl pathString
+	^ self url pathString

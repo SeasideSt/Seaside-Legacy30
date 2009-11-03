@@ -1,6 +1,6 @@
 accessing
 urlFor: aRequestHandler
-	^ self baseUrl
+	^ self url
 		addToPath: (handlers
 			keyAtValue: aRequestHandler
 			ifAbsent: [ WAUnregisteredHandlerError signal ]);

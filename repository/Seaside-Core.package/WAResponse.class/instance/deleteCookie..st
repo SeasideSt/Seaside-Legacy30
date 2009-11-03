@@ -7,7 +7,7 @@ deleteCookie: aCookie
 	pray the cookie has path information or was created without any."
 	
 	| path |
-	path := [ self requestContext handler baseUrl pathString ] 
+	path := [ self requestContext handler url pathString ] 
 		on: Error
 		do: [ :err | nil ].
 	self 
