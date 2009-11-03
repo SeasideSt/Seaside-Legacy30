@@ -1,0 +1,3 @@
+*seaside-environment
+defaultDispatcherName
+	^'seaside'
