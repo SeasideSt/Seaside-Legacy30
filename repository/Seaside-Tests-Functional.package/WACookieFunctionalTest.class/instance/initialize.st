@@ -1,5 +1,5 @@
 initialization
 initialize
 	super initialize.
-	self firstPath: self application baseUrl pathString.
-	self secondPath: self application baseUrl pathString.
+	self firstPath: self application url pathString.
+	self secondPath: self application url pathString.

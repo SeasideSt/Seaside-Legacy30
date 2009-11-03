@@ -2,7 +2,7 @@ rendering
 renderActionsOn: html 
 	html paragraph: 
 		[ html anchor
-			url: (self application baseUrl with: self class name);
+			url: (self application url with: self class name);
 			with: 'New Session'.
 		html break.
 		html anchor

@@ -2,4 +2,4 @@ private
 resetFirst
 	self firstKey: nil.
 	self firstValue: nil.
-	self firstPath: self application baseUrl pathString
+	self firstPath: self application url pathString
