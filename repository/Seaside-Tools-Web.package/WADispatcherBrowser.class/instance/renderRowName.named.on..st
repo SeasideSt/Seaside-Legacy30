@@ -7,5 +7,5 @@ renderRowName: anEntryPoint named: aString on: html
 				with: [ html code: aString , '/' ] ]
 		ifFalse: [
 			html anchor 
-				url: anEntryPoint basePath , '/'; 
+				url: anEntryPoint url; 
 				with: [ html code: aString ] ]

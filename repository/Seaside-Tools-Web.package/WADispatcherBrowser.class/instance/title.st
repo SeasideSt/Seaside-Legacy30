@@ -1,3 +1,3 @@
 accessing
 title
-	^ self dispatcher class description , ' at ' , self dispatcher basePath
+	^ self dispatcher class description , ' at ' , self dispatcher url pathString

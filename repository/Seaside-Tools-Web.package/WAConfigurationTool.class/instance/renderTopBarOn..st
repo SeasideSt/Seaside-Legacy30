@@ -9,7 +9,7 @@ renderTopBarOn: html
 					ifTrue: [
 							html anchor 
 								class: 'wa-action';
-								url: app basePath , '/'; 
+								url: app url; 
 								with: 'Open'.
 							html space. ] ].
 			((WADispatcherPlugin allSubclassesOn: app for: component)
