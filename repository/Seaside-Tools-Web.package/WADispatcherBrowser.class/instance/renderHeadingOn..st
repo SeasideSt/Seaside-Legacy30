@@ -8,5 +8,5 @@ renderHeadingOn: html
 			with: 'Seaside' ].
 	html heading class: 'title'; with: [
 		html anchor
-			url: self dispatcher baseUrl;
+			url: self dispatcher url;
 			with: self title ]
