@@ -1,7 +1,6 @@
-accessing
+deprecated
 baseUrl
-	| url |
-	url := super baseUrl.
-	jumpTo isNil
-		ifFalse: [ url fragment: jumpTo ].
-	^ url
+	self greaseDeprecatedApi: 'WASession>>#baseUrl'
+		details: 'Use WAApplication>>#url.'.
+	
+	^ self application url

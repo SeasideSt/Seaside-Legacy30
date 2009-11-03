@@ -1,3 +1,7 @@
 accessing
 url
-	^ self baseUrl
+	| url |
+	url := super url.
+	jumpTo isNil
+		ifFalse: [ url fragment: jumpTo ].
+	^ url
