@@ -11,7 +11,7 @@ describeOn: config
 		label: 'MIME Type';
 		comment: 'The media type of HTML documents reported to the browser.';
 		default: 'text/html'.
-	(config string: #resourceBaseUrl)
+	(config url: #resourceBaseUrl)
 		group: #server;
 		comment: 'Sets the base URL for URLS generated with #resourceUrl:'.
 	(config boolean: #sessionAllowTermination)
