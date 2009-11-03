@@ -1,4 +1,4 @@
-testing-exceptions
+tests
 testSignalNotification
 	"Exception>>signal is part of the ANSI Smalltalk standard. However, Seaside
 	only signals subclasses of WAPlatformError and WAPlatformNotification so Smalltalk

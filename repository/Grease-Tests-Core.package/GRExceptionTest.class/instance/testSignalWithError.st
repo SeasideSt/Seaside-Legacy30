@@ -1,13 +1,13 @@
-testing-exceptions
-testSignalWithNotification
+tests
+testSignalWithError
 	"Exception>>signal: is part of the ANSI Smalltalk standard. However, Seaside
 	only signals subclasses of WAPlatformError and WAPlatformNotification so Smalltalk
 	implementations that do not otherwise provide it can implement it on
 	these two classes."
 	| text |
-	text := 'Notification'.
-	[ GRNotification new signal: text ] 
-		on: GRNotification
+	text := 'Error!'.
+	[ GRError new signal: text ] 
+		on: GRError
 		do: 
 			[ :e | 
 			self assert: e messageText = text.

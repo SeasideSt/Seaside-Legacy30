@@ -1,4 +1,4 @@
-testing-exceptions
+tests
 testIsResumable
 	"Make sure the platform class provides #isResumable on Exception.
 	This test made a bit more complex by James Foster per issue #259

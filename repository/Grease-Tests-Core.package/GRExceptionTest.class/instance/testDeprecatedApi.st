@@ -1,4 +1,4 @@
-testing
+tests
 testDeprecatedApi
 	| exception seen |
 	exception := seen := nil.
