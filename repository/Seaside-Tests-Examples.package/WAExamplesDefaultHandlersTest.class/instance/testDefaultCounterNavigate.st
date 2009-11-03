@@ -8,7 +8,7 @@ testDefaultCounterNavigate
 	self deny: app isApplication.
 	self deny: app parent isNil.
 	self assert: app name = 'examples'.
-	self assert: app basePath = '/examples'.
+	self assert: app url pathString = '/examples'.
 	app := app entryPointAt: 'counter'.
 	self assert: app class == WAApplication.
 	self assert: app isApplication.
@@ -16,4 +16,4 @@ testDefaultCounterNavigate
 	self deny: app parent isNil.
 	self assert: app name = 'counter'.
 	self assert: app parent name = 'examples'.
-	self assert: app basePath = '/examples/counter'
+	self assert: app url pathString = '/examples/counter'
