@@ -1,7 +1,7 @@
 responding
 responseForLibraries
 	| title contents |
-	title := 'Index of ', handler basePath.
+	title := 'Index of ', handler url pathString.
 	contents := WARenderCanvas builder
 		fullDocument: true;
 		rootBlock: [ :html | html title: title ];
