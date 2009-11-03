@@ -7,4 +7,4 @@ testAllTests
 	self deny: app isDispatcher.
 	self deny: app parent isNil.
 	self assert: app name = 'alltests'.
-	self assert: app basePath = '/tests/alltests'
+	self assert: app url pathString = '/tests/alltests'
