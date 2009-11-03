@@ -2,7 +2,7 @@ testing
 testNewCookie
 	| cookie |
 	cookie := self requestContext newCookie.
-	self assert: cookie path = self application baseUrl pathString.
+	self assert: cookie path = self application url pathString.
 	self assert: cookie ports isNil.
 	self assert: cookie httpOnly.
 	self deny: cookie secure.

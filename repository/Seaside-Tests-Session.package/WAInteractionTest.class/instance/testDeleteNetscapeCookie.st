@@ -12,4 +12,4 @@ testDeleteNetscapeCookie
 	
 	self assert: (responseCookie isKindOf: WACookie).
 	self assert: responseCookie value = ''.
-	self assert: responseCookie path = self application baseUrl pathString
+	self assert: responseCookie path = self application url pathString
