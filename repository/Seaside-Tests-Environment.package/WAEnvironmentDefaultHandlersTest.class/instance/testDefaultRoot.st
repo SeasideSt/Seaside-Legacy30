@@ -8,4 +8,4 @@ testDefaultRoot
 	self deny: app isApplication.
 	self assert: app parent isNil.
 	self assert: app name = ''.
-	self assert: app basePath = '/'
+	self assert: app url pathString = '/'
