@@ -18,6 +18,7 @@ basicPackages
 		"Canvas"
 		add: (Array 
 			with: seaside30 -> 'Seaside-Canvas-obi.73.mcz'
+			with: seaside30 -> 'Seaside-Pharo-Canvas-jf.2.mcz'
 			with: seaside30 -> 'Seaside-Tests-Canvas-lr.38.mcz');
 		"Session"
 		add: (Array 
