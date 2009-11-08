@@ -4,7 +4,7 @@ checkClass: aContext
 	aContext selectedClass isMeta
 		ifTrue: [ ^ self ].
 	current := aContext selectedClass superclass.
-	superSelectors := OrderedCollection new.
+	superSelectors := Set new.
 	[ current isNil ] whileFalse: [
 		classesAndSelectors
 			at: current name
