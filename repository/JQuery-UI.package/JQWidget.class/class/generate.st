@@ -27,7 +27,7 @@ generate
 		" generate options "
 		matcher := '\{\{UIAPIPluginOption\|' asRegex.
 		matcher matchesIn: string do: [ :match |
-			tokens := string copyFrom: (matcher subEnd: 1) to: string size.
+			tokens := string copyFrom: (matcher subEnd: 1) first to: string size.
 			tokens := ((tokens readStream upToAll: '}}') findTokens: $|)
 				collect: [ :each | each withBlanksCondensed ].
 			argument := ((tokens at: 3)
@@ -47,7 +47,7 @@ generate
 		" generate events "
 		matcher := '\{\{(UIAPIPluginEvent|UIAPIPluginDatepickerEvent)\|' asRegex.
 		matcher matchesIn: string do: [ :match |
-			tokens := string copyFrom: (matcher subEnd: 1) to: string size.
+			tokens := string copyFrom: (matcher subEnd: 1) first to: string size.
 			dictionary := Dictionary new.
 			((tokens readStream upToAll: '}}') findTokens: $|) do: [ :each |
 				dictionary
@@ -68,7 +68,7 @@ generate
 		" generate methods "
 		matcher := '\{\{UIAPIPluginMethod\|' asRegex.
 		matcher matchesIn: string do: [ :match |
-			tokens := string copyFrom: (matcher subEnd: 1) to: string size.
+			tokens := string copyFrom: (matcher subEnd: 1) first to: string size.
 			Transcript show: class name; show: (tokens readStream upToAll: '}}'); cr; cr ].
 
 		" remove methods not present anymore "

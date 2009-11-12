@@ -1,5 +1,5 @@
 options-generated
 orientation: aString
-	"Normally you don't need to set this option because the plugin detects the slider orientation automatically. If the orientation is not correctly detected you can set this option to 'horizontal' or 'vertical'."
+	"This option determines whether the slider has the min at the left, the max at the right or the min at the bottom, the max at the top. Possible values: 'horizontal', 'vertical'."
 
 	self optionAt: 'orientation' put: aString
