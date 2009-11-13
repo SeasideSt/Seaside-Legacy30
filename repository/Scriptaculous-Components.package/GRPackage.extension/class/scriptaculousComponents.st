@@ -6,4 +6,5 @@ scriptaculousComponents
 		addDependency: 'Scriptaculous-Core';
 		addDependency: 'Seaside-Flow'; "Flow is used to implement #lightbox:"
 		addDependency: 'Seaside-Widgets';  "SUDatePicker subclasses WAMiniCalendar"
+		addDependency: 'Seaside-Component'; "WAComponent is extended"
 		yourself
