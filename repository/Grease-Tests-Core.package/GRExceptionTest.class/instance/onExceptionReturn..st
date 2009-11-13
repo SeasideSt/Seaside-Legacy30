@@ -2,6 +2,6 @@ private
 onExceptionReturn: anObject
 	[ GRError signal ]
 		on: GRError
-		do: [ ^ anObject ].
+		do: [:ex | ^ anObject ].
 	
 	^ self
