@@ -1,3 +1,3 @@
 accessing
 actionUrl: anObject
-	actionUrl := anObject ifNotNil: [ :object | object seasideUrl ]
+	actionUrl := anObject seasideUrl
