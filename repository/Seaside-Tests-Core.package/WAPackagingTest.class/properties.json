@@ -1,7 +1,7 @@
 {
-	"commentStamp" : "dkh 11/13/2009 14:55",
+	"commentStamp" : "dkh 11/13/2009 15:41",
 	"super" : "TestCase",
-	"category" : "Seaside-Tests-Core-Packaging",
+	"category" : "Seaside-Tests-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

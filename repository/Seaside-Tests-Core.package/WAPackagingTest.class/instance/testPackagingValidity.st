@@ -7,7 +7,7 @@ testPackagingValidity
 		GRPackage packages do: [:pkg | 
 			gr at: pkg name put: pkg ].
 		me := Dictionary new.
-		(cl project version: '3.0.0-alpha5.1') packages do: [:pkg | 
+		cl project currentVersion packages do: [:pkg | 
 			me at: pkg name put: pkg ].
 
 		"the following only apply when the system if fully loaded"
