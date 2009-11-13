@@ -4,5 +4,4 @@ seasideTestsPharoCore
 		name: 'Seaside-Tests-Pharo-Core';
 		addDependency: 'Seaside-Pharo-Core';
 		addDependency: 'Seaside-Tests-Core';
-		addDependency: 'Seaside-Tests-UTF8';
 		yourself
