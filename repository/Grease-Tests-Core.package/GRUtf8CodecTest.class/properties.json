@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "dkh 11/13/2009 15:27",
+	"super" : "TestCase",
+	"category" : "Grease-Tests-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GRUtf8CodecTest",
+	"type" : "normal"
+}
