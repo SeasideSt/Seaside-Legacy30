@@ -15,5 +15,5 @@ renderConfigurationOn: html
 						title: 'Configure selected file library';
 						class: 'large';
 						onClick: 'return submitForm(this)';
-						callback: [ selectedLib contents ~~ nil ifTrue: [self configureLibrary: selectedLib contents default ] ];	
+						callback: [ selectedLib contents isNil ifFalse: [self configureLibrary: selectedLib contents default ] ];	
 						with: 'Configure'] ] ] ]
