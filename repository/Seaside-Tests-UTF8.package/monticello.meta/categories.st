@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'Seaside-Tests-UTF8'!
+SystemOrganization addCategory: 'Seaside-Tests-UTF8'!
