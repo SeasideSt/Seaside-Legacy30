@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'Seaside-Tests-Functional'!
+SystemOrganization addCategory: 'Seaside-Tests-Functional'!
