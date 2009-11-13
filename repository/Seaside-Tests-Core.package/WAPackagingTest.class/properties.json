@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "dkh 11/13/2009 14:55",
 	"super" : "TestCase",
 	"category" : "Seaside-Tests-Core-Packaging",
 	"classinstvars" : [ ],

@@ -7,7 +7,7 @@ testPackagingValidity
 		GRPackage packages do: [:pkg | 
 			gr at: pkg name put: pkg ].
 		me := Dictionary new.
-		cl project currentVersion packages do: [:pkg | 
+		(cl project version: '3.0.0-alpha5.1') packages do: [:pkg | 
 			me at: pkg name put: pkg ].
 
 		"the following only apply when the system if fully loaded"
@@ -19,7 +19,7 @@ testPackagingValidity
 				gr keys do: [:key | me at: key ifAbsent: [ self assert: (exceptions includes: key) ]]].
 
 		exceptions := #('Seaside-FileSystem' 'Seaside-Swazoo' 'Seaside-Adaptors-Comanche' ).
-		grease := #('Seaside-Tests-Core' 'Seaside-Tests-Pharo-Continuation' 'Seaside-Core' 'Seaside-Pharo-Core' 'Seaside-Pharo-Flow' 'Seaside-Pharo-Continuation' 'Seaside-Slime' ).
+		grease := #('Seaside-Tests-Core' 'Seaside-Tests-Pharo-Continuation' 'Seaside-Core' 'Seaside-Pharo-Core' 'Seaside-Pharo-Flow' 'Seaside-Pharo-Continuation' 'Seaside-Slime' 'Seaside-GemStone-Flow' 'Seaside-GemStone-Continuation' 'Seaside-Tests-GemStone-Continuation' ).
 		me values do: [:pkg | | grPkg |
 			grPkg := gr at: pkg name ifAbsent: [].
 			grPkg ~~ nil
