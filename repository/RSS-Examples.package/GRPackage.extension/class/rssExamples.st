@@ -4,4 +4,5 @@ rssExamples
 		name: 'RSS-Examples';
 		description: 'Examples of how to use the "RSS-Core" package.';
 		addDependency: 'RSS-Core';
+		addDependency: 'Seaside-Tools-Core';
 		yourself
