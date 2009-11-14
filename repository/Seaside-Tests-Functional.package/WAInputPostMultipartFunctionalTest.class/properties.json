@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "dkh 11/12/2009 11:05",
+	"commentStamp" : "",
 	"super" : "WAFunctionalTest",
 	"category" : "Seaside-Tests-Functional",
 	"classinstvars" : [ ],
