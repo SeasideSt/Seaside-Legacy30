@@ -1,3 +1,3 @@
 accessing
 resourceUrl: anObject
-	resourceUrl := anObject seasideUrl
+	resourceUrl := anObject ifNotNil: [ :object | object seasideUrl ]

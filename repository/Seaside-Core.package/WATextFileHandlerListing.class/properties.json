@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "dkh 11/12/2009 11:00",
+	"commentStamp" : "",
 	"super" : "WAFileHandlerListing",
 	"category" : "Seaside-Core-Libraries",
 	"classinstvars" : [ ],
