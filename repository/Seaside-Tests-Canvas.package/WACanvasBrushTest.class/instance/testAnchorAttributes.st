@@ -23,4 +23,13 @@ testAnchorAttributes
 		gives: '<a target="_new"></a>'.
 	self
 		assert: [ :html | html anchor type: 'text/plain' ]
-		gives: '<a type="text/plain"></a>'
+		gives: '<a type="text/plain"></a>'.
+	self
+		assert: [ :html | html anchor document: 'income: 1$' mimeType: 'text/plain' fileName: 'taxes.txt' ]
+		gives: '<a type="text/plain" href="/?_key=1"></a>'.
+	self
+		assert: [ :html | html anchor document: 'income: 1$' mimeType: 'text/plain' ]
+		gives: '<a type="text/plain" href="/?_key=2"></a>'.
+	self
+		assert: [ :html | html anchor document: 'income: 1$' ]
+		gives: '<a href="/?_key=3"></a>'
