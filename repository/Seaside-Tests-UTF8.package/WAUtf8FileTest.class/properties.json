@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "WAContextTest",
+	"super" : "TestCase",
 	"category" : "Seaside-Tests-UTF8",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "WAUtf8UrlTest",
+	"instvars" : [
+		"file"
+	],
+	"name" : "WAUtf8FileTest",
 	"type" : "normal"
 }
