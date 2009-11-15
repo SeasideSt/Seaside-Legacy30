@@ -1,3 +1,3 @@
 parameters
 charSet
-	^self parameters at: 'charset'
+	^self parameters at: 'charset' ifAbsent: [ nil ]
