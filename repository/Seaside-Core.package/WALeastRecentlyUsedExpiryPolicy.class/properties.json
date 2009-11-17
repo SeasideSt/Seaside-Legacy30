@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "dkh 11/16/2009 14:47",
 	"super" : "WACacheExpiryPolicy",
 	"category" : "Seaside-Core-Cache",
 	"classinstvars" : [ ],
