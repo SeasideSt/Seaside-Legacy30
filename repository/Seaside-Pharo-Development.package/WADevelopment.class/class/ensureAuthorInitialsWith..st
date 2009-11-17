@@ -11,7 +11,7 @@ ensureAuthorInitialsWith: aOneArgumentBlock
 			author isNil
 				ifTrue: [ ^ self error: 'unsupported Pharo version' ].
 			author fullNamePerSe isEmpty
-				ifTrue: [ author initials: (aOneArgumentBlock value: 'Please enter your initials:') ] ]
+				ifTrue: [ author fullName: (aOneArgumentBlock value: 'Please enter your initials:') ] ]
 		ifFalse: [
 			Utilities authorInitialsPerSe isEmpty
 				ifTrue: [ Utilities setAuthorInitials: (aOneArgumentBlock value: 'Please enter your initials:') ] ]
