@@ -1,15 +1,6 @@
 rendering
 renderChildrenOn: html
+	"Standard version of child layout."
+	
 	html div id: 'content'; with: [
-		selected do: [ :each |
-			html heading: each key; render: each value.
-			each value testClass isNil ifFalse: [
-				html paragraph: [
-					html anchor
-						callback: [ self lightbox: (SUClassBrowser onClass: each value testClass) ];
-						with: 'Example source'.
-					each value coreClass isNil ifFalse: [
-						html break.
-						html anchor
-							callback: [ self lightbox: (SUClassBrowser onClass: each value coreClass) ];
-							with: 'Actual implementation' ] ] ] ] ]
+		selected do: [ :each | html heading: each key; render: each value ] ]

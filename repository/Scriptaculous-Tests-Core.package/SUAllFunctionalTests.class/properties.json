@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SUAllTests",
+	"category" : "Scriptaculous-Tests-Core-Functional",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SUAllFunctionalTests",
+	"type" : "normal"
+}
