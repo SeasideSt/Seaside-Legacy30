@@ -1,4 +1,5 @@
 updating
 updateUrl: aUrl
 	super updateUrl: aUrl.
-	aUrl addToPath: self selected class name
+	self selected notNil 
+		ifTrue: [ aUrl addToPath: self selected class name ]

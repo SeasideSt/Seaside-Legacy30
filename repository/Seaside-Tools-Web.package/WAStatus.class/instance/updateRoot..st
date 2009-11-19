@@ -1,4 +1,5 @@
 updating
 updateRoot: anHtmlRoot
 	super updateRoot: anHtmlRoot.
-	anHtmlRoot title: self selected title
+	self selected notNil 
+		ifTrue: [ anHtmlRoot title: self selected title ]
