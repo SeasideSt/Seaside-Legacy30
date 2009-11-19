@@ -11,7 +11,7 @@ renderContentOn: html
 						last := each.
 						html anchor
 							callback: [ each remove ];
-							with: each decoratedComponent trailName.
+							with: (each decoratedComponent perform: #trailName).
 						html span
 							class: 'separator';
 							with: self separator ] ] ].
@@ -19,4 +19,4 @@ renderContentOn: html
 				ifTrue: [ root ]
 				ifFalse: [ last delegate ].
 			(selected respondsTo: #trailName) ifTrue: [
-				html text: selected trailName ] ]
+				html text: (selected perform: #trailName) ] ]
