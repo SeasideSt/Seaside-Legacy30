@@ -1,4 +1,6 @@
 behavior
 selectFirst
-	"Selects tthe first added component as active."
-	self select: components first key
+	"Selects the first added component as active."
+	
+	components notEmpty
+		ifTrue: [ self select: components first key ]
