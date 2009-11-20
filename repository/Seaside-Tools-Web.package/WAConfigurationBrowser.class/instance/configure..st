@@ -3,6 +3,5 @@ configure: aHandler
 	self selection: aHandler.
 	self editor home.
 	(self editor activeComponent isKindOf: WADispatcherEmptyPage)
-		ifFalse: [self setEmptyPage].
-	^self call: aHandler configurationComponent.
-
+		ifFalse: [ self setEmptyPage ].
+	self show: aHandler configurationComponent
