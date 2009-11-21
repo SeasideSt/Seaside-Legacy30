@@ -5,8 +5,12 @@ renderCommands: anItem on: html
 		with: 'Tree'.
 	html text: ' '.
 	html anchor
-		callback: [ message := anItem leaves ];
-		with: 'Leaves'.
+		callback: [ message := anItem leavesByTime ];
+		with: 'Leaves (time)'.
+		html text: ' '.
+	html anchor
+		callback: [ message := anItem leavesBySends ];
+		with: 'Leaves (sends)'.
 	html text: ' '.
 	html anchor
 		callback: [ message := anItem stats ];
