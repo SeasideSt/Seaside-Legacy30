@@ -1,6 +1,3 @@
 actions
 send
-	GRPlatform current 
-		deliverMailFrom: self from greaseString
-		to: self receipents
-		text: self plainMessage
+	GRPlatform current seasideDeliverEmailMessage: self
