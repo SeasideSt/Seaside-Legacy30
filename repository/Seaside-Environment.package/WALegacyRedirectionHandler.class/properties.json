@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WAOldPathComptibilityRequestHandler",
+	"name" : "WALegacyRedirectionHandler",
 	"type" : "normal"
 }
