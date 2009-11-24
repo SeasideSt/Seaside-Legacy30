@@ -1,18 +1,16 @@
 rendering
 renderTopBarOn: html
-	| app |
+	| handler |
 	html div class: 'topbar';
 		with: [
-			app := component selection.
-			app isNil ifFalse: [
-				app isApplication 
-					ifTrue: [
-							html anchor 
-								class: 'wa-action';
-								url: app url; 
-								with: 'Open'.
-							html space. ] ].
-			((WADispatcherPlugin allSubclassesOn: app for: component)
+			handler := component selection.
+			handler isNil ifFalse: [
+				html anchor 
+					class: 'wa-action';
+					url: handler url; 
+					with: 'Open'.
+				html space ].
+			((WADispatcherPlugin allSubclassesOn: handler for: component)
 				select: [ :each | each isActive ])
 					do: [ :each | html render: each ]
 					separatedBy: [ html space] ]
