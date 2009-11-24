@@ -1,3 +1,3 @@
 accessing
 children
-	^ Array with: filterEditor
+	^ Array with: filterEditor with: configurationEditor

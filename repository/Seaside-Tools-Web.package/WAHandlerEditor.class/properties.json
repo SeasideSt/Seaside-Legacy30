@@ -7,7 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"handler",
-		"filterEditor"
+		"filterEditor",
+		"configurationEditor"
 	],
 	"name" : "WAHandlerEditor",
 	"type" : "normal"

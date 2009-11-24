@@ -4,7 +4,7 @@ initializeOn: aUserConfiguration
 	WASystemConfiguration clearAllDescriptions.
 	configuration := aUserConfiguration.
 	groups := OrderedCollection new.
-	groups add: (WAAncestryAttributeEditor new configuration: configuration; group: #ancestry; parent: self ; yourself).
+	groups add: (WAAncestryAttributeEditor new configuration: configuration; group: #inheritedConfiguration; parent: self ; yourself).
 	groups addAll: 
 		(self groupedAttributes collect: [ :association |
 				WAConfigAttributeEditor new
