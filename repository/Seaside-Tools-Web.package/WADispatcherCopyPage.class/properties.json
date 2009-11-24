@@ -7,7 +7,7 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"name",
-		"dispatcher"
+		"handler"
 	],
 	"name" : "WADispatcherCopyPage",
 	"type" : "normal"

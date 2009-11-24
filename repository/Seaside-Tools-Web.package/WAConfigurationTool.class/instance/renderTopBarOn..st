@@ -1,16 +1,18 @@
 rendering
-renderTopBarOn: html
+renderTopBarOn: html 
 	| handler |
-	html div class: 'topbar';
-		with: [
-			handler := component selection.
-			handler isNil ifFalse: [
-				html anchor 
+	html div
+		class: 'topbar';
+		with: 
+			[ handler := component selection.
+			handler isNil ifFalse: 
+				[ html anchor
 					class: 'wa-action';
-					url: handler url; 
+					url: handler url;
 					with: 'Open'.
 				html space ].
-			((WADispatcherPlugin allSubclassesOn: handler for: component)
-				select: [ :each | each isActive ])
-					do: [ :each | html render: each ]
-					separatedBy: [ html space] ]
+			((WAConfigurationToolPlugin 
+				allSubclassesOn: handler
+				for: component) select: [ :each | each isActive ]) 
+				do: [ :each | html render: each ]
+				separatedBy: [ html space ] ]
