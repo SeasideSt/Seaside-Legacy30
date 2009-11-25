@@ -1,3 +1,3 @@
 actions
 execute
-	self open: (WAPluggableTool on: (WAViewer on: self target))
+	self open: (WAPluggableTool on: (WAViewer on: self root))
