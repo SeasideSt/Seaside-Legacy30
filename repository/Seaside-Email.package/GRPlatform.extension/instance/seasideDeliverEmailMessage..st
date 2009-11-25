@@ -1,4 +1,4 @@
 *seaside-email
 seasideDeliverEmailMessage: aWAEmailMessage
 
-	self subclassResposibility
+	self subclassResponsibility
