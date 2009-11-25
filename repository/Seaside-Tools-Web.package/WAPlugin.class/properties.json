@@ -6,7 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"target",
 		"requestor"
 	],
 	"name" : "WAPlugin",
