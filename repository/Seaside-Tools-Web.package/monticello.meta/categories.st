@@ -1,1 +1,1 @@
-SystemOrganization addCategory: 'Seaside-Tools-Web'!
+SystemOrganization addCategory: #'Seaside-Tools-Web'!

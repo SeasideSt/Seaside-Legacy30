@@ -5,6 +5,6 @@ renderRowExpand: anEntryPoint  on: html
 		ifTrue: [
 			html anchor
 				title: 'Open children handlers';
-				callback: [ self expand: anEntryPoint ];
+				callback: [ self expand: anEntryPoint; selectFirst  ];
 				with:  '+'.]
 		ifFalse: []

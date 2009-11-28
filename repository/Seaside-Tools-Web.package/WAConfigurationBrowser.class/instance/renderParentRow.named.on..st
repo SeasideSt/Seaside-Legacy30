@@ -4,7 +4,7 @@ renderParentRow: anEntryPoint named: aString on: html
 		html tableData.
 		html tableData: [html anchor
 								title: 'Open parent handler';
-								callback: [ self expand: anEntryPoint ];
+								callback: [ self expand: anEntryPoint parent; configure: anEntryPoint  ];
 								with: [ html code: aString ] ].
 		html tableData.
 		html tableData]
