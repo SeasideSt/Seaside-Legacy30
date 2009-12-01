@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'Seaside-Flow'!
+SystemOrganization addCategory: 'Seaside-Flow'!
