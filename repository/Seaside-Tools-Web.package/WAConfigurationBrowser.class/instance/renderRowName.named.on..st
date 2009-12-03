@@ -5,5 +5,5 @@ renderRowName: anEntryPoint named: aString on: html
 		callback: [ self configure: anEntryPoint ];
 		with: [
 			anEntryPoint isDispatcher
-				ifTrue: [	 html  text: '/'  , aString]
+				ifTrue: [	 html  text: aString , '/' ]
 				ifFalse: [ html text: aString ] ]
