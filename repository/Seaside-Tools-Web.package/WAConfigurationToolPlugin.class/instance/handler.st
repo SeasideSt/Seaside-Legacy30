@@ -1,4 +1,3 @@
 accessing
 handler
-
-	^handler
+	^ handler
