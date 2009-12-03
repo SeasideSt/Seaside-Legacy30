@@ -7,7 +7,7 @@ initialize
 		do: [ :node :answer | 
 			| found |
 			found := false.
-			(answer isNil and: [ node isInlined not and: [ node parent isMessage ] ]) ifTrue: [
+			(answer isNil and: [ node parent isMessage ]) ifTrue: [
 				((self selectors includes: node parent selector) 
 					or: [ (WASlime brushSelectors includes: node parent selector)
 					or: [ (WASlime attributeSelectors includes: node parent selector)

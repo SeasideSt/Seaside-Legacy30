@@ -5,8 +5,7 @@ initialize
 	classesAndSelectors
 		at: #WAObject put: #( initialize postCopy );
 		at: #WAPainter put: #( updateRoot: updateUrl: );
-		at: #WAPresenter put: #( updateStates: );
-		at: #WADecoration put: #( renderContentOn: );
+		at: #WAPresenter put: #( updateStates: initialRequest: );
 		at: #WABrush put: #( setParent:canvas: with: );
 		at: #WATagBrush put: #( before after openTag closeTag );
 		at: #WARequestFilter put: #( handleFiltered: updateStates: );
