@@ -1,4 +1,4 @@
-testing
+testing-effects
 testSlideUp
 	self 
 		assert: (self target slideUp: 'slow')

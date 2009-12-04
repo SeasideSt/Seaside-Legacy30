@@ -1,4 +1,4 @@
-testing
+testing-effects
 testFadeOut
 	self 
 		assert: (self target fadeOut: 5 seconds)

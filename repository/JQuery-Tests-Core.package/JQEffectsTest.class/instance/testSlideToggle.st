@@ -1,4 +1,4 @@
-testing
+testing-effects
 testSlideToggle
 	self 
 		assert: (self target slideToggle: 'slow')
