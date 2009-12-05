@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "JQFunctionalTest",
+	"category" : "JQuery-Tests-Core-Functional",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "JQEffectsFunctionalTest",
+	"type" : "normal"
+}

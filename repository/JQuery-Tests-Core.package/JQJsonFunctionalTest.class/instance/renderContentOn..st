@@ -5,5 +5,5 @@ renderContentOn: html
 		addLoadScript: (html jQuery getJson
 			url: 'http://api.flickr.com/services/feeds/photos_public.gne?tags=seaside&format=json&jsoncallback=?';
 			onComplete: '$.each(arguments[0].items, function(index, each) {
-				$("<img/>").attr("src", each.media.m).appendTo("#images");
+				$("<img/>").attr("src", each.media.m).attr("title", each.title).appendTo("#images");
 			});')

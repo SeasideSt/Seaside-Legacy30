@@ -1,3 +1,3 @@
 accessing
 title
-	^ 'Ajax updating'
+	^ 'Repeated Ajax Calls'

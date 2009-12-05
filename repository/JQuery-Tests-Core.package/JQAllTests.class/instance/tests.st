@@ -8,4 +8,5 @@ tests
 			with: 'Counter' -> JQCounterFunctionalTest new
 			with: 'Repeating' -> JQRepeatingFunctionalTest new)
 		with: 'Other' -> (Array
+			with: 'Effect' -> JQEffectsFunctionalTest new
 			with: 'Animate' -> JQAnimateFunctionalTest new)

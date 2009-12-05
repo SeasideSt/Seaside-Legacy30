@@ -48,4 +48,7 @@ h1, h2, h3, h4, h5, h6 { border: 0; margin: 0; font-weight: normal; letter-spaci
 #content .main .code .wa-tag { font-weight: bold; color: purple; }
 #content .main .code .wa-attribute-key { font-weight: bold; color: black; }
 #content .main .code .wa-attribute-value { color: blue; }
-#content .main .code .wa-attribute-value a { color: blue; text-decoration: underline; }'
+#content .main .code .wa-attribute-value a { color: blue; text-decoration: underline; }
+
+.actions a { padding-right: 1em; }
+#seastar { position: relative; }'

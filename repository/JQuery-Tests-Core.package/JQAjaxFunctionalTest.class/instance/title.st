@@ -1,3 +1,3 @@
 accessing
 title
-	^ 'Ajax and DOM manipulation'
+	^ 'Ajax and DOM Manipulation'

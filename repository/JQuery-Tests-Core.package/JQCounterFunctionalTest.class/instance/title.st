@@ -1,3 +1,3 @@
 accessing
 title
-	^ 'Counting up and down'
+	^ 'Counting Up and Down'
