@@ -12,7 +12,4 @@ defaultUiCss
 
 /* box */
 .pack { position: relative; height: 110px; }
-.box { float: left; width: 100px; height: 100px; margin-right: 1em; }
-
-/* actions */
-.actions a { padding-right: 0.5em; }'
+.box { float: left; width: 100px; height: 100px; margin-right: 1em; }'
