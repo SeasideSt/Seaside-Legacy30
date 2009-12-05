@@ -11,4 +11,4 @@ renderExplanationOn: html
 		html listItem: 'Copy and paste it into the urlencoded text field below and click the submit button.'.
 		html listItem: 'The text should be displayed below "Input", "Parameter" and "Path" without any error.'.
 		html listItem: 'The text may appear in the address bar of the browser.'.
-		html listItem: 'Repeat this process for the multipart field. Make sure to pick at least every of these languages: German, Czech, Korean.' ]
+		html listItem: 'Repeat this process. Make sure to pick at least every of these languages: German, Czech, Korean.' ]
