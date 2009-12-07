@@ -1,5 +1,5 @@
 tests
-testSeasideString
+testGreaseString
 	| version |
 	version := WAHttpVersion 
 		major: 1
