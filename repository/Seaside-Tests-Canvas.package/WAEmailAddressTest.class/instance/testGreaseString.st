@@ -1,5 +1,5 @@
 testing
-testSeasideString
+testGreaseString
 	| address |
 	address := WAEmailAddress 
 		address: 'philippe.marschall@gmail.com'
