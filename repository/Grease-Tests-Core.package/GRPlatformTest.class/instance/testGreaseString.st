@@ -1,5 +1,5 @@
 testing
-testSeasideString
+testGreaseString
 	self assert: 'Timberwolf' greaseString = 'Timberwolf'.
 	self assert: #DireWolf greaseString = 'DireWolf'.
 	self assert: true greaseString = 'true'.
