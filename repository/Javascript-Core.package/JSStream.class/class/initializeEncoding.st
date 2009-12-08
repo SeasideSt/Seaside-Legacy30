@@ -4,7 +4,7 @@ initializeEncoding
 	printer := GRNumberPrinter new.
 	printer base: 16; padding: $0; digits: 2.
 	JavascriptCharacters := Array new: 127.
-	0 to: 31do: [ :index | 
+	0 to: 31 do: [ :index | 
 		JavascriptCharacters 
 			at: index + 1
 			put: '\x' , (printer print: index) ].
