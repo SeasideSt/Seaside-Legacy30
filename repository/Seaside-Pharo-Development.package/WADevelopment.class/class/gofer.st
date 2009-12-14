@@ -7,9 +7,8 @@ gofer
 	goferClass := (Smalltalk classNamed: #Gofer)
 		ifNil: [ self error: 'Please install Gofer.' ].
 	gofer := goferClass new.
+	gofer repository: self defaultRepository.
 	GRPackage packages do: [ :package |
-		gofer repository: (package isMIT
-			ifTrue: [ self defaultRepository ]
-			ifFalse: [ self defaultLGPLRepository ]).
-		gofer addPackage: package name ].
+		package isMIT 
+			ifTrue: [ gofer package: package name ] ].
 	^ gofer
