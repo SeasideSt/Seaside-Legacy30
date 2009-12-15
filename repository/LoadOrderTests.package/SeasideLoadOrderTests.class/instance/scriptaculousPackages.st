@@ -3,7 +3,7 @@ scriptaculousPackages
 
 	^OrderedCollection new
 		add: seaside30 -> 'Scriptaculous-Core-jf.93.mcz';
-		add: seaside30 -> 'Scriptaculous-Tests-Core-jf.38.mcz';
-		add: seaside30 -> 'Scriptaculous-Components-jf.91.mcz';
-		add: seaside30 -> 'Scriptaculous-Tests-Components-jf.26.mcz';
+		add: seaside30 -> 'Scriptaculous-Tests-Core-dkh.39.mcz';
+		add: seaside30 -> 'Scriptaculous-Components-dkh.92.mcz';
+		add: seaside30 -> 'Scriptaculous-Tests-Components-dkh.27.mcz';
 		yourself.

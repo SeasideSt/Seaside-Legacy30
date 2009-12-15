@@ -4,26 +4,26 @@ traditionalPackages
 	^OrderedCollection new
 		"Functional Tests"	
 		add: (Array 
-			with: seaside30 -> 'Seaside-Tests-Functional-jf.91.mcz'
-			with: seaside30 -> 'Seaside-Tests-Pharo-Functional-jf.6.mcz');
+			with: seaside30 -> 'Seaside-Tests-Functional-pmm.95.mcz'
+			with: seaside30 -> 'Seaside-Tests-Pharo-Functional-dkh.7.mcz');
 		"Continuations"
 		add: (Array 
 			with: seaside30 -> 'Seaside-Pharo-Continuation-lr.4.mcz'
 			with: seaside30 -> 'Seaside-Tests-Pharo-Continuation-lr.4.mcz');
 		"Flow"
 		add: (Array 
-			with: seaside30 -> 'Seaside-Flow-jf.16.mcz'
+			with: seaside30 -> 'Seaside-Flow-dkh.18.mcz'
 			with: seaside30 -> 'Seaside-Pharo-Flow-jf.3.mcz'
 			with: seaside30 -> 'Seaside-Tests-Flow-jf.20.mcz');
 		"WebTools"
 		add: (Array 
-			with: seaside30 -> 'Seaside-Tools-Web-jf.53.mcz'
+			with: seaside30 -> 'Seaside-Tools-Web-lr.65.mcz'
 			with: seaside30 -> 'Seaside-Pharo-Tools-Web-jf.6.mcz'
 			with: seaside30 -> 'Seaside-Tests-Tools-Web-jf.11.mcz');
 		"Development"
 		add: (Array 
-			with: seaside30 -> 'Seaside-Development-jf.121.mcz'
-			with: seaside30 -> 'Seaside-Pharo-Development-jf.20.mcz'
+			with: seaside30 -> 'Seaside-Development-dkh.122.mcz'
+			with: seaside30 -> 'Seaside-Pharo-Development-lr.26.mcz'
 			with: seaside30 -> 'Seaside-Tests-Development-jf.32.mcz'
 			with: seaside30 -> 'Seaside-Tests-Pharo-Development-jf.3.mcz');
 		"Examples"

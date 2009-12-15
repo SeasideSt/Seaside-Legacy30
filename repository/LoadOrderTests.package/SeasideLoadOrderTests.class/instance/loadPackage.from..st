@@ -11,7 +11,7 @@ loadPackage: aString from: aRepository
 	] ensure: [
 		Transcript := transcript.
 	].
-	self reportToTranscript: stream contents.
+	false ifTrue: [self reportToTranscript: stream contents].
 	repositoryGroup := version workingCopy repositoryGroup.
 	repositoryGroup addRepository: aRepository.
 	Transcript cr; show: 'Loaded ' , aString.
