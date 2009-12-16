@@ -5,7 +5,7 @@ checkClass: aContext
 			[ (aContext selectedClass includesBehavior: GRObject) not and: 
 				[ (aContext selectedClass includesBehavior: GRNotification) not and: 
 					[ (aContext selectedClass includesBehavior: GRError) not and: 
-						[ aContext selectedClass class methodDict noneSatisfy: 
+						[ aContext selectedClass class methodDictionary noneSatisfy: 
 							[ :each | 
 							matcher 
 								executeTree: each parseTree
