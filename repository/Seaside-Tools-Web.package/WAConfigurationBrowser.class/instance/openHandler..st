@@ -4,5 +4,5 @@ openHandler: aHandler
 		ifFalse: [
 			self selection: aHandler.
 			aHandler isDispatcher
-				ifTrue: [self dispatcher: aHandler.]
-				ifFalse: [self dispatcher: aHandler parent. self editor: aHandler configurationComponent ] ]
+				ifTrue: [self dispatcher: aHandler ]
+				ifFalse: [self dispatcher: aHandler parent ] ]
