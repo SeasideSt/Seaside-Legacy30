@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "dkh 11/19/2009 11:05",
+	"commentStamp" : "",
 	"super" : "GRError",
 	"category" : "Seaside-Core-Exceptions",
 	"classinstvars" : [ ],
