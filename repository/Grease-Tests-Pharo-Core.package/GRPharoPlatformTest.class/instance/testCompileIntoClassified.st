@@ -1,4 +1,4 @@
-testing
+tests
 testCompileIntoClassified
 	| source protocol selectors selector |
 	source := 'aMethod

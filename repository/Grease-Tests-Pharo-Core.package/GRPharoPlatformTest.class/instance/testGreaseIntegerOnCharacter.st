@@ -1,4 +1,4 @@
-testing
+tests
 testGreaseIntegerOnCharacter
 	| character |
 	character := Character codePoint: 19982.

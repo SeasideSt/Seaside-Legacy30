@@ -1,4 +1,4 @@
-testing
+tests
 testConvertToSmalltalkNewlines
 	| expected euro |
 	expected := 'selector' , String cr , '"comment"'.
