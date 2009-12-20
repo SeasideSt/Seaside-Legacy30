@@ -5,5 +5,7 @@ arguments
 	speed isNil
 		ifFalse: [ result addLast: speed ].
 	complete isNil
-		ifFalse: [ result addLast: complete ].
+		ifFalse: [
+			speed isNil ifTrue: [ result addLast: '' ].
+			result addLast: complete ].
 	^ result
