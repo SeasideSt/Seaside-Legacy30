@@ -1,11 +1,11 @@
 private
 arguments
 	| result |
-	result := OrderedCollection with: effect with: options.
-	speed isNil
+	result := OrderedCollection with: effect.
+	(options isEmpty and: [ speed isNil and: [ complete isNil ]])
+		ifFalse: [ result addLast: options ].
+	(speed isNil and: [ complete isNil ])
 		ifFalse: [ result addLast: speed ].
-	complete isNil
-		ifFalse: [
-			speed isNil ifTrue: [ result addLast: '' ].
-			result addLast: complete ].
+	(complete isNil)
+		ifFalse: [ result addLast: complete ].
 	^ result
