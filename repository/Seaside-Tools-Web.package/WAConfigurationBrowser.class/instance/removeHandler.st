@@ -5,6 +5,6 @@ removeHandler
 	aDispatcher unregister: self selection.
 	aDispatcher handlers isEmpty
 		ifTrue: [
-				aDispatcher := self dispatcher.
-				self expand: aDispatcher parent; configure: aDispatcher ]
-		ifFalse: [self selectFirst]
+			aDispatcher := self dispatcher.
+			self expand: aDispatcher parent; configure: aDispatcher ]
+		ifFalse: [ self selectFirst ]

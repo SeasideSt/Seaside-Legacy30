@@ -1,3 +1,3 @@
 accessing
 children
-	^Array with: editor
+	^ Array with: editor
