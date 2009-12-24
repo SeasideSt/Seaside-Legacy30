@@ -1,3 +1,3 @@
 printing
-printContentOn: aStream
+javascriptContentOn: aStream
 	aStream nextPutAll: FunctionName
