@@ -1,4 +1,4 @@
 printing
-printContentOn: aStream
+javascriptContentOn: aStream
 	self printPrototypeOn: aStream.
 	self printArgumentsOn: aStream
