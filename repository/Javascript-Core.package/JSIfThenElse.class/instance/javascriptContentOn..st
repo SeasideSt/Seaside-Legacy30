@@ -1,7 +1,7 @@
 printing
-printContentOn: aStream
+javascriptContentOn: aStream
 	aStream nextPut: $(.
-	super printContentOn: aStream.
+	super javascriptContentOn: aStream.
 	aStream nextPut: $?.
 	aStream javascript: self trueStatement.
 	aStream nextPut: $:.

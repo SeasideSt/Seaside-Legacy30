@@ -11,4 +11,4 @@ script: aBlock on: aStream
 			yourself.
 		aBlock value: script.
 		script addAll: document loadScripts ].
-	script printOn: aStream
+	script javascriptOn: aStream

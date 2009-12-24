@@ -1,3 +1,4 @@
 printing
 printOn: aStream
-	self decoration printContentOn: aStream
+	super printOn: aStream.
+	aStream nextPutAll: ' ('; javascript: self; nextPut: $)

@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "pmm 8/30/2009 18:59",
 	"super" : "JSStream",
-	"category" : "Javascript-Core-Object",
+	"category" : "Javascript-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

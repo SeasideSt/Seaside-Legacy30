@@ -1,3 +1,3 @@
 printing
-printEmptyOn: aStream
+javascriptEmptyOn: aStream
 	aStream nextPutAll: '""'
