@@ -1,3 +1,3 @@
 accessing
 group
-	^ 'Seaside 2.9'
+	^ 'Seaside 3.0'
