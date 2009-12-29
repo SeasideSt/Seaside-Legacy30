@@ -4,9 +4,9 @@ triggerTree: aString callback: aBlock
 	self
 		callback: [ :values |
 			aBlock value: (Array streamContents: [ :stream |
-				(values findTokens: ',') do: [ :token |
+				(values subStrings: ',') do: [ :token |
 					| pair |
-					pair := (token findTokens: ':')
+					pair := (token subStrings: ':')
 						collect: [ :each | self renderContext callbacks passengerAt: each ifAbsent: [ nil ] ].
 					pair size = 2
 						ifTrue: [ stream nextPut: pair first -> pair second ] ] ]) ]
