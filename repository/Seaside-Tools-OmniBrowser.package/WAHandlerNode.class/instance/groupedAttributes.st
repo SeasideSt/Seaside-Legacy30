@@ -3,7 +3,7 @@ groupedAttributes
 	| groups attributes |
 	groups := Dictionary new.
 	attributes := OrderedCollection new.
-	handler configuration allAttributes valuesDo: [ :each |
+	handler configuration allAttributes do: [ :each |
 		(groups
 			at: each group
 			ifAbsentPut: [ SortedCollection sortBlock: [:a :b | a key <= b key ] ])
