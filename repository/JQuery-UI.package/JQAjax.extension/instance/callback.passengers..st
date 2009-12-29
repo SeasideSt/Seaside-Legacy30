@@ -4,7 +4,7 @@ callback: aBlock passengers: aQuery
 
 	self
 		callback: [ :value | 
-			aBlock value: (((value findTokens: $,)
+			aBlock value: (((value subStrings: ',')
 				collect: [ :each | self renderContext callbacks passengerAt: each ])
 				reject: [ :each | each isNil ]) ]
 		value: (JSStream on: JQuery functionName , '.map(' , aQuery greaseString , '.get(),function(each){return each.id}).join(",")')
