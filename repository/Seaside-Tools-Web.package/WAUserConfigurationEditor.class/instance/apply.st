@@ -1,2 +1,2 @@
 actions
-save
+apply

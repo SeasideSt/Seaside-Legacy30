@@ -1,6 +1,7 @@
 initialization
 initializeOn: aUserConfiguration
 	self initialize.
+	dialog := true.
 	WASystemConfiguration clearAllDescriptions.
 	configuration := aUserConfiguration.
 	groups := OrderedCollection new.

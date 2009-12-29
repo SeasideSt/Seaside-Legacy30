@@ -1,4 +1,4 @@
 actions
 emptyPage
 	self selection: nil.
-	self editor home.
+	self editor home

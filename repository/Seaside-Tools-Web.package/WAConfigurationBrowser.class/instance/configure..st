@@ -1,7 +1,9 @@
 actions
 configure: aHandler
+	| configComponent |
 	self selection: aHandler.
 	self editor home.
-	(self editor activeComponent isKindOf: WADispatcherEmptyPage)
-		ifFalse: [ self setEmptyPage ].
-	self show: aHandler configurationComponent
+	configComponent := aHandler configurationComponent.
+	configComponent editor isNil 
+		ifFalse: [ configComponent editor beComponent ].
+	self show: configComponent
