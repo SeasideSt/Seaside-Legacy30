@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "WAExceptionFunctionalTest",
+	"super" : "WADelegationFunctionalTest",
 	"category" : "Seaside-Tests-Flow-Functional",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WAFlowErrorFunctionalTest",
+	"name" : "WAFlowDelegationFunctionalTest",
 	"type" : "normal"
 }

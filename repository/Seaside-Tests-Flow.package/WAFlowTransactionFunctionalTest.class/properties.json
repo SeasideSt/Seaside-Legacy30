@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "pmm 9/2/2007 00:08",
+	"super" : "WAFunctionalTest",
+	"category" : "Seaside-Tests-Flow-Functional",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"nestedTransaction"
+	],
+	"name" : "WAFlowTransactionFunctionalTest",
+	"type" : "normal"
+}
