@@ -1,3 +1,3 @@
 accessing
 totalInstances
-	^ instances detectSum: [ :each | each count ]
+	^ instances inject: 0 into: [ :sum :each | sum + each count ]

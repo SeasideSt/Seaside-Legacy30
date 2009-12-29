@@ -1,3 +1,3 @@
 accessing
 totalSize
-	^ instances detectSum: [ :each | each size ]
+	^ instances inject: 0 into: [ :sum :each | sum + each size ]
