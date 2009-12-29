@@ -1,3 +1,3 @@
 initialization
 initializePorts: aString 
-	self ports: ((aString findTokens: $,) collect: [ :each | each greaseInteger ])
+	self ports: ((aString subStrings: ',') collect: [ :each | each greaseInteger ])

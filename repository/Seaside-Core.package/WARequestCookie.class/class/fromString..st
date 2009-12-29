@@ -5,7 +5,7 @@ fromString: aString
 	cookieLine := aString.
 	aString isEmptyOrNil ifTrue: 
 		[ ^ #() ].
-	tokens := cookieLine findTokens: $;.
+	tokens := cookieLine subStrings: ';'.
 	current := nil.
 	^ Array streamContents: 
 		[ :cookies | 

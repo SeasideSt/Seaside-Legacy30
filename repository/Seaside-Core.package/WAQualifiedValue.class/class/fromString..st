@@ -2,7 +2,7 @@ instance creation
 fromString: aString
 	^Array streamContents: [ :stream |
 		| values |
-		values := aString findTokens: ','.
+		values := aString subStrings: ','.
 		values do: [ :each |
 			| value quality |
 			value := self valueClass fromString: (each copyUpTo: $;) trimBoth.

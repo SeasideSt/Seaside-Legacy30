@@ -15,7 +15,7 @@ fromString: aString
 			sub: sub ].
 	parts := (aString 
 		copyFrom: endOfSub + 1
-		to: aString size) findTokens: ';'.
+		to: aString size) subStrings: ';'.
 	parameters := GRSmallDictionary new.
 	parts do: 
 		[ :each | 

@@ -1,3 +1,3 @@
 accessing
 handlerAt: aString with: aBlock
-	^ (aString findTokens: '/') inject: self into: aBlock
+	^ (aString subStrings: '/') inject: self into: aBlock
