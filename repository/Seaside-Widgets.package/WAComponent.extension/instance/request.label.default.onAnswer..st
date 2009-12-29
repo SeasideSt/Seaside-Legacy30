@@ -3,7 +3,7 @@ request: aRequestString label: aLabelString default: aDefaultString onAnswer: aB
 	"Display an input dialog with the question aRequestString, the button label aLabelString and the default string aDefaultString. Passes the answer into aBlock."
 	
 	self
-		show: (WAInputDialog new
+		call: (WAInputDialog new
 			addMessage: aRequestString;
 			default: aDefaultString;
 			label: aLabelString;
