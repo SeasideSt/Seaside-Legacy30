@@ -4,7 +4,7 @@ renderImagesOn: html
 		html div: [
 			html text: 'This one is clickable: '.
 			html imageButton
-				callback: [ self inform: 'ok' onAnswer: [ :v | ] ];
+				callback: [ self inform: 'ok' onAnswer: [ ] ];
 				form: self haloDebugForm ] ].
 		
 	html paragraph: [
