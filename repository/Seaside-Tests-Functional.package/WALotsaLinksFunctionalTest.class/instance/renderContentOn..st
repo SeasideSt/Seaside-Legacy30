@@ -12,5 +12,5 @@ renderContentOn: html
 						callback: 
 							[ self 
 								inform: each
-								onAnswer: [ :v | self session jumpToAnchor: each greaseString ] ];
+								onAnswer: [ self session jumpToAnchor: each greaseString ] ];
 						with: each ] ] ]

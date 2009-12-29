@@ -6,8 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"renderError"
+		"parent"
 	],
-	"name" : "WAErrorFunctionalTest",
+	"name" : "WAParentFunctionalTest",
 	"type" : "normal"
 }

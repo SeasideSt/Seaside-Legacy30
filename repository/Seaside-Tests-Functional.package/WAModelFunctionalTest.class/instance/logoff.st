@@ -1,4 +1,4 @@
 actions
 logoff
 	state := #OFF.
-	test ifTrue: [self inform: 'Logged off' onAnswer: [ :v | ]]
+	test ifTrue: [ self inform: 'Logged off' onAnswer: [ ] ]

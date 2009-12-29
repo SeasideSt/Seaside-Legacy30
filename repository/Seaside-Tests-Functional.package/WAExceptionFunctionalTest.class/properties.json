@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "WAFunctionalTest",
+	"category" : "Seaside-Tests-Functional",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"renderError"
+	],
+	"name" : "WAExceptionFunctionalTest",
+	"type" : "normal"
+}

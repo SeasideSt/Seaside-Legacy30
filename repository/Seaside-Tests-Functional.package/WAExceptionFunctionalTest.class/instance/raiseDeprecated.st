@@ -10,4 +10,4 @@ raiseDeprecated
 				greaseDeprecatedApi: 'WAErrorFunctionalTest>>#raiseDeprecated'
 				details: 'Test render phase deprecation.'.
 			html paragraph: 'To be displayed' ]
-		onAnswer: [ :v |  ]
+		onAnswer: [ ]

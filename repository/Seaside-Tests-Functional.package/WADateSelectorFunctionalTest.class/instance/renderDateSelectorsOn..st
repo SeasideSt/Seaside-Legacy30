@@ -18,5 +18,5 @@ renderDateSelectorsOn: html
 				callback: 
 					[ self 
 						inform: (endDate date - beginDate date) days greaseString , ' day(s)'
-						onAnswer: [ :v |  ] ];
+						onAnswer: [ ] ];
 				text: 'Compute duration' ] ]

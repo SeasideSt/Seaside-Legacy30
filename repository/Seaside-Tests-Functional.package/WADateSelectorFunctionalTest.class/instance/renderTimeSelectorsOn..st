@@ -18,5 +18,5 @@ renderTimeSelectorsOn: html
 				callback: 
 					[ self 
 						inform: (endTime time subtractTime: beginTime time) asSeconds greaseString , ' seconds(s)'
-						onAnswer: [ :v |  ] ];
+						onAnswer: [ ] ];
 				text: 'Compute duration' ] ]

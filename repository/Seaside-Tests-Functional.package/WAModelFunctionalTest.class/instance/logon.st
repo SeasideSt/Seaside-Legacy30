@@ -2,7 +2,7 @@ actions
 logon
 	user isEmptyOrNil
 		ifTrue:
-			[self inform: 'Nope !' onAnswer: [ :v | ]]
+			[ self inform: 'Nope !' onAnswer: [ ] ]
 		ifFalse:
-			[state := #ON.
-			test ifTrue: [self inform: 'Logged on' onAnswer: [ :v | ]]]
+			[ state := #ON.
+			test ifTrue: [ self inform: 'Logged on' onAnswer: [ ] ] ]

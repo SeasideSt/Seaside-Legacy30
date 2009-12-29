@@ -11,7 +11,7 @@ renderContentOn: html
 				[ :aPoint | 
 				self 
 					inform: 'Clicked at ' , aPoint greaseString , ' on the Style Editor Icon'
-					onAnswer: [ :v |  ] ];
+					onAnswer: [ ] ];
 			with: 
 				[ html image
 					altText: 'Style Editor Icon';

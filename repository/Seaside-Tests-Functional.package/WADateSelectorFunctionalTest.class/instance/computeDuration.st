@@ -6,8 +6,8 @@ computeDuration
 		ifFalse: 
 			[ self 
 				inform: dateDiff greaseString , ' day(s)'
-				onAnswer: [ :v |  ] ]
+				onAnswer: [ ] ]
 		ifTrue: 
 			[ self 
 				inform: (endDAT dateAndTime asTime subtractTime: beginDAT dateAndTime asTime) asSeconds greaseString , ' second(s)'
-				onAnswer: [ :v |  ] ]
+				onAnswer: [ ] ]
