@@ -4,5 +4,5 @@ pathSegmentsFrom: aKomRequest
 	splitting on /. This means that we can't identify the difference between a real /
 	and a %2f that might have been in the original URL."
 
-	^ ((aKomRequest rawUrl copyUpTo: $?) findTokens: '/')
+	^ ((aKomRequest rawUrl copyUpTo: $?) subStrings: '/')
 		collect:	[ :each | self codec url decode: (each unescapePercentsWithTextEncoding: nil) ]
