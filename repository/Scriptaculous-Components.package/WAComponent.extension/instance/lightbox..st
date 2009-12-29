@@ -8,4 +8,5 @@ lightbox: aComponent
 			onAnswer: cc
 			delegation: (SULightbox new
 				delegate: aComponent;
-				yourself) ]
+				yourself).
+		WARenderNotification signal ]
