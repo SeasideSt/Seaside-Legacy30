@@ -57,7 +57,7 @@ table {
 	border-collapse: collapse;
 }
 
-.group { margin-bottom:6px; width: 100% }
+.group {border:1px solid #c0c0c0;margin-bottom:6px;width:550px}
 .groupTitle {height:20px;font-size:1.2em;background:#eee;color:#01598d;padding-left:3px}
 .groupTitle .action {float:right;padding-right:4px;white-space:nowrap}
 

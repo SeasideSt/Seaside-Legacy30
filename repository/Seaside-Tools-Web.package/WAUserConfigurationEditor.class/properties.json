@@ -8,8 +8,7 @@
 	"instvars" : [
 		"configuration",
 		"groups",
-		"parent",
-		"dialog"
+		"parent"
 	],
 	"name" : "WAUserConfigurationEditor",
 	"type" : "normal"
