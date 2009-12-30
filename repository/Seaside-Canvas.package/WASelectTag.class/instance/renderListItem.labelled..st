@@ -2,8 +2,8 @@ private
 renderListItem: anObject labelled: aString
 	| option |
 	option := canvas option.
-	self hasCallback 
-		ifTrue: [ option callback: [ self performCallback: anObject ] ].
+	self hasCallback
+		ifTrue: [ option value: (self valueFor: anObject) ].
 	titleBlock isNil
 		ifFalse: [ option title: (self titleForOption: anObject) ].
 	option

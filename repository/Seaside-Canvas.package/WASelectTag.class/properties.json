@@ -9,7 +9,8 @@
 		"enabledBlock",
 		"isOptional",
 		"optionalLabel",
-		"titleBlock"
+		"titleBlock",
+		"values"
 	],
 	"name" : "WASelectTag",
 	"type" : "normal"
