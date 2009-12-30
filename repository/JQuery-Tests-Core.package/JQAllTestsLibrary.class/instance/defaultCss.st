@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, h6 { border: 0; margin: 0; font-weight: normal; letter-spaci
 
 #header h1.logo { float: left; margin: 50px 0; }
 #header h1.logo a { display: block; width: 350px; height: 70px; background-image: url(logo.png); }
-#header h1.logo a span, #content .hide { display: none; }
+#header h1.logo a span { display: none; }
 
 #menu { float: right; margin: 50px 0 10px 0; height: 50px; }
 #menu .left, #menu .right { width: 15px; height: 50px; float: left; }
@@ -22,7 +22,6 @@ h1, h2, h3, h4, h5, h6 { border: 0; margin: 0; font-weight: normal; letter-spaci
 
 #content { position: relative; margin-bottom: 15px; }
 #content { clear: both; background-color: white; }
-#content .codeBox {border:1px solid #ccc; overflow:auto; width:100%; height:400px}
 #content .top, 
 #content .bottom { height: 15px; background: url(frame.png); }
 #content .head, .body { border: 1px solid #ddd; }
