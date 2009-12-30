@@ -5,7 +5,7 @@ renderRow: anObject named: aString group: aRadioGroup on: html
 		html tableHeading: [
 			radioButton := aRadioGroup radioButton
 				ensureId;
-				callback: [ selected := aString ];
+				value: (aRadioGroup valueFor: aString);
 				yourself.
 			html label for: radioButton id; with: [
 				(self isPrimitiveType: anObject)
