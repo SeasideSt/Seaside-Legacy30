@@ -12,6 +12,7 @@
 		"singleSelectionOptional",
 		"multiSelection",
 		"nestedSelection",
+		"nestedMultiSelection",
 		"checkbox",
 		"radio",
 		"upload",
