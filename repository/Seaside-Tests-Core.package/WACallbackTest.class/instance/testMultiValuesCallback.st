@@ -6,7 +6,7 @@ testMultiValuesCallback
 	key2 := '2'.
 	dict at: key1 greaseInteger put: '1a'.
 	dict at: key2 greaseInteger put: '2a'.
-	key := registry store: (WAMultiValuesCallback on: 
+	key := registry store: (WAMultipleValuesCallback on: 
 			[ :v | 
 			log := v ] values: dict).
 
