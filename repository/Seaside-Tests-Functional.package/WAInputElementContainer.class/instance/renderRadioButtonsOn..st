@@ -11,7 +11,7 @@ renderRadioButtonsOn: html
 						html label: [ 
 							group radioButton
 								selected: radio = each;
-								callbackValue: each.
+								value: each.
 							html text: each ].
 						html break ] ] ]
 		output: radio printString
