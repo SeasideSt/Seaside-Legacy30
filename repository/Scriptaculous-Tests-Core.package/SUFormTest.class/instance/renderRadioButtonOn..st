@@ -5,12 +5,12 @@ renderRadioButtonOn: html
 		control: [ :fid :mid |
 			html radioGroup
 				callback: [:value | radioButton := value ];
+				selected: radioButton;
 				with: [ :group |
 					1 to: 3 do: [ :each |
 						html label: [
 							html radioButton
 								group: group;
-								selected: radioButton = each;
 								value: each;
 								onChange: (html scriptaculous updater
 									id: mid;
