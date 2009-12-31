@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WAMultiValuesCallback",
+	"name" : "WAMultipleValuesCallback",
 	"type" : "normal"
 }
