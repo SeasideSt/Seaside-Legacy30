@@ -1,3 +1,4 @@
-attributes
+accessing
 group: aRadioGroup
-	self name: aRadioGroup key
+	self name: aRadioGroup key.
+	group := aRadioGroup
