@@ -5,7 +5,9 @@ renderMembersOn: html
 	members := self fieldsFor: self object.
 	members isEmpty ifTrue: [ ^ self ].
 	radioGroup := html radioGroup.
-	radioGroup callback: [ :value | selected := value ].
+	radioGroup
+		callback: [ :value | selected := value ];
+		selected: selected.
 	html table: [
 		members associationsDo: [ :association |
 			self
