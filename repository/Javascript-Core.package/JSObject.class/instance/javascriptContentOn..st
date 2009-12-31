@@ -1,5 +1,5 @@
 printing
 javascriptContentOn: aStream
-	"If you run into this method, you likely use old Seaside code. Presumeably you need to rename #printContentOn: in the receiver to #javascriptContentOn:."
+	"Generate the JavaScript string of the receiver. Override this method in subclasses to define custom JavaScript code. Note, if you run into this method, you likely use old Seaside code need to rename #printContentOn: to #javascriptContentOn:."
 	
 	self subclassResponsibility
