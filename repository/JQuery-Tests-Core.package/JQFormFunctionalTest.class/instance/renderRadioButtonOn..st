@@ -11,7 +11,7 @@ renderRadioButtonOn: html
 						html radioButton
 							group: group;
 							selected: radioButton = each;
-							value: (group valueFor: each);
+							callbackValue: each;
 							onChange: (script html: [ :h | h render: radioButton ]).
 						html text: each ].
 					html break ] ] ]
