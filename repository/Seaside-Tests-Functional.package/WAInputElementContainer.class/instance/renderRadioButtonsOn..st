@@ -6,12 +6,11 @@ renderRadioButtonsOn: html
 		input: [
 			html radioGroup
 				callback: [:value | radio := value];
+				selected: radio;
 				with: [ :group |
 					self elements do: [ :each |
 						html label: [ 
-							group radioButton
-								selected: radio = each;
-								value: each.
+							group radioButton value: each.
 							html text: each ].
 						html break ] ] ]
 		output: radio printString
