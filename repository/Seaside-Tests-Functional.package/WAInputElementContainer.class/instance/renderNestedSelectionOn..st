@@ -15,7 +15,7 @@ renderNestedSelectionOn: html
 							with: [
 								list second do: [ :each |
 									html option
-										value: each on: selectTag;
+										value: each with: selectTag;
 										with: each ] ] ] ] ]
 		output: nestedSelection printString
 		on: html

@@ -16,7 +16,7 @@ renderNestedMultiSelectionOn: html
 							with: [
 								list second do: [ :each |
 									html option
-										value: each on: selectTag ;
+										value: each with: selectTag ;
 										with: each ] ] ] ] ]
 		output: [ nestedMultiSelection isNil ifFalse: [ html unorderedList list: nestedMultiSelection ] ]
 		on: html
