@@ -8,6 +8,7 @@ renderNestedMultiSelectionOn: html
 			selectTag
 				size: 6;
 				callback: [:value | nestedMultiSelection := value ];
+				selected: nestedMultiSelection;
 				with: [
 					self nestedElements do: [ :list |
 						html optionGroup
@@ -15,8 +16,7 @@ renderNestedMultiSelectionOn: html
 							with: [
 								list second do: [ :each |
 									html option
-										selected: (nestedMultiSelection notNil and: [nestedMultiSelection includes: each]);
-										value: (selectTag valueFor: each);
+										value: each on: selectTag ;
 										with: each ] ] ] ] ]
 		output: [ nestedMultiSelection isNil ifFalse: [ html unorderedList list: nestedMultiSelection ] ]
 		on: html

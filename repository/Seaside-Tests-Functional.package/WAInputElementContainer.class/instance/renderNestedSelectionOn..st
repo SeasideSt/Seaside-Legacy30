@@ -7,6 +7,7 @@ renderNestedSelectionOn: html
 			selectTag := html select.
 			selectTag
 				callback: [:value | nestedSelection := value ];
+				selected: nestedSelection;
 				with: [
 					self nestedElements do: [ :list |
 						html optionGroup
@@ -14,8 +15,7 @@ renderNestedSelectionOn: html
 							with: [
 								list second do: [ :each |
 									html option
-										selected: nestedSelection = each;
-										value: (selectTag valueFor: each);
+										value: each on: selectTag;
 										with: each ] ] ] ] ]
 		output: nestedSelection printString
 		on: html
