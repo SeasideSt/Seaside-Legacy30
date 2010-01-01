@@ -1,6 +1,6 @@
 attributes
 value: anObject
-	(group notNil and: [ group hasCallback ])
+	group notNil
 		ifTrue: [ group hasSelection ifTrue: [ self selected: (group isSelected: anObject) ].
-				super value: (group callbackValue: anObject) ]
+				group hasCallback ifTrue: [ super value: (group callbackValue: anObject) ] ]
 		ifFalse: [ super value: anObject ]
