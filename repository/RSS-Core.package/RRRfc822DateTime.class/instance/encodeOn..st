@@ -1,6 +1,5 @@
 printing
-encodeOn: aDocument 
-	GRPlatform current 
-		rfc822StringOfDateTime: dateAndTime
-		timezone: timezoneString
+encodeOn: aDocument
+	(GRPrinter rfc822WithTimeZone: self timeZoneString)
+		print: self dateAndTime
 		on: aDocument

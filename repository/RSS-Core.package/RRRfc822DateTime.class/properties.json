@@ -7,7 +7,7 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"dateAndTime",
-		"timezoneString"
+		"timeZoneString"
 	],
 	"name" : "RRRfc822DateTime",
 	"type" : "normal"
