@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WASlimeParseTreeLintRule",
+	"category" : "Seaside-Slime",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WASequencedAsynchronousCallsRule",
+	"type" : "normal"
+}
