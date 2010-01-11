@@ -1,3 +1,3 @@
 accessing
 description
-	^ 'Functional Scriptaculous Component Test Suite'
+	^ 'Scriptaculous Component Functional Test Suite'
