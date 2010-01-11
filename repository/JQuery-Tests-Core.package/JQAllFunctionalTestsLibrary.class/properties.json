@@ -1,15 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "WAComponent",
+	"super" : "WAFileLibrary",
 	"category" : "JQuery-Tests-Core-Functional",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"default",
-		"tests",
-		"contents"
-	],
-	"name" : "JQAllTests",
+	"instvars" : [ ],
+	"name" : "JQAllFunctionalTestsLibrary",
 	"type" : "normal"
 }

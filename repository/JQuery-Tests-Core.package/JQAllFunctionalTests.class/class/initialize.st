@@ -1,12 +1,12 @@
 initialization
 initialize
 	| application |
-	application := WAAdmin register: self asApplicationAt: 'tests/jquery'.
+	application := WAAdmin register: self asApplicationAt: 'javascript/jquery'.
 	application 
 		addLibrary: JQDeploymentLibrary;
-		addLibrary: JQAllTestsLibrary.
+		addLibrary: JQAllFunctionalTestsLibrary.
 
-	application := WAAdmin register: WAAllTests asApplicationAt: 'tests/alltests-ajaxified'.
+	application := WAAdmin register: WAAllFunctionalTests asApplicationAt: 'tests/functional-ajaxified'.
 	application
 		preferenceAt: #sessionClass put: WAExpirySession;
 		addLibrary: JQDeploymentLibrary;
