@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "JQAllTests",
+	"super" : "JQAllFunctionalTests",
 	"category" : "JQuery-Tests-UI-Functional",
 	"classinstvars" : [ ],
 	"pools" : [ ],
@@ -9,6 +9,6 @@
 		"themes",
 		"theme"
 	],
-	"name" : "JQUiAllTests",
+	"name" : "JQUiAllFunctionalTests",
 	"type" : "normal"
 }
