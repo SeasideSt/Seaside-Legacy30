@@ -1,6 +1,6 @@
 rendering
 renderContentOn: html
-	html heading: 'Functional Seaside Test Suite'.
+	html heading: self class description.
 	html form: [
 		html paragraph: [
 			html anchor
