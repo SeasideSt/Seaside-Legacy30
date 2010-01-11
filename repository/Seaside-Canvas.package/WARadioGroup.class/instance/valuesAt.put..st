@@ -1,4 +1,4 @@
 private
-valuesAt: key put: anObject
-	values at: key put: anObject.
+valuesAt: aKey put: anObject
+	values at: aKey put: anObject.
 	^values size
