@@ -1,5 +1,5 @@
 ajax-events
 onAjaxStop: anObject
-	"Attach a function to be executed whenever an AJAX request completes."
+	"Hide a loading message after all the Ajax requests have stopped."
 	
 	self call: 'ajaxStop' with: anObject asFunction

@@ -1,5 +1,5 @@
 navigation
 previous: aString
-	"Get a set of elements containing the unique previous siblings of each of the matched set of elements."
+	"Get the immediately preceding sibling of each element in the set of matched elements, optionally filtered by a selector."
 	
 	self call: 'prev' with: aString

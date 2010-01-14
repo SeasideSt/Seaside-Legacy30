@@ -1,5 +1,5 @@
 ajax-events
 onAjaxError: anObject
-	"Attach a function to be executed whenever an AJAX request completes."
+	"Register a handler to be called when Ajax requests complete with an error."
 	
 	self call: 'ajaxError' with: anObject asFunction

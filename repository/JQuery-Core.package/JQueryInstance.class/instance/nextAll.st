@@ -1,5 +1,5 @@
 navigation
 nextAll
-	"Find all sibling elements after the current element."
+	"Get all following siblings of each element in the set of matched elements, optionally filtered by a selector."
 	
 	self call: 'nextAll'

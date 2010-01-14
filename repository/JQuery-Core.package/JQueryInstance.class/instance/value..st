@@ -1,5 +1,5 @@
 manipulating
 value: anObject 
-	"Set the value attribute of every matched element."
+	"Set the  value of all matched elements."
 	
 	self call: 'val' with: anObject

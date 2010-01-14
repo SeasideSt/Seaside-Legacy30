@@ -1,5 +1,5 @@
 css
 scrollLeft: anInteger
-	"Set the scroll left offset is set to that value on all matched elements."
+	"Set the current horizontal position of the scroll bar for the first element in the set of matched elements."
 	
 	self call: 'scrollLeft' with: anInteger

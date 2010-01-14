@@ -1,5 +1,5 @@
 manipulating
 html
-	"Get the html contents (innerHTML) of the first matched element. This property is not available on XML documents (although it will work for XHTML documents)."
+	"Get the HTML contents of the first element in the set of matched elements."
 	
 	self call: 'html'

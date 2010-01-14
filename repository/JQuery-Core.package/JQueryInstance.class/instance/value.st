@@ -1,5 +1,5 @@
 manipulating
 value
-	"Get the content of the value attribute of the first matched element."
+	"Get the current value of the first element in the set of matched elements."
 	
 	self call: 'val'

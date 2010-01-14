@@ -1,5 +1,5 @@
 modifying
 wrap: aRenderable 
-	"Wrap each matched element with the specified HTML content."
+	"Wrap an HTML structure around each element in the set of matched elements."
 	
 	self call: 'wrap' with: (self render: aRenderable)

@@ -1,5 +1,5 @@
 events-register
 onLoad: anObject
-	"Binds a function to the load event of each matched element."
+	"Bind an event handler to the 'load' JavaScript event."
 	
 	self call: 'load' with: anObject asFunction

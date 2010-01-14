@@ -1,5 +1,5 @@
 navigation
 siblings: aString
-	"Get a set of elements containing all of the unique siblings of each of the matched set of elements. Can be filtered with an optional expressions."
+	"Get the siblings of each element in the set of matched elements, optionally filtered by a selector."
 	
 	self call: 'siblings' with: aString

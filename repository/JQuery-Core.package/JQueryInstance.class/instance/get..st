@@ -1,5 +1,5 @@
 accessors
 get: anInteger
-	"Access a single matched DOM element at a specified index in the matched set."
+	"Retrieve the DOM elements matched by the jQuery object."
 	
 	self call: 'get' with: anInteger

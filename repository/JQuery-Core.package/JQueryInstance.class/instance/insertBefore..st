@@ -1,5 +1,5 @@
 modifying
 insertBefore: anObject 
-	"Insert all of the matched elements before another, specified, set of elements."
+	"Insert every element in the set of matched elements before the target."
 	
 	self call: 'insertBefore' with: anObject

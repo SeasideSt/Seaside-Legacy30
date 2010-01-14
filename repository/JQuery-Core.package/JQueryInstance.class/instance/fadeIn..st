@@ -1,5 +1,5 @@
 effects
 fadeIn: aDuration
-	"Fade in all matched elements by adjusting their opacity and firing an optional callback after completion."
+	"Display the matched elements by fading them to opaque."
 	
 	self call: 'fadeIn' with: aDuration

@@ -1,5 +1,5 @@
 events-register
 onError: anObject
-	"Binds a function to the error event of each matched element."
+	"Bind an event handler to the 'error' JavaScript event."
 	
 	self call: 'error' with: anObject asFunction

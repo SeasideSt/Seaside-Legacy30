@@ -1,5 +1,5 @@
 css
 css: aDictionary
-	"Set a key/value object as style properties to all matched elements."
+	"Set one or more CSS properties for the set of matched elements."
 	
 	self call: 'css' with: aDictionary

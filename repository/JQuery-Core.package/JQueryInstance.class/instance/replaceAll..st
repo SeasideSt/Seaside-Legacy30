@@ -1,5 +1,5 @@
 modifying
 replaceAll: aString 
-	"Replaces the elements matched by the specified selector with the matched elements."
+	"A selector expression indicating which element(s) to replace."
 	
 	self call: 'replaceAll' with: aString

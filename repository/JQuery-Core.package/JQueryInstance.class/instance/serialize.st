@@ -1,5 +1,5 @@
 ajax
 serialize
-	"Serializes a set of input elements into a string of data."
+	"Encode a set of form elements as a string for submission."
 	
 	self call: 'serialize'

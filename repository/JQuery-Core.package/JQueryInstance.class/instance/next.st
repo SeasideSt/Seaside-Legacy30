@@ -1,5 +1,5 @@
 navigation
 next
-	"Get a set of elements containing the unique next siblings of each of the given set of elements."
+	"Get the immediately following sibling of each element in the set of matched elements, optionally filtered by a selector."
 	
 	self call: 'next'

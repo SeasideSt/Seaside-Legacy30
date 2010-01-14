@@ -1,5 +1,5 @@
 effects
 stop
-	"Stops all the currently running animations on all the specified elements."
+	"Stop the currently-running animation on the matched elements."
 	
 	self call: 'stop'

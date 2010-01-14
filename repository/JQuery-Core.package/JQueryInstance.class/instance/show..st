@@ -1,5 +1,5 @@
 effects
 show: aDuration 
-	"Show all matched elements using a graceful animation and firing an optional callback after completion."
+	"Display the matched elements."
 	
 	self call: 'show' with: aDuration

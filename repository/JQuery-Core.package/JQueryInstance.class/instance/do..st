@@ -1,5 +1,5 @@
 accessors-smalltalk
 do: anObject
-	"Execute a function within the context of every matched element."
+	"Iterate over a jQuery object, executing a function for each matched element."
 	
 	self each: anObject

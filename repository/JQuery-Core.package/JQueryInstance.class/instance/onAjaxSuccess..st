@@ -1,5 +1,5 @@
 ajax-events
 onAjaxSuccess: anObject
-	"Attach a function to be executed whenever an AJAX request completes."
+	"Show a message when an Ajax request completes successfully."
 	
 	self call: 'ajaxSuccess' with: anObject asFunction

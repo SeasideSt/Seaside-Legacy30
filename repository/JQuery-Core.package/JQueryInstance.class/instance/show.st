@@ -1,5 +1,5 @@
 effects
 show
-	"Displays each of the set of matched elements if they are hidden."
+	"Display the matched elements."
 	
 	self call: 'show'

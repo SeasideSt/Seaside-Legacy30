@@ -1,5 +1,5 @@
 ajax
 ajaxSetup
-	"Setup global settings for AJAX requests."
+	"Set default values for future Ajax requests."
 
 	^ self create: JQAjaxSetup

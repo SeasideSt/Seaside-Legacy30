@@ -1,5 +1,5 @@
 navigation
 children: aString
-	"Get a set of elements containing all of the unique immediate children of each of the matched set of elements."
+	"Get the children of each element in the set of matched elements filtered by a selector."
 	
 	self call: 'children' with: aString

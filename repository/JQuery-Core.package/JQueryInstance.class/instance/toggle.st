@@ -1,5 +1,5 @@
 effects
 toggle
-	"Toggles displaying each of the set of matched elements."
+	"Bind two or more handlers to the matched elements, to be executed on alternate clicks."
 	
 	self call: 'toggle'

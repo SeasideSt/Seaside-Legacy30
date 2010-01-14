@@ -1,5 +1,5 @@
 ajax-events
 onAjaxSend: anObject
-	"Attach a function to be executed whenever an AJAX request completes."
+	"Show a message before an Ajax request is sent."
 	
 	self call: 'ajaxSend' with: anObject asFunction

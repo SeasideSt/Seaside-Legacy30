@@ -1,5 +1,5 @@
 css
 innerWidth
-	"Gets the inner width (excludes the border and includes the padding) for the first matched element."
+	"Get the current computed width for the first element in the set of matched elements, including padding but not border."
 	
 	self call: 'innerWidth'

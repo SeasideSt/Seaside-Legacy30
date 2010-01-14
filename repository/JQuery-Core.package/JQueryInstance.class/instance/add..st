@@ -1,5 +1,5 @@
 navigation
-add: aString
-	"Adds more elements, matched by the given expression, to the set of matched elements."
+add: anObject
+	"Add elements to the set of matched elements."
 	
-	self call: 'add' with: aString
+	self call: 'add' with: anObject

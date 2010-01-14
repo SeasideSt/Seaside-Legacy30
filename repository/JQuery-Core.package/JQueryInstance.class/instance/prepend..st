@@ -1,5 +1,5 @@
 modifying
 prepend: aRenderable 
-	"Prepend content to the inside of every matched element."
+	"Insert content, specified by the parameter, to the beginning of each element in the set of matched elements."
 	
 	self call: 'prepend' with: (self render: aRenderable)

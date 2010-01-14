@@ -1,5 +1,5 @@
 filtering
 filter: aString
-	"Removes all elements from the set of matched elements that do not match the specified expression(s)."
+	"Reduce the set of matched elements to the one at the specified index."
 	
 	self call: 'filter' with: aString

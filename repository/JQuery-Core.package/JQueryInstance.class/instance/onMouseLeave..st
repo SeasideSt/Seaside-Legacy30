@@ -1,5 +1,5 @@
 events-register
 onMouseLeave: anObject
-	"Bind a function to the mouseleave event of each matched element."
+	"Bind an event handler to be fired when the mouse leaves an element, or trigger that handler on an element."
 	
 	self call: 'mouseleave' with: anObject asFunction

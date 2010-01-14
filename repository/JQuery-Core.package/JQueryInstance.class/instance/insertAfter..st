@@ -1,5 +1,5 @@
 modifying
 insertAfter: anObject 
-	"Insert all of the matched elements after another, specified, set of elements."
+	"Insert every element in the set of matched elements after the target."
 	
 	self call: 'insertAfter' with: anObject

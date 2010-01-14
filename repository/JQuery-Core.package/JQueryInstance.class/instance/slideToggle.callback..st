@@ -1,5 +1,5 @@
 effects
 slideToggle: aDuration callback: anObject
-	"Toggle the visibility of all matched elements by adjusting their height and firing an optional callback after completion."
+	"Display or hide the matched elements with a sliding motion."
 	
 	self call: 'slideToggle' with: aDuration with: anObject asFunction

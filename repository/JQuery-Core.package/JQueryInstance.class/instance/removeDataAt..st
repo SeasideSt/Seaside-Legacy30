@@ -1,5 +1,5 @@
 data
 removeDataAt: aKey
-	"Stores the value in the named spot and also returns the value."
+	"Remove a previously-stored piece of data."
 	
 	self call: 'removeData' with: aKey

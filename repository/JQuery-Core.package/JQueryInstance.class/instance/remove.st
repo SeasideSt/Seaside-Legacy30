@@ -1,5 +1,5 @@
 modifying
 remove
-	"Removes all matched elements from the DOM."
+	"Remove the set of matched elements from the DOM."
 	
 	self call: 'remove'

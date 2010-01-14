@@ -1,5 +1,5 @@
 events-register
 onScroll: anObject
-	"Bind a function to the scroll event of each matched element."
+	"Bind an event handler to the 'scroll' JavaScript event, or trigger that event on an element."
 	
 	self call: 'scroll' with: anObject asFunction

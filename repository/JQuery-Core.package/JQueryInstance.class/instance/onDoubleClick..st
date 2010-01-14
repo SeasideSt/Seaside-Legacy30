@@ -1,5 +1,5 @@
 events-register
 onDoubleClick: anObject
-	"Binds a function to the dblclick event of each matched element."
+	"Bind an event handler to the 'dblclick' JavaScript event, or trigger that event on an element."
 	
 	self call: 'dblclick' with: anObject asFunction

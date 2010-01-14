@@ -1,5 +1,5 @@
 events-register
 onKeyDown: anObject
-	"Bind a function to the keydown event of each matched element."
+	"Bind an event handler to the 'keydown' JavaScript event, or trigger that event on an element."
 	
 	self call: 'keydown' with: anObject asFunction

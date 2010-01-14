@@ -1,5 +1,5 @@
 filtering
 is: aString
-	"Checks the current selection against an expression and returns true, if at least one element of the selection fits the given expression."
+	"Check the current matched set of elements against a selector and return true if at least one of these elements matches the selector."
 	
 	self call: 'is' with: aString

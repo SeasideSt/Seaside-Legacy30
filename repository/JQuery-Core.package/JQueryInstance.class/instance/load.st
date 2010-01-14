@@ -1,5 +1,5 @@
 ajax
 load
-	"Load HTML from a remote file and inject it into the DOM."
+	"Load data from the server and place the returned HTML into the matched element."
 	
 	^ self create: JQLoad

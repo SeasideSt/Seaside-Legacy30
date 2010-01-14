@@ -1,5 +1,5 @@
 attributes
 removeAttribute: aKey 
-	"Remove an attribute from each of the matched elements."
+	"Remove an attribute from each element in the set of matched elements."
 
 	self call: 'removeAttr' with: aKey

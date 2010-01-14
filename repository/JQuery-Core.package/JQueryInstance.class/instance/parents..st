@@ -1,5 +1,5 @@
 navigation
 parents: aString
-	"Get a set of elements containing the unique ancestors of the matched set of elements (except for the root element). The matched elements can be filtered with an optional expression."
+	"Get the ancestors of each element in the current set of matched elements, optionally filtered by a selector."
 	
 	self call: 'parents' with: aString

@@ -1,5 +1,5 @@
 ajax
 serializeArray
-	"Serializes all forms and form elements but returns a JSON data structure for you to work with."
+	"Encode a set of form elements as an array of names and values."
 	
 	self call: 'serializeArray'

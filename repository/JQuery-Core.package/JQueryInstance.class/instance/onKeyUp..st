@@ -1,5 +1,5 @@
 events-register
 onKeyUp: anObject
-	"Bind a function to the keyup event of each matched element."
+	"Bind an event handler to the 'keyup' JavaScript event, or trigger that event on an element."
 	
 	self call: 'keyup' with: anObject asFunction

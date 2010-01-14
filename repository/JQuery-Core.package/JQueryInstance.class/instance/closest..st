@@ -1,5 +1,5 @@
 navigation
 closest: aString
-	"Get a set of elements containing the closest parent element that matches the specified selector, the starting element included."
+	"Get the first element that matches the selector, beginning at the current element and progressing up through the DOM tree."
 	
 	self call: 'closest' with: aString

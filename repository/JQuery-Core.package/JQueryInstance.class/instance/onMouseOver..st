@@ -1,5 +1,5 @@
 events-register
 onMouseOver: anObject
-	"Bind a function to the mouseover event of each matched element."
+	"Bind an event handler to the 'mouseover' JavaScript event, or trigger that event on an element."
 	
 	self call: 'mouseover' with: anObject asFunction

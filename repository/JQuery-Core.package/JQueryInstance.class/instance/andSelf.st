@@ -1,5 +1,5 @@
 chaining
 andSelf
-	"Add the previous selection to the current selection."
+	"Add the previous set of elements on the stack to the current set."
 	
 	self call: 'andSelf'

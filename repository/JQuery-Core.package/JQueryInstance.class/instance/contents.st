@@ -1,5 +1,5 @@
 navigation
 contents
-	"Find all the child nodes inside the matched elements (including text nodes), or the content document, if the element is an iframe."
+	"Get the children of each element in the set of matched elements, including text nodes."
 	
 	self call: 'contents'

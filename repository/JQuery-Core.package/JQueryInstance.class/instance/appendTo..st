@@ -1,5 +1,5 @@
 modifying
 appendTo: anObject 
-	"Append all of the matched elements to another, specified, set of elements."
+	"Insert every element in the set of matched elements to the end of the target."
 	
 	self call: 'appendTo' with: anObject

@@ -1,5 +1,5 @@
 ajax-events
 onAjaxStart: anObject
-	"Attach a function to be executed whenever an AJAX request completes."
+	"Register a handler to be called when the first Ajax request begins."
 	
 	self call: 'ajaxStart' with: anObject asFunction

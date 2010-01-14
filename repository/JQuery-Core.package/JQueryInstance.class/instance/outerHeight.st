@@ -1,5 +1,5 @@
 css
 outerHeight
-	"Gets the offsetHeight (includes the border and padding by default) for the first matched element."
+	"Get the current computed height for the first element in the set of matched elements, including padding and border."
 	
 	self call: 'outerHeight'

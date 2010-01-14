@@ -1,5 +1,5 @@
 events
 triggerHandler: aString
-	"Trigger a type of event on every matched element, without executing browser default actions."
+	"Execute all handlers attached to an element for an event."
 	
 	self call: 'triggerHandler' with: aString

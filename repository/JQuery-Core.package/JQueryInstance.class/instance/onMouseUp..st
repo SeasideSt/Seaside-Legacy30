@@ -1,5 +1,5 @@
 events-register
 onMouseUp: anObject
-	"Bind a function to the mouseup event of each matched element."
+	"Bind an event handler to the 'mouseup' JavaScript event, or trigger that event on an element."
 	
 	self call: 'mouseup' with: anObject asFunction

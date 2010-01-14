@@ -1,5 +1,5 @@
 navigation
 find: aString
-	"Searches for all elements that match the specified expression. This method is a good way to find additional descendant elements with which to process."
+	"Get the descendants of each element in the current set of matched elements, filtered by a selector."
 	
 	self call: 'find' with: aString

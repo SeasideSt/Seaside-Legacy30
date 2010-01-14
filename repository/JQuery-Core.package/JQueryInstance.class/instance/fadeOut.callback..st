@@ -1,5 +1,5 @@
 effects
 fadeOut: aDuration callback: anObject
-	"Fade out all matched elements by adjusting their opacity and firing an optional callback after completion."
+	"Hide the matched elements by fading them to transparent."
 	
 	self call: 'fadeOut' with: aDuration with: anObject asFunction

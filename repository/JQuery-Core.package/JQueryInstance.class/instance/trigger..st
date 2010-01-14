@@ -1,5 +1,5 @@
 events
 trigger: aString
-	"Trigger a type of event on every matched element."
+	"Execute all handlers and behaviors attached to the matched elements for the given event type."
 	
 	self call: 'trigger' with: aString

@@ -1,5 +1,5 @@
 events
 unbind: aString
-	"This does the opposite of bind, it removes bound events from each of the matched elements."
+	"Remove a previously-attached event handler from the elements."
 	
 	self call: 'unbind' with: aString

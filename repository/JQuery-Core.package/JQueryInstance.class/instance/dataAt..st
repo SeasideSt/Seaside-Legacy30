@@ -1,5 +1,5 @@
 data
 dataAt: aKey
-	"Returns value at named data store for the element, as set by data(name, value)."
+	"Store arbitrary data associated with the matched elements."
 	
 	self call: 'data' with: aKey

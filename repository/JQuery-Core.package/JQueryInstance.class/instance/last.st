@@ -1,5 +1,5 @@
-accessors-smalltalk
+filtering
 last
-	"Answer the last matched element."
+	"Reduce the set of matched elements to the final one in the set."
 	
-	self get: -1
+	self call: 'last'

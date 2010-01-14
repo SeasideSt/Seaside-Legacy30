@@ -1,5 +1,5 @@
 css
 scrollLeft
-	"Gets the scroll left offset of the first matched element."
+	"Get the current horizontal position of the scroll bar for the first element in the set of matched elements."
 	
 	self call: 'scrollLeft'

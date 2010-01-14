@@ -1,5 +1,5 @@
 effects
 slideUp: aDuration
-	"Hide all matched elements by adjusting their height and firing an optional callback after completion."
+	"Hide the matched elements with a sliding motion."
 	
 	self call: 'slideUp' with: aDuration

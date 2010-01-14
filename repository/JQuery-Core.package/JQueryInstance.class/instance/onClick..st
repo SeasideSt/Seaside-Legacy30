@@ -1,5 +1,5 @@
 events-register
 onClick: anObject
-	"Binds a function to the change event of each matched element."
+	"Bind an event handler to the 'click' JavaScript event, or trigger that event on an element."
 	
 	self call: 'click' with: anObject asFunction

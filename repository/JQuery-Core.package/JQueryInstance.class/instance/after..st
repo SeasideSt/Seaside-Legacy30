@@ -1,5 +1,5 @@
 modifying
 after: aRenderable 
-	"Insert content after each of the matched elements."
+	"Insert content, specified by the parameter, after each element in the set of matched elements."
 	
 	self call: 'after' with: (self render: aRenderable)

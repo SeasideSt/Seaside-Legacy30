@@ -1,5 +1,5 @@
 effects
 animate
-	"A function for making custom animations."
+	"Perform a custom animation of a set of CSS properties."
 	
 	^ self create: JQAnimate

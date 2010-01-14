@@ -1,5 +1,5 @@
 navigation
 previousAll: aString
-	"Find all sibling elements in front of the current element."
+	"Get all preceding siblings of each element in the set of matched elements, optionally filtered by a selector."
 	
 	self call: 'prevAll' with: aString

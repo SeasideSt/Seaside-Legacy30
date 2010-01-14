@@ -1,5 +1,5 @@
 classes
 hasClass: aString 
-	"Returns true if the specified class is present on at least one of the set of matched elements."
+	"Determine whether any of the matched elements are assigned the given class."
 	
 	self call: 'hasClass' with: aString

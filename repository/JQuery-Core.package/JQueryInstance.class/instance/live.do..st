@@ -1,5 +1,5 @@
 events
 live: aString do: anObject 
-	"Binds a handler to an event (like click) for all current - and future - matched element. Can also bind custom events."
+	"Attach a handler to the event for all elements which match the current selector, now or in the future."
 	
 	self call: 'live' with: aString with: anObject asFunction

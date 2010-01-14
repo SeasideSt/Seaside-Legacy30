@@ -1,5 +1,5 @@
 modifying
 append: aRenderable 
-	"Append content to the inside of every matched element."
+	"Insert content, specified by the parameter, to the end of each element in the set of matched elements."
 	
 	self call: 'append' with: (self render: aRenderable)

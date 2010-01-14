@@ -1,5 +1,5 @@
 events
 hover: anInObject out: anOutObject
-	"Binds a handler to one or more events (like click) for each matched element. Can also bind custom events."
+	"Bind two handlers to the matched elements, to be executed when the mouse pointer enters and leaves the elements."
 	
 	self call: 'hover' with: anInObject asFunction with: anOutObject asFunction

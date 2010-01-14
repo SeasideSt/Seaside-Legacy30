@@ -1,5 +1,5 @@
 effects
 hide 
-	"Hides each of the set of matched elements if they are shown."
+	"Hide the matched elements."
 	
 	self call: 'hide'

@@ -1,5 +1,5 @@
 data
 dataAt: aKey put: aValue
-	"Stores the value in the named spot and also returns the value."
+	"Store arbitrary data associated with the matched elements."
 	
 	self call: 'data' with: aKey with: aValue

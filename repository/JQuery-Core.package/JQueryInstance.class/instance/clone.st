@@ -1,5 +1,5 @@
 copying
 clone
-	"Clone matched DOM Elements, and all their event handlers, and select the clones."
+	"Create a copy of the set of matched elements."
 	
 	self call: 'clone'

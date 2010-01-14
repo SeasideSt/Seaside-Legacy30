@@ -1,5 +1,5 @@
 events
 die: aString
-	"This does the opposite of live, it removes a bound live event. Without any arguments, all bound live events are removed."
+	"Remove an event handler previously attached using .live() from the elements."
 	
 	self call: 'die' with: aString

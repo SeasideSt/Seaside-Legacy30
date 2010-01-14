@@ -1,5 +1,5 @@
 ajax
 ajax
-	"Load a remote page using an HTTP request."
+	"Perform an asynchronous HTTP (Ajax) request."
 	
 	^ self create: JQAjax

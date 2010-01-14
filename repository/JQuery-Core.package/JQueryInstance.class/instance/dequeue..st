@@ -1,5 +1,5 @@
 data
 dequeue: aString
-	"Removes a queued function from the front of the queue and executes it."
+	"Execute the next function on the queue for the matched elements."
 	
 	self call: 'dequeue' with: aString

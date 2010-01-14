@@ -1,5 +1,5 @@
 attributes
 attributeAt: aKey put: aValue
-	"Set a single property to a value, on all matched elements."
+	"Set an attribute for the set of matched elements."
 	
 	self call: 'attr' with: aKey with: aValue

@@ -1,5 +1,5 @@
 css
 innerHeight
-	"Gets the inner height (excludes the border and includes the padding) for the first matched element."
+	"Get the current computed height for the first element in the set of matched elements, including padding but not border."
 	
 	self call: 'innerHeight'

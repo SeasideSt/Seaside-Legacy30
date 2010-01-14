@@ -1,5 +1,5 @@
-accessors-smalltalk
+filtering
 first
-	"Answer the first matched element."
+	"Reduce the set of matched elements to the first in the set."
 	
-	self get: 0
+	self call: 'first'

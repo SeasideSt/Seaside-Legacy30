@@ -1,5 +1,5 @@
 data
 queue: aString
-	"Returns a reference to the first element's queue (which is an array of functions)."
+	"Manipulate the queue of functions to be executed on the matched elements."
 	
 	self call: 'queue' with: aString

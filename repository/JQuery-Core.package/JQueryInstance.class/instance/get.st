@@ -1,5 +1,5 @@
 accessors
 get
-	"Access all matched DOM elements."
+	"Retrieve the DOM elements matched by the jQuery object."
 	
 	self call: 'get'

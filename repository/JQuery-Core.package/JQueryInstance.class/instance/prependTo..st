@@ -1,5 +1,5 @@
 modifying
 prependTo: anObject 
-	"Prepend all of the matched elements to another, specified, set of elements."
+	"Insert every element in the set of matched elements to the beginning of the target."
 	
 	self call: 'prependTo' with: anObject
