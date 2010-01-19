@@ -10,6 +10,7 @@
 		"textArea",
 		"singleSelection",
 		"singleSelectionOptional",
+		"singleSelectionCustom",
 		"multiSelection",
 		"nestedSelection",
 		"nestedMultiSelection",

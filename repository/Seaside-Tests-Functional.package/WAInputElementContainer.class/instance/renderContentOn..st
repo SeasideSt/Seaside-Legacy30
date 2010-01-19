@@ -7,6 +7,7 @@ renderContentOn: html
 	self renderCheckboxOn: html.
 	self renderRadioButtonsOn: html.
 	self renderSingleSelectionOn: html.
+	self renderSingleSelectionCustomOn: html.
 	self renderSingleSelectionOptionalOn: html.
 	self renderMultiSelectionOn: html.
 	self renderNestedSelectionOn: html.
