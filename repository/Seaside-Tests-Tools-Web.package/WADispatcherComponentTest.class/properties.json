@@ -8,7 +8,8 @@
 	"instvars" : [
 		"configApplication",
 		"rootHandler",
-		"childHandler"
+		"childHandler",
+		"normalApplication"
 	],
 	"name" : "WADispatcherComponentTest",
 	"type" : "normal"

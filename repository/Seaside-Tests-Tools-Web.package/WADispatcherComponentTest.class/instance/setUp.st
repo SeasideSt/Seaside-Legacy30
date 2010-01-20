@@ -1,6 +1,5 @@
 running
 setUp
-	| normalApplication |
 	super setUp.
 	rootHandler := WADispatcher new.
 	rootHandler := rootHandler register: WADispatcher new at: 'seaside'.
