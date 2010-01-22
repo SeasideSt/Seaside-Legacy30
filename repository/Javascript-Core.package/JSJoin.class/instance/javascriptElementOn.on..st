@@ -1,6 +1,6 @@
 printing
 javascriptElementOn: anObject on: aStream 
-	anObject isVariableBinding 
+	(anObject isKindOf: Association) 
 		ifFalse: [ aStream javascript: anObject ]
 		ifTrue: [ 
 			aStream nextPut: $"; nextPutAll: anObject key greaseString.
