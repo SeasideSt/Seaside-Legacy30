@@ -1,9 +1,7 @@
 testing
 testCharacterTo
 	| actual expected |
-	actual := (Array withAll: ($a to: $z)) , (Array withAll: ($A to: $Z)) , (Array withAll: ($0 to: $9)) , (Array 
-			with: $_
-			with: $-).
+	actual := Array withAll: 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_-'.
 	actual := actual collect: [ :each | each greaseInteger ].
 	expected := #(
 		97
