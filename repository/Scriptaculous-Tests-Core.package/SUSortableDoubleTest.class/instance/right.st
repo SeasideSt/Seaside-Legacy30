@@ -1,3 +1,3 @@
 accessing
 right
-	^ right ifNil: [ right := 1 to: 2 ]
+	^ right ifNil: [ right := #(1 2) ]
