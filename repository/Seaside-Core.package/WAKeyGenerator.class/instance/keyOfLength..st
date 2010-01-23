@@ -4,6 +4,5 @@ keyOfLength: anInteger
 
 	| key |
 	key := String new: anInteger.
-	1 to: anInteger do: [ :index |
-			key at: index put: (space at: (generator nextInt: space size)) ].
+	1 to: anInteger do: [ :index | key at: index put: (space at: (generator nextInt: space size)) ].
 	^ key
