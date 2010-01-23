@@ -1,3 +1,3 @@
 private
 valueFor: anObject
-	^self valuesAt: self nextKey put: anObject
+	^ self valuesAt: self nextKey put: anObject

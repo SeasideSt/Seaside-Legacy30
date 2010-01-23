@@ -1,3 +1,3 @@
 callbacks
 dispatchCallback
-	^ self storeCallback: WADispatchCallback new
+	^ self name: (self storeCallback: WADispatchCallback new)

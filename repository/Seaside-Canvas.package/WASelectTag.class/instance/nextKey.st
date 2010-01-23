@@ -1,3 +1,3 @@
 private
 nextKey
-	^values size + 1
+	^ values size + 1

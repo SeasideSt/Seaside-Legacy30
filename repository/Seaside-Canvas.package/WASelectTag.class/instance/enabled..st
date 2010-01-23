@@ -1,5 +1,5 @@
 callbacks
-enabled: aBlock
+enabled: aOneArgumentBlock
 	"Enable only those elements for selection for whom aBlock return true."
 
-	enabledBlock := aBlock fixCallbackTemps
+	enabledBlock := aOneArgumentBlock fixCallbackTemps

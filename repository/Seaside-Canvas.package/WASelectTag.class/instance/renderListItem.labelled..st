@@ -5,7 +5,7 @@ renderListItem: anObject labelled: aString
 	self hasCallback
 		ifTrue: [ option value: (self valueFor: anObject) ].
 	titleBlock isNil
-		ifFalse: [ option title: (self titleForOption: anObject) ].
+		ifFalse: [ option title: (self titleFor: anObject) ].
 	option
 		selected: (self isSelected: anObject);
 		disabled: (self isEnabled: anObject) not;
