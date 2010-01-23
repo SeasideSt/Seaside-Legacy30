@@ -1,3 +1,3 @@
 accessing
 left
-	^ left ifNil: [ left := $a to: $b ]
+	^ left ifNil: [ left := 'ab' ]
