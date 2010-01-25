@@ -2,7 +2,7 @@ initialization
 initialize
 	super initialize.
 	self rewriteRule
-		replace: 'expired 
+		replaceMethod: 'expired
 			| `@temps | 
 			`@.Statements'
 		with: 'unregistered

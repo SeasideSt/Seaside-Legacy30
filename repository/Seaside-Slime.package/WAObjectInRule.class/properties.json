@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "pmm 9/12/2009 10:37",
-	"super" : "WASlimeParseTreeLintRule",
+	"super" : "WASlimeTransformationRule",
 	"category" : "Seaside-Slime",
 	"classinstvars" : [ ],
 	"pools" : [ ],

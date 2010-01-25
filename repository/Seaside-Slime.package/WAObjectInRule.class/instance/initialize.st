@@ -1,7 +1,6 @@
 initialization
 initialize
 	super initialize.
-	matcher := RBParseTreeSearcher new.
-	matcher 
-		matches: '``@object in: [ :`var | | `@temps | `@.statements ]'
-		do: [ :node :answer | answer isNil ifTrue: [ node ] ifFalse: [ answer ] ]
+	self rewriteRule
+		replace: '``@object in: [ :`var | | `@temps | `@.statements ]'
+		with: '[ :`var | | `@temps | `@.statements ] value: ``@object'

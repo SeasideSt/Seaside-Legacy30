@@ -21,6 +21,4 @@ initialize
 		replace: '``@collection detectSum: [ :`t1 | ``@.statements. `.last ]'
 			with: '``@collection inject: 0 into: [ :sum :`t1 | ``@.statements. sum + (`.last) ]';
 		replace: '``@collection valuesDo: ``@block'
-			with: '``@collection do: ``@block';
-		replace: '``@object keysSortedSafely'
-			with: '``@object keys asSortedCollection'
+			with: '``@collection do: ``@block'
