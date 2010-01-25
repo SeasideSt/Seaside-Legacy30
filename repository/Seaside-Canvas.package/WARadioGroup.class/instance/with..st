@@ -1,3 +1,3 @@
 public api
 with: aBlock
-	^aBlock value: self
+	^ aBlock value: self

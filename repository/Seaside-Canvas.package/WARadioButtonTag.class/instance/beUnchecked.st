@@ -1,5 +1,3 @@
 attributes
 beUnchecked
-	self attributes 
-		at: 'checked'
-		put: false
+	self selected: false
