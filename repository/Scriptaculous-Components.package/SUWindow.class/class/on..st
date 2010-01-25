@@ -1,3 +1,5 @@
 instance creation
 on: aBlock
-	^self new componentBlock: aBlock; yourself
+	^self basicNew
+		componentBlock: aBlock;
+		yourself
