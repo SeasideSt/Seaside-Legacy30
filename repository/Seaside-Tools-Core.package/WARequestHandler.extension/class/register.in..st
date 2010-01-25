@@ -1,7 +1,7 @@
 *seaside-tools-core
 register: aString in: aDispatcher 
 	self 
-		greaseDeprecatedApi: 'WAEntryPoint class>>#register:in:'
+		greaseDeprecatedApi: 'WARequestHandler class>>#register:in:'
 		details: 'Use WAAdmin class>>#register:at:in:.'.
 	^ WAAdmin 
 		register: self
