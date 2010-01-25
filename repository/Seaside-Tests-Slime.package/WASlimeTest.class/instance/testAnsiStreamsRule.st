@@ -1,7 +1,14 @@
 testing-transform
 testAnsiStreamsRule
+	| class |
+	class := self
+		defineClass: #WASlimeMockObject
+		superclass: #WAObject.
+	self compile: 'writeStream ^ '''' writeStream' in: class.
+	self compile: 'writeCr | stream | stream := WriteStream on: ''''. stream cr. stream nextPut: Character cr' in: class.
+	self compile: 'writeLf | stream | stream := WriteStream on: ''''. stream lf. stream nextPut: Character lf' in: class.
 	self 
-		run: WAAnsiStreamsRule new
+		runTransformation: WAAnsiStreamsRule
 		changes: #( 
 			'writeStream ^ WriteStream on: '''''
 			'writeCr | stream | stream := WriteStream on: ''''. stream nextPut: Character cr. stream nextPut: Character cr'

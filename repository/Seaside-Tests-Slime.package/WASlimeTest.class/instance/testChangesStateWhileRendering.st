@@ -1,5 +1,11 @@
 testing-block
 testChangesStateWhileRendering
+	| class |
+	class := self 
+		defineClass: #WASlimeMockComponent
+		superclass: #WAComponent.
+	class addInstanceVariable: 'foo'.
+	self compile: 'renderContentOn: html html div: [ foo := nil ]' in: class.
 	self 
-		run: WAChangesStateWhileRenderingRule new
-		selectors: #(renderChangesStateWhileRenderingOn:)
+		runRule: WAChangesStateWhileRenderingRule
+		selectors: #(renderContentOn:)

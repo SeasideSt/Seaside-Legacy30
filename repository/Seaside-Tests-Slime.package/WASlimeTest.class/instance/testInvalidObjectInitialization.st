@@ -1,5 +1,10 @@
 testing-block
 testInvalidObjectInitialization
+	| class |
+	class := self
+		defineClass: #WASlimeMockObject
+		superclass: #WAObject.
+	self compile:  'initializeFoo: aNumber' in: class.
 	self 
-		run: WAInvalidObjectInitializationRule new
-		selectors: #( initializeFoo: )
+		runRule: WAInvalidObjectInitializationRule
+		selectors: #(initializeFoo:)

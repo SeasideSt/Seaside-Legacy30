@@ -1,5 +1,13 @@
 testing-block
 testEmptyStatements
+	| class |
+	class := self
+		defineClass: #WASlimeMockObject
+		superclass: #WAObject.
+	self compile: 'emptyStatement1. self and' in: class.
+	self compile: 'emptyStatement2 self and..' in: class.
+	self compile: 'emptyStatement3 self and."foo".' in: class.
+	self compile: 'emptyStatement4 self and."foo".self and' in: class.
 	self 
-		run: WAEmptyStatementsRule new
+		runRule: WAEmptyStatementsRule
 		selectors: #(emptyStatement1 emptyStatement2 emptyStatement3 emptyStatement4)

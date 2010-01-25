@@ -1,7 +1,22 @@
 testing-transform
 testAnsiCollectionsRule
+	| class |
+	class := self
+		defineClass: #WASlimeMockObject
+		superclass: #WAObject.
+	self compile: 'withIndexDo #() withIndexDo: [ :each :index | each + index ]' in: class.
+	self compile: 'doWithIndex #() doWithIndex: [ :each :index | each + index ]' in: class.
+	self compile: 'collectThenDo #() collect: [ :a | a ] thenDo: [ :b | b ]' in: class.
+	self compile: 'collectThenSelect #() collect: [ :a | a ] thenSelect: [ :b | true ]' in: class.
+	self compile: 'detectSum #(1 2) detectSum: [ :each | each]' in: class.
+	self compile: 'detectSumMultiline #(1 2) detectSum: [ :each | #foo copy. each ]' in: class.
+	self compile: 'pairsDo #(1 2 3 4) pairsDo: [ :a :b | b ]' in: class.
+	self compile: 'rejectThenDo #() reject: [ :a | true ] thenDo: [ :b | b ]' in: class.
+	self compile: 'selectThenCollect #() select: [ :a | true ] thenCollect: [ :b | b ]' in: class.
+	self compile: 'selectThenDo #() select: [ :a | true ] thenDo: [ :b | b ]' in: class.
+	self compile: 'valuesDo #() valuesDo: [ :a | a ]' in: class.
 	self 
-		run: WAAnsiCollectionsRule new
+		runTransformation: WAAnsiCollectionsRule
 		changes: #( 
 			'withIndexDo #() keysAndValuesDo: [ :index :each | each + index ]'
 			'doWithIndex #() keysAndValuesDo: [ :index :each | each + index ]'
@@ -9,10 +24,8 @@ testAnsiCollectionsRule
 			'selectThenDo (#() select: [ :a | true ]) do: [ :b | b ]'
 			'rejectThenDo (#() reject: [ :a | true ]) do: [ :b | b ]'
 			'selectThenCollect (#() select: [ :a | true ]) collect: [ :b | b ]'
-			'pairsDo |array| array := #(1 2 3 4). 1 to: array size by: 2 do: [ :index | |a b| a := array at: index. b := array at: index + 1. b ]'
+			'pairsDo 1 to: #(1 2 3 4) size by: 2 do: [ :index | |a b| a := #(1 2 3 4) at: index. b := #(1 2 3 4) at: index + 1. b ]'
 			'collectThenSelect (#() collect: [ :a | a ]) select: [ :b | true ]'
-			'detectSum #(''abc'' ''def'') inject: 0 into: [ :sum :each | sum + (each size) ]'
-			'detectSumMultiline #(''abc'' ''def'') inject: 0 into: [ :sum :each | #foo copy. sum + (each size) ]'
-			'valuesDo #() do: [ :a | a ]'
-			'keysSortedSafely Dictionary new keys asSortedCollection'
-		)
+			'detectSum #(1 2) inject: 0 into: [ :sum :each | sum + each ]'
+			'detectSumMultiline #(1 2) inject: 0 into: [ :sum :each | #foo copy. sum + each ]'
+			'valuesDo #() do: [ :a | a ]' )

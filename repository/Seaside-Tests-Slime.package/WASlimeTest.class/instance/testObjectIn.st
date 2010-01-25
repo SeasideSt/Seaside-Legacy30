@@ -1,5 +1,14 @@
-testing-parsetree
+testing-transform
 testObjectIn
+	| class |
+	class := self
+		defineClass: #WASlimeMockObject
+		superclass: #WAObject.
+	self compile: 'objectIn1 1 in: [ :val | val factorial ]' in: class.
+	self compile: 'objectIn2 2 in: [ :val | | temps | val factorial ]' in: class.
+	self compile: 'objectIn3 2 in: [ ''not this'' ]' in: class.
 	self 
-		run: WAObjectInRule new
-		selectors: #(objectIn)
+		runTransformation: WAObjectInRule
+		changes: #(
+			'objectIn1 [ :val | val factorial ] value: 1'
+			'objectIn2 [ :val | | temps | val factorial ] value: 2')

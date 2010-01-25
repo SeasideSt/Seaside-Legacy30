@@ -1,5 +1,12 @@
 testing-parsetree
 testUnnecessaryWithSentToBrush
-	self 
-		run: WAUnnecessaryWithSentToBrushRule new
-		selectors: #(renderUnnecessaryWithSentToBrushOn: renderUnnecessaryBlockPassedToBrush4On:)
+	| class |
+	class := self 
+		defineClass: #WASlimeMockComponent
+		superclass: #WAComponent.
+	class
+		compile: 'renderContentOn: html html div with: 123'
+		classified: #(rendering).
+	self
+		runRule: WAUnnecessaryWithSentToBrushRule
+		selectors: #(renderContentOn:)

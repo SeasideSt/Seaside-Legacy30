@@ -1,3 +1,0 @@
-accessing
-someClass
-	Semaphore new

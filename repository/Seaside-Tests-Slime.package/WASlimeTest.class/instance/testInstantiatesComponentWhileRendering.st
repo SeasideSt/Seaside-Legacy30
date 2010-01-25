@@ -1,5 +1,10 @@
 testing-block
 testInstantiatesComponentWhileRendering
+	| class |
+	class := self 
+		defineClass: #WASlimeMockComponent
+		superclass: #WAComponent.
+	self compile: 'renderContentOn: html html div: WAComponentStub new' in: class.
 	self 
-		run: WAInstantiatesComponentWhileRenderingRule new
-		selectors: #(renderInstantiatesComponentWhileRenderingOn:)
+		runRule: WAInstantiatesComponentWhileRenderingRule
+		selectors: #(renderContentOn:)

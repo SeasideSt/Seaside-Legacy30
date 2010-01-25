@@ -1,5 +1,12 @@
 testing-parsetree
 testSendsRenderContentOn
+	| class |
+	class := self 
+		defineClass: #WASlimeMockComponent
+		superclass: #WAComponent.
+	class
+		compile: 'invalid self renderContentOn: nil'
+		classified: #(rendering).
 	self 
-		run: WASendsRenderContentOnRule new
-		selectors: #(sendsRenderContentOn)
+		runRule: WASendsRenderContentOnRule
+		selectors: #(invalid)

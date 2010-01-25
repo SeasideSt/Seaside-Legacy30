@@ -5,7 +5,10 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"model",
+		"environment"
+	],
 	"name" : "WASlimeTest",
 	"type" : "normal"
 }

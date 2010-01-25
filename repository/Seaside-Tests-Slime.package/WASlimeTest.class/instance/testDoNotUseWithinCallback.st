@@ -1,5 +1,13 @@
 testing-block
 testDoNotUseWithinCallback
+	| class |
+	class := self 
+		defineClass: #WASlimeMockComponent
+		superclass: #WAComponent.
+	self compile: 'renderContentOn: html
+		html anchor
+			callback: [ html document addLoadScript: nil ];
+			with: 123' in: class.
 	self 
-		run: WADoNotUseWithinCallbackRule new
-		selectors: #(renderDoNotUseWithinCallbackOn:)
+		runRule: WADoNotUseWithinCallbackRule
+		selectors: #(renderContentOn:)

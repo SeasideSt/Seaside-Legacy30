@@ -1,7 +1,18 @@
 testing-transform
 testAnsiStringsRule
+	| class |
+	class := self
+		defineClass: #WASlimeMockObject
+		superclass: #WAObject.
+	self compile: 'stringCr String cr, (String with: Character cr)' in: class.
+	self compile: 'stringTab String tab, (String with: Character tab)' in: class.
+	self compile: 'stringLf String lf, (String with: Character lf)' in: class.
+	self compile: 'stringCrLf String crlf, (String with: Character cr with: Character lf)' in: class.
+	self compile: 'stringSpace String space, (String with: Character space)' in: class.
+	self compile: 'findTokens ''123'' findTokens: '',''' in: class.
+	self compile: 'findTokensCharacter ''123'' findTokens: $,' in: class.
 	self 
-		run: WAAnsiStringsRule new
+		runTransformation: WAAnsiStringsRule
 		changes: #( 
 			'stringCr (String with: Character cr), (String with: Character cr)'
 			'stringTab (String with: Character tab), (String with: Character tab)'
@@ -9,5 +20,4 @@ testAnsiStringsRule
 			'stringCrLf (String with: Character cr with: Character lf), (String with: Character cr with: Character lf)'
 			'stringSpace (String with: Character space), (String with: Character space)'
 			'findTokens ''123'' subStrings: '','''
-			'findTokensCharacter ''123'' subStrings: '','''
-		)
+			'findTokensCharacter ''123'' subStrings: '',''' )
