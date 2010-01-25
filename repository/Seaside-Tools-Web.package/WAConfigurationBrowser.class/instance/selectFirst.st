@@ -1,6 +1,6 @@
 actions
 selectFirst
 	| keys  |
-	keys := self dispatcher handlers keysSortedSafely.
+	keys := self dispatcher handlers keys.
 	keys isEmpty 
-		ifFalse: [ self configure: (self dispatcher handlers at: keys first) ]
+		ifFalse: [ self configure: (self dispatcher handlers at: keys asSortedCollection first) ]

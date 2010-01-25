@@ -3,5 +3,5 @@ renderDispatcherOn: html
 	html table: [
 		self dispatcher isRoot
 			ifFalse: [ self renderParentRow: dispatcher named: self upDirectory on: html ].
-		self handlers keysSortedSafely
+		self handlers keys asSortedCollection
 			do: [ :each | self renderRow: (dispatcher handlers at: each) named: each on: html ] ]
