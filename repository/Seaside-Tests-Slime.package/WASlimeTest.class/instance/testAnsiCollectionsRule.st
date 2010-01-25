@@ -13,5 +13,6 @@ testAnsiCollectionsRule
 			'collectThenSelect (#() collect: [ :a | a ]) select: [ :b | true ]'
 			'detectSum #(''abc'' ''def'') inject: 0 into: [ :sum :each | sum + (each size) ]'
 			'detectSumMultiline #(''abc'' ''def'') inject: 0 into: [ :sum :each | #foo copy. sum + (each size) ]'
-			 'valuesDo #() do: [ :a | a ]'
+			'valuesDo #() do: [ :a | a ]'
+			'keysSortedSafely Dictionary new keys asSortedCollection'
 		)
