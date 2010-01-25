@@ -1,7 +1,7 @@
 instance creation
-method: methodString uri: aUrlOrString version: versionArray
+method: methodString uri: aUrlOrString version: aVersion
 	^ self basicNew
 		initializeWithMethod: methodString
 			uri: aUrlOrString
-			version: versionArray;
+			version: aVersion;
 		yourself
