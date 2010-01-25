@@ -1,7 +1,7 @@
 testing
 testStartUp
 	| collection |
-	WAKeyGenerator  startUp.
+	WAKeyGenerator startUp.
 	collection := Set new: self count.
 	self count timesRepeat: [ collection add: (WAKeyGenerator current keyOfLength: 48) ].
 	

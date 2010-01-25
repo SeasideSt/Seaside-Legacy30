@@ -1,13 +1,13 @@
 {
 	"commentStamp" : "",
 	"super" : "WAContextTest",
-	"category" : "Seaside-Tests-Core",
+	"category" : "Seaside-Tests-Core-Document",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
 		"attributes"
 	],
-	"name" : "WAAttributesTest",
+	"name" : "WAHtmlAttributesTest",
 	"type" : "normal"
 }

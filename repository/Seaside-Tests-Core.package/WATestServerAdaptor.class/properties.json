@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "yann.monclair 9/5/2009 17:26",
 	"super" : "WAServerAdaptor",
-	"category" : "Seaside-Tests-Core",
+	"category" : "Seaside-Tests-Core-Server",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

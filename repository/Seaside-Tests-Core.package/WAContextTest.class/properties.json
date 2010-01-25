@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "pmm 5/11/2008 08:15",
 	"super" : "TestCase",
-	"category" : "Seaside-Tests-Core",
+	"category" : "Seaside-Tests-Core-RequestHandling",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

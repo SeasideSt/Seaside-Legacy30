@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "WARequestHandler",
-	"category" : "Seaside-Tests-Core",
+	"category" : "Seaside-Tests-Core-RequestHandling",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
