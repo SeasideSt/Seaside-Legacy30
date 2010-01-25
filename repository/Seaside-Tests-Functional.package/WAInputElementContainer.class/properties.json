@@ -17,7 +17,8 @@
 		"checkbox",
 		"radio",
 		"upload",
-		"hiddenInput"
+		"hiddenInput",
+		"radioCustom"
 	],
 	"name" : "WAInputElementContainer",
 	"type" : "normal"

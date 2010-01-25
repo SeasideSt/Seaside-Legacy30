@@ -1,6 +1,5 @@
 rendering-elements
 renderRadioButtonsOn: html
-	| radioGroup |
 	self
 		renderLabel: 'Radiogroup'
 		input: [

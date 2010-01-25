@@ -6,6 +6,7 @@ renderContentOn: html
 	self renderHiddenInputOn: html.
 	self renderCheckboxOn: html.
 	self renderRadioButtonsOn: html.
+	self renderRadioButtonsCustomOn: html.
 	self renderSingleSelectionOn: html.
 	self renderSingleSelectionCustomOn: html.
 	self renderSingleSelectionOptionalOn: html.
