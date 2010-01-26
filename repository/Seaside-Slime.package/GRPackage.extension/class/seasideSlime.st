@@ -2,6 +2,6 @@
 seasideSlime
 	^ self new
 		name: 'Seaside-Slime';
-		description: 'Code critis for Seaside. Detects common types of bugs.';
-		addDependency: 'Grease-Core';
+		description: 'Code critis for Seaside. Detects common types of Seaside-specific bugs.';
+		addDependency: 'Grease-Slime';
 		yourself
