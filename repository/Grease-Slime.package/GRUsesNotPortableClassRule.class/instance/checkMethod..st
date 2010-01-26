@@ -1,0 +1,8 @@
+running
+checkMethod: aContext 
+	aContext compiledMethod literals do: [ :each | 
+		((each isKindOf: Association) and: [ self classNames includes: each key ]) ifTrue: [
+			result 
+				addClass: aContext selectedClass
+				selector: aContext selector.
+			result addSearchString: each key ] ]
