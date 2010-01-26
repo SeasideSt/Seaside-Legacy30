@@ -16,6 +16,7 @@ testAnsiCollectionsRule
 	self compile: 'selectThenDo #() select: [ :a | true ] thenDo: [ :b | b ]' in: class.
 	self compile: 'valuesDo #() valuesDo: [ :a | a ]' in: class.
 	self compile: 'keysSortedSafely Dictionary new keysSortedSafely' in: class.
+	self compile: 'newWithAll Array new: 4 withAll: $a' in: class.
 	self 
 		runTransformation: WAAnsiCollectionsRule
 		changes: #( 
@@ -31,4 +32,5 @@ testAnsiCollectionsRule
 			'detectSumMultiline #(1 2) inject: 0 into: [ :sum :each | #foo copy. sum + each ]'
 			'valuesDo #() do: [ :a | a ]'
 			'keysSortedSafely Dictionary new keys asSortedCollection'
+			'newWithAll (Array new: 4) atAllPut: $a'
 			)
