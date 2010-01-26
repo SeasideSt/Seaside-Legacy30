@@ -6,7 +6,7 @@ checkMethod: aContext
 		initialAnswer: OrderedCollection new.
 	matches do: [ :node |
 		" This ensures that the description is of the form ClassName>>#selector:"
-		(node arguments first isLiteral and: [ node arguments first value isString and: [ aContext selectedClass name asString , '>>#' , aContext selector asString ~= node arguments first value ] ]) ifTrue: [
+		(node arguments first isLiteral and: [ node arguments first value isString and: [ aContext selectedClass name greaseString , '>>#' , aContext selector greaseString ~= node arguments first value ] ]) ifTrue: [
 			result addClass: aContext selectedClass selector: aContext selector.
 			result addSearchString: node arguments first value ].
 		" This ensures that the description is a string and ends with a dot."
