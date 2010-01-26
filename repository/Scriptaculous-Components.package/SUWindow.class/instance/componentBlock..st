@@ -1,4 +1,3 @@
 accessing
 componentBlock: aBlock
-	aBlock fixCallbackTemps.
-	componentBlock := aBlock
+	componentBlock := aBlock fixCallbackTemps
