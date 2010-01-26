@@ -1,4 +1,4 @@
-testing-parsetree
+*seaside-tests-slime
 testWithHasToBeLastMessageInCascade
 	| class |
 	class := self 

@@ -1,4 +1,4 @@
-testing-parsetree
+*seaside-tests-slime
 testSendsRenderContentOn
 	| class |
 	class := self 

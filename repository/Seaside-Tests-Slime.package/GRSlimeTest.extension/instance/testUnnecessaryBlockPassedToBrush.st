@@ -1,4 +1,4 @@
-testing-parsetree
+*seaside-tests-slime
 testUnnecessaryBlockPassedToBrush
 	| class |
 	class := self 
