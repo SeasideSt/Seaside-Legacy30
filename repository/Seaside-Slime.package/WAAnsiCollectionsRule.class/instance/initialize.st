@@ -22,5 +22,7 @@ initialize
 			with: '``@collection inject: 0 into: [ :sum :`t1 | ``@.statements. sum + (`.last) ]';
 		replace: '``@collection valuesDo: ``@block'
 			with: '``@collection do: ``@block';
-		replace: '``@object keysSortedSafely'
-			with: '``@object keys asSortedCollection'
+		replace: '``@dictionary keysSortedSafely'
+			with: '``@dictionary keys asSortedCollection';
+		replace: '``@collectionClass new: ``@size withAll: ``@character'
+			with: '(``@collectionClass new: ``@size) atAllPut: ``@character'
