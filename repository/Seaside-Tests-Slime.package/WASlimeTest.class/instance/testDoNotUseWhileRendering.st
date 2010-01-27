@@ -1,4 +1,4 @@
-*seaside-tests-slime
+testing-block
 testDoNotUseWhileRendering
 	| class |
 	class := self 

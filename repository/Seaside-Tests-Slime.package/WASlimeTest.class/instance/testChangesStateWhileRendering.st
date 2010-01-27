@@ -1,4 +1,4 @@
-*seaside-tests-slime
+testing-block
 testChangesStateWhileRendering
 	| class |
 	class := self 

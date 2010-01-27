@@ -1,4 +1,4 @@
-*seaside-tests-slime
+testing-block
 testCallSuperImplementation
 	| object painter |
 	object := self

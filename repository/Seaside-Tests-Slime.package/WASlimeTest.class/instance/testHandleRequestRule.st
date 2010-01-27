@@ -1,4 +1,4 @@
-*seaside-tests-slime
+testing-transform
 testHandleRequestRule
 	| class |
 	class := self

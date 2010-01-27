@@ -1,4 +1,4 @@
-*seaside-tests-slime
+testing-block
 testInstantiatesComponentWhileRendering
 	| class |
 	class := self 

@@ -1,4 +1,4 @@
-*seaside-tests-slime
+testing-parsetree
 testExtractCallbackCodeToMethod
 	| class |
 	class := self 

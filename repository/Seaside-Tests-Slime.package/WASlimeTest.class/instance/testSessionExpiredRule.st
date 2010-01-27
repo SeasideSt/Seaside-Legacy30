@@ -1,4 +1,4 @@
-*seaside-tests-slime
+testing-transform
 testSessionExpiredRule
 	| class |
 	class := self
