@@ -2,5 +2,5 @@ utilities
 assert: anObject equals: aString
 	self
 		assert: anObject asJavascript = aString
-		description: anObject asJavascript , ' expected to be ' , aString printString
+		description: anObject asJavascript printString , ' expected to be ' , aString printString
 		resumable: true
