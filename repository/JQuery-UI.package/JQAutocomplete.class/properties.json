@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "lr 1/28/2010 14:26",
+	"super" : "JQWidget",
+	"category" : "JQuery-UI-Widgets",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "JQAutocomplete",
+	"type" : "normal"
+}

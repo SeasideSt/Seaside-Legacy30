@@ -2,16 +2,32 @@ private
 generate
 	"This code is used to generate the widget classes from the JQuery documentation. It is not necessary to port or call this method from any Smalltalk platform other than Pharo. The actual code of this method is commented to avoid problems on other platforms."
 
-	"| model url comment |
-	model := (Smalltalk at: #RBNamespace) new.
-	url := 'http://docs.jquery.com/action/raw/UI/API/1.7.2/'.
+	"| model base comment |
+	model := RBNamespace new.
+	base := 'http://docs.jquery.com/action/raw/'.
 	comment := [ :input |
 		(String with: (Character value: 34)) , ((((input copyWithRegex: '<(li|br/?)>' matchesReplacedWith: (String with: Character cr)) copyWithRegex: '<[^>]+>' matchesReplacedWith: '') copyReplaceAll: (String with: (Character value: 34)) with: '''') copyReplaceAll: '''''' with: '''') , (String with: (Character value: 34)) ].
-	#('Draggable' 'Droppable' 'Resizable' 'Selectable' 'Sortable' 'Accordion' 'Datepicker' 'Dialog' 'Progressbar' 'Slider' 'Tabs' ) do: [ :id |
+
+	#(	'Draggable'		'UI/API/1.8/Draggable'
+		'Droppable'		'UI/API/1.8/Droppable'
+		'Resizable'		'UI/API/1.8/Resizable' 
+		'Selectable'		'UI/API/1.8/Selectable' 
+		'Sortable'		'UI/API/1.8/Sortable'
+		
+		'Accordion'		'UI/API/1.8/Accordion'
+		'Autocomplete'	'UI/API/1.8/Autocomplete'
+		'Button'			'UI/API/1.8/Button'
+		'Datepicker'	'UI/API/1.8/Datepicker'
+		'Dialog'			'UI/API/1.8/Dialog'
+		'Progressbar'	'UI/API/1.7.2/Progressbar'
+		'Slider'			'UI/API/1.8/Slider'
+		'Tabs'			'UI/API/1.8/Tabs'
+		
+		'Position'		'UI/Utility/Position') pairsDo: [ :id :url |
 		| stream string class matcher tokens argument dictionary removals selector source |
 
 		' fetch documentation '.
-		stream := (Smalltalk at: #HTTPSocket) httpGet: url , id.
+		stream := HTTPSocket httpGet: base , url.
 		stream isString ifTrue: [ self error: stream ].
 		string := (stream contents
 			replaceAll: Character cr with: Character space)
@@ -29,8 +45,9 @@ generate
 		' generate options '.
 		matcher := '\{\{UIAPIPluginOption\|' asRegex.
 		matcher matchesIn: string do: [ :match |
-			tokens := string copyFrom: (matcher subEnd: 1) first to: string size.
-			tokens := ((tokens readStream upToAll: '}}') findTokens: $|)
+			tokens := string copyFrom: (matcher subEnd: 1) first + 1 to: string size.
+			tokens := (((tokens readStream upToAll: '}}')
+				copyReplaceAll: '|' with: ' |') findTokens: $|)
 				collect: [ :each | each withBlanksCondensed ].
 			argument := ((tokens at: 3)
 				copyReplaceAll: ',' with: 'Or')
@@ -42,6 +59,27 @@ generate
 	' , (comment value: (tokens at: 5)) , '
 
 	self optionAt: ' , (tokens at: 2) printString , ' put: ' , argument.
+			removals remove: selector ifAbsent: [ ].
+			(class sourceCodeFor: selector) = source
+				ifFalse: [ class compile: source classified: #'options-generated' ] ].
+			
+		' generate utility options '.
+		matcher := '\{\{UIAPIUtilityOption\|' asRegex.
+		matcher matchesIn: string do: [ :match |
+			tokens := string copyFrom: (matcher subEnd: 1) first + 1 to: string size.
+			tokens := (((tokens readStream upToAll: '}}')
+				copyReplaceAll: '|' with: ' |') findTokens: $|)
+				collect: [ :each | each withBlanksCondensed ].
+			argument := ((tokens at: 2)
+				copyReplaceAll: ',' with: 'Or')
+				select: [ :each | each isAlphaNumeric ].
+			argument := (argument first isVowel
+				ifTrue: [ 'an' ] ifFalse: [ 'a' ]) , argument.
+			selector := ((tokens at: 1) , ':') asSymbol.
+			source := selector , ' ' , argument , '
+	' , (comment value: (tokens at: 4)) , '
+
+	self optionAt: ' , (tokens at: 1) printString , ' put: ' , argument.
 			removals remove: selector ifAbsent: [ ].
 			(class sourceCodeFor: selector) = source
 				ifFalse: [ class compile: source classified: #'options-generated' ] ].
@@ -78,5 +116,3 @@ generate
 
 	' open changes '.
 	model changes open"
-	
-	self error: 'comment only'

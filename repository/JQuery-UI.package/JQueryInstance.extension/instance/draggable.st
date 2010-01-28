@@ -1,4 +1,4 @@
-*jquery-ui-interaction
+*jquery-ui-interactions
 draggable
 	"Creates new draggables on the nodeset supplied by the query."
 	

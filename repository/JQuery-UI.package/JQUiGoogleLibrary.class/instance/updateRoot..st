@@ -2,4 +2,4 @@ processing
 updateRoot: anHtmlRoot
 	super updateRoot: anHtmlRoot.
 	anHtmlRoot javascript
-		url: 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js'
+		url: 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js'
