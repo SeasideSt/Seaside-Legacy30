@@ -1,3 +1,3 @@
 accessing
 url
-	^ 'http://docs.jquery.com/UI/API/1.7/Resizable'
+	^ 'http://docs.jquery.com/UI/Resizable'

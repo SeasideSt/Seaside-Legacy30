@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "JQUiFunctionalTest",
+	"category" : "JQuery-Tests-UI-Functional",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"locked",
+		"repeat"
+	],
+	"name" : "JQButtonFunctionalTest",
+	"type" : "normal"
+}

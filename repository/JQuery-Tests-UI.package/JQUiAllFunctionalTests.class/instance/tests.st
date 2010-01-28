@@ -10,6 +10,8 @@ tests
 			yourself)
 		with: 'Widgets' -> (OrderedCollection new
 			add: 'Accordion' -> JQAccordionFunctionalTest new;
+			add: 'Autocomplete' -> JQAutocompleteFunctionalTest new;
+			add: 'Button' -> JQButtonFunctionalTest new;
 			add: 'Datepicker' -> JQDatepickerFunctionalTest new;
 			add: 'Dialog' -> JQDialogFunctionalTest new;
 			add: 'Progressbar' -> JQProgressbarFunctionalTest new;
