@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6 { border: 0; margin: 0; font-weight: normal; letter-spaci
 #content .main h3 { font-size: 20px; margin-bottom: 10px; }
 #content .main h4 { font-size: 16px; border-bottom: 1px solid #eee; margin-top: 20px; margin-bottom: 10px; }
 #content .main .demo { position: relative; }
-#content .main .code { font-family: "Bitstream Vera Sans Mono", Courier, monospace; font-size: 1.2em; line-height: 1.2; overflow-x: hidden; overflow-y: auto; white-space: pre; width: 735px; }
+#content .main .code { font-family: "Bitstream Vera Sans Mono", Courier, monospace; font-size: 1.2em; line-height: 1.2; width: 735px; white-space: pre-wrap; white-space: -moz-pre-wrap !important; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; }
 #content .main .code .signature { font-weight: bold; }
 #content .main .code .wa-tag { font-weight: bold; color: purple; }
 #content .main .code .wa-attribute-key { font-weight: bold; color: black; }
