@@ -9,5 +9,5 @@ forbidden
 			render: [ :html |
 				html heading: [
 					html text: 'Error: you are forbidden to access "'.
-					html text: self request url.
+					html text: self request url pathString.
 					html text: '"' ] ])

@@ -9,5 +9,5 @@ notFound
 			render: [ :html |
 				html heading: [
 					html text: 'Error: "'.
-					html text: self request url.
+					html text: self request url pathString.
 					html text: '" not found' ] ])
