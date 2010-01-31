@@ -7,6 +7,6 @@ method: methodString url: urlOrString headers: headDict fields: fieldDict cookie
 		method: methodString
 		uri: urlOrString)
 		setHeaders: headDict;
-		setFields: fieldDict;
+		setPostFields: fieldDict;
 		setCookies: cookieDict;
 		yourself

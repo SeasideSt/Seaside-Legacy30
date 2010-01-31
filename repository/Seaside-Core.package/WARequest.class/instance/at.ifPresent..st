@@ -1,3 +1,3 @@
 accessing
 at: key ifPresent: aBlock
-	^ fields at: key ifPresent: aBlock
+	^ self fields at: key ifPresent: aBlock

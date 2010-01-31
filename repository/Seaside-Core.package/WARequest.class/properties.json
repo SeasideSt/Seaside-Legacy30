@@ -9,11 +9,11 @@
 		"method",
 		"uri",
 		"version",
-		"fields",
 		"remoteAddress",
 		"headers",
 		"cookies",
-		"body"
+		"body",
+		"postFields"
 	],
 	"name" : "WARequest",
 	"type" : "normal"

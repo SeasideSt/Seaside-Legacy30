@@ -1,3 +1,3 @@
 testing
 includesKey: key
-	^ fields includesKey: key
+	^ self fields includesKey: key

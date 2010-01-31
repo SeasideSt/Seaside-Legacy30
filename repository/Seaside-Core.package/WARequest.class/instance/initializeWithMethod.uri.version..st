@@ -5,6 +5,6 @@ initializeWithMethod: methodString uri: aUrlOrString version: aVersion
 	uri := aUrlOrString seasideUrl.
 	version := aVersion.
 	headers := WAHeaderFields new.
-	fields := WAHeaderFields new.
+	postFields := Dictionary new.
 	cookies := OrderedCollection new.
 	remoteAddress := nil

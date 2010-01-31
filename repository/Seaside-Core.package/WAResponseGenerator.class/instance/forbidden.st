@@ -5,5 +5,5 @@ forbidden
 		forbidden;
 		contentType: WAMimeType textPlain;
 		nextPutAll: 'Error: you are forbidden to access "';
-		nextPutAll: self request url greaseString;
+		nextPutAll: self request url pathString;
 		nextPutAll: '"'

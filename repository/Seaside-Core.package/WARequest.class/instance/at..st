@@ -1,3 +1,3 @@
 accessing
 at: key
-	^ fields at: key
+	^ self fields at: key

@@ -4,5 +4,5 @@ notFound
 	self response
 		notFound;
 		contentType: WAMimeType textPlain;
-		nextPutAll: self request url greaseString;
+		nextPutAll: self request url pathString;
 		nextPutAll: ' not found'

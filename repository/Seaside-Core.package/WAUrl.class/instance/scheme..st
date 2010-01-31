@@ -1,3 +1,3 @@
 accessing
 scheme: aString
-	scheme := aString asLowercase
+	scheme := aString isNil ifFalse: [ aString asLowercase ]

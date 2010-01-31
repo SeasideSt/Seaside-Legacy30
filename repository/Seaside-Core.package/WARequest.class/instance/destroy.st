@@ -1,3 +1,3 @@
 initialization
 destroy
-	method := uri := version := fields := remoteAddress := headers := cookies := nil
+	method := uri := version := postFields := remoteAddress := headers := cookies := nil
