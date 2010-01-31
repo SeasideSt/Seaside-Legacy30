@@ -6,7 +6,7 @@ createRequestContextWithFieldKey: fieldString cookieKey: cookieString
 	cookies := OrderedCollection new.
 	cookieString isNil ifFalse: [ cookies add: ((WARequestCookie key: self cookieKey value: cookieString ) path: self path; yourself) ].
 	request := (WARequest method: 'GET' uri: self path)
-		setFields: fields;
+		setPostFields: fields;
 		setCookies: cookies;
 		yourself.
 	^ WARequestContext request: request response: WABufferedResponse new
