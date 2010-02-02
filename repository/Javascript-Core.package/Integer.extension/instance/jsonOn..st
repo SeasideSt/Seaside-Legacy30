@@ -1,3 +1,3 @@
 *javascript-core
-jsonOn: aStream 
-	self printOn: aStream
+jsonOn: aStream
+	self javascriptOn: aStream

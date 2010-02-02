@@ -1,3 +1,3 @@
 *javascript-core
 jsonOn: aStream 
-	aStream nextPutAll: 'false'
+	self javascriptOn: aStream

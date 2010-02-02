@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "pmm 8/30/2009 18:59",
-	"super" : "JSStream",
-	"category" : "Javascript-Core",
+	"super" : "GRObject",
+	"category" : "Javascript-Core-JSON",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"stream"
+	],
 	"name" : "JSJsonStream",
 	"type" : "normal"
 }

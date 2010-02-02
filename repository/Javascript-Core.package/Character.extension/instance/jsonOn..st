@@ -1,3 +1,3 @@
 *javascript-core
 jsonOn: aStream
-	(String with: self) jsonOn: aStream
+	self javascriptOn: aStream
