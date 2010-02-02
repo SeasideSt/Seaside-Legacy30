@@ -1,4 +1,4 @@
-tests
+testing-literals
 testStringSpecial
 	self assert: (String with: Character cr) equals: '"\r"'.
 	self assert: (String with: Character lf) equals: '"\n"'.

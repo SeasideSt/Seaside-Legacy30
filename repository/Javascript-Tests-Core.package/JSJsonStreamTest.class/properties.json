@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "JSStreamTest",
+	"super" : "TestCase",
 	"category" : "Javascript-Tests-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"printer"
+	],
 	"name" : "JSJsonStreamTest",
 	"type" : "normal"
 }
