@@ -1,5 +1,5 @@
 *comet-pharo-core
-cometSqueakCore
+cometPharoCore
 	^ self new
 		name: 'Comet-Pharo-Core';
 		addDependency: 'Comet-Core';
