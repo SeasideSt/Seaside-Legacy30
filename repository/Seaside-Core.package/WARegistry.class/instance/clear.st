@@ -1,4 +1,4 @@
-public
+parent/child
 clear
 	"Remove all registered handlers."
 

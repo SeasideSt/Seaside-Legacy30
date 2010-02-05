@@ -1,4 +1,4 @@
-public
+parent/child
 ensureKeyFor: aRequestHandler
 	"Ensure the request handler is registered and returns its key."
 	

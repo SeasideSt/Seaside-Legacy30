@@ -1,4 +1,4 @@
-registration
+parent/child
 unregister: aRequestHandler
 	handlers 
 		removeKey: aRequestHandler name

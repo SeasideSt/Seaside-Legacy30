@@ -1,4 +1,4 @@
-registration
+parent/child
 register: aRequestHandler at: aString 
 	aString ifNil: [ WAError signal: 'Registration key cannot be nil.' ].
 	handlers 
