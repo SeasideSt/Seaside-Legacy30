@@ -22,8 +22,8 @@ testActions
 		assert: ((self jQuery: 'ul') tabs length)
 		equals: self function , '("ul").tabs("length")'.
 	self
-		assert: ((self jQuery: 'ul') tabs rotate: 1 second)
+		assert: ((self jQuery: 'ul') tabs rotate: 1 seconds)
 		equals: self function , '("ul").tabs("rotate",1000)'.
 	self
-		assert: ((self jQuery: 'ul') tabs rotate: 1 second continuing: true)
+		assert: ((self jQuery: 'ul') tabs rotate: 1 seconds continuing: true)
 		equals: self function , '("ul").tabs("rotate",1000,true)'
