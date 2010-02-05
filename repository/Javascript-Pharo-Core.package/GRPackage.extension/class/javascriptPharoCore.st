@@ -1,5 +1,5 @@
 *javascript-pharo-core
-javascriptSqueakCore
+javascriptPharoCore
 	^ self new
 		name: 'Javascript-Pharo-Core';
 		addDependency: 'Javascript-Core';
