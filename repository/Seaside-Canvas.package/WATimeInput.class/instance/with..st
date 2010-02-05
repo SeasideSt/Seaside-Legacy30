@@ -3,8 +3,8 @@ with: anObject
 	super with: anObject.
 	value isNil ifTrue: [value := Time now].
 	hours := value hour.
-	minutes := value minutes.
-	seconds := value seconds.
+	minutes := value minute.
+	seconds := value second.
 	self renderHours.
 	canvas space; text: ':'; space.
 	self renderMinutes.
