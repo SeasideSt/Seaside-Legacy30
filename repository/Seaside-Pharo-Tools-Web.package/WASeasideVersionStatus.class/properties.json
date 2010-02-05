@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "WASqueakStatusItem",
+	"super" : "WAPharoStatusItem",
 	"category" : "Seaside-Pharo-Tools-Web",
 	"classinstvars" : [ ],
 	"pools" : [ ],

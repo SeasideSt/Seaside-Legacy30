@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WASqueakStatusItem",
+	"name" : "WAPharoStatusItem",
 	"type" : "normal"
 }
