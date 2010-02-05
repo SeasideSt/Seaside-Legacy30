@@ -1,5 +1,5 @@
 accessing
 mutex
-	"Answer the mutex in use with the reciever."
+	"Answer the mutex in use with the receiver."
 
 	^ mutex

@@ -6,4 +6,4 @@ basicConnect: aRequestContext
 		doNotCache;
 		contentType: aRequestContext application contentType;
 		nextPutAll: (self preambleFor: aRequestContext);
-		nextPutAll: (String new: 1024 withAll: Character space)
+		nextPutAll: ((String new: 1024) atAllPut: Character space)
