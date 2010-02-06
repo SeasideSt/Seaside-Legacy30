@@ -3,7 +3,7 @@ renderValuesOn: html
 	| image upTime |
 	image := SmalltalkImage current.
 	
-	upTime := Duration milliSeconds: Time millisecondClockValue.
+	upTime := Duration milliseconds: Time millisecondClockValue.
 	
 	self renderLabel: 'Uptime' value: (self printDuration: upTime) on: html.
 	self renderLabel: 'Version' value: Smalltalk version on: html.
