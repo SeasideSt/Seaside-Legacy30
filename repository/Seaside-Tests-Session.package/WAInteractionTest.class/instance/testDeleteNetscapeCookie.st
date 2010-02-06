@@ -8,7 +8,7 @@ testDeleteNetscapeCookie
 	
 	responseCookies := self requestContext response cookies.
 	self assert: responseCookies size = 1.
-	responseCookie := responseCookies anyOne.
+	responseCookie := responseCookies any.
 	
 	self assert: (responseCookie isKindOf: WACookie).
 	self assert: responseCookie value = ''.
