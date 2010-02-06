@@ -9,7 +9,7 @@ renderMembersOn: html
 		callback: [ :value | selected := value ];
 		selected: selected.
 	html table: [
-		members associationsDo: [ :association |
+		members do: [ :association |
 			self
 				renderRow: association value
 				named: association key
