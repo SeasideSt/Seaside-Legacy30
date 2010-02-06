@@ -1,4 +1,5 @@
 initialization
 initialize
 	super initialize.
-	negativePrinter := $-
+	self negativePrinter: $-.
+	self positivePrinter: nil

@@ -1,4 +1,4 @@
 initialization
 initialize
 	super initialize.
-	block := [ :value | String new ]
+	self block: [ :value | String new ]

@@ -1,5 +1,5 @@
 initialization
 initialize
 	super initialize.
-	character := $ .
-	trim := length := pad := nil
+	self character: $ ; length: nil.
+	self trimNone; padNone

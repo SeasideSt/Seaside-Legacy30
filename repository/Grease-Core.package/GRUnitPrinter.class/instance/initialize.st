@@ -1,5 +1,9 @@
 initialization
 initialize
 	super initialize.
-	integerPrinter := GRNumberPrinter new precision: 0.
-	fractionPrinter := GRNumberPrinter new precision: 1
+	self integerPrinter: (GRNumberPrinter new
+		precision: 0;
+		yourself).
+	self fractionPrinter: (GRNumberPrinter new
+		precision: 1;
+		yourself)

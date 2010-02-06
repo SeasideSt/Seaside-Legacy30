@@ -1,10 +1,10 @@
 initialization
 initialize
 	super initialize.
-	characters := NumbersToCharactersLowercase.
-	base := 10.
-	delimiter := $..
-	infinite := 'Infinite'.
-	nan := 'NaN'.
-	padding := $ .
-	precision := 0
+	self lowercase.
+	self base: 10.
+	self delimiter: $..
+	self infinite: 'Infinite'.
+	self nan: 'NaN'.
+	self padding: $ .
+	self precision: 0
