@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "GRStringTest",
+	"name" : "GRIntervalTest",
 	"type" : "normal"
 }
