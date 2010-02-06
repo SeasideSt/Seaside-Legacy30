@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "GRStringTest",
+	"name" : "GRSetTest",
 	"type" : "normal"
 }

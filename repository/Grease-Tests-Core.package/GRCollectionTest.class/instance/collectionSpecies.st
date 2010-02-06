@@ -1,0 +1,3 @@
+configuration
+collectionSpecies
+	^ self collectionClass

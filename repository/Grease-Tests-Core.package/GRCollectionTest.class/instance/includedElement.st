@@ -1,0 +1,3 @@
+configuration
+includedElement
+	^ 2

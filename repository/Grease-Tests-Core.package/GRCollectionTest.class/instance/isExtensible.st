@@ -1,0 +1,3 @@
+testing-ANSI
+isExtensible
+	self subclassResponsibility

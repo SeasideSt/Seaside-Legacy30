@@ -1,0 +1,3 @@
+configuration
+allowsDuplicateValues
+	self subclassResponsibility

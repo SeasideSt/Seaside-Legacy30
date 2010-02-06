@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "GRStringTest",
+	"name" : "GRBagTest",
 	"type" : "normal"
 }
