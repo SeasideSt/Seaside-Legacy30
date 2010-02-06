@@ -1,4 +1,4 @@
-testing
+tests
 testNotEmpty
 	
 	self assert: #(1) notEmpty.

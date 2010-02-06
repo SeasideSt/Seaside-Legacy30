@@ -1,4 +1,4 @@
-testing
+tests
 testCopyUpToLast
 	| array interval strings |
 	array := #(1 2 3 4 1 2).

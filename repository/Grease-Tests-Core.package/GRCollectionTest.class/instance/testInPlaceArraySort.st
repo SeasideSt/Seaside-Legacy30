@@ -1,4 +1,4 @@
-testing
+tests
 testInPlaceArraySort
 	| array |
 	array := Array withAll: #(2 4 3 1).

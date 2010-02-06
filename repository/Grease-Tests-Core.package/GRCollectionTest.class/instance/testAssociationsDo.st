@@ -1,4 +1,4 @@
-testing
+tests
 testAssociationsDo
 	| actual |
 	actual := Array with: 1->1 with: 2->2 with: 3->3.

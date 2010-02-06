@@ -1,4 +1,4 @@
-testing
+tests
 testAddFirst
 	| strings |
 	strings := #('b' 'c' 'd') asOrderedCollection.
