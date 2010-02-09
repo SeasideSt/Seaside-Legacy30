@@ -1,3 +1,0 @@
-*seaside-environment
-defaultDispatcherName
-	^'seaside'
