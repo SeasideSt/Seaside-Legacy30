@@ -1,3 +1,3 @@
-testing
+testing-ANSI
 isSequenced
 	^ true

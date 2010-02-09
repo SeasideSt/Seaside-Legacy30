@@ -1,3 +1,3 @@
 testing-ANSI
-isSequencedReadable
+isInitializable
 	^ false

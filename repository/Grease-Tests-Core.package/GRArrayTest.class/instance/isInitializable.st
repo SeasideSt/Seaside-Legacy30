@@ -1,3 +1,3 @@
 testing-ANSI
-isExtensible
+isInitializable
 	^ true

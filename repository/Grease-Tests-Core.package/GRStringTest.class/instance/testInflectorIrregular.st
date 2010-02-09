@@ -1,4 +1,4 @@
-testing-pluralize
+tests-pluralize
 testInflectorIrregular
 	self assert: 'genie' pluralize = 'genies'.
 	self assert: 'ox' pluralize = 'oxen'.
