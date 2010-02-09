@@ -1,3 +1,3 @@
 *seaside-tests-pharo-functional
-garbageCollect
+seasideGarbageCollect
 	Smalltalk garbageCollect
