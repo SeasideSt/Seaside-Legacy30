@@ -1,3 +1,0 @@
-private-email
-smtpServer
-	self subclassResponsibility
