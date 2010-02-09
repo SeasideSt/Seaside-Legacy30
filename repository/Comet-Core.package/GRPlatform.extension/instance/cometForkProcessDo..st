@@ -1,3 +1,3 @@
 *comet-core
-forkCometProcessDo: aBlock
+cometForkProcessDo: aBlock
 	self subclassResponsibility
