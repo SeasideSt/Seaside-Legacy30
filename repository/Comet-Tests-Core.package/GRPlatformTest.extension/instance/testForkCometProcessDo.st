@@ -3,6 +3,6 @@ testForkCometProcessDo
 	| semaphore seen |
 	semaphore := self platform semaphoreClass new.
 	seen := false.
-	self platform forkCometProcessDo: [ seen := true. semaphore signal ].
+	self platform cometForkProcessDo: [ seen := true. semaphore signal ].
 	semaphore wait.
 	self assert: seen
