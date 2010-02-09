@@ -14,18 +14,18 @@ renderActionsOn: html
 			with: 'Reset Counters'.
 		html break.
 		html anchor
-			callback: [ GRPlatform current garbageCollect ];
+			callback: [ GRPlatform current seasideGarbageCollect ];
 			with: 'Garbage Collect'.
 		html break.
 		html anchor
 			callback: 
 				[ self application clear.
-				GRPlatform current garbageCollect ];
+				GRPlatform current seasideGarbageCollect ];
 			with: 'Clear Cache'.
 		html break.
 		html anchor
 			callback: 
 				[ self application clear.
 				WAExpirySession resetCounters.
-				GRPlatform current garbageCollect ];
+				GRPlatform current seasideGarbageCollect ];
 			with: 'Reset All' ]

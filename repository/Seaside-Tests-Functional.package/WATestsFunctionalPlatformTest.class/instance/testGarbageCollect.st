@@ -1,5 +1,5 @@
 tests
 testGarbageCollect
 	self 
-		shouldnt: [ GRPlatform current garbageCollect ]
+		shouldnt: [ GRPlatform current seasideGarbageCollect ]
 		raise: MessageNotUnderstood
