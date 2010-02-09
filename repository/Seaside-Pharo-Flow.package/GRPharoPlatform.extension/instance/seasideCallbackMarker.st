@@ -1,5 +1,5 @@
 *seaside-pharo-flow
-callbackMarker
+seasideCallbackMarker
 	| context |
 	context := thisContext sender.
 	[ context isNil or: [ (context receiver isKindOf: WACallback) or: [ context method == (WATaskVisitor >> #visitTask:) ] ] ]

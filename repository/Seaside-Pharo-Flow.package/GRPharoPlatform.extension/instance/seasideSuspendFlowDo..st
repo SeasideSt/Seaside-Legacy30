@@ -1,10 +1,10 @@
 *seaside-pharo-flow
-suspendFlowDo: aBlock
+seasideSuspendFlowDo: aBlock
 	| continuation |
 	continuation := WAPartialContinuation
 		from: thisContext sender
-		to: self callbackMarker.
+		to: self seasideCallbackMarker.
 	^ aBlock value: [ :answer |
 		[ continuation value: answer ]
 			on: WAMarkerRequest
-			do: [ :request | request resume: self callbackMarker ] ]
+			do: [ :request | request resume: self seasideCallbackMarker ] ]
