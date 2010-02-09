@@ -1,3 +1,3 @@
 configuration
 arbitraryCollection
-	^ 'fadbbc'
+	^ 'fadbbc' copy   "String literals are immutable"
