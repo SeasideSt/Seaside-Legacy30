@@ -1,3 +1,3 @@
 *comet-pharo-core
-waitCometProcess
+cometWait
 	(Delay forSeconds: 15) wait

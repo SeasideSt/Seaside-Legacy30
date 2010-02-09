@@ -1,3 +1,3 @@
 *comet-pharo-core
-forkCometProcessDo: aBlock
+cometForkProcessDo: aBlock
 	^ aBlock forkAt: 20 named: 'ping'
