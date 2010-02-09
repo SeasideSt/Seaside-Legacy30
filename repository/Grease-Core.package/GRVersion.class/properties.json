@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "GRObject",
+	"category" : "Grease-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"major",
+		"minor",
+		"revision",
+		"stageLabel",
+		"stageNumber"
+	],
+	"name" : "GRVersion",
+	"type" : "normal"
+}
