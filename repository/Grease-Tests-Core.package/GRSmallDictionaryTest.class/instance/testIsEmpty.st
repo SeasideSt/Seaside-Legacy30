@@ -1,5 +1,6 @@
-testing-testing
+tests-testing
 testIsEmpty
-	self assert: dictionary isEmpty.
-	dictionary at: '1' put: 'foo'.
-	self deny: dictionary isEmpty
+	self assert: collection isEmpty.
+	collection add: '1' -> 'foo'.
+	collection add: '1' -> 'bar'.
+	self deny: collection isEmpty

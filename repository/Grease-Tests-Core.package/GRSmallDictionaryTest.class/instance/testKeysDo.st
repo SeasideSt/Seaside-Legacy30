@@ -1,7 +1,8 @@
-testing-enumerating
+tests-enumerating
 testKeysDo
 	| result |
 	result := OrderedCollection new.
-	dictionary at: '1' put: 'foo'; at: '2' put: 'bar'.
-	dictionary keysDo: [ :each | result add: each ].
-	self assert: result asArray = #( '1' '2' )
+	collection add: '1' -> 'foo'; add: '2' -> 'bar'; add: '1' -> 'baz'.
+	collection keysDo: [ :each | result add: each ].
+	self assert: result asArray = 
+		(self allowsDuplicateKeys ifTrue: [ #('1' '2' '1') ] ifFalse: [ #('1' '2') ])
