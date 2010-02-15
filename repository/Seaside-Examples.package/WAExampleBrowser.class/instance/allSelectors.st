@@ -1,4 +1,3 @@
 helper
 allSelectors
-	^ (class class selectors select: [ :each | each beginsWith: self selectorPrefix ])
-		asSortedCollection
+	^ (class class selectors select: [ :each | each beginsWith: self selectorPrefix ]) sorted
