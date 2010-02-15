@@ -1,6 +1,6 @@
 initialization
 setContext: aRenderContext
 	super setContext: aRenderContext.
-	self url: aRenderContext actionUrl withoutParameters.
-	self addParameters: aRenderContext actionUrl parameters.
+	self url: aRenderContext actionUrl withoutQuery.
+	self addParameters: aRenderContext actionUrl queryFields.
 	self registerCallbackIn: aRenderContext callbacks
