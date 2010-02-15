@@ -1,10 +1,5 @@
 rendering
 renderValuesOn: html
-	self sortedWorkingCopies do: [ :category |
-		html tableRow: [
-			html tableHeading: category key.
-			html tableHeading ].
-		category value do: [ :each |
-			html tableRow: [
-				html tableData: each packageName.
-				html tableData: (each ancestry ancestorString copyAfterLast: $-) ] ] ]
+	self renderLabel: 'Seaside Version' value: GRPlatform current seasideVersion greaseString on: html.
+	self renderLabel: 'Grease Version' value: GRPlatform current versionString on: html.
+	self renderLabel: 'Packages' value: [ self renderPackagesOn: html ] on: html
