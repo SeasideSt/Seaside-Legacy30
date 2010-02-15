@@ -1,6 +1,10 @@
 encoding
 encodeOn: aDocument
-	self encodeServerOn: aDocument.
+	self encodeSchemeAndAuthorityOn: aDocument.
 	self encodePathOn: aDocument.
-	self encodeParametersOn: aDocument.
-	self encodeFragmentOn: aDocument
+	queryFields notNil ifTrue: [
+		aDocument htmlEncoder nextPut: $?.
+		self encodeQueryOn: aDocument ].
+	fragment notNil ifTrue: [
+		aDocument htmlEncoder nextPut: $#.
+		self encodeFragmentOn: aDocument ]

@@ -1,4 +1,6 @@
-accessing
+deprecated
 hostname: aString
-	hostname := aString isNil
-		ifFalse: [ aString asLowercase ]
+	self greaseDeprecatedApi: 'WAUrl>>#hostname:'
+		details: 'Use WAUrl>>#host:'.
+	
+	^ self host: aString

@@ -8,6 +8,6 @@ urlForRequestHandler: aRequestHandler addHandlerField: aBoolean
 	url := self url.
 	aBoolean ifTrue: 
 		[ url 
-			addParameter: self keyField
+			addField: self keyField
 			value: key ].
 	^ url

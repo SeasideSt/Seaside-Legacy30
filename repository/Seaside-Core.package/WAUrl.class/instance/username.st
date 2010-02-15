@@ -1,5 +1,6 @@
-accessing
+deprecated
 username
-	"Answer the username part of the URL."
+	self greaseDeprecatedApi: 'WAUrl>>#username'
+		details: 'Use WAUrl>>#user.'.
 
-	^ username
+	^ self user

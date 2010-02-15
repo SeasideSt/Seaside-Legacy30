@@ -9,6 +9,6 @@ urlFor: aRequestHandler ifAbsent: absentBlock
 	url := self url.
 	"Another option would be to have the Registry cache the cookie in the request context."
 	(self hasCookieInContext: self requestContext)
-		ifFalse: [ url addParameter: self keyField value: key ].
+		ifFalse: [ url addField: self keyField value: key ].
 		
 	^ url

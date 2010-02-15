@@ -1,5 +1,6 @@
-adding
-addParameter: aValue
-	"Add the parameter aValue to the receiving url."
-
-	self addParameter: aValue value: nil
+deprecated
+addParameter: aKey
+	self greaseDeprecatedApi: 'WAUrl>>#addParameter:'
+		details: 'Use WAUrl>>#addField:.'.
+	
+	^ self addField: aKey

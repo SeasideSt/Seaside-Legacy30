@@ -8,7 +8,7 @@ newCookie
 		path: baseUrl pathString;
 		httpOnly: true;
 		yourself.
-	baseUrl hostname isNil ifFalse: [ cookie domain: baseUrl hostname ].
+	baseUrl host isNil ifFalse: [ cookie domain: baseUrl host ].
 	baseUrl scheme = 'https' ifTrue: [ cookie secure: true ].
-	(baseUrl port notNil and: [ baseUrl hostname notNil ]) ifTrue: [ cookie port: baseUrl port ].
+	(baseUrl port notNil and: [ baseUrl host notNil ]) ifTrue: [ cookie port: baseUrl port ].
 	^ cookie

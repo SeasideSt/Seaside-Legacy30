@@ -1,5 +1,6 @@
-copying
+deprecated
 withoutParameters
-	^self copy
-		removeParameters;
-		yourself
+	self greaseDeprecatedApi: 'WAUrl>>#withoutParameters'
+		details: 'Use WAUrl>>#withoutQuery.'.
+	
+	^ self withoutQuery

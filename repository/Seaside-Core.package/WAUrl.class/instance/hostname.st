@@ -1,5 +1,6 @@
-accessing
+deprecated
 hostname
-	"Answer the host part of the URL."
+	self greaseDeprecatedApi: 'WAUrl>>#hostname'
+		details: 'Use WAUrl>>#host.'.
 
-	^ hostname
+	^ self host

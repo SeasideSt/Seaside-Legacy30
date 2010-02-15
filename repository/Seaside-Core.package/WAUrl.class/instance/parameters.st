@@ -1,4 +1,6 @@
-accessing
+deprecated
 parameters
-	"Answer a dictionary with the query parameters."
-	^ parameters ifNil: [ parameters := GRSmallDictionary new ]
+	self greaseDeprecatedApi: 'WAUrl>>#parameters'
+		details: 'Use WAUrl>>#queryFields.'.
+
+	^ self queryFields

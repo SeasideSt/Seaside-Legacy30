@@ -4,7 +4,7 @@ takeServerParametersFromRequest: aRequest
 
 	scheme isNil
 		ifTrue: [ self scheme: aRequest url scheme ].
-	hostname isNil 
-		ifTrue: [ aRequest headers at: 'host' ifPresent: [ :value | self parseHost: value ] ].
+	host isNil 
+		ifTrue: [ aRequest headers at: 'host' ifPresent: [ :value | self parseAuthority: value ] ].
 	path isNil
 		ifTrue: [ aRequest headers at: 'base' ifPresent: [ :value | self parsePath: value ] ]

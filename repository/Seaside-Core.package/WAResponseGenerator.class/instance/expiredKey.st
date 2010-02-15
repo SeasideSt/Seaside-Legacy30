@@ -11,5 +11,5 @@ expiredKey
 	self request isGet ifTrue: [
 		self request fields keysAndValuesDo: [ :key :value |
 			(url isSeasideField: key) 
-				ifFalse: [ url addParameter: key value: value ] ] ].
+				ifFalse: [ url addField: key value: value ] ] ].
 	self response redirectTo: url

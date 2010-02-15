@@ -9,7 +9,7 @@ initializeFromString: aString
 		string := string copyFrom: 1 to: index - 1 ].
 	index := string indexOf: $?.
 	index > 0 ifTrue: [
-		self parseParameters: (string copyFrom: index + 1 to: string size).
+		self parseQuery: (string copyFrom: index + 1 to: string size).
 		string := string copyFrom: 1 to: index - 1 ].
 	index := string indexOfSubCollection: '://'.
 	index > 0 ifTrue: [ 
@@ -18,9 +18,9 @@ initializeFromString: aString
 		index := string indexOf: $/.
 		string := index > 0
 			ifFalse: [ 
-				self parseHost: string.
+				self parseAuthority: string.
 				'' ]
 			ifTrue: [
-				self parseHost: (string copyFrom: 1 to: index - 1).
+				self parseAuthority: (string copyFrom: 1 to: index - 1).
 				string copyFrom: index + 1 to: string size ] ].
 	self parsePath: string

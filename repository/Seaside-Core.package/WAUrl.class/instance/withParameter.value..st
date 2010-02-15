@@ -1,5 +1,6 @@
-copying
-withParameter: aString value: valueString
-	^ self copy
-		addParameter: aString value: valueString;
-		yourself
+deprecated
+withParameter: aKey value: aValue
+	self greaseDeprecatedApi: 'WAUrl>>#withParameter:value:'
+		details: 'Use WAUrl>>#withField:value:.'.
+	
+	^ self withField: aKey value: aValue

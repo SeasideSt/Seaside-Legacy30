@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "lr 8/11/2009 09:46",
+	"commentStamp" : "jf 2/15/2010 00:36",
 	"super" : "WAObject",
 	"category" : "Seaside-Core-HTTP",
 	"classinstvars" : [ ],
@@ -7,13 +7,13 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"scheme",
-		"username",
+		"user",
 		"password",
-		"hostname",
+		"host",
 		"port",
 		"path",
 		"slash",
-		"parameters",
+		"queryFields",
 		"fragment"
 	],
 	"name" : "WAUrl",

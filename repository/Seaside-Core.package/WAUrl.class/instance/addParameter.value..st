@@ -1,6 +1,6 @@
-adding
+deprecated
 addParameter: aKey value: aValue
-	"Add the parameter aKey with aValue to the receiving url."
+	self greaseDeprecatedApi: 'WAUrl>>#addParameter:value:'
+		details: 'Use WAUrl>>#addField:value:.'.
 	
-	aKey isEmpty 
-		ifFalse: [ self parameters at: aKey append: aValue ]
+	^ self addField: aKey value: aValue

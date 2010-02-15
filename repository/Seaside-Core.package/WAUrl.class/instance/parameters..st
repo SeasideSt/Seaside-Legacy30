@@ -1,3 +1,6 @@
-accessing
+deprecated
 parameters: aDictionary
-	parameters := aDictionary
+	self greaseDeprecatedApi: 'WAUrl>>#parameters:'
+		details: 'Use WAUrl>>#queryFields:.'.
+
+	^ self queryFields: aDictionary

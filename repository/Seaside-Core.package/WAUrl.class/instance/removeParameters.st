@@ -1,3 +1,0 @@
-private
-removeParameters
-	parameters := nil

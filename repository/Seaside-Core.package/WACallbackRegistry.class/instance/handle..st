@@ -1,11 +1,11 @@
 processing
 handle: aRequestContext
-	| sorted requestFields |
+	| sorted |
 	sorted := SortedCollection new.
-	requestFields := aRequestContext request fields.
-	requestFields keysDo: [ :key |
+	aRequestContext request fields keysDo: [ :key |
 		callbacks at: key ifPresent: [ :callback |
 			(callback isEnabledFor: aRequestContext)
 				ifTrue: [ sorted add: callback ] ] ].
 	sorted do: [ :callback |
-		callback evaluateWithField: (requestFields at: callback key) ]
+		callback evaluateWithField: (aRequestContext request fields 
+			at: callback key) ]
