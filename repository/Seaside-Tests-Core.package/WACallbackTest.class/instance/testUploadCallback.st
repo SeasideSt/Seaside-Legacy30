@@ -6,7 +6,7 @@ testUploadCallback
 	" nil uploads are ignored "
 	self 
 		shouldnt: 
-			[ self request: (GRSmallDictionary new
+			[ self request: (WARequestFields new
 					at: key
 						put: nil;
 					yourself) ]
@@ -16,7 +16,7 @@ testUploadCallback
 	" string uploads are ignored "
 	self 
 		shouldnt: 
-			[ self request: (GRSmallDictionary new
+			[ self request: (WARequestFields new
 					at: key
 						put: 'foo';
 					yourself) ]
@@ -26,7 +26,7 @@ testUploadCallback
 	" WAFile uploads are triggered "
 	self 
 		shouldnt: 
-			[ self request: (GRSmallDictionary new
+			[ self request: (WARequestFields new
 					at: key
 						put: (file := WAFile new);
 					yourself) ]

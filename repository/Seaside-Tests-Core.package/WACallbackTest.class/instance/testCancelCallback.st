@@ -8,7 +8,7 @@ testCancelCallback
 	" a save callback "
 	self 
 		should: 
-			[ self request: (GRSmallDictionary new
+			[ self request: (WARequestFields new
 					at: keyValue
 						put: 'a';
 					at: keySave
@@ -18,7 +18,7 @@ testCancelCallback
 	self assertLog: #('a' 'save' ).
 	self 
 		should: 
-			[ self request: (GRSmallDictionary new
+			[ self request: (WARequestFields new
 					at: keySave
 						put: nil;
 					at: keyValue
@@ -30,7 +30,7 @@ testCancelCallback
 	" a cancel callback "
 	self 
 		should: 
-			[ self request: (GRSmallDictionary new
+			[ self request: (WARequestFields new
 					at: keyValue
 						put: 'a';
 					at: keyCancel
@@ -40,7 +40,7 @@ testCancelCallback
 	self assertLog: #('cancel' ).
 	self 
 		should: 
-			[ self request: (GRSmallDictionary new
+			[ self request: (WARequestFields new
 					at: keyCancel
 						put: nil;
 					at: keyValue

@@ -18,5 +18,5 @@ testQueryFields
 	self assert: url greaseString = '/?1&2=foo&3=123&4=foo%20bar%26zork'.
 	url queryFields 
 		at: '1'
-		append: 'dupe'.
+		add: 'dupe'.
 	self assert: url greaseString = '/?1&2=foo&3=123&4=foo%20bar%26zork&1=dupe'.

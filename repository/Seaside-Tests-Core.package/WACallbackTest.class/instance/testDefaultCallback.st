@@ -8,7 +8,7 @@ testDefaultCallback
 	" a save callback "
 	self 
 		should: 
-			[ self request: (GRSmallDictionary new
+			[ self request: (WARequestFields new
 					at: keyValue
 						put: 'a';
 					at: keySave
@@ -20,7 +20,7 @@ testDefaultCallback
 	self assertLog: #('a' 'save' ).
 	self 
 		should: 
-			[ self request: (GRSmallDictionary new
+			[ self request: (WARequestFields new
 					at: keyDefault
 						put: nil;
 					at: keySave
@@ -34,7 +34,7 @@ testDefaultCallback
 	" a default callback "
 	self 
 		should: 
-			[ self request: (GRSmallDictionary new
+			[ self request: (WARequestFields new
 					at: keyValue
 						put: 'a';
 					at: keyDefault
@@ -44,7 +44,7 @@ testDefaultCallback
 	self assertLog: #('a' 'default' ).
 	self 
 		should: 
-			[ self request: (GRSmallDictionary new
+			[ self request: (WARequestFields new
 					at: keyDefault
 						put: nil;
 					at: keyValue

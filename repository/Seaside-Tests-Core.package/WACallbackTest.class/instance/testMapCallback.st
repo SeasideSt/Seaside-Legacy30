@@ -6,7 +6,7 @@ testMapCallback
 	" valid "
 	self 
 		shouldnt: 
-			[ self request: (GRSmallDictionary new
+			[ self request: (WARequestFields new
 					at: key
 						put: '?1,2';
 					yourself) ]
@@ -16,7 +16,7 @@ testMapCallback
 	" valid "
 	self 
 		shouldnt: 
-			[ self request: (GRSmallDictionary new
+			[ self request: (WARequestFields new
 					at: key
 						put: '?1,23';
 					yourself) ]
@@ -26,7 +26,7 @@ testMapCallback
 	" valid "
 	self 
 		shouldnt: 
-			[ self request: (GRSmallDictionary new
+			[ self request: (WARequestFields new
 					at: key
 						put: '?12,34';
 					yourself) ]
@@ -36,7 +36,7 @@ testMapCallback
 	" invalid: no value "
 	self 
 		shouldnt: 
-			[ self request: (GRSmallDictionary new
+			[ self request: (WARequestFields new
 					at: key
 						put: nil;
 					yourself) ]
@@ -46,7 +46,7 @@ testMapCallback
 	" invalid: empty string "
 	self 
 		shouldnt: 
-			[ self request: (GRSmallDictionary new
+			[ self request: (WARequestFields new
 					at: key
 						put: '';
 					yourself) ]
@@ -56,7 +56,7 @@ testMapCallback
 	" invalid: invalid syntax "
 	self 
 		shouldnt: 
-			[ self request: (GRSmallDictionary new
+			[ self request: (WARequestFields new
 					at: key
 						put: '1,2';
 					yourself) ]
@@ -66,7 +66,7 @@ testMapCallback
 	" invalid: invalid syntax "
 	self 
 		shouldnt: 
-			[ self request: (GRSmallDictionary new
+			[ self request: (WARequestFields new
 					at: key
 						put: '?1';
 					yourself) ]
@@ -76,7 +76,7 @@ testMapCallback
 	" invalid: invalid syntax "
 	self 
 		shouldnt: 
-			[ self request: (GRSmallDictionary new
+			[ self request: (WARequestFields new
 					at: key
 						put: '?1,';
 					yourself) ]
@@ -85,7 +85,7 @@ testMapCallback
 	" invalid: invalid syntax "
 	self 
 		shouldnt: 
-			[ self request: (GRSmallDictionary new
+			[ self request: (WARequestFields new
 					at: key
 						put: '?1x2';
 					yourself) ]
@@ -95,7 +95,7 @@ testMapCallback
 	" invalid: invalid syntax "
 	self 
 		shouldnt: 
-			[ self request: (GRSmallDictionary new
+			[ self request: (WARequestFields new
 					at: key
 						put: '?a,b';
 					yourself) ]

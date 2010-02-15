@@ -14,7 +14,7 @@ testValuesCallback
 	"an empty callback"
 	self 
 		shouldnt: 
-			[ self request: (GRSmallDictionary new
+			[ self request: (WARequestFields new
 					at: key
 						put: nil;
 					yourself) ]
@@ -24,7 +24,7 @@ testValuesCallback
 	" another empty callback "
 	self 
 		shouldnt: 
-			[ self request: (GRSmallDictionary new
+			[ self request: (WARequestFields new
 					at: key
 						put: '';
 					yourself) ]
@@ -34,7 +34,7 @@ testValuesCallback
 	" the first callback "
 	self 
 		shouldnt: 
-			[ self request: (GRSmallDictionary new
+			[ self request: (WARequestFields new
 					at: key
 						put: key1;
 					yourself) ]
@@ -44,7 +44,7 @@ testValuesCallback
 	" the second callback "
 	self 
 		shouldnt: 
-			[ self request: (GRSmallDictionary new
+			[ self request: (WARequestFields new
 					at: key
 						put: key2;
 					yourself) ]

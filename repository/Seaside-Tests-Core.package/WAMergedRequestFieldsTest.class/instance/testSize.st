@@ -1,4 +1,4 @@
-testing-accessing
+tests-accessing
 testSize
 	self assert: merged size = 0.
 	one at: 'foo' put: 1.

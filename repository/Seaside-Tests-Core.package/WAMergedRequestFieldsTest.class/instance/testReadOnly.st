@@ -1,4 +1,4 @@
-testing
+tests
 testReadOnly
 	self
 		should: [ merged at: 'foo' put: 1 ]

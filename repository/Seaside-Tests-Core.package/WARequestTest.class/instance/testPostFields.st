@@ -6,7 +6,7 @@ testPostFields
 	headers at: 'content-type' put: WAMimeType formUrlencoded greaseString.
 	request setHeaders: headers.
 	request setBody: 'baz=2&bar=3'.
-	request setPostFields: (Dictionary new at: 'baz' put: '2'; at: 'bar' put: '3'; yourself).
+	request setPostFields: (WARequestFields new at: 'baz' put: '2'; at: 'bar' put: '3'; yourself).
 	
 	self assert: request postFields size = 2.
 	self assert: (request postFields at: 'baz') = '2'.

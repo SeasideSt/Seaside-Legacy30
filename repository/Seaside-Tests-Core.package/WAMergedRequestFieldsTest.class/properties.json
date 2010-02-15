@@ -1,13 +1,15 @@
 {
 	"commentStamp" : "",
 	"super" : "TestCase",
-	"category" : "Seaside-Tests-Core-Utilities",
+	"category" : "Seaside-Tests-Core-HTTP",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"merger"
+		"merged",
+		"one",
+		"two"
 	],
-	"name" : "WADictionaryMergerTest",
+	"name" : "WAMergedRequestFieldsTest",
 	"type" : "normal"
 }

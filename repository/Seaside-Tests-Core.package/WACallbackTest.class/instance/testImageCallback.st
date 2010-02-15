@@ -6,7 +6,7 @@ testImageCallback
 	" an invalid callback "
 	self 
 		shouldnt: 
-			[ self request: (GRSmallDictionary new
+			[ self request: (WARequestFields new
 					at: key
 						put: nil;
 					yourself) ]
@@ -16,7 +16,7 @@ testImageCallback
 	" a valid callback "
 	self 
 		should: 
-			[ self request: (GRSmallDictionary new
+			[ self request: (WARequestFields new
 					at: key , '.x'
 						put: nil;
 					yourself) ]

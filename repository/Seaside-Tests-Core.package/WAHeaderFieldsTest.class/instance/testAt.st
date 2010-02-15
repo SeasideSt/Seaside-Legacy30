@@ -1,8 +1,7 @@
-testing-accessing
+tests
 testAt
-	one at: 'foo' put: 1.
-	two at: 'bar' put: 2.
-
-	self assert: (merged at: 'foo') = 1.
-	self assert: (merged at: 'bar') = 2.
-	self assert: (merged at: 'zork') isNil
+	self assert: (collection removeKey: '1') isNil.
+	collection add: '1' -> 'foo'.
+	collection add: '1' -> 'bar'.
+	self assert: (collection at: '1') =
+		(self allowsDuplicateKeys ifTrue: [ 'foo' ] ifFalse: [ 'bar' ])

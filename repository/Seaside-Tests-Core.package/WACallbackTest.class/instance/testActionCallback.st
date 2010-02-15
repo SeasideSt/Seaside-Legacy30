@@ -7,7 +7,7 @@ testActionCallback
 	" trigger first callback "
 	self 
 		should: 
-			[ self request: (GRSmallDictionary new
+			[ self request: (WARequestFields new
 					at: key1
 						put: nil;
 					yourself) ]
@@ -17,7 +17,7 @@ testActionCallback
 	" trigger second callback "
 	self 
 		should: 
-			[ self request: (GRSmallDictionary new
+			[ self request: (WARequestFields new
 					at: key2
 						put: nil;
 					yourself) ]
@@ -27,7 +27,7 @@ testActionCallback
 	" first callback has priority "
 	self 
 		should: 
-			[ self request: (GRSmallDictionary new
+			[ self request: (WARequestFields new
 					at: key2
 						put: nil;
 					at: key1
@@ -39,7 +39,7 @@ testActionCallback
 	" first callback is only triggered once "
 	self 
 		should: 
-			[ self request: (GRSmallDictionary new
+			[ self request: (WARequestFields new
 					at: key1
 						put: nil;
 					at: key1
