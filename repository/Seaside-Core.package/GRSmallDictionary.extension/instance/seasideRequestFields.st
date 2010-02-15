@@ -1,3 +1,3 @@
 *seaside-core
 seasideRequestFields
-	^ WARequestFields withAll: self associations
+	^ WARequestFields withAll: self
