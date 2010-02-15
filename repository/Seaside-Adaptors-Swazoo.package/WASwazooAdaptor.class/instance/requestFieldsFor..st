@@ -1,7 +1,7 @@
 converting-request
 requestFieldsFor: aNativeRequest
-	| merger |
-	merger := WADictionaryMerger new.
+	| fields |
+	fields := WARequestFields new.
 	aNativeRequest isPost
-		ifTrue: [ self postFieldsOf: aNativeRequest into: merger ].
-	^ merger dictionary
+		ifTrue: [ self postFieldsOf: aNativeRequest into: fields ].
+	^ fields

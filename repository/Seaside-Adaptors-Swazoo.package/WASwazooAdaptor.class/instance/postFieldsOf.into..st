@@ -1,7 +1,8 @@
 private
-postFieldsOf: aNativeRequest into: aDictionaryMerger
-	"break encapsulation"
-	aNativeRequest ensureFullRead.
+postFieldsOf: aNativeRequest into: aRequestFields
+	"break encapsulation - This line is likely unnecessary because #requestBodyFor:
+		will have already done this after extracting the body."
+	aNativeRequest ensureFullRead. ""
 	aNativeRequest postData keysAndValuesDo: [ :key :value |
 		| previousData data |
 		data := value filename isEmptyOrNil
@@ -15,4 +16,4 @@ postFieldsOf: aNativeRequest into: aDictionaryMerger
 					"does a 1:1 mapping from character values to bytes"
 					contents: (isoCodec encode: value value);
 					yourself ].
-		aDictionaryMerger at: key put: data ]
+		aRequestFields at: key add: data ]
