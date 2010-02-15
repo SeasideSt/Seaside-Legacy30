@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "GRAbstractDictionaryTest",
+	"super" : "GRCollectionTest",
 	"category" : "Grease-Tests-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "GRDictionaryTest",
+	"instvars" : [
+		"associations"
+	],
+	"name" : "GRAbstractDictionaryTest",
 	"type" : "normal"
 }

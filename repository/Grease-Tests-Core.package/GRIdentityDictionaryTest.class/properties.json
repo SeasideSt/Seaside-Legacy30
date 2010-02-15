@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "GRDictionaryTest",
+	"name" : "GRIdentityDictionaryTest",
 	"type" : "normal"
 }
