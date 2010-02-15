@@ -1,5 +1,5 @@
 private
 defaultUrl
 	^ self renderContext actionUrl
-		addParameter: self class headerField
+		addField: self class headerField
 		value: self pusher id
