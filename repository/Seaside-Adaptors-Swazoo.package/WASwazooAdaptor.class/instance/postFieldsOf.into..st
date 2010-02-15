@@ -14,6 +14,6 @@ postFieldsOf: aNativeRequest into: aRequestFields
 					fileName: (self codec url decode: value filename);
 					contentType: value contentType seasideMimeType;
 					"does a 1:1 mapping from character values to bytes"
-					contents: (isoCodec encode: value value);
+					contents: (isoCodec encode: value value) asByteArray;
 					yourself ].
 		aRequestFields at: key add: data ]
