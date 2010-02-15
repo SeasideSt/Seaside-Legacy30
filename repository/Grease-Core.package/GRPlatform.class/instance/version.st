@@ -3,5 +3,5 @@ version
 	"Answer the Grease version"
 
 	^ (GRVersion major: 1 minor: 0)
-		beAlpha: 1;
+		beAlpha: 6;
 		yourself
