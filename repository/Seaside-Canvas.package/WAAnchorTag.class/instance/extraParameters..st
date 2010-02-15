@@ -1,3 +1,3 @@
 url
-extraParameters: aCollection
-	self url addParameter: aCollection
+extraParameters: aString
+	self url addField: aString
