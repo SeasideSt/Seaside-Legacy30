@@ -44,4 +44,4 @@ testInspectorFields
 	fields := example inspectorFields.
 	
 	values keysAndValuesDo: [ :index :value |
-		self assert: (fields at: index) = value ]
+		self assert: (fields at: index) value = value ]
