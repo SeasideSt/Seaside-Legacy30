@@ -14,5 +14,5 @@ testPostFields
 	self assert: request queryFields size = 1.
 	self assert: (request queryFields at: 'bar') = '1'.
 	self assert: request fields size = 3.
-	self assert: (request fields at: 'bar') = '3'.
+	self assert: (request fields at: 'bar') = '1'.
 	self assert: (request fields at: 'baz') = '2'.
