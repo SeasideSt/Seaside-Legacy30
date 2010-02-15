@@ -1,3 +1,3 @@
 accessing
 selectors
-	^ class selectors asSortedCollection
+	^ class selectors sorted

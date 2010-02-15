@@ -2,7 +2,7 @@ rendering
 renderCartItemsOn: html
 	self cart isEmpty
 		ifTrue: [ ^ html text: 'Drop items here to add them to your cart.' ].
-	self cart valuesAndCounts associations asSortedCollection do: [ :each |
+	self cart valuesAndCounts associations sorted do: [ :each |
 		html div
 			class: 'cart-item';
 			passenger: each key;
