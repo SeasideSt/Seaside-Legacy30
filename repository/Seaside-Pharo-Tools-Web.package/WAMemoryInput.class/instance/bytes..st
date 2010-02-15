@@ -5,7 +5,7 @@ bytes: anInteger
 			multiplier := 0.
 			self value: 0 ]
 		ifFalse: [
-			multiplier := self unitDictionary keys asSortedCollection inject: 1 into: [ :last :each |
+			multiplier := self unitDictionary keys sorted inject: 1 into: [ :last :each |
 					(anInteger \\ each) isZero
 						ifTrue: [ each ]
 						ifFalse: [ last ] ].
