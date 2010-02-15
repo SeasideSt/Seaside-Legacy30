@@ -6,7 +6,7 @@ fullUrl
 	url := self url copy.
 	self parameters do: [ :each | 
 		(each isString)
-			ifTrue: [ url addParameter: each ].
+			ifTrue: [ url addField: each ].
 		((each isKindOf: Association) and: [ each value isJavascript not ])
-			ifTrue: [ url addParameter: each key value: each value ] ].
+			ifTrue: [ url addField: each key value: each value ] ].
 	^ url

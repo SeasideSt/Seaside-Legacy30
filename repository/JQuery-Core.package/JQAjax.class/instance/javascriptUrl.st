@@ -7,7 +7,7 @@ javascriptUrl
 	stream javascript: self url.
 	self data collection isEmpty ifFalse: [
 		stream nextPutAll: '+"'.
-		stream nextPut: (self url parameters isEmpty
+		stream nextPut: (self url queryFields isEmpty
 			ifTrue: [ $? ] ifFalse: [ $& ]).
 		stream nextPutAll: '"+'; javascript: self data ].
 	^ stream
