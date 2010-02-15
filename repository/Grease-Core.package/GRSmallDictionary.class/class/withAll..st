@@ -1,5 +1,5 @@
 instance creation
-withAll: aCollection
-	^ (self new: aCollection size)
-		addAll: aCollection;
+withAll: aDictionary
+	^ (self new: aDictionary size)
+		addAll: aDictionary;
 		yourself

@@ -1,4 +1,4 @@
 accessing
-addAll: aCollection
-	aCollection do: [ :each | self add: each ].
-	^ aCollection
+addAll: aDictionary
+	aDictionary keysAndValuesDo: [ :key :value | self add: key -> value ].
+	^ aDictionary
