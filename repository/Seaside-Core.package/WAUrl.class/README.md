@@ -2,10 +2,11 @@ I represent all portions of an URL as described by the RFC 1738 and updated by R
 
 Instance Variables
 	scheme:			<String> or nil
-	userinfo:		<String> or nil
+	user:		<String> or nil
+	password:		<String> or nil
 	host:		<String> or nil
 	port:			<Integer> or nil
 	path:			<OrderedCollection> or nil
 	slash:			<Boolean>
-	query:		<Dictionary> or nil
+	queryFields:		<WARequestFields> or nil
 	fragment:		<String> or nil
