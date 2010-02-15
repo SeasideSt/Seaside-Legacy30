@@ -1,1 +1,0 @@
-This is a utility class that merges multiple dictionaries. It also promotes values to collections if there a multiple mappings for the same key. This class can be used by server adapter to deal with http parameters.

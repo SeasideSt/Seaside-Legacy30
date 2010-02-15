@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WAHeaderFields",
+	"name" : "WARequestFields",
 	"type" : "normal"
 }

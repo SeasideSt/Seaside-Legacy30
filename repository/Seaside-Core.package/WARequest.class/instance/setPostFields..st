@@ -1,3 +1,3 @@
 initialization
-setPostFields: fieldDictionary
-	postFields := fieldDictionary
+setPostFields: aRequestFields
+	postFields := aRequestFields seasideRequestFields

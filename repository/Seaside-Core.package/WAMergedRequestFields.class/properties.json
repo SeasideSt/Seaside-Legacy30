@@ -8,6 +8,6 @@
 	"instvars" : [
 		"delegates"
 	],
-	"name" : "WAMergedHeaderFields",
+	"name" : "WAMergedRequestFields",
 	"type" : "normal"
 }

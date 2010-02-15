@@ -7,8 +7,8 @@ requestFor: aNativeRequest
 		uri: (self requestUrlFor: aNativeRequest)
 		version: (self requestVersionFor: aNativeRequest))
 			setHeaders: (self requestHeadersFor: aNativeRequest);
-			setPostFields: (self requestFieldsFor: aNativeRequest);
 			setBody: (self requestBodyFor: aNativeRequest);
+			setPostFields: (self requestFieldsFor: aNativeRequest);
 			setCookies: (self requestCookiesFor: aNativeRequest);
 			setRemoteAddress: (self requestAddressFor: aNativeRequest);
 			yourself

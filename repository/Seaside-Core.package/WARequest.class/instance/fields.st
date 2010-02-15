@@ -1,3 +1,3 @@
 accessing
 fields
-	^ WAMergedHeaderFields on: (Array with: self postFields with: self queryFields)
+	^ WAMergedRequestFields on: (Array with: self queryFields with: self postFields)
