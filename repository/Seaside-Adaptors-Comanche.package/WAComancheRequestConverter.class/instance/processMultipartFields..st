@@ -1,7 +1,7 @@
 private
 processMultipartFields: aKomRequest
-	| merger |
-	merger := WADictionaryMerger new.	
+	| fields |
+	fields := WARequestFields new.	
 
 	aKomRequest multipartFormFieldsDo: [ :chunk |
 		| key value |
@@ -11,7 +11,7 @@ processMultipartFields: aKomRequest
 				String streamContents: [ :stream |
 					chunk saveToStream: stream ] ]
 			ifFalse: [ self convertMultipartFileField: chunk ].
-		merger at: key put: value ].
+		fields at: key add: value ].
 	
 	"ugly"
-	aKomRequest propertyAt: #postFields put: merger dictionary
+	aKomRequest propertyAt: #postFields put: fields

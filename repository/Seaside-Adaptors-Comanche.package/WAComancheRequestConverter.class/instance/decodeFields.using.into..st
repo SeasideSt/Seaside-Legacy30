@@ -1,12 +1,10 @@
 private
-decodeFields: aDictionary using: aOneArgumentBlock into: aDictionaryMerger
+decodeFields: aDictionary using: aOneArgumentBlock into: aRequestFields
 	aDictionary keysAndValuesDo: [ :key :value |
-		| decoded |
-		decoded := (value isString)
-			ifTrue: [ aOneArgumentBlock value: value ]
+		value isString
+			ifTrue: [ aRequestFields at: key add: (aOneArgumentBlock value: value) ]
 			ifFalse: [
 				(value isCollection)
-					ifTrue: [ value collect: [ :string |
-						aOneArgumentBlock value: string ] ]
-					ifFalse: [ value ] ].
-		aDictionaryMerger at: key put: decoded ]
+					ifTrue: [ value do: [ :string |
+						aRequestFields at: key add: (aOneArgumentBlock value: string) ] ]
+					ifFalse: [ aRequestFields at: key add: value ] ] ]

@@ -1,6 +1,6 @@
 private
-postFieldsOf: aNativeRequest into: aDictionaryMerger
-	"puts all the POST parameters of the given request decoded into a dictionary merger"
+postFieldsOf: aNativeRequest into: aRequestFields
+	"puts all the POST parameters of the given request decoded into a WARequestFields"
 	| isUrlEncoded |
 	isUrlEncoded := self isUrlEncoded: aNativeRequest.
 	^self
@@ -9,4 +9,4 @@ postFieldsOf: aNativeRequest into: aDictionaryMerger
 			isUrlEncoded 
 				ifTrue: [ self codec url decode: each ]
 				ifFalse: [ self codec decode: each ] ]
-		into: aDictionaryMerger
+		into: aRequestFields
