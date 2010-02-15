@@ -3,5 +3,5 @@ renderContentOn: html
 	html anchor
 		class: self cssClass;
 		url: (html actionUrl
-			withParameter: 'terminate');
+			withField: 'terminate');
 		with: self label
