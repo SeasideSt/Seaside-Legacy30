@@ -8,6 +8,6 @@ groupedAttributes
 			at: each group
 			ifAbsentPut: [ SortedCollection sortBlock: [:a :b | a key <= b key ] ])
 				add: each ].
-	groups keys asSortedCollection do: [ :key |
+	groups keys sorted do: [ :key |
 		(groups at: key) do: [ :each | attributes add: (WAAttributeNode configuration: handler configuration attribute: each) ] ].
 	^ attributes
