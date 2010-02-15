@@ -1,4 +1,4 @@
 actions
 runTest
-	values := self requestContext request at: self parameterName.
+	values := self requestContext request fields allAt: self parameterName.
 	wasExecuted := true

@@ -1,6 +1,6 @@
 testing
-wasSuccessFull
-	^values notNil
+wasSuccessfull
+	^ values notNil
 		and: [ values isCollection
 		and: [ values isString not
 		and: [ values size = 2
