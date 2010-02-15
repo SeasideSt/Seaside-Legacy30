@@ -2,7 +2,7 @@ private
 baseUrlWithSlash: aBoolean 
 	^ self application url
 		addToPath: self class name greaseString;
-		addParameter: 'slash'
+		addField: 'slash'
 			value: aBoolean greaseString;
 		slash: aBoolean;
 		yourself

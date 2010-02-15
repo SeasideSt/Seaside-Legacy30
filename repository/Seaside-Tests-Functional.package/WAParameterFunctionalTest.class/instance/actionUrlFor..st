@@ -3,6 +3,6 @@ actionUrlFor: html
 	| url |
 	url := html actionUrl copy.
 	url
-		addParameter: self parameterName
+		addField: self parameterName
 		value: self firstParameterValue.
 	^url
