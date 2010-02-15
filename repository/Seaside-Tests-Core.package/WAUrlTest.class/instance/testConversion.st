@@ -2,7 +2,7 @@ testing
 testConversion
 	| converted |
 	url
-		hostname: 'example.com';
+		host: 'example.com';
 		addToPath: 'foo';
 		addToPath: 'bar'.
 	

@@ -2,11 +2,11 @@ testing
 testScheme
 	url
 		scheme: 'https';
-		hostname: 'seaside.st'.
+		host: 'seaside.st'.
 	self assert: url scheme = 'https'.
 	self assert: url greaseString = 'https://seaside.st/'.
 	"Tests from Boris"
-	url hostname: 'seaside.st'.
+	url host: 'seaside.st'.
 	url
 		port: 80;
 		scheme: 'http'.

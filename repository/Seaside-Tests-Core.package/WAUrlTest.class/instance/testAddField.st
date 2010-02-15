@@ -1,8 +1,8 @@
 testing-adding
-testAddParameter
-	url addParameter: 'x'.
+testAddField
+	url addField: 'x'.
 	self assert: url greaseString = '/?x'.
-	url addParameter: 'y'.
+	url addField: 'y'.
 	self assert: url greaseString = '/?x&y'.
-	url addParameter: 'x'.
+	url addField: 'x'.
 	self assert: url greaseString = '/?x&y&x'

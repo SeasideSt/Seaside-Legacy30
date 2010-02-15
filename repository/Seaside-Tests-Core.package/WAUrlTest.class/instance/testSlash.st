@@ -1,6 +1,6 @@
 testing
 testSlash
-	url hostname: 'seaside.st'.
+	url host: 'seaside.st'.
 	self assert: (url
 			slash: true;
 			greaseString) = 'http://seaside.st/'.
