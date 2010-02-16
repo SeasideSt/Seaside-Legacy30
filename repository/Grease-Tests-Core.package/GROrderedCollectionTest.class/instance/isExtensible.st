@@ -1,3 +1,3 @@
-testing-ANSI
+testing-ansi
 isExtensible
 	^ true
