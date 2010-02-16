@@ -1,6 +1,7 @@
 tools
 methodsOf: aString 
 	"Lists all the methods with author initials aString."
+	
 	| methods |
 	methods := self packages gather: 
 		[ :package | 
