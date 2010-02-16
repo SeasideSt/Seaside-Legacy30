@@ -1,3 +1,5 @@
 handling
 start
-	self requestContext response nextPutAll: 'start: ', self key
+	(self requestContext response)
+		nextPutAll: 'start: ';
+		nextPutAll: self key
