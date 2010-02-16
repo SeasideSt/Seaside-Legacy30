@@ -1,7 +1,7 @@
 *seaside-pharo-development-core
 inspectorFields
 	| members |
-	members := WriteStream on: Array new.
+	members := Array new writeStream.
 	self class allInstVarNames 
 		keysAndValuesDo: [ :index :each | members nextPut: each -> (self instVarAt: index) ].
 	self class isVariable
