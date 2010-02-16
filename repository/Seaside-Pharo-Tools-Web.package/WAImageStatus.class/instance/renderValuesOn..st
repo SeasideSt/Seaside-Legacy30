@@ -14,9 +14,7 @@ renderValuesOn: html
 			html text:self numberOfSessions.
 			html space.
 			html anchor
-				callback: [
-					WAAdmin clearSessions.
-					Smalltalk garbageCollect ];
+				callback: [ self clear ];
 				title: 'Expires all sessions and does a full garbage collect.';
 				with: 'Clear' ]
 		on: html.
