@@ -1,4 +1,4 @@
-initialize-release
+initialization
 initializeOn: aDispatcher
 	super initializeOn: aDispatcher.
 	self setEmptyPage.
