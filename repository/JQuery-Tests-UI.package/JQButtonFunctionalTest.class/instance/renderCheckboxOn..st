@@ -6,5 +6,7 @@ renderCheckboxOn: html
 		onChange: (html jQuery ajax serializeForm);
 		script: (html jQuery this button
 			text: false;
-			primaryIcon: 'ui-icon-unlocked';
-			secondaryIcon: 'ui-icon-locked')
+			primaryIcon: 'ui-icon-locked').
+	html label
+		for: html lastId;
+		with: 'Lock'

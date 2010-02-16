@@ -1,4 +1,5 @@
 initialization
 initialize
 	super initialize.
-	locked := false
+	locked := false.
+	number := 1

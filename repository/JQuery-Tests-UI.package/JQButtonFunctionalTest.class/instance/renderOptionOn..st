@@ -4,10 +4,14 @@ renderOptionOn: html
 		script: (html jQuery this buttonset);
 		with: [ 
 			html radioGroup
-				selected: repeat; 
-				callback: [ :value | repeat := value ];
+				selected: number; 
+				callback: [ :value | number := value ];
 				with: [ :group |
-					#('ui-icon-refresh' 'ui-icon-shuffle' 'ui-icon-transfer-w-e') do: [ :each |
+					#(1 2 3) do: [ :each |
 						group radioButton
-							class: each;
-							value: each ] ] ]
+							onChange: (html javascript alert: 'hallo');
+							id: html nextId;
+							value: each.
+						html label
+							for: html lastId;
+							with: each ] ] ]

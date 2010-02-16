@@ -1,3 +1,3 @@
 accessing
 selectors
-	^ #(renderContentOn: renderButtonOn: renderCheckboxOn: renderOptionOn:)
+	^ #(renderContentOn: renderAnchorOn: renderCheckboxOn: renderOptionOn:)

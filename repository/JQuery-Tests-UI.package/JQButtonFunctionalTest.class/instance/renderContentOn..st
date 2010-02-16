@@ -5,6 +5,6 @@ renderContentOn: html
 		class: 'ui-widget-header';
 		class: 'ui-corner-all'; 
 		with: [ 
-			self renderButtonOn: html.
+			self renderAnchorOn: html.
 			self renderCheckboxOn: html.
 			self renderOptionOn: html ]
