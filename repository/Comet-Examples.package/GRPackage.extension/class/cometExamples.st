@@ -5,4 +5,5 @@ cometExamples
 		description: 'Examples for server push technology.';
 		addDependency: 'JQuery-UI';
 		addDependency: 'Comet-Core';
+		url: #seasideUrl;
 		yourself
