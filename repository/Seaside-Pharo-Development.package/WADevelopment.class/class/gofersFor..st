@@ -12,6 +12,6 @@ gofersFor: aCollectionOfPackages
 	gofers := OrderedCollection new.
 	repositoryToPackage keysAndValuesDo: [ :url :packages |
 		gofers add: (gofer := goferClass new).
-		gofer repository: (self httpRepositoryWithUrlString: url).
+		gofer url: url.
 		packages do: [ :package | gofer package: package ] ].
 	^ gofers
