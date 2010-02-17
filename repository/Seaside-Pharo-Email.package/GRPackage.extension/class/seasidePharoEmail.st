@@ -5,4 +5,5 @@ seasidePharoEmail
 		description: 'Pharo implementation classes for the package "Seaside-Email".';
 		addDependency: 'Seaside-Email';
 		addDependency: 'Seaside-Pharo-Core';
+		url: #seasideUrl;
 		yourself
