@@ -5,4 +5,5 @@ cometTestsCore
 		description: 'Unit tests for the Comet-Core package.';
 		addDependency: 'Javascript-Tests-Core';
 		addDependency: 'Comet-Core';
+		url: #seasideUrl;
 		yourself
