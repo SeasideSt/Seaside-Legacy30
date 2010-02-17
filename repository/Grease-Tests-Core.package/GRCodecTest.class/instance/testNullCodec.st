@@ -11,14 +11,12 @@ testNullCodec
 		add: self utf16beString;
 		add: self macromanString;
 		yourself.
-	strings do: 
-		[ :string | 
+	strings do:  [ :string | 
 		self assert: (codec encode: string) = string.
 		self assert: (codec url encode: string) = string.
 		self assert: (codec decode: string) = string.
 		self assert: (codec url decode: string) = string ].
-	strings do: 
-		[ :string | 
+	strings do:  [ :string | 
 		| binary encoded |
 		binary := string asByteArray.
 		encoded := (codec encoderFor: (WriteStream on: String new))
