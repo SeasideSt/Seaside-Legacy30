@@ -5,4 +5,5 @@ seasideTestsToolsWeb
 		description: 'Unit tests for the package Seaside-Tools-Web.';
 		addDependency: 'Seaside-Tools-Web';
 		addDependency: 'Seaside-Tests-Environment';
+		url: #seasideUrl;
 		yourself
