@@ -1,3 +1,0 @@
-monticello
-revertWorkingCopies
-	self revertWorkingCopies: self workingCopies

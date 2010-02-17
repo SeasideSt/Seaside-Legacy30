@@ -1,3 +1,0 @@
-monticello
-diffModifiedWorkingCopies
-	self diffWorkingCopies: self modifiedWorkingCopies

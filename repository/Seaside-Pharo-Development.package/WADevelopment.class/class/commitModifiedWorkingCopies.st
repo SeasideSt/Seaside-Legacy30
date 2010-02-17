@@ -1,3 +1,0 @@
-monticello
-commitModifiedWorkingCopies
-	self commitWorkingCopies: self modifiedWorkingCopies

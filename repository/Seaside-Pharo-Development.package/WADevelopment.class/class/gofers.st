@@ -1,6 +1,6 @@
 accessing
 gofers
-	"Answer a collection of gopher instances for all Seaside related packages."
-	"self gofers do: [ :g | g update; recompile ]"
+	"Answer a collection of gopher instances of all Seaside packages."
+	"self gofers do: [ :each | each load; recompile ]"
 	
-	^ self gofersFor: GRPackage packages
+	^ self gofersFor: self allPackages

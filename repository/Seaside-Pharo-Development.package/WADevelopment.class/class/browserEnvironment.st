@@ -1,11 +1,6 @@
 accessing
 browserEnvironment
-	"Answer a browser environment of all loaded Seaside code."
+	"Answer a browser environment of all Seaside packages."
 	"self browserEnvironment open"
 	
-	| browserEnvironmentClass browserEnvironment |
-	browserEnvironmentClass := (Smalltalk classNamed: #BrowserEnvironment)
-		ifNil: [ self error: 'Please install the Smalltalk Refactoring Browser.' ].
-	browserEnvironment := browserEnvironmentClass new 
-		forPackageNames: (self packages collect: [ :each | each packageName ]).
-	^ browserEnvironment label: 'Seaside Packages'
+	^ self browserEnvironmentFor: self allPackages

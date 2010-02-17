@@ -1,6 +1,6 @@
 accessing
 gofersFor: aCollectionOfPackages
-	"Answer a collection of gofer instances for each repository within aCollectionOfPackages."
+	"Answer a collection of gopher instances of aCollectionOfPackages."
 	
 	| goferClass repositoryToPackage gofers gofer |
 	goferClass := (Smalltalk classNamed: #Gofer)
