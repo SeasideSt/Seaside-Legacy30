@@ -2,5 +2,4 @@ initialization
 initialize
 	super initialize.
 	dependencies := OrderedCollection new.
-	license := #MIT.
-	url := #seasideUrl
+	license := #MIT
