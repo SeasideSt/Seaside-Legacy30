@@ -5,4 +5,5 @@ seasideTestsFlow
 		description: 'Functional tests for Seaside-Flow.';
 		addDependency: 'Seaside-Flow';
 		addDependency: 'Seaside-Tests-Functional';
+		url: #seasideUrl;
 		yourself
