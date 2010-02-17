@@ -6,4 +6,5 @@ seasidePharoToolsWeb
 		addDependency: 'Seaside-Tools-Web';
 		addDependency: 'Seaside-Pharo-Core';
 		addDependency: 'Seaside-Pharo-Canvas';
+		url: #seasideUrl;
 		yourself
