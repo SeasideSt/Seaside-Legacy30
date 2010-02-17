@@ -7,4 +7,5 @@ jQueryTestsCore
 		addDependency: 'Javascript-Tests-Core';
 		addDependency: 'Seaside-Development';
 		addDependency: 'Seaside-Tests-Functional';
+		url: #seasideUrl;
 		yourself
