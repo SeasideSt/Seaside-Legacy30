@@ -5,4 +5,5 @@ seasideRenderLoop
 		description: 'Defines the low-level rendering and callback processing functionality.';
 		addDependency: 'Seaside-Session';
 		addDependency: 'Seaside-Component';
+		url: #seasideUrl;
 		yourself
