@@ -5,4 +5,5 @@ seasideTestsCanvas
 		description: 'Unit tests for the package Seaside-Canvas.';
 		addDependency: 'Seaside-Canvas';
 		addDependency: 'Seaside-Tests-Core';
+		url: #seasideUrl;
 		yourself
