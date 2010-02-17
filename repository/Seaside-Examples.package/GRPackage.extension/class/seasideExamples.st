@@ -6,4 +6,5 @@ seasideExamples
 		addDependency: 'Seaside-Component';
 		addDependency: 'Seaside-Canvas';
 		addDependency: 'Seaside-Tools-Core'; "for WAAdmin"
+		url: #seasideUrl;
 		yourself
