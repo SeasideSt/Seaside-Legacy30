@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "AnObsoleteJQAllTests",
+	"category" : "JQuery-Tests-UI-Functional",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"themes",
+		"theme"
+	],
+	"name" : "JQUiAllTests",
+	"type" : "normal"
+}
