@@ -5,4 +5,5 @@ seasidePharoDevelopment
 		addDependency: 'Seaside-Development';
 		addDependency: 'Seaside-Pharo-Tools-Web';
 		addDependency: 'Seaside-Pharo-Flow';
+		url: #seasideUrl;
 		yourself	"For WAWalkbackErrorHandler"
