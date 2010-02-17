@@ -6,4 +6,5 @@ prototypeTestsCore
 		addDependency: 'Prototype-Core';
 		addDependency: 'Javascript-Tests-Core';
 		addDependency: 'Seaside-Tests-Functional';
+		url: #seasideUrl;
 		yourself
