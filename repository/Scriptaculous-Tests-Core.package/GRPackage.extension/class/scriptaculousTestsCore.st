@@ -5,4 +5,5 @@ scriptaculousTestsCore
 		description: 'Functional and unit tests for the Scriptaculous-Core package.';
 		addDependency: 'Scriptaculous-Core';
 		addDependency: 'Prototype-Tests-Core';
+		url: #seasideUrl;
 		yourself
