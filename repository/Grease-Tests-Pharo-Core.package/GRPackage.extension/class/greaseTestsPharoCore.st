@@ -5,4 +5,5 @@ greaseTestsPharoCore
 		description: 'Unit tests for the package Grease-Pharo-Core.';
 		addDependency: 'Grease-Pharo-Core';
 		addDependency: 'Grease-Tests-Core';
+		url: #seasideUrl;
 		yourself
