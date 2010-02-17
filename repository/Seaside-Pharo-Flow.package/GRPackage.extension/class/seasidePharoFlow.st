@@ -5,4 +5,5 @@ seasidePharoFlow
 		addDependency: 'Seaside-Flow';
 		addDependency: 'Grease-Pharo-Core';
 		addDependency: 'Seaside-Pharo-Continuation';
+		url: #seasideUrl;
 		yourself
