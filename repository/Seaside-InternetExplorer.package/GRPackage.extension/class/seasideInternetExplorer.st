@@ -4,4 +4,5 @@ seasideInternetExplorer
 		name: 'Seaside-InternetExplorer';
 		description: 'Support for proprietary Internet Explorer functionality.';
 		addDependency: 'Seaside-Core';
+		url: #seasideUrl;
 		yourself
