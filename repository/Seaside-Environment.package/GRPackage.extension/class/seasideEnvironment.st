@@ -10,4 +10,5 @@ seasideEnvironment
 		addDependency: 'Seaside-Session';
 		addDependency: 'Seaside-Canvas';
 		addDependency: 'Seaside-Widgets';
+		url: #seasideUrl;
 		yourself
