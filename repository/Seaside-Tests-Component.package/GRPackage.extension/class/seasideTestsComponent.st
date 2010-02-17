@@ -5,4 +5,5 @@ seasideTestsComponent
 		description: 'Unit tests for the package Seaside-Component.';
 		addDependency: 'Seaside-Component';
 		addDependency: 'Seaside-Tests-Core';
+		url: #seasideUrl;
 		yourself
