@@ -4,4 +4,5 @@ seasideHTML5
 		name: 'Seaside-HTML5';
 		description: 'Support for HTML 5 tags.';
 		addDependency: 'Seaside-Canvas';
+		url: #seasideUrl;
 		yourself
