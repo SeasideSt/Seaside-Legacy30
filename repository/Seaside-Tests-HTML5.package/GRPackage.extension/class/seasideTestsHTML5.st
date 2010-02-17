@@ -5,4 +5,5 @@ seasideTestsHTML5
 		description: 'Unit tests for the package Seaside-HTML5.';
 		addDependency: 'Seaside-HTML5';
 		addDependency: 'Seaside-Tests-Functional';
+		url: #seasideUrl;
 		yourself
