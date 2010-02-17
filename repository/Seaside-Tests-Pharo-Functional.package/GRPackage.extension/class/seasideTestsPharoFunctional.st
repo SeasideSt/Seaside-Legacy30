@@ -7,4 +7,5 @@ seasideTestsPharoFunctional
 		addDependency: 'Seaside-Tests-Environment';
 		addDependency: 'Seaside-Pharo-Environment';
 		addDependency: 'Seaside-Tests-Pharo-Core';
+		url: #seasideUrl;
 		yourself
