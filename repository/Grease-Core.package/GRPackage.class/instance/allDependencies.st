@@ -1,5 +1,5 @@
 dependencies
 allDependencies
-	"Answer all dependecies on which this package depends."
+	"Answer all dependencies on which this package depends."
 
 	^ self addDependenciesTo: OrderedCollection new
