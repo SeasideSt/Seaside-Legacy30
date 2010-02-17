@@ -8,4 +8,5 @@ seasideTestsEnvironment
 		addDependency: 'Seaside-Tests-RenderLoop';
 		addDependency: 'Seaside-Tests-Session';
 		addDependency: 'Seaside-Tests-Canvas';
+		url: #seasideUrl;
 		yourself
