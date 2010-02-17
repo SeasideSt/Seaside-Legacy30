@@ -7,4 +7,5 @@ seasideToolsCore
 		addDependency: 'Seaside-Component'; "only for deprecated class-side method extension"
 		addDependency: 'Seaside-RenderLoop'; "for class references in WAAdmin"
 		addDependency: 'Seaside-Session'; "for class reference in WAAdmin"
+		url: #seasideUrl;
 		yourself
