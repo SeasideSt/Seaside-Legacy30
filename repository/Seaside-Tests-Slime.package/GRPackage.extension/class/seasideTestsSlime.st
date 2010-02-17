@@ -6,4 +6,5 @@ seasideTestsSlime
 		addDependency: 'Seaside-Slime';
 		addDependency: 'Grease-Tests-Slime';
 		addDependency: 'Seaside-Tests-Component';
+		url: #seasideUrl;
 		yourself
