@@ -10,9 +10,12 @@ commentCoverage
 		- number of commented methods
 		- percentage of commented methods
 		- lines of code"
+		
+	"self commentCoverage"
 
-	| allClasses classesCommented allMethods methodsCommented linesOfCode |
-	self packages do: [ :package |
+	| package allClasses classesCommented allMethods methodsCommented linesOfCode |
+	self allPackages do: [ :each |
+		package := PackageInfo named: each name.
 		allClasses := classesCommented := 0.
 		package classes do: [ :theClass |
 			allClasses := allClasses + 1.

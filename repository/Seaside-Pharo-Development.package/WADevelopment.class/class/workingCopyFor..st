@@ -1,4 +1,4 @@
-private-gofer
+private
 workingCopyFor: aPackage
 	^ MCWorkingCopy registry
 		detect: [ :each | each packageName = aPackage name ]
