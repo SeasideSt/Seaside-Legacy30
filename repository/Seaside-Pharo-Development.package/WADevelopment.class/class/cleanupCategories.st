@@ -1,6 +1,7 @@
 tools
 cleanupCategories
 	"Remove all the empty categories and fix common inconsistencies in categorie names and protocols."
+	"self cleanupCategories"
 
 	| cleanup new |
 	cleanup := [ :class :protocol |
@@ -13,8 +14,10 @@ cleanupCategories
 			ifFalse: [ class organization renameCategory: protocol toBe: new ].
 		class organization removeEmptyCategories ].
 	Smalltalk organization removeEmptyCategories.
-	self packages
-		do: [ :package |
+	self allPackages
+		do: [ :each |
+			| package |
+			package := PackageInfo named: each name.
 			package classesAndMetaClasses do: [ :class |
 				(package coreCategoriesForClass: class)
 					do: [ :protocol | cleanup value: class value: protocol ] ].
