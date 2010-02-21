@@ -1,6 +1,5 @@
 updating
 updateRoot: anHtmlRoot
-	anHtmlRoot bodyAttributes at: 'onload' append: 'onLoad()' separator: ';'.
 	anHtmlRoot meta contentType: self application contentType.
 	anHtmlRoot meta contentScriptType: WAMimeType textJavascript.
 	anHtmlRoot htmlAttributes
