@@ -1,5 +1,8 @@
 attributes-events
-onUnload: aString
+onUnload: anObject
 	"The onunload event occurs when the user agent removes a document from a window."
 
-	self attributes at: 'onunload' append: aString separator: ';'
+	self document scriptGenerator
+		event: 'unload'
+		do: anObject
+		on: self

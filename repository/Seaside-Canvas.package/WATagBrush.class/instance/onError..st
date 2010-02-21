@@ -1,3 +1,3 @@
 convenience
-onError: aString
-	self attributes at: 'onerror' append: aString separator: ';'
+onError: anObject
+	self attributes at: 'error' append: anObject separator: ';'

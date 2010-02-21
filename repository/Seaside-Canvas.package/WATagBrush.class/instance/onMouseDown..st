@@ -1,5 +1,8 @@
 attributes-events
-onMouseDown: aString
+onMouseDown: anObject
 	"The onmousedown event occurs when the pointing device button is pressed over an element."
 
-	self attributes at: 'onmousedown' append: aString separator: ';'
+	self document scriptGenerator
+		event: 'mousedown'
+		do: anObject
+		on: self

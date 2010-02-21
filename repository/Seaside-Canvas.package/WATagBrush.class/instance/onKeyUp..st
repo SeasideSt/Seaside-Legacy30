@@ -1,5 +1,8 @@
 attributes-events
-onKeyUp: aString
+onKeyUp: anObject
 	"The onkeyup event occurs when a key is released over an element."
 
-	self attributes at: 'onkeyup' append: aString separator: ';'
+	self document scriptGenerator
+		event: 'keyup'
+		do: anObject
+		on: self

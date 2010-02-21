@@ -1,5 +1,8 @@
 attributes-events
-onBlur: aString
+onBlur: anObject
 	"The onblurs event occurs when the element that is in focus, loses that focus."
 
-	self attributes at: 'onblur' append: aString separator: ';'
+	self document scriptGenerator
+		event: 'blur'
+		do: anObject
+		on: self

@@ -1,3 +1,3 @@
 convenience
-onScroll: aString
-	self attributes at: 'onscroll' append: aString separator: ';'
+onScroll: anObject
+	self attributes at: 'scroll' append: anObject separator: ';'

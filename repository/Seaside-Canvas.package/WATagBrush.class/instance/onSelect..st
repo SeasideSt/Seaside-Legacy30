@@ -1,5 +1,8 @@
 attributes-events
-onSelect: aString
+onSelect: anObject
 	"The onselect event occurs when a user selects some text in a text field."
 
-	self attributes at: 'onselect' append: aString separator: ';'
+	self document scriptGenerator
+		event: 'select'
+		do: anObject
+		on: self

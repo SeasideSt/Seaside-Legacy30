@@ -1,5 +1,8 @@
 attributes-events
-onMouseOut: aString
+onMouseOut: anObject
 	"The onmouseout event occurs when the pointing device is moved away from an element."
 
-	self attributes at: 'onmouseout' append: aString separator: ';'
+	self document scriptGenerator
+		event: 'mouseout'
+		do: anObject
+		on: self

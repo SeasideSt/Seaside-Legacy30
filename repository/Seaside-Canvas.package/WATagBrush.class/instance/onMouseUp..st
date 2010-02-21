@@ -1,5 +1,8 @@
 attributes-events
-onMouseUp: aString
+onMouseUp: anObject
 	"The onmouseup event occurs when the pointing device button is released over an element."
 
-	self attributes at: 'onmouseup' append: aString separator: ';'
+	self document scriptGenerator
+		event: 'mouseup'
+		do: anObject
+		on: self

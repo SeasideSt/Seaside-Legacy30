@@ -1,5 +1,8 @@
 attributes-events
-onMouseOver: aString
+onMouseOver: anObject
 	"The onmouseover event occurs when the pointing device is moved onto an element."
 
-	self attributes at: 'onmouseover' append: aString separator: ';'
+	self document scriptGenerator
+		event: 'mouseover'
+		do: anObject
+		on: self

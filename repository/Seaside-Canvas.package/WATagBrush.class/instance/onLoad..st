@@ -1,5 +1,8 @@
 attributes-events
-onLoad: aString
+onLoad: anObject
 	"The onload event occurs when the user agent finishes loading a window."
 
-	self attributes at: 'onload' append: aString separator: ';'
+	self document scriptGenerator
+		event: 'load'
+		do: anObject
+		on: self

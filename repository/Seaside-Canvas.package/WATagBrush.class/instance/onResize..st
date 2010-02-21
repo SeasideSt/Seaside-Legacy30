@@ -1,3 +1,3 @@
 convenience
-onResize: aString
-	self attributes at: 'onresize' append: aString separator: ';'
+onResize: anObject
+	self attributes at: 'resize' append: anObject separator: ';'

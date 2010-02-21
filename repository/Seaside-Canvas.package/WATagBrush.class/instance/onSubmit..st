@@ -1,5 +1,8 @@
 attributes-events
-onSubmit: aString
+onSubmit: anObject
 	"The onsubmit event occurs when a form is submitted."
 
-	self attributes at: 'onsubmit' append: aString separator: ';'
+	self document scriptGenerator
+		event: 'submit'
+		do: anObject
+		on: self

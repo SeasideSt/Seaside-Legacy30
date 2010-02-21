@@ -1,5 +1,8 @@
 attributes-events
-onFocus: aString
+onFocus: anObject
 	"The onfocus event occurs when an element receives focus either by the pointing device or by tabbing navigation."
 
-	self attributes at: 'onfocus' append: aString separator: ';'
+	self document scriptGenerator
+		event: 'focus'
+		do: anObject
+		on: self

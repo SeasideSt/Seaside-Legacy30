@@ -1,5 +1,8 @@
 attributes-events
-onKeyPress: aString
+onKeyPress: anObject
 	"The onkeypress event occurs when a key is pressed and released over an element."
 
-	self attributes at: 'onkeypress' append: aString separator: ';'
+	self document scriptGenerator
+		event: 'keypress'
+		do: anObject
+		on: self

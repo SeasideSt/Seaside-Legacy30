@@ -1,5 +1,8 @@
 attributes-events
-onReset: aString
+onReset: anObject
 	"The onreset event occurs when a form is reset."
 
-	self attributes at: 'onreset' append: aString separator: ';'
+	self document scriptGenerator
+		event: 'reset'
+		do: anObject
+		on: self

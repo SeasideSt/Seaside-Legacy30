@@ -1,5 +1,8 @@
 attributes-events
-onKeyDown: aString
+onKeyDown: anObject
 	"The onkeydown event occurs when a key is pressed down over an element."
 
-	self attributes at: 'onkeydown' append: aString separator: ';'
+	self document scriptGenerator
+		event: 'keydown'
+		do: anObject
+		on: self
