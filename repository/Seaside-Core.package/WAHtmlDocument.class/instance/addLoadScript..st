@@ -1,4 +1,3 @@
-load scripts
+accessing
 addLoadScript: anObject
-	loadScripts := loadScripts copyWith: anObject.
-	^ anObject
+	^ self scriptGenerator addScript: anObject

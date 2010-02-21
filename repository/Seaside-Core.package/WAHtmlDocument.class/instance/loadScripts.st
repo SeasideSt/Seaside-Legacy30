@@ -1,3 +1,3 @@
-load scripts
+accessing
 loadScripts
-	^ loadScripts
+	^ self scriptGenerator scripts

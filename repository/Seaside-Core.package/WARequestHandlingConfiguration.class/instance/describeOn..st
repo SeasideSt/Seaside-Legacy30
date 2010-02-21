@@ -9,6 +9,10 @@ describeOn: config
 		beAdvanced;
 		options: [ self documentClasses ];
 		default: WAHtmlDocument.
+	(config list: #scriptGeneratorClass)
+		beAdvanced;
+		options: [ self scriptGeneratorClass ];
+		default: WAScriptGenerator.
 	(config list: #responseGenerator)
 		beAdvanced;
 		options: [ self responseGenerators ];

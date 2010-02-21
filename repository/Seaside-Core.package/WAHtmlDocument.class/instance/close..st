@@ -1,4 +1,4 @@
 actions
 close: anHtmlRoot
-	self writeLoadScripts.
+	self scriptGenerator close: anHtmlRoot on: self.
 	super close: anHtmlRoot

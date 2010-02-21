@@ -1,13 +1,13 @@
 {
-	"commentStamp" : "pmm 6/1/2008 00:19",
-	"super" : "WATagDocument",
+	"commentStamp" : "",
+	"super" : "WAObject",
 	"category" : "Seaside-Core-Document",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"scriptGenerator"
+		"scripts"
 	],
-	"name" : "WAHtmlDocument",
+	"name" : "WAScriptGenerator",
 	"type" : "normal"
 }
