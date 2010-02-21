@@ -4,7 +4,6 @@ script: aBlock on: aStream
 	
 	| script document |
 	document := JSDocument on: aStream codec: self requestContext codec.
-	document open.
 	self renderContext document: document during: [ 
 		script := (JSScript context: self renderContext)
 			rendererClass: self rendererClass;
