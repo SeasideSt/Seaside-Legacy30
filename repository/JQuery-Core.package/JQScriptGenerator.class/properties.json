@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WAScriptGenerator",
+	"category" : "JQuery-Core-Objects",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "JQScriptGenerator",
+	"type" : "normal"
+}
