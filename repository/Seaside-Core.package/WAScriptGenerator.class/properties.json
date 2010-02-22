@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"scripts"
+		"loadScripts"
 	],
 	"name" : "WAScriptGenerator",
 	"type" : "normal"

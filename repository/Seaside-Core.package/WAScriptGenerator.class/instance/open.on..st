@@ -1,3 +1,3 @@
 actions
 open: aHtmlRoot on: aDocument
-	aHtmlRoot bodyAttributes at: 'onload' put: 'onLoad()'
+	"This method is called before the document is opened."

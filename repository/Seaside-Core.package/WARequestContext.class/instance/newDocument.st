@@ -8,5 +8,5 @@ newDocument
 		ifTrue: [ WAHtmlDocument ]
 		ifFalse: [ self handler documentClass ])
 			on: self response stream codec: self codec)
-			scriptGenerator: (self handler configuration at: #scriptGeneratorClass) new;
+			scriptGenerator: (self application configuration at: #scriptGeneratorClass) new;
 			yourself

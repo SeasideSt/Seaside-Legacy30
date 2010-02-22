@@ -11,8 +11,8 @@ describeOn: config
 		default: WAHtmlDocument.
 	(config list: #scriptGeneratorClass)
 		beAdvanced;
-		options: [ self scriptGeneratorClass ];
-		default: WAScriptGenerator.
+		options: [ self scriptGeneratorClasses ];
+		default: WADefaultScriptGenerator.
 	(config list: #responseGenerator)
 		beAdvanced;
 		options: [ self responseGenerators ];

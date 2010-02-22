@@ -1,3 +1,3 @@
 accessing
 scriptGenerator
-	^ scriptGenerator ifNil: [ scriptGenerator := WAScriptGenerator new ]
+	^ scriptGenerator ifNil: [ scriptGenerator := WADefaultScriptGenerator new ]

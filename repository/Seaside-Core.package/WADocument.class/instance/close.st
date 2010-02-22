@@ -1,3 +1,5 @@
 actions
 close
-	self close: (root ifNil: [ WARoot new ])
+	"Close the receiving document."
+
+	root closeOn: self

@@ -1,3 +1,3 @@
-accessing
+scripting
 addLoadScriptFirst: anObject
-	^ self scriptGenerator addScriptFirst: anObject
+	^ self scriptGenerator addLoadScriptFirst: anObject

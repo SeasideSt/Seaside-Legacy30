@@ -1,4 +1,4 @@
 initialization
 initialize
 	super initialize.
-	scripts := OrderedCollection new
+	loadScripts := OrderedCollection new

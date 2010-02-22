@@ -1,1 +1,1 @@
-A WARoot is the root node of a document.
+A WARoot is the root of a document. It is responsible to generate header and footer of a document.

@@ -1,4 +1,3 @@
 accessing
 rootClass
-	rootClass isNil ifTrue: [ rootClass := WARoot ].
-	^rootClass
+	^ rootClass ifNil: [ rootClass := WARoot ]

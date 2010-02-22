@@ -1,3 +1,3 @@
 private
 scriptGeneratorClasses
-	^ WAScriptGenerator withAllSubclasses asSortedCollection: [ :a :b | a name <= b name ]
+	^ WAScriptGenerator allSubclasses asSortedCollection: [ :a :b | a name <= b name ]

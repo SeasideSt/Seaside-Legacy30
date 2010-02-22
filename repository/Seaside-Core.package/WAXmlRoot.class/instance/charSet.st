@@ -1,5 +1,3 @@
 accessing
 charSet
-	charSet isNil ifTrue: [
-		charSet := self class defaultCharSet ].
-	^charSet
+	^ charSet ifNil: [ charSet := self class defaultCharSet ]
