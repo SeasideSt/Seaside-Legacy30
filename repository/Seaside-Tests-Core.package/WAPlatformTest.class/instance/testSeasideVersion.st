@@ -1,3 +1,3 @@
-as yet unclassified
+testing
 testSeasideVersion
 	self assert: (self platform seasideVersion isKindOf: GRVersion)
