@@ -1,9 +1,11 @@
 utilities
 script: aBlock on: aStream
 	"Evaluate aBlock and pass in a script object that is subsequently written to aStream."
-	
+
 	| script document |
-	document := JSDocument on: aStream codec: self requestContext codec.
+	document := WAHtmlDocument
+		on: aStream
+		codec: self requestContext codec.
 	self renderContext document: document during: [ 
 		script := (JSScript context: self renderContext)
 			rendererClass: self rendererClass;
