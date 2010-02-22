@@ -5,5 +5,6 @@ renderJavascriptOn: html
 	html div class: 'code'; with: [
 		context := html context copy.
 		context document: (WAPrettyPrintedDocument context: html context).
+		context document scriptGenerator: html document scriptGenerator class new.
 		contents renderWithContext: context.
-		context document close ].
+		context document scriptGenerator closeOn: context document ].
