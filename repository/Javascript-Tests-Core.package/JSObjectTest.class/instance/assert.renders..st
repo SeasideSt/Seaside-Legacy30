@@ -2,8 +2,10 @@ utilities
 assert: aBlock renders: aString 
 	| html |
 	html := WARenderCanvas builder
-		documentClass: JSDocument;
+		documentClass: WAHtmlDocument;
 		rootClass: WAHtmlRoot;
-		fullDocument: true;
+		fullDocument: false;
 		render: aBlock.
-	self assert: html = aString
+	self 
+		assert: html = aString
+		description: 'Got ' , html printString , '; but expected ' , aString printString
