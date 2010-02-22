@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WAHtmlEncoder",
+	"name" : "WAXmlEncoder",
 	"type" : "normal"
 }

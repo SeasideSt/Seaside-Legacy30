@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "pmm 6/1/2008 00:19",
-	"super" : "WATagDocument",
+	"super" : "WAXmlDocument",
 	"category" : "Seaside-Core-Document",
 	"classinstvars" : [ ],
 	"pools" : [ ],

@@ -1,4 +1,4 @@
 initialization
 initializeWithStream: aStream codec: aCodec
 	super initializeWithStream: aStream codec: aCodec.
-	htmlEncoder := aStream
+	xmlEncoder := aStream

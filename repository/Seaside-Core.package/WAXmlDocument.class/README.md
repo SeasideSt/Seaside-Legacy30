@@ -1,0 +1,1 @@
+A WAXmlDocument is adds the possiblity to generate XML tags and knows encoders for XML text and URLs.

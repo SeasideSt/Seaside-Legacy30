@@ -4,7 +4,7 @@ encodeQueryOn: aDocument
 	first := true.
 	self queryFields keysAndValuesDo: 
 		[ :key :value |
-		first ifFalse: [ aDocument htmlEncoder nextPut: $& ].
+		first ifFalse: [ aDocument xmlEncoder nextPut: $& ].
 		first := false.
 		aDocument urlEncoder nextPutAll: key.
 		value isNil ifFalse: 

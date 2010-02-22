@@ -1,3 +1,3 @@
 displaying
 encodeOn: aDocument
-	self encodeOn: aDocument htmlEncoder usingQuotes: false
+	self encodeOn: aDocument xmlEncoder usingQuotes: false

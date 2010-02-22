@@ -1,5 +1,4 @@
 initialization
 initializeWithStream: aStream codec: aCodec
 	self initialize.
-	stream := aStream.
-	codec := aCodec
+	stream := aStream

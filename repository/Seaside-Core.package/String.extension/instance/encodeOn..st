@@ -1,3 +1,3 @@
 *seaside-core
 encodeOn: aDocument
-	aDocument htmlEncoder nextPutAll: self
+	aDocument xmlEncoder nextPutAll: self

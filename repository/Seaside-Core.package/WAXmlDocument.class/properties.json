@@ -1,11 +1,14 @@
 {
-	"commentStamp" : "",
-	"super" : "WATagDocument",
+	"commentStamp" : "lr 2/22/2010 08:10",
+	"super" : "WADocument",
 	"category" : "Seaside-Core-Document",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"urlEncoder",
+		"xmlEncoder"
+	],
 	"name" : "WAXmlDocument",
 	"type" : "normal"
 }

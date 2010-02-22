@@ -1,3 +1,3 @@
 initialization
 destroy
-	root := stream := codec := nil
+	stream := root := nil

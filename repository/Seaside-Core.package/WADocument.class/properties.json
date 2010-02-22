@@ -1,14 +1,13 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "lr 2/22/2010 08:02",
 	"super" : "WAObject",
 	"category" : "Seaside-Core-Document",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"root",
 		"stream",
-		"codec"
+		"root"
 	],
 	"name" : "WADocument",
 	"type" : "normal"
