@@ -1,4 +1,4 @@
-writing-xhtml
+private
 attribute: aKey with: aValue 
 	aValue == false ifTrue: [ ^ self ].
 	html space.

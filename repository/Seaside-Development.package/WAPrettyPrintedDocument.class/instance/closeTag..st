@@ -1,4 +1,4 @@
-writing-xhtml
+writing
 closeTag: aString
 	indentLevel := indentLevel - 1.
 	indentCloseTags removeLast

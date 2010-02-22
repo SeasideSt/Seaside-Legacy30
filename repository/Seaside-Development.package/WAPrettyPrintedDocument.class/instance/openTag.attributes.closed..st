@@ -1,4 +1,4 @@
-writing-xhtml
+writing
 openTag: aString attributes: anAttributes closed: aBoolean
 	self indent.
 	html text: '<'.
