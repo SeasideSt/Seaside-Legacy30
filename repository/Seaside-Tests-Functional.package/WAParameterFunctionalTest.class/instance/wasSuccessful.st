@@ -1,5 +1,5 @@
 testing
-wasSuccessfull
+wasSuccessful
 	^ values notNil
 		and: [ values isCollection
 		and: [ values isString not

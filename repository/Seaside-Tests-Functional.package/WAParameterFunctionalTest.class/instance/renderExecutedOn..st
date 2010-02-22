@@ -1,3 +1,3 @@
 rendering
 renderExecutedOn: html
-	html strong: (self wasSuccessfull ifTrue: [ 'success' ] ifFalse: [ 'fail' ])
+	html strong: (self wasSuccessful ifTrue: [ 'success' ] ifFalse: [ 'fail' ])
