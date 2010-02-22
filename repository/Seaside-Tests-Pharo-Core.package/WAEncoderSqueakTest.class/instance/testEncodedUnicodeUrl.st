@@ -7,7 +7,7 @@ testEncodedUnicodeUrl
 		with: (Character codePoint: 228).
 	self 
 		assert: ea
-		encoder: WAHtmlEncoder
+		encoder: WAXmlEncoder
 		gives: ea.
 	hiraA := (Character codePoint: 12354) greaseString.	"HIRAGANA LETTER A"
 	hiraO := (Character codePoint: 12362) greaseString.	"HIRAGANA LETTER O"

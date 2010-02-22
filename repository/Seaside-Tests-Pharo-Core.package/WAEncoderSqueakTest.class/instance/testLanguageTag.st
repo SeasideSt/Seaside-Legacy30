@@ -13,13 +13,13 @@ testLanguageTag
 	hiraAO := hiraA , hiraO.
 	self 
 		assert: hiraA
-		encoder: WAHtmlEncoder
+		encoder: WAXmlEncoder
 		gives: (self stripLeadingCharFrom: hiraA).
 	self 
 		assert: hiraO
-		encoder: WAHtmlEncoder
+		encoder: WAXmlEncoder
 		gives: (self stripLeadingCharFrom: hiraO).
 	self 
 		assert: hiraAO
-		encoder: WAHtmlEncoder
+		encoder: WAXmlEncoder
 		gives: (self stripLeadingCharFrom: hiraAO)

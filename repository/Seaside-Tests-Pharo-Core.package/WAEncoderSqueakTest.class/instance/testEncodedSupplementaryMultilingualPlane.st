@@ -7,5 +7,5 @@ testEncodedSupplementaryMultilingualPlane
 	zero := (Character codePoint: 65930) greaseString.
 	self 
 		assert: zero
-		encoder: WAHtmlEncoder
+		encoder: WAXmlEncoder
 		gives: zero

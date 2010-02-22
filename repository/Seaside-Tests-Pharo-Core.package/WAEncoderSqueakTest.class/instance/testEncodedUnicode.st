@@ -7,20 +7,20 @@ testEncodedUnicode
 		with: (Character codePoint: 228).
 	self 
 		assert: ea
-		encoder: WAHtmlEncoder
+		encoder: WAXmlEncoder
 		gives: ea.
 	hiraA := (Character codePoint: 12354) greaseString.	"HIRAGANA LETTER A"
 	hiraO := (Character codePoint: 12362) greaseString.	"HIRAGANA LETTER O"
 	hiraAO := hiraA , hiraO.
 	self 
 		assert: hiraA
-		encoder: WAHtmlEncoder
+		encoder: WAXmlEncoder
 		gives: hiraA.
 	self 
 		assert: hiraO
-		encoder: WAHtmlEncoder
+		encoder: WAXmlEncoder
 		gives: hiraO.
 	self 
 		assert: hiraAO
-		encoder: WAHtmlEncoder
+		encoder: WAXmlEncoder
 		gives: hiraAO
