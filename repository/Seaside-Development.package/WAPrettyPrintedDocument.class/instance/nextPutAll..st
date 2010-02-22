@@ -1,3 +1,3 @@
 writing
 nextPutAll: aString
-	self htmlEncoder nextPutAll: aString
+	self xmlEncoder nextPutAll: aString
