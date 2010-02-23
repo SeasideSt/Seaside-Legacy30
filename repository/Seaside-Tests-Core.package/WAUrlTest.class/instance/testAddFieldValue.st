@@ -1,5 +1,5 @@
 testing-adding
-testAddParameterValue
+testAddFieldValue
 	url 
 		addField: 'x'
 		value: 1.
