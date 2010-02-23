@@ -1,6 +1,6 @@
-tools
-commentCoverage
-	"Calculates comment coverage for aPackage, including method extensions. For every package it prints on the transcript:
+coverage
+commentCoverageFor: aCollectionOfPackage
+	"Calculates comment coverage for aCollectionOfPackage, including method extensions. For every package it prints on the transcript:
 	
 		- the package name
 		- number of classes
@@ -11,10 +11,10 @@ commentCoverage
 		- percentage of commented methods
 		- lines of code"
 		
-	"self commentCoverage"
+	"self commentCoverageFor: self allPackages"
 
 	| package allClasses classesCommented allMethods methodsCommented linesOfCode |
-	self allPackages do: [ :each |
+	aCollectionOfPackage do: [ :each |
 		package := PackageInfo named: each name.
 		allClasses := classesCommented := 0.
 		package classes do: [ :theClass |
