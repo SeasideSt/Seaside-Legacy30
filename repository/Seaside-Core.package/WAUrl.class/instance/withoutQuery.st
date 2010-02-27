@@ -1,5 +1,5 @@
 copying
 withoutQuery
-	^self copy
+	^ self copy
 		queryFields: nil;
 		yourself

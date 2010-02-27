@@ -2,9 +2,9 @@ encoding
 encodeOn: aDocument
 	self encodeSchemeAndAuthorityOn: aDocument.
 	self encodePathOn: aDocument.
-	queryFields notNil ifTrue: [
+	(queryFields isNil or: [ queryFields isEmpty ]) ifFalse: [
 		aDocument xmlEncoder nextPut: $?.
 		self encodeQueryOn: aDocument ].
-	fragment notNil ifTrue: [
+	fragment isNil ifFalse: [
 		aDocument xmlEncoder nextPut: $#.
 		self encodeFragmentOn: aDocument ]
