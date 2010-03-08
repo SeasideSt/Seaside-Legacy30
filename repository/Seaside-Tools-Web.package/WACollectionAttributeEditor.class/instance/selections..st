@@ -1,3 +1,3 @@
 accessing
-selections: aColl
-	selections := aColl
+selections: anArray
+	selections := anArray

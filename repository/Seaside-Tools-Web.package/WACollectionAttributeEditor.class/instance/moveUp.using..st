@@ -1,12 +1,8 @@
 private
-moveUp: selected using: aCollection
-	| currentIndex element |
-	selected isEmpty
-			ifFalse: [
-				currentIndex := aCollection indexOf: selected first.
-				currentIndex > 1
-					ifTrue: [
-						element := aCollection at: currentIndex - 1.
-						aCollection removeAll: selected.
-						selected do: [:each | 
-							aCollection add: each before: element ] ] ]
+moveUp: aSelectedCollection using: aCollection
+	| index |
+	aSelectedCollection do: [ :each |
+		index := aCollection indexOf: each ifAbsent: [ 0 ].
+		index > 1 
+			ifTrue: [ aCollection swap: index with: index - 1 ] ].
+	^ aCollection

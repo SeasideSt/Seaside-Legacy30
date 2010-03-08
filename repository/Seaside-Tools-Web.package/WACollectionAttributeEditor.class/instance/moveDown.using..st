@@ -1,12 +1,8 @@
 private
-moveDown: selected using: aCollection
-	| currentIndex element |
-	selected isEmpty
-			ifFalse: [
-				currentIndex := aCollection indexOf: selected last.
-				currentIndex < aCollection size
-					ifTrue: [
-						element := aCollection at: currentIndex + 1.
-						aCollection removeAll: selected.
-						selected do: [:each | 
-							aCollection add: each after: element ] ] ]
+moveDown: aSelectedCollection using: aCollection
+	| index |
+	aSelectedCollection reversed do: [ :each | 
+		index := aCollection indexOf: each ifAbsent: [ aCollection size ].
+		index < aCollection size
+			ifTrue: [ aCollection swap: index with: index + 1 ] ].
+	^ aCollection

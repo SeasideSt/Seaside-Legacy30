@@ -1,3 +1,5 @@
 actions
 removeFromRemovals
-	self expression removals removeAll: self selectedRemovals
+	self expression removals: (self 
+		removeAll: self selectedRemovals 
+		from: self expression removals)

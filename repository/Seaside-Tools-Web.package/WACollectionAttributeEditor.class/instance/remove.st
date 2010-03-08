@@ -4,7 +4,7 @@ remove
 		ifTrue: [
 			self expression value isEmpty
 				ifTrue: [ self expression value: self selectionsCurrent ]
-				ifFalse: [ self expression value removeAll: self selectionsCurrent ] ]
+				ifFalse: [ self expression value: (self removeAll: self selectionsCurrent from: self expression value) ] ]
 		ifFalse: [
 			self isModify
-				ifTrue: [ self expression additions removeAll: self selectedAdditions ] ]
+				ifTrue: [ self expression additions: (self removeAll: self selectedAdditions from: self expression additions) ] ]
