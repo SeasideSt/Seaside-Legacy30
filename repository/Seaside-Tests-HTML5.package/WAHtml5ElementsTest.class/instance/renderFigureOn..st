@@ -4,4 +4,4 @@ renderFigureOn: html
 	html figure: [
 		html legend: 'The Profiler Icon'.
 		html space.
-		html image url: WATestingFiles / #profilerPng; altText: 'profiler' ]
+		html image url: WAToolFiles / #profilerPng; altText: 'profiler' ]
