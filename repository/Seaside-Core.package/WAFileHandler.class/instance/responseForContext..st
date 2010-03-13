@@ -13,9 +13,7 @@ responseForContext: aRequestContext
 			listingClass := (self fileHandlerListingClass on: self context: aRequestContext).
 			listingClass responseForLibrary: libraryClass default ]
 		ifFalse: [
-			libraryClass 
-				documentAt: consumer next
-				forContext: aRequestContext.
+			libraryClass handle: aRequestContext.
 			" won't be executed if a document is found "
 			aRequestContext responseGenerator
 				notFound;
