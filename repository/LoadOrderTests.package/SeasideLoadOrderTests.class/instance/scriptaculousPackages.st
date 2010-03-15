@@ -2,8 +2,8 @@ packages
 scriptaculousPackages
 
 	^OrderedCollection new
-		add: seaside30 -> 'Scriptaculous-Core-lr.95.mcz';
-		add: seaside30 -> 'Scriptaculous-Tests-Core-jf.50.mcz';
-		add: seaside30 -> 'Scriptaculous-Components-obi.98.mcz';
-		add: seaside30 -> 'Scriptaculous-Tests-Components-obi.29.mcz';
+		add: seaside30 -> 'Scriptaculous-Core-lr.96.mcz';
+		add: seaside30 -> 'Scriptaculous-Tests-Core-lr.52.mcz';
+		add: seaside30 -> 'Scriptaculous-Components-lr.99.mcz';
+		add: seaside30 -> 'Scriptaculous-Tests-Components-lr.31.mcz';
 		yourself.
