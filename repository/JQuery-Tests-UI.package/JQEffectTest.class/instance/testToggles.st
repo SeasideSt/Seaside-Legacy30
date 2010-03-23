@@ -13,6 +13,9 @@ testToggles
 		assert: (self effect toggle; explode)
 		equals: self function , '("div").toggle("explode")'.
 	self
+		assert: (self effect toggle; fade)
+		equals: self function , '("div").toggle("fade")'.
+	self
 		assert: (self effect toggle; fold)
 		equals: self function , '("div").toggle("fold")'.
 	self
