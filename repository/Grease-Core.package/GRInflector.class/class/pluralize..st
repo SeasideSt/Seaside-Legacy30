@@ -3,9 +3,9 @@ pluralize: aString
 	| string |
 	string := aString asLowercase.
 	Uninflected do: [ :each |
-		(string endsWith: each)
+		(string endsWithSubCollection: each)
 			ifTrue: [ ^ aString ] ].
 	InflectionRules do: [ :rule |
-		(string endsWith: rule first)
+		(string endsWithSubCollection: rule first)
 			ifTrue: [ ^ (aString allButLast: rule third) , rule second ] ].
 	^ aString , 's'
