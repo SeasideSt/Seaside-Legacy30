@@ -4,4 +4,4 @@ assertDefault: aResponse
 	Session and dispatches to it."
 	self assert: registry cache size = (registrySize + 1).
 	self assert: aResponse status = 200.
-	self assert: (aResponse contents beginsWith: 'start:')
+	self assert: (aResponse contents beginsWithSubCollection: 'start:')
