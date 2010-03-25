@@ -3,9 +3,9 @@ updateRoot: anHtmlRoot
 	"Only override if you want to automatically include new types of resources. The default implementation knows how to reference CSS, JS and FavIcons into anHtmlRoot."
 
 	self selectorsToInclude do: [ :each |
-		(each endsWith: #Js)
+		(each endsWithSubCollection: #Js)
 			ifTrue: [ anHtmlRoot javascript url: (self urlOf: each) ].
-		(each endsWith: #Ico)
+		(each endsWithSubCollection: #Ico)
 			ifTrue: [ anHtmlRoot link beShortcutIcon; url: (self urlOf: each) ].
-		(each endsWith: #Css)
+		(each endsWithSubCollection: #Css)
 			ifTrue: [ anHtmlRoot stylesheet url: (self urlOf: each) ] ]
