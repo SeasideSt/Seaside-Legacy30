@@ -1,4 +1,4 @@
-tests-pluralize
+testing-pluralize
 testInflectorNotInflecting
 	self assert: 'fish' pluralize = 'fish'.
 	self assert: 'travois' pluralize = 'travois'.

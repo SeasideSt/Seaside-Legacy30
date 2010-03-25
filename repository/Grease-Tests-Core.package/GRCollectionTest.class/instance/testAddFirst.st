@@ -1,4 +1,4 @@
-tests
+testing
 testAddFirst
 	| collection |
 	(self isExtensible and: [ self isSequenced ]) ifFalse: [ ^ self ].

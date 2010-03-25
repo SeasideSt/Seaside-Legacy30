@@ -1,4 +1,4 @@
-tests
+testing
 testCopyUpTo
 	|  collection sub |
 	self isSequencedReadable ifFalse: [ ^ self ].

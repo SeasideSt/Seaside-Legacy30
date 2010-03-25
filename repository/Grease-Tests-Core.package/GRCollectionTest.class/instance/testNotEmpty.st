@@ -1,4 +1,4 @@
-tests
+testing
 testNotEmpty
 	
 	self assert: self arbitraryCollection notEmpty.

@@ -1,4 +1,4 @@
-tests
+testing
 testCapitalizedUmlauts
 	self assert: 'äöü' capitalized = 'Äöü'.
 	self assert: 'Äöü' capitalized = 'Äöü'.

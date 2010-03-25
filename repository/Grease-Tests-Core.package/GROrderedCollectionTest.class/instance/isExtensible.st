@@ -1,3 +1,3 @@
-configuration
+testing-ansi
 isExtensible
 	^ true

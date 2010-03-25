@@ -1,4 +1,4 @@
-tests
+testing
 testNoneSatisfy
 	| excluded included |
 	excluded := self excludedElement.

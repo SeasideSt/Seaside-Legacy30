@@ -1,3 +1,3 @@
-tests-truncate
+testing-truncate
 testTruncateEmpty
 	self assert: '' truncate = ''

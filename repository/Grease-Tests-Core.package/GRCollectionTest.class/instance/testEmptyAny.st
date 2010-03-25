@@ -1,4 +1,4 @@
-tests
+testing
 testEmptyAny
 	| collection |
 	collection := self emptyCollection.

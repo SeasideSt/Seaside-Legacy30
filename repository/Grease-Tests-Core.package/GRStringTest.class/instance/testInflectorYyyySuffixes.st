@@ -1,4 +1,4 @@
-tests-pluralize
+testing-pluralize
 testInflectorYyyySuffixes
 	self assert: 'story' pluralize = 'stories'.
 	self assert: 'lady' pluralize = 'ladies'.

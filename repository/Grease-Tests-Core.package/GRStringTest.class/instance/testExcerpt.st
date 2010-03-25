@@ -1,4 +1,4 @@
-tests-excerpt
+testing-excerpt
 testExcerpt
 	self assert: ('abcde' excerpt: 'c' radius: 0) = '...c...'.
 	self assert: ('abcde' excerpt: 'c' radius: 1) = '...bcd...'.

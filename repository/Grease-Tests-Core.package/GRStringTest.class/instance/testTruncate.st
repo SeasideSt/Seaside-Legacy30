@@ -1,4 +1,4 @@
-tests-truncate
+testing-truncate
 testTruncate
 	self assert: ('abc' truncate) = 'abc'.
 	self assert: ('abc' truncate: 3) = 'abc'.

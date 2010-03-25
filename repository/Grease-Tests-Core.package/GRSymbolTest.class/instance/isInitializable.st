@@ -1,3 +1,3 @@
 testing-ansi
 isInitializable
-	^ true
+	^ false

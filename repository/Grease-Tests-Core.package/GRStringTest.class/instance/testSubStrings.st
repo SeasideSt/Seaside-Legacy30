@@ -1,4 +1,4 @@
-tests
+testing
 testSubStrings
 	"#subStrings: is defined by ANSI 5.7.10.15:
 	Answer an array containing the substrings in the receiver separated by the elements of separators."
