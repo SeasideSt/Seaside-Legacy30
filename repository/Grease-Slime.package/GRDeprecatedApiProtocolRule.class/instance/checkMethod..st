@@ -10,6 +10,6 @@ checkMethod: aContext
 			result addClass: aContext selectedClass selector: aContext selector.
 			result addSearchString: node arguments first value ].
 		" This ensures that the description is a string and ends with a dot."
-		(node arguments size > 1 and: [ node arguments second isLiteral and: [ node arguments second value isString and: [ (node arguments second value endsWith: '.') not ] ] ]) ifTrue: [
+		(node arguments size > 1 and: [ node arguments second isLiteral and: [ node arguments second value isString and: [ (node arguments second value endsWithSubCollection: '.') not ] ] ]) ifTrue: [
 			result addClass: aContext selectedClass selector: aContext selector.
 			result addSearchString: node arguments second value ] ]
