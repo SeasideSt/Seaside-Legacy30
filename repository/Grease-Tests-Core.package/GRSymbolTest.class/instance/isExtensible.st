@@ -1,3 +1,3 @@
 configuration
 isExtensible
-	^ true
+	^ false
