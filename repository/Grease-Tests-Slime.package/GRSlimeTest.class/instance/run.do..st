@@ -10,7 +10,7 @@ run: aClass do: aBlock
 		assert: (rule name isString and: [ rule name notEmpty ])
 		description: aClass name , ' has no name'.
 	self
-		assert: (rule rationale isString and: [ rule rationale notEmpty and: [ rule rationale endsWith: '.' ] ])
+		assert: (rule rationale isString and: [ rule rationale notEmpty and: [ rule rationale endsWithSubCollection: '.' ] ])
 		description: aClass name , ' has no rationale'.
 	composite := RBCompositeLintRule rules: rules name: 'Slime'.
 	undo := model changes execute.
