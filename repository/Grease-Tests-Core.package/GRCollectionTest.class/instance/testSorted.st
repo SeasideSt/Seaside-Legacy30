@@ -1,4 +1,4 @@
-testing
+tests
 testSorted
 	| sorted collection |
 	collection := self arbitraryCollection.

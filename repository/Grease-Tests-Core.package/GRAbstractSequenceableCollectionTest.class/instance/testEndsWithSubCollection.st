@@ -1,7 +1,6 @@
-testing
+tests
 testEndsWithSubCollection
 	| collection |
-	self isSequencedReadable ifFalse: [ ^ self ].
 	collection := self arbitraryCollection.
 	self assert: (collection endsWithSubCollection: (collection copyWithout: collection first)).
 	self assert: (collection endsWithSubCollection: collection).

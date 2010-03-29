@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "GRCollectionTest",
+	"super" : "GRAbstractSequenceableCollectionTest",
 	"category" : "Grease-Tests-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],

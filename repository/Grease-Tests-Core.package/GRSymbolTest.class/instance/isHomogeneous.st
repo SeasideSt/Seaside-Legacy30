@@ -1,0 +1,3 @@
+configuration
+isHomogeneous
+	^ true

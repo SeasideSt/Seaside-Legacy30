@@ -1,4 +1,4 @@
-testing-pluralize
+tests-pluralize
 testInflectorCommonSuffixes
 	self assert: 'mouse' pluralize = 'mice'.
 	self assert: 'synopse' pluralize = 'synopses'.

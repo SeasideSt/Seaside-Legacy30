@@ -1,4 +1,4 @@
-testing
+tests
 testSort
 	| collection |
 	self isSequenced ifFalse: [ ^ self ].

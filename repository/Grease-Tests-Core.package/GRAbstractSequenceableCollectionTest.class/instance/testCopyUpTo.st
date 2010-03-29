@@ -1,7 +1,6 @@
-testing
+tests
 testCopyUpTo
 	|  collection sub |
-	self isSequencedReadable ifFalse: [ ^ self ].
 	
 	"match first element"
 	collection := self arbitraryCollection.
@@ -10,10 +9,11 @@ testCopyUpTo
 	self assert: sub isEmpty.
 	
 	"no match"
-	sub := collection copyUpTo: self excludedElement.
-	self assert: sub validSequencedNewResponseFrom: collection.
-	self assert: sub size = collection size.
-	self assert: sub = collection.
+	self isUnique ifFalse: [
+		sub := collection copyUpTo: self excludedElement.
+		self assert: sub validSequencedNewResponseFrom: collection.
+		self assert: sub size = collection size.
+		self assert: sub = collection ].
 	
 	"match an element"
 	sub := collection copyUpTo: self includedElement.
@@ -29,7 +29,7 @@ testCopyUpTo
 		self deny: (sub includes: self duplicateElement) ].
 	
 	"Make sure we're using equality"
-	self isInitializable ifTrue: [
+	(self isHomogeneous not and: [ self isInitializable ]) ifTrue: [
 		collection := self collectionClass withAll: #(1 '1').
 		sub := collection copyUpTo: '1'.
 		self assert: sub size = 1.

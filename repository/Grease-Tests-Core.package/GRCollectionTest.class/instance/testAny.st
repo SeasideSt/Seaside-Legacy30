@@ -1,4 +1,4 @@
-testing
+tests
 testAny
 	| collection |
 	collection := self arbitraryCollection.
