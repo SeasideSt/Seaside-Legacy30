@@ -1,4 +1,4 @@
-testing
+tests
 testInspectorFields
 	| values example fields association |
 	self assert: Object new inspectorFields isEmpty.
