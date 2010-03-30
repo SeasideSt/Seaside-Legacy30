@@ -1,4 +1,4 @@
-testing
+tests
 testFromToSubjectBody
 	| message cr |
 	cr := String with: Character cr.

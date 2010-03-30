@@ -1,4 +1,4 @@
-testing
+tests
 testSplitIntoLines
 	| cr toSplit actual |
 	cr := String with: Character cr.

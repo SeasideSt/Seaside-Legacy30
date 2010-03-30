@@ -1,4 +1,4 @@
-testing
+tests
 testWrapping
 	| cr body lf crlf |
 	cr := String with: Character cr.
