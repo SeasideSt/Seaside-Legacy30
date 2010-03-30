@@ -1,4 +1,4 @@
-testing-encoding
+tests-encoding
 testCanvasWithUrls
 	self
 		assert: [ :html | html withUrls: 'This is http://www.seaside.st online.' ]

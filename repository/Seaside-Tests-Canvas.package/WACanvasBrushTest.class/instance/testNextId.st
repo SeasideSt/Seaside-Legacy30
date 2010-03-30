@@ -1,4 +1,4 @@
-testing
+tests
 testNextId
 	self
 		assert: [ :html | html div id: html nextId ]

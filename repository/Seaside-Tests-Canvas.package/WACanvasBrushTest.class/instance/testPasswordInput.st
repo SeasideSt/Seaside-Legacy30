@@ -1,4 +1,4 @@
-testing-tags-forms
+tests-tags-forms
 testPasswordInput
 	self
 		assert: [ :html | html passwordInput ]

@@ -1,4 +1,4 @@
-testing-attributes
+tests-attributes
 testCoreAttributesClass
 	self
 		assert: [ :html | html div class: 'foo' ]

@@ -1,4 +1,4 @@
-testing-attributes
+tests-attributes
 testCoreAttributesId
 	self
 		assert: [ :html | html div id: 'foo' ]

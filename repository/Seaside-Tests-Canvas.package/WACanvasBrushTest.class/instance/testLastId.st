@@ -1,4 +1,4 @@
-testing
+tests
 testLastId
 	self
 		assert: [ :html | self assert: html lastId isNil ]

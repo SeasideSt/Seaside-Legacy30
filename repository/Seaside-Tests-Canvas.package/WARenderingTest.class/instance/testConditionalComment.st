@@ -1,4 +1,4 @@
-testing
+tests
 testConditionalComment
 	self
 		assert: [ :html |

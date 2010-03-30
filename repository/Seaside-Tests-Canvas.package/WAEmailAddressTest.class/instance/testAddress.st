@@ -1,4 +1,4 @@
-testing
+tests
 testAddress
 	| address |
 	address := WAEmailAddress address: 'philippe.marschall@gmail.com'.

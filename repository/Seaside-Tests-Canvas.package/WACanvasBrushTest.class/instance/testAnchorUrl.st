@@ -1,4 +1,4 @@
-testing-tags-anchors
+tests-tags-anchors
 testAnchorUrl
 	| url string |
 	url := WAUrl new.

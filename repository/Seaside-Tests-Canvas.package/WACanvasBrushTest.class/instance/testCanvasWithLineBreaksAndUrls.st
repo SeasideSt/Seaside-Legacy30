@@ -1,4 +1,4 @@
-testing-encoding
+tests-encoding
 testCanvasWithLineBreaksAndUrls
 	self
 		assert: [ :html | html withLineBreaksAndUrls: '1. This is http://www.seaside.st online.

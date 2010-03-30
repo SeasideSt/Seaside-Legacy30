@@ -1,4 +1,4 @@
-testing-encoding
+tests-encoding
 testCanvasWithLineBreaks
 	self
 		assert: [ :html | html withLineBreaks: 'a

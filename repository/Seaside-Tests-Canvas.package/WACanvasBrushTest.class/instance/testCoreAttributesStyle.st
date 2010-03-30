@@ -1,4 +1,4 @@
-testing-attributes
+tests-attributes
 testCoreAttributesStyle
 	self
 		assert: [ :html | html div style: 'left: 0' ]

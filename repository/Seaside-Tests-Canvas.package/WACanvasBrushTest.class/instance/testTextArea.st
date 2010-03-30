@@ -1,4 +1,4 @@
-testing-tags-forms
+tests-tags-forms
 testTextArea
 	self
 		assert: [ :html | html textArea ]

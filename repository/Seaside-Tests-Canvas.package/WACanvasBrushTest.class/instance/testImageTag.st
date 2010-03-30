@@ -1,4 +1,4 @@
-testing-tags
+tests-tags
 testImageTag
 	self
 		assert: [ :html | html image url: 'http://www.seaside.st/logo.jpeg' ]

@@ -1,4 +1,4 @@
-testing-tags
+tests-tags
 testParagraphTag
 	self
 		assert: [ :html | html paragraph ]

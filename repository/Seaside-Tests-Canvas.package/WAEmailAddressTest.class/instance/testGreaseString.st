@@ -1,4 +1,4 @@
-testing
+tests
 testGreaseString
 	| address |
 	address := WAEmailAddress 

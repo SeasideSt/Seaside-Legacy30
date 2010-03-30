@@ -1,4 +1,4 @@
-testing-tags-forms
+tests-tags-forms
 testTextInput
 	self
 		assert: [ :html | html textInput ]

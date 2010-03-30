@@ -1,4 +1,4 @@
-testing-tags-anchors
+tests-tags-anchors
 testAnchorAttributes
 	self
 		assert: [ :html | html anchor charset: 'utf-8' ]

@@ -1,4 +1,4 @@
-testing-tags-forms
+tests-tags-forms
 testMultiSelectTag
 	self
 		assert: [ :html | html multiSelect ]

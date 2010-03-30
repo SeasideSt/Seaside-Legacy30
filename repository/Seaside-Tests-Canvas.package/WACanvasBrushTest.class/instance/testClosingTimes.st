@@ -1,4 +1,4 @@
-testing
+tests
 testClosingTimes
 	self assert: [ :html | html div; div ] gives: '<div></div><div></div>'.
 	self assert: [ :html | html break; div ] gives: '<br/><div></div>'.

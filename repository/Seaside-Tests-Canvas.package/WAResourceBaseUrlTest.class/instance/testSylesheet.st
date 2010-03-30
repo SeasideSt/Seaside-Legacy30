@@ -1,4 +1,4 @@
-testing
+tests
 testSylesheet
 	self
 		assertRoot: [ :html | html stylesheet resourceUrl: 'main.css' ]

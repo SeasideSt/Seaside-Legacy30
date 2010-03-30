@@ -1,4 +1,4 @@
-testing-tags-tables
+tests-tags-tables
 testTableData
 	self
 		assert: [ :html | html tableData ]

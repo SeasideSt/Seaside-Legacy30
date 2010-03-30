@@ -1,4 +1,4 @@
-testing-tags-forms
+tests-tags-forms
 testCheckboxTag
 	self
 		assert: [ :html | html checkbox ]

@@ -1,4 +1,4 @@
-testing
+tests
 testBasicForm
 	self
 		assert: [ :html |

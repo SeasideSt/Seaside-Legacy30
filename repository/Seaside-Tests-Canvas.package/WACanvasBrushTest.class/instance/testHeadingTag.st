@@ -1,4 +1,4 @@
-testing-tags
+tests-tags
 testHeadingTag
 	self
 		assert: [ :html | html heading ]

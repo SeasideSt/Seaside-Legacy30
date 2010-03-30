@@ -1,4 +1,4 @@
-testing
+tests
 testIsInternetExplorer
 	self assertUserAgent: 'Mozilla/5.0 (compatible; Konqueror/3.2; Linux 2.6.2) (KHTML, like Gecko)' isInternetExplorer: false.
 	self assertUserAgent: 'Mozilla/4.0 (compatible; MSIE 6.0; MSIE 5.5; Windows NT 5.1) Opera 7.04 [de]' isInternetExplorer: false.

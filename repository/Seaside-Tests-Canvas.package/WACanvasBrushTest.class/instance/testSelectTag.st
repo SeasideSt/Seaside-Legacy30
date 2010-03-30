@@ -1,4 +1,4 @@
-testing-tags-forms
+tests-tags-forms
 testSelectTag
 	self
 		assert: [ :html | html select ]

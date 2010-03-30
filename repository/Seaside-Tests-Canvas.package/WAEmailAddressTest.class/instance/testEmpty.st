@@ -1,4 +1,4 @@
-testing
+tests
 testEmpty
 	| address |
 	address := WAEmailAddress address: (String 

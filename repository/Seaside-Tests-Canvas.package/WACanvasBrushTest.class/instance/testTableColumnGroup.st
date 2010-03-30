@@ -1,4 +1,4 @@
-testing-tags-tables
+tests-tags-tables
 testTableColumnGroup
 	self
 		assert: [ :html | html tableColumnGroup ]

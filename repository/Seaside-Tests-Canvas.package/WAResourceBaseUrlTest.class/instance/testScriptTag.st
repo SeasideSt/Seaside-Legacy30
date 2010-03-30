@@ -1,4 +1,4 @@
-testing
+tests
 testScriptTag
 	self
 		assert: [ :html | html script resourceUrl: 'track.js' ]

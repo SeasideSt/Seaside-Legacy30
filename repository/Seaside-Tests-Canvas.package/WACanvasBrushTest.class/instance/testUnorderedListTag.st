@@ -1,4 +1,4 @@
-testing-tags
+tests-tags
 testUnorderedListTag
 	self
 		assert: [ :html | html unorderedList ]

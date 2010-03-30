@@ -1,4 +1,4 @@
-testing
+tests
 testCharCodingWithHandler
 	"445:WABasicFormTag does not honour character encoding setting"
 	self

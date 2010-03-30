@@ -1,4 +1,4 @@
-testing
+tests
 testFullDocument
 	| actual |
 	actual := WARenderCanvas builder fullDocument: true; render: [ :html |

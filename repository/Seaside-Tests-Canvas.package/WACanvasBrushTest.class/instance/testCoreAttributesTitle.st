@@ -1,4 +1,4 @@
-testing-attributes
+tests-attributes
 testCoreAttributesTitle
 	self
 		assert: [ :html | html div title: 'Seaside' ]

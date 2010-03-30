@@ -1,4 +1,4 @@
-testing-tags-anchors
+tests-tags-anchors
 testAnchorCallback
 	self
 		assert: [ :html | html anchor callback: [ ] ]

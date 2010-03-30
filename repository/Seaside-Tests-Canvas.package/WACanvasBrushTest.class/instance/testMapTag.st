@@ -1,4 +1,4 @@
-testing-tags-anchors
+tests-tags-anchors
 testMapTag
 	self
 		assert: [ :html | html map callback: [ :point | ]; with: [ html image url: 'seaside.jpg' ] ]

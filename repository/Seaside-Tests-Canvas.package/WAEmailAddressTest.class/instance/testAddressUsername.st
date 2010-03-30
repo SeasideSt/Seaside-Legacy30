@@ -1,4 +1,4 @@
-testing
+tests
 testAddressUsername
 	| address |
 	address := WAEmailAddress 

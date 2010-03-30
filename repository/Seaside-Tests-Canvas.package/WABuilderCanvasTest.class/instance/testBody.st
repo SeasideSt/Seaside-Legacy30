@@ -1,4 +1,4 @@
-testing
+tests
 testBody
 	| actual |
 	actual := WARenderCanvas builder render: [ :html |

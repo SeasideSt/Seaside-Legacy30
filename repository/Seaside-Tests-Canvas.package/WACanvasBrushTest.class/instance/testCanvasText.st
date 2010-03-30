@@ -1,4 +1,4 @@
-testing-encoding
+tests-encoding
 testCanvasText
 	self assert: [ :html | html text: '<' ] gives: '&lt;'.
 	self assert: [ :html | html text: '>' ] gives: '&gt;'.

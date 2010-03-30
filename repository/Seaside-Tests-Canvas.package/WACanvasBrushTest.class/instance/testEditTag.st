@@ -1,4 +1,4 @@
-testing-tags
+tests-tags
 testEditTag
 	self
 		assert: [ :html | html inserted: 'foo' ]

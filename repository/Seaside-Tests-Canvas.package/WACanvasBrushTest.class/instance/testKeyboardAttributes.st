@@ -1,4 +1,4 @@
-testing-attributes
+tests-attributes
 testKeyboardAttributes
 	self
 		assert: [ :html | html anchor accessKey: $a ]

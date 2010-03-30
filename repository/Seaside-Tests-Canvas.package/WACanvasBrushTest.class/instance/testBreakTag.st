@@ -1,4 +1,4 @@
-testing-tags
+tests-tags
 testBreakTag
 	self
 		assert: [ :html | html break ]

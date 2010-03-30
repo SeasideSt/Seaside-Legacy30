@@ -1,4 +1,4 @@
-testing
+tests
 testRevealedConditionalComment
 		self assert: [ :html |
 			html revealedIf ie7; do: [

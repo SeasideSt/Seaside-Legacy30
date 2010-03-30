@@ -1,4 +1,4 @@
-testing-tags
+tests-tags
 testLabelTag
 	self
 		assert: [ :html | html label: 'foo' ]

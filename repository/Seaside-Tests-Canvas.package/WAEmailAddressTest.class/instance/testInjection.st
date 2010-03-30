@@ -1,4 +1,4 @@
-testing
+tests
 testInjection
 	| address |
 	address := WAEmailAddress address: 'philippe.marschall@gmail.com' , (String 

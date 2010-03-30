@@ -1,4 +1,4 @@
-testing
+tests
 testFileNameWithHttp
 	self
 		assert: [ :html | html image resourceUrl: 'http.gif' ]

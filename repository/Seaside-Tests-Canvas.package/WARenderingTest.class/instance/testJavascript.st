@@ -1,4 +1,4 @@
-testing
+tests
 testJavascript
 	self
 		assert: [ :html |

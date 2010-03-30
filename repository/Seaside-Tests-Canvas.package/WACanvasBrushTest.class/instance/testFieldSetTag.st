@@ -1,4 +1,4 @@
-testing-tags
+tests-tags
 testFieldSetTag
 	self
 		assert: [ :html | html fieldSet: 'foo' ]

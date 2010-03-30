@@ -1,4 +1,4 @@
-testing-tags
+tests-tags
 testBlock
 	self
 		assert: [ :html | html strong: [ html text: 'nes'; text: 'sie' ] ]

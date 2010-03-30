@@ -1,4 +1,4 @@
-testing
+tests
 testLinkElement
 	self
 		assert: [ :html |

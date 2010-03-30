@@ -1,4 +1,4 @@
-testing
+tests
 testRootScript
 	self
 		assertRoot: [ :html | html javascript resourceUrl: 'main.js' ]

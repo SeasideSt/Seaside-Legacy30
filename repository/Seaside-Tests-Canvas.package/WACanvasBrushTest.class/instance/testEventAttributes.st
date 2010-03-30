@@ -1,4 +1,4 @@
-testing-attributes
+tests-attributes
 testEventAttributes
 	self
 		assert: [ :html | html div onBlur: 1; onBlur: 2 ]

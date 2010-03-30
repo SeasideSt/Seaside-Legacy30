@@ -1,4 +1,4 @@
-testing-tags
+tests-tags
 testScriptTag
 	self
 		assert: [ :html | html script: 'alert("<foo>")' ]

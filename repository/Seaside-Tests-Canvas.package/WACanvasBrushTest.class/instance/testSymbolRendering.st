@@ -1,4 +1,4 @@
-testing-encoding
+tests-encoding
 testSymbolRendering
 	self
 		assert: [ :html | html div id: #aSymbol; with: #aSecondSymbol ]

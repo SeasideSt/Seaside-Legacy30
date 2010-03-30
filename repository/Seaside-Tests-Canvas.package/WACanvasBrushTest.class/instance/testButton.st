@@ -1,4 +1,4 @@
-testing-tags-forms
+tests-tags-forms
 testButton
 	self
 		assert: [ :html | html button ]

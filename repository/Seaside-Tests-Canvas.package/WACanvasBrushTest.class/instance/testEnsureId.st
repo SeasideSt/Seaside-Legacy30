@@ -1,4 +1,4 @@
-testing
+tests
 testEnsureId
 	self
 		assert: [ :html | self assert: (html div ensureId = 'id1') ]

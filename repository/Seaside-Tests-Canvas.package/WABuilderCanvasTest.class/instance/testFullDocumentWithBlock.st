@@ -1,4 +1,4 @@
-testing
+tests
 testFullDocumentWithBlock
 	| actual |
 	actual := WARenderCanvas builder fullDocument: true;
