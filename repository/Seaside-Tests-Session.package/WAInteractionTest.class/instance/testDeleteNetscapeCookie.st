@@ -1,4 +1,4 @@
-testing
+tests
 testDeleteNetscapeCookie
 	| requestCookie responseCookies responseCookie |
 	self application preferenceAt: #serverPath put: '/en/private_kunden/wealth_management'.

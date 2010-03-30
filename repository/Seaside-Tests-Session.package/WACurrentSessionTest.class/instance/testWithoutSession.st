@@ -1,4 +1,4 @@
-testing
+tests
 testWithoutSession
 	| context |
 	context := WARequestContext request: nil response: nil.

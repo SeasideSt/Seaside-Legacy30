@@ -1,4 +1,4 @@
-testing
+tests
 testWithValue
 	| session context |
 	session := WASession new.

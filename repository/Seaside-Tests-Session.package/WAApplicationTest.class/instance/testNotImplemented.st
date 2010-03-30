@@ -1,4 +1,4 @@
-testing
+tests
 testNotImplemented
 	| context request |
 	#('OPTIONS' 'HEAD' 'PUT' 'DELETE' 'TRACE' 'CONNECT') do: [ :each |

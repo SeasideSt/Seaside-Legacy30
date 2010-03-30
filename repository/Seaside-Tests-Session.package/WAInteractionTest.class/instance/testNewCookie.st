@@ -1,4 +1,4 @@
-testing
+tests
 testNewCookie
 	| cookie |
 	cookie := self requestContext newCookie.

@@ -1,4 +1,4 @@
-testing
+tests
 testDeleteRfc2965Cookie
 	| requestCookie responseCookies responseCookie |
 	requestCookie := (WARequestCookie key: 'password' value: 'sex')

@@ -1,4 +1,4 @@
-testing
+tests
 testPathConsumption
 	| context request |
 	request := self requestWithMethod: 'GET'.
