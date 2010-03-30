@@ -1,4 +1,4 @@
-testing
+tests
 testContents
 	file contents: #(83 195 169 195 164 115 195 174 100 195 169) asByteArray.
 	self assert: file rawContents = #(83 195 169 195 164 115 195 174 100 195 169) asByteArray.

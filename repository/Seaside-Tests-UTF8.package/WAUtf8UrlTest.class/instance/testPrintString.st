@@ -1,4 +1,4 @@
-testing
+tests
 testPrintString
 	| url |
 	url :=  WAUrl absolute: 'http://www.seaside.st/'.
