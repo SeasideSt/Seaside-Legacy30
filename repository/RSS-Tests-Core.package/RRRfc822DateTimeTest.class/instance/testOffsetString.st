@@ -1,4 +1,4 @@
-testing
+tests
 testOffsetString
 	| duration formatted |
 	duration := Duration days: 0 hours: 2 minutes: 3 seconds: 0.
