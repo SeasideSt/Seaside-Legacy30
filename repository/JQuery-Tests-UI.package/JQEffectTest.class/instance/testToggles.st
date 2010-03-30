@@ -1,4 +1,4 @@
-testing
+tests
 testToggles
 	self
 		assert: (self effect toggle; blind)

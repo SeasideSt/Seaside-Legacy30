@@ -1,4 +1,4 @@
-testing
+tests
 testOptions
 	self
 		assert: ((self jQuery: 'span') slider value: 0)

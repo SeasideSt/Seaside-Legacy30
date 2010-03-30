@@ -1,4 +1,4 @@
-testing
+tests
 testActions
 	self
 		assert: ((self jQuery: 'ul') tabs add: '#foo' label: 'Foo')

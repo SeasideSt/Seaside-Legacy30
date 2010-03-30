@@ -1,4 +1,4 @@
-testing
+tests
 testEffects
 	self
 		assert: self effect

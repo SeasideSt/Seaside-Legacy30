@@ -1,4 +1,4 @@
-testing
+tests
 testSpeed
 	self
 		assert: (self effect show; blind; speed: 2 seconds)

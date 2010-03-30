@@ -1,4 +1,4 @@
-testing
+tests
 testHide
 	self
 		assert: (self effect hide; blind)

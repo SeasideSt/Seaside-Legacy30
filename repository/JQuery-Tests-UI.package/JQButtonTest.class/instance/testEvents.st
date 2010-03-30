@@ -1,4 +1,4 @@
-testing
+tests
 testEvents
 	self
 		assert: ((self jQuery: 'input') button onClick: 123)

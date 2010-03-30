@@ -1,4 +1,4 @@
-testing
+tests
 testActions
 	self
 		assert: ((self jQuery: 'ul') sortable cancel)

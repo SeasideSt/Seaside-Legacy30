@@ -1,4 +1,4 @@
-testing
+tests
 testShow
 	self
 		assert: (self effect show; blind)

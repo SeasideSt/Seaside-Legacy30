@@ -1,4 +1,4 @@
-testing
+tests
 testEvents
 	self
 		assert: ((self jQuery: 'div') draggable onDrag: 1)

@@ -1,4 +1,4 @@
-testing
+tests
 testComplete
 	self
 		assert: (self effect hide; blind; onComplete: (self javascript alert: 'Done'))

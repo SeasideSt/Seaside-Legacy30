@@ -1,4 +1,4 @@
-testing
+tests
 testIcons
 	self
 		assert: ((self jQuery: 'input') button primaryIcon: 'foo')
