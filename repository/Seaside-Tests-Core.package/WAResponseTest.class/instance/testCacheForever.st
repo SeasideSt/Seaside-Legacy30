@@ -1,4 +1,4 @@
-testing-cache
+tests-cache
 testCacheForever
 	self response cacheForever.
 	self assert: (self response headerAt: 'Pragma') isNil.

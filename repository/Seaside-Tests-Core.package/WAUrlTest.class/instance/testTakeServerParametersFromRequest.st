@@ -1,4 +1,4 @@
-testing
+tests
 testTakeServerParametersFromRequest
 	| request |
 	request := WARequest new

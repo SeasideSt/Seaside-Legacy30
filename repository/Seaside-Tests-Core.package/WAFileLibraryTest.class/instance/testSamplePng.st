@@ -1,4 +1,4 @@
-testing
+tests
 testSamplePng
 	| handler library response stream contents |
 	handler := WAFileHandler new.

@@ -1,4 +1,4 @@
-testing
+tests
 testScheme
 	url
 		scheme: 'https';

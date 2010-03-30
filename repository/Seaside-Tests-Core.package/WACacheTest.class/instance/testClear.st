@@ -1,4 +1,4 @@
-testing
+tests
 testClear
 	key := cache store: 1.
 	cache clear.

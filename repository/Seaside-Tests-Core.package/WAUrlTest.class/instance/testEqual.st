@@ -1,4 +1,4 @@
-testing-comparing
+tests-comparing
 testEqual
 	url host: 'seaside.st'; addField: 'foo' value: 'bar'. 
 	self assert: url = url.

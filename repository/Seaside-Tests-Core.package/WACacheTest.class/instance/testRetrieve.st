@@ -1,4 +1,4 @@
-testing
+tests
 testRetrieve
 	self assert: (cache at: key) isNil.
 	key := cache store: 1.

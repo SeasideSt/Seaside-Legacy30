@@ -1,4 +1,4 @@
-testing
+tests
 testHandler
 	| filter1 filter2 |
 	filter1 := handler addFilter: WARequestFilter new.

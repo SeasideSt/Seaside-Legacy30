@@ -1,4 +1,4 @@
-testing
+tests
 testTry
 	self deny: (consumer try: 'foo').
 	self assert: (consumer try: 'tweets').

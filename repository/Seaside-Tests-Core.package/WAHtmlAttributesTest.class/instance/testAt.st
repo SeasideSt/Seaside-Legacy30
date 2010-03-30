@@ -1,4 +1,4 @@
-testing
+tests
 testAt
 	attributes at: 'foo' put: 'bar'.
 	self assert: (attributes at: 'foo') = 'bar'.

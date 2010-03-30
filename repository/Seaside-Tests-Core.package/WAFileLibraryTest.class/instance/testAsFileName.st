@@ -1,4 +1,4 @@
-testing
+tests
 testAsFileName
 	| library |
 	library := WATestingFiles default.

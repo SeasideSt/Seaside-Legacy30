@@ -1,4 +1,4 @@
-testing-headers
+tests-headers
 testHeadersRemoveAt
 	self response headerAt: 'foo' put: 'bar'.
 	self response headerAt: 'bar' put: 'baz'.

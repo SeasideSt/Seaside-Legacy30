@@ -1,4 +1,4 @@
-testing
+tests
 testIso3
 	| locale |
 	locale := WALocale fromString: 'gsw-CHE'.

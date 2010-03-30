@@ -1,4 +1,4 @@
-testing
+tests
 testStreaming
 	| stream |
 	self response notFound.

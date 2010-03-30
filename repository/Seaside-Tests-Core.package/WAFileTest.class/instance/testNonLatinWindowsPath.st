@@ -1,4 +1,4 @@
-testing
+tests
 testNonLatinWindowsPath
 	| koreanName |
 	"If the following assertion fails, your Smalltalk dialect most probably does not support non-latin characters. This is true for Squeak 3.7. If your Smalltalk dialect does support non-latin characters adjust the test."

@@ -1,4 +1,4 @@
-testing
+tests
 testPathConsumption
 	dispatcher := WADispatcher new.
 	handler := dispatcher register: WANextUnconsumedPathElementRequestHandler new at: 'tweets'.

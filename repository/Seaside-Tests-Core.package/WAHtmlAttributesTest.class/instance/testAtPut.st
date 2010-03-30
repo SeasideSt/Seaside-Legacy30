@@ -1,4 +1,4 @@
-testing
+tests
 testAtPut
 	self
 		assert: [ :attr | attr at: 'id' put: 'foo' ]

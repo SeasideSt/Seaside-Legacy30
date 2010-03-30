@@ -1,4 +1,4 @@
-testing-adding
+tests-adding
 testAddFieldValue
 	url 
 		addField: 'x'

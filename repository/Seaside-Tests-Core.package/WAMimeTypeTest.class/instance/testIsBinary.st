@@ -1,4 +1,4 @@
-testing
+tests
 testIsBinary
 	| notBinary binary |
 	notBinary := #('text/plain' 'text/bar' 'application/x-javascript' 'application/xhml+xml' 'application/xml').

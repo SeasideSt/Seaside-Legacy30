@@ -1,4 +1,4 @@
-testing
+tests
 testCopy
 	| original copy |
 	original := (WACookie key: 'meta' value: 'phor')

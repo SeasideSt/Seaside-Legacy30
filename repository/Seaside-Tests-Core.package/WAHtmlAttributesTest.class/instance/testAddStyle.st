@@ -1,4 +1,4 @@
-testing-convenience
+tests-convenience
 testAddStyle
 	self
 		assert: [ :attr | attr addStyle: 'display: hidden' ]

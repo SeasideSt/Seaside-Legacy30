@@ -1,4 +1,4 @@
-testing
+tests
 testAsSelectorLeadingDigits
 	| library |
 	library := WATestingFiles default.

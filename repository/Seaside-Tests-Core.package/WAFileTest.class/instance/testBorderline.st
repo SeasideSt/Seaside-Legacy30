@@ -1,4 +1,4 @@
-testing
+tests
 testBorderline
 	file fileName: 'C'.
 	self assert: file fileName = 'C'.

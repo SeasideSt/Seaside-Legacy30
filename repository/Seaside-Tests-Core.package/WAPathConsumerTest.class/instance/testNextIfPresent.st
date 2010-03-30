@@ -1,4 +1,4 @@
-testing
+tests
 testNextIfPresent
 	| evaluated |
 	evaluated := false.

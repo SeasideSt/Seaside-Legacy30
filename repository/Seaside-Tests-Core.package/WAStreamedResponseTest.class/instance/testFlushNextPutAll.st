@@ -1,4 +1,4 @@
-testing-flush
+tests-flush
 testFlushNextPutAll
 	self response nextPutAll: 'Hello World'. " <-- should flush "
 	self assert: self response isCommitted.

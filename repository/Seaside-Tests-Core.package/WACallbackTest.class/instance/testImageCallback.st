@@ -1,4 +1,4 @@
-testing-callbacks
+tests-callbacks
 testImageCallback
 	| key |
 	key := registry store: (WAImageCallback on: [ log add: 1 ]).

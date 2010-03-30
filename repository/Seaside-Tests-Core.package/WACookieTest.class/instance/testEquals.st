@@ -1,4 +1,4 @@
-testing
+tests
 testEquals
 	| cookie1 cookie2 |
 	cookie1 := WARequestCookie key: 'JSESSIONID' value: '8543783483494373483764'.

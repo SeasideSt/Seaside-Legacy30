@@ -1,4 +1,4 @@
-testing
+tests
 testExclusion
 	| value semaphore1 semaphore2 semaphore3 semaphore4 |
 	semaphore1 := GRPlatform current semaphoreClass new.

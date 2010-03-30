@@ -1,4 +1,4 @@
-testing
+tests
 testMainJs
 	| handler response |
 	handler := WAFileHandler new.

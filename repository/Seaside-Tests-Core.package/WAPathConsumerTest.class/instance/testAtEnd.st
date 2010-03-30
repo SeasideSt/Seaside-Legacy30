@@ -1,4 +1,4 @@
-testing
+tests
 testAtEnd
 	self deny: consumer atEnd.
 	consumer next.

@@ -1,4 +1,4 @@
-testing
+tests
 testUser
 	url
 		host: 'seaside.st';

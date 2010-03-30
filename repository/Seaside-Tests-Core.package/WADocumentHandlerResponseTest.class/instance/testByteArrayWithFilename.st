@@ -1,4 +1,4 @@
-testing
+tests
 testByteArrayWithFilename
 	self
 		createAndVerifyBinaryDocumentNamed: 'sample.png'

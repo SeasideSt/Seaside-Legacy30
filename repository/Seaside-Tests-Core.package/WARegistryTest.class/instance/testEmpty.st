@@ -1,4 +1,4 @@
-testing
+tests
 testEmpty
 	| context cookie |
 	context := self requestContextFor: WARequest new.

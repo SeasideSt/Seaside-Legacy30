@@ -1,4 +1,4 @@
-testing
+tests
 testCompileString
 	| library file |
 	[

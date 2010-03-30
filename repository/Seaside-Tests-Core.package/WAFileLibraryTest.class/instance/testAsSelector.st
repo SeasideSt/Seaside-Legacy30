@@ -1,4 +1,4 @@
-testing
+tests
 testAsSelector
 	self assert: (WAFileLibrary asSelector: 'main.css') = #mainCss.
 	self assert: (WAFileLibrary asSelector: 'main.js') = #mainJs.

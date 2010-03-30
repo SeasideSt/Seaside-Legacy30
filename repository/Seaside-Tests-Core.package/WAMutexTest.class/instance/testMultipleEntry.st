@@ -1,4 +1,4 @@
-testing
+tests
 testMultipleEntry
 	| value |
 	value := mutex critical: [ mutex critical: [ 1 ] ].

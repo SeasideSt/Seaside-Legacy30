@@ -1,4 +1,4 @@
-testing
+tests
 testCombine
 	| expiry actual cookie1 cookie2 |
 	expiry := DateAndTime year: 2007 month: 11 day: 21 hour: 14 minute: 42 second: 48 offset: (Duration days: 0 hours: 2 minutes: 0 seconds: 0).

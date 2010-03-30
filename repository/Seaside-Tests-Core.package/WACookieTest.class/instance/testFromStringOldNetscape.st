@@ -1,4 +1,4 @@
-testing
+tests
 testFromStringOldNetscape
 	| cookies customer partNumber shipping |
 	cookies := WACookie fromString: 'Customer=WILE_E_COYOTE;

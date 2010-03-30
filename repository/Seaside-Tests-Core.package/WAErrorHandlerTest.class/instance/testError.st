@@ -1,4 +1,4 @@
-testing
+tests
 testError
 	| context |
 	context := self createRequestContext.

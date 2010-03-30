@@ -1,4 +1,4 @@
-testing
+tests
 testAddFilter
 	| filter1 filter2 |
 	filter1 := WARequestFilter new.

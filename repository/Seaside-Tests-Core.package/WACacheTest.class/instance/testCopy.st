@@ -1,4 +1,4 @@
-testing
+tests
 testCopy
 	| one two copy |
 	one := cache store: 1.

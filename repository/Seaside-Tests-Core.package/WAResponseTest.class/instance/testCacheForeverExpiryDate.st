@@ -1,4 +1,4 @@
-testing-cache
+tests-cache
 testCacheForeverExpiryDate
 	| expiry delta |
 	expiry := self response cacheForeverExpiryDate.

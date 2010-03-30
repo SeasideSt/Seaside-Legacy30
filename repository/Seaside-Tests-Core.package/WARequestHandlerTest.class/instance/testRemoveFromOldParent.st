@@ -1,4 +1,4 @@
-testing
+tests
 testRemoveFromOldParent
 	| parent parent2 |
 	parent := WADispatcher new.

@@ -1,4 +1,4 @@
-testing
+tests
 testConversion
 	| converted |
 	url

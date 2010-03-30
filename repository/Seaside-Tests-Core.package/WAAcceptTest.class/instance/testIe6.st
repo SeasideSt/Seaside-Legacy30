@@ -1,4 +1,4 @@
-testing
+tests
 testIe6
 	| accept acceptLanguage acceptEncoding |
 	accept := WAAccept fromString: 'image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/vnd.ms-excel, application/msword, application/vnd.ms-powerpoint, application/x-shockwave-flash, */*'.

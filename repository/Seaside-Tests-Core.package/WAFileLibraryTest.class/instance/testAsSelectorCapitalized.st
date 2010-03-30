@@ -1,4 +1,4 @@
-testing
+tests
 testAsSelectorCapitalized
 	| library |
 	library := WATestingFiles default.

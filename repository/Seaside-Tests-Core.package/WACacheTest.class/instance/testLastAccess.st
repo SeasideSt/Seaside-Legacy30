@@ -1,4 +1,4 @@
-testing-policies
+tests-policies
 testLastAccess
 	| keys |
 	cache setExpiryPolicy: WALastAccessExpiryPolicy new.

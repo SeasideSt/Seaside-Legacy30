@@ -1,4 +1,4 @@
-testing
+tests
 testQueryFields
 	url queryFields 
 		at: '1'

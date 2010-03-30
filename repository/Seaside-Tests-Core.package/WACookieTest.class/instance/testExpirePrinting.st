@@ -1,4 +1,4 @@
-testing
+tests
 testExpirePrinting
 	| cookie |
 	cookie := WACookie key: 'foo' value: 'bar'.

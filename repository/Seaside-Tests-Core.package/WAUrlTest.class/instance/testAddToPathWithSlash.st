@@ -1,4 +1,4 @@
-testing-adding
+tests-adding
 testAddToPathWithSlash
 	url addToPath: '/files/WAStandardFiles/'.
 	self assert: url path size = 2.

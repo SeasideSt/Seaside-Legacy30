@@ -1,4 +1,4 @@
-testing
+tests
 testExpireInPast
 	| cookie |
 	cookie := (WACookie key: 'unit' value: 'testing').

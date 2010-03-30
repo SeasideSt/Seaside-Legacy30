@@ -1,4 +1,4 @@
-testing
+tests
 testCopyDocumentHandler
 	| copy |
 	copy := handler copy.

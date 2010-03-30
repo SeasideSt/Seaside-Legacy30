@@ -1,4 +1,4 @@
-testing
+tests
 testWindowsPath
 	file fileName: 'C:\important\passwords.txt'.
 	self assert: file fileName = 'passwords.txt'.

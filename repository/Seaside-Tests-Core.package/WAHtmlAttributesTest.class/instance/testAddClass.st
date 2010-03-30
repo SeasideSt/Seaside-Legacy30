@@ -1,4 +1,4 @@
-testing-convenience
+tests-convenience
 testAddClass
 	self
 		assert: [ :attr | attr addClass: 'foo' ]

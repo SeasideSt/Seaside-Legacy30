@@ -1,4 +1,4 @@
-testing
+tests
 testAbsoluteUrlForResourceWithoutBase
 	| context |
 	context := WARenderContext new.

@@ -1,4 +1,4 @@
-testing-policies
+tests-policies
 testLeastRecentlyUsed
 	| keys |
 	cache setExpiryPolicy: WALeastRecentlyUsedExpiryPolicy new.

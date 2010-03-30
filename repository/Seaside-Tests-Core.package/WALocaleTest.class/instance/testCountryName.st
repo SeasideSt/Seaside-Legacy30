@@ -1,4 +1,4 @@
-testing
+tests
 testCountryName
 	| locale |
 	locale := WALocale fromString: 'de-CH'.

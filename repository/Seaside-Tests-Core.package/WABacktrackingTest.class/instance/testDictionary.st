@@ -1,4 +1,4 @@
-testing
+tests
 testDictionary
 	| original snapshot1 snapshot2 snapshot3 snapshot4 |
 

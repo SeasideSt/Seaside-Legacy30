@@ -1,4 +1,4 @@
-testing
+tests
 testHolder
 	| original snapshot1 snapshot2 snapshot3 |
 	original := WAValueHolder new.

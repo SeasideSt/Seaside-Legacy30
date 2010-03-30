@@ -1,4 +1,4 @@
-testing
+tests
 testEmptyPathConsumption
 	| root |
 	root := WADispatcher new.

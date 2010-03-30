@@ -1,4 +1,4 @@
-testing
+tests
 testStringWithFilename
 	self
 		createAndVerifyTextDocumentNamed: 'toolbar.css'

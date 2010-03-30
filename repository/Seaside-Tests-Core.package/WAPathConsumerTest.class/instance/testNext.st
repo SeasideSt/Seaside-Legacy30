@@ -1,4 +1,4 @@
-testing
+tests
 testNext
 	self assert: consumer next = 'tweets'.
 	self assert: consumer next = 'kentbeck'.

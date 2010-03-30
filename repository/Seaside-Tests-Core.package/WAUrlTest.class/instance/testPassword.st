@@ -1,4 +1,4 @@
-testing
+tests
 testPassword
 	url
 		host: 'seaside.st';

@@ -1,4 +1,4 @@
-testing-cache
+tests-cache
 testDoNotCacheExpiryDate
 	| expiry delta |
 	expiry := self response doNotCacheExpiryDate.

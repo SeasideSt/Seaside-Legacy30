@@ -1,4 +1,4 @@
-testing
+tests
 testSet
 	| original snapshot1 snapshot2 snapshot3 |
 

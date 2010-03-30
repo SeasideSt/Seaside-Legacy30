@@ -1,4 +1,4 @@
-testing
+tests
 testIsVendorSpecifc
 	| mimeType |
 	mimeType := WAMimeType fromString: 'image/png'.

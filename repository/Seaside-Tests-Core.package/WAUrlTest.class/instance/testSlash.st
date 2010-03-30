@@ -1,4 +1,4 @@
-testing
+tests
 testSlash
 	url host: 'seaside.st'.
 	self assert: (url

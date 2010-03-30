@@ -1,4 +1,4 @@
-testing-status
+tests-status
 testCodes
 	| names codes |
 	names := #( authenticationFailed forbidden found gone internalError notFound notImplemented ).

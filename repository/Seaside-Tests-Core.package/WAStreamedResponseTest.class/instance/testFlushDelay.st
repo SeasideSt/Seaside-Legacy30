@@ -1,4 +1,4 @@
-testing-flush
+tests-flush
 testFlushDelay
 	self response forbidden.
 	self response headerAt: 'X-Application-Server' put: 'Seaside'.

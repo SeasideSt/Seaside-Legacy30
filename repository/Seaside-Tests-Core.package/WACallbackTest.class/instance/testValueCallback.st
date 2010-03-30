@@ -1,4 +1,4 @@
-testing-callbacks
+tests-callbacks
 testValueCallback
 	| key1 key2 |
 	key1 := registry store: (WAValueCallback on: 

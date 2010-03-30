@@ -1,4 +1,4 @@
-testing-flush
+tests-flush
 testFlushStream
 	self response stream. " <-- should flush "
 	self assert: self response isCommitted.

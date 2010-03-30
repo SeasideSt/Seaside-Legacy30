@@ -1,4 +1,4 @@
-testing
+tests
 testTerminate
 	| value semaphore1 semaphore2 semaphore3 |
 	semaphore1 := GRPlatform current semaphoreClass new.

@@ -1,4 +1,4 @@
-testing-encoding
+tests-encoding
 testQueryString
 	self assert: url queryString = ''.
 

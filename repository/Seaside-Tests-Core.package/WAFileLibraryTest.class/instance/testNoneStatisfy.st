@@ -1,4 +1,4 @@
-testing
+tests
 testNoneStatisfy
 	self deny: (#(1 2 3) noneSatisfy: [ :each |
 		each even ]).

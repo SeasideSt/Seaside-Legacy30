@@ -1,4 +1,4 @@
-testing
+tests
 testMatchingHandlerPresent
 	"There is a key in the URL and a cookie and the values match. The handler specified by key exists."
 	

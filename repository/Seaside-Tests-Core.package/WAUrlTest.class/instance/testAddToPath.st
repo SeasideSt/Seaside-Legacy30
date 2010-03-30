@@ -1,4 +1,4 @@
-testing-adding
+tests-adding
 testAddToPath
 	url addToPath: '/files/WAStandardFiles/seaside.jpg'.
 	self assert: url path size = 3.

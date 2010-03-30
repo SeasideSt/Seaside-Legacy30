@@ -1,4 +1,4 @@
-testing-callbacks
+tests-callbacks
 testMultiValuesCallback
 	| key key1 key2 dict |
 	dict := Dictionary new.

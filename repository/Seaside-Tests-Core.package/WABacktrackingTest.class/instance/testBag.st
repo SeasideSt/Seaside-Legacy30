@@ -1,4 +1,4 @@
-testing
+tests
 testBag
 	| original snapshot1 snapshot2 snapshot3 |
 

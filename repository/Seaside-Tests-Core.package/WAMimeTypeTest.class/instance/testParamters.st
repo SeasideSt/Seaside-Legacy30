@@ -1,4 +1,4 @@
-testing
+tests
 testParamters
 	^ #('text/html;charset=utf-8' 'text/html; charset=utf-8' ) do: 
 		[ :each | 

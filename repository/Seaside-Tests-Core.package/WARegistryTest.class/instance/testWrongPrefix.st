@@ -1,4 +1,4 @@
-testing
+tests
 testWrongPrefix
 	| cookie1 cookie2 actual request context |
 	cookie1 := WARequestCookie key: handler keyCookieName value: '1234'.

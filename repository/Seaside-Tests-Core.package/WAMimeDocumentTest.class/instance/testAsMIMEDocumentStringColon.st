@@ -1,4 +1,4 @@
-testing
+tests
 testAsMIMEDocumentStringColon
 	| document |
 	document := 'hello Seaside' seasideMimeDocument.

@@ -1,4 +1,4 @@
-testing
+tests
 testMismatchingWithNoHandlers
 	"There is a key in the URL and a cookie but values do not match.
 	There is no handler registered at either key."

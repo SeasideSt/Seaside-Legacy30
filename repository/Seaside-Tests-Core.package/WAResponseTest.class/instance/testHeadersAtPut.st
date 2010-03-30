@@ -1,4 +1,4 @@
-testing-headers
+tests-headers
 testHeadersAtPut
 	self assert: (self response headerAt: 'foo' put: 'bar') = 'bar'.
 	self assert: (self response headerAt: 'foo') = 'bar'.

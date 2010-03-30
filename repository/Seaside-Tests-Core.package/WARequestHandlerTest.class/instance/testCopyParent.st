@@ -1,4 +1,4 @@
-testing
+tests
 testCopyParent
 	| parent copy |
 	parent := WADispatcher new.

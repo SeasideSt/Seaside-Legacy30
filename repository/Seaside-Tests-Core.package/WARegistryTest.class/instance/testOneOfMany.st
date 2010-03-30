@@ -1,4 +1,4 @@
-testing
+tests
 testOneOfMany
 	| cookie1 cookie2 cookie3 cookie4 actual request context |
 	cookie1 := WARequestCookie key: handler keyCookieName value: '1234'.

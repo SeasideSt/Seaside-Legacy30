@@ -1,4 +1,4 @@
-testing
+tests
 testCookiesDisabledNoFieldCookieHandlerPresent
 	"Cookies are DISABLED.
 	There is no key in the URL but there is a cookie. The handler specified by key exists."

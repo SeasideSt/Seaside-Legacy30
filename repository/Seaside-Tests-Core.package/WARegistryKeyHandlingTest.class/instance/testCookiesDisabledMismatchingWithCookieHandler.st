@@ -1,4 +1,4 @@
-testing
+tests
 testCookiesDisabledMismatchingWithCookieHandler
 	"Cookies are DISABLED.
 	There is a key in the URL and a cookie but values do not match.

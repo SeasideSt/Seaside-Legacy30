@@ -1,4 +1,4 @@
-testing
+tests
 testCopyRegistry
 	| stored key copy stored2 key2 |
 	stored := WARequestHandler new.

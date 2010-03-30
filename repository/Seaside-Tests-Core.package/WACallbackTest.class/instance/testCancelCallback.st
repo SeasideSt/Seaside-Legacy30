@@ -1,4 +1,4 @@
-testing-callbacks
+tests-callbacks
 testCancelCallback
 	| keyValue keySave keyCancel |
 	keyValue := registry store: (WAValueCallback on: [ :v | log add: v ]).

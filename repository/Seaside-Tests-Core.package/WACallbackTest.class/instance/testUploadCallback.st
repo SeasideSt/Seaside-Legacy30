@@ -1,4 +1,4 @@
-testing-callbacks
+tests-callbacks
 testUploadCallback
 	| key file |
 	key := registry store: (WAUploadCallback on: [ :v | log add: v ]).

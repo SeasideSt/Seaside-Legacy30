@@ -1,4 +1,4 @@
-testing
+tests
 testStringWithoutFilename
 	self
 		createAndVerifyTextDocumentNamed: nil

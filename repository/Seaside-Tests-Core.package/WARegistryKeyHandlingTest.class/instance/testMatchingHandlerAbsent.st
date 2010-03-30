@@ -1,4 +1,4 @@
-testing
+tests
 testMatchingHandlerAbsent
 	"There is a key in the URL and a cookie and the values match. However, the handler specified by key does not exist."
 	

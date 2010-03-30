@@ -1,4 +1,4 @@
-testing-headers
+tests-headers
 testHeadersAtAppend
 	self assert: (self response headerAt: 'foo' append: 'bar') = 'bar'.
 	self assert: (self response headerAt: 'foo') = 'bar'.

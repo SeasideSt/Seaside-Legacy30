@@ -1,4 +1,4 @@
-testing
+tests
 testSimple
 	| value |
 	value := mutex critical: [ 1 ].

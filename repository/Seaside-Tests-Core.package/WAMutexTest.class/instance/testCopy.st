@@ -1,4 +1,4 @@
-testing
+tests
 testCopy
 	| semaphore1 semaphore2 copy |
 	semaphore1 := GRPlatform current semaphoreClass new.

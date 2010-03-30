@@ -1,4 +1,4 @@
-testing
+tests
 testOrder
 	self
 		assert: [ :attr | attr at: 'a' put: 1; at: 'b' put: 2; at: 'c' put: 3 ]

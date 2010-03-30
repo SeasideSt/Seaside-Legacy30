@@ -1,4 +1,4 @@
-testing
+tests
 testCopyEmpty
 	| copied |
 	copied := handler copy.

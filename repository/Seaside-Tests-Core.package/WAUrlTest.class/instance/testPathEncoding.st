@@ -1,4 +1,4 @@
-testing-encoding
+tests-encoding
 testPathEncoding
 	url path: #( 'foo/bar' ).
 	self assert: url printString = '/foo%2Fbar'.

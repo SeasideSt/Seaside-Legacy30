@@ -1,4 +1,4 @@
-testing
+tests
 testOrderedCollection
 	| original snapshot |
 

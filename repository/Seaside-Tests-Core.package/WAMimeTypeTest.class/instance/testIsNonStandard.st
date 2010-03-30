@@ -1,4 +1,4 @@
-testing
+tests
 testIsNonStandard
 	| mimeType |
 	mimeType := WAMimeType fromString: 'image/png'.

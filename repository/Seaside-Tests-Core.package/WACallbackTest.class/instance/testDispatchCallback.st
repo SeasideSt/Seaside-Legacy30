@@ -1,4 +1,4 @@
-testing-callbacks
+tests-callbacks
 testDispatchCallback
 	| key key1 key2 |
 	key := registry store: WADispatchCallback new.

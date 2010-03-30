@@ -1,4 +1,4 @@
-testing-encoding
+tests-encoding
 testDecodedWith
 	"http://ùs:er:pa:ß@localhost:8080/foo/äbc/dêf?õ=stîgetc&ô#tårget"
 	| pathArray expectedPathArray |

@@ -1,4 +1,4 @@
-testing
+tests
 testCopyConfiguration
 	| config copy |
 	config := handler configuration.

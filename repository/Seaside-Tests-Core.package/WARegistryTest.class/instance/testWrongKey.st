@@ -1,4 +1,4 @@
-testing
+tests
 testWrongKey
 	| cookie request context actual |
 	cookie := WARequestCookie key: (handler keyCookieName, '-not') value: '1234'.

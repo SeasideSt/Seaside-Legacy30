@@ -1,4 +1,4 @@
-testing
+tests
 testSize
 	self assert: cache isEmpty.
 	cache store: #a.

@@ -1,4 +1,4 @@
-testing-callbacks
+tests-callbacks
 testMapCallback
 	| key |
 	key := registry store: (WAMapCallback on: [ :v | log add: v ]).

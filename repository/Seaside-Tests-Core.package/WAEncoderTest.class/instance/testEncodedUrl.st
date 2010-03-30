@@ -1,4 +1,4 @@
-testing
+tests
 testEncodedUrl
 	self assert: 'Seaside Aubergines' encoder: WAUrlEncoder gives: 'Seaside%20Aubergines'.
 	self assert: 'www.seaside.st' encoder: WAUrlEncoder gives: 'www.seaside.st'.

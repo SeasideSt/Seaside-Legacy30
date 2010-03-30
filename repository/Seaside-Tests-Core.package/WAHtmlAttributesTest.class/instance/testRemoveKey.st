@@ -1,4 +1,4 @@
-testing
+tests
 testRemoveKey
 	attributes at: 'id' put: 'foo'.
 	self assert: (attributes removeKey: 'id') = 'foo'.

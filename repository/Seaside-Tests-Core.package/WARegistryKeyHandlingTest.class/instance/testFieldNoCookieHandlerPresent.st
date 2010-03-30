@@ -1,4 +1,4 @@
-testing
+tests
 testFieldNoCookieHandlerPresent
 	"There is a key in the URL but no cookie. The handler specified by key exists."
 	

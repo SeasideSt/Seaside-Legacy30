@@ -1,4 +1,4 @@
-testing
+tests
 testPeek
 	self assert: consumer peek = 'tweets'.
 	self assert: consumer peek = 'tweets'.

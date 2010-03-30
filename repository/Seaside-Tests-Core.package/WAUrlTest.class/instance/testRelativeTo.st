@@ -1,4 +1,4 @@
-testing-encoding
+tests-encoding
 testRelativeTo
 	| first second relativePath |
 	first := WAUrl absolute: 'http://www.seaside.st/news'.

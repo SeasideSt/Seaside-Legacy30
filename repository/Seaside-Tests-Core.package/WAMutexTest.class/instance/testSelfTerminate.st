@@ -1,4 +1,4 @@
-testing
+tests
 testSelfTerminate
 	| value semaphore |
 	semaphore := GRPlatform current semaphoreClass new.

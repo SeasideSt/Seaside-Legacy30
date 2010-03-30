@@ -1,4 +1,4 @@
-testing-cache
+tests-cache
 testCacheFor
 	self response cacheFor: (Duration days: 1 hours: 0 minutes: 0 seconds: 0).
 	self assert: (self response headerAt: 'Pragma') isNil.

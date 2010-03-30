@@ -1,4 +1,4 @@
-testing-encoding
+tests-encoding
 testPathString
 	self assert: url pathString = '/'.
 

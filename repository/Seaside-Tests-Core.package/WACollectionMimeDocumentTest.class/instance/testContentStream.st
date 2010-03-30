@@ -1,4 +1,4 @@
-testing
+tests
 testContentStream
 	| stream |	
 	stream := document contentStream.

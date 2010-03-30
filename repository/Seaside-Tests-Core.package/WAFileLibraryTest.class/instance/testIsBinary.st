@@ -1,4 +1,4 @@
-testing
+tests
 testIsBinary
 	self deny: (WAFileLibrary isBinary: 'scipt.js').
 	self deny: (WAFileLibrary isBinary: 'markup.xml').

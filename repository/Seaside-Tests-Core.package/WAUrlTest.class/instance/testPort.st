@@ -1,4 +1,4 @@
-testing
+tests
 testPort
 	url
 		host: 'seaside.st';

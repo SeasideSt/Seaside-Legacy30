@@ -1,4 +1,4 @@
-testing
+tests
 testCharSet
 	| mimeType |
 	mimeType := WAMimeType fromString: 'text/html'.

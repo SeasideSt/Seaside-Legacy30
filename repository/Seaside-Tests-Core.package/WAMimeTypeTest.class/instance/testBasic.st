@@ -1,4 +1,4 @@
-testing
+tests
 testBasic
 	| mimeType |
 	mimeType := WAMimeType fromString: 'image/jpeg'.

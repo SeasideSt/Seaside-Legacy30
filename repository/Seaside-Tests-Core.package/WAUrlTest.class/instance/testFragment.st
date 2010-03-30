@@ -1,4 +1,4 @@
-testing
+tests
 testFragment
 	url fragment: 'id'.
 	self assert: url fragment = 'id'.

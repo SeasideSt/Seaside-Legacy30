@@ -1,4 +1,4 @@
-testing
+tests
 testAtAppend
 	self
 		assert: [ :attr | attr at: 'onclick' append: 'this' separator: ';' ]

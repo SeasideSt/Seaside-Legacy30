@@ -1,4 +1,4 @@
-testing
+tests
 testContentType
 	self response contentType: WAMimeType textHtml.
 	self assert: self response contentType = WAMimeType textHtml.

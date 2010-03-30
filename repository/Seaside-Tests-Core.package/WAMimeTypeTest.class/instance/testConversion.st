@@ -1,4 +1,4 @@
-testing
+tests
 testConversion
 	| mimeType |
 	mimeType := 'image/jpeg' seasideMimeType.

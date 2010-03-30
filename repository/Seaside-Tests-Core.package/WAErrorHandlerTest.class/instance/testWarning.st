@@ -1,4 +1,4 @@
-testing
+tests
 testWarning
 	| context |
 	context := self createRequestContext.

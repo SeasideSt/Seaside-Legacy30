@@ -1,4 +1,4 @@
-testing-encoding
+tests-encoding
 testQueryEncoding
 	self
 		assert: (url withField: '/' value: ' ')

@@ -1,4 +1,4 @@
-testing
+tests
 testCopyDispatcher
 	| copy originalHandler |
 	copy := handler copy.

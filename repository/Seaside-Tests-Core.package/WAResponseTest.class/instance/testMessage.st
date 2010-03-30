@@ -1,4 +1,4 @@
-testing-status
+tests-status
 testMessage
 	self assert: self response message = 'OK'.
 	

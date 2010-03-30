@@ -1,4 +1,4 @@
-testing
+tests
 testAsMIMEDocumentByteArray
 	| document content |
 	document := #(1 2 3 4) asByteArray seasideMimeDocument.

@@ -1,4 +1,4 @@
-testing
+tests
 testEquals
 	| first second |
 	first := WAMimeType fromString: 'text/html'.

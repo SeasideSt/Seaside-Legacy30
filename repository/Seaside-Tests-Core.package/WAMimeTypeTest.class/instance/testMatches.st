@@ -1,4 +1,4 @@
-testing
+tests
 testMatches
 	| pattern mimeType |
 	pattern := WAMimeType fromString: 'image/png'.

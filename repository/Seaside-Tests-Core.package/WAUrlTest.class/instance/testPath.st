@@ -1,4 +1,4 @@
-testing
+tests
 testPath
 	self assert: url greaseString = '/'.
 	url path add: 'aa'.

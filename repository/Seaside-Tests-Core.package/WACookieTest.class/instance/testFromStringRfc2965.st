@@ -1,4 +1,4 @@
-testing
+tests
 testFromStringRfc2965
 	| cookies customer partNumber shipping |
 	cookies := WARequestCookie fromString: '$Version="1";

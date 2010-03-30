@@ -1,4 +1,4 @@
-testing
+tests
 testNextKey
 	self assert: registry nextKey = '1'.
 	registry increaseKey.

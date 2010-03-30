@@ -1,4 +1,4 @@
-testing
+tests
 testIsCommitted
 	self deny: self response isCommitted.
 	self response contentType: 'text/html'.

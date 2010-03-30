@@ -1,4 +1,4 @@
-testing
+tests
 testTakeServerParametersFromRequestBase
 	| request |
 	request := (WARequest 

@@ -1,4 +1,4 @@
-testing
+tests
 testUnique
 	| collection id |
 	collection := Set new: self count.

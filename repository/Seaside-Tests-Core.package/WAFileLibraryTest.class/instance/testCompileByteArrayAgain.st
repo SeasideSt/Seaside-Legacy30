@@ -1,4 +1,4 @@
-testing
+tests
 testCompileByteArrayAgain
 	| library file |
 	[

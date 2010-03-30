@@ -1,4 +1,4 @@
-testing-cache
+tests-cache
 testDoNotCache
 	self response doNotCache.
 	self assert: (self response headerAt: 'Pragma') = 'no-cache'.
