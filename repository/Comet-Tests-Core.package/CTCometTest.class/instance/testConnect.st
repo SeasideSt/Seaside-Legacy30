@@ -1,4 +1,4 @@
-testing
+tests
 testConnect
 	self
 		assert: (self comet url: 'http://www.pusher.com/'; connect)
