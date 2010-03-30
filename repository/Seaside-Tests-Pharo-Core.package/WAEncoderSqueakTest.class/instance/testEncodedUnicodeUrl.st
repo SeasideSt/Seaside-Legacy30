@@ -1,4 +1,4 @@
-testing
+tests
 testEncodedUnicodeUrl
 	"this makes sure the encoder doesn't fall on the nose with unicode"
 	| hiraA hiraO hiraAO ea |

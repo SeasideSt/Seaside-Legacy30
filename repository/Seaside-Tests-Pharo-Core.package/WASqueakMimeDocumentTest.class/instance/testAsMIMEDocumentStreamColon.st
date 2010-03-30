@@ -1,4 +1,4 @@
-testing
+tests
 testAsMIMEDocumentStreamColon
 	| document |
 	document := 'monkey' readStream seasideMimeDocument.

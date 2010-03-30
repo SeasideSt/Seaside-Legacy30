@@ -1,4 +1,4 @@
-testing
+tests
 testGenericCodecAll
 	TextConverter allEncodingNames do: 
 		[ :name | 

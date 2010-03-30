@@ -1,4 +1,4 @@
-testing
+tests
 testAsMIMEDocumentStream
 	| document |
 	document := 'dolphin' readStream seasideMimeDocument.

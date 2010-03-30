@@ -1,4 +1,4 @@
-testing
+tests
 testEncodedLatin1Url
 	self
 		assert: (String with: (Character codePoint: 233) with: (Character codePoint: 228))

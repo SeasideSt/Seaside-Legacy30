@@ -1,4 +1,4 @@
-testing
+tests
 testGenericCodecMacRoman
 	| codec |
 	codec := GRCodec forEncoding: 'mac-roman'.

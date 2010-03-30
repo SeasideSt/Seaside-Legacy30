@@ -1,4 +1,4 @@
-testing
+tests
 testAsMIMEDocumentMorph
 	| morph document |
 	morph := EllipseMorph new

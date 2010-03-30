@@ -1,4 +1,4 @@
-testing
+tests
 testAsMIMEDocumentFormColon
 	| form document |
 	self formClassExists ifFalse: [ ^ self ].

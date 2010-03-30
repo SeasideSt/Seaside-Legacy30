@@ -1,4 +1,4 @@
-testing
+tests
 testAsMIMEDocumentForm
 	| form document |
 	self formClassExists ifFalse: [ ^ self ].

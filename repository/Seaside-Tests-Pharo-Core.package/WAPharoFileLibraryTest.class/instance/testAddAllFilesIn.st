@@ -1,4 +1,4 @@
-testing
+tests
 testAddAllFilesIn
 	| directoryName |
 	directoryName := 'XXXUsedBySeasideTests'.

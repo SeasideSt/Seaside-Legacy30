@@ -1,4 +1,4 @@
-testing
+tests
 testForm
 	| handler context |
 	self formClassExists ifFalse: [ ^ self ].

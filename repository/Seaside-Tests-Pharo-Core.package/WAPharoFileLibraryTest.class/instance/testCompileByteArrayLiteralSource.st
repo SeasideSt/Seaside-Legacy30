@@ -1,4 +1,4 @@
-testing
+tests
 testCompileByteArrayLiteralSource
 	| library data file source expected |
 	self hasNewCompiler ifFalse: [ ^ self ].

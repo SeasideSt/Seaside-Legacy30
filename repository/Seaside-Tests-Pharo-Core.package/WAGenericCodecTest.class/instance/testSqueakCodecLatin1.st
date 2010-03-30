@@ -1,4 +1,4 @@
-testing
+tests
 testSqueakCodecLatin1
 	"tests the codec for 'lating-1' and #converter"
 	#('iso-8859-1' 'ISO-8859-1' 'latin-1' ) do: 

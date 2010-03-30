@@ -1,4 +1,4 @@
-testing
+tests
 testCompileByteArrayWithCacheSource
 	| library data file source expected |
 	self 

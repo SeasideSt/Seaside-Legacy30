@@ -1,4 +1,4 @@
-testing
+tests
 testGenericCodecUtf16le
 	| codec bom |
 	codec := GRCodec forEncoding: 'utf-16'.
