@@ -1,4 +1,4 @@
-testing
+tests
 testMove
 	self
 		assert: (self effect move: 1 @ 2)

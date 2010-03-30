@@ -1,4 +1,4 @@
-testing
+tests
 testParallel
 	self
 		assert: (self effect parallel: (Array with: self effect fade with: self effect slideUp))

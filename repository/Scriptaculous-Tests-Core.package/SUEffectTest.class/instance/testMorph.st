@@ -1,4 +1,4 @@
-testing
+tests
 testMorph
 	self
 		assert: (self effect style: 'color: #f00;'; morph)

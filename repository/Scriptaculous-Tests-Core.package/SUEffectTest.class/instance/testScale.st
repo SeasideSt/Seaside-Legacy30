@@ -1,4 +1,4 @@
-testing
+tests
 testScale
 	self
 		assert: (self effect scale: 50)

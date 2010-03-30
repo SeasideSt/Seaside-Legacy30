@@ -1,4 +1,4 @@
-testing
+tests
 testOpacitiy
 	self
 		assert: (self effect opacity)

@@ -1,4 +1,4 @@
-testing
+tests
 testToggle
 	self
 		assert: self effect toggleAppear

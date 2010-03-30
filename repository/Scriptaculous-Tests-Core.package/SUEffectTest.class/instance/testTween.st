@@ -1,4 +1,4 @@
-testing
+tests
 testTween
 	self
 		assert: (self effect tweenFrom: 5 to: 0 using: 'blech')

@@ -1,4 +1,4 @@
-testing
+tests
 testSound
 	self
 		assert: (self sound play: 'blah.mp3')
