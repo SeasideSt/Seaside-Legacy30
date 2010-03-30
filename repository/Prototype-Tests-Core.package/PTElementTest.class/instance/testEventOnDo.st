@@ -1,4 +1,4 @@
-testing-events
+tests-events
 testEventOnDo
 	self
 		assert: (self element on: 'click' do: self event stop)

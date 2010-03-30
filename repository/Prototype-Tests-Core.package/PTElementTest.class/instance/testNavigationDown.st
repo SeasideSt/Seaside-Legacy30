@@ -1,4 +1,4 @@
-testing
+tests
 testNavigationDown
 	self
 		assert: (self element down)

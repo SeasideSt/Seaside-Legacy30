@@ -1,4 +1,4 @@
-testing
+tests
 testModifying
 	self
 		assert: (self element cleanWhitespace)

@@ -1,4 +1,4 @@
-testing
+tests
 testQuerying
 	self
 		assert: (self element descendantOf: 'foo')

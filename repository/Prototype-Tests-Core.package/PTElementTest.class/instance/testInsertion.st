@@ -1,4 +1,4 @@
-testing-insertion
+tests-insertion
 testInsertion
 	| element |
 	element := self insertion top.

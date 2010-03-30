@@ -1,4 +1,4 @@
-testing-events
+tests-events
 testEventQuerying
 	self
 		assert: (self event element)

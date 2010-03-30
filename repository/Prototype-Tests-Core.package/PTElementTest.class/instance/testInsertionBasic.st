@@ -1,4 +1,4 @@
-testing-insertion
+tests-insertion
 testInsertionBasic
 	| element |
 	element := self insertion top; with: 'foo'.

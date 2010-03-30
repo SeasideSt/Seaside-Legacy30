@@ -1,4 +1,4 @@
-testing
+tests
 testEnumerating
 	self
 		assertEnumerable: [ self element ancestors ]

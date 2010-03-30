@@ -1,4 +1,4 @@
-testing
+tests
 testGeometric
 	self
 		assert: (self element absolutize)

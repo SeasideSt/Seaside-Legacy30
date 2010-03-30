@@ -1,4 +1,4 @@
-testing-events
+tests-events
 testEventFire
 	self
 		assert: (self element fire: 'foo')

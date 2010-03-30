@@ -1,4 +1,4 @@
-testing
+tests
 testStylingStyles
 	self
 		assert: (self element id: 'foo'; styleAt: 'width')

@@ -1,4 +1,4 @@
-testing
+tests
 testModifyingInsert
 	self
 		assert: (self element insert: 1)

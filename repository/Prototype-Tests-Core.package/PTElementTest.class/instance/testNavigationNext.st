@@ -1,4 +1,4 @@
-testing
+tests
 testNavigationNext
 	self
 		assert: (self element next)

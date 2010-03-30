@@ -1,4 +1,4 @@
-testing
+tests
 testSelector
 	| selector |
 	selector := self ptSelector add: '*'.

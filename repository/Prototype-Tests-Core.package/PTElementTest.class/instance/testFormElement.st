@@ -1,4 +1,4 @@
-testing-form
+tests-form
 testFormElement
 	self
 		assert: self formElement activate

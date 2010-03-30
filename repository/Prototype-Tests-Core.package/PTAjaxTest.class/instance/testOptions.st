@@ -1,4 +1,4 @@
-testing
+tests
 testOptions
 	self
 		assert: (self request asynchronous: false)

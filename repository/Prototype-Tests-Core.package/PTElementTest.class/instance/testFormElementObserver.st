@@ -1,4 +1,4 @@
-testing-observers
+tests-observers
 testFormElementObserver
 	self 
 		assert: self formElementObserver

@@ -1,4 +1,4 @@
-testing-insertion
+tests-insertion
 testInsertionWith
 	self
 		assert: (self insertion id: 'foo'; top: 'bar')

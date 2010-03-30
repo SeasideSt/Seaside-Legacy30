@@ -1,4 +1,4 @@
-testing-rendering
+tests-rendering
 testRenderedHtml
 	self 
 		assert: [ :html | html div script: (html element update: [ :r | r span ]) ]

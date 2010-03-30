@@ -1,4 +1,4 @@
-testing-rendering
+tests-rendering
 testRenderedHtmlWithScripts
 	self
 		assert: [ :html |

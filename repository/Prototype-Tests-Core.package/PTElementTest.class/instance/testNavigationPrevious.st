@@ -1,4 +1,4 @@
-testing
+tests
 testNavigationPrevious
 	self
 		assert: (self element previous)

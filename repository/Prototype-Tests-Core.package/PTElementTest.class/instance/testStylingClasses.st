@@ -1,4 +1,4 @@
-testing
+tests
 testStylingClasses
 	self
 		assert: (self element id: 'foo'; addClassName: 'bar')

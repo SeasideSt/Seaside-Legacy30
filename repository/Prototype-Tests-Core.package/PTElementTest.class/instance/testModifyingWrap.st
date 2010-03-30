@@ -1,4 +1,4 @@
-testing
+tests
 testModifyingWrap
 	self
 		assert: (self element wrap: 'p')

@@ -1,4 +1,4 @@
-testing
+tests
 testModifyingUpdate
 	self
 		assert: (self element id: 'foo'; update: 'bar')

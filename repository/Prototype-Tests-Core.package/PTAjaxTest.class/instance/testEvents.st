@@ -1,4 +1,4 @@
-testing
+tests
 testEvents
 	self
 		assert: (self request onCreate: 1)

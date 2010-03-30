@@ -1,4 +1,4 @@
-testing
+tests
 testNavigationUp
 	self
 		assert: (self element up)

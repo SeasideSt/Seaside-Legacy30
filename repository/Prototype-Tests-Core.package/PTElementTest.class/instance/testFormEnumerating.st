@@ -1,4 +1,4 @@
-testing-form
+tests-form
 testFormEnumerating
 	self
 		assertEnumerable: [ self form elements ]

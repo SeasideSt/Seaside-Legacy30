@@ -1,4 +1,4 @@
-testing-insertion
+tests-insertion
 testInsertionShort
 	| element |
 	element := self insertion top: 'foo'.

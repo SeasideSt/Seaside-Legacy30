@@ -1,4 +1,4 @@
-testing
+tests
 testDisplaying
 	self
 		assert: (self element hide)

@@ -1,4 +1,4 @@
-testing-observers
+tests-observers
 testFormObserver
 	self 
 		assert: self formObserver

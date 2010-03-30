@@ -1,4 +1,4 @@
-testing-form
+tests-form
 testForm
 	self
 		assert: self form disable

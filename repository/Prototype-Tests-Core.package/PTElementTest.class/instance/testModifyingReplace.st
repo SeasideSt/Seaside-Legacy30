@@ -1,4 +1,4 @@
-testing
+tests
 testModifyingReplace
 	self
 		assert: (self element replace: 'foo')

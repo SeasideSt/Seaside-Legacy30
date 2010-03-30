@@ -1,4 +1,4 @@
-testing-events
+tests-events
 testEventActions
 	self
 		assert: (self event stop)
