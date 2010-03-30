@@ -1,4 +1,4 @@
-testing
+tests
 testReturn
 	self
 		assert: (self mock return: 1)

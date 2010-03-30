@@ -1,4 +1,4 @@
-testing
+tests
 testStringify
 	self 
 		assert: (self json stringify: self mock)

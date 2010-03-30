@@ -1,4 +1,4 @@
-testing-array
+tests-array
 testEmptyArray
 	| result |
 	result := self parse: '[]'.

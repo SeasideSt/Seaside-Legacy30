@@ -1,4 +1,4 @@
-testing
+tests
 testConvert
 	self
 		assert: self function

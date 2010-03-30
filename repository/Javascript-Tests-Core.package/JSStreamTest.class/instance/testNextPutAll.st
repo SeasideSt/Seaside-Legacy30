@@ -1,4 +1,4 @@
-testing
+tests
 testNextPutAll
 	| stream |
 	stream := self stream nextPutAll: 'foo'.

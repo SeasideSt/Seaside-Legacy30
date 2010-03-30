@@ -1,4 +1,4 @@
-testing
+tests
 testLiteral
 	self assert: true equals: 'true'.
 	self assert: false equals: 'false'.

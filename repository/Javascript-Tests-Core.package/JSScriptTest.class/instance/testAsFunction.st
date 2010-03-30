@@ -1,4 +1,4 @@
-testing-function
+tests-function
 testAsFunction
 	self
 		assert: (self script asFunction: #(a))

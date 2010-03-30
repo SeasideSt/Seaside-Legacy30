@@ -1,4 +1,4 @@
-testing
+tests
 testInterval
 	self
 		assert: (self mock interval: 2 seconds)

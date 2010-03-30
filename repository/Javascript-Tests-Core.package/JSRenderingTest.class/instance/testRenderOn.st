@@ -1,4 +1,4 @@
-testing
+tests
 testRenderOn
 	self 
 		assert: [ :html | html html: (html javascript render: 123) ]

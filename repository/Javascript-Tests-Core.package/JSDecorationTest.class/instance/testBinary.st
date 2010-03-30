@@ -1,4 +1,4 @@
-testing
+tests
 testBinary
 	self
 		assert: (self mock & false)

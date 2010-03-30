@@ -1,4 +1,4 @@
-testing-literals
+tests-literals
 testString
 	self assert: (self parse: '""') = ''.
 	self assert: (self parse: '"foo"') = 'foo'.

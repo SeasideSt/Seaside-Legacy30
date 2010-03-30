@@ -1,4 +1,4 @@
-testing
+tests
 testThenElse
 	| mock |
 	mock := self mock.

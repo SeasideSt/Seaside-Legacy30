@@ -1,4 +1,4 @@
-testing
+tests
 testNot
 	self
 		assert: self mock not

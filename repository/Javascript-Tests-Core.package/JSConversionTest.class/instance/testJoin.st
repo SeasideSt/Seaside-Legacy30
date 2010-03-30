@@ -1,4 +1,4 @@
-testing
+tests
 testJoin
 	self 
 		assert: (JSJoin new)

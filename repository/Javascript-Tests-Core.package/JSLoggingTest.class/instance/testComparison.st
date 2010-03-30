@@ -1,4 +1,4 @@
-testing
+tests
 testComparison
 	self
 		assert: (self logger assert: 1 equals: 1)

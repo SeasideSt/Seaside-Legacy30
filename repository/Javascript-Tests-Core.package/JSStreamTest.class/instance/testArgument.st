@@ -1,4 +1,4 @@
-testing
+tests
 testArgument
 	| stream |
 	stream := self stream argument: 1.

@@ -1,4 +1,4 @@
-testing
+tests
 testCondition
 	self
 		assert: (self mock condition: true)

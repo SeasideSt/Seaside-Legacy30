@@ -1,4 +1,4 @@
-testing
+tests
 testAccess
 	self
 		assert: (self mock access: 'foo')

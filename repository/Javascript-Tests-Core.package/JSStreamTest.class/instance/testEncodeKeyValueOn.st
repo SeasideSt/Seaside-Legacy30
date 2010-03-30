@@ -1,4 +1,4 @@
-testing-encoding
+tests-encoding
 testEncodeKeyValueOn
 	| actual |
 	actual := String streamContents: [ :stream |

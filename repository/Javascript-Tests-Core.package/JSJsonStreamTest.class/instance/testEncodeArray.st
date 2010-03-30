@@ -1,4 +1,4 @@
-testing-encoding
+tests-encoding
 testEncodeArray
 	| actual |
 	actual := String streamContents: [ :stream |

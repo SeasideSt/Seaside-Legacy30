@@ -1,4 +1,4 @@
-testing
+tests
 testApply
 	self
 		assert: (self mock apply: #())

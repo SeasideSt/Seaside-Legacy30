@@ -1,4 +1,4 @@
-testing-invalid
+tests-invalid
 testInvalidArray
 	self assertInvalid: '['.
 	self assertInvalid: '[1'.

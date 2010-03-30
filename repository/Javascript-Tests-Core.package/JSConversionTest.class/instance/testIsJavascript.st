@@ -1,4 +1,4 @@
-testing-tools
+tests-tools
 testIsJavascript
 	self deny: 123 isJavascript.
 	self assert: self mock isJavascript.

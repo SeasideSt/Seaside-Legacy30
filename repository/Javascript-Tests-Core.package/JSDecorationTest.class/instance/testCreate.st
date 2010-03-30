@@ -1,4 +1,4 @@
-testing
+tests
 testCreate
 	self
 		assert: self mock create

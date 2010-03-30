@@ -1,4 +1,4 @@
-testing-invalid
+tests-invalid
 testInvalidNull
 	self assertInvalid: 'nu'.
 	self assertInvalid: 'nuclear'.

@@ -1,4 +1,4 @@
-testing
+tests
 testNextPut
 	| stream |
 	stream := self stream nextPut: $f.

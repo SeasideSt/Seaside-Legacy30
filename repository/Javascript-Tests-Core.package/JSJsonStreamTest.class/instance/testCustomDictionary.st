@@ -1,4 +1,4 @@
-testing-custom
+tests-custom
 testCustomDictionary
 	printer := [ :stream | 
 		stream json: (GRSmallDictionary new

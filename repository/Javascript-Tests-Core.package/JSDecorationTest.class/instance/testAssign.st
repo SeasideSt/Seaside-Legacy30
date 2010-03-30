@@ -1,4 +1,4 @@
-testing
+tests
 testAssign
 	self
 		assert: (self mock assign: 1)

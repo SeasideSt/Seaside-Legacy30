@@ -1,4 +1,4 @@
-testing
+tests
 testLogging
 	self
 		assert: (self logger log: 'done')

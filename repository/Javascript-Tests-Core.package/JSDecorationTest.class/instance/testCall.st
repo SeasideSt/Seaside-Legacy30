@@ -1,4 +1,4 @@
-testing
+tests
 testCall
 	self
 		assert: (self mock call: 'foo')

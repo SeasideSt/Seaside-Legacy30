@@ -1,4 +1,4 @@
-testing-array
+tests-array
 testSmallArray
 	| result |
 	result := self parse: '["a"]'.

@@ -1,4 +1,4 @@
-testing
+tests
 testConcatenate
 	self
 		assert: (self mock , 2 , 3)

@@ -1,4 +1,4 @@
-testing-compose
+tests-compose
 testComma
 	| script element |
 	script := self script.

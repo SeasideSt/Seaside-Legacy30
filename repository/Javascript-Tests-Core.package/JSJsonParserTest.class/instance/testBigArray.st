@@ -1,4 +1,4 @@
-testing-array
+tests-array
 testBigArray
 	| result |
 	result := self parse: ' [ "a" , "b" ] '.

@@ -1,4 +1,4 @@
-testing
+tests
 testScriptOn
 	self 
 		assert: [ :html | html html: (html javascript script: [ :s | ]) ]

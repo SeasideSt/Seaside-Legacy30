@@ -1,4 +1,4 @@
-testing-invalid
+tests-invalid
 testInvalidObject
 	self assertInvalid: '{'.
 	self assertInvalid: '{"a"'.

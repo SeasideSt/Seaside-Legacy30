@@ -1,4 +1,4 @@
-testing-function
+tests-function
 testArguments
 	self
 		assert: (self function arguments: #(a))

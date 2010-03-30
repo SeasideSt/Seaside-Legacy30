@@ -1,4 +1,4 @@
-testing
+tests
 testProperty
 	self
 		assert: (self mock property: 'foo')

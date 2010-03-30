@@ -1,4 +1,4 @@
-testing-array
+tests-array
 testNestedArray
 	| result |
 	result := self parse: '[[2]]'.

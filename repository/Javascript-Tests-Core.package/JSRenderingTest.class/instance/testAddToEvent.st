@@ -1,4 +1,4 @@
-testing
+tests
 testAddToEvent
 	self 
 		assert: [ :html | html div onClick: self mock ]

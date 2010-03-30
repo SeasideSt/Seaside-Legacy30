@@ -1,4 +1,4 @@
-testing-function
+tests-function
 testReturn
 	| function |
 	function := self function.

@@ -1,4 +1,4 @@
-testing-objects
+tests-objects
 testSmallObject
 	| result |
 	result := self parse: '{"a":1}'.

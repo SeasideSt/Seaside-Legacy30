@@ -1,4 +1,4 @@
-testing
+tests
 testPassenger
 	self 
 		assert: [ :html | html div passenger: self ]

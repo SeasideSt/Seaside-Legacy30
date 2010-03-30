@@ -1,4 +1,4 @@
-testing-invalid
+tests-invalid
 testInvalidString
 	self assertInvalid: '"'.
 	self assertInvalid: '"a'.

@@ -1,4 +1,4 @@
-testing-compose
+tests-compose
 testShift
 	| script element |
 	script := self script.

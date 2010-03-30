@@ -1,4 +1,4 @@
-testing-literals
+tests-literals
 testNumberFloat
 	self assert: (self parse: '0.0') = 0.0.
 	self assert: (self parse: '0.12') = 0.12.

@@ -1,4 +1,4 @@
-testing
+tests
 testAlias
 	| mock |
 	mock := self mock.

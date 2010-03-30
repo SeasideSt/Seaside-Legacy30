@@ -1,4 +1,4 @@
-testing
+tests
 testAssert
 	self 
 		assert: (self logger assert: true)

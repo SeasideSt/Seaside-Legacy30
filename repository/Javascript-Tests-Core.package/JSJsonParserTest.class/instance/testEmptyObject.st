@@ -1,4 +1,4 @@
-testing-objects
+tests-objects
 testEmptyObject
 	| result |
 	result := self parse: '{}'.

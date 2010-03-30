@@ -1,4 +1,4 @@
-testing-invalid
+tests-invalid
 testInvalidFalse
 	self assertInvalid: 'fa'.
 	self assertInvalid: 'falsely'.

@@ -1,4 +1,4 @@
-testing
+tests
 testJavascript
 	| stream |
 	stream := self stream javascript: #(1 2).

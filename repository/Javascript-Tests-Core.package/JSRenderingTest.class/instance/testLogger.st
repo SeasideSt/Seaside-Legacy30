@@ -1,4 +1,4 @@
-testing
+tests
 testLogger
 	self 
 		assert: [ :html | html div onClick: (html logger log: 'Foo') ]

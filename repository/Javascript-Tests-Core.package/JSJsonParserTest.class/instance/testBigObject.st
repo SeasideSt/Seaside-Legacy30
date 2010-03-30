@@ -1,4 +1,4 @@
-testing-objects
+tests-objects
 testBigObject
 	| result |
 	result := self parse: ' { "a" : 1 , "b" : 2 } '.

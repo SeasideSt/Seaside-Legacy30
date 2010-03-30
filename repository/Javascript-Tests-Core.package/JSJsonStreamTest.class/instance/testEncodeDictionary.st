@@ -1,4 +1,4 @@
-testing-encoding
+tests-encoding
 testEncodeDictionary
 	| actual |
 	actual := String streamContents: [ :stream |

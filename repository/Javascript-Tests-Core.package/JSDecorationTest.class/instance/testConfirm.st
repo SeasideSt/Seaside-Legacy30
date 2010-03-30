@@ -1,4 +1,4 @@
-testing
+tests
 testConfirm
 	self
 		assert: (self mock confirm: 'Sure?')

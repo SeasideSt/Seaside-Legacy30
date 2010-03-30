@@ -1,4 +1,4 @@
-testing
+tests
 testParse
 	self 
 		assert: (self json parse: '[1,2]')

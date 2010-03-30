@@ -1,4 +1,4 @@
-testing
+tests
 testAddToScript
 	self 
 		assert: [ :html | html script: self mock ]

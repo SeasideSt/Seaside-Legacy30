@@ -1,4 +1,4 @@
-testing-literals
+tests-literals
 testStringEscaping
 	self assert: '''' equals: '"''"'.
 	self assert: '"' equals: '"\""'.

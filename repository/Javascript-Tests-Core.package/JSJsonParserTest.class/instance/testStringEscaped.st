@@ -1,4 +1,4 @@
-testing-literals
+tests-literals
 testStringEscaped
 	self assert: (self parse: '"\""') = '"'.
 	self assert: (self parse: '"\\"') = '\'.

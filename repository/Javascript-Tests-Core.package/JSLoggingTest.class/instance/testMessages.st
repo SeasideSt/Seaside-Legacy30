@@ -1,4 +1,4 @@
-testing
+tests
 testMessages
 	self
 		assert: (self logger debug: 3)

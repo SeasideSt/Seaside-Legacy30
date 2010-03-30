@@ -1,4 +1,4 @@
-testing-function
+tests-function
 testArgument
 	| function |
 	function := self function arguments: #(a b c).

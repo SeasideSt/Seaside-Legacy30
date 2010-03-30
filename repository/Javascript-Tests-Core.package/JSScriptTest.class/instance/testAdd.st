@@ -1,4 +1,4 @@
-testing-compose
+tests-compose
 testAdd
 	| script element |
 	script := self script.

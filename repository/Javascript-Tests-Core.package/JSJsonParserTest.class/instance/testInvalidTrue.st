@@ -1,4 +1,4 @@
-testing-invalid
+tests-invalid
 testInvalidTrue
 	self assertInvalid: 'tr'.
 	self assertInvalid: 'trace'.

@@ -1,4 +1,4 @@
-testing
+tests
 testCopy
 	| stream1 stream2 |
 	stream1 := self stream nextPutAll: 'foo'.

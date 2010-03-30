@@ -1,4 +1,4 @@
-testing-objects
+tests-objects
 testNestedObject
 	| result |
 	result := self parse: '{"object":{"1":"2"}} '.
