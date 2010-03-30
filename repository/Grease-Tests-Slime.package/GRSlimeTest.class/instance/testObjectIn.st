@@ -1,4 +1,4 @@
-testing-transform
+tests-transform
 testObjectIn
 	| class |
 	class := self

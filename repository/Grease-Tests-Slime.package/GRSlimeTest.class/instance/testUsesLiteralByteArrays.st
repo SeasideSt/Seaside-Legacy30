@@ -1,4 +1,4 @@
-testing-parsetree
+tests-parsetree
 testUsesLiteralByteArrays
 	| class |
 	(self canParse: 'foo #[ 1 2 3 ]')

@@ -1,4 +1,4 @@
-testing-transform
+tests-transform
 testNotPortableCollectionsRule
 	| class |
 	class := self

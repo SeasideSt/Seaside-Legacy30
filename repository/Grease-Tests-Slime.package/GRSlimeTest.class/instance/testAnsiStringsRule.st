@@ -1,4 +1,4 @@
-testing-transform
+tests-transform
 testAnsiStringsRule
 	| class |
 	class := self

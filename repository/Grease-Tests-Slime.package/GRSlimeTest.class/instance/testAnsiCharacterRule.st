@@ -1,4 +1,4 @@
-testing-transform
+tests-transform
 testAnsiCharacterRule
 	| class |
 	class := self

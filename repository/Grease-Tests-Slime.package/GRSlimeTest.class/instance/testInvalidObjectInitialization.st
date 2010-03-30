@@ -1,4 +1,4 @@
-testing-block
+tests-block
 testInvalidObjectInitialization
 	| class |
 	class := self

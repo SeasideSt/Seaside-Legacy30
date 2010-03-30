@@ -1,4 +1,4 @@
-testing-transform
+tests-transform
 testAnsiStreamsRule
 	| class |
 	class := self

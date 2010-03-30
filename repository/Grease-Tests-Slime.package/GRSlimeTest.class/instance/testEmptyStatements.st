@@ -1,4 +1,4 @@
-testing-block
+tests-block
 testEmptyStatements
 	| class |
 	class := self

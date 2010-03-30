@@ -1,4 +1,4 @@
-testing-block
+tests-block
 testUsesNotPortableClass
 	| class |
 	class := self

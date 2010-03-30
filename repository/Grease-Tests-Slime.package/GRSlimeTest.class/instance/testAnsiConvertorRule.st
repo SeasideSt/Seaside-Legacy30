@@ -1,4 +1,4 @@
-testing-transform
+tests-transform
 testAnsiConvertorRule
 	| class |
 	class := self

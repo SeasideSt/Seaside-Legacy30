@@ -1,4 +1,4 @@
-testing-block
+tests-block
 testBasicNewInitializeMissing
 	| class |
 	class := self

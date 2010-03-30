@@ -1,4 +1,4 @@
-testing-transform
+tests-transform
 testAnsiCollectionsRule
 	| class |
 	class := self

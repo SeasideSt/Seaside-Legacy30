@@ -1,4 +1,4 @@
-testing-transform
+tests-transform
 testAnsiConditionalsRule
 	| class |
 	class := self

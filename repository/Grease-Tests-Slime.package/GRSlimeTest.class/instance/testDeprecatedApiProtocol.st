@@ -1,4 +1,4 @@
-testing-block
+tests-block
 testDeprecatedApiProtocol
 	| class |
 	class := self

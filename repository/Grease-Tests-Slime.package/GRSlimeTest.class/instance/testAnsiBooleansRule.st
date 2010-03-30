@@ -1,4 +1,4 @@
-testing-transform
+tests-transform
 testAnsiBooleansRule
 	| class |
 	class := self

@@ -1,4 +1,4 @@
-testing-parsetree
+tests-parsetree
 testUsesCurlyBraceArrays
 	| class |
 	(self canParse: 'foo { self foo. self bar }')

@@ -1,4 +1,4 @@
-testing-block
+tests-block
 testUsesMethodAnnotations
 	| class |
 	(self canParse: 'foo <foo: 123>')
