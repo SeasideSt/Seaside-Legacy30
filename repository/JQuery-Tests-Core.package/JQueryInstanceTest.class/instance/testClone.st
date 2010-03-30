@@ -1,4 +1,4 @@
-testing-copying
+tests-copying
 testClone
 	self
 		assert: (((self jQuery: 'div')) clone)

@@ -1,4 +1,4 @@
-testing-callbacks
+tests-callbacks
 testText
 	self 
 		assert: (self ajax text: [ :stream | stream nextPutAll: 'Supergirl' ])

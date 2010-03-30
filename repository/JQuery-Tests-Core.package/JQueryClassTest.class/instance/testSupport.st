@@ -1,4 +1,4 @@
-testing-agent
+tests-agent
 testSupport
 	self
 		assert: self jQuery support

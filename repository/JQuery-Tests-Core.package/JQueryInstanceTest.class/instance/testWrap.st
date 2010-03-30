@@ -1,4 +1,4 @@
-testing-modifying
+tests-modifying
 testWrap
 	self
 		assert: ((self jQuery: 'p') wrap: [ :html | html strong ])

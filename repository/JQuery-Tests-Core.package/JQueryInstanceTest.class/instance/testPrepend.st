@@ -1,4 +1,4 @@
-testing-modifying
+tests-modifying
 testPrepend
 	self
 		assert: ((self jQuery: 'p') prepend: [ :html | html strong: 'Hello' ])

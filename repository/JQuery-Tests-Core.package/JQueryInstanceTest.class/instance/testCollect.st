@@ -1,4 +1,4 @@
-testing-filtering
+tests-filtering
 testCollect
 	self
 		assert: ((self jQuery: 'div') collect: [ :each | each parent ])

@@ -1,4 +1,4 @@
-testing-filtering
+tests-filtering
 testSliceFrom
 	self
 		assert: ((self jQuery: 'div') sliceFrom: 0)

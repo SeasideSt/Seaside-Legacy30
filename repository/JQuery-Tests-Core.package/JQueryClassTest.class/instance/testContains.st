@@ -1,4 +1,4 @@
-testing-utilities
+tests-utilities
 testContains
 	self
 		assert: (self jQuery contains: 1 in: #(1 2 3))

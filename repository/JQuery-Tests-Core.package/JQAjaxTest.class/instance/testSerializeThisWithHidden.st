@@ -1,4 +1,4 @@
-testing-convenience
+tests-convenience
 testSerializeThisWithHidden
 	self
 		assert: (self ajax serializeThisWithHidden)

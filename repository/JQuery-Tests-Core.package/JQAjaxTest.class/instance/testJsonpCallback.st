@@ -1,4 +1,4 @@
-testing-options
+tests-options
 testJsonpCallback
 	self
 		assert: (self ajax jsonpCallback: 1)

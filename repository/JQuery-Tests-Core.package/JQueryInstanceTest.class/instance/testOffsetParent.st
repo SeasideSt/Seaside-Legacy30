@@ -1,4 +1,4 @@
-testing-css
+tests-css
 testOffsetParent
 	self
 		assert: (((self jQuery: 'div')) offsetParent)

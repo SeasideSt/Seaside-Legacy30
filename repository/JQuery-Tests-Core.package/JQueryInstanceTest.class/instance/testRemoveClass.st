@@ -1,4 +1,4 @@
-testing-classes
+tests-classes
 testRemoveClass
 	self
 		assert: ((self jQuery: 'p:even') removeClass: 'selected')

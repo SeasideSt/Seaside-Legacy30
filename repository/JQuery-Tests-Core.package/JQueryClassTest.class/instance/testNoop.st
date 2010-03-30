@@ -1,4 +1,4 @@
-testing-accessing
+tests-accessing
 testNoop
 	self
 		assert: self jQuery noop

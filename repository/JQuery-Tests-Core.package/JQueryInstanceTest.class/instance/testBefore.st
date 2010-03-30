@@ -1,4 +1,4 @@
-testing-modifying
+tests-modifying
 testBefore
 	self
 		assert: ((self jQuery: 'p') before: [ :html | html strong: 'Hello' ])

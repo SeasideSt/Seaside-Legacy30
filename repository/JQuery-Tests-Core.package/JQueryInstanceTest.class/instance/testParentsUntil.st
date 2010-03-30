@@ -1,4 +1,4 @@
-testing-navigating
+tests-navigating
 testParentsUntil
 	self
 		assert: ((self jQuery: 'div') parentsUntil: 'p')

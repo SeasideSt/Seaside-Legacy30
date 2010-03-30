@@ -1,4 +1,4 @@
-testing-classes
+tests-classes
 testAddClass
 	self
 		assert: ((self jQuery: 'p:last') addClass: 'selected')

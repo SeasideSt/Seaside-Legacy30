@@ -1,4 +1,4 @@
-testing-navigating
+tests-navigating
 testPreviousAll
 	self
 		assert: (((self jQuery: 'div')) previousAll)

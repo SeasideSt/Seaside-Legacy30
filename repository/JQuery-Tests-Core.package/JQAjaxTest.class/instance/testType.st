@@ -1,4 +1,4 @@
-testing-options
+tests-options
 testType
 	self
 		assert: (self ajax type: 'post')

@@ -1,4 +1,4 @@
-testing-callbacks
+tests-callbacks
 testMultiple
 	self 
 		assert: (self ajax

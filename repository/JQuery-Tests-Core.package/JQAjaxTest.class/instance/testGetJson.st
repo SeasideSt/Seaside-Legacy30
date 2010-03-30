@@ -1,4 +1,4 @@
-testing
+tests
 testGetJson
 	self
 		assert: (self jQuery getJson)

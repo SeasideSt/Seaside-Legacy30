@@ -1,4 +1,4 @@
-testing-convenience
+tests-convenience
 testSerializeThis
 	self
 		assert: (self ajax serializeThis)

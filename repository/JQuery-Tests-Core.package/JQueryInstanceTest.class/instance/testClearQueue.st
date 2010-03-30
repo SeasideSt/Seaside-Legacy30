@@ -1,4 +1,4 @@
-testing-effects
+tests-effects
 testClearQueue
 	self
 		assert: ((self jQuery: 'a') clearQueue)

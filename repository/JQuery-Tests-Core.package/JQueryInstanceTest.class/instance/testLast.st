@@ -1,4 +1,4 @@
-testing-accessors-smalltalk
+tests-accessors-smalltalk
 testLast
 	self
 		assert: ((self jQuery: 'div') last)

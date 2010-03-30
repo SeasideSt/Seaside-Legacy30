@@ -1,4 +1,4 @@
-testing-navigating
+tests-navigating
 testChildren
 	self
 		assert: (((self jQuery: 'div')) children)

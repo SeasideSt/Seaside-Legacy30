@@ -1,4 +1,4 @@
-testing-modifying
+tests-modifying
 testEmpty
 	self 
 		assert: (((self jQuery: 'div')) empty)

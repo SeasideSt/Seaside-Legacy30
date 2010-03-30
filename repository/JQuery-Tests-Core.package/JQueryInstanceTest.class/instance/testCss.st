@@ -1,4 +1,4 @@
-testing-css
+tests-css
 testCss
 	self
 		assert: ((self jQuery: 'div') css: (Dictionary new

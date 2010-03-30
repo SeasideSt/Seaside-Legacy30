@@ -1,4 +1,4 @@
-testing-creation
+tests-creation
 testClass
 	self
 		assert: (self jQuery class: 'foo')

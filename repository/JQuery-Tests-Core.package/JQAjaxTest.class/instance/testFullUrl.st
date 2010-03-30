@@ -1,4 +1,4 @@
-testing-accessing
+tests-accessing
 testFullUrl
 	self 
 		assert: (self ajax fullUrl)

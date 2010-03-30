@@ -1,4 +1,4 @@
-testing-options
+tests-options
 testGlobal
 	self
 		assert: (self ajax global: false)

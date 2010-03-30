@@ -1,4 +1,4 @@
-testing
+tests
 testGet
 	self
 		assert: (self jQuery get)

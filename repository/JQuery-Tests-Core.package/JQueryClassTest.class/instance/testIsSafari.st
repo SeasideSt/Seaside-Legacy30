@@ -1,4 +1,4 @@
-testing-deprecated
+tests-deprecated
 testIsSafari
 	self
 		assert: self jQuery isSafari

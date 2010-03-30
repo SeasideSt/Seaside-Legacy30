@@ -1,4 +1,4 @@
-testing-css
+tests-css
 testPosition
 	self
 		assert: (((self jQuery: 'div')) position)

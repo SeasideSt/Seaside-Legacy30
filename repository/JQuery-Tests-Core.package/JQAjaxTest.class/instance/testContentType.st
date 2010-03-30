@@ -1,4 +1,4 @@
-testing-options
+tests-options
 testContentType
 	self
 		assert: (self ajax contentType: 'text/html')

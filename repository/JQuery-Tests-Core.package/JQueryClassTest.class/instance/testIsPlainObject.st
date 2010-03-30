@@ -1,4 +1,4 @@
-testing-utilities
+tests-utilities
 testIsPlainObject
 	self
 		assert: (self jQuery isPlainObject: Dictionary new)

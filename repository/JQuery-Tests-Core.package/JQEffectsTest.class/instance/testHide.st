@@ -1,4 +1,4 @@
-testing-effects
+tests-effects
 testHide
 	self 
 		assert: (self target hide)

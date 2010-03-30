@@ -1,4 +1,4 @@
-testing-events
+tests-events
 testOnComplete
 	self
 		assert: (self jQuery ajax onComplete: (self javascript alert: 'loaded'))

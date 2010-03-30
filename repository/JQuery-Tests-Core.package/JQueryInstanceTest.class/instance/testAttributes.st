@@ -1,4 +1,4 @@
-testing-attributes
+tests-attributes
 testAttributes
 	self 
 		assert: ((self jQuery: 'img') attributes: (GRSmallDictionary new

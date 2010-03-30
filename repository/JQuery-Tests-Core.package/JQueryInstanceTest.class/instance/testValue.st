@@ -1,4 +1,4 @@
-testing-manipulating
+tests-manipulating
 testValue
 	self 
 		assert: ((self jQuery: 'input') value)

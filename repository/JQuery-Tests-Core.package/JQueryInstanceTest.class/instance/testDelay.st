@@ -1,4 +1,4 @@
-testing-effects
+tests-effects
 testDelay
 	self
 		assert: ((self jQuery: 'a') delay: 1)

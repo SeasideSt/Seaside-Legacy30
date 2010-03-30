@@ -1,4 +1,4 @@
-testing-css
+tests-css
 testScrollLeft
 	self
 		assert: (((self jQuery: 'div')) scrollLeft)

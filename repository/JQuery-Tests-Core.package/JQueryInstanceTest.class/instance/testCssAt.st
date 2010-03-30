@@ -1,4 +1,4 @@
-testing-css
+tests-css
 testCssAt
 	self
 		assert: ((self jQuery: '#foo') cssAt: 'border')

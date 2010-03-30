@@ -1,4 +1,4 @@
-testing-options
+tests-options
 testDataFilter
 	self
 		assert: (self ajax dataFilter: (self javascript alert: 'Hello'))

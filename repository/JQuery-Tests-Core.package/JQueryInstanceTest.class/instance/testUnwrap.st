@@ -1,4 +1,4 @@
-testing-modifying
+tests-modifying
 testUnwrap
 	self
 		assert: ((self jQuery: 'p') unwrap)
