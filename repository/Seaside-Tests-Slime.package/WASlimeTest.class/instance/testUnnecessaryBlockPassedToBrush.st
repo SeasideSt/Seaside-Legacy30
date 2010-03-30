@@ -1,4 +1,4 @@
-testing-parsetree
+tests-parsetree
 testUnnecessaryBlockPassedToBrush
 	| class |
 	class := self 

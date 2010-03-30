@@ -1,4 +1,4 @@
-testing-parsetree
+tests-parsetree
 testUnnecessaryWithSentToBrush
 	| class |
 	class := self 

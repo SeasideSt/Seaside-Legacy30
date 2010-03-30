@@ -1,4 +1,4 @@
-testing-block
+tests-block
 testDoNotUseWithinCallback
 	| class |
 	class := self 

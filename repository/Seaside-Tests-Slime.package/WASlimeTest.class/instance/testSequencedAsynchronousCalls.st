@@ -1,4 +1,4 @@
-testing-parsetree
+tests-parsetree
 testSequencedAsynchronousCalls
 	| class |
 	class := self 

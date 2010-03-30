@@ -1,4 +1,4 @@
-testing-block
+tests-block
 testChangesStateWhileRendering
 	| class |
 	class := self 

@@ -1,4 +1,4 @@
-testing-parsetree
+tests-parsetree
 testUsesWrongRenderer
 	| class |
 	class := self 

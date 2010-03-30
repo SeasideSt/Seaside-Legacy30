@@ -1,4 +1,4 @@
-testing-block
+tests-block
 testCallSuperImplementation
 	| object painter |
 	object := self

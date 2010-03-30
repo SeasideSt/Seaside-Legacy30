@@ -1,4 +1,4 @@
-testing-transform
+tests-transform
 testSessionExpiredRule
 	| class |
 	class := self

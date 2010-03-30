@@ -1,4 +1,4 @@
-testing-transform
+tests-transform
 testHandleRequestRule
 	| class |
 	class := self

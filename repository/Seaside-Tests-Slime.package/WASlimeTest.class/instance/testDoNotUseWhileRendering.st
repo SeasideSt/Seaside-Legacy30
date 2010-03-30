@@ -1,4 +1,4 @@
-testing-block
+tests-block
 testDoNotUseWhileRendering
 	| class |
 	class := self 

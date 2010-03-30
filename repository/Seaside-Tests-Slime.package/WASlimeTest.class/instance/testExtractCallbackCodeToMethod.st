@@ -1,4 +1,4 @@
-testing-parsetree
+tests-parsetree
 testExtractCallbackCodeToMethod
 	| class |
 	class := self 

@@ -1,4 +1,4 @@
-testing-parsetree
+tests-parsetree
 testFixCallbackTempsMissing
 	| class |
 	class := self 

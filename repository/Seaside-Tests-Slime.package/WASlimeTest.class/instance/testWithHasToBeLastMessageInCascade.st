@@ -1,4 +1,4 @@
-testing-parsetree
+tests-parsetree
 testWithHasToBeLastMessageInCascade
 	| class |
 	class := self 

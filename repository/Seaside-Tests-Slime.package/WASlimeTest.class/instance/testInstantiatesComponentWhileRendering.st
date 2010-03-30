@@ -1,4 +1,4 @@
-testing-block
+tests-block
 testInstantiatesComponentWhileRendering
 	| class |
 	class := self 

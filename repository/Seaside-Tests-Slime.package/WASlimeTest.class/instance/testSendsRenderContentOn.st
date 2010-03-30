@@ -1,4 +1,4 @@
-testing-parsetree
+tests-parsetree
 testSendsRenderContentOn
 	| class |
 	class := self 
