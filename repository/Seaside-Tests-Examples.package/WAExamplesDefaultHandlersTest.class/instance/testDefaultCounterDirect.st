@@ -1,4 +1,4 @@
-testing
+tests
 testDefaultCounterDirect
 	| app |
 	app := self defaultDispatcher entryPointAt: 'examples/counter'.

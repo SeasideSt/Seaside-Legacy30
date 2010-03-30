@@ -1,4 +1,4 @@
-testing
+tests
 testDefaultCounterNavigate
 	| app |
 	app := self defaultDispatcher entryPointAt: 'examples'.
