@@ -1,4 +1,4 @@
-testing-rendering
+tests-rendering
 testRenderingChildren
 	root onChildren: [ Array with: child1 with: child2 ].
 	child1 onRender: [ :html | html text: '1' ].

@@ -1,4 +1,4 @@
-testing
+tests
 testDelegations
 	self assert: root delegations isEmpty.
 	root show: child1.

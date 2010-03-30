@@ -1,4 +1,4 @@
-testing
+tests
 testRemoveDecoration
 	root addDecoration: decoration1; addDecoration: decoration2.
 	self assert: (root removeDecoration: decoration2) = decoration2.

@@ -1,4 +1,4 @@
-testing-rendering
+tests-rendering
 testRenderingDelegation
 	root onRender: [ :html | html text: 'r' ].
 	child1 onRender: [ :html | html text: '1' ].

@@ -1,4 +1,4 @@
-testing
+tests
 testDecorations
 	self assert: root decorations isEmpty.
 	root show: child1.

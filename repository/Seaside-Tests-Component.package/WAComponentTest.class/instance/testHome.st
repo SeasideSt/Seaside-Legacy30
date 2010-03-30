@@ -1,4 +1,4 @@
-testing
+tests
 testHome
 	root show: child1.
 	child1 show: child2.

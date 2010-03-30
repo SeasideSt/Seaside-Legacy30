@@ -1,4 +1,4 @@
-testing-rendering
+tests-rendering
 testRenderingDecoration
 	root onRender: [ :html | html text: 'r' ].
 	root addDecoration: decoration1.

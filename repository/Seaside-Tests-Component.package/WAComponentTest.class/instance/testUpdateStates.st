@@ -1,4 +1,4 @@
-testing
+tests
 testUpdateStates
 	| snapshot guide |
 	snapshot := WASnapshot new.

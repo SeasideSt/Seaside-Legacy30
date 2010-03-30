@@ -1,4 +1,4 @@
-testing
+tests
 testInitialRequest
 	| request guide |
 	request := WARequest new.

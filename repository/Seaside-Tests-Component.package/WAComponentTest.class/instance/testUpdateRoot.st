@@ -1,4 +1,4 @@
-testing
+tests
 testUpdateRoot
 	| htmlRoot guide |
 	htmlRoot := WAHtmlRoot new.

@@ -1,4 +1,4 @@
-testing
+tests
 testUpdateUrl
 	| url guide |
 	url := WAUrl new.

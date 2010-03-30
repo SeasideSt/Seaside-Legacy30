@@ -1,4 +1,4 @@
-testing
+tests
 testActiveComponent
 
 	" single root component "

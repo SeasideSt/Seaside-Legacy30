@@ -1,4 +1,4 @@
-testing
+tests
 testAddDecoration
 	self assert: (root addDecoration: decoration1) = decoration1.
 	self assert: (root decorations size = 1).
