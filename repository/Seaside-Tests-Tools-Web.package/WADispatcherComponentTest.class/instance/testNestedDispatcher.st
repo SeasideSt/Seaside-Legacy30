@@ -1,4 +1,4 @@
-testing
+tests
 testNestedDispatcher
 	| configComponent |
 	configComponent := WAConfigurationBrowser on: rootHandler.

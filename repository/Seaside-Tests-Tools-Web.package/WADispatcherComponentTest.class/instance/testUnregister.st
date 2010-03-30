@@ -1,4 +1,4 @@
-testing
+tests
 testUnregister
 	| url |
 	url := normalApplication url.

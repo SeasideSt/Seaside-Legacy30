@@ -1,4 +1,4 @@
-testing
+tests
 testCloneApplication
 	| app handler key clone |
 	app := WADispatcher new register: WAApplication new at: 'app'.

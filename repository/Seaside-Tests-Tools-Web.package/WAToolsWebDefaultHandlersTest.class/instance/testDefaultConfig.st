@@ -1,4 +1,4 @@
-testing
+tests
 testDefaultConfig
 	| app |
 	app := self defaultDispatcher entryPointAt: 'config'.
