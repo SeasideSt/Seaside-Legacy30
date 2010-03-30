@@ -1,4 +1,4 @@
-testing
+tests
 testReentrant
 	| kk |
 	self assert: (self mark: [ 

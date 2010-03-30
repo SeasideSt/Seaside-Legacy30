@@ -1,4 +1,4 @@
-testing
+tests
 testEnsure
 	| kk count |
 	

@@ -1,4 +1,4 @@
-testing
+tests
 testNestedEvaluation
 	| k1 k2 |
 	self assert: (self mark: [ 

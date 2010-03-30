@@ -1,4 +1,4 @@
-testing
+tests
 testNoMarkerOnCall
 	| captured seen |
 	captured := false.

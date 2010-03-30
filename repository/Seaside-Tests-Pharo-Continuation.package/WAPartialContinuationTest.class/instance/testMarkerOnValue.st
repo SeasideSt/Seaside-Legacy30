@@ -1,4 +1,4 @@
-testing
+tests
 testMarkerOnValue
 	| kk captured seen |
 	captured := false.
