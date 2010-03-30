@@ -1,4 +1,4 @@
-testing
+tests
 testSuspendCallbackDo
 	| continuation result |
 	continuation := nil.
