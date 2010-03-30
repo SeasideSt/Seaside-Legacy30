@@ -1,4 +1,4 @@
-testing-packages
+tests-packages
 testPackages
 	| packages |
 	packages := GRPackage packages.

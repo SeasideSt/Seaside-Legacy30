@@ -1,4 +1,4 @@
-testing-streams
+tests-streams
 testReadWriteStreamTab
 	"ANSI 5.9.4.6"
 	| stream |

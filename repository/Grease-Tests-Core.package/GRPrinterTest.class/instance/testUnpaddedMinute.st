@@ -1,4 +1,4 @@
-testing-parts-time
+tests-parts-time
 testUnpaddedMinute
 	| printer |
 	printer := GRPrinter unpaddedMinute.

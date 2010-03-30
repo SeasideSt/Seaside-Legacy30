@@ -1,4 +1,4 @@
-testing-accessing
+tests-accessing
 testArgumentCount
 	" unary "
 	| send |

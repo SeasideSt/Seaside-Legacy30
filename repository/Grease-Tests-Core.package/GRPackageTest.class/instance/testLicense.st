@@ -1,4 +1,4 @@
-testing
+tests
 testLicense
 	self assert: package license = #MIT.
 	self assert: package isMIT.

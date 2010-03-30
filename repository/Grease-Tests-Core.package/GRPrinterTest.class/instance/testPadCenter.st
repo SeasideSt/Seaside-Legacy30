@@ -1,4 +1,4 @@
-testing-utilites
+tests-utilites
 testPadCenter
 	| converter |
 	converter := GRPrinter new.

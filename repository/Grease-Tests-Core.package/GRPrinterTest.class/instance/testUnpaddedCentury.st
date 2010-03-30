@@ -1,4 +1,4 @@
-testing-parts-date
+tests-parts-date
 testUnpaddedCentury
 	| printer |
 	printer := GRPrinter unpaddedCentury.

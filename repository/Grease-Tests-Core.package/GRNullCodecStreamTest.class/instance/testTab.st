@@ -1,4 +1,4 @@
-testing-characters
+tests-characters
 testTab
 	| stream |
 	stream := GRNullCodec new 

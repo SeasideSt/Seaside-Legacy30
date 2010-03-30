@@ -1,4 +1,4 @@
-testing-evaluating
+tests-evaluating
 testValueWithArgumentsKeyword
 	| send |
 	send := GRDelayedSend 

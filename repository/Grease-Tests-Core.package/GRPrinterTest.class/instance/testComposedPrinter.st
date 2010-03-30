@@ -1,4 +1,4 @@
-testing
+tests
 testComposedPrinter
 	| converter |
 	converter := GRSequentialPrinter new , 'CHF ' , GRNumberPrinter new.

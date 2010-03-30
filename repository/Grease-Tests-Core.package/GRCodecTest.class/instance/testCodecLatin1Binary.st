@@ -1,4 +1,4 @@
-testing
+tests
 testCodecLatin1Binary
 	| codec encoder binary |
 	codec := GRCodec forEncoding: 'ISO-8859-1'.

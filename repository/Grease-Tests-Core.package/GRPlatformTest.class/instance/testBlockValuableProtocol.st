@@ -1,4 +1,4 @@
-testing
+tests
 testBlockValuableProtocol
 	self assert: [ nil ] argumentCount isZero.
 	self assert: [ :x | x ] argumentCount = 1.

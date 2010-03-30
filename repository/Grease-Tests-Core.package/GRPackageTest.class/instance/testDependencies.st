@@ -1,4 +1,4 @@
-testing-dependencies
+tests-dependencies
 testDependencies
 	self assert: package dependencies isEmpty.
 	package addDependency: 'Lust'.

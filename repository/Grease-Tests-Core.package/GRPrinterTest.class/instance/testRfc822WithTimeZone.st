@@ -1,4 +1,4 @@
-testing-timestamp
+tests-timestamp
 testRfc822WithTimeZone
 	| printer date |
 	printer := GRPrinter rfc822WithTimeZone: 'GMT'.

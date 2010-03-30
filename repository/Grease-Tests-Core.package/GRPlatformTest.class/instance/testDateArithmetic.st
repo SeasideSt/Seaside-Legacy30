@@ -1,4 +1,4 @@
-testing
+tests
 testDateArithmetic
 	| today tomorrow oneDay minusOneDay |
 	today := DateAndTime year: 2008 month: 9 day: 13 hour: 14 minute: 32 second: 05 offset: Duration zero.

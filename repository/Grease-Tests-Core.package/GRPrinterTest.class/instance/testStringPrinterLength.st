@@ -1,4 +1,4 @@
-testing
+tests
 testStringPrinterLength
 	| converter |
 	converter := GRStringPrinter new.

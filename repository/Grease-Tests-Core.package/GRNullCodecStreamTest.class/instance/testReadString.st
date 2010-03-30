@@ -1,4 +1,4 @@
-testing
+tests
 testReadString
 	| stream codecStream |
 	stream := 'abc' readStream.

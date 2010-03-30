@@ -1,4 +1,4 @@
-testing
+tests
 testGreaseString
 	self assert: 'Timberwolf' greaseString = 'Timberwolf'.
 	self assert: #DireWolf greaseString = 'DireWolf'.

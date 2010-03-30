@@ -1,4 +1,4 @@
-testing-timestamp
+tests-timestamp
 testCookieTimestamp
 	| printer date |
 	printer := GRPrinter cookieTimestamp.

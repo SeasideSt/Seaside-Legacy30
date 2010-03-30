@@ -1,4 +1,4 @@
-testing-dependencies
+tests-dependencies
 testAllDependencies
 	| packages |
 	packages := Dictionary new.

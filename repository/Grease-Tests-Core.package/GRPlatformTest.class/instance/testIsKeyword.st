@@ -1,4 +1,4 @@
-testing
+tests
 testIsKeyword
 	self deny: #isKeyword isKeyword.
 	self deny: #+ isKeyword.

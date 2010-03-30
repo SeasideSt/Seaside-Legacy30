@@ -1,4 +1,4 @@
-testing-currency
+tests-currency
 testSwissCurrency
 	| printer |
 	printer := GRPrinter swissCurrency.

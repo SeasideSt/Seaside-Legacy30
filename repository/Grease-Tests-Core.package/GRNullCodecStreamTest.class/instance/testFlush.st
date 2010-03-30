@@ -1,4 +1,4 @@
-testing-protocol
+tests-protocol
 testFlush
 	| stream |
 	stream := GRNullCodec new 

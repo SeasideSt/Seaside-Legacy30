@@ -1,4 +1,4 @@
-testing-parts-date
+tests-parts-date
 testUnpaddedMonth
 	| printer |
 	printer := GRPrinter unpaddedMonth.

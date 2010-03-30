@@ -1,4 +1,4 @@
-testing-characters
+tests-characters
 testSpace
 	| stream |
 	stream := GRNullCodec new 

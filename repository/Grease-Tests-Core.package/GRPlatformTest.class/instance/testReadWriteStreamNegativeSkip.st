@@ -1,4 +1,4 @@
-testing-streams
+tests-streams
 testReadWriteStreamNegativeSkip
 	"ANSI does not mention negative values being used with #skip: but we
 	believe they work consistently. If not, we need to update our coding

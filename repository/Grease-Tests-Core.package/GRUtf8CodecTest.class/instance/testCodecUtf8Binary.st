@@ -1,4 +1,4 @@
-testing
+tests
 testCodecUtf8Binary
 	#('UTF-8' 'utf-8') do: [ :codecName |
 		| codec binary encoder |

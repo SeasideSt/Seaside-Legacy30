@@ -1,4 +1,4 @@
-testing
+tests
 testCodecUtf8ShortestForm
 	"Non shortest form characters should be rejected
 	See Corrigendum #1: UTF-8 Shortest Form http://www.unicode.org/versions/corrigendum1.html"

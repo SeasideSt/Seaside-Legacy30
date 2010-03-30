@@ -1,4 +1,4 @@
-testing-parts-date
+tests-parts-date
 testUnpaddedDay
 	| printer |
 	printer := GRPrinter unpaddedDay.

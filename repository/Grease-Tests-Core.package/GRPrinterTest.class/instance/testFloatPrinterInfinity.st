@@ -1,4 +1,4 @@
-testing
+tests
 testFloatPrinterInfinity
 	| converter |
 	converter := GRNumberPrinter new.

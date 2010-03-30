@@ -1,4 +1,4 @@
-testing-protocol
+tests-protocol
 testText
 	| stream |
 	stream := GRNullCodec new 

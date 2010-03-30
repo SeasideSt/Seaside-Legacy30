@@ -1,4 +1,4 @@
-testing-protocol
+tests-protocol
 testSize
 	| stream |
 	stream := GRNullCodec new 

@@ -1,4 +1,4 @@
-testing
+tests
 testFloatPrinterSeparator
 	| converter |
 	converter := GRNumberPrinter new.

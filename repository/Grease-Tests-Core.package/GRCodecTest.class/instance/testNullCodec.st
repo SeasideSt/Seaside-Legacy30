@@ -1,4 +1,4 @@
-testing
+tests
 testNullCodec
 	| codec readStream writeStream strings |
 	codec := GRNullCodec new.

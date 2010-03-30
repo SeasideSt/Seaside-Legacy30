@@ -1,4 +1,4 @@
-testing
+tests
 testAsSeconds
 	| duration |
 	duration := Duration days: 1 hours: 0 minutes: 0 seconds: 0.

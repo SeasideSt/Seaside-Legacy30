@@ -1,4 +1,4 @@
-testing
+tests
 testNumArgs
 	self assert: #not numArgs isZero.
 	self assert: #+ numArgs = 1.

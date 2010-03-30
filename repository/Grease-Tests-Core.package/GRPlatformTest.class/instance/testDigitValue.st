@@ -1,4 +1,4 @@
-testing
+tests
 testDigitValue
 	'0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ' 
 		with: (0 to: 35)

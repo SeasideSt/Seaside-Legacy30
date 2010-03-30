@@ -1,4 +1,4 @@
-testing
+tests
 testAllCodecs
 	self assert: GRCodec allCodecs notEmpty.
 	GRCodec allCodecs do: 

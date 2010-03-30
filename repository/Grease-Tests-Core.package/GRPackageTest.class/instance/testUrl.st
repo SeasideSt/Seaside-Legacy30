@@ -1,4 +1,4 @@
-testing
+tests
 testUrl
 	self assert: package url isNil.
 	

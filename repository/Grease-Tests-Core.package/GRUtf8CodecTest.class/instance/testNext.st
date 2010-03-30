@@ -1,4 +1,4 @@
-testing
+tests
 testNext
 	| stream |
 	stream := (GRCodec forEncoding: 'utf8')

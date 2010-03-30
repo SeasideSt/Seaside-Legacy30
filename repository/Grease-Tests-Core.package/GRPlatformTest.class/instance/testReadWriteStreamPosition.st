@@ -1,4 +1,4 @@
-testing-streams
+tests-streams
 testReadWriteStreamPosition
 	"ANSI 5.9.1.4 and 5.9.1.5"
 	| stream |

@@ -1,4 +1,4 @@
-testing
+tests
 testWriteString
 	| stream codecStream |
 	stream := WriteStream on: String new.

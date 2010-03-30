@@ -1,4 +1,4 @@
-testing
+tests
 testFileSizePrinterDecimal
 	| converter |
 	converter := GRPrinter decimalFileSize.

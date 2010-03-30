@@ -1,4 +1,4 @@
-testing
+tests
 testFileSizePrinterBinary
 	| converter |
 	converter := GRPrinter binaryFileSize.

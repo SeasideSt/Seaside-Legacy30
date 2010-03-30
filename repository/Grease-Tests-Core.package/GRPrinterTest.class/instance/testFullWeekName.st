@@ -1,4 +1,4 @@
-testing-parts-date
+tests-parts-date
 testFullWeekName
 	| printer |
 	printer := GRPrinter fullWeekName.

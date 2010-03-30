@@ -1,4 +1,4 @@
-testing-parts-time
+tests-parts-time
 testUnpaddedHour24
 	| printer |
 	printer := GRPrinter unpaddedHour24.

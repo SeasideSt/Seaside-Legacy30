@@ -1,4 +1,4 @@
-testing
+tests
 testSymbolAsMutator
 	"test for:
 	Symbol >> #asMutator

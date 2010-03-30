@@ -1,4 +1,4 @@
-testing
+tests
 testReadFrom
 	"We test #readFrom: as the expected behaviour on all platforms, as we rely on it for WANumberAttribute and WAQualifiedValue"
 	
