@@ -1,4 +1,4 @@
-testing
+tests
 testFrameCount
 	| walkback |
 	[WATestError signal: 'foo']
