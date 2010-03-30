@@ -1,4 +1,4 @@
-testing
+tests
 testDefaultTests
 	| app |
 	app := self defaultDispatcher entryPointAt: 'tests'.

@@ -1,4 +1,4 @@
-testing
+tests
 testAllTests
 	| app |
 	app := self defaultDispatcher entryPointAt: 'tests/functional'.
