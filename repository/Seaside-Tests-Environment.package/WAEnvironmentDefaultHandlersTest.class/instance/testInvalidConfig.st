@@ -1,4 +1,4 @@
-testing
+tests
 testInvalidConfig
 	| app |
 	app := self defaultDispatcher handlerAt: 'examplesxyz/counter' ifAbsent: [nil].

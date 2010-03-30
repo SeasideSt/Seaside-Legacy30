@@ -1,4 +1,4 @@
-testing
+tests
 testDefaultRoot
 	| app |
 	app := self defaultDispatcher.

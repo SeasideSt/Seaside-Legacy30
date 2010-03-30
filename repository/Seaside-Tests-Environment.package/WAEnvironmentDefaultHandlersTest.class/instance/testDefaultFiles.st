@@ -1,4 +1,4 @@
-testing
+tests
 testDefaultFiles
 	| app |
 	app := self defaultDispatcher entryPointAt: 'files'.
