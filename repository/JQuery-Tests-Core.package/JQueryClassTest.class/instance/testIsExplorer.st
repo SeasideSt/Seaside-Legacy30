@@ -1,4 +1,4 @@
-testing-deprecated
+tests-deprecated
 testIsExplorer
 	self
 		assert: self jQuery isExplorer

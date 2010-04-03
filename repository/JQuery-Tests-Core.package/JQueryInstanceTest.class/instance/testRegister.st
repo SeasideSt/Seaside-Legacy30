@@ -1,4 +1,4 @@
-testing-events
+tests-events
 testRegister
 	self
 		assert: ((self jQuery: 'a') onAjaxSuccess: self mock)

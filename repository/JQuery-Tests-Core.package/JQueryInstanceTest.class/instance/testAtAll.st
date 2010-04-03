@@ -1,4 +1,4 @@
-testing-accessors-smalltalk
+tests-accessors-smalltalk
 testAtAll
 	self
 		assert: ((self jQuery: 'div') atAll)

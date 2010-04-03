@@ -1,4 +1,4 @@
-testing-events
+tests-events
 testDie
 	self
 		assert: ((self jQuery: 'a') die: 'click')

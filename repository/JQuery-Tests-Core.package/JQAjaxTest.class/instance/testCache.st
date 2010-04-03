@@ -1,4 +1,4 @@
-testing-options
+tests-options
 testCache
 	self
 		assert: (self ajax cache: false)

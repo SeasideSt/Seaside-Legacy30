@@ -1,4 +1,4 @@
-testing-deprecated
+tests-deprecated
 testIsOpera
 	self
 		assert: self jQuery isOpera

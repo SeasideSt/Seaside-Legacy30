@@ -1,4 +1,4 @@
-testing-options
+tests-options
 testJsonp
 	self
 		assert: (self ajax jsonp: 'onJsonPLoad')

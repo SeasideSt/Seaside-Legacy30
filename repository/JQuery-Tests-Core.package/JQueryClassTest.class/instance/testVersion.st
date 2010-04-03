@@ -1,4 +1,4 @@
-testing-deprecated
+tests-deprecated
 testVersion
 	self
 		assert: self jQuery version

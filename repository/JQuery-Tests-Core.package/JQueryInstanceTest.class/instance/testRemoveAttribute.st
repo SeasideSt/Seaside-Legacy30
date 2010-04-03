@@ -1,4 +1,4 @@
-testing-attributes
+tests-attributes
 testRemoveAttribute
 	self
 		assert: ((self jQuery: 'button') removeAttribute: 'disabled')

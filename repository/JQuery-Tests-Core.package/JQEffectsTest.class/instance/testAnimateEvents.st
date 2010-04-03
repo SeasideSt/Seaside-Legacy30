@@ -1,4 +1,4 @@
-testing-animation
+tests-animation
 testAnimateEvents
 	self
 		assert: (self animate onComplete: self mock)

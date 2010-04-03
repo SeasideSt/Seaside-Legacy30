@@ -1,4 +1,4 @@
-testing-creation
+tests-creation
 testAll
 	self
 		assert: (self jQuery all)

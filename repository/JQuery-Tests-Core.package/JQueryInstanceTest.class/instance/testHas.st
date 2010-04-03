@@ -1,4 +1,4 @@
-testing-filtering
+tests-filtering
 testHas
 	self
 		assert: ((self jQuery: 'div') has: ':odd')

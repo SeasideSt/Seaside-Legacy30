@@ -1,4 +1,4 @@
-testing-options
+tests-options
 testAsync
 	self
 		assert: (self ajax async: true)

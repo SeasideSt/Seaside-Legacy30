@@ -1,4 +1,4 @@
-testing-events
+tests-events
 testOnError
 	self
 		assert: (self jQuery ajax onError: (self javascript alert: 'error'))

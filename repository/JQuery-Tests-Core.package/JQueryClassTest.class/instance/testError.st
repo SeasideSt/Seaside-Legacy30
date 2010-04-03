@@ -1,4 +1,4 @@
-testing-utilities
+tests-utilities
 testError
 	self
 		assert: (self jQuery error: 'Doomsday Device')

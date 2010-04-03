@@ -1,4 +1,4 @@
-testing-accessors
+tests-accessors
 testLength
 	self
 		assert: ((self jQuery: 'div') length)

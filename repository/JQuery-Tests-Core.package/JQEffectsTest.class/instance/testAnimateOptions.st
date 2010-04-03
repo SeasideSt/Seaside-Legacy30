@@ -1,4 +1,4 @@
-testing-animation
+tests-animation
 testAnimateOptions
 	self
 		assert: (self animate duration: 5 seconds)

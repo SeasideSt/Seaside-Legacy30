@@ -1,4 +1,4 @@
-testing-options
+tests-options
 testContext
 	self
 		assert: (self ajax context: self jQuery this)

@@ -1,4 +1,4 @@
-testing-callbacks
+tests-callbacks
 testScript
 	self 
 		assert: (self ajax script: [ :script | script alert: 'Hello' ])

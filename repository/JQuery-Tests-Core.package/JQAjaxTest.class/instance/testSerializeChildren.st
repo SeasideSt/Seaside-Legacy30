@@ -1,4 +1,4 @@
-testing-convenience
+tests-convenience
 testSerializeChildren
 	self
 		assert: (self ajax serializeChildren)

@@ -1,4 +1,4 @@
-testing-events
+tests-events
 testUnbind
 	self
 		assert: ((self jQuery: 'a') unbind: 'click')

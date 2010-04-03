@@ -1,4 +1,4 @@
-testing-options
+tests-options
 testProcessData
 	self
 		assert: (self ajax processData: false)

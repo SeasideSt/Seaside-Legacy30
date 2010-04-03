@@ -1,4 +1,4 @@
-testing-accessors
+tests-accessors
 testData
 	self
 		assert: ((self jQuery: 'div') dataAt: 'foo')

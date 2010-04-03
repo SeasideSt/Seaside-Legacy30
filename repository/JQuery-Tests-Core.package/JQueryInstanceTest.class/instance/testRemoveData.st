@@ -1,4 +1,4 @@
-testing-data
+tests-data
 testRemoveData
 	self
 		assert: ((self jQuery: 'button') removeDataAt: 'foo')

@@ -1,4 +1,4 @@
-testing-parameters
+tests-parameters
 testAddParameter
 	self 
 		assert: (self ajax addParameter: 'foo')

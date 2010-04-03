@@ -1,4 +1,4 @@
-testing-utilities
+tests-utilities
 testIsEmptyObject
 	self
 		assert: (self jQuery isEmptyObject: Dictionary new)

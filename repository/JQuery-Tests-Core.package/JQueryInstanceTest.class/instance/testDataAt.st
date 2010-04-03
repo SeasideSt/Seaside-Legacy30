@@ -1,4 +1,4 @@
-testing-data
+tests-data
 testDataAt
 	self
 		assert: ((self jQuery: 'button') dataAt: 'foo')

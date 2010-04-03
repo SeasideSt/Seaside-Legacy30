@@ -1,4 +1,4 @@
-testing-css
+tests-css
 testScrollTop
 	self
 		assert: (((self jQuery: 'div')) scrollTop)

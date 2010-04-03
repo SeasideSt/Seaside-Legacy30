@@ -1,4 +1,4 @@
-testing-events
+tests-events
 testTriggers
 	self
 		assert: ((self jQuery: 'a') triggerBlur)

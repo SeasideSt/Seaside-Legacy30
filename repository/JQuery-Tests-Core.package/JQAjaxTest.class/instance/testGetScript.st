@@ -1,4 +1,4 @@
-testing
+tests
 testGetScript
 	self
 		assert: (self jQuery getScript)

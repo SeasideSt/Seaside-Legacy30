@@ -1,4 +1,4 @@
-testing-manipulating
+tests-manipulating
 testHtml
 	self 
 		assert: (((self jQuery: 'div')) html)

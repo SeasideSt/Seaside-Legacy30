@@ -1,4 +1,4 @@
-testing-css
+tests-css
 testCssAtPut
 	self
 		assert: ((self jQuery: 'p') cssAt: 'border' put: '1px solid red')

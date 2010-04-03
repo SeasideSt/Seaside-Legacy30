@@ -1,4 +1,4 @@
-testing-effects
+tests-effects
 testShow
 	self 
 		assert: (self target show)

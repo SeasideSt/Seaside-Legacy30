@@ -1,4 +1,4 @@
-testing-with
+tests-with
 testWithNil
 	self
 		assert: (self jQuery: nil)

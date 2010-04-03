@@ -1,4 +1,4 @@
-testing-navigating
+tests-navigating
 testAdd
 	self
 		assert: ((self jQuery: 'div') add: 'p')

@@ -1,4 +1,4 @@
-testing-modifying
+tests-modifying
 testAfter
 	self
 		assert: ((self jQuery: 'p') after: [ :html | html strong: 'Hello' ])
