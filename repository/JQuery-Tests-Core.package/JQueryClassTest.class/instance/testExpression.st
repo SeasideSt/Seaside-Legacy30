@@ -1,4 +1,4 @@
-tests-creation
+testing-creation
 testExpression
 	self
 		assert: (self jQuery expression: '#foo')

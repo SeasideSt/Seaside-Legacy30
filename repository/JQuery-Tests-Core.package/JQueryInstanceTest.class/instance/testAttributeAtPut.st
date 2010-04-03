@@ -1,4 +1,4 @@
-tests-attributes
+testing-attributes
 testAttributeAtPut
 	self
 		assert: ((self jQuery: 'button:gt(1)') attributeAt: 'disabled' put: true)

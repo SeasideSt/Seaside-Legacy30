@@ -1,4 +1,4 @@
-tests-accessors-smalltalk
+testing-accessors-smalltalk
 testSize
 	self
 		assert: ((self jQuery: 'div') size)

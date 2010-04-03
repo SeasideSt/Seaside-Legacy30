@@ -1,4 +1,4 @@
-tests-events
+testing-events
 testOnBeforeSend
 	self
 		assert: (self jQuery ajax onBeforeSend: (self javascript alert: 'before'))

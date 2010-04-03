@@ -1,4 +1,4 @@
-tests-accessors
+testing-accessors
 testGet
 	self
 		assert: ((self jQuery: 'div') get)

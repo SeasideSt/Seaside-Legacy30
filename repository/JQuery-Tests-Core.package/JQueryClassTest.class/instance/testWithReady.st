@@ -1,4 +1,4 @@
-tests-with
+testing-with
 testWithReady
 	self
 		assert: (self jQuery: (self javascript alert: 'Hello'))

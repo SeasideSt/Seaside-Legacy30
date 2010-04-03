@@ -1,4 +1,4 @@
-tests-css
+testing-css
 testOffset
 	self
 		assert: (((self jQuery: 'div')) offset)

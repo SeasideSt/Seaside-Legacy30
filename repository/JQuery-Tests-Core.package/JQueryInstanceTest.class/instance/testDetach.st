@@ -1,4 +1,4 @@
-tests-modifying
+testing-modifying
 testDetach
 	self
 		assert: ((self jQuery: 'p') detach)

@@ -1,4 +1,4 @@
-tests-with
+testing-with
 testWithString
 	self
 		assert: (self jQuery: 'div > p')

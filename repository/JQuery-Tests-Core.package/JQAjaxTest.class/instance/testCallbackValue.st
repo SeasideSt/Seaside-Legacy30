@@ -1,4 +1,4 @@
-tests-callbacks
+testing-callbacks
 testCallbackValue
 	self 
 		assert: (self ajax callback: [ ] value: (self jQuery this hasClass: 'foo'))

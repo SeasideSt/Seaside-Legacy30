@@ -1,4 +1,4 @@
-tests
+testing
 testAjaxSetup
 	self 
 		assert: self ajaxSetup

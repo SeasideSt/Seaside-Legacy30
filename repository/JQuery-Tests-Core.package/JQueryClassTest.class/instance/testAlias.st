@@ -1,4 +1,4 @@
-tests
+testing
 testAlias
 	| originalName |
 	originalName := JQuery functionName.

@@ -1,4 +1,4 @@
-tests-navigating
+testing-navigating
 testNextUntil
 	self
 		assert: (((self jQuery: 'div')) nextUntil: 'p')

@@ -1,4 +1,4 @@
-tests-navigating
+testing-navigating
 testContents
 	self
 		assert: (((self jQuery: 'div')) contents)

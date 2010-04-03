@@ -1,4 +1,4 @@
-tests
+testing
 testLoad
 	self
 		assert: ((self jQuery: 'li') load)

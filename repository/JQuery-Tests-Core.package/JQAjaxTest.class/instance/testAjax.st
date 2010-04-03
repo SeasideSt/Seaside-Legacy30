@@ -1,4 +1,4 @@
-tests
+testing
 testAjax
 	self 
 		assert: self ajax

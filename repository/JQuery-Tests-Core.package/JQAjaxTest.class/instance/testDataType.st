@@ -1,4 +1,4 @@
-tests-options
+testing-options
 testDataType
 	self
 		assert: (self ajax dataType: 'xml')

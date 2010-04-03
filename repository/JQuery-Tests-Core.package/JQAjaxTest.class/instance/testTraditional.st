@@ -1,4 +1,4 @@
-tests-options
+testing-options
 testTraditional
 	self
 		assert: (self ajax traditional: true)

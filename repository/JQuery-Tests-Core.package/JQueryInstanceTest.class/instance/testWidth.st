@@ -1,4 +1,4 @@
-tests-css
+testing-css
 testWidth
 	self
 		assert: (((self jQuery: 'div')) width)

@@ -1,4 +1,4 @@
-tests-classes
+testing-classes
 testToggleClass
 	self
 		assert: ((self jQuery: 'p') toggleClass: 'highlight')

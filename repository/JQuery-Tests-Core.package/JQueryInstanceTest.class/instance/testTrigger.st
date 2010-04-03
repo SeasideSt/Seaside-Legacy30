@@ -1,4 +1,4 @@
-tests-events
+testing-events
 testTrigger
 	self
 		assert: ((self jQuery: 'a') trigger: 'click')

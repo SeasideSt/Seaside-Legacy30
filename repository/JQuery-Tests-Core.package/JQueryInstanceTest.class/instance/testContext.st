@@ -1,4 +1,4 @@
-tests-accessors
+testing-accessors
 testContext
 	self
 		assert: ((self jQuery: 'div') context)

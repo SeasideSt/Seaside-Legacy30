@@ -1,4 +1,4 @@
-tests-filtering
+testing-filtering
 testIs
 	self
 		assert: ((self jQuery: 'div') is: ':odd')

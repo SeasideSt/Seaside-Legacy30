@@ -1,4 +1,4 @@
-tests-css
+testing-css
 testInnerHeight
 	self
 		assert: (((self jQuery: 'div')) innerHeight)

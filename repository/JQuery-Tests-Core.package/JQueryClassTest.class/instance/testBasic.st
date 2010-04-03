@@ -1,4 +1,4 @@
-tests
+testing
 testBasic
 	self
 		assert: self jQuery

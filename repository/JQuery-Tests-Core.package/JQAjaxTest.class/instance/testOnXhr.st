@@ -1,4 +1,4 @@
-tests-events
+testing-events
 testOnXhr
 	self
 		assert: (self jQuery ajax onXhr: (self javascript alert: 'create'))

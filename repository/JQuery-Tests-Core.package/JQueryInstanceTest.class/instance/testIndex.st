@@ -1,4 +1,4 @@
-tests-accessors
+testing-accessors
 testIndex
 	self
 		assert: ((self jQuery: 'div') index: JSStream this)

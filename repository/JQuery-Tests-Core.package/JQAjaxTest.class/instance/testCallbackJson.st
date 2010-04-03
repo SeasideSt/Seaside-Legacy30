@@ -1,4 +1,4 @@
-tests-convenience
+testing-convenience
 testCallbackJson
 	self
 		assert: (self ajax callback: [ :value | ] json: self mock)

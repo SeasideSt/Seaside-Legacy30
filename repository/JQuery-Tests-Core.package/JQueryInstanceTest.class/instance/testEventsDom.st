@@ -1,4 +1,4 @@
-tests-events
+testing-events
 testEventsDom
 	self
 		assert: ((self jQuery: 'a') onBlur: self mock)

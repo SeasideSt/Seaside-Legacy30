@@ -1,4 +1,4 @@
-tests-options
+testing-options
 testTimeout
 	self
 		assert: (self ajax timeout: 1200)

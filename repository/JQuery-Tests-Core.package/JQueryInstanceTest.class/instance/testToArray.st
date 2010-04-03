@@ -1,4 +1,4 @@
-tests-accessors
+testing-accessors
 testToArray
 	self
 		assert: ((self jQuery: 'div') toArray)

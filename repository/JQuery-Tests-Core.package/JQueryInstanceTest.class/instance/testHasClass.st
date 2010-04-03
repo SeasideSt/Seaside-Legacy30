@@ -1,4 +1,4 @@
-tests-classes
+testing-classes
 testHasClass
 	self
 		assert: ((self jQuery: 'p') hasClass: 'selected')

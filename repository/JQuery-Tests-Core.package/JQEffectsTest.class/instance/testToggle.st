@@ -1,4 +1,4 @@
-tests-effects
+testing-effects
 testToggle
 	self 
 		assert: (self target toggle)

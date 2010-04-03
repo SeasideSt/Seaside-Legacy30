@@ -1,0 +1,3 @@
+accessing
+newEvent
+	^ JQEvent new

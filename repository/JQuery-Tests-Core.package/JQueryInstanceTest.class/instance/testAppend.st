@@ -1,4 +1,4 @@
-tests-modifying
+testing-modifying
 testAppend
 	self
 		assert: ((self jQuery: 'p') append: [ :html | html strong: 'Hello' ])

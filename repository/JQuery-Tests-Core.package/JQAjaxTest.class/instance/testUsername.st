@@ -1,4 +1,4 @@
-tests-options
+testing-options
 testUsername
 	self
 		assert: (self ajax username: 'seaside')

@@ -1,4 +1,4 @@
-tests
+testing
 testStop
 	self 
 		assert: (self target stop)

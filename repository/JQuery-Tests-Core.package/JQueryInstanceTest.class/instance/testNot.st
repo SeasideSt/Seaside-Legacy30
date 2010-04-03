@@ -1,4 +1,4 @@
-tests-filtering
+testing-filtering
 testNot
 	self
 		assert: ((self jQuery: 'div') not: ':even')

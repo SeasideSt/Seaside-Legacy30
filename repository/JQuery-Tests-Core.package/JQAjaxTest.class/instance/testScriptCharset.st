@@ -1,4 +1,4 @@
-tests-options
+testing-options
 testScriptCharset
 	self
 		assert: (self ajax scriptCharset: 'utf-8')

@@ -1,4 +1,4 @@
-tests-callbacks
+testing-callbacks
 testHtml
 	self 
 		assert: (self ajax html: [ :html | html div ])

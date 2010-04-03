@@ -1,4 +1,4 @@
-tests-utilities
+testing-utilities
 testParseJSON
 	self
 		assert: (self jQuery parseJSON: '{ foo: 12 }')

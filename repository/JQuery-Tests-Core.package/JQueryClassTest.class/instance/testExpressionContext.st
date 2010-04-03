@@ -1,4 +1,4 @@
-tests-creation
+testing-creation
 testExpressionContext
 	self
 		assert: (self jQuery expression: '#foo' context: 123)

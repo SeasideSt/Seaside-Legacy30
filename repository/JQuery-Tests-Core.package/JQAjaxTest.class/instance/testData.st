@@ -1,4 +1,4 @@
-tests-options
+testing-options
 testData
 	self
 		assert: (self ajax data: 'foo')

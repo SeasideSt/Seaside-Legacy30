@@ -1,4 +1,4 @@
-tests-modifying
+testing-modifying
 testRemove
 	self 
 		assert: (((self jQuery: 'div')) remove)

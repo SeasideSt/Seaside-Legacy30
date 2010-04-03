@@ -1,4 +1,4 @@
-tests-events
+testing-events
 testUndelegate
 	self
 		assert: ((self jQuery: '#theone') undelegate)

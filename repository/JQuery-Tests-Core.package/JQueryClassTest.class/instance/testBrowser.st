@@ -1,4 +1,4 @@
-tests-deprecated
+testing-deprecated
 testBrowser
 	self
 		assert: self jQuery browser

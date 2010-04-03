@@ -1,4 +1,4 @@
-tests-accessors
+testing-accessors
 testSelector
 	self
 		assert: ((self jQuery: 'div') selector)

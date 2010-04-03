@@ -1,4 +1,4 @@
-tests-events
+testing-events
 testBindDo
 	self
 		assert: ((self jQuery: 'a') bind: 'click' do: (self javascript alert: 'Clicked'))

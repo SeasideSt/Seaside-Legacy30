@@ -1,4 +1,4 @@
-tests-creation
+testing-creation
 testId
 	self
 		assert: (self jQuery id: 'foo')

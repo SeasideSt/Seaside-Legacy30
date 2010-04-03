@@ -1,4 +1,4 @@
-tests-options
+testing-options
 testIfModified
 	self
 		assert: (self ajax ifModified: false)

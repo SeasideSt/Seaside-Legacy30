@@ -1,4 +1,4 @@
-tests-convenience
+testing-convenience
 testSerialize
 	self
 		assert: (self ajax serialize: (self jQuery: 'form'))

@@ -1,4 +1,4 @@
-tests-navigating
+testing-navigating
 testClosest
 	self
 		assert: (((self jQuery: 'div')) closest)

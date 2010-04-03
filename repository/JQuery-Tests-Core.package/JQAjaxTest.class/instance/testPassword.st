@@ -1,4 +1,4 @@
-tests-options
+testing-options
 testPassword
 	self
 		assert: (self ajax password: 'topsecret')

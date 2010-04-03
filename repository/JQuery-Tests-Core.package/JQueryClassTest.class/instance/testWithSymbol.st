@@ -1,4 +1,4 @@
-tests-with
+testing-with
 testWithSymbol
 	self
 		assert: (self jQuery: #foo)

@@ -1,4 +1,4 @@
-tests-effects
+testing-effects
 testFadeTo
 	self 
 		assert: (self target fade: 1 seconds to: 0.8)

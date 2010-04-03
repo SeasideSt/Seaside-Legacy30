@@ -1,4 +1,4 @@
-tests-creation
+testing-creation
 testHtml
 	self
 		assert: (self jQuery html: [ :html | html div: 'foo' ])

@@ -1,4 +1,4 @@
-tests-with
+testing-with
 testWithBlock
 	self
 		assert: (self jQuery: [ :html | html heading: 'jQuery' ])

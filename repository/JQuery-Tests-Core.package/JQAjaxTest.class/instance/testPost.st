@@ -1,4 +1,4 @@
-tests
+testing
 testPost
 	self
 		assert: (self jQuery post)

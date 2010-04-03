@@ -1,4 +1,4 @@
-tests-manipulating
+testing-manipulating
 testText
 	self 
 		assert: ((self jQuery: 'p') text)

@@ -1,4 +1,4 @@
-tests-data
+testing-data
 testQueue
 	self
 		assert: ((self jQuery: 'button') queue)

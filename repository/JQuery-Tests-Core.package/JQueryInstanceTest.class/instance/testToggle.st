@@ -1,4 +1,4 @@
-tests-events
+testing-events
 testToggle
 	self
 		assert: ((self jQuery: 'a') toggle: (1 to: 3))

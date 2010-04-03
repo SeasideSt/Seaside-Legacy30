@@ -1,4 +1,4 @@
-tests-animation
+testing-animation
 testAnimateParams
 	self 
 		assert: (self animate parameters: Dictionary new)

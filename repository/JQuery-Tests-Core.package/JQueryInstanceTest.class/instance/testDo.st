@@ -1,4 +1,4 @@
-tests-accessors
+testing-accessors
 testDo
 	self
 		assert: ((self jQuery: 'div')

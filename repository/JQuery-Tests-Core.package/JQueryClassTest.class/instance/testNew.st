@@ -1,4 +1,4 @@
-tests-creation
+testing-creation
 testNew
 	self
 		assert: (self jQuery new)

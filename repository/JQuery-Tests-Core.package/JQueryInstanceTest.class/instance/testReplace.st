@@ -1,4 +1,4 @@
-tests-modifying
+testing-modifying
 testReplace
 	self
 		assert: ((self jQuery: 'p') replaceWith: [ :html | html emphasis: 'Hello' ])

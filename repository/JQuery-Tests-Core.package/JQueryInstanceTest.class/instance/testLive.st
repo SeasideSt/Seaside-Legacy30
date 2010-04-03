@@ -1,4 +1,4 @@
-tests-events
+testing-events
 testLive
 	self
 		assert: ((self jQuery: 'a') live: 'click' do: (self javascript alert: 'Clicked'))

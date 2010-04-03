@@ -1,4 +1,4 @@
-tests-convenience
+testing-convenience
 testSerializeArray
 	self
 		assert: (self jQuery this serializeArray)

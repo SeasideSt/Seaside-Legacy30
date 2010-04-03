@@ -1,4 +1,4 @@
-tests-deprecated
+testing-deprecated
 testIsMozilla
 	self
 		assert: self jQuery isMozilla

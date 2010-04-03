@@ -1,4 +1,4 @@
-tests-data
+testing-data
 testDequeue
 	self
 		assert: ((self jQuery: 'div') dequeue)

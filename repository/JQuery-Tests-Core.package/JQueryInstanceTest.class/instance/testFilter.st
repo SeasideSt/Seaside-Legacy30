@@ -1,4 +1,4 @@
-tests-filtering
+testing-filtering
 testFilter
 	self
 		assert: ((self jQuery: 'div') filter: 'p')

@@ -1,4 +1,4 @@
-tests-attributes
+testing-attributes
 testAttributeAt
 	self
 		assert: ((self jQuery: 'em') attributeAt: 'title')

@@ -1,4 +1,4 @@
-tests-callbacks
+testing-callbacks
 testCallback
 	self 
 		assert: (self ajax callback: [ ])
