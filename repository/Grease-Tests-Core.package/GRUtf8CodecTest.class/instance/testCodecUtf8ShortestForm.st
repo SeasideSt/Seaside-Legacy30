@@ -7,5 +7,5 @@ testCodecUtf8ShortestForm
 		codec := GRCodec forEncoding: codecName.
 		abc := self asString: #(193 129 193 130 193 131 ).
 		self
-			should: [self deny: (codec decode: abc) = 'ABC' ]
-			raise: Error]
+			should: [ self deny: (codec decode: abc) = 'ABC' ]
+			raise: Error ]
