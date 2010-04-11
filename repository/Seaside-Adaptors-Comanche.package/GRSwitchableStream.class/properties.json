@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "pmm 4/10/2010 13:25",
+	"super" : "GRCodecStream",
+	"category" : "Seaside-Adaptors-Comanche",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"codecStream",
+		"socketStream"
+	],
+	"name" : "GRSwitchableStream",
+	"type" : "normal"
+}
