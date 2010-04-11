@@ -1,4 +1,4 @@
-testing-timestamp
+tests-timestamp
 testIsoDate
 	| printer |
 	printer := GRPrinter isoDate.

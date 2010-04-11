@@ -1,3 +1,0 @@
-testing-ANSI
-isSequenced
-	self subclassResponsibility

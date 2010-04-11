@@ -1,4 +1,4 @@
-testing-streams
+tests-streams
 testWriteStreamCrLf
 	| stream |
 	stream := WriteStream on: String new.

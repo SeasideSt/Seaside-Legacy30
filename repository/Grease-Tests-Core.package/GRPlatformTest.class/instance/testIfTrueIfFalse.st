@@ -1,4 +1,4 @@
-testing
+tests
 testIfTrueIfFalse
 	self assert: (false ifFalse: [ #false ]) = #false.
 	self assert: (false ifTrue: [ #true ]) isNil.

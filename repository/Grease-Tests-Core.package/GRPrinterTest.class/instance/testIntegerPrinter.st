@@ -1,4 +1,4 @@
-testing
+tests
 testIntegerPrinter
 	| converter |
 	converter := GRNumberPrinter new.

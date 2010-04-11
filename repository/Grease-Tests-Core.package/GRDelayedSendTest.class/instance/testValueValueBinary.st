@@ -1,4 +1,4 @@
-testing-evaluating
+tests-evaluating
 testValueValueBinary
 	| send |
 	send := GRDelayedSend 

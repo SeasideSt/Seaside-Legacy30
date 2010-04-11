@@ -1,4 +1,4 @@
-testing
+tests
 testGreaseIntegerOnCharacter
 	"ASCII (1 byte)"
 	| oWithStroke euro manna |

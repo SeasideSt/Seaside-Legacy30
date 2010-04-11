@@ -1,4 +1,4 @@
-testing-streams
+tests-streams
 testReadStreamSkip
 	"ANSI 5.9.2.9"
 	

@@ -1,4 +1,4 @@
-testing-evaluating
+tests-evaluating
 testValueWithPossibleArgumentsUnary
 	| send |
 	send := GRDelayedSend 

@@ -4,4 +4,5 @@ greaseTestsCore
 		name: 'Grease-Tests-Core';
 		description: 'Unit tests for the package Grease-Core.';
 		addDependency: 'Grease-Core';
+		url: #seasideUrl;
 		yourself

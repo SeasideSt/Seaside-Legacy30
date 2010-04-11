@@ -1,4 +1,4 @@
 running
 setUp
 	super setUp.
-	dictionary := GRSmallDictionary new
+	collection := self newCollection

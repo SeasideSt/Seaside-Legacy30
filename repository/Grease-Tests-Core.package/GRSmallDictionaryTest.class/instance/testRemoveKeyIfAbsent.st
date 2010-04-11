@@ -1,5 +1,12 @@
-testing-accessing
+tests-accessing
 testRemoveKeyIfAbsent
-	dictionary at: '1' put: 'foo'.
-	self assert: (dictionary removeKey: '1' ifAbsent: [ 'bar' ]) = 'foo'.
-	self assert: (dictionary removeKey: '1' ifAbsent: [ 'bar' ]) = 'bar'
+	self assert: (collection removeKey: '1' ifAbsent: [ 'absent' ]) = 'absent'.
+	collection add: '1' -> 'foo'.
+	collection add: '1' -> 'bar'.
+	collection add: '2' -> 'baz'.
+	self assert: (collection removeKey: '1' ifAbsent: [ 'absent' ]) =
+		(self allowsDuplicateKeys ifTrue: [ #('foo' 'bar') ] ifFalse: [ 'bar' ]).
+	self assertAssociations: (Array with: '2' -> 'baz').
+	self assert: (collection removeKey: '2' ifAbsent: [ 'absent' ]) =
+		(self allowsDuplicateKeys ifTrue: [ #('baz') ] ifFalse: [ 'baz' ]).
+	self assertAssociations: #().

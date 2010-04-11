@@ -1,4 +1,4 @@
-testing
+tests
 testCharacterAsUnicode
 	"test for:
 	Character >> #asUnicode

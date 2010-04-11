@@ -1,4 +1,4 @@
-testing
+tests
 testToDo
 	| collection |
 	collection := OrderedCollection new.

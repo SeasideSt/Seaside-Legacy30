@@ -1,7 +1,6 @@
-testing
+tests
 testCodecLatin1
-	#('iso-8859-1' 'ISO-8859-1' ) do: 
-		[ :each | 
+	#('iso-8859-1' 'ISO-8859-1' ) do:  [ :each | 
 		| codec |
 		codec := GRCodec forEncoding: each.
 		self assert: codec name = each.

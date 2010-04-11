@@ -1,3 +1,0 @@
-configuration
-collectionSpecies
-	^ Array

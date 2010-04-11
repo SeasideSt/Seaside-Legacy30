@@ -1,4 +1,4 @@
-testing
+tests-converting
 testCapitalized
 	self assert: 'capitalized' capitalized = 'Capitalized'.
 	self assert: 'Capitalized' capitalized = 'Capitalized'.

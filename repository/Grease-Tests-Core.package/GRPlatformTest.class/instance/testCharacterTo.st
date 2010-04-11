@@ -1,4 +1,4 @@
-testing
+tests
 testCharacterTo
 	| actual expected |
 	actual := Array withAll: 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_-'.

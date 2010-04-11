@@ -1,5 +1,12 @@
-testing-accessing
+tests-accessing
 testRemoveKey
-	dictionary at: '1' put: 'foo'.
-	self assert: (dictionary removeKey: '1') = 'foo'.
-	self should: [ dictionary removeKey: '1' ] raise: Error
+	self should: [ collection removeKey: '1' ] raise: Error.
+	collection add: '1' -> 'foo'.
+	collection add: '1' -> 'bar'.
+	collection add: '2' -> 'baz'.
+	self assert: (collection removeKey: '1') =
+		(self allowsDuplicateKeys ifTrue: [ #('foo' 'bar') ] ifFalse: [ 'bar' ]).
+	self assertAssociations: (Array with: '2' -> 'baz').
+	self assert: (collection removeKey: '2') =
+		(self allowsDuplicateKeys ifTrue: [ #('baz') ] ifFalse: [ 'baz' ]).
+	self assertAssociations: #().

@@ -1,4 +1,4 @@
-testing-streams
+tests-streams
 testWriteStreamContents
 	"ANSI 5.9.3.1"
 	

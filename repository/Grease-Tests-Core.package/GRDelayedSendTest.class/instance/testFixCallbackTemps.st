@@ -1,4 +1,4 @@
-testing-evaluating
+tests-evaluating
 testFixCallbackTemps
 	| send |
 	send := GRDelayedSend 

@@ -1,7 +1,10 @@
-testing-accessing
+tests-accessing
 testSize
-	self assert: dictionary isEmpty.
-	dictionary at: '1' put: 'foo'.
-	self assert: dictionary size = 1.
-	dictionary at: '2' put: 'bar'.
-	self assert: dictionary size = 2
+	self assert: collection size = 0.
+	collection add: '1' -> 'foo'.
+	self assert: collection size = 1.
+	collection add: '2' -> 'bar'.
+	self assert: collection size = 2.
+	collection add: '1' -> 'baz'.
+	self assert: collection size = 
+		(self allowsDuplicateKeys ifTrue: [ 3 ] ifFalse: [ 2 ]).

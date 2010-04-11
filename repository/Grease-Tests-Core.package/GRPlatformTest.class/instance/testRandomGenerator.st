@@ -1,4 +1,4 @@
-testing-streams
+tests-streams
 testRandomGenerator
 	| generator collection |
 	generator := self platform newRandom.

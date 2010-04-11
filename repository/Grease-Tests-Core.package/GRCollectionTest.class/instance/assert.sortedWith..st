@@ -1,5 +1,7 @@
 asserting
 assert: aCollection sortedWith: sortBlock
+	"Assert that aCollection is correctly sorted according to sortBlock."
+
 	1 to: aCollection size -1 do: [ :index |
 		| a b |
 		a := aCollection at: index.

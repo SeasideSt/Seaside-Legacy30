@@ -1,3 +1,5 @@
 configuration
 duplicateElement
-	^ 1
+	"Answer an element that appears multiple times in #arbitraryCollection."
+
+	^ 3

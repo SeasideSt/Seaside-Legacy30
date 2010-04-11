@@ -1,4 +1,4 @@
-testing-image
+tests-image
 testStartUpList
 	"A smoke test: checks if the test-class can be added and removed to the startup list."
 	

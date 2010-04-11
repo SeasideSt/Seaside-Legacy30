@@ -1,3 +1,0 @@
-testing-ANSI
-isSequencedReadable
-	self subclassResponsibility
