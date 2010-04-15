@@ -8,6 +8,6 @@ seasideNext: anInteger putAll: aCollection startingAt: startIndex
 		^ aCollection ].
 	toPut := binary ifTrue: [ aCollection asByteArray ] ifFalse: [ aCollection asString ].
 	self adjustOutBuffer: anInteger.
-	outBuffer replaceFrom: outNextToWrite to: outNextToWrite + anInteger - 1 with: toPut startingAt: startIndex.
+	outBuffer replaceFrom: outNextToWrite to: outNextToWrite + anInteger with: toPut startingAt: startIndex.
 	outNextToWrite := outNextToWrite + anInteger.
 	self checkFlush
