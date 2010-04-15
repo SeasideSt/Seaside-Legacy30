@@ -8,4 +8,4 @@ testToggle
 		equals: 'Effect.toggle("foo","Slide")'.
 	self
 		assert: (self effect fps: 15; toggleBlind)
-		equals: 'Effect.toggle(this,"Blind",{fps:15})'
+		equals: 'Effect.toggle(this,"Blind",{"fps":15})'
