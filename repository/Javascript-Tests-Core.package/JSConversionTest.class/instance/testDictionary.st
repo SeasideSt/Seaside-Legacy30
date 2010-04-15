@@ -9,7 +9,7 @@ testDictionary
 				at: 'zork'
 					put: 3;
 				yourself)
-		equals: '{foo:1,bar:2,zork:3}'.
+		equals: '{"foo":1,"bar":2,"zork":3}'.
 	self 
 		assert: (GRSmallDictionary new
 				at: ''
@@ -33,4 +33,4 @@ testDictionary
 				at: 'abc1'
 					put: 'totally sexy';
 				yourself)
-		equals: '{abc1:"totally sexy"}'
+		equals: '{"abc1":"totally sexy"}'
