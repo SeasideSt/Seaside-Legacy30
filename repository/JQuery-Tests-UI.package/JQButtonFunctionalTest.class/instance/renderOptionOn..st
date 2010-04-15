@@ -9,8 +9,7 @@ renderOptionOn: html
 				with: [ :group |
 					#(1 2 3) do: [ :each |
 						group radioButton
-							onChange: (html javascript alert: 'hallo');
-							id: html nextId;
+							onChange: (html jQuery ajax serializeForm);
 							value: each.
 						html label
 							for: html lastId;
