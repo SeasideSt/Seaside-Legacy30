@@ -2,4 +2,4 @@ actions
 close
 	"Close the receiving document."
 
-	root closeOn: self
+	root isNil ifFalse: [ root closeOn: self ]
