@@ -2,12 +2,11 @@ converting
 responseFrom: aRequestContext 
 	| swazooResponse |
 	swazooResponse := HTTPResponse new.
-	aRequestContext response headers keysAndValuesDo: 
-		[ :key :value | 
+	aRequestContext response headers keysAndValuesDo: [ :key :value | 
 		key = 'Content-Type' 
 			ifTrue: [ swazooResponse contentType: value greaseString ]
-			ifFalse: 
-				[ | field fieldClass |
+			ifFalse: [
+				| field fieldClass |
 				fieldClass := HeaderField classForFieldName: key.
 				field := fieldClass 
 					newForFieldName: key
