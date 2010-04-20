@@ -1,4 +1,4 @@
-tests
+testing
 testEmail
 	| actual expected |
 	actual := self render: [ :rss |

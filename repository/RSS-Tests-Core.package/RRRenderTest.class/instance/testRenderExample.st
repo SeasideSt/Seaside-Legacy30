@@ -1,4 +1,4 @@
-tests
+testing
 testRenderExample
 	| actualContent expectedContent |
 	actualContent := self render: [ :rss |

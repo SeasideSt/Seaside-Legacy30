@@ -1,4 +1,4 @@
-tests
+testing
 testNewDateAndTime
 	| date emailDate |
 	date := DateAndTime year: 2008 month: 8 day: 1 hour: 9 minute: 4 second: 4 offset: (Duration days: 0 hours: 2 minutes: 0 seconds: 0).
