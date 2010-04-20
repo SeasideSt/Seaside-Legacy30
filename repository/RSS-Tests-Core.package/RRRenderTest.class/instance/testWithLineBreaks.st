@@ -1,4 +1,4 @@
-testing
+tests
 testWithLineBreaks
 	| actualContent expectedContent |
 	actualContent := self render: [ :rss |

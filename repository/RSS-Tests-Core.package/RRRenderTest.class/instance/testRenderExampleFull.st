@@ -1,4 +1,4 @@
-testing
+tests
 testRenderExampleFull
 	| actualContent expectedContent |
 	actualContent := self
