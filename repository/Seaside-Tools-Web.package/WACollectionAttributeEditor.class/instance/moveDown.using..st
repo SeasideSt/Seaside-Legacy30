@@ -1,7 +1,7 @@
 private
 moveDown: aSelectedCollection using: aCollection
 	| index |
-	aSelectedCollection reversed do: [ :each | 
+	aSelectedCollection reverse do: [ :each | 
 		index := aCollection indexOf: each ifAbsent: [ aCollection size ].
 		index < aCollection size
 			ifTrue: [ aCollection swap: index with: index + 1 ] ].
