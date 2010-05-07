@@ -11,4 +11,4 @@ digitsOf: aNumber base: aBaseInteger
 		stream nextPut: (characters 
 			at: 1 + integer - (next * aBaseInteger)).
 		integer := next ].
-	^ stream contents reversed
+	^ stream contents reverse
