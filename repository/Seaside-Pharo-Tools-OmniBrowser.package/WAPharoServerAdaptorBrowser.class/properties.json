@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WASqueakServerAdaptorBrowser",
+	"name" : "WAPharoServerAdaptorBrowser",
 	"type" : "normal"
 }
