@@ -2,11 +2,11 @@
 writerForMimeType: mimeType
 	| sub |
 	mimeType main ~= 'image'
-		ifTrue: [ ^nil ]. 
+		ifTrue: [ ^ nil ]. 
 	"First token is assumed to be 'image'"
 	sub := mimeType sub.
-	sub = 'jpg' ifTrue: [ ^JPEGReadWriter2 ].
-	sub = 'jpeg' ifTrue: [ ^JPEGReadWriter2 ].
+	(sub = 'jpg' or: [ sub = 'jpeg' ])
+		ifTrue: [ ^ Smalltalk at: #JPEGReadWriter2 ifAbsent: [ Smalltalk at: #PluginBasedJPEGReadWriter ifAbsent: [ nil ] ] ].
 	sub = 'png' ifTrue: [ ^PNGReadWriter ].
 	sub = 'pcx' ifTrue: [ ^PCXReadWriter ].
 	sub = 'bmp' ifTrue: [ ^BMPReadWriter ].
