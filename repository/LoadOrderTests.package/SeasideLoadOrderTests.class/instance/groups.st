@@ -15,5 +15,6 @@ groups
 		add: self emailPackages;
 		add: self comanchePackages;
 		add: self cometPackages;
+		add: self slimePackages;
 		yourself.
 		
