@@ -5,7 +5,9 @@ testCopyDispatcher
 	
 	self deny: copy == handler.
 	self assert: copy defaultName = handler defaultName.
-	self assert: copy handlers keys = handler handlers keys.
+	self assert: copy handlers keys size = handler handlers keys size.
+	self assert: (copy handlers keys allSatisfy: [ :each | handler handlers keys includes: each ]).
+	self assert: (handler handlers keys allSatisfy: [ :each | copy handlers keys includes: each ]).
 	
 	copy handlers
 		do: [:each |
