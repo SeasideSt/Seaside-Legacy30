@@ -1,3 +1,3 @@
 private
 buttonStyle
-	^'height:', navMargin asString, 'px;'
+	^'height:', navMargin greaseString, 'px;'

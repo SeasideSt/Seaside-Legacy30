@@ -6,7 +6,7 @@ renderNavElementsOn: html
 		class: 'nav';
 		with: [
 			html div
-				style: 'height:' , self innerHeight asString , 'px';
+				style: 'height:' , self innerHeight greaseString , 'px';
 				class: 'inner';
 				with: [
 					html div

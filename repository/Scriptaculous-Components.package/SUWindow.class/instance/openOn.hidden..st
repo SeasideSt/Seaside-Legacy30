@@ -6,8 +6,8 @@ openOn: aScript hidden: aBoolean
 			aBoolean ifFalse: [self showOn: aScript ].
 			aScript scriptaculous element
 				id: self windowId;
-				styleAt: 'left' put: origin x asString, 'px';
-				styleAt: 'top' put: origin y asString, 'px'.
+				styleAt: 'left' put: origin x greaseString, 'px';
+				styleAt: 'top' put: origin y greaseString, 'px'.
 			aScript scriptaculous element
 				id: self containerId;
 				insert: [:html |

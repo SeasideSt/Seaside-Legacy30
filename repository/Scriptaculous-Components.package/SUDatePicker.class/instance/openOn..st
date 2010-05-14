@@ -5,9 +5,9 @@ openOn: aScript
 	anElement	
 		absolutize;
 		styleAt: 'left'
-			put: origin x asString , 'px';
+			put: origin x greaseString , 'px';
 		styleAt: 'top'
-			put: origin y asString , 'px'.
+			put: origin y greaseString , 'px'.
 	self isOpen
 		ifFalse: [
 			anElement update: self.

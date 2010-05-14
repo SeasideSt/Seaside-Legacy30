@@ -1,3 +1,3 @@
 private
 uid: aString at: anInteger
-	^ uid , '_' , aString , '_' , anInteger asString
+	^ uid , '_' , aString , '_' , anInteger greaseString
