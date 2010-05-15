@@ -7,7 +7,7 @@ WASystemConfiguration subclasses are "read-only" in that their attributes, paren
 WASystemConfiguration classes are singleton. You should use #instance on the class side to get the current instance. You cannot call #copy on a WASystemConfiguration.
 
 Subclasses should implement the following messages:
-	addAttributes:
+	describeOn:
 		
 They may also want to implement:
 	addOverrides:
