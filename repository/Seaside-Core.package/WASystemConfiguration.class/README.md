@@ -1,4 +1,4 @@
-You should subclass WASystemConfiguration to define new attributes. The method #addAttributes is passed an instance of WAAttributes which can be used to create new attributes. The attributes can be configured to specify their default value, label, and so on. See the methods on WAConfigurationAttribute and its subclasses to see what options are available.
+You should subclass WASystemConfiguration to define new attributes. The method #describeOn: is passed an instance of WAAttributes which can be used to create new attributes. The attributes can be configured to specify their default value, label, and so on. See the methods on WAConfigurationDescription to see what options are available.
 
 If a configuration needs to override the value of another WASystemConfiguration or depends on its attributes, implement the method "parents", returning a collection of configuration objects.
 
@@ -10,5 +10,4 @@ Subclasses should implement the following messages:
 	describeOn:
 		
 They may also want to implement:
-	addOverrides:
 	parents
