@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "WAContextTest",
+	"super" : "WAAbstractCanvasBrushTest",
 	"category" : "Seaside-Tests-Canvas",
 	"classinstvars" : [ ],
 	"pools" : [ ],
