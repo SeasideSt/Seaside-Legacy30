@@ -4,7 +4,10 @@
 	"category" : "Grease-Pharo-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"UrlTable",
+		"XmlTable"
+	],
 	"instvars" : [ ],
 	"name" : "GRPharoPlatform",
 	"type" : "normal"
