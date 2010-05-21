@@ -1,5 +1,5 @@
 scripting
 scriptUpdateOn: script
-	script scriptaculous element
+	script prototype element
 		id: uid;
 		update: [:r | self renderBodyOn: r]

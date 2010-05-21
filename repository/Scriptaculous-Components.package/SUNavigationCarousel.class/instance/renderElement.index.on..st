@@ -11,7 +11,7 @@ renderElement: element index: index on: html
 		style: 'height:' , self elementHeight greaseString , 'px';
 		with: 
 			[ html anchor
-				onClick: (html scriptaculous evaluator
+				onClick: (html prototype evaluator
 						callback: 
 							[ :script | 
 							self 

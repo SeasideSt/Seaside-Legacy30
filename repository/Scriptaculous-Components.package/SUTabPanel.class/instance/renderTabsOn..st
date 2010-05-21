@@ -9,8 +9,8 @@ renderTabsOn: html
 				html listItem: [
 					html anchor
 						id: (self uid: 'head' at: index);
-						class: (active ifTrue: ['active']);
-						onClick: (html scriptaculous evaluator
+						class: 'active' if: active;
+						onClick: (html prototype evaluator
 							callback: [ :script | self scriptSelected: element on: script ];
 							return: false);
 						callback: [self selected: element];

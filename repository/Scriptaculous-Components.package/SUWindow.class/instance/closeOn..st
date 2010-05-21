@@ -1,7 +1,7 @@
 scripting
 closeOn: script
 	self close.
-	script scriptaculous element
+	script prototype element
 		id: self componentId;
 		remove.
 	script scriptaculous effect

@@ -1,7 +1,7 @@
 scripting
 openOn: aScript 
 	| anElement |
-	anElement := aScript scriptaculous element id: containerId.
+	anElement := aScript prototype element id: containerId.
 	anElement	
 		absolutize;
 		styleAt: 'left'

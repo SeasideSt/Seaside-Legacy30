@@ -17,14 +17,14 @@ scriptMove: anInteger for: id on: script
 			currentIndex + 1 to: nextIndex do: [:idx | | anItem |
 				anItem := items at: idx.
 				(created includes: anItem) ifFalse: [created add: anItem.
-				script scriptaculous element
+				script prototype element
 					id: (self uid: 'head' at: idx);
 					then: (script element
 						id: (self uid: 'head' at: idx - 1);
 						insertAfter: [ :html | 
 							self renderElement: (items at: idx) index: idx on: html ]) ] ] ] ].
 		buttonId := uid,direction.
-		script scriptaculous element
+		script prototype element
 			id: buttonId;
 			styleAt: 'visibility' put: 'hidden'.
 		script scriptaculous effect id: id;

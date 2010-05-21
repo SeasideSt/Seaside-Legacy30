@@ -7,7 +7,7 @@ scriptSelect: aDate on: script
 		id: widgetId;
 		access: 'value';
 		assign: self formattedResult.
-	script scriptaculous element
+	script prototype element
 		id: uid;
 		remove.
 	open := false

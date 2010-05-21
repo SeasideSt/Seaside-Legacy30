@@ -2,7 +2,7 @@ scripting
 scriptShow: anElement on: aScript
 	| index |
 	index := self findIndex: anElement ifAbsent: [ ^ self ].
-	aScript scriptaculous element
+	aScript prototype element
 		id: (self uid: 'head' at: index);
 		insertAfter: [ :html | 
 			self 
@@ -12,6 +12,6 @@ scriptShow: anElement on: aScript
 		id: (self uid: 'body' at: index);
 		duration: 0.2;
 		blindDown.
-	aScript scriptaculous element
+	aScript prototype element
 		id: (self uid: 'head' at: index);
 		addClassName: 'active'

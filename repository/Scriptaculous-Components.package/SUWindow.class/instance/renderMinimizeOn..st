@@ -4,7 +4,7 @@ renderMinimizeOn: html
 		ifTrue: [
 			html anchor
 					title: 'Minimize';
-					onClick: (html scriptaculous evaluator
+					onClick: (html prototype evaluator
 									callback: [:script | 
 												self collapseOn: script];
 												return: false);

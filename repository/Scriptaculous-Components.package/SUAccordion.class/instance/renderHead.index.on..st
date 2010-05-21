@@ -5,7 +5,7 @@ renderHead: anElement index: anInteger on: html
 		class: 'active' if: (self isVisible: anElement);
 		with: [
 			html anchor
-				onClick: (html scriptaculous evaluator
+				onClick: (html prototype evaluator
 					callback: [ :script | self scriptToggle: anElement on: script ];
 					return: false);
 				callback: [ self toggle: anElement ];

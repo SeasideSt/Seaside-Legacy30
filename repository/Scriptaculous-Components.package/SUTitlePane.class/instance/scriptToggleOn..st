@@ -4,20 +4,20 @@ scriptToggleOn: script
 					id: uid;
 					duration: 0.3;
 					blindUp.
-				script scriptaculous element
+				script prototype element
 					id: 'gfx',uid;
 					removeClassName: 'gfxopen';
 					addClassName: 'gfx']
 		ifFalse: [(loaded not or: [alwaysRefresh])
 					ifTrue: [
-						script scriptaculous element
+						script prototype element
 							id: uid;
 							update: body.
 						loaded := true].
-				script scriptaculous element
+				script prototype element
 					id: uid;
 					removeClassName: 'closed'.
-				script scriptaculous element
+				script prototype element
 					id: 'gfx',uid;
 					removeClassName: 'gfx';
 					addClassName: 'gfxopen'.
