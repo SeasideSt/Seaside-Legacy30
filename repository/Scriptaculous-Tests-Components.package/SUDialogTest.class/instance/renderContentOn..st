@@ -3,5 +3,5 @@ renderContentOn: html
 		html paragraph: 'Window answer test'.
 		html paragraph: [
 			html anchor
-				onClick: (html scriptaculous evaluator callback: [:s | answerBlock value: s]);
+				onClick: (html prototype evaluator callback: [:s | answerBlock value: s]);
 				with: 'OK']

@@ -13,15 +13,15 @@ renderContentOn: html
 					html tableData: [ html textInput id: theId ].
 					html tableData: [
 						html button value: 'Set date';
-							onClick: (html scriptaculous evaluator
-								callback: [:v | self setupDatePickerOn: theId div: divId origin: v] value: (html scriptaculous element id: theId; cumulativeOffset);
+							onClick: (html prototype evaluator
+								callback: [:v | self setupDatePickerOn: theId div: divId origin: v] value: (html prototype element id: theId; cumulativeOffset);
 								callback: [:script | self openDatePickerOn: script];
 											return: false) ] ].
 				html tableRow: [
 					html tableData: [ html textInput id: theId2 ].
 					html tableData: [
 						html button value: 'Set date & time';
-							onClick: (html scriptaculous evaluator
-								callback: [:v | self setupDateTimePickerOn: theId2 div: divId origin: v] value: (html scriptaculous element id: theId2; cumulativeOffset);
+							onClick: (html prototype evaluator
+								callback: [:v | self setupDateTimePickerOn: theId2 div: divId origin: v] value: (html prototype element id: theId2; cumulativeOffset);
 								callback: [:script | self openDateTimePickerOn: script];
 											return: false) ] ] ] ].
