@@ -1,7 +1,8 @@
 rendering
 renderInline: aBlock factor: factor key: key on: html 
-	| startTime endTime count backColor anAssociation title referenceValue spi context document renderer stream |
+	| startTime endTime count backColor anAssociation title referenceValue spi context document renderer stream runTime |
 	count := 0.
+	runTime := 200.
 	anAssociation := referenceDict 
 		at: key
 		ifAbsent: [ 'Undefined' -> 100000 ].
@@ -25,14 +26,14 @@ renderInline: aBlock factor: factor key: key on: html
 		with: 
 			[ html heading: title.
 			startTime := Time millisecondClockValue.
-			endTime := startTime + 100.
+			endTime := startTime + runTime.
 			[ Time millisecondClockValue < endTime ] whileTrue: 
 				[ count := count + 1.
 				renderer
 					render: aBlock;
 					flush ] ].
 	builder closeDocument: document.
-	spi := (count / referenceValue * 100) rounded.
+	spi := (count / referenceValue * (10000 / runTime)) rounded.
 	backColor := spi > 100 
 		ifTrue: [ '#5f5' ]
 		ifFalse: 
