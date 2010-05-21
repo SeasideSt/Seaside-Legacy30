@@ -7,5 +7,5 @@ nextPut: aCharacter
 	shouldEncode := Latin1ToUtf8Map at: codePoint.
 	shouldEncode = 1
 		ifTrue: [ stream nextPutAll: (Latin1ToUtf8Encodings at: codePoint + 1) ]
-		ifFalse: [ stream nextPut: aCharacter value ]
+		ifFalse: [ stream nextPut: aCharacter ]
 	
