@@ -5,7 +5,10 @@ testCodecLatin1
 		codec := GRCodec forEncoding: each.
 		self assert: codec name = each.
 		self assert: codec url name = each.
-		self assert: (codec encode: self latin1String) = self latin1String.
-		self assert: (codec url encode: self latin1String) = self latin1String.
-		self assert: (codec decode: self latin1String) = self latin1String.
-		self assert: (codec url decode: self latin1String) = self latin1String ]
+		
+		"Dialects may not guarantee anything about the comparability of
+		 encoded strings.  Convert to ByteArray for simplicity."
+		self assert: (codec encode: self decodedString) asByteArray = self latin1String asByteArray.
+		self assert: (codec url encode: self decodedString) asByteArray = self latin1String asByteArray.
+		self assert: (codec decode: self latin1String) = self decodedString.
+		self assert: (codec url decode: self latin1String) = self decodedString ]
