@@ -1,10 +1,11 @@
 actions
 goAnchors
-	| component |
+	
 	1 
 		to: 5
 		do: 
 			[ :each | 
+			| component |
 			component := WAComponent new.
 			component addMessage: 
 				[ :html | 
