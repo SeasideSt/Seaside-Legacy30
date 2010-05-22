@@ -1,3 +1,4 @@
 processing
 processOn: aStream with: unused
-	self script: callback on: aStream
+	callback isNil
+		ifFalse: [ self script: callback on: aStream ]
