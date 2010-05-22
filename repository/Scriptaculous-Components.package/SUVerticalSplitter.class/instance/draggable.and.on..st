@@ -17,7 +17,7 @@ draggable: aBeforeItem and: anAfterItem on: html
 					leftElement.style.width = leftWidth + "px";
 					rightElement.style.width = rightWidth + "px";
 				}');
-		onEnd: (html scriptaculous request
+		onEnd: (html prototype request
 				callback: [ :value | aBeforeItem size: value ]
 					value: (JSStream on: 'arguments[0].element.previous().offsetWidth + ''px''');
 				callback: [ :value | anAfterItem size: value ]
