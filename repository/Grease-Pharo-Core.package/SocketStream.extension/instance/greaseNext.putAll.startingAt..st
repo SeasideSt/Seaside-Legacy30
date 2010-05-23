@@ -1,5 +1,5 @@
 *grease-pharo-core
-seasideNext: anInteger putAll: aCollection startingAt: startIndex
+greaseNext: anInteger putAll: aCollection startingAt: startIndex
 	"Put a String or a ByteArray onto the stream starting at the given position.
 	Currently a large collection will allocate a large buffer."
 
