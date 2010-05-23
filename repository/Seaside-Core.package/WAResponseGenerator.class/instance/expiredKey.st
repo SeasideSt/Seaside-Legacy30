@@ -5,9 +5,8 @@ expiredKey
 	| url |
 	self request isXmlHttpRequest
 		ifTrue: [ ^ self forbidden ].
-	url := WAUrl new.
-	url addAllToPath: self request url path.
-	url takeServerParametersFromRequest: self request.
+	url := self requestContext handler url.
+	url addAllToPath: self requestContext consumer upToEnd.
 	self request isGet ifTrue: [
 		self request fields keysAndValuesDo: [ :key :value |
 			(url isSeasideField: key) 
