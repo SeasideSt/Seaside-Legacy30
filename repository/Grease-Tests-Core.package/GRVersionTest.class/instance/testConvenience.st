@@ -19,6 +19,14 @@ testConvenience
 	self assert: version isBeta.
 	self deny: version isAlpha.
 	self deny: version isFinal.
+	version beReleaseCandidate.
+	self assert: version stage = #rc.
+	self assert: version stageNumber isNil.
+	self assert: version isReleaseCandidate.
+	version beReleaseCandidate: 1.
+	self assert: version stage = #rc.
+	self assert: version stageNumber = 1.
+	self assert: version isReleaseCandidate.
 	version beAlpha: 1.
 	self assert: version stage = #alpha.
 	self assert: version stageNumber = 1.
