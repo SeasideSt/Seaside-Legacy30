@@ -3,7 +3,7 @@ scriptSelect: aDate on: script
 	"Ajax select"
 	self select: aDate.
 	widgetId isNil ifTrue: [ ^ self ].
-	script scriptaculous element
+	script prototype element
 		id: widgetId;
 		access: 'value';
 		assign: self formattedResult.
