@@ -1,0 +1,1 @@
+Describes and demonstrates the code in WAMultiCounter

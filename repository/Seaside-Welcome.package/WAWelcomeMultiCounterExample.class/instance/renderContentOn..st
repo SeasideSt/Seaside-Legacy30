@@ -1,0 +1,30 @@
+rendering
+renderContentOn: html
+	html heading level1 with: 'Multi-Counter'.
+	
+	html paragraph: [
+		html text: 'Multicounter is a simple extension to the '.
+		html anchor callback: [self show: WAWelcomeCounterExample new]; with: 'Counter'.
+		html text: ' application. It displays several instances of the same '.
+		html anchor callback: [self show: WAWelcomeCounterExample new]; with: 'counter'.
+		html text: ' component:'
+		].
+	
+	html div class: #seasideExample; with: [ html render: multicounter].
+	
+	html paragraph: [
+		html text: 'This component can be written with a few lines of code. It is implemented in the class '; code: 'WAMultiCounter'; text: ', a subclass of '; code: 'WAComponent. '
+	].
+
+	html paragraph: 'The first method is used to initialize the component, in this case we instantiate 5 counters:'.
+	 
+	self renderInitializeCodeOn: html.
+	
+	html paragraph: 'We also need to tell Seaside what child components we intend to display, in our case this is just the collection of counter instances:'.
+	
+	self renderChildrenCodeOn: html.
+	
+	html paragraph: 'Finally we display each of the components separated by a horizontale rule:'.
+	
+	self renderRenderContentsOnCodeOn: html
+	
