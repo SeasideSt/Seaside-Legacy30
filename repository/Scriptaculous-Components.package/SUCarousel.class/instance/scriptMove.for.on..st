@@ -19,7 +19,7 @@ scriptMove: anInteger for: id on: script
 				(created includes: anItem) ifFalse: [created add: anItem.
 				script prototype element
 					id: (self uid: 'head' at: idx);
-					then: (script element
+					then: (script prototype element
 						id: (self uid: 'head' at: idx - 1);
 						insertAfter: [ :html | 
 							self renderElement: (items at: idx) index: idx on: html ]) ] ] ] ].
@@ -31,4 +31,4 @@ scriptMove: anInteger for: id on: script
 			duration: animationSpeed;
 			y: (self moveSizeY: anInteger); x: (self moveSizeX: anInteger);
 			move;
-			onAfterFinish: (PTElement new id: buttonId; styleAt: 'visibility' put: 'visible').
+			onAfterFinish: (script prototype element id: buttonId; styleAt: 'visibility' put: 'visible').
