@@ -4,4 +4,4 @@ canvasPackages
 	^Array 
 		with: seaside30 -> 'Seaside-Canvas-lr.94.mcz'
 		with: seaside30 -> 'Seaside-Pharo-Canvas-lr.3.mcz'
-		with: seaside30 -> 'Seaside-Tests-Canvas-lr.47.mcz'.
+		with: seaside30 -> 'Seaside-Tests-Canvas-pmm.48.mcz'.

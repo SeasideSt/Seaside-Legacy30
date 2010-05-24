@@ -2,4 +2,4 @@ packages-basic
 widgetsPackages
 
 	^Array
-		with: seaside30 -> 'Seaside-Widgets-jok.17.mcz'.
+		with: seaside30 -> 'Seaside-Widgets-obi.18.mcz'.
