@@ -13,7 +13,7 @@ renderContentOn: html
 	self renderGoCodeOn: html.
 	
 	html paragraph: [
-		html text: 'To let the user choose from a famous Swiss cheese we use the convenience method '; code: '#chooseFrom:caption:'; text: ' which returns the chosen element from a collection or nil if the user cancelled the dialog. In this case we simply ask again.'
+		html text: 'To allow the user to choose from a list of famous Swiss cheeses we use the convenience method '; code: '#chooseFrom:caption:'; text: ' which returns the chosen element from a collection or '; code: 'nil'; text: ' if the user cancels the dialog. If '; code: 'nil'; text: ' is returned, we simply ask again.'
 		].
 	
 	self renderChooseCheeseCodeOn: html.

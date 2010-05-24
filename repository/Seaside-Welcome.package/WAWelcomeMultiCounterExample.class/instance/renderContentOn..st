@@ -6,7 +6,7 @@ renderContentOn: html
 		html text: 'Multicounter is a simple extension to the '.
 		html anchor callback: [self show: WAWelcomeCounterExample new]; with: 'Counter'.
 		html text: ' application. It displays several instances of the same '.
-		html anchor callback: [self show: WAWelcomeCounterExample new]; with: 'counter'.
+		html anchor callback: [self show: WAWelcomeCounterExample new]; with: 'Counter'.
 		html text: ' component:'
 		].
 	
@@ -24,7 +24,7 @@ renderContentOn: html
 	
 	self renderChildrenCodeOn: html.
 	
-	html paragraph: 'Finally we display each of the components separated by a horizontale rule:'.
+	html paragraph: 'Finally we display each of the components separated by a horizontal rule:'.
 	
 	self renderRenderContentsOnCodeOn: html
 	
