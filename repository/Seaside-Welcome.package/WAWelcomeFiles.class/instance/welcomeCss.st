@@ -76,4 +76,12 @@ pre.codeSample {
 	color: #aaaaaa;
 }
 
+.dialog {
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	background: white;
+	padding: 10px;
+	border: 1px solid black;
+}
+
 '

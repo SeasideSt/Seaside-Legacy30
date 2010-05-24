@@ -3,6 +3,7 @@ renderServerUrlOn: html
 	| id |
 	html div
 		id: (id := html nextId);
+		class: 'dialog';
 	      script: (html jQuery new dialog
 			html: WAWelcomeUrlDialog new;
 			title: 'Configure server URL';
