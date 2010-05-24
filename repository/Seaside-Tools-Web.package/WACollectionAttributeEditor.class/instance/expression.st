@@ -1,3 +1,3 @@
 accessing
 expression
-	^self configuration expressionAt: attribute key ifAbsent: [].
+	^ self configuration expressionAt: attribute key ifAbsent: [ nil ].

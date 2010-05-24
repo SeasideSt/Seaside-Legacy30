@@ -3,7 +3,7 @@ currentCollectionAt: key
 	"get the currently defined values with infos for collection attributes"
 	
 	| expression attributeCollection |
-	expression := self expressionAt: key ifAbsent: [].
+	expression := self expressionAt: key ifAbsent: [ nil ].
 	expression isNil
 		ifTrue: [attributeCollection := (self at: key) collect: [:each | #inherited -> each ] ]
 		ifFalse: [
