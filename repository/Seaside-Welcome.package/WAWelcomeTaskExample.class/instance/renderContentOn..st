@@ -1,11 +1,9 @@
 rendering
 renderContentOn: html
 	html heading level1 with: 'Task'.
-	html paragraph: [
-		html text: 'Complex, multi-page workflows can be expressed in Seaside with a single method. Unlike many web frameworks  which require a separate handler for each page or request, Seaside models an entire user session as a continuous piece of code, with natural, linear control flow.'.
-	].
+	html paragraph: 'Complex, multi-page workflows can be expressed in Seaside with a single method. Unlike many web frameworks  which require a separate handler for each page or request, Seaside models an entire user session as a continuous piece of code, with natural, linear control flow.'.
 
-	html div class: #seasideExample; with: [ html render: taskExample].
+	html div class: #seasideExample; with: taskExample.
 		
 	html paragraph: [		
 		html text: 'This example subclasses '; code: 'WATask'; text: ' and implements the hook method '; code: '#go'.
@@ -14,7 +12,7 @@ renderContentOn: html
 
 	self renderGoCodeOn: html.
 	
-	html paragraph with: [
+	html paragraph: [
 		html text: 'To let the user choose from a famous Swiss cheese we use the convenience method '; code: '#chooseFrom:caption:'; text: ' which returns the chosen element from a collection or nil if the user cancelled the dialog. In this case we simply ask again.'
 		].
 	

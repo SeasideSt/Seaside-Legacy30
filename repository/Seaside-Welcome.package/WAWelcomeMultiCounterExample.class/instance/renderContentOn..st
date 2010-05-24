@@ -10,7 +10,7 @@ renderContentOn: html
 		html text: ' component:'
 		].
 	
-	html div class: #seasideExample; with: [ html render: multicounter].
+	html div class: #seasideExample; with: multicounter.
 	
 	html paragraph: [
 		html text: 'This component can be written with a few lines of code. It is implemented in the class '; code: 'WAMultiCounter'; text: ', a subclass of '; code: 'WAComponent. '

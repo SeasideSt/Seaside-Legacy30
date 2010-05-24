@@ -1,7 +1,3 @@
-rendering
+hooks
 children
-	example ifNil: [
-		^ #()
-		] ifNotNil: [
-		^ Array with: example
-		]
+	^ Array with: example

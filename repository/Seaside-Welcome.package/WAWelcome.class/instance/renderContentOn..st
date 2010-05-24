@@ -4,18 +4,14 @@ renderContentOn: html
 	html div
 		class: #content;
 		with: [
-			self renderIntroTextOn: html.
-	
+			self renderIntroTextOn: html.	
 			html table
 				class: #introTable;
 				with: [ 
 					html tableRow:[ 
-						html tableData with: [self renderNewToSeasideOn: html].
-						html tableData with: [
+						html tableData: [ self renderNewToSeasideOn: html ].
+						html tableData: [
 							self renderExperiencedUserOn: html.
-							self renderConfigurationOn: html ]
-					]
-				].
-		self renderExampleOn: html.
-		]
+							self renderConfigurationOn: html ] ] ].
+		self renderExampleOn: html ]
 
