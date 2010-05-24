@@ -20,6 +20,6 @@ renderHeaderBarOn: html
 				with: [
 					html anchor
 						url:  'http://www.seaside.st';
-						with: [html heading level2; with: 'Seaside 3.0']
+						with: [ html heading level2; with: 'Seaside ', GRPlatform current seasideVersion greaseString ]
 				]
 			]

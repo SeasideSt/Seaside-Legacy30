@@ -11,7 +11,9 @@ renderContentOn: html
 				with: [ 
 					html tableRow:[ 
 						html tableData with: [self renderNewToSeasideOn: html].
-						html tableData with: [self renderExperiencedUserOn: html]
+						html tableData with: [
+							self renderExperiencedUserOn: html.
+							self renderConfigurationOn: html ]
 					]
 				].
 		self renderExampleOn: html.

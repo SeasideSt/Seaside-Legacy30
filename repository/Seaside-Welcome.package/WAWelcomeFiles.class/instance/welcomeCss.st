@@ -1,9 +1,9 @@
 accessing
 welcomeCss	^ '
 body{
-border:0 none;
-margin:0;
-padding:0;
+	border:0 none;
+	margin:0;
+	padding:0;
 }	
 	
 .content {
@@ -11,24 +11,24 @@ padding:0;
 }
 
 .header {
-background: #DCEBED;
-height: 50px;
+	background: #DCEBED;
+	height: 50px;
 }
 
 .headerImage {
-float:left;
+	float:left;
 }
 
 .headerText {
-padding: 10px;
+	padding: 10px;
 }
 
 .introText {
-margin-top: 20px;
+	margin-top: 20px;
 }
 
 a img {
-border: none;
+	border: none;
 }
 
 .introTable {
@@ -39,23 +39,17 @@ border: none;
 
 
 .introTable td {
-vertical-align: top;
-width:320px;
+	vertical-align: top;
+	width:320px;
 }
 
 
-.experiencedUser {
--moz-border-radius: 10px;
--webkit-border-radius: 10px;
-background:#F0F0E7;
-padding: 10px;
-}
-
-.newToSeaside {
-background:#F0F0E7;
--moz-border-radius: 10px;
--webkit-border-radius: 10px;
-padding: 10px;
+.box {
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	background:#F0F0E7;
+	padding: 10px;
+	margin-bottom: 10px;
 }
 
 .example {
@@ -76,6 +70,10 @@ padding: 10px;
 
 pre.codeSample {
 	margin: 2em;
+}
+
+.sampleValue {
+	color: #aaaaaa;
 }
 
 '

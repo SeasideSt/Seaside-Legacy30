@@ -1,3 +1,9 @@
 class initialization
 initialize
-	WAAdmin register: self asApplicationAt: 'welcome'
+	| application |
+	application := WAAdmin register: self asApplicationAt: 'welcome'.
+	WAAdmin defaultDispatcher defaultName: 'welcome'.
+	application
+		addLibrary: JQDeploymentLibrary;
+		addLibrary: JQUiDeploymentLibrary;
+		addLibrary: JQUiLightnessTheme
