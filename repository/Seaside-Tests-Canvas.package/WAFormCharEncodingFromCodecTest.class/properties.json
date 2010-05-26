@@ -1,11 +1,11 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "WAAbstractCanvasBrushTest",
 	"category" : "Seaside-Tests-Canvas",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WAFormCharEncodingTest",
+	"name" : "WAFormCharEncodingFromCodecTest",
 	"type" : "normal"
 }
