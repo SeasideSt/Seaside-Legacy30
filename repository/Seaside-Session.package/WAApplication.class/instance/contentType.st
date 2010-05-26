@@ -1,5 +1,5 @@
 configuration
 contentType
 	^ self mimeType seasideMimeType
-		charset: self charSet;
+		charset: self requestContext charSet;
 		yourself
