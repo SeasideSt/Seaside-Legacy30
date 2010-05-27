@@ -7,8 +7,8 @@ testCodecLatin1
 		self assert: codec url name = each.
 		
 		"Dialects may not guarantee anything about the comparability of
-		 encoded strings.  Convert to ByteArray for simplicity."
-		self assert: (codec encode: self decodedString) asByteArray = self latin1String asByteArray.
-		self assert: (codec url encode: self decodedString) asByteArray = self latin1String asByteArray.
+		 encoded strings.  Convert to Strings for simplicity."
+		self assert: (codec encode: self decodedString) greaseString = self latin1String greaseString.
+		self assert: (codec url encode: self decodedString) greaseString = self latin1String greaseString.
 		self assert: (codec decode: self latin1String) = self decodedString.
 		self assert: (codec url decode: self latin1String) = self decodedString ]
