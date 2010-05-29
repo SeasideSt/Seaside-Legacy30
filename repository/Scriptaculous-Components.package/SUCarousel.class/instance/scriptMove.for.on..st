@@ -31,4 +31,4 @@ scriptMove: anInteger for: id on: script
 			duration: animationSpeed;
 			y: (self moveSizeY: anInteger); x: (self moveSizeX: anInteger);
 			move;
-			onAfterFinish: (script prototype element id: buttonId; styleAt: 'visibility' put: 'visible').
+			onAfterFinish: (PTElement new id: buttonId; styleAt: 'visibility' put: 'visible').
