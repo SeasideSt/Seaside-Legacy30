@@ -6,11 +6,13 @@ renderTopBarOn: html
 		with: 
 			[ handler := component selection.
 			handler isNil ifFalse: 
-				[ html anchor
-					class: 'wa-action';
-					url: handler url;
-					with: 'Open'.
-				html space ].
+				[handler isDispatcher not
+					ifTrue: [
+						html anchor
+							class: 'wa-action';
+							url: handler url;
+							with: 'Open'.
+						html space ] ].
 			((WAConfigurationToolPlugin 
 				allSubclassesOn: handler
 				for: component) select: [ :each | each isActive ]) 

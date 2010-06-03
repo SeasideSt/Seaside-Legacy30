@@ -6,4 +6,9 @@ renderRowName: anEntryPoint named: aString on: html
 		with: [
 			anEntryPoint isDispatcher
 				ifTrue: [	 html  text: aString , '/' ]
-				ifFalse: [ html text: aString ] ]
+				ifFalse: [
+					html text: aString.
+					self defaultDispatcher defaultName = anEntryPoint url greaseString 
+						 ifTrue: [ html span
+									title: 'Default application';
+									with: ' (*)'] ] ]

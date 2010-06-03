@@ -1,4 +1,4 @@
 actions
 setDefault
-	selection isNil ifFalse: [ dispatcher defaultName: selection name ]
+	selection isNil ifFalse: [ self defaultDispatcher defaultName: self selectionPath ]
 								
