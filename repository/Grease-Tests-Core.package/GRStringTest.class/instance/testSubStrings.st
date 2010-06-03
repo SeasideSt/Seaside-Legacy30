@@ -17,3 +17,10 @@ testSubStrings
 	self assert: tokens first = 'abc'.
 	self assert: tokens second = 'def'.
 	self assert: tokens third = 'ghi'.
+
+	"also ensure behavior consistent for several delimiters in a row at beginning and end of string...for completeness"
+	tokens := ',.abc,.def.ghi.,' subStrings: '.,'.
+	self assert: tokens size = 3.
+	self assert: tokens first = 'abc'.
+	self assert: tokens second = 'def'.
+	self assert: tokens third = 'ghi'.

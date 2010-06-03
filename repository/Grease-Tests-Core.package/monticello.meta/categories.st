@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'Grease-Tests-Core'!
+SystemOrganization addCategory: 'Grease-Tests-Core'!
