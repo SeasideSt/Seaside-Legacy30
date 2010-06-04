@@ -13,7 +13,8 @@ testCopyUpTo
 		sub := collection copyUpTo: self excludedElement.
 		self assert: sub validSequencedNewResponseFrom: collection.
 		self assert: sub size = collection size.
-		self assert: sub = collection ].
+		collection keysAndValuesDo: [:index :value |
+			self assert: (sub at: index) = value ]].
 	
 	"match an element"
 	sub := collection copyUpTo: self includedElement.
