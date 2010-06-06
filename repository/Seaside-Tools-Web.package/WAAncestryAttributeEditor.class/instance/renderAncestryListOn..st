@@ -24,7 +24,7 @@ renderAncestryListOn: html
 				html anchor
 					title: 'Remove parent configuration';
 					onClick: 'return submitForm(this)';
-					callback: [self configuration removeParent: selectedConfig contents];
+					callback: [self removeConfiguration: selectedConfig contents];
 					with: 'X'.
 				html break; break.
 				html anchor

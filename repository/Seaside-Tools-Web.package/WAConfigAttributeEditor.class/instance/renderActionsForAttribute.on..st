@@ -28,10 +28,12 @@ renderActionsForAttribute: anAttribute on: html
 		wasInherited ifFalse: [
 			(self hasLocalValueForAttribute: anAttribute)
 				ifTrue: [
-					html anchor
-						onClick: 'return submitForm(this)';
-						callback: [ self clearAttribute: anAttribute ];
-						with: 'Clear' ]
+					self canClear
+						ifTrue: [
+							html anchor
+								onClick: 'return submitForm(this)';
+								callback: [ self clearAttribute: anAttribute ];
+								with: 'Clear' ] ]
 				ifFalse: [
 					anAttribute default isNil
 						ifTrue: [
