@@ -1,3 +1,3 @@
 accessing
 newEvent
-	^ JQEvent new
+	^ self jQuery event
