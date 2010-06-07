@@ -1,5 +1,7 @@
 initialization
 initialize
 	| application |
-	application := self registerAsApplication: 'comet/report'.
-	application addLibrary: JQDevelopmentLibrary; addLibrary: CTLibrary
+	application := WAAdmin register: self asApplicationAt: 'comet/report'.
+	application
+		addLibrary: JQDevelopmentLibrary;
+		addLibrary: CTLibrary
