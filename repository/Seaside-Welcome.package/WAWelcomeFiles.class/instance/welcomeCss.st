@@ -47,6 +47,7 @@ a img {
 .box {
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
+	border-radius:10px;
 	background:#F0F0E7;
 	padding: 10px;
 	margin-bottom: 10px;
@@ -57,6 +58,7 @@ a img {
 	padding: 10px;
 	background: #F9F9F9;
 	border: 1px solid #93BDD5;
+	border-radius:10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 }
@@ -79,6 +81,7 @@ pre.codeSample {
 .dialog {
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
+	border-radius:10px;
 	background: white;
 	padding: 10px;
 	border: 1px solid black;

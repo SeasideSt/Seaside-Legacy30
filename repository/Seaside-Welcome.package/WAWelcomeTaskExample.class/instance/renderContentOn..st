@@ -19,7 +19,7 @@ renderContentOn: html
 	self renderChooseCheeseCodeOn: html.
 	
 	html paragraph: [
-		html text: 'Then we let the user confirm his choice. '; code: '#confirm:'; text: ' answers a '; code: 'boolean'; text: ', '; code: 'true'; text:' or '; code: 'false'; text:':'.
+		html text: 'Then we ask the user to confirm their choice. The '; code: '#confirm:'; text: ' method answers a '; code: 'boolean:'
 		].
 	
 	self renderConfirmCheeseCodeOn: html.

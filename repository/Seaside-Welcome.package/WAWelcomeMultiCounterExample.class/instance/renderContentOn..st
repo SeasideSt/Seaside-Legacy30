@@ -13,14 +13,14 @@ renderContentOn: html
 	html div class: #seasideExample; with: multicounter.
 	
 	html paragraph: [
-		html text: 'This component can be written with a few lines of code. It is implemented in the class '; code: 'WAMultiCounter'; text: ', a subclass of '; code: 'WAComponent. '
+		html text: 'This component is implemented in a few lines of code. The code is contained in the class '; code: 'WAMultiCounter'; text: ', a subclass of '; code: 'WAComponent. '
 	].
 
 	html paragraph: 'The first method is used to initialize the component, in this case we instantiate 5 counters:'.
 	 
 	self renderInitializeCodeOn: html.
 	
-	html paragraph: 'We also need to tell Seaside what child components we intend to display, in our case this is just the collection of counter instances:'.
+	html paragraph: 'We then tell Seaside which child components we intend to display. In our case this is just the collection of counter instances:'.
 	
 	self renderChildrenCodeOn: html.
 	
