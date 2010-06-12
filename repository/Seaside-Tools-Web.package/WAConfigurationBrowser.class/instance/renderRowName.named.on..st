@@ -8,7 +8,7 @@ renderRowName: anEntryPoint named: aString on: html
 				ifTrue: [	 html  text: aString , '/' ]
 				ifFalse: [
 					html text: aString.
-					self defaultDispatcher defaultName = anEntryPoint url greaseString 
+					(WAUrl absolute: self defaultDispatcher defaultName) = anEntryPoint url
 						 ifTrue: [ html span
 									title: 'Default application';
 									with: ' (*)'] ] ]
