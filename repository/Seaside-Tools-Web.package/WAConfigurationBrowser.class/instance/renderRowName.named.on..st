@@ -8,7 +8,7 @@ renderRowName: aHandler named: aString on: html
 				ifTrue: [	 html  text: aString , '/' ]
 				ifFalse: [
 					html text: aString.
-					self defaultDispatcher currentHandler == aHandler
+					self defaultDispatcher defaultHandler == aHandler
 							ifTrue: [ html span
 										title: 'Default application';
 										with: ' (*)'] ] ]
