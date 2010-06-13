@@ -1,4 +1,4 @@
 private
 selectionPath
 	selection ifNil: [ ^ '/' ].
-	^ selection url greaseString
+	^ selection url pathString

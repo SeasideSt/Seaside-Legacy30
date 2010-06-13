@@ -1,14 +1,14 @@
 rendering-rows
-renderRowName: anEntryPoint named: aString on: html
+renderRowName: aHandler named: aString on: html
 	html anchor
-		class: 'selected' if: anEntryPoint = selection;
-		callback: [ self configure: anEntryPoint ];
+		class: 'selected' if: aHandler = selection;
+		callback: [ self configure: aHandler ];
 		with: [
-			anEntryPoint isDispatcher
+			aHandler isDispatcher
 				ifTrue: [	 html  text: aString , '/' ]
 				ifFalse: [
 					html text: aString.
-					(WAUrl absolute: self defaultDispatcher defaultName) = anEntryPoint url
-						 ifTrue: [ html span
-									title: 'Default application';
-									with: ' (*)'] ] ]
+					self defaultDispatcher currentHandler == aHandler
+							ifTrue: [ html span
+										title: 'Default application';
+										with: ' (*)'] ] ]

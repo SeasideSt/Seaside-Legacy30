@@ -5,5 +5,5 @@ initialRequest: aRequest
 		[ :className | 
 		navigation components do: 
 			[ :each | 
-			"#seasideString is required because of Symbol <-> String comparison"
+			"#greaseString is required because of Symbol <-> String comparison"
 			each value class name greaseString = className ifTrue: [ navigation select: each key ] ] ]
