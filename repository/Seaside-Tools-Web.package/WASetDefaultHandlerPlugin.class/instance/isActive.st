@@ -1,3 +1,3 @@
 testing
 isActive
-	^ self requestor selection isDispatcher not
+	^ self handler notNil and: [ self handler parent notNil ]

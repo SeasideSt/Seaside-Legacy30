@@ -1,3 +1,3 @@
 accessing
 clickScript
-	^ 'return confirm("Really delete this handler?")'
+	^ 'return confirm("Really delete ', self handler basicUrl pathString ,'?")'

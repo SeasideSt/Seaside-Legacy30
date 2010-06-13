@@ -3,18 +3,16 @@ renderTopBarOn: html
 	| handler |
 	html div
 		class: 'topbar';
-		with: 
-			[ handler := component selection.
-			handler isNil ifFalse: 
-				[handler isDispatcher not
-					ifTrue: [
-						html anchor
-							class: 'wa-action';
-							url: handler url;
-							with: 'Open'.
-						html space ] ].
-			((WAConfigurationToolPlugin 
+		with: [
+			| selectedTools |
+			handler := component selection.
+			selectedTools := ((WAConfigurationToolPlugin 
 				allSubclassesOn: handler
-				for: component) select: [ :each | each isActive ]) 
-				do: [ :each | html render: each ]
-				separatedBy: [ html space ] ]
+				for: component)
+					select: [ :each | each isActive ]).
+					
+			(selectedTools	select: [:each | each priority < 0]) do: [ :each | html render: each ]
+						separatedBy: [ html space ].
+			html text: ' | '.	
+			(selectedTools	select: [:each | each priority >= 0]) do: [ :each | html render: each ]
+						separatedBy: [ html space ] ].

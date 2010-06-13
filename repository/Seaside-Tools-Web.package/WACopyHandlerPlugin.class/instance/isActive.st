@@ -1,3 +1,3 @@
 actions
 isActive
-	^ self handler notNil
+	^ self handler notNil and: [ self handler parent notNil ]

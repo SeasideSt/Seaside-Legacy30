@@ -1,3 +1,0 @@
-accessing
-dispatcher 
-	^component dispatcher 

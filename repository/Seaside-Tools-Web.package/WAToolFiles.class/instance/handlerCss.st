@@ -40,6 +40,17 @@ table.wa-config td {padding:0px}
 .wa-config .header {background:#01598d; color: #fff; padding:5px;font-size:120%}
 
 div.help {padding:8px;white-space:pre}
+ .handler-name {font-family: monospace;}
+h1.selection-title  {
+background-color:#EEEEEE;
+font-size:large;
+font-weight:bold;
+margin-top:0;
+padding-top:4px;
+padding-bottom:4px;
+padding-left:4px;
+width:100%;
+}
 
 
 /* headings */

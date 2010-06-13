@@ -1,3 +1,3 @@
 testing
 isActive
-	^ self requestor dispatcher isDispatcher
+	^ self requestor dispatcher notNil
