@@ -1,3 +1,4 @@
 accessing
 defaultHandler
-	^ self handlerAt: self defaultName
+	self defaultName isNil ifTrue: [ ^ nil ].
+	^ self handlerAt: self defaultName ifAbsent: [ nil ]
