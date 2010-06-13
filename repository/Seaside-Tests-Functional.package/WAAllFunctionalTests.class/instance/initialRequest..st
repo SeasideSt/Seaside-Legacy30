@@ -5,5 +5,5 @@ initialRequest: aRequest
 		[ :className | 
 		classes do: 
 			[ :each | 
-			"#seasideString is required because of Symbol <-> String comparison"
+			"#greaseString is required because of Symbol <-> String comparison"
 			each name greaseString = className ifTrue: [ self selected: each ] ] ]
