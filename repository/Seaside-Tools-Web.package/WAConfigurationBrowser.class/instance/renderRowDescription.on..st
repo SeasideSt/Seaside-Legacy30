@@ -1,3 +1,3 @@
 rendering-rows
-renderRowDescription: anEntryPoint  on: html
-	 html render: anEntryPoint class description 
+renderRowDescription: aHandler  on: html
+	 html render: aHandler class description 

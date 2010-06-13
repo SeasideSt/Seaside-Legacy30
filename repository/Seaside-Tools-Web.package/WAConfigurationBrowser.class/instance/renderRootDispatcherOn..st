@@ -1,12 +1,12 @@
 rendering
 renderRootDispatcherOn: html
 	
-	| anEntryPoint aString |
-	anEntryPoint := self defaultDispatcher.
+	| aHandler aString |
+	aHandler := self defaultDispatcher.
 	html tableRow: [
 		html tableData.
 		html tableData: [html anchor
-							class: 'selected' if: anEntryPoint = selection;
-							callback: [ self configure: anEntryPoint ];
+							class: 'selected' if: aHandler = selection;
+							callback: [ self configure: aHandler ];
 							with: '[Root]' ].
 		html tableData: 'Default dispatcher' ]

@@ -1,11 +1,11 @@
 rendering-rows
-renderRowName: anEntryPoint named: aString on: html
-	anEntryPoint isDispatcher
+renderRowName: aHandler named: aString on: html
+	aHandler isDispatcher
 		ifTrue: [
 			html anchor
-				callback: [ self dispatcher: anEntryPoint ];
+				callback: [ self dispatcher: aHandler ];
 				with: [ html code: aString , '/' ] ]
 		ifFalse: [
 			html anchor 
-				url: anEntryPoint url; 
+				url: aHandler url; 
 				with: [ html code: aString ] ]

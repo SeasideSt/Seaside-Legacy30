@@ -1,7 +1,7 @@
 rendering-rows
-renderRowExpand: anEntryPoint  on: html
-	anEntryPoint isDispatcher ifTrue: [
+renderRowExpand: aHandler  on: html
+	aHandler isDispatcher ifTrue: [
 		html anchor
 			title: 'Open children handlers';
-			callback: [ self expand: anEntryPoint; selectFirst ];
+			callback: [ self expand: aHandler; selectFirst ];
 			with:  '+' ]
