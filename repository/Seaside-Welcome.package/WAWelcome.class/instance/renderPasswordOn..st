@@ -1,2 +1,0 @@
-rendering
-renderPasswordOn: html

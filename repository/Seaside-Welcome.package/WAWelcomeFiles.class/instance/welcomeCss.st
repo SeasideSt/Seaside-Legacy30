@@ -1,90 +1,26 @@
-accessing
-welcomeCss	^ '
-body{
-	border:0 none;
-	margin:0;
-	padding:0;
-}	
-	
-.content {
-	margin: 10px;
+resources
+welcomeCss
+	^ '/* ---- html ---- */
+body { background-color: #fff; }
+body, table, tr, td, th {
+    color: #002842;
+    font-size: 16px;
+    line-height: 1.75;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+body, div, span, table, tr, td, th, img, form { border: 0; margin: 0; padding: 0; }
+a, a:visited { color: #008aff; }
 
-.header {
-	background: #DCEBED;
-	height: 50px;
-}
+/* ---- contents ---- */
+h1.logo { background: url("logo.png") no-repeat center center; height: 200px; }
+h1.logo span { display: none; }
+h2.welcome, p.congrats { text-align: center; }
+div.body { width: 1024px; margin: 50px auto 0 auto; }
 
-.headerImage {
-	float:left;
-}
-
-.headerText {
-	padding: 10px;
-}
-
-.introText {
-	margin-top: 20px;
-}
-
-a img {
-	border: none;
-}
-
-.introTable {
-	border-spacing:0 5px;
-	padding: 0;
-	border-collapse: separate;
-}
-
-
-.introTable td {
-	vertical-align: top;
-	width:320px;
-}
-
-
-.box {
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius:10px;
-	background:#F0F0E7;
-	padding: 10px;
-	margin-bottom: 10px;
-}
-
-.example {
-	width: 630px;
-	padding: 10px;
-	background: #F9F9F9;
-	border: 1px solid #93BDD5;
-	border-radius:10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-}
-
-.seasideExample {
-	background-color: #FBFFFA;
-	border: 1px solid #93BDD5;
-	margin: 1em;
-	padding: 1em;
-}
-
-pre.codeSample {
-	margin: 2em;
-}
-
-.sampleValue {
-	color: #aaaaaa;
-}
-
-.dialog {
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius:10px;
-	background: white;
-	padding: 10px;
-	border: 1px solid black;
-}
-
-'
+table.welcome { table-layout: fixed; }
+table.welcome td { vertical-align: top; width: 50%; padding: 0 2em; }
+form.config { width: 50%; margin: 0 auto; }
+form.config input.checkbox { width: 20px; height: 20px; margin-right: 1em; }
+form.config label { vertical-align: top; }
+form.config .buttons { text-align: center; margin-top: 1em; }
+form.config .buttons a { margin: 0 1em; }'

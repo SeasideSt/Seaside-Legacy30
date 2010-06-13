@@ -1,4 +1,4 @@
-class initialization
+initialization
 initialize
 	| application |
 	application := WAAdmin register: self asApplicationAt: 'welcome'.
@@ -6,4 +6,5 @@ initialize
 	application
 		addLibrary: JQDeploymentLibrary;
 		addLibrary: JQUiDeploymentLibrary;
-		addLibrary: JQUiLightnessTheme
+		addLibrary: JQUiLightnessTheme;
+		addLibrary: WAWelcomeFiles

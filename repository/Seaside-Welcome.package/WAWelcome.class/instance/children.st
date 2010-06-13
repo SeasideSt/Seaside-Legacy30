@@ -1,3 +1,3 @@
-hooks
+accessing
 children
-	^ Array with: example
+	^ Array with: component

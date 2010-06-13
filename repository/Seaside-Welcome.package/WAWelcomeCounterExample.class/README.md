@@ -1,1 +1,0 @@
-Describes and demonstrates the code in WACounter
