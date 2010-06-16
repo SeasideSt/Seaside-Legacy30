@@ -1,3 +1,3 @@
 private
 redirectToBrowse
-	self requestContext response redirectTo: '/browse'
+	self requestContext responseGenerator redirectTo: '/browse'; respond
