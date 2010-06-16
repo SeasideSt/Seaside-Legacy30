@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 componentName: anObject
 	componentName := anObject

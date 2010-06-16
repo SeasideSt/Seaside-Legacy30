@@ -6,5 +6,4 @@ initialize
 	application
 		addLibrary: JQDeploymentLibrary;
 		addLibrary: JQUiDeploymentLibrary;
-		addLibrary: JQUiLightnessTheme;
-		addLibrary: WAWelcomeFiles
+		addLibrary: JQUiLightnessTheme

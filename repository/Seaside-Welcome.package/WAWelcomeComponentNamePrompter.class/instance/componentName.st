@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 componentName
 	^ componentName ifNil: [ componentName := 'MyFirstComponent' ]

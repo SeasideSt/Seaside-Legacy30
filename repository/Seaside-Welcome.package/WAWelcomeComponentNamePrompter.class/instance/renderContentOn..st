@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 renderContentOn: html
 	html form: [
 		html text: 'Name your component: '.

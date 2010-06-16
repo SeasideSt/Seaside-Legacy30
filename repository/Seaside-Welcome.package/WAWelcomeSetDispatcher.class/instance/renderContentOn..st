@@ -15,9 +15,9 @@ at /welcome )'.].
 			
 		html submitButton 
 			callback: [ self setBrowseAsDefault ];
-			with: 'Set Browse as default'..
+			with: 'Set Browse as default'.
 		html space.	
 		html submitButton 
 			callback: [ self redirectToBrowse ];
-			with: 'Just Browse'. 	
+			with: 'Just Browse'
 	]
