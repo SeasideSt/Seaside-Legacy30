@@ -1,3 +1,3 @@
 accessing
 selectorsToInclude
-	^ #(welcomeCss)
+	^ #(welcomeCss syntaxHighlightingCss)

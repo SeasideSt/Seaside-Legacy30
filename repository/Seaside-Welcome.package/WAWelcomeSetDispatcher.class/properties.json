@@ -5,9 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"component"
-	],
-	"name" : "WAWelcome",
+	"instvars" : [ ],
+	"name" : "WAWelcomeSetDispatcher",
 	"type" : "normal"
 }

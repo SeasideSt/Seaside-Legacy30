@@ -6,8 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
+		"componentName",
 		"component"
 	],
-	"name" : "WAWelcome",
+	"name" : "WAWelcomeCreatedComponentViewer",
 	"type" : "normal"
 }

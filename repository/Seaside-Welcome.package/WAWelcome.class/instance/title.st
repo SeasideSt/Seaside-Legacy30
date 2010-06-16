@@ -1,3 +1,3 @@
 accessing
 title
-	^ 'Welcome at the Seaside!'
+	^ 'Welcome to Seaside'
