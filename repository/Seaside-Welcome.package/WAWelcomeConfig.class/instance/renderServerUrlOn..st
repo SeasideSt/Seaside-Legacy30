@@ -9,15 +9,17 @@ renderServerUrlOn: html
 			title: 'Configure server URL';
 			resizable: false;
 			modal: true).
-	html paragraph: [
-		html text: 'Server URL: '; text: self serverUrl; text: ' [ '.
-		html anchor
-			url: '#';
-			onClick: ((html jQuery id: id) dialog open return: false);
-			with: 'set'.
-		self serverUrl isNil ifFalse: [
-			html text: ' / '.
+	html paragraph
+		class: 'fs120';
+		with: [
 			html anchor
-				callback: [ self clearServerUrl ];
-				with: 'clear' ].
-		html text: ' ]' ]
+				url: '#';
+				onClick: ((html jQuery id: id) dialog open return: false);
+				with: 'Set'.
+			html text: ' Server URL: '; text: self serverUrl; text: ' [ '.
+			self serverUrl isNil ifFalse: [
+				html text: ' / '.
+				html anchor
+					callback: [ self clearServerUrl ];
+					with: 'clear' ].
+			html text: ' ]' ].

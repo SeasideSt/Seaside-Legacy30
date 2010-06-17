@@ -1,7 +1,7 @@
 rendering
 renderContentOn: html
 	html form: [
-		html text: 'Name your component: '.
+		html text: 'Name: '.
 		html textInput
 			on: #componentName of: self.
 		html submitButton

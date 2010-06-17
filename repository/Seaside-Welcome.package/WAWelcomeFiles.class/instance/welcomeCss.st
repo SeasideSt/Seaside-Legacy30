@@ -3,9 +3,10 @@ welcomeCss
 	^ '
 body {
 	font-family:"Lucida Grande","Bitstream Vera Sans","Verdana";
-font-size:13px;
+	font-size:13px;
 }
 
+label, .fs120 {font-size:120%}
 
 a {
 color:#008AFF;
@@ -21,10 +22,11 @@ width: 1000px;
 
 .sidebar  {
 width:200px;
+min-height:610px;
 background-color:#fcfbea;
 float: right;
-padding:25px;
-padding-top: 5px;
+padding:20px;
+padding-top:10px;
 border: 1px solid #cccccc
 }
 
@@ -34,7 +36,7 @@ list-style-type: none;
 	
 .sidebar  h3 {
 border-bottom: 1px solid #cccccc;
-font-size: 16px;
+font-size: 150%;
 margin-top: 25px;
 padding-bottom: 10px;
 }
@@ -49,9 +51,10 @@ margin-bottom: 5px;
 }
 
 .content  {
-border: 3px solid #aaaaaa;
-margin-right: 260px;
+border: 1px solid #aaaaaa;
+margin-right: 250px;
 padding: 20px;
+min-height:600px;
 }
 
 .header {
@@ -85,13 +88,13 @@ height: 64px;
 }
 
 .getting-started h1 {
-	font-size: 20px;
+	font-size: 150%;
 	margin: 0;
 }
 
 .getting-started h2 {
 	color: #333333;
-	font-size: 14px;
+	font-size: 120%;
 	font-weight: normal;
 	margin: 0 0 25px;
 }
@@ -148,9 +151,9 @@ pre.codeSample {
 	margin: 2em;
 }
 
-form.config { width: 50%; margin: 0 auto; }
+
 form.config input.checkbox { width: 20px; height: 20px; margin-right: 1em; }
 form.config label { vertical-align: top; }
-form.config .buttons { text-align: center; margin-top: 1em; }
-form.config .buttons a { margin: 0 1em; }
+.container .buttons { text-align: center; margin-top: 2em; }
+.container .buttons a { margin: 0 1em; }
 '
