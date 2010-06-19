@@ -1,6 +1,6 @@
 tests
 testFormWithMimeTypeGif
-	"Test that requesting a form as JPEG actually results in a JPEG"
+	"Test that requesting a form as GIF actually results in a GIF"
 	| handler |
 	self formClassExists ifFalse: [ ^ self ].
 	
@@ -9,4 +9,4 @@ testFormWithMimeTypeGif
 		mimeType: WAMimeType imageGif
 		fileName: nil.
 	
-	self assert: (handler document contents beginsWith: #(16r47 16r49 16r46 16r38) asByteArray) "JPEG Magic number"
+	self assert: (handler document contents beginsWith: #(16r47 16r49 16r46 16r38) asByteArray) "GIF Magic number"
