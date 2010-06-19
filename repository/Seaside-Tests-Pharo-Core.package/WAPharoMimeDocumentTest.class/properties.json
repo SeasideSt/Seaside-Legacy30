@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WASqueakMimeDocumentTest",
+	"name" : "WAPharoMimeDocumentTest",
 	"type" : "normal"
 }

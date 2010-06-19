@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WASqueakDocumentHandlerTest",
+	"name" : "WAPharoDocumentHandlerTest",
 	"type" : "normal"
 }

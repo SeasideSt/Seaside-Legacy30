@@ -1,7 +1,7 @@
-as yet unclassified
-testFormWithMimeType
-	| handler |
+tests
+testFormWithMimeTypeJpeg
 	"Test that requesting a form as JPEG actually results in a JPEG"
+	| handler |
 	self formClassExists ifFalse: [ ^ self ].
 	
 	handler := WADocumentHandler
@@ -9,4 +9,4 @@ testFormWithMimeType
 		mimeType: WAMimeType imageJpeg
 		fileName: nil.
 	
-	self assert: (handler document contents beginsWith: #( 255 216 )) "JPEG Magic number"
+	self assert: (handler document contents beginsWith: #(16rFF 16rD8 16rFF 16rE0) asByteArray) "JPEG Magic number"
