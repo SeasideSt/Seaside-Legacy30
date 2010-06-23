@@ -1,6 +1,6 @@
 public
 javascript: aBlock
-	"Evaluate aBlock with an SUScript instance and pushes the resulting script-string aString to all associated handlers."
+	"Evaluate aBlock with an JSScript instance and pushes the resulting script-string aString to all associated handlers."
 
 	| script |
 	script := (JSScript context: self renderContext)
