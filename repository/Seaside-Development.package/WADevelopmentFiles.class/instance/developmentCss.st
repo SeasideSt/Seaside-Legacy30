@@ -1,7 +1,7 @@
 styles
 developmentCss
 	^ '/* toolbar */
-body { margin-bottom: 25px !important; }
+body { margin-bottom: 25px !important; /*matches toolbar min-height + padding and margin*/}
 .wa-toolbar {
 	left: 0;
 	right: 0;
@@ -12,12 +12,14 @@ body { margin-bottom: 25px !important; }
 	text-align: left;
 	background-color: #eee;
 	border-top: 1px solid #aaa;
+	min-height: 20px;
 }
 .wa-toolbar,
 .wa-toolbar * {
 	color: #444;
 	font-size: 12px;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
+	vertical-align: middle;
 }
 .wa-toolbar a {
 	padding-left: 3px;
