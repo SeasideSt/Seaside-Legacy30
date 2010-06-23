@@ -10,7 +10,7 @@ renderSideBarJoinTheCommunityOn: html
 			html anchor
 				url: 'http://lists.squeakfoundation.org/cgi-bin/mailman/listinfo/seaside';
 				with: 'mailing list'.
-			html text: ' to ask questions and get help.' ]].
+			html text: ' to ask questions and get help.' ] ].
 
 	html form
 		action: 'http://www.google.com/search';
@@ -21,6 +21,5 @@ renderSideBarJoinTheCommunityOn: html
 				name: 'q'.
 			html textInput
 				name: 'q'.
-			html submitButton with: 'Search'.
-			html text: ' the mailing list'.
-		]
+			html submitButton: 'Search'.
+			html text: ' the mailing list' ]

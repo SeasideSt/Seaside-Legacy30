@@ -9,6 +9,6 @@
 		"componentName",
 		"component"
 	],
-	"name" : "WAWelcomeCreatedComponentViewer",
+	"name" : "WAWelcomeComponentConfirmation",
 	"type" : "normal"
 }

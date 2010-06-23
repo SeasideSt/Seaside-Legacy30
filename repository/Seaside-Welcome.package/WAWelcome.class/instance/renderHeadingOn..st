@@ -11,4 +11,4 @@ renderHeadingOn: html
 			html heading
 				level2;
 				class: 'congrats';
-				with: 'Congratulations, you have a working Seaside environment']
+				with: 'Congratulations, you have a working Seaside environment.' ]

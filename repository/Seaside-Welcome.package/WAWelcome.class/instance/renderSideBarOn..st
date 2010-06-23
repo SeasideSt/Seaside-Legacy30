@@ -11,7 +11,7 @@ renderSideBarOn: html
 
 			html textInput
 				name: 'q'.
-			html submitButton with: 'Search'.
+			html submitButton: 'Search'.
 			html text: ' the Seaside site'.
 		].
 	

@@ -6,8 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"counter"
+		"multicounter"
 	],
-	"name" : "WAWelcomeCounterExample",
+	"name" : "WAWelcomeExampleMultiCounter",
 	"type" : "normal"
 }

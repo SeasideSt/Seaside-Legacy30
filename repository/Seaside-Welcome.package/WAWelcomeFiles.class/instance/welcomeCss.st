@@ -4,30 +4,42 @@ welcomeCss
 body {
 	font-family:"Lucida Grande","Bitstream Vera Sans","Verdana";
 	font-size:13px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color: #2a2a2a;
 }
 
-label, .fs120 {font-size:120%}
+div.clear {
+	clear: both;
+}
 
 a {
 color:#008AFF;
 text-decoration:none;
 }
 
+a.goback {
+	color: #888888;
+	font-size: 10px;
+}
+
 .container  {
 margin-left: auto;
 margin-right:auto;
-margin-top: 10px;
+margin-top: 0px;
 width: 1000px;
+border-right: 1px solid #cccccc;
+border-left: 1px solid #cccccc;
 }
 
 .sidebar  {
 width:200px;
-min-height:610px;
-background-color:#fcfbea;
+background-color: #E5F2FC;
 float: right;
-padding:20px;
-padding-top:10px;
-border: 1px solid #cccccc
+padding:25px;
+padding-top: 5px;
+border-left: 1px solid #CCCCCC;
+border-bottom: 1px solid #CCCCCC;
 }
 
 .sidebar li {
@@ -36,7 +48,7 @@ list-style-type: none;
 	
 .sidebar  h3 {
 border-bottom: 1px solid #cccccc;
-font-size: 150%;
+font-size: 16px;
 margin-top: 25px;
 padding-bottom: 10px;
 }
@@ -51,10 +63,8 @@ margin-bottom: 5px;
 }
 
 .content  {
-border: 1px solid #aaaaaa;
-margin-right: 250px;
+margin-right: 260px;
 padding: 20px;
-min-height:600px;
 }
 
 .header {
@@ -88,13 +98,13 @@ height: 64px;
 }
 
 .getting-started h1 {
-	font-size: 150%;
+	font-size: 20px;
 	margin: 0;
 }
 
 .getting-started h2 {
 	color: #333333;
-	font-size: 120%;
+	font-size: 14px;
 	font-weight: normal;
 	margin: 0 0 25px;
 }
@@ -151,9 +161,9 @@ pre.codeSample {
 	margin: 2em;
 }
 
-
-form.config input.checkbox { width: 20px; height: 20px; margin-right: 1em; }
+form.config { margin: 0 auto; }
+form.config input.checkbox { margin-right: 1em; }
 form.config label { vertical-align: top; }
-.container .buttons { text-align: center; margin-top: 2em; }
-.container .buttons a { margin: 0 1em; }
+form.config .buttons { text-align: center; margin-top: 1em; }
+form.config .buttons a { margin: 0 1em; }
 '

@@ -1,5 +1,5 @@
-rendering
-renderStepThreeOn: html
+rendering-steps
+renderDocumentationStepOn: html
 	html heading
 		level2;
 		with: 'Browse the documentation'.

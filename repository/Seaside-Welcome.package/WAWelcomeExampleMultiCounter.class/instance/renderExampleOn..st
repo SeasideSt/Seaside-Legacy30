@@ -1,12 +1,10 @@
 rendering
 renderExampleOn: html
-	html heading level1 with: 'Multi-Counter'.
-	
 	html paragraph: [
 		html text: 'Multicounter is a simple extension to the '.
-		html anchor callback: [self show: WAWelcomeCounterExample new]; with: 'Counter'.
+		html anchor callback: [self show: WAWelcomeExampleCounter new]; with: 'Counter'.
 		html text: ' application. It displays several instances of the same '.
-		html anchor callback: [self show: WAWelcomeCounterExample new]; with: 'Counter'.
+		html anchor callback: [self show: WAWelcomeExampleCounter new]; with: 'Counter'.
 		html text: ' component:'
 		].
 	

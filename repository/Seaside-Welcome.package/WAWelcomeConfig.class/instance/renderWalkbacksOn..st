@@ -9,4 +9,4 @@ renderWalkbacksOn: html
 			onChange: (html jQuery ajax serializeForm).
 		html label
 			for: html lastId;
-			with: 'Error Walkbacks' ]
+			with: 'Allow debugging of errors' ]

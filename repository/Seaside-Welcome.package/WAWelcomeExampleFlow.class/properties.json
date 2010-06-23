@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "WAComponent",
+	"super" : "WAWelcomeExample",
 	"category" : "Seaside-Welcome",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "WAWelcomeSetDispatcher",
+	"instvars" : [
+		"taskExample"
+	],
+	"name" : "WAWelcomeExampleFlow",
 	"type" : "normal"
 }

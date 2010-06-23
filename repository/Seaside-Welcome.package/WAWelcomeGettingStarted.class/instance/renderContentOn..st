@@ -9,7 +9,6 @@ renderContentOn: html
 		with: 'Test the water with the steps below:'.
 				
 	html orderedList: [
-		html listItem: [ self renderStepOneOn: html ].
-		html listItem: [ self renderStepTwoOn: html ].
-		html listItem: [ self renderStepThreeOn: html ]			
-	]
+		html listItem: [ self renderExamplesStepOn: html ].
+		html listItem: [ self renderFirstComponentStepOn: html ].
+		html listItem: [ self renderDocumentationStepOn: html ] ]

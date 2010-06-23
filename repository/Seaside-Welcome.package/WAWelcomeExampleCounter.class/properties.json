@@ -6,8 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"taskExample"
+		"counter"
 	],
-	"name" : "WAWelcomeTaskExample",
+	"name" : "WAWelcomeExampleCounter",
 	"type" : "normal"
 }

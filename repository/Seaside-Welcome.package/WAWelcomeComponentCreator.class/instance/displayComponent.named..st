@@ -1,6 +1,6 @@
 tasks
 displayComponent: component named: componentName
-	self call: (WAWelcomeCreatedComponentViewer component: component named: componentName)
+	self call: (WAWelcomeComponentConfirmation component: component named: componentName)
 
 
 

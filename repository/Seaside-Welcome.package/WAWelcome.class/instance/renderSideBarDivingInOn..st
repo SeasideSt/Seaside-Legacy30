@@ -7,7 +7,7 @@ renderSideBarDivingInOn: html
 	html unorderedList: [
 		html listItem: [
 			html anchor
-				callback: [self component show: WAWelcomeSetDispatcher new];
+				callback: [ self component show: WAWelcomeBrowse new ];
 				with: 'Browse'.
 			html text: ' the applications installed in your image.' ].
 		html listItem: [ 
@@ -24,4 +24,4 @@ renderSideBarDivingInOn: html
 			html anchor
 				url: '/javascript/jquery-ui';
 				with: 'JQuery UI'.
-			html text: ' integration.' ].]
+			html text: ' integration.' ] ]

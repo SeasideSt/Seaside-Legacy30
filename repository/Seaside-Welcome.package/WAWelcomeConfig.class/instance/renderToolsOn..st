@@ -9,4 +9,4 @@ renderToolsOn: html
 			onChange: (html jQuery ajax serializeForm).
 		html label
 			for: html lastId;
-			with: 'Development Tools' ]
+			with: 'Show development toolbar' ]

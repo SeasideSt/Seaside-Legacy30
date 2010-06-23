@@ -1,7 +1,6 @@
 rendering
 renderExampleOn: html
-	html heading level1 with: 'Counter'.
-	html paragraph: 'The counter is an example of a simple Seaside component. It increments and decrements a number by clicking on a link. Test the example below by clicking on the "++" and "--" links:'.
+	html paragraph: 'The counter is an example of a very simple Seaside component. It increments and decrements a number by clicking on a link. Test the example below by clicking on the "++" and "--" links:'.
 
 	html div class: #seasideExample; with: counter.
 
