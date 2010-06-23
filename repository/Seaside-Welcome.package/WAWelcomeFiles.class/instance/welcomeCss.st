@@ -14,8 +14,8 @@ div.clear {
 }
 
 a {
-color:#008AFF;
-text-decoration:none;
+	color:#008AFF;
+	text-decoration:none;
 }
 
 a.goback {
@@ -24,54 +24,54 @@ a.goback {
 }
 
 .container  {
-margin-left: auto;
-margin-right:auto;
-margin-top: 0px;
-width: 1000px;
-border-right: 1px solid #cccccc;
-border-left: 1px solid #cccccc;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: 0px;
+	width: 1000px;
+	border-right: 1px solid #cccccc;
+	border-left: 1px solid #cccccc;
 }
 
 .sidebar  {
-width:200px;
-background-color: #E5F2FC;
-float: right;
-padding:25px;
-padding-top: 5px;
-border-left: 1px solid #CCCCCC;
-border-bottom: 1px solid #CCCCCC;
+	width:200px;
+	background-color: #E5F2FC;
+	float: right;
+	padding:25px;
+	padding-top: 5px;
+	border-left: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
 }
 
 .sidebar li {
-list-style-type: none;
+	list-style-type: none;
 }	
 	
 .sidebar  h3 {
-border-bottom: 1px solid #cccccc;
-font-size: 16px;
-margin-top: 25px;
-padding-bottom: 10px;
+	border-bottom: 1px solid #cccccc;
+	font-size: 150%;
+	margin-top: 25px;
+	padding-bottom: 10px;
 }
 
 .sidebar ul {
-margin-left: 0;
-padding-left: 0;
+	margin-left: 0;
+	padding-left: 0;
 }
 
 .sidebar li {
-margin-bottom: 5px;
+	margin-bottom: 5px;
 }
 
 .content  {
-margin-right: 260px;
-padding: 20px;
+	margin-right: 260px;
+	padding: 20px;
 }
 
 .header {
-background-image: url("seasidestar.png");
-background-position: left top;
-background-repeat: no-repeat;
-height: 64px;
+	background-image: url("seasidestar.png");
+	background-position: left top;
+	background-repeat: no-repeat;
+	height: 64px;
 }
 
 .welcome {
@@ -98,13 +98,13 @@ height: 64px;
 }
 
 .getting-started h1 {
-	font-size: 20px;
+	font-size: 150%;
 	margin: 0;
 }
 
 .getting-started h2 {
 	color: #333333;
-	font-size: 14px;
+	font-size: 120%;
 	font-weight: normal;
 	margin: 0 0 25px;
 }
@@ -161,9 +161,8 @@ pre.codeSample {
 	margin: 2em;
 }
 
-form.config { margin: 0 auto; }
 form.config input.checkbox { margin-right: 1em; }
 form.config label { vertical-align: top; }
-form.config .buttons { text-align: center; margin-top: 1em; }
-form.config .buttons a { margin: 0 1em; }
+.container .buttons { text-align: center; margin-top: 2em; }
+.container .buttons a { margin: 0 1em; }
 '

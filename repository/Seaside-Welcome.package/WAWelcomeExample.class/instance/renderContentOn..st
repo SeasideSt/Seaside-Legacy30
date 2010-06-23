@@ -7,9 +7,11 @@ renderContentOn: html
 		with: '[ go back ]'.
 	self renderExampleOn: html.
 		
-	html form
-		class: 'back-form';
+	html div
+		class: 'buttons';
 		with: [
-			html submitButton
+			html anchor
 				callback: [ self answer ];
+				script: (html jQuery this button
+					primaryIcon: 'ui-icon-arrowreturnthick-1-w');
 				with: 'Back' ]

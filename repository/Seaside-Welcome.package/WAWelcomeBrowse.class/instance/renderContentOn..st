@@ -8,24 +8,32 @@ renderContentOn: html
 			callback: [ self answer ];
 			with: '[ go back ]'.
 			
-	html form: [
-		html paragraph: [
-			html text: 'Would you like to set '.
+	html paragraph: [
+		html text: 'Would you like to set '.
+		html anchor
+			url: '/browse';
+			with: 'Browse'.
+		html text: ' to be the default application when you visit this site? This will disable this welcome screen (though you can always find it later at '.
+		html anchor
+			url: self application url;
+			with: self application url.
+		html text: ').' ].
+		
+		html div
+			class: 'buttons';
+			with: [
 			html anchor
-				url: '/browse';
-				with: 'Browse'.
-			html text: ' to be the default application when you visit this site? This will disable this welcome screen (though you can always find it later
-at '.
+				callback: [ self setBrowseAsDefault ];
+				script: (html jQuery this button
+					primaryIcon: 'ui-icon-pin-s');
+				with: 'Yes, change the default'.	
 			html anchor
-				url: self application url;
-				with: self application url.
-			html text: ').' ].
-			
-		html submitButton 
-			callback: [ self setBrowseAsDefault ];
-			with: 'Yes, change the default'.
-		html space.	
-		html submitButton 
-			callback: [ self redirectToBrowse ];
-			with: 'No, just Browse for now'
-	]
+				callback: [ self redirectToBrowse ];
+				script: (html jQuery this button
+					primaryIcon: 'ui-icon-folder-open');
+				with: 'No, just Browse for now'.
+			html anchor
+				callback: [ self answer ];
+				script: (html jQuery this button
+					primaryIcon: 'ui-icon-arrowreturnthick-1-w');
+				with: 'Back' ]

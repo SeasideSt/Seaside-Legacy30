@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WAWelcomeConfig",
+	"name" : "WAWelcomeConfigure",
 	"type" : "normal"
 }

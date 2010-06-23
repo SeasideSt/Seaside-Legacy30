@@ -12,7 +12,7 @@ renderSideBarDivingInOn: html
 			html text: ' the applications installed in your image.' ].
 		html listItem: [ 
 			html anchor
-				callback: [ self component show: WAWelcomeConfig new ];
+				callback: [ self component show: WAWelcomeConfigure new ];
 				with: 'Configure'.
 			html text: ' your Seaside development environment.' ].
 		html listItem: [
