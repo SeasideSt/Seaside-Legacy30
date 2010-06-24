@@ -9,6 +9,6 @@ seasideEnvironment
 		addDependency: 'Seaside-RenderLoop';
 		addDependency: 'Seaside-Session';
 		addDependency: 'Seaside-Canvas';
-		addDependency: 'Seaside-Widgets';
+		addDependency: 'Seaside-Widgets'; "Users expect #inform:, etc. to be available"
 		url: #seasideUrl;
 		yourself
