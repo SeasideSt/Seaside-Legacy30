@@ -175,13 +175,4 @@ form.config input.checkbox { margin-right: 1em; }
 form.config label { vertical-align: top; }
 .container .buttons { text-align: center; margin-top: 2em; }
 .container .buttons a { margin: 0 1em; }
-
-/* This makes the URL dialog at least useable when the user has no internet connection
-to get the JQuery CSS files. */
-.dialog {
-	background-color: #FFFFFF;
-	padding: 10px;
-	border: 1px solid black;
-	-moz-border-radius:4px 4px 4px 4px;
-}
 '
