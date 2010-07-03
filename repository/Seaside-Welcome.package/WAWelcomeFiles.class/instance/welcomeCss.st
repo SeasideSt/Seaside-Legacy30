@@ -5,7 +5,6 @@ body {
 	font-family:"Lucida Grande","Bitstream Vera Sans","Verdana";
 	font-size:13px;
 	margin-top: 0px;
-	margin-bottom: 0px;
 	color: #2a2a2a;
 	background: url("http://localhost:8080/files/WAWelcomeFiles/background.jpg") repeat-y fixed center top #FFFFFF;
 }
@@ -37,6 +36,7 @@ a.goback {
 	/* end negative margin positioning */
 	
 	margin-top: 0px;
+	padding-bottom: 25px; /*with absolute positioning, the body margin for the toolbar does not seem to work*/
 	width: 900px;
 	/*border-right: 1px solid #cccccc;
 	border-left: 1px solid #cccccc;*/
