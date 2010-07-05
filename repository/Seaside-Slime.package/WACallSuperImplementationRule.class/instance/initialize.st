@@ -1,6 +1,7 @@
 initialization
 initialize
 	super initialize.
+	superSelectors := Set new.
 	classesAndSelectors := Dictionary new.
 	classesAndSelectors
 		at: #WAObject put: #( initialize postCopy );

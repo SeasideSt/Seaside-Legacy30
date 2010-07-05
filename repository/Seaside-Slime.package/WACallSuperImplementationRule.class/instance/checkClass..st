@@ -1,10 +1,10 @@
 running
 checkClass: aContext
 	| current |
+	superSelectors := Set new.
 	aContext selectedClass isMeta
 		ifTrue: [ ^ self ].
 	current := aContext selectedClass superclass.
-	superSelectors := Set new.
 	[ current isNil ] whileFalse: [
 		classesAndSelectors
 			at: current name
