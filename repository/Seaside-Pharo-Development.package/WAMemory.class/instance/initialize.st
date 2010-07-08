@@ -5,5 +5,5 @@ initialize
 	formatter := GRPrinter binaryFileSize.
 	self session 
 		traverseWithMemory: self
-		seen: (IdentitySet with: self session).
+		seen: (IdentitySet with: self with: self session with: self application).
 	table := self buildTable
