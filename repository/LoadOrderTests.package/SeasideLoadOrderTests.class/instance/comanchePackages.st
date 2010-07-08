@@ -6,6 +6,6 @@ comanchePackages
 		add: komHttpServer	-> 'KomServices-lr.20.mcz';
 		add: komHttpServer	-> 'KomHttpServer-lr.52.mcz';
 			
-		add: seaside30		-> 'Seaside-Adaptors-Comanche-pmm.59.mcz';
+		add: seaside30		-> 'Seaside-Adaptors-Comanche-pmm.60.mcz';
 		add: seaside30		-> 'Seaside-Tests-Adaptors-Comanche-lr.13.mcz';
 		yourself.

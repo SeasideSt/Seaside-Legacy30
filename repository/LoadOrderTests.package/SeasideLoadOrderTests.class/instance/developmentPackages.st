@@ -2,7 +2,7 @@ packages-traditional
 developmentPackages
 
 	^Array 
-		with: seaside30 -> 'Seaside-Development-jf.134.mcz'
-		with: seaside30 -> 'Seaside-Pharo-Development-lr.41.mcz'
+		with: seaside30 -> 'Seaside-Development-jf.135.mcz'
+		with: seaside30 -> 'Seaside-Pharo-Development-lr.43.mcz'
 		with: seaside30 -> 'Seaside-Tests-Development-lr.35.mcz'
-		with: seaside30 -> 'Seaside-Tests-Pharo-Development-lr.11.mcz'.
+		with: seaside30 -> 'Seaside-Tests-Pharo-Development-DaleHenrichs.13.mcz'.
