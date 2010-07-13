@@ -2,7 +2,7 @@ description
 describeOn: config 
 	(config string: #charSet)
 		beAdvanced;
-		label: 'Charater Set';
+		label: 'Character Set';
 		comment: 'The character set reported to the browser. This is only used if you set the encoding in the server to ''(none)''.';
 		default: 'utf-8'.
 	(config list: #documentClass)
