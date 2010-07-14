@@ -1,8 +1,5 @@
 tests
-testJoin
-	self 
-		assert: (JSJoin new)
-		equals: '""'.
+testJoinMultiple
 	self
 		assert: (JSJoin on: #('foo')) 
 		equals: '"foo"'.
