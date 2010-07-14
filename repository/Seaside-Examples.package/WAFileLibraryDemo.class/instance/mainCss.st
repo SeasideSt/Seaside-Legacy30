@@ -12,7 +12,7 @@ mainCss
 }
 
 body {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
 	font-size: 12px;
 	color: #111111;
 	margin: 10px;
