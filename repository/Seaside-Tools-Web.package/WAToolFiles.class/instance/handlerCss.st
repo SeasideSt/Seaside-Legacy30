@@ -2,9 +2,10 @@ accessing-files
 handlerCss
 	^ '/* html */
 body, input, textarea, select {
-	color: #002842;
-	font-size: 12px;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
+	line-height: 1.5;
+	font-size: 14px;
+	color: #2a2a2a;
+	font-family: "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
 }
 select.fix {width:340px}
 input, textarea, select {
