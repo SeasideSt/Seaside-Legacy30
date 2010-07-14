@@ -1,7 +1,10 @@
 rendering
 renderContentOn: html
 	html div
-		script: html jQuery new tabs;
+		script: (html jQuery new tabs
+			selected: selectedTab;
+			onSelect: (html jQuery ajax 
+				callbackTabs: [ :event | selectedTab:= event at: #index ]));
 		with: [
 			html unorderedList: [
 				self berries keysAndValuesDo: [ :name :description |
