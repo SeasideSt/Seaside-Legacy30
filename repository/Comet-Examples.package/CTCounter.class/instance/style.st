@@ -5,7 +5,7 @@ style
 	font-size: 4em;
 	line-height: 1.5;
 	text-align: center;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
 }
 h1 { font-weight: bold; }
 a {
