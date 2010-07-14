@@ -14,12 +14,11 @@ body { margin-bottom: 25px !important; /*matches toolbar min-height + padding an
 	border-top: 1px solid #aaa;
 	min-height: 20px;
 }
-.wa-toolbar,
-.wa-toolbar * {
+.wa-toolbar { vertical-align: middle; }
+.wa-toolbar, .wa-toolbar * {
 	color: #444;
-	font-size: 12px;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	vertical-align: middle;
+	font-size: 14px;
+	font-family: "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
 }
 .wa-toolbar a {
 	padding-left: 3px;
@@ -49,8 +48,8 @@ body { margin-bottom: 25px !important; /*matches toolbar min-height + padding an
 .wa-halo .wa-halo-header,
 .wa-halo .wa-halo-header * {
 	color: #444;
-	font-size: 12px;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-family: "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
 }
 .wa-halo .wa-halo-header a {
 	text-decoration: none;
