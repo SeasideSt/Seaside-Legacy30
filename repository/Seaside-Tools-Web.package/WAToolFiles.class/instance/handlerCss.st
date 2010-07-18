@@ -33,12 +33,12 @@ a.wa-action, .groupContent a  {
 a.wa-action:hover, .groupContent a:hover {background:#fff}
 
 /* special */
-.smallLogo {border:2px solid #ccc; background: url(smallLogo.png) no-repeat; height:54px; width:100px}
+.smallLogo {background: url(smallLogo.png) no-repeat; padding:4px;margin-left:6px; width:100px;height:54px}
 
 table.wa-config {width:100%;padding:0}
 table.wa-config td {padding:0px}
-.wa-config .topbar {background:#ccc;height:22px;padding:8px 2px 1px 3px}
-.wa-config .header {background:#01598d; color: #fff; padding:5px;font-size:120%}
+.wa-config .topbar {background:#ccc;height:22px;padding:4px 2px 4px 3px}
+.wa-config .header {background:#01598d; color: #fff; padding:4px;font-size:120%}
 
 div.help {padding:8px;white-space:pre}
  .handler-name {font-family: monospace;}
