@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WAError",
+	"category" : "Seaside-Component-Exceptions",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAChildrenNotCollectionError",
+	"type" : "normal"
+}
