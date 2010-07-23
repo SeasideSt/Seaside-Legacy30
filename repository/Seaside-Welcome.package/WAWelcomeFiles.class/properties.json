@@ -4,9 +4,7 @@
 	"category" : "Seaside-Welcome",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [
-		"Try"
-	],
+	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "WAWelcomeFiles",
 	"type" : "normal"

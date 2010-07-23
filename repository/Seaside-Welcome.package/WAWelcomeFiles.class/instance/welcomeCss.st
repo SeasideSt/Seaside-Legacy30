@@ -1,19 +1,12 @@
 resources
 welcomeCss
-	^ '* {
-	line-height: 1.5;
-	font-family: "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
-}
-html, body {
-	color: #2a2a2a;
-	font-size: 14px;
+	^ '	
+body {
+	font-family:"Lucida Grande","Bitstream Vera Sans","Verdana";
+	font-size:13px;
 	margin-top: 0px;
-	background: #fff url("background.jpg") repeat-y center top;
-}
-input.text {
 	color: #2a2a2a;
-	font-size: 100%;
-	border: 1px solid #ccc;
+	background: url("http://localhost:8080/files/WAWelcomeFiles/background.jpg") repeat-y fixed center top #FFFFFF;
 }
 
 div.clear {
@@ -21,13 +14,13 @@ div.clear {
 }
 
 a {
-	color: #008AFF;
-	text-decoration: none;
+	color:#008AFF;
+	text-decoration:none;
 }
 
 a.goback {
-	font-size: 80%;
 	color: #888888;
+	font-size: 10px;
 }
 
 .container  {
@@ -85,11 +78,14 @@ a.goback {
 }
 
 .header {
-	background: #fff url("seasidestar.png") no-repeat left center;
+	background-image: url("seasidestar.png");
+	background-position: left top;
+	background-repeat: no-repeat;
+	height: 64px;
 }
 
 .welcome {
-	font-size: 225%;
+	font-size: 28px;
 	margin: 0;
 }
 
@@ -100,7 +96,7 @@ a.goback {
 
 .congrats {
 	color: #888888;
-	font-size: 125%;
+	font-size: 16px;
 	font-weight: normal;
 	margin: 0;
 }
@@ -118,7 +114,7 @@ a.goback {
 
 .getting-started h2 {
 	color: #333333;
-	font-size: 125%;
+	font-size: 120%;
 	font-weight: normal;
 	margin: 0 0 25px;
 }
@@ -126,24 +122,24 @@ a.goback {
 .getting-started ol {
 	margin-left: 0;
 	padding-left: 0;
-	color: #888888;
-	font-size: 125%;
 }
 
 .getting-started li {
+	color: #888888;
+	font-size: 18px;
 	margin-bottom: 25px;
 }
 
-.getting-started li h3 {
-	margin: 0;
+.getting-started li h2 {
 	color: #333333;
-	font-size: inherit;
+	font-size: 18px;
 	font-weight: normal;
+	morgin: 0;
 }
 
-.getting-started li p, .getting-started li form, .getting-started li ul li {
-	font-size: 80%;
+.getting-started li p, .getting-started li form, .getting-started li ul li, .getting-started li h3 {
 	color: #555555;
+	font-size: 13px;
 }
 
 .getting-started li ul {
@@ -159,7 +155,7 @@ a.goback {
 	padding: 10px;
 	background: #F9F9F9;
 	border: 1px solid #93BDD5;
-	border-radius: 10px;
+	border-radius:10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 }
@@ -178,4 +174,5 @@ pre.codeSample {
 form.config input.checkbox { margin-right: 1em; }
 form.config label { vertical-align: top; }
 .container .buttons { text-align: center; margin-top: 2em; }
-.container .buttons a { margin: 0 1em; }'
+.container .buttons a { margin: 0 1em; }
+'

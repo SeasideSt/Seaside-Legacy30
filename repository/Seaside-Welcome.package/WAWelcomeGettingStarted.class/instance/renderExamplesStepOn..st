@@ -1,7 +1,7 @@
 rendering-steps
 renderExamplesStepOn: html
 	html heading
-		level3;
+		level2
 		with: 'Try out some examples'.
 		
 	html

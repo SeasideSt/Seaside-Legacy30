@@ -1,7 +1,7 @@
 rendering-steps
 renderFirstComponentStepOn: html
 	html heading
-		level3;
+		level2
 		with: 'Create your first component'.
 		
 	html render: self componentCreator

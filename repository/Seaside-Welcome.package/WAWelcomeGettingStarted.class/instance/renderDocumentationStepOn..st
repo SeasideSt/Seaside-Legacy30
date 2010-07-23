@@ -1,7 +1,7 @@
 rendering-steps
 renderDocumentationStepOn: html
 	html heading
-		level3;
+		level2;
 		with: 'Browse the documentation'.
 		
 	html unorderedList: [ 
