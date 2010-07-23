@@ -10,4 +10,5 @@ renderButtonsOn: html
 			callback: [ self answer ];
 			script: (html jQuery this button
 				primaryIcon: 'ui-icon-arrowreturnthick-1-w');
+			title: 'Go back';
 			with: 'Back' ]
