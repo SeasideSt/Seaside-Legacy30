@@ -5,7 +5,7 @@ createComponent: componentName
 	Smalltalk at: componentName ifPresent: [:class | self inform: 'Component named: ''',componentName, ''' already exists, choose a different name.'. ^ nil].
 	componentName first isLetter ifFalse: [ self inform: '''',componentName, ''' is not a valid name for a component. Component names should begin with a letter.'. ^ nil ].
 	
-	userComponent := WAComponent subclass: componentName instanceVariableNames: ''.
+	userComponent := WAComponent subclass: componentName instanceVariableNames: '' classVariableNames: '' poolDictionaries: '' category: 'Unclassified'.
 	userComponent isNil ifTrue: [ self inform: 'A problem occurred creating ''',componentName, ''' component..'. ^ nil ].
 	
 	GRPlatform current 
