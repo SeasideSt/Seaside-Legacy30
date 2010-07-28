@@ -9,10 +9,8 @@ testChildrenNotCollectionError
 
 	self should: [child1 children] 
 		raise: WAChildrenNotCollectionError
-	 	whoseDescriptionIncludes: 'WAComponentStub >> #children is not answering a collection of components'  
 		description: 'Testing WAPresenter  >> #childrenDo: with #children return ^self'.
 
 	self should: [child2 children] 
 		raise: WAChildrenNotCollectionError
-		whoseDescriptionIncludes: 'WAComponentStub >> #children is not answering a collection of components'  
 		description: 'Testing WAPresenter  >> #childrenDo with #children forgetting to return an array:'.
