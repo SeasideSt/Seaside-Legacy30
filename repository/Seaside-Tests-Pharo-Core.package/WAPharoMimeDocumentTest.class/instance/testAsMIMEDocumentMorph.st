@@ -5,7 +5,7 @@ testAsMIMEDocumentMorph
 		color: Color red;
 		borderWidth: 1;
 		borderColor: Color black;
-		extent: 12;
+		extent: 12 @ 12;
 		yourself.
 	document := morph seasideMimeDocument.
 	self assert: document contentType = WAMimeType imageGif.
