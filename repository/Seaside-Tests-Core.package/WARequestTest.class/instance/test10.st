@@ -5,3 +5,4 @@ test10
 	
 	self assert: request isGet.
 	self assert: request isHttp10.
+	self deny: request isSsl

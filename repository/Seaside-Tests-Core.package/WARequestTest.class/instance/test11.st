@@ -5,3 +5,4 @@ test11
 	
 	self assert: request isGet.
 	self assert: request isHttp11.
+	self deny: request isSsl
