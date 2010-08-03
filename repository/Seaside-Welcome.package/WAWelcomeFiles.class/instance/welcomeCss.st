@@ -178,4 +178,12 @@ pre.codeSample {
 form.config input.checkbox { margin-right: 1em; }
 form.config label { vertical-align: top; }
 .container .buttons { text-align: center; margin-top: 2em; }
-.container .buttons a { margin: 0 1em; }'
+.container .buttons a { margin: 0 1em; }
+
+/* jQuery override */
+.ui-widget-overlay {
+background:black;
+opacity:0.6;
+}
+
+'
