@@ -1,3 +1,3 @@
 accessing-repositories
 seasideAddonsUrl
-	^ 'http://www.squeaksource.com/Seaside29Addons'
+	^ 'http://www.squeaksource.com/Seaside30Addons'
