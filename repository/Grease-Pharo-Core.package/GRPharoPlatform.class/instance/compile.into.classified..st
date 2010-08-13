@@ -17,17 +17,15 @@ compile: aString into: aClass classified: aSymbol
 		putSource: aString
 		fromParseNode: methodAndNode node
 		inFile: 2
-		withPreamble: 
-			[ :file | 
-			file
-				nextPut: Character cr;
-				nextPut: $!;
-				nextChunkPut: 'Behavior method';
-				nextPut: Character cr ].
+		withPreamble: [ :file | 
+			aClass
+				printCategoryChunk: aSymbol asString
+				on: file priorMethod: (aClass compiledMethodAt: selector ifAbsent: [ nil ]).
+			file cr ].
 	aClass 
 		addSelectorSilently: selector
 		withMethod: compiledMethod.
-	SystemChangeNotifier uniqueInstance doSilently: 
-		[ aClass organization 
+	SystemChangeNotifier uniqueInstance doSilently:  [
+		aClass organization 
 			classify: selector
 			under: aSymbol ]
