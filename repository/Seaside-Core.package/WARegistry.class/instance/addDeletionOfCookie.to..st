@@ -2,4 +2,9 @@ handling-helpers
 addDeletionOfCookie: aCookie to: aRequestContext
 	"Request the deletion of aCookie in the response."
 
-	aRequestContext response deleteCookie: aCookie path: self url pathString.
+	| baseUrl |
+	baseUrl := self url.
+	aRequestContext response
+		deleteCookie: aCookie
+		path: baseUrl pathString
+		domain: baseUrl host

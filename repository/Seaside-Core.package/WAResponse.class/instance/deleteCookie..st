@@ -6,10 +6,11 @@ deleteCookie: aCookie
 	is not defined or where there is no RequestHandler. In this case, we just use nil and
 	pray the cookie has path information or was created without any."
 	
-	| path |
-	path := [ self requestContext handler url pathString ] 
-		on: Error
+	| baseUrl |
+	baseUrl := [ self requestContext handler url ] 
+		on: WARequestContextNotFound
 		do: [ :err | nil ].
 	self 
 		deleteCookie: aCookie
-		path: path
+		path: (baseUrl isNil ifFalse: [ baseUrl pathString ])
+		domain: (baseUrl isNil ifFalse: [ baseUrl host ])
