@@ -5,7 +5,7 @@ handlerMetaNode
 	attributes := OBMetaNode named: 'attributes'.
 	attributes addFilter: WAAttributeInheritanceFilter new.
 	handlers
-		childAt: #children labeled: 'handlers' put: handlers;
-		childAt: #groupedAttributes labeled: 'config' put: attributes;
+		childAt: #children labeled: 'Handlers' put: handlers;
+		childAt: #groupedAttributes labeled: 'Config' put: attributes;
 		addFilter: OBModalFilter new.
 	^ handlers
