@@ -1,3 +1,0 @@
-commands
-cmdStartAllAdaptors
-	^ WACmdStartAllAdaptors
