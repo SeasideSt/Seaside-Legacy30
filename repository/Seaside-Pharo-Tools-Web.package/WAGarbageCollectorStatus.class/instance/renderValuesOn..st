@@ -11,13 +11,13 @@ renderValuesOn: html
 		renderLabel: 'Full GCs'
 		value: fullGCs
 		value: (self printMilliSeconds: fullGCTime)
-		value: (self printMilliSeconds: fullGCTime / fullGCs)
+		value: (self printMilliSeconds: fullGCTime dividedBy: fullGCs)
 		on: html.
 	self 
 		renderLabel: 'Incremental GCs'
 		value: incrementalGCs
 		value: (self printMilliSeconds: incrementalGCTime)
-		value: (self printMilliSeconds: incrementalGCTime / incrementalGCs)
+		value: (self printMilliSeconds: incrementalGCTime dividedBy: incrementalGCs)
 		on: html.
 	self 
 		renderLabel: 'Tenures'
