@@ -2,6 +2,6 @@ private
 supportedEncodingNames
 	"answers the names of the encodings supported by this class"
 	^TextConverter allEncodingNames
-		addAll: self additionalLatin1CodecNames;
+		removeAllFoundIn: GRPharoLatin1Codec supportedEncodingNames;
 		removeAllFoundIn: UTF8TextConverter encodingNames;
 		yourself

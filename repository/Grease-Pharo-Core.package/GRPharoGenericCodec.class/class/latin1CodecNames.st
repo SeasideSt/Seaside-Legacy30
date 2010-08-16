@@ -1,3 +1,0 @@
-private
-latin1CodecNames
-	^Latin1TextConverter encodingNames, self additionalLatin1CodecNames
