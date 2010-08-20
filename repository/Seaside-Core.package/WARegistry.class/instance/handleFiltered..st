@@ -15,6 +15,6 @@ handleFiltered: aRequestContext
 					cookie notNil ifTrue: [ self addDeletionOfCookie: cookie to: aRequestContext ].
 					self handleExpired: aRequestContext ]
 				ifFalse: [
-					((self doesHanlderSupportCookies: handler) and: [ (cookie isNil or: [ (cookie value = key) not ]) and: [ self useCookies ] ])
+					((self doesHandlerSupportCookies: handler) and: [ (cookie isNil or: [ (cookie value = key) not ]) and: [ self useCookies ] ])
 						ifTrue: [ self addCookieForHandler: handler to: aRequestContext ] ].
 					self handleKeyed: aRequestContext with: handler ]

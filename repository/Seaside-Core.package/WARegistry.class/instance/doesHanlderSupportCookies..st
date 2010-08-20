@@ -1,3 +1,0 @@
-private
-doesHanlderSupportCookies: aRequestHandler
-	^ true
