@@ -1,8 +1,7 @@
 rendering
 renderContentOn: html
 	html form class: 'config'; with: [ 
-		html heading
-			with: 'Basic Configuration'.
+		html heading: 'Basic Configuration'.
 		html anchor
 			class: 'goback';
 			callback: [ self answer ];
