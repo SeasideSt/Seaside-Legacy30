@@ -5,7 +5,6 @@ named: aString
 	^ instances
 		detect: [ :each | each name = aString ]
 		ifNone: [
-			| config |
 			instances add: (self basicNew
 				initializeWithName: aString;
 				yourself) ]
