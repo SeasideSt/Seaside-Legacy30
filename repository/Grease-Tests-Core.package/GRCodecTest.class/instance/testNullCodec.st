@@ -1,9 +1,7 @@
 tests
 testNullCodec
-	| codec readStream writeStream strings |
+	| codec strings |
 	codec := GRNullCodec new.
-	readStream := self latin1String readStream.
-	writeStream := WriteStream on: String new.
 	strings := OrderedCollection new
 		add: self latin1String;
 		add: self utf8String;
