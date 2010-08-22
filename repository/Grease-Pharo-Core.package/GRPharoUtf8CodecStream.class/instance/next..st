@@ -1,8 +1,7 @@
 streaming
 next: anInteger
 	"Convert the given string from UTF-8 using the fast path if converting to Latin-1"
-	| outStream lastIndex byte1 byte2 byte3 byte4 unicode count |
-	lastIndex := 1.
+	| outStream byte1 byte2 byte3 byte4 unicode count |
 	outStream := WriteStream on: (String new: anInteger).
 	count := 0.
 	[ count < anInteger and: [ stream atEnd not ] ] whileTrue: [
