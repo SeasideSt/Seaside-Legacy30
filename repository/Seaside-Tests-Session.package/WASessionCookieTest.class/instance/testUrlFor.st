@@ -1,6 +1,6 @@
 tests
 testUrlFor
-	| context request response cookie documentHandler url |
+	| context request response documentHandler url |
 	request := self requestWithMethod: 'GET'.
 	request setCookies: (Array with: (WARequestCookie key: '_s' value: 'sessionid')).
 	response := WABufferedResponse new.
