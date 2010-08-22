@@ -1,5 +1,5 @@
 *prototype-core
-initializeWithIterator: aBlock 
+setIterator: aBlock 
 	| factory |
 	factory := (PTFactory 
 		context: self renderContext
