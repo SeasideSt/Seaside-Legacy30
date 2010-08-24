@@ -18,7 +18,7 @@ responseForLibrary: aLibrary
 							html anchor
 								url: (aLibrary urlOf: each);
 								with: (aLibrary asFilename: each) ].
-						html tableData: (aLibrary perform: each) size.
+						html tableData: (aLibrary fileSizeOf: each).
 						html tableData: (aLibrary mimetypeForFile: (aLibrary asFilename: each)) ] ] ] ].
 	context respond: [ :response |
 		response
