@@ -4,8 +4,8 @@ writeStatusOn: aStream
 	aStream
 		nextPut: $ ;
 		nextPutAll: self status greaseString.
-	self message isNil ifFalse: 
-		[ aStream
+	self message isNil ifFalse:  [
+		aStream
 			nextPut: $ ;
 			nextPutAll: self message ].
 	aStream crlf
