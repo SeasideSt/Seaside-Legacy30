@@ -1,8 +1,3 @@
 comparing
 hash
-	| answer |
-	answer := self size.
-	self keysAndValuesDo: [ :key :value |
-		"not ideal, vulerable to key - value permutations"
-		answer := (answer bitXor: key hash) bitXor: value hash ].
-	^ answer 
+	^ self class hash bitXor: self size hash
