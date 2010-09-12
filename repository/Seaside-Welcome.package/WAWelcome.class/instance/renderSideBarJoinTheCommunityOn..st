@@ -17,7 +17,7 @@ renderSideBarJoinTheCommunityOn: html
 		get;
 		with: [
 			html hiddenInput
-				value: 'site:lists.squeakfoundation.org ';
+				value: 'site:lists.squeakfoundation.org/pipermail/seaside/';
 				name: 'q'.
 			html textInput
 				name: 'q'.

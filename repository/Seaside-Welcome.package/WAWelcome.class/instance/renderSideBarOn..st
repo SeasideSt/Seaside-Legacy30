@@ -6,7 +6,7 @@ renderSideBarOn: html
 		get;
 		with: [
 			html hiddenInput
-				value: 'site:seaside.st ';
+				value: 'site:seaside.st';
 				name: 'q'.
 
 			html textInput
