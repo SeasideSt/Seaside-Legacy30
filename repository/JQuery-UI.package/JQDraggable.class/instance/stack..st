@@ -1,5 +1,5 @@
 options-generated
-stack: anObject
-	"Controls the z-Index of the defined group (key 'group' in the hash, accepts jQuery selector) automatically, always brings to front the dragged item. Very useful in things like window managers. Optionally, a 'min' key can be set, so the zIndex cannot go below that value."
+stack: aSelector
+	"Controls the z-Index of the set of elements that match the selector, always brings to front the dragged item. Very useful in things like window managers."
 
-	self optionAt: 'stack' put: anObject
+	self optionAt: 'stack' put: aSelector
