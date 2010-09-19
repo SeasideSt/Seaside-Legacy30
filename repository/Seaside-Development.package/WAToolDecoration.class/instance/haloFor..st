@@ -1,3 +1,3 @@
 plugin-halos
-haloFor: aComponent
-	^ halos at: aComponent ifAbsentPut: [ WAHalo on: aComponent ]
+haloFor: aPresenter
+	^ halos at: aPresenter ifAbsentPut: [ aPresenter haloClass on: aPresenter ]

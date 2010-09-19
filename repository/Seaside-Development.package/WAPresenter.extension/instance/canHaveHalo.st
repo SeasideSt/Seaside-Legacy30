@@ -1,3 +1,5 @@
 *seaside-development
 canHaveHalo
-	^ true
+	"Answer true if the presenter should display a halo."
+
+	^ self haloClass notNil
