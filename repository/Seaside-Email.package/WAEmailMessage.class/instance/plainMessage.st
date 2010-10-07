@@ -1,25 +1,21 @@
 private
 plainMessage
-	^ String streamContents: 
-		[ :stream | 
+	^ String streamContents: [ :stream | 
 		self 
 			renderAddress: self from
 			withHeader: 'From: '
 			on: stream.
-		self to do: 
-			[ :each | 
+		self to do: [ :each | 
 			self 
 				renderAddress: each
 				withHeader: 'To: '
 				on: stream ].
-		self cc do: 
-			[ :each | 
+		self cc do: [ :each | 
 			self 
 				renderAddress: each
 				withHeader: 'Cc: '
 				on: stream ].
-		self bcc do: 
-			[ :each | 
+		self bcc do: [ :each | 
 			self 
 				renderAddress: each
 				withHeader: 'Bcc: '
@@ -29,9 +25,9 @@ plainMessage
 			nextPutAll: self subject;
 			nextPut: Character cr.
 			
-		self headers keysAndValuesDo: [:key :value |
+		self headers keysAndValuesDo: [ :key :value |
 			stream 
-				nextPutAll: key greaseString; nextPut: $:; nextPut: $ ; "space"
+				nextPutAll: key greaseString; nextPut: $:; nextPut: Character space;
 				nextPutAll: value greaseString; nextPut: Character cr].
 		
 		stream nextPut: Character cr. "let body start"
