@@ -11,13 +11,13 @@ search: aSearchBlock labels: aLabelsBlock callback: aCallbackBlock
 			stream json: ((aSearchBlock value: term) asArray collect: [ :object | 
 				GRSmallDictionary new
 					at: 'label' put: (aLabelsBlock value: object);
-					at: 'value' put: (mapping at: object ifAbsentPut: [ mapping size + 1 ]);
+					at: 'index' put: (mapping at: object ifAbsentPut: [ mapping size + 1 ]);
 					yourself ]) ];
 		onComplete: 'response(arguments[0])'; 
 		dataType: 'jsonp') asFunction: #('request' 'response')).
 	self onSelect: ((self jQuery ajax
 		callback: [ :value | term := value greaseInteger ] 
-		value: (JSStream on: 'ui.item.value');
+		value: (JSStream on: 'ui.item.index');
 		script: [ :script |
 			mapping keysAndValuesDo: [ :object :value |
 				value = term
