@@ -6,6 +6,5 @@ newRandom
 	
 	Make sure that both methods are safe under heavy concurrent load.
 	
-	Used by Gemstone/S traditional Randoms which cannot be persisted.
-	Used by Squeak to use a secure random when avaiable."
+	Used by Gemstone/S traditional Randoms which cannot be persisted.."
 	^ GRPharoRandomProvider
