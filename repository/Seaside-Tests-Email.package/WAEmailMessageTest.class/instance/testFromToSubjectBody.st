@@ -7,6 +7,8 @@ testFromToSubjectBody
 		to: self seasideDev
 		subject: 'new email package'.
 	message setStringBody: 'Hello' wrap: false.
+	"we don't test them here: "
+	message headers removeKey: 'Date'.
 		
 	self assert:
 'From: "Philippe Marschall" <philippe.marschall@gmail.com>', cr,
