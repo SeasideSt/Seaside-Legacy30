@@ -1,6 +1,6 @@
 convenience
 sourceCallback: aOneArgumentBlock
-	"A one argument block that will be evaluated with the term the user currently typed. The block is expected to answer a colleciton of strings."
+	"A one argument block that will be evaluated with the term the user currently typed. The block is expected to answer a collection of objects."
 	
 	| term |
 	self source: ((self jQuery getJson
