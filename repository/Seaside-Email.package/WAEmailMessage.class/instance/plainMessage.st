@@ -27,6 +27,13 @@ plainMessage
 		stream
 			nextPutAll: 'Subject: ';
 			nextPutAll: self subject;
-			nextPut: Character cr;
 			nextPut: Character cr.
+			
+		self headers keysAndValuesDo: [:key :value |
+			stream 
+				nextPutAll: key greaseString; nextPut: $:; nextPut: $ ; "space"
+				nextPutAll: value greaseString; nextPut: Character cr].
+		
+		stream nextPut: Character cr. "let body start"
+		
 		self body isNil ifFalse: [ stream nextPutAll: self body greaseString ] ]
