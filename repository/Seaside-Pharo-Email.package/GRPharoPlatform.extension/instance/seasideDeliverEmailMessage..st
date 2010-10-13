@@ -1,8 +1,26 @@
 *seaside-pharo-email
 seasideDeliverEmailMessage: aWAEmailMessage
 
-	SMTPClient
-		deliverMailFrom: aWAEmailMessage from greaseString
-		to: aWAEmailMessage recipients
-		text: aWAEmailMessage plainMessage
-		usingServer: self seasideSmtpServer
+	| client server serverAddress |
+	client := SMTPClient new.
+	"user login information if applicable"
+	self seasideSmtpUsername ifNotNilDo: [:username | 
+		client user: username.
+		self seasideSmtpPassword ifNotNilDo: [:password |
+			client password: password]].
+	"use HELO/EHLO ip address format [127.0.0.1] if local host name is ip"
+	client localHostName isIpAddress 
+		ifTrue: [client localHostName: '[', client localHostName, ']'].
+
+	"deliver the mail"
+	server := self seasideSmtpServer.
+	serverAddress := server isIpAddress 
+		ifTrue: [server] 
+		ifFalse: [NetNameResolver addressForName: server].
+	client openOnHost: serverAddress port: self seasideSmtpPort.
+	[client 
+		mailFrom: aWAEmailMessage from greaseString 
+		to: aWAEmailMessage recipientsAddresses
+		text: aWAEmailMessage plainMessage.
+	client quit]
+		ensure: [client close].

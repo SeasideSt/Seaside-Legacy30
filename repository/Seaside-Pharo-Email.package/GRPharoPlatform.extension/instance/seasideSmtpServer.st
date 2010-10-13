@@ -1,3 +1,4 @@
 *seaside-pharo-email
 seasideSmtpServer
-	^ MailSender smtpServer
+
+	^ self seasideApplicationPreferenceAt: #smtpServer ifAbsent: [MailSender smtpServer]
