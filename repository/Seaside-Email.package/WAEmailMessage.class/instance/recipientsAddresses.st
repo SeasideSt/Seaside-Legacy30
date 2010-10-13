@@ -1,3 +1,9 @@
 private
 recipientsAddresses
-	^ self to , self cc , self bcc collect: [ :each | each address ]
+	^ Array streamContents: [ :stream |
+		self to do: [ :each |
+			stream nextPut: each address ].
+		self cc do: [ :each |
+			stream nextPut: each address ].
+		self bcc do: [ :each |
+			stream nextPut: each address ] ]

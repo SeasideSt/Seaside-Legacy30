@@ -1,4 +1,4 @@
-as yet unclassified
+description
 describeOn: config 
 	(config string: #smtpServer)
 		group: #email;
