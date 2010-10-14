@@ -11,6 +11,7 @@ testAnsiStringsRule
 	self compile: 'stringSpace String space, (String with: Character space)' in: class.
 	self compile: 'findTokens ''123'' findTokens: '',''' in: class.
 	self compile: 'findTokensCharacter ''123'' findTokens: $,' in: class.
+	self compile: 'findTokensArray ''123'' findTokens: #($, $;)' in: class.
 	self 
 		runTransformation: GRAnsiStringsRule
 		changes: #( 
@@ -20,4 +21,5 @@ testAnsiStringsRule
 			'stringCrLf (String with: Character cr with: Character lf), (String with: Character cr with: Character lf)'
 			'stringSpace (String with: Character space), (String with: Character space)'
 			'findTokens ''123'' subStrings: '','''
-			'findTokensCharacter ''123'' subStrings: '',''' )
+			'findTokensCharacter ''123'' subStrings: '',''' 
+			'findTokensArray ''123'' subStrings: '',;''')
