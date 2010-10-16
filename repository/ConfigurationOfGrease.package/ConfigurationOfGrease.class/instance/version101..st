@@ -4,7 +4,7 @@ version101: spec
 
 	spec for: #common do: [
 		spec blessing: #development.
-		spec description: '- 1.0 final'.
+		spec description: '- pick up latest mcz files'.
 		spec author: 'DaleHenrichs'.
 		spec timestamp: '10/11/2010 14:46'.
 		spec 

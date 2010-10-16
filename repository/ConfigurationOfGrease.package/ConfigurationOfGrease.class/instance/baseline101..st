@@ -36,9 +36,8 @@ baseline101: spec
 			project: 'Refactoring-Core' with: [
 				spec
 					className: 'ConfigurationOfRefactoringBrowser';
-					versionString: '1.2-baseline';
+					versionString: '1.3-baseline';
 					loads: #('Refactoring-Core' );
-					file: 'ConfigurationOfRefactoringBrowser';
 					repository: 'http://www.squeaksource.com/MetacelloRepository' ];
 			yourself.
 		spec
@@ -66,14 +65,12 @@ baseline101: spec
 				spec
 					className: 'ConfigurationOfGsCore';
 					versionString: '0.239-baseline';
-					file: 'ConfigurationOfGsCore';
 					repository: 'http://seaside.gemstone.com/ss/MetacelloRepository' ];
 			project: 'UTF8' with: [
 				spec
 					className: 'ConfigurationOfGsMisc';
 					versionString: '0.236-baseline';
 					loads: #('Utf8Encoding' );
-					file: 'ConfigurationOfGsMisc';
 					repository: 'http://seaside.gemstone.com/ss/MetacelloRepository' ];
 			project: 'System-Digital-Signatures'
 				copyFrom: 'UTF8'
