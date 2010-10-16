@@ -36,7 +36,6 @@ baseline101: spec
 			project: 'Refactoring-Core' with: [
 				spec
 					className: 'ConfigurationOfRefactoringBrowser';
-					versionString: '1.3-baseline';
 					loads: #('Refactoring-Core' );
 					repository: 'http://www.squeaksource.com/MetacelloRepository' ];
 			yourself.
