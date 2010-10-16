@@ -4,8 +4,9 @@ performRendering: anObject
 	self requestContext respond: [ :response |
 		innerContext := canvas context copy.
 		docRoot := WAHtmlRoot context: innerContext.
-		self rootBlock value: docRoot.
+		response contentType: WAMimeType textHtml.
 		response doNotCache.
+		self rootBlock value: docRoot.
 		document := self requestContext handler documentClass 
 			on: response stream codec: self requestContext codec.
 		canvas context document: document.
