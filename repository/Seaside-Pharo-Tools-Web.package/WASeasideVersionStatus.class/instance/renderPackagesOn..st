@@ -1,11 +1,17 @@
 rendering
 renderPackagesOn: html
+	| workingCopies |
+	workingCopies :=  [ self sortedWorkingCopies ]
+		on: Error
+		do: [
+			html render: 'Could not resolve working copies'.
+			^ self ].
 	html table: [
 		html tableHead: [
 			html tableRow: [
 				html tableHeading: 'Package'.
 				html tableHeading: 'Version' ] ].
-		self sortedWorkingCopies do: [ :category |
+		workingCopies do: [ :category |
 			html tableRow: [
 				html tableHeading: category key.
 				html tableHeading ].
