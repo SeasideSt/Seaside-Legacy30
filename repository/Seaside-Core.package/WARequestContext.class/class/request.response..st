@@ -1,5 +1,5 @@
 instance creation
-request: aRequest response: aResponse 
+request: aRequest response: aResponse
 	^ self 
 		request: aRequest
 		response: aResponse
