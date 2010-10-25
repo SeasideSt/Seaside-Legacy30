@@ -5,7 +5,7 @@ testCodecUtf8
 		codec := GRCodec forEncoding: codecName.
 		self assert: codec name asLowercase = codecName asLowercase.
 		self assert: codec url name asLowercase = codecName asLowercase.
-		self assert: (codec encode: self decodedString) asByteArray = self utf8String asByteArray.
-		self assert: (codec url encode: self decodedString) asByteArray = self utf8String asByteArray.
+		self assert: (codec encode: self decodedString) greaseString = self utf8String greaseString.
+		self assert: (codec url encode: self decodedString) greaseString = self utf8String greaseString.
 		self assert: (codec decode: self utf8String) = self decodedString.
 		self assert: (codec url decode: self utf8String) = self decodedString ]

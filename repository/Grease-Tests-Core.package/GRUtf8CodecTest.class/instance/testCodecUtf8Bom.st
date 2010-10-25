@@ -4,5 +4,5 @@ testCodecUtf8Bom
 		| codec bom |
 		codec := GRCodec forEncoding: codecName.
 		bom := self asString: #(239 187 191 ).
-		self assert: (codec decode: bom , self utf8String) asByteArray = self decodedString asByteArray.
-		self assert: (codec url decode: bom , self utf8String) asByteArray = self decodedString asByteArray]
+		self assert: (codec decode: bom , self utf8String) greaseString = self decodedString greaseString.
+		self assert: (codec url decode: bom , self utf8String) greaseString = self decodedString greaseString ]
