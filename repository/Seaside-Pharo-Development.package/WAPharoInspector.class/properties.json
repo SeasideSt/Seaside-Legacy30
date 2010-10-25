@@ -1,13 +1,11 @@
 {
-	"commentStamp" : "jf 2/21/2009 00:00",
-	"super" : "WAWalkback",
+	"commentStamp" : "jf 3/3/2009 22:39",
+	"super" : "WAInspector",
 	"category" : "Seaside-Pharo-Development-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"frames"
-	],
-	"name" : "WASqueakWalkback",
+	"instvars" : [ ],
+	"name" : "WAPharoInspector",
 	"type" : "normal"
 }
