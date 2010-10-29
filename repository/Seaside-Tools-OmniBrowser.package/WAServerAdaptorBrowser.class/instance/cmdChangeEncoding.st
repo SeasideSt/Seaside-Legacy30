@@ -1,3 +1,5 @@
 commands
 cmdChangeEncoding
+	<command>
+	
 	^ WACmdEncodingForAdaptor 

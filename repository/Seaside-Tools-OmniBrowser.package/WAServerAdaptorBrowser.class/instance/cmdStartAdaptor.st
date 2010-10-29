@@ -1,3 +1,5 @@
 commands
 cmdStartAdaptor
+	<command>
+	
 	^ WACmdStartAdaptor

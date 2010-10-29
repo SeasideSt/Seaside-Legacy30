@@ -1,3 +1,5 @@
 commands
 cmdUseNewDispatcher
+	<command>
+	
 	^ WACmdUseNewDispatcher

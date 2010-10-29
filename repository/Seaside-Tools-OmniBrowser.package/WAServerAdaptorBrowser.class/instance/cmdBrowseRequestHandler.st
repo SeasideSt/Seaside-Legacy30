@@ -1,3 +1,5 @@
 commands
 cmdBrowseRequestHandler
+	<command>
+	
 	^ WACmdBrowseRequestHandler

@@ -1,3 +1,5 @@
 commands
 cmdRemoveHandler
+	<command>
+	
 	^ WACmdRemoveHandler

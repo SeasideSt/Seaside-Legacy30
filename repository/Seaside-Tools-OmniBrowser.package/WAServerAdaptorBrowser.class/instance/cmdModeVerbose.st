@@ -1,3 +1,5 @@
 commands
 cmdModeVerbose
+	<command>
+	
 	^ WACmdModeVerbose

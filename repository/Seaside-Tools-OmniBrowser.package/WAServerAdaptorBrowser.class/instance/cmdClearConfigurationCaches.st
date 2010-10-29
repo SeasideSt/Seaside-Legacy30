@@ -1,3 +1,5 @@
 commands
-cmdClearConfigurationCaches	
+cmdClearConfigurationCaches
+	<command>
+	
 	^ WACmdClearConfigurationCaches

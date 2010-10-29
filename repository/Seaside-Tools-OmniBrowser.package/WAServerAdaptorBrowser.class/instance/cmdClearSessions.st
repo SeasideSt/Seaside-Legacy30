@@ -1,3 +1,5 @@
 commands
 cmdClearSessions
+	<command>
+	
 	^ WACmdClearSessions

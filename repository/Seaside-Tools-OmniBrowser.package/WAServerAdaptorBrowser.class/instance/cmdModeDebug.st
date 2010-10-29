@@ -1,3 +1,5 @@
 commands
 cmdModeDebug
+	<command>
+	
 	^ WACmdModeDebug
