@@ -1,5 +1,5 @@
 initialization
 onCodecStream: aCodecStream socketStream: aSocketStream
-	self initalizeOn: aCodecStream.
+	self initializeOn: aCodecStream.
 	codecStream := aCodecStream.
 	socketStream := aSocketStream
