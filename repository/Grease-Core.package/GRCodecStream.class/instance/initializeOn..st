@@ -1,4 +1,4 @@
 initialization
-initalizeOn: aStream
+initializeOn: aStream
 	self initialize.
 	stream := aStream.

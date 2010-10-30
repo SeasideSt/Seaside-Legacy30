@@ -1,3 +1,3 @@
 instance creation
 on: aStream
-	^ self basicNew initalizeOn: aStream
+	^ self basicNew initializeOn: aStream
