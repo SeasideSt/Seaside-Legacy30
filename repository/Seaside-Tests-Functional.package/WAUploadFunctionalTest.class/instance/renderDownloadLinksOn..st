@@ -1,10 +1,11 @@
 rendering
 renderDownloadLinksOn: html
 	html paragraph: [
-		| contents |
+		| contents contentType |
 		self renderIsByteArray: file rawContents on: html.
 		html break.
-		contents := file contentType isBinary
+		contentType := file contentType.
+		contents := (contentType isNil or: [ contentType isBinary ])
 			ifTrue: [ file rawContents ]
 			ifFalse: [
 				"we don't use #contentsDecoded because no browser sends them because operating systems suck at files"
