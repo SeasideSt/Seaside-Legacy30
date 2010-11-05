@@ -4,4 +4,4 @@ renderPluginInfoFor: aCachePlugin on: html
 	html tableData: [
 		html anchor
 			callback: [ self show: aCachePlugin configuration configurationComponent ];
-			with: 'Configure']
+			with: 'Configure' ]

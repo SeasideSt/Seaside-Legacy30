@@ -4,4 +4,4 @@ inheritedValueAndSourceAt: aSymbol do: aBlock
 		each expressionAt: aSymbol ifPresent: [ :exp |
 			^ aBlock
 				value: (each at: aSymbol)
-				value: each ]]
+				value: each ] ]

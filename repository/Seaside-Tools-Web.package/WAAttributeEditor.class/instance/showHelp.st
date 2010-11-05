@@ -1,3 +1,3 @@
 settings
 showHelp
-	^self propertyAt: #showHelp ifAbsent: [false]
+	^ self propertyAt: #showHelp ifAbsent: [ false ]

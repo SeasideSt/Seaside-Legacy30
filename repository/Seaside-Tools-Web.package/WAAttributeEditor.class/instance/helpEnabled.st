@@ -1,3 +1,3 @@
 settings
 helpEnabled
-	^self propertyAt: #helpEnabled ifAbsent: [false]
+	^ self propertyAt: #helpEnabled ifAbsent: [ false ]

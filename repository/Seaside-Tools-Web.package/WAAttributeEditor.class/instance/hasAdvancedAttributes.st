@@ -1,3 +1,3 @@
 settings
 hasAdvancedAttributes
-	^self propertyAt: #hasAdvanced ifAbsent: [false]
+	^ self propertyAt: #hasAdvanced ifAbsent: [ false ]

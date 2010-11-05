@@ -1,18 +1,18 @@
 rendering
 renderFieldForAttribute: anAttribute on: html 
 	(self configuration at: anAttribute key) isNil 
-		ifTrue: 
-			[ self 
+		ifTrue:  [
+			self 
 				visitAttribute: anAttribute
 				on: html ]
-		ifFalse: 
-			[ (self hasLocalValueForAttribute: anAttribute) 
-				ifTrue: 
-					[ self 
+		ifFalse: [
+			(self hasLocalValueForAttribute: anAttribute) 
+				ifTrue:  [
+					self 
 						visitAttribute: anAttribute
 						on: html ]
-				ifFalse: 
-					[ self 
+				ifFalse: [
+					self 
 						renderInheritedAttribute: anAttribute
 						on: html ] ].
 	self 

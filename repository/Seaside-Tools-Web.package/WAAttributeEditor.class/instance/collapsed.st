@@ -1,3 +1,3 @@
 settings
 collapsed
-	^self propertyAt: #collapsed ifAbsent: [false]
+	^ self propertyAt: #collapsed ifAbsent: [ false ]

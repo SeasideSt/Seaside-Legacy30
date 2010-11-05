@@ -7,7 +7,7 @@ renderConfigurationOn: html
 		with: [
 		html tableRow: [
 			html tableData: 'Expiry Policy'.
-			self renderPluginInfoFor: self configuration expiryPolicy on: html].
+			self renderPluginInfoFor: self configuration expiryPolicy on: html ].
 		html tableRow: [
 			html tableData: 'Reaping Strategy'.
 			self renderPluginInfoFor: self configuration reapingStrategy on: html  ].

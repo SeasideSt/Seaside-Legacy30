@@ -1,3 +1,3 @@
 accessing
 myApplication
-	^self parent parent handler
+	^ self parent parent handler
