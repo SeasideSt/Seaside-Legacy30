@@ -5,6 +5,7 @@ go
 	[
 		[
 			componentName := self chooseComponentName.
+			self checkAuthorInitials.
    			component := self createComponent: componentName.
 		
 			component isNil

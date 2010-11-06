@@ -12,11 +12,14 @@ renderContentOn: html
 			code: self componentName;
 			text: ' in your Smalltalk image. First, try changing the displayed text by changing the ';
 			code: '#renderContentOn:';
-			text: ' method. Then you can experiment further based on what you''ve seen in the examples and what you read in the documentation.' ].
+			text: ' method. Then you can experiment further based on what you''ve seen in the examples and what you read in the '.
+		html anchor
+				url: 'http://book.seaside.st/';
+				with: 'documentation.' ].
 		
 	html paragraph: [
 		html text: 'Want to '.
 		html anchor
 			callback: [ self answer ];
-			with: 'create another one'.
+			with: 'create another component'.
 		html text: '?' ]
