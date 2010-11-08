@@ -1,3 +1,3 @@
 *seaside-welcome
 seasideIsAuthorNameSet
-	^ Author fullNamePerSe ~= nil
+	^ Author fullNamePerSe isEmptyOrNil not
