@@ -2,26 +2,26 @@ versions
 version101: spec
 	<version: '1.0.1' imports: #('1.0.1-baseline' )>
 
-	spec for: #common do: [
-		spec blessing: #development.
+	spec for: #'common' do: [
+		spec blessing: #'development'.
 		spec description: '- pick up latest mcz files'.
 		spec author: 'DaleHenrichs'.
-		spec timestamp: '11/5/2010 16:43'.
+		spec timestamp: '11/08/2010 15:13:08'.
 		spec 
 			package: 'Grease-Core' with: 'Grease-Core-pmm.51';
 			package: 'Grease-Tests-Core' with: 'Grease-Tests-Core-pmm.62'.].
-	spec for: #squeakCommon do: [
+	spec for: #'squeakCommon' do: [
 		spec 
 			package: 'Grease-Pharo-Core' with: 'Grease-Pharo-Core-pmm.31';
 			package: 'Grease-Tests-Pharo-Core' with: 'Grease-Tests-Pharo-Core-pmm.8'.].
-	spec for: #pharo do: [
+	spec for: #'pharo' do: [
 		spec project: 'Refactoring-Core' with: '1.4'.
 		spec 
-			package: 'Grease-Slime' with: 'Grease-Slime-lr.6';
+			package: 'Grease-Slime' with: 'Grease-Slime-lr.7';
 			package: 'Grease-Tests-Slime' with: 'Grease-Tests-Slime-lr.6'.].
 	spec for: #'GreaseForPharo1.0' do: [
 		spec package: 'Grease-Pharo10-Core' with: 'Grease-Pharo10-Core-pmm.2'.].
-	spec for: #gemstone do: [
+	spec for: #'gemstone' do: [
 		spec 
 			project: 'GsCore' with: '0.241';
 			project: 'SMTPMail' with: '0.237';
@@ -30,8 +30,8 @@ version101: spec
 		spec 
 			package: 'Grease-GemStone-Core' with: [
 				spec 
-					file: 'Grease-GemStone-Core-DaleHenrichs.26';
-					postLoadDoIt: #initializeNewRandomCaches10alpha3. ];
+					file: 'Grease-GemStone-Core-DaleHenrichs.27';
+					postLoadDoIt: #'initializeNewRandomCaches10alpha3'. ];
 			package: 'Grease-Tests-GemStone-Core' with: 'Grease-Tests-GemStone-Core-DaleHenrichs.8'.].
 	spec for: #'gs2.3.x' do: [
 		spec package: 'Grease-GemStone230-Core' with: 'Grease-GemStone230-Core-dkh.2'.].
