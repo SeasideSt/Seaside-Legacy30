@@ -20,7 +20,7 @@ version101: spec
 			package: 'Grease-Slime' with: 'Grease-Slime-lr.7';
 			package: 'Grease-Tests-Slime' with: 'Grease-Tests-Slime-lr.6'.].
 	spec for: #'GreaseForPharo1.0' do: [
-		spec package: 'Grease-Pharo10-Core' with: 'Grease-Pharo10-Core-pmm.2'.].
+		spec package: 'Grease-Pharo10-Core' with: 'Grease-Pharo10-Core-dkh.3'.].
 	spec for: #'gemstone' do: [
 		spec 
 			project: 'GsCore' with: '0.241';
