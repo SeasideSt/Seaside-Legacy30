@@ -64,12 +64,12 @@ baseline101: spec
 			project: 'GsCore' with: [
 				spec
 					className: 'ConfigurationOfGsCore';
-					versionString: '0.239-baseline';
+					versionString: '0.239.2-baseline';
 					repository: 'http://seaside.gemstone.com/ss/MetacelloRepository' ];
 			project: 'UTF8' with: [
 				spec
 					className: 'ConfigurationOfGsMisc';
-					versionString: '0.236-baseline';
+					versionString: '0.237-baseline';
 					loads: #('Utf8Encoding' );
 					repository: 'http://seaside.gemstone.com/ss/MetacelloRepository' ];
 			project: 'System-Digital-Signatures'
