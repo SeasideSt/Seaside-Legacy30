@@ -3,7 +3,7 @@ version101: spec
 	<version: '1.0.1' imports: #('1.0.1-baseline' )>
 
 	spec for: #'common' do: [
-		spec blessing: #'development'.
+		spec blessing: #'release'.
 		spec description: '- pick up latest mcz files'.
 		spec author: 'DaleHenrichs'.
 		spec timestamp: '11/08/2010 15:13:08'.

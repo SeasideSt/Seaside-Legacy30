@@ -1,5 +1,5 @@
 symbolic versions
 development: spec 
-	<symbolicVersion: #development>
+	"no development versions at the moment"
 	
-	spec for: #'common' version: '1.0.1'. 
+	<symbolicVersion: #development>
