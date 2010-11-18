@@ -6,8 +6,9 @@ updateToLatestPackages
 
 	"Note: you need 1.0-beta.28 or later for the class MetacelloToolBox"
 
-	(Smalltalk at: #MetacelloToolBox)
-		updateDevelopment: self project currentVersion versionString
+	((Smalltalk at: #MetacelloToolBox)
+		updateDevelopment: #development
 		for: self name asString
 		updateProjects: false 
-		description: ''
+		description: '') isEmpty 
+			ifTrue: [ self inform: 'All specs up to date' ].
