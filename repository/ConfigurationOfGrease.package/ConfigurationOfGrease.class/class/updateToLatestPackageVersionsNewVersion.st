@@ -1,6 +1,6 @@
 development support
-updateToLatestPackagesNewVersion
-	"self updateToLatestPackagesNewVersion"
+updateToLatestPackageVersionsNewVersion
+	"self updateToLatestPackageVersionsNewVersion"
 
 	"Updates to a new version based on incrementing the minor version number of the current version"
 	
@@ -9,4 +9,4 @@ updateToLatestPackagesNewVersion
 	| currentVersion newVersion |
 	currentVersion := self project currentVersion.
 	newVersion := currentVersion versionNumber copy incrementMinorVersionNumber.
-	self updateToLatestPackagesNewVersion: newVersion versionString currentVersion: currentVersion
+	self updateToLatestPackageVersionsNewVersion: newVersion versionString currentVersion: currentVersion

@@ -1,6 +1,6 @@
 development support
-updateToLatestPackages
-	"self updateToLatestPackages"
+updateToLatestPackageVersions
+	"self updateToLatestPackageVersions"
 
 	"Updates mcz file versions in current version"
 

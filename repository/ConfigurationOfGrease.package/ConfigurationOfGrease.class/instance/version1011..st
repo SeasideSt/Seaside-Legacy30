@@ -5,15 +5,15 @@ version1011: spec
 	spec for: #'common' do: [
 		spec blessing: #'development'.
 		spec description: '- pick up latest mcz files'.
-		spec author: 'DaleHenrichs'.
-		spec timestamp: '11/17/2010 14:54:18'.
+		spec author: 'dkh'.
+		spec timestamp: '11/19/2010 10:44'.
 		spec 
 			package: 'Grease-Core' with: 'Grease-Core-pmm.51';
 			package: 'Grease-Tests-Core' with: 'Grease-Tests-Core-pmm.63'.].
 
 	spec for: #'squeakCommon' do: [
 		spec 
-			package: 'Grease-Pharo-Core' with: 'Grease-Pharo-Core-pmm.31';
+			package: 'Grease-Pharo-Core' with: 'Grease-Pharo-Core-pmm.32';
 			package: 'Grease-Tests-Pharo-Core' with: 'Grease-Tests-Pharo-Core-pmm.8'.].
 
 	spec for: #'pharo' do: [
