@@ -1,6 +1,6 @@
 development support
 updateToLatestPackageVersionsNewVersion: newVersionString currentVersion: currentVersion
-	"self updateToLatestPackageVersionsNewVersion: '1.0.1.2' currentVersion: '1.0.1.1'"
+	"self updateToLatestPackageVersionsNewVersion: '1.0.3' currentVersion: '1.0.2'"
 
 	"Creates a new version <newVersionString> based on the currentVersion <currentVersion>.
 	 Loads the #bleedingEdge version.

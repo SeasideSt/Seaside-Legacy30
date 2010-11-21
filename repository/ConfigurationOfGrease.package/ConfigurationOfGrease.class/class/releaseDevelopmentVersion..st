@@ -1,6 +1,6 @@
 development support
 releaseDevelopmentVersion: commitMessage
-	"self releaseDevelopmentVersion: '- release version 1.0.1.1'"
+	"self releaseDevelopmentVersion: '- release version 1.0.2'"
 
 	"Change blessing to #release.
 	 Remove current development version from #development symbolic versions
