@@ -5,7 +5,7 @@ releaseDevelopmentVersion: commitMessage
 	"Change blessing to #release.
 	 Remove current development version from #development symbolic versions
 	 Define new #stable symbolic version.
-	 Commit and copy the configuration to gemsource and squeaksource MetacelloRepository
+	 Commit the configuration
 	 "
 
 	"Note: you need 1.0-beta.28 or later for the class MetacelloToolBox"
@@ -14,6 +14,3 @@ releaseDevelopmentVersion: commitMessage
 	(Smalltalk at: #MetacelloToolBox)
 		releaseVersion: version versionString for: self name asString;
 		saveConfigurationPackageFor: self name asString description: commitMessage.
-	self
-		releaseToGemSource;
-		releaseToSqueakSource

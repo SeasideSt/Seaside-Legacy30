@@ -1,4 +1,4 @@
-release
+development support
 releaseToSqueakSource
 	"self releaseToSqueakSource"
 
