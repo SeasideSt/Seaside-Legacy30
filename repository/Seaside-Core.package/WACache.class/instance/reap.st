@@ -4,18 +4,15 @@ reap
 	| newObjectsByKey newKeysByObject |
 	newObjectsByKey := GRPlatform current reducedConflictDictionary new.
 	newKeysByObject := GRPlatform current reducedConflictDictionary new.
-	mutex critical: 
-		[ objectsByKey keysAndValuesDo: 
-			[ :key :object | 
-			(self expiryPolicy 
-				isExpired: object
-				key: key) 
-				ifTrue: 
-					[ self 
+	mutex critical:  [
+		objectsByKey keysAndValuesDo: [ :key :object | 
+			(self expiryPolicy isExpired: object key: key) 
+				ifTrue: [
+					self 
 						notifyRemoved: object
 						key: key ]
-				ifFalse: 
-					[ newObjectsByKey 
+				ifFalse: [
+					newObjectsByKey 
 						at: key
 						put: object.
 					newKeysByObject 
