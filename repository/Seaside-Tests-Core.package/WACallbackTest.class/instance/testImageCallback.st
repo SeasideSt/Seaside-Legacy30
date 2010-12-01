@@ -5,20 +5,20 @@ testImageCallback
 
 	" an invalid callback "
 	self 
-		shouldnt: 
-			[ self request: (WARequestFields new
-					at: key
-						put: nil;
-					yourself) ]
+		shouldnt: [
+			self request: (WARequestFields new
+				at: key
+				put: nil;
+				yourself) ]
 		raise: WARenderNotification.
 	self assertLog: #().
 
 	" a valid callback "
 	self 
-		should: 
-			[ self request: (WARequestFields new
-					at: key , '.x'
-						put: nil;
-					yourself) ]
+		should:  [
+			self request: (WARequestFields new
+				at: key , '.x'
+				put: nil;
+				yourself) ]
 		raise: WARenderNotification.
-	self assertLog: #(1 )
+	self assertLog: #(1)
