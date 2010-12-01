@@ -1,12 +1,8 @@
 development support
 releaseDevelopmentVersion: commitMessage
-	"self releaseDevelopmentVersion: '- release version 1.0.2'"
+	"Release a version (set version blessing to #release), update the #development and #release symbolic versions and save the configuration."
 
-	"Change blessing to #release.
-	 Remove current development version from #development symbolic versions
-	 Define new #stable symbolic version.
-	 Commit the configuration
-	 "
+	"self releaseDevelopmentVersion: '- release version 1.0.2'"
 
 	"Note: you need 1.0-beta.28 or later for the class MetacelloToolBox"
 	| version |
