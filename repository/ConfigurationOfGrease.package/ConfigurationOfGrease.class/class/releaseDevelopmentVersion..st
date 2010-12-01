@@ -1,6 +1,6 @@
 development support
 releaseDevelopmentVersion: commitMessage
-	"Release a version (set version blessing to #release), update the #development and #release symbolic versions and save the configuration."
+	"Release a version (set version blessing to #release), update the #development and #stable symbolic versions and save the configuration."
 
 	"self releaseDevelopmentVersion: '- release version 1.0.2'"
 
