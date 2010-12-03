@@ -1,8 +1,8 @@
 development support
 updateToLatestPackageVersions
-	"self updateToLatestPackageVersions"
-
 	"Updates mcz file versions in current version"
+
+	"self updateToLatestPackageVersions"
 
 	"Note: you need 1.0-beta.28 or later for the class MetacelloToolBox"
 
