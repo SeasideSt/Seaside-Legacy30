@@ -1,5 +1,5 @@
 tests-adding
-testAddToPath
+testAddToPathWithLeadingSlash
 	url addToPath: '/files/WAStandardFiles/seaside.jpg'.
 	self assert: url path size = 3.
 	self assert: url path first = 'files'.
