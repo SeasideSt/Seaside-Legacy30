@@ -8,7 +8,8 @@ addToPath: aString
 	startIndex := aString indexOf: $/.
 	startIndex = 0
 		ifTrue: [
-			self path add: aString ]
+			aString isEmpty ifFalse: [
+				self path add: aString ] ]
 		ifFalse: [
 			p := self path.
 			stringSize := aString size.
