@@ -4,13 +4,7 @@ saveModifiedPackagesAndConfiguration: commitMessage
 
 	"self saveModifiedPackagesAndConfiguration: '- fixed bug'"
 
-	<apiDocumentation>
-	| version |
-	version := self project version: #development.
-	(Smalltalk at: #MetacelloToolBox)
-		saveModifiedDevelopmentPackages: version versionString for: self name asString description: commitMessage;
-		updateDevelopment: version versionString
-			for: self name asString
-			updateProjects: false
-			description: commitMessage;
-		saveConfigurationPackageFor: self name asString description: commitMessage
+	"Note: you need 1.0-beta.28 or later for the class MetacelloToolBox"
+
+	self ensureMetacello.
+	(Smalltalk at: #MetacelloToolBox) saveModifiedPackagesAndConfigurationIn: self description: commitMessage

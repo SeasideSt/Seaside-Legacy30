@@ -6,5 +6,5 @@ saveConfiguration: commitMessage
 
 	"Note: you need 1.0-beta.28 or later for the class MetacelloToolBox"
 
-	(Smalltalk at: #MetacelloToolBox)
-		saveConfigurationPackageFor: self name asString description: commitMessage
+	self ensureMetacello.
+	(Smalltalk at: #MetacelloToolBox) saveConfigurationPackageFor: self name asString description: commitMessage

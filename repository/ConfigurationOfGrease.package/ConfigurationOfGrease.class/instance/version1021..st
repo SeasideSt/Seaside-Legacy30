@@ -4,9 +4,11 @@ version1021: spec
 
 	spec for: #'common' do: [
 		spec blessing: #'development'.
-		spec description: '- add GemStone test coverage for GRPlatform file library support methods'.
+		spec description: '- add GemStone test coverage for GRPlatform file library support methods
+- User ServerDirectory in Grease (for performance) [GemStone].
+- fix open file descriptor leak [GemStone]'.
 		spec author: 'DaleHenrichs'.
-		spec timestamp: '12/02/2010 17:17:07'.
+		spec timestamp: '12/03/2010 16:50:14'.
 		spec 
 			package: 'Grease-Core' with: 'Grease-Core-pmm.52';
 			package: 'Grease-Tests-Core' with: 'Grease-Tests-Core-pmm.63'.].
@@ -34,9 +36,9 @@ version1021: spec
 		spec 
 			package: 'Grease-GemStone-Core' with: [
 				spec 
-					file: 'Grease-GemStone-Core-NorbertHartl.30';
+					file: 'Grease-GemStone-Core-DaleHenrichs.31';
 					postLoadDoIt: #'initializeNewRandomCaches10alpha3'. ];
-			package: 'Grease-Tests-GemStone-Core' with: 'Grease-Tests-GemStone-Core-DaleHenrichs.10'.].
+			package: 'Grease-Tests-GemStone-Core' with: 'Grease-Tests-GemStone-Core-DaleHenrichs.11'.].
 
 	spec for: #'gs2.3.x' do: [
 		spec package: 'Grease-GemStone230-Core' with: 'Grease-GemStone230-Core-dkh.2'.].
