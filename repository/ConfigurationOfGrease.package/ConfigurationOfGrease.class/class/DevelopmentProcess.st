@@ -18,7 +18,7 @@ RELEASE Process
 	- mark development version as release:
 		self releaseDevelopmentVersion: 'commit comment'
 	- copy configuration for general access for Squeak and Pharo:
-		self releaseToSqueakSource.
+		self copyToSqueakSource.
 	- copy configuration for general access for GLASS (Dale is willing to test and release for GLASS):
-		self releaseToGemSource.
+		self copyToGemSource.
 "

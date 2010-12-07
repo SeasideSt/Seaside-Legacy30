@@ -1,8 +1,8 @@
 development support
-releaseToSqueakSource
+copyToSqueakSource
 	"Copy the current configuration mcz file to http://www.squeaksource.com/MetacelloRepository"
 
-	"self releaseToSqueakSource"
+	"self copyToSqueakSource"
 
 	"Note: you need 1.0-beta.28 or later for the class MetacelloToolBox"
 
