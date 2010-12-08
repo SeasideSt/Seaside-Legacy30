@@ -1,12 +1,14 @@
 versions
-version1021: spec
-	<version: '1.0.2.1' imports: #('1.0.2-baseline' )>
+version103: spec
+	<version: '1.0.3' imports: #('1.0.2-baseline' )>
 
 	spec for: #'common' do: [
 		spec blessing: #'development'.
-		spec description: '- ABANDONED in favor of 1.0.3'.
+		spec description: '- add GemStone test coverage for GRPlatform file library support methods
+- User ServerDirectory in Grease (for performance) [GemStone].
+- fix open file descriptor leak [GemStone]'.
 		spec author: 'DaleHenrichs'.
-		spec timestamp: '12/03/2010 16:50:14'.
+		spec timestamp: '12/8/2010 12:09'.
 		spec 
 			package: 'Grease-Core' with: 'Grease-Core-pmm.52';
 			package: 'Grease-Tests-Core' with: 'Grease-Tests-Core-pmm.63'.].
