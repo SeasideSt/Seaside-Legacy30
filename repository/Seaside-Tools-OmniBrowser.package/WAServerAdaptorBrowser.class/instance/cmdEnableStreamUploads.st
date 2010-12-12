@@ -1,0 +1,5 @@
+commands
+cmdEnableStreamUploads
+	<command>
+	
+	^ WACmdEnableStreamUploads

@@ -1,0 +1,5 @@
+commands
+cmdDisableStreamUploads
+	<command>
+	
+	^ WACmdDisableStreamUploads

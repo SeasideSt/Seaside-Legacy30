@@ -2,4 +2,4 @@ commands
 cmdChangeEncoding
 	<command>
 	
-	^ WACmdEncodingForAdaptor 
+	^ WACmdEncodingForAdaptor
