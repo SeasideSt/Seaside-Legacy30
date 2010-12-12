@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WACmdEnableStreamUploads",
+	"name" : "WACmdToggleStreamUploads",
 	"type" : "normal"
 }
