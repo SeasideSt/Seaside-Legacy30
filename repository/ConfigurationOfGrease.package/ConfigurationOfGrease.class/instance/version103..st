@@ -4,9 +4,10 @@ version103: spec
 
 	spec for: #'common' do: [
 		spec blessing: #'development'.
-		spec description: '- add GemStone test coverage for GRPlatform file library support methods
+		spec description: '- add test coverage for GRPlatform file library support methods [GemStone]
 - User ServerDirectory in Grease (for performance) [GemStone].
-- fix open file descriptor leak [GemStone]'.
+- fix open file descriptor leak [GemStone]
+- fix Issue 166: http://code.google.com/p/glassdb/issues/detail?id=166 "discrepancy between Pharo regex and Gemstone on multiline strings [moved Ansi* streams to core GemStone]'.
 		spec author: 'DaleHenrichs'.
 		spec timestamp: '12/8/2010 12:09'.
 		spec 
@@ -29,15 +30,12 @@ version103: spec
 
 	spec for: #'gemstone' do: [
 		spec 
-			project: 'GsCore' with: '0.242';
+			project: 'GsCore' with: '0.243';
 			project: 'SMTPMail' with: '0.237';
 			project: 'UTF8' with: '0.237';
 			project: 'System-Digital-Signatures' with: '0.237'.
 		spec 
-			package: 'Grease-GemStone-Core' with: [
-				spec 
-					file: 'Grease-GemStone-Core-DaleHenrichs.31';
-					postLoadDoIt: #'initializeNewRandomCaches10alpha3'. ];
+			package: 'Grease-GemStone-Core' with: 'Grease-GemStone-Core-DaleHenrichs.32';
 			package: 'Grease-Tests-GemStone-Core' with: 'Grease-Tests-GemStone-Core-DaleHenrichs.11'.].
 
 	spec for: #'gs2.3.x' do: [
