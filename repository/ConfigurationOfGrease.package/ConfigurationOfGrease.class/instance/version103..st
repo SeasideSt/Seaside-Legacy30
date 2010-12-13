@@ -9,9 +9,9 @@ version103: spec
 - fix open file descriptor leak [GemStone]
 - fix Issue 166: http://code.google.com/p/glassdb/issues/detail?id=166 "discrepancy between Pharo regex and Gemstone on multiline strings [moved Ansi* streams to core GemStone]'.
 		spec author: 'DaleHenrichs'.
-		spec timestamp: '12/8/2010 12:09'.
+		spec timestamp: '12/13/2010 14:45:46'.
 		spec 
-			package: 'Grease-Core' with: 'Grease-Core-pmm.52';
+			package: 'Grease-Core' with: 'Grease-Core-DaleHenrichs.53';
 			package: 'Grease-Tests-Core' with: 'Grease-Tests-Core-pmm.63'.].
 
 	spec for: #'squeakCommon' do: [
