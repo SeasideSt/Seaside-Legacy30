@@ -6,10 +6,9 @@ greaseInteger
 	stream := self readStream.
 	negated := stream peek = $-.
 	negated ifTrue: [ stream next ].
-	[ stream atEnd not and: [ (char := stream next) isDigit ] ] whileTrue: 
-		[ number := (number isNil 
-			ifTrue: [ 0 ]
-			ifFalse: [ 10 * number ]) + (char greaseInteger - $0 greaseInteger) ].
+	[ stream atEnd not and: [ (char := stream next) isDigit ] ] whileTrue: [
+		number := (number isNil  ifTrue: [ 0 ]ifFalse: [ 10 * number ])
+			+ (char greaseInteger - $0 greaseInteger) ].
 	^ (number isNil or: [ negated not ]) 
 		ifFalse: [ number negated ]
 		ifTrue: [ number ]
