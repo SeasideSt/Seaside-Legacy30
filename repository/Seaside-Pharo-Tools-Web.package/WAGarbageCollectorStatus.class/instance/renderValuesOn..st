@@ -23,8 +23,8 @@ renderValuesOn: html
 		renderLabel: 'Tenures'
 		value: tenures
 		on: html.
-	tenures isZero ifFalse: 
-		[ self 
+	tenures isZero ifFalse: [
+		self 
 			renderLabel: 'Avg. GCs/tenure'
 			value: (incrementalGCs / tenures) greaseInteger
 			on: html ]
