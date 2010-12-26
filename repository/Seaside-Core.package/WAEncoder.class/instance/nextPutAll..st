@@ -7,13 +7,8 @@ nextPutAll: aString
 		| character value encoded |
 		character := aString at: index.
 		value := character greaseInteger.
-		value < table size 
-			ifFalse: [
-				self class 
-					encode: character
-					on: stream ]
-			ifTrue: [
-				encoded := table at: value + 1.
-				encoded isString 
-					ifTrue: [ stream nextPutAll: encoded ]
-					ifFalse: [ stream nextPut: encoded ] ] ]
+		encoded := table at: value + 1.
+		"Issue 482: use #notNil because it is faster than #isString because it is not actually sent"
+		encoded notNil 
+			ifTrue: [ stream nextPutAll: encoded ]
+			ifFalse: [ stream nextPut: character ] ]
