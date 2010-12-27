@@ -5,7 +5,7 @@ queryString
 	key/value field lists."
 	
 	^ String streamContents: [ :stream |
-		|urlEncoder|
+		| urlEncoder |
 		urlEncoder := WAUrlEncoder on: stream.
 		self queryFields associations
 			do: [ :each |
