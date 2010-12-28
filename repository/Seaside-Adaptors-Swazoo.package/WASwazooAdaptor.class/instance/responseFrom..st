@@ -15,6 +15,6 @@ responseFrom: aRequestContext
 	self 
 		convertCookiesFrom: aRequestContext response
 		to: swazooResponse.
-	swazooResponse code: aRequestContext response status asNumber.
+	swazooResponse statusCode: aRequestContext response status greaseInteger.
 	swazooResponse entity: aRequestContext response contents.
 	^ swazooResponse
