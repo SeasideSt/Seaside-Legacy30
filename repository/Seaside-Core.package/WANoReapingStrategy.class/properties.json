@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WACacheReapingStrategy",
+	"category" : "Seaside-Core-Cache",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WANoReapingStrategy",
+	"type" : "normal"
+}
