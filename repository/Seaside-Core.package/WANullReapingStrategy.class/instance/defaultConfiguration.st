@@ -1,5 +1,5 @@
 configuration
 defaultConfiguration
 	^ super defaultConfiguration
-		addParent: WANoReapingStrategyConfiguration instance;
+		addParent: WANullReapingStrategyConfiguration instance;
 		yourself

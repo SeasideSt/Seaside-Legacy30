@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "WASystemConfiguration",
+	"super" : "WACacheReapingStrategy",
 	"category" : "Seaside-Core-Cache",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WANoReapingStrategyConfiguration",
+	"name" : "WANullReapingStrategy",
 	"type" : "normal"
 }
