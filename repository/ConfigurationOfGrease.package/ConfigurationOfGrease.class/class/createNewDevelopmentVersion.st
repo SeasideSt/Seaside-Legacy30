@@ -1,6 +1,6 @@
 development support
 createNewDevelopmentVersion
-	"Create a new development version using current version as model."
+	"Create a new development version using the #stable version as model."
 
 	"self createNewDevelopmentVersion"
 	
