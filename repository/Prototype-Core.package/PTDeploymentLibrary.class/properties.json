@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "WAFileLibrary",
+	"super" : "PTDevelopmentLibrary",
 	"category" : "Prototype-Core-Libraries",
 	"classinstvars" : [ ],
 	"pools" : [ ],
