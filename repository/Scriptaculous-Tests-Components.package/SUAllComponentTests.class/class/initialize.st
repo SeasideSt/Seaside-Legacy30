@@ -1,7 +1,7 @@
 initialization
 initialize
 	(WAAdmin register: self asApplicationAt: 'javascript/scriptaculous-components')
-		addLibrary: PTDeploymentLibrary;
-		addLibrary: SUDeploymentLibrary;
+		addLibrary: PTDevelopmentLibrary;
+		addLibrary: SUDevelopmentLibrary;
 		addLibrary: SUComponentLibrary;
 		addLibrary: SUAllTestLibrary
