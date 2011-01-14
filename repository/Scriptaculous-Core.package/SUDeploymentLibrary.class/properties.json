@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "WAFileLibrary",
+	"super" : "SUDevelopmentLibrary",
 	"category" : "Scriptaculous-Core-Libraries",
 	"classinstvars" : [ ],
 	"pools" : [ ],
