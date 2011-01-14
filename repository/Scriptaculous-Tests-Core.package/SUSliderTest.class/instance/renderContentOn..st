@@ -4,6 +4,7 @@ renderContentOn: html
 	trackId := html nextId.
 	handleId := html nextId.
 	positionId := html nextId.
+	html paragraph: 'Slide between 0 and 100:'.
 	html div id: trackId; class: 'track'; with: [ html div id: handleId; class: 'handle' ].
 	html paragraph id: positionId; with: position.
 	html script: (html scriptaculous slider
