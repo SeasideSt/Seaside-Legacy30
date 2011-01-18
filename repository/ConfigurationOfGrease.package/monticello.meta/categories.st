@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #ConfigurationOfGrease!
+SystemOrganization addCategory: 'ConfigurationOfGrease'!
