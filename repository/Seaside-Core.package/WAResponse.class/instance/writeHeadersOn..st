@@ -1,7 +1,6 @@
 writing
 writeHeadersOn: aStream 
-	headers keysAndValuesDo: 
-		[ :key :value | 
+	headers keysAndValuesDo: [ :key :value | 
 		aStream
 			nextPutAll: key;
 			nextPutAll: ': ';
