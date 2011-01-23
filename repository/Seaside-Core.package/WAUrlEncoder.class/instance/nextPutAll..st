@@ -1,5 +1,7 @@
 accessing
 nextPutAll: aString
-	(GRPlatform current includesUnsafeUrlCharacter: aString)
-		ifTrue: [ super nextPutAll: aString ]
-		ifFalse: [ stream nextPutAll: aString ]
+	| encoded |
+	encoded := codec url encode: aString.
+	(GRPlatform current includesUnsafeUrlCharacter: encoded)
+		ifTrue: [ super nextPutAll: encoded ]
+		ifFalse: [ stream nextPutAll: encoded ]

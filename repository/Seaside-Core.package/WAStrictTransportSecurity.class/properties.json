@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WAConfiguredRequestFilter",
+	"category" : "Seaside-Core-Filter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAStrictTransportSecurity",
+	"type" : "normal"
+}
