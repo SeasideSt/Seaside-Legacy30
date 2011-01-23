@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "WAConfiguredRequestFilter",
+	"super" : "WASystemConfiguration",
 	"category" : "Seaside-Core-Filter",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WAStrictTransportSecurity",
+	"name" : "WAStrictTransportSecurityFilterConfiguration",
 	"type" : "normal"
 }

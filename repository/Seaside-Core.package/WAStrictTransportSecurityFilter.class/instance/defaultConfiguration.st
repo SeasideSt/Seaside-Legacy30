@@ -1,5 +1,5 @@
 configuration
 defaultConfiguration
 	^ WAUserConfiguration new
-		addParent: WAStrictTransportSecurityConfiguration instance;
+		addParent: WAStrictTransportSecurityFilter instance;
 		yourself
