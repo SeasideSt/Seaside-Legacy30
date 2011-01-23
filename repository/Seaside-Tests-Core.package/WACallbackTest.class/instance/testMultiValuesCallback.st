@@ -11,39 +11,39 @@ testMultiValuesCallback
 				values: dict).
 
 	"an empty callback"
-	self
-		shouldnt: [
-			self request: (WARequestFields new
-				at: key put: nil;
-				yourself) ]
+	self 
+		shouldnt: 
+			[ self request: (WARequestFields new
+					at: key put: nil;
+					yourself) ]
 		raise: WARenderNotification.
 	self assert: log isEmpty.
 	
 	" another empty callback "
 	self 
-		shouldnt: [
-			self request: (WARequestFields new
-				at: key put: '';
-				yourself) ]
+		shouldnt: 
+			[ self request: (WARequestFields new
+					at: key put: '';
+					yourself) ]
 		raise: WARenderNotification.
 	self assert: log isEmpty.
 	
 	" the first callback "
 	self 
-		shouldnt: [
-			self request: (WARequestFields new
-				at: key put: key1;
-				yourself) ]
+		shouldnt: 
+			[ self request: (WARequestFields new
+					at: key put: key1;
+					yourself) ]
 		raise: WARenderNotification.
 	self assertLog: #( '1a' ).
 	
 	" the second callback "
 	self 
-		shouldnt: [
-			self request: (WARequestFields new
-				at: key add: key1;
-				at: key add: key2;
-				yourself) ]
+		shouldnt: 
+			[ self request: (WARequestFields new
+					at: key add: key1;
+					at: key add: key2;
+					yourself) ]
 		raise: WARenderNotification.
 	self assertLog: #('1a' '2a' ).
 

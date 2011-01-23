@@ -13,40 +13,41 @@ testValuesCallback
 
 	"an empty callback"
 	self 
-		shouldnt: [
-			self request: (WARequestFields new
-				at: key
-				put: nil;
-				yourself) ]
+		shouldnt: 
+			[ self request: (WARequestFields new
+					at: key
+						put: nil;
+					yourself) ]
 		raise: WARenderNotification.
 	self assertLog: #().
 	
 	" another empty callback "
 	self 
-		shouldnt: [
-			self request: (WARequestFields new
-				at: key
-				put: '';
-			yourself) ]
+		shouldnt: 
+			[ self request: (WARequestFields new
+					at: key
+						put: '';
+					yourself) ]
 		raise: WARenderNotification.
 	self assertLog: #().
 	
 	" the first callback "
-	self shouldnt: [
-		self request: (WARequestFields new
-			at: key
-			put: key1;
-			yourself) ]
+	self 
+		shouldnt: 
+			[ self request: (WARequestFields new
+					at: key
+						put: key1;
+					yourself) ]
 		raise: WARenderNotification.
 	self assertLog: #( '1a' ).
 	
 	" the second callback "
 	self 
-		shouldnt: [
-			self request: (WARequestFields new
-				at: key
-				put: key2;
-				yourself) ]
+		shouldnt: 
+			[ self request: (WARequestFields new
+					at: key
+						put: key2;
+					yourself) ]
 		raise: WARenderNotification.
 	self assertLog: #( '2a' ).
 
