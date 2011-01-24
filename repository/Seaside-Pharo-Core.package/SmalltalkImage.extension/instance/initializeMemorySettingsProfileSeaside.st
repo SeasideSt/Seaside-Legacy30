@@ -19,6 +19,6 @@ initializeMemorySettingsProfileSeaside
         "These settings describe what to do when we're close to running out of free space"
         
         "Tell the VM that we'd rather grow than spinning in tight GC loops"
-        self setGCBiasToGrow: true. "default: false"
+        self setGCBiasToGrow: 1. "default: false"
         "Tell the VM to do a fullGC for good measure if the above growth exceeded 16MB"
         self setGCBiasToGrowGCLimit: 16*1024*1024. "default: 0"
