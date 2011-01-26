@@ -1,11 +1,11 @@
 {
-	"commentStamp" : "pmm 1/26/2011 07:28",
-	"super" : "GROrderedMultiMap",
+	"commentStamp" : "",
+	"super" : "WAError",
 	"category" : "Seaside-Core-HTTP",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WAHeaderFields",
+	"name" : "WAInvalidHeaderValueError",
 	"type" : "normal"
 }
