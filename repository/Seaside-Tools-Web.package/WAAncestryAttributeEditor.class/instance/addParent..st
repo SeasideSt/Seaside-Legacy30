@@ -7,4 +7,5 @@ addParent: aParent
 				preferenceAt: #login put: 'admin';
 				preferenceAt: #passwordHash	put: (GRPlatform current secureHashFor: 'seaside');
 				addFilter: WAAuthenticationFilter new ].
+		self parent buildGroups.
 		selectedConfig contents: aParent ]

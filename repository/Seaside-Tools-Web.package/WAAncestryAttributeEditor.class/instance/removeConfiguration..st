@@ -12,4 +12,5 @@ removeConfiguration: aConfig
 				preferenceAt: #passwordHash
 				put: nil.
 			myApplication removeFilter: authFilter ] ].
-	self configuration removeParent: aConfig
+	self configuration removeParent: aConfig.
+	self parent buildGroups.
