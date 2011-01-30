@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WAContextTest",
+	"category" : "Seaside-Tests-Development",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAPrettyPrintedDocumentTest",
+	"type" : "normal"
+}
