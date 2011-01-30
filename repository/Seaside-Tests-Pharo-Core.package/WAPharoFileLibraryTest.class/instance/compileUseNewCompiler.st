@@ -1,5 +1,5 @@
 private
 compileUseNewCompiler
-	^Preferences
+	^ Preferences
 		valueOfFlag: #compileUseNewCompiler
 		ifAbsent: [ false ]

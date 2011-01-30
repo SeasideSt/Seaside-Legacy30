@@ -5,5 +5,5 @@ useCompileUseNewCompiler: aBoolean during: aBlock
 	[ Preferences setPreference: #compileUseNewCompiler toValue: aBoolean.
 	aBlock value ]
 		ensure: [
-			self hasNewCompiler ifTrue: [
+			self compileUseNewCompiler ifTrue: [
 				Preferences setPreference: #compileUseNewCompiler toValue: oldValue ] ]

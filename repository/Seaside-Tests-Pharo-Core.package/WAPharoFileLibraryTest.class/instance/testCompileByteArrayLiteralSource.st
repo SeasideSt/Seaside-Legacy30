@@ -1,7 +1,7 @@
 tests
 testCompileByteArrayLiteralSource
 	| library data file source expected |
-	self hasNewCompiler ifFalse: [ ^ self ].
+	self compileUseNewCompiler ifFalse: [ ^ self ].
 	self 
 		useCompileUseNewCompiler: true
 		during: 
