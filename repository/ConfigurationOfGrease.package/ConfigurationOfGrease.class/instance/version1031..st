@@ -6,9 +6,10 @@ version1031: spec
 		spec blessing: #'development'.
 		spec description: '- open 1.0.3.1 for development
 - get Seaside3.0 running on GemStone3.0beta3
-- fix Issue 212: http://code.google.com/p/glassdb/issues/detail?id=212 FileDirectory class>>onClient switched sense" [GemStone]
+- fix Issue 212: http://code.google.com/p/glassdb/issues/detail?id=212 "FileDirectory class>>onClient switched sense" [GemStone]
 - ANSI block behavior means that GemStone3.0 passes GRNumberTest>>testToDoClosures
-- wait for GemStone bugs 41222 and 41223 to be fixed to pass remaining tests'.
+- wait for GemStone bugs 41222 and 41223 to be fixed to pass remaining tests
+- fix Issue 226:	http://code.google.com/p/glassdb/issues/detail?id=226 "Grease-Core should depend upon GsCore for #gemstone [isInfinite]"'.
 		spec author: 'DaleHenrichs'.
 		spec timestamp: '01/20/2011 11:01:37'.
 		spec 
