@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WATagBrush",
+	"category" : "Seaside-HTML5-Tags",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WAOutputTag",
+	"type" : "normal"
+}
