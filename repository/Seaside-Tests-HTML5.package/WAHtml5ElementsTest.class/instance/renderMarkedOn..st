@@ -1,6 +1,6 @@
 rendering
 renderMarkedOn: html
-	html heading level2; with: '<m> (kitten)'.
+	html heading level2; with: '<mark> (kitten)'.
 	
 	html paragraph: [
 		html text: 'I also have some '.
