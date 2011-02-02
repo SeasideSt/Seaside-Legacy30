@@ -2,4 +2,4 @@ status
 internalError
 	"Indicate an error inside the server which prevented it from fulfilling the request."
 
-	self status: 500
+	self status: WAResponse statusInternalServerError
