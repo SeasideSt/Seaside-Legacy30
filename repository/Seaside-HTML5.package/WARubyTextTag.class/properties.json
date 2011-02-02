@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "obi 4/2/2008 22:50",
+	"super" : "WATagBrush",
+	"category" : "Seaside-HTML5-Tags",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WARubyTextTag",
+	"type" : "normal"
+}
