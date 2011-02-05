@@ -7,8 +7,11 @@ renderFile: fileName on: html
 			with: fileName ].
 	html tableData: [
 		html anchor
-			onClick: 'return confirm("Really remove this file?")';
-			callback: [ self library removeFile: fileName ];
+			callback: [
+				self confirm: 'Really remove ''', fileName, '''?' onAnswer: [ :answer |
+					"use CPS to avoid continuation use for VAST"
+					answer ifTrue: [
+						self library removeFile: fileName ] ] ];
 			with: 'Remove'.
 		html space.
 		html anchor
