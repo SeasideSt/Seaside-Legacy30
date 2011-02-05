@@ -12,8 +12,7 @@ describeOn: config
 		group: #server;
 		comment: 'Sets whether to use the X-Sendfile header to stream file library contents.';
 		default: false.
-	(config boolean: #xSendfileAlwaysDeploy)
+	(config string: #xSendfileBaseDirectory)
 		beAdvanced;
 		group: #server;
-		comment: 'Sets whether to always deploy a file before returning it using the X-Sendfile header.';
-		default: false.
+		comment: 'The directory in which the deployed file libraries are.'.
