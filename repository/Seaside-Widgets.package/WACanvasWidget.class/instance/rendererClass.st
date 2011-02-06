@@ -1,4 +1,4 @@
 rendering
 rendererClass
-	"Make sure we use WARenderCanvas even if a different renderer is default."
-	^ WARenderCanvas
+	"Make sure we use WAHtmlCanvas even if a different renderer is default."
+	^ WAHtmlCanvas
