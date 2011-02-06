@@ -1,3 +1,3 @@
 private
 escapeDoubleQuotes: aString
-	^ aString copyReplaceAll: '"' with: '\"'
+	^ aString copyReplaceAll: '"' with: ''''
