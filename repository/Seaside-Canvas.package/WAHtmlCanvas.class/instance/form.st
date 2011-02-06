@@ -1,5 +1,3 @@
-tags-input
 form
-	"Defines a form."
-
-	^ self basicForm
+form
+	^ self brush: WAFormTag new
