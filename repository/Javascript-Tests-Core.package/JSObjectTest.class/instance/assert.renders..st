@@ -1,7 +1,7 @@
 utilities
 assert: aBlock renders: aString 
 	| html |
-	html := WARenderCanvas builder
+	html := WAHtmlCanvas builder
 		documentClass: WAHtmlDocument;
 		rootClass: WAHtmlRoot;
 		fullDocument: false;
