@@ -1,3 +1,3 @@
 private
 builder
-	^ WARenderCanvas builder
+	^ WAHtmlCanvas builder

@@ -1,7 +1,7 @@
 private
 assert: aBlock gives: aString
 	| html |
-	html := WARenderCanvas builder
+	html := WAHtmlCanvas builder
 		fullDocument: true;
 		rootBlock: aBlock;
 		render: [ :canvas | ].

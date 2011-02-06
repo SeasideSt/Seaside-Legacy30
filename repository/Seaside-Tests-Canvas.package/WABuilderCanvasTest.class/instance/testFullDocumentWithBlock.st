@@ -1,7 +1,7 @@
 tests
 testFullDocumentWithBlock
 	| actual |
-	actual := WARenderCanvas builder fullDocument: true;
+	actual := WAHtmlCanvas builder fullDocument: true;
 		rootBlock: [ :root |
 			root title: 'title' ];
 		render: [ :html |
