@@ -1,7 +1,7 @@
 content
 unableToResumeResponse
 	| content |
-	content := WARenderCanvas builder
+	content := WAHtmlCanvas builder
 		fullDocument: true;
 		rootBlock: [ :root | root title: 'Unable to proceed' ];
 		render: [ :html |

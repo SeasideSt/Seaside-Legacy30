@@ -5,7 +5,7 @@ renderWithContext: aRenderContext visitor: aPainterVisitor
 	place had the halo wrapper not been present.
 	"
 	| html |
-	html := WARenderCanvas context: aRenderContext.
+	html := WAHtmlCanvas context: aRenderContext.
 	html div class: 'wa-halo'; with: [
 		html div class: 'wa-halo-header'; with: [
 			(self plugins select: [ :each | each isActive ])
