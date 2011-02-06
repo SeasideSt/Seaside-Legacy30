@@ -1,3 +1,3 @@
 accessing
 rendererClass
-	^ WARenderCanvas
+	^ WAHtmlCanvas

@@ -4,7 +4,7 @@ refreshAfter: aNumber location: aUrlOrString message: aString
 		contentType: WAMimeType textHtml;
 		refreshAfter: aNumber
 			location: aUrlOrString;
-		nextPutAll: (WARenderCanvas builder
+		nextPutAll: (WAHtmlCanvas builder
 				fullDocument: true;
 				render: 
 					[ :html | 

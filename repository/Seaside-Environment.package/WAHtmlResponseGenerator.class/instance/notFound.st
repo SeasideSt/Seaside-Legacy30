@@ -3,7 +3,7 @@ notFound
 	self response
 		notFound;
 		contentType: WAMimeType textHtml;
-		nextPutAll: (WARenderCanvas builder
+		nextPutAll: (WAHtmlCanvas builder
 			fullDocument: true;
 			rootBlock: [ :root | root title: 'Not Found' ];
 			render: [ :html |

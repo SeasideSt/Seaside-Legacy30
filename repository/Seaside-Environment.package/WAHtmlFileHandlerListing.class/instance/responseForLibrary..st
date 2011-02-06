@@ -2,7 +2,7 @@ responding
 responseForLibrary: aLibrary
 	| title contents |
 	title := 'Index of ', aLibrary name.
-	contents := WARenderCanvas builder
+	contents := WAHtmlCanvas builder
 		fullDocument: true;
 		rootBlock: [ :html | html title: title ];
 		render: [ :html |

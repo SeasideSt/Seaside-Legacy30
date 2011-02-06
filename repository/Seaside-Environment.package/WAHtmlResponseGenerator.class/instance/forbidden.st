@@ -3,7 +3,7 @@ forbidden
 	self response
 		forbidden;
 		contentType: WAMimeType textHtml;
-		nextPutAll: (WARenderCanvas builder
+		nextPutAll: (WAHtmlCanvas builder
 			fullDocument: true;
 			rootBlock: [ :root | root title: 'Forbidden' ];
 			render: [ :html |

@@ -3,7 +3,7 @@ pageExpired
 	self response
 		doNotCache;
 		contentType: WAMimeType textHtml;
-		nextPutAll: (WARenderCanvas builder
+		nextPutAll: (WAHtmlCanvas builder
 			fullDocument: true;
 			rootBlock: [ :root | root title: 'Page Expired' ];
 			render: [ :html | 

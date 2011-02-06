@@ -2,7 +2,7 @@ responding
 responseForLibraries
 	| title contents |
 	title := 'Index of ', handler url pathString.
-	contents := WARenderCanvas builder
+	contents := WAHtmlCanvas builder
 		fullDocument: true;
 		rootBlock: [ :html | html title: title ];
 		render: [ :html |
