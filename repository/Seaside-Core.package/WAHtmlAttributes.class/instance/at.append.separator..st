@@ -9,4 +9,4 @@ at: aKey append: aValue separator: aString
 				self at: aKey ifPresent: [ :value | 
 					stream nextPutAll: value greaseString.
 					stream nextPutAll: aString ].
-				stream nextPutAll: aValue greaseString ]) ]
+				stream nextPutAll: (self escapeDoubleQuotes: aValue greaseString) ]) ]
