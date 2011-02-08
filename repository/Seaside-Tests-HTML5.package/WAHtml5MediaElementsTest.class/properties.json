@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WAVideoTest",
+	"name" : "WAHtml5MediaElementsTest",
 	"type" : "normal"
 }
