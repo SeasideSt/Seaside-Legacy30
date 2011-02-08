@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "pmm 4/4/2007 03:01",
-	"super" : "WATagBrush",
+	"super" : "WAMediaElementTag",
 	"category" : "Seaside-HTML5-Tags",
 	"classinstvars" : [ ],
 	"pools" : [ ],
