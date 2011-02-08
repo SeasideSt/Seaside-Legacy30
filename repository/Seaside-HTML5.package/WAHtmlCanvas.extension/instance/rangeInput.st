@@ -1,3 +1,3 @@
-*seaside-html5
+*seaside-html5-input
 rangeInput
 	^ self brush: WARangeInputTag new
