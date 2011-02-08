@@ -1,1 +1,1 @@
-This canvas knows about callbacks and is intertwined with the rest of the framework.
+I'm a left over from old times, use WAHtmlCanvas instead.
