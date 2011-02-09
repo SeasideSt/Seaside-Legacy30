@@ -1,3 +1,0 @@
-status
-statusSeeOther
-	^ 303

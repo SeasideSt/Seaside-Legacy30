@@ -7,7 +7,6 @@ render: anObject
 	^ String streamContents: [ :stream |
 		| context document renderer |
 		document := self documentClass on: stream codec: self codec.
-		document scriptGenerator: self scriptGeneratorClass new.
 		context := WARenderContext new.
 		context document: document.
 		context actionUrl: self actionUrl; resourceUrl: self resourceUrl.

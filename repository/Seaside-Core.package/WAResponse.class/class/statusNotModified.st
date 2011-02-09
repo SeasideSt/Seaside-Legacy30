@@ -1,3 +1,0 @@
-status
-statusNotModified
-	^ 304

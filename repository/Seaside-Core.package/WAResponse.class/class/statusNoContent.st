@@ -1,3 +1,0 @@
-status
-statusNoContent
-	^ 204

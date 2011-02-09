@@ -1,10 +1,8 @@
 values
-at: aSymbol
-	"Retrieves the value of a configuration according to a symbol.
-	Checks if the search context resides in the cache, and if not searches for the value according to the configurations ancestry."
+at: aSymbol 
 	| value context |
-	context := self getSearchContextFor: aSymbol.
-	
+	context := self createSearchContextFor: aSymbol.
+
 	value := self valueForContext: context.
 	
 	^ value isNil

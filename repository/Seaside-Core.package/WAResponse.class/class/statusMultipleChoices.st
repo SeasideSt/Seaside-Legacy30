@@ -1,3 +1,0 @@
-status
-statusMultipleChoices
-	^ 300

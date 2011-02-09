@@ -1,3 +1,0 @@
-status
-statusPaymentRequired
-	^ 402

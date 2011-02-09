@@ -1,3 +1,0 @@
-status
-statusSwitchingProtocols
-	^ 101

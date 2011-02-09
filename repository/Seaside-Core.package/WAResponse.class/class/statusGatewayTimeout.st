@@ -1,3 +1,0 @@
-status
-statusGatewayTimeout
-	^ 504

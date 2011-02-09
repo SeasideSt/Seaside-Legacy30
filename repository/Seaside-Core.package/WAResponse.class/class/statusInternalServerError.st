@@ -1,3 +1,0 @@
-status
-statusInternalServerError
-	^ 500

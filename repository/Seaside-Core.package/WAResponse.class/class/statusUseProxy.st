@@ -1,3 +1,0 @@
-status
-statusUseProxy
-	^ 305

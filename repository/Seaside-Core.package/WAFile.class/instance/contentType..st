@@ -1,4 +1,3 @@
 accessing
 contentType: aMimeTypeOrString
-	contentType := aMimeTypeOrString isNil
-		ifFalse: [ aMimeTypeOrString seasideMimeType ]
+	contentType := aMimeTypeOrString seasideMimeType

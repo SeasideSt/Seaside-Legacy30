@@ -1,3 +1,0 @@
-status
-statusLengthRequired
-	^ 411

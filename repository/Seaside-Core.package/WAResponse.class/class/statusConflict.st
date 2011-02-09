@@ -1,3 +1,0 @@
-status
-statusConflict
-	^ 409

@@ -1,3 +1,0 @@
-status
-statusNotImplemented
-	^ 501

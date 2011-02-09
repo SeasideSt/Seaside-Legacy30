@@ -1,3 +1,0 @@
-status
-statusBadRequest
-	^ 400

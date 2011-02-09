@@ -1,3 +1,0 @@
-status
-statusNonAuthoritativeInformation
-	^ 203

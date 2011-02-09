@@ -1,3 +1,0 @@
-status
-statusOk
-	^ 200

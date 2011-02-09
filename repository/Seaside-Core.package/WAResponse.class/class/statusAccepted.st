@@ -1,3 +1,0 @@
-status
-statusAccepted
-	^ 202

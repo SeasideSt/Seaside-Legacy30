@@ -1,3 +1,0 @@
-status
-statusForbidden
-	^ 403

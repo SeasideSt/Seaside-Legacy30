@@ -1,3 +1,0 @@
-status
-statusProcessing
-	^ 102

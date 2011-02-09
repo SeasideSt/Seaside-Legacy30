@@ -1,3 +1,0 @@
-status
-statusTemporaryRedirect
-	^ 307

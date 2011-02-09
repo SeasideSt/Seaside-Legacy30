@@ -1,3 +1,0 @@
-status
-statusRequestUriTooLong
-	^ 414

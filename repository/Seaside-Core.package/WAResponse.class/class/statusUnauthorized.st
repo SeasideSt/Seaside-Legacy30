@@ -1,3 +1,0 @@
-status
-statusUnauthorized
-	^ 401

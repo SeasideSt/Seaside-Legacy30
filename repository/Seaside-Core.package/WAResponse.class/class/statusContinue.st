@@ -1,3 +1,0 @@
-status
-statusContinue
-	^ 100

@@ -1,3 +1,0 @@
-status
-statusBadGateway
-	^ 502

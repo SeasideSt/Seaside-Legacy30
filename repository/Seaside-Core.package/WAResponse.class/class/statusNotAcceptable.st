@@ -1,3 +1,0 @@
-status
-statusNotAcceptable
-	^ 406

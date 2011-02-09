@@ -1,3 +1,0 @@
-status
-statusResetContent
-	^ 205

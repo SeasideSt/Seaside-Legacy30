@@ -1,3 +1,0 @@
-status
-statusImATeapot
-	^ 418

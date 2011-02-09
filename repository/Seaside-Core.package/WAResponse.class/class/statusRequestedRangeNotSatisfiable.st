@@ -1,3 +1,0 @@
-status
-statusRequestedRangeNotSatisfiable
-	^ 416

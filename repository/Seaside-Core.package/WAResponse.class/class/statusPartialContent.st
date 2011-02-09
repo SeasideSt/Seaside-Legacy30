@@ -1,3 +1,0 @@
-status
-statusPartialContent
-	^ 206

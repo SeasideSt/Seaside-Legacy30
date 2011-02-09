@@ -1,3 +1,0 @@
-status
-statusNotFound
-	^ 404
