@@ -8,21 +8,21 @@ attribute: aKey with: aValue
 	html text: '='.
 	html span
 		class: 'wa-attribute-value';
-		with: 
-			[ html text: '"'.
+		with: [
+			html text: '"'.
 			(self knownRefs includes: aKey) 
-				ifTrue: 
-					[ html anchor
+				ifTrue: [
+					html anchor
 						url: aValue greaseString;
 						with: aValue ]
-				ifFalse: 
-					[ (self knownEvents includes: aKey) 
-						ifTrue: 
-							[ html anchor
+				ifFalse: [
+					(self knownEvents includes: aKey) 
+						ifTrue: [
+							html anchor
 								onClick: aValue;
 								with: aValue ]
-						ifFalse: 
-							[ aValue == true 
+						ifFalse: [
+							aValue == true 
 								ifTrue: [ html text: aKey ]
 								ifFalse: [ html render: aValue ] ] ].
 			html text: '"' ]
