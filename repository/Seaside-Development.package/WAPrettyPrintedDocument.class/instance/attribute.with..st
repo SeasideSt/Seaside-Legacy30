@@ -5,24 +5,24 @@ attribute: aKey with: aValue
 	html span
 		class: 'wa-attribute-key';
 		with: aKey.
-	html text: '='.
+	self nextPut: $=.
 	html span
 		class: 'wa-attribute-value';
 		with: [
-			html text: '"'.
+			self nextPut: $".
 			(self knownRefs includes: aKey) 
 				ifTrue: [
 					html anchor
 						url: aValue greaseString;
-						with: aValue ]
+						with: [ self print: aValue ] ]
 				ifFalse: [
 					(self knownEvents includes: aKey) 
 						ifTrue: [
 							html anchor
 								onClick: aValue;
-								with: aValue ]
+								with: [ self print: aValue ] ]
 						ifFalse: [
 							aValue == true 
-								ifTrue: [ html text: aKey ]
-								ifFalse: [ html render: aValue ] ] ].
-			html text: '"' ]
+								ifTrue: [ self nextPutAll: aKey ]
+								ifFalse: [ self print: aValue ] ] ].
+			self nextPut: $" ]

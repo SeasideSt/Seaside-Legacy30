@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "WAHtmlDocument",
 	"category" : "Seaside-Development-Core",
 	"classinstvars" : [ ],
@@ -9,7 +9,8 @@
 		"html",
 		"indentLevel",
 		"indentCloseTags",
-		"firstLine"
+		"firstLine",
+		"singleEncoder"
 	],
 	"name" : "WAPrettyPrintedDocument",
 	"type" : "normal"
