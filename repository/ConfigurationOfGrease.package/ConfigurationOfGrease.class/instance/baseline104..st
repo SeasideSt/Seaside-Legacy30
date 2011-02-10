@@ -34,7 +34,7 @@ baseline104: spec
 				spec
 					className: 'ConfigurationOfRefactoringBrowser';
 					versionString: #'stable';
-					loads: #('Refactoring-Core' );
+					loads: #('Core' );
 					repository: 'http://www.squeaksource.com/MetacelloRepository' ].
 		spec 
 			package: 'Grease-Slime' with: [
