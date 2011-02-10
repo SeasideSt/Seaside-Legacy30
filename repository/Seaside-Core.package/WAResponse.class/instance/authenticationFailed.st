@@ -2,4 +2,4 @@ status
 authenticationFailed
 	"Indicate that the request requires HTTP authentication."
 	
-	self status: 401
+	self status: WAResponse statusUnauthorized

@@ -1,6 +1,6 @@
 accessing
 urlOf: aSymbol using: aHandler
-	^ aHandler url
+	^ aHandler baseUrlForLibrary
 		addToPath: self className;
 		addToPath: (self asFilename: aSymbol);
 		yourself
