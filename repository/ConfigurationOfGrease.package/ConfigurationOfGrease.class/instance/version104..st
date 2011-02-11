@@ -6,7 +6,7 @@ version104: spec
 		spec blessing: #'development'.
 		spec description: '- latest mcz files for 1.0.4'.
 		spec author: 'DaleHenrichs'.
-		spec timestamp: '2/11/2011 15:35'.
+		spec timestamp: '02/11/2011 16:10:03'.
 		spec 
 			package: 'Grease-Core' with: 'Grease-Core-DaleHenrichs.58';
 			package: 'Grease-Tests-Core' with: 'Grease-Tests-Core-pmm.65'. ].
@@ -32,7 +32,7 @@ version104: spec
 			project: 'UTF8' with: #'stable';
 			project: 'System-Digital-Signatures' with: #'stable'.
 		spec 
-			package: 'Grease-GemStone-Core' with: 'Grease-GemStone-Core-DaleHenrichs.33';
+			package: 'Grease-GemStone-Core' with: 'Grease-GemStone-Core-DaleHenrichs.34';
 			package: 'Grease-Tests-GemStone-Core' with: 'Grease-Tests-GemStone-Core-DaleHenrichs.12'. ].
 
 	spec for: #'gs2.3.x' do: [
