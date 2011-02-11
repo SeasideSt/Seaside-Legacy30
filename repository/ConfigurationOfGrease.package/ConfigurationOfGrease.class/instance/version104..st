@@ -6,9 +6,9 @@ version104: spec
 		spec blessing: #'development'.
 		spec description: '- latest mcz files for 1.0.4'.
 		spec author: 'DaleHenrichs'.
-		spec timestamp: '2/11/2011 13:41'.
+		spec timestamp: '2/11/2011 15:35'.
 		spec 
-			package: 'Grease-Core' with: 'Grease-Core-pmm.57';
+			package: 'Grease-Core' with: 'Grease-Core-DaleHenrichs.58';
 			package: 'Grease-Tests-Core' with: 'Grease-Tests-Core-pmm.65'. ].
 
 	spec for: #'squeakCommon' do: [
