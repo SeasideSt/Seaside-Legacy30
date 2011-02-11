@@ -2,7 +2,7 @@ development support
 updateToLatestPackageVersions: descriptionString
 	"Updates mcz file versions in current version"
 
-	"self updateToLatestPackageVersions: '- fixed a bug'"
+	"self updateToLatestPackageVersions: '- latest mcz files for 1.0.4'"
 
 	"Note: you need 1.0-beta.28 or later for the class MetacelloToolBox"
 

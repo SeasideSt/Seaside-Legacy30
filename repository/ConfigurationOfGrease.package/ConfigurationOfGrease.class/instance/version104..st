@@ -4,17 +4,17 @@ version104: spec
 
 	spec for: #'common' do: [
 		spec blessing: #'development'.
-		spec description: ''.
+		spec description: '- latest mcz files for 1.0.4'.
 		spec author: 'DaleHenrichs'.
-		spec timestamp: '01/20/2011 11:01:37'.
+		spec timestamp: '2/11/2011 13:41'.
 		spec 
-			package: 'Grease-Core' with: 'Grease-Core-DaleHenrichs.53';
-			package: 'Grease-Tests-Core' with: 'Grease-Tests-Core-pmm.63'. ].
+			package: 'Grease-Core' with: 'Grease-Core-pmm.57';
+			package: 'Grease-Tests-Core' with: 'Grease-Tests-Core-pmm.65'. ].
 
 	spec for: #'squeakCommon' do: [
 		spec 
-			package: 'Grease-Pharo-Core' with: 'Grease-Pharo-Core-pmm.32';
-			package: 'Grease-Tests-Pharo-Core' with: 'Grease-Tests-Pharo-Core-pmm.8'. ].
+			package: 'Grease-Pharo-Core' with: 'Grease-Pharo-Core-pmm.36';
+			package: 'Grease-Tests-Pharo-Core' with: 'Grease-Tests-Pharo-Core-pmm.10'. ].
 
 	spec for: #'pharo' do: [
 		spec project: 'Refactoring-Core' with: #'stable'.
