@@ -4,7 +4,7 @@ postFieldsOf: aNativeRequest into: aRequestFields
 		will have already done this after extracting the body."
 	aNativeRequest ensureFullRead. ""
 	aNativeRequest postData keysAndValuesDo: [ :key :value |
-		| previousData data |
+		| data |
 		data := value filename isEmptyOrNil
 			ifTrue: [ self codec url decode: value value ]
 			ifFalse: [
