@@ -1,5 +1,5 @@
 deprecated
 painter
 	self 
-		greaseDeprecatedApi: 'WARenderCanvas>>#painter'
+		greaseDeprecatedApi: 'WAHtmlCanvas>>#painter'
 		details: 'This is not needed anymore.'
