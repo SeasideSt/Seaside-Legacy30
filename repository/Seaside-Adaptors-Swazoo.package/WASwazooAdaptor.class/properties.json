@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "DaleHenrichs 12/13/2010 16:02",
 	"super" : "WAServerAdaptor",
 	"category" : "Seaside-Adaptors-Swazoo",
 	"classinstvars" : [ ],
