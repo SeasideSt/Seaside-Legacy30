@@ -1,4 +1,4 @@
-path
+updating
 updateUrl: aUrl 
 	super updateUrl: aUrl.
 	string isNil ifTrue: [ ^self ].
