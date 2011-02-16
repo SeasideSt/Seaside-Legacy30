@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'Javascript-Tests-Core'!
+SystemOrganization addCategory: 'Javascript-Tests-Core'!
