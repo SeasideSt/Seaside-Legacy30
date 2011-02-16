@@ -1,3 +1,4 @@
 description
 clearDescription
-	description := nil
+	description := nil.
+	self clearSearchContexts.
