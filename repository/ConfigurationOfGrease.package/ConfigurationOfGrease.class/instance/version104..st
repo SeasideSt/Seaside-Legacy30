@@ -4,9 +4,10 @@ version104: spec
 
 	spec for: #'common' do: [
 		spec blessing: #'development'.
-		spec description: '- latest mcz files for 1.0.4'.
+		spec description: '- latest mcz files for 1.0.4
+- fix Issue 239: http://code.google.com/p/glassdb/issues/detail?id=239 "using WAFastCGIAdaptor leads the false conversion of + in urls."'.
 		spec author: 'DaleHenrichs'.
-		spec timestamp: '02/11/2011 16:10:03'.
+		spec timestamp: '02/16/2011 16:08:10'.
 		spec 
 			package: 'Grease-Core' with: 'Grease-Core-DaleHenrichs.58';
 			package: 'Grease-Tests-Core' with: 'Grease-Tests-Core-pmm.65'. ].
@@ -32,7 +33,7 @@ version104: spec
 			project: 'UTF8' with: #'stable';
 			project: 'System-Digital-Signatures' with: #'stable'.
 		spec 
-			package: 'Grease-GemStone-Core' with: 'Grease-GemStone-Core-DaleHenrichs.34';
+			package: 'Grease-GemStone-Core' with: 'Grease-GemStone-Core-DaleHenrichs.35';
 			package: 'Grease-Tests-GemStone-Core' with: 'Grease-Tests-GemStone-Core-DaleHenrichs.12'. ].
 
 	spec for: #'gs2.3.x' do: [
