@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"selectedConfig"
+		"selectedConfiguration"
 	],
 	"name" : "WAAncestryAttributeEditor",
 	"type" : "normal"
