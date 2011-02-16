@@ -4,10 +4,14 @@ addFile: aFile
 
 	aFile an instance of of WAFile"
 	| contents |
-	aFile isNil ifTrue: [ ^ self	"in case no file was selected for uploading" ].
+	aFile isNil ifTrue: [
+		"in case no file was selected for uploading"
+		^ self ].
 	contents := (self class isBinary: aFile fileName) 
-		ifTrue: [ aFile contents ]
-		ifFalse: [ GRPlatform current convertToSmalltalkNewlines: aFile contents ].
+		ifTrue: [ aFile rawContents ]
+		ifFalse: [
+			"#contents is deprecated, we shouldn't send it"
+			GRPlatform current convertToSmalltalkNewlines: aFile contents ].
 	self class 
 		addFileNamed: aFile fileName
 		contents: contents
