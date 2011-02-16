@@ -6,5 +6,5 @@ buildTable
 		rows: self notifications;
 		columns: (Array
 			with: (WAReportColumn selector: #messageText title: 'Deprecated')
-			with: (WAReportColumn selector: #details title: 'Details'))
+			with: (WAReportColumn selector: #details title: 'Details'));
 		yourself
