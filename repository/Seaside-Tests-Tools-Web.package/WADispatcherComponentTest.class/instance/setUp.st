@@ -11,8 +11,8 @@ setUp
 	configApplication 
 		preferenceAt: #rootClass
 		put: WAConfigurationBrowser.
-	normalApplication := WAApplication 
-		register: 'counter'
+	normalApplication := WAAdmin register: WAApplication 
+		at: 'counter'
 		in: childHandler.
 	normalApplication configuration addParent: WARenderLoopConfiguration instance.
 	normalApplication 
