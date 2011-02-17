@@ -5,9 +5,12 @@ version104: spec
 	spec for: #'common' do: [
 		spec blessing: #'development'.
 		spec description: '- latest mcz files for 1.0.4
-- fix Issue 239: http://code.google.com/p/glassdb/issues/detail?id=239 "using WAFastCGIAdaptor leads the false conversion of + in urls."'.
+- fix Issue 239: using WAFastCGIAdaptor leads the false conversion of + in urls. [GemStone]
+  http://code.google.com/p/glassdb/issues/detail?id=239 
+- fix Issue 227: Squeak/Pharo String extensions methods don''t work on multibyte strings [GemStone]
+  http://code.google.com/p/glassdb/issues/detail?id=227'.
 		spec author: 'DaleHenrichs'.
-		spec timestamp: '02/16/2011 16:08:10'.
+		spec timestamp: '02/17/2011 17:31:39'.
 		spec 
 			package: 'Grease-Core' with: 'Grease-Core-DaleHenrichs.58';
 			package: 'Grease-Tests-Core' with: 'Grease-Tests-Core-pmm.65'. ].
@@ -33,8 +36,8 @@ version104: spec
 			project: 'UTF8' with: '0.238';
 			project: 'System-Digital-Signatures' with: '0.238'.
 		spec 
-			package: 'Grease-GemStone-Core' with: 'Grease-GemStone-Core-DaleHenrichs.35';
-			package: 'Grease-Tests-GemStone-Core' with: 'Grease-Tests-GemStone-Core-DaleHenrichs.12'. ].
+			package: 'Grease-GemStone-Core' with: 'Grease-GemStone-Core-DaleHenrichs.36';
+			package: 'Grease-Tests-GemStone-Core' with: 'Grease-Tests-GemStone-Core-DaleHenrichs.13'. ].
 
 	spec for: #'gs2.3.x' do: [
 		spec package: 'Grease-GemStone230-Core' with: 'Grease-GemStone230-Core-dkh.2'. ].
