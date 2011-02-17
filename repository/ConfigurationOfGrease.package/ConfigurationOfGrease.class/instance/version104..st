@@ -28,10 +28,10 @@ version104: spec
 
 	spec for: #'gemstone' do: [
 		spec 
-			project: 'GsCore' with: #'stable';
-			project: 'SMTPMail' with: #'stable';
-			project: 'UTF8' with: #'stable';
-			project: 'System-Digital-Signatures' with: #'stable'.
+			project: 'GsCore' with: '0.244';
+			project: 'SMTPMail' with: '0.238';
+			project: 'UTF8' with: '0.238';
+			project: 'System-Digital-Signatures' with: '0.238'.
 		spec 
 			package: 'Grease-GemStone-Core' with: 'Grease-GemStone-Core-DaleHenrichs.35';
 			package: 'Grease-Tests-GemStone-Core' with: 'Grease-Tests-GemStone-Core-DaleHenrichs.12'. ].
