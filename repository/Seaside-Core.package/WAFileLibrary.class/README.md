@@ -43,3 +43,14 @@ The folllowing code uses WAFileLibrary to display an image.
 renderContentOn: html
 	html image
 		url: WAFileLibraryDemo / #mainJpg
+		
+
+Trouble Shooting:
+==========
+Earlier versions would create methods without a time stamp. You can fix this by recompiling these methods by adapting the following code
+
+SUAllTestLibrary basicNew in: [ :library |
+	#(demologoGif headerGif backgroundGif demoGif logoGif menuGif) do: [ :each |
+		library class
+			addFileNamed: (library asFilename: each)
+			contents: (library perform: each) ] ]

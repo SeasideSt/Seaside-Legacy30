@@ -5,12 +5,15 @@ verifyPassword: password forUser: username
 	the configuration values provided by WAAuthConfiguration. WAAuthMain
 	can also be used by itself if you implement this method in your
 	own Application subclass to do something different."
-	| loginPref hashPref |
-	loginPref := self preferenceAt: #login.
-	hashPref := self preferenceAt: #passwordHash.
-	loginPref ifNil: 
-		[ self authConfigurationError: 'Login not defined. The default authentication method requires a WAAuthConfiguration' ].
-	hashPref ifNil: 
-		[ self authConfigurationError: 'Password not defined. The default authentication method requires a WAAuthConfiguration' ].
+	| loginPreference hashPreference |
+	loginPreference := self preferenceAt: #login.
+	hashPreference := self preferenceAt: #passwordHash.
+	loginPreference isNil ifTrue: [
+		self authConfigurationError: 'Login not defined. The default authentication method requires a WAAuthConfiguration' ].
+	hashPreference isNil ifTrue: [
+		self authConfigurationError: 'Password not defined. The default authentication method requires a WAAuthConfiguration' ].
 	(username isEmptyOrNil or: [ password isEmptyOrNil ]) ifTrue: [ ^ false ].
-	^ loginPref = username and: [ hashPref = (GRPlatform current secureHashFor: password) ]
+	^ username isEmptyOrNil not
+		and: [ password isEmptyOrNil not
+		and: [ loginPreference = username
+		and: [ hashPreference = (GRPlatform current secureHashFor: password) ] ] ]
