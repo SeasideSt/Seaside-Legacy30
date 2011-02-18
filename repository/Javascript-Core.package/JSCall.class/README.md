@@ -1,1 +1,1 @@
-I represent a function call or method invokation to the decorated object.
+I represent a function call or method invocation to the decorated object.
