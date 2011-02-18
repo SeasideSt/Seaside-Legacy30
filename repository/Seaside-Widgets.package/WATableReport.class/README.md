@@ -1,7 +1,7 @@
 WATableReport presents tabular data. A WATableReport contains a collections of objects, one per row, and a collection of WAReportColumns. The WAReportColumn objects are configured to produce the text for the table cell based on the each row object. Each column has a header and an optional column sum. The table can be sorted on a column by clicking its header, unless the column handles rendering on the canvas itself. A table can be given a set of html colors (rowColors), used to colors the rows to aid in viewing. 
 
 For more information see:
-	Example - WATableReportTestm (initialization code below)
+	Example - WATableReportFunctionalTest (initialization code below)
 	WATableReport Tutorial - http://www.cdshaffer.com/david/Seaside/WATableReport/index.html
 
 Instance Variables:

@@ -1,6 +1,6 @@
 WADateSelector displays dropdown menus (html select) allowing a user to delect a date within a range. "startYear" and "endYear" define the range of selectable dates. Date displayed in month, day, year format. WADateSelector>>date returns date user selected as a Date object.
 
-See WADateSelectorTest for sample of usage.
+See WADateSelectorFunctionalTest for sample of usage.
 Select "Date Selector" tab of the Functional Seaside Test Suite to run an example  (http://127.0.0.1:xxxx/seaside/tests/alltests)
 
 Instance Variables:
