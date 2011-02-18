@@ -1,6 +1,6 @@
 private
 committedCheck
-	"Raises a singal if this response is already committed."
+	"Raises a signal if this response is already committed."
 
 	self isCommitted 
 		ifTrue: [ WAIllegalStateException signal ]

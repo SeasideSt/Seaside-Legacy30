@@ -3,5 +3,5 @@ A WAResponse is an abstract HTTP response objects. It is independent of the used
 Instance Variables
 	status:		<Integer> The HTTP status code.
 	message:	<String> The HTTP status message.
-	headers:	<WAHeaderFileds> A dictionary with the header fields.
-	cookies:		<OrderedCollection> A collection of cookies.
+	headers:	<WAHeaderFields> A dictionary with the header fields.
+	cookies:	<OrderedCollection> A collection of cookies.

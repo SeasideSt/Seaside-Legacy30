@@ -1,1 +1,1 @@
-A WAAcceptCharset is a WAQualifiedValue with a value that is an instance of String. It represents how much a user agent preferes a certain encoding for the response.
+A WAAcceptCharset is a WAQualifiedValue with a value that is an instance of String. It represents how much a user agent prefers a certain encoding for the response.

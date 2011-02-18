@@ -1,4 +1,4 @@
-A WACache represents a collection of arbitrary objects referenced by a key (an instance of WAExternalID).
+A WACache represents a collection of arbitrary objects referenced by a key (an instance of String).
 
 Methods are provided to add and retrieve and remove objects from the cache. The behaviour of the cache is configurable through four different plugins:
 

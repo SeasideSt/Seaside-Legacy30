@@ -1,6 +1,6 @@
 generation
 internalError: anException
-	"An internal error occured while processing the request."
+	"An internal error occurred while processing the request."
 
 	self response 
 		internalError;

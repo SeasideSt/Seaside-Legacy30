@@ -1,4 +1,4 @@
-A WALocale definces a users langauge and country.
+A WALocale defines a users langauge and country.
 
 Instance Variables
 	country:		<String>

@@ -1,5 +1,5 @@
 private
 maximumCharacterValue
-	"String to byte encoding has aleady happened in the server."
+	"String to byte encoding has already happened in the server."
 	
 	^ 16rFF
