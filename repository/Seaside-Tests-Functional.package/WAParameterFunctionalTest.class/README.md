@@ -1,1 +1,1 @@
-A WAParameterFunctionalTest tests whether GET and POST fiedls are merged in WARequest >> #fields.
+A WAParameterFunctionalTest tests whether GET and POST fields are merged in WARequest >> #fields.
