@@ -1,4 +1,4 @@
-A WAMultiCounter is a component that consits of several instances of WACounter. Be sure to understand WACounter.
+A WAMultiCounter is a component that consists of several instances of WACounter. Be sure to understand WACounter.
 
 The lesson to learn here is how Seaside components can be composed of other components.
 
