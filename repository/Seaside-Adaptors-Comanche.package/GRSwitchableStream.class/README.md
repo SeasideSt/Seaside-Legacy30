@@ -1,4 +1,4 @@
-A GRSwitchableStream is a class that implements the same protocol as and in addition allows switching between text and binary mode.
+I am a stream that allows switching between text and binary mode. In binary mode no encoding will be done.
 
 Instance Variables
 	codecStream:		<GRCodecStream>
