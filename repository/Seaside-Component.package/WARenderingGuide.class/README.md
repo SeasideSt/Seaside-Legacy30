@@ -1,1 +1,1 @@
-Currently an empty class but still present for clarity and to allow cutomization of Rendering behaviour.
+Currently an empty class but still present for clarity and to allow customization of Rendering behaviour.

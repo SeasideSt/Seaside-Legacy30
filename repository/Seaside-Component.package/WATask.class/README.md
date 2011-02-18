@@ -10,4 +10,4 @@ In terms of implementation, you can think of a WATask in the following way: it i
 
 Subclasses must not implement #renderContentOn:
 
-An example can be found in WAConvenienceTest.
+An example can be found in WAFlowConvenienceFunctionalTest.
