@@ -1,3 +1,3 @@
 initialization
 initialize
-	WAAdmin register: self asApplicationAt: self applicationName
+	WAAdmin register: self asApplicationAt: 'tools/classbrowser'
