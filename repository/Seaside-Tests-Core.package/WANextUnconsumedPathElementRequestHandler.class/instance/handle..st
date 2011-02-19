@@ -1,4 +1,4 @@
-accessing
+handling
 handle: aRequestContext
 	| consumer |
 	consumer := aRequestContext consumer.

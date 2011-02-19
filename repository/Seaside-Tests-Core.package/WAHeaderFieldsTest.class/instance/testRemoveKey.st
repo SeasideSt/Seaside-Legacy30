@@ -1,4 +1,4 @@
-tests
+tests-accessing
 testRemoveKey
 	self assert: (collection removeKey: '1') isNil.
 	collection add: '1' -> 'foo'.
