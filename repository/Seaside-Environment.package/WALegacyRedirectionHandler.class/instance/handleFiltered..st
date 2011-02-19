@@ -1,4 +1,4 @@
-request-handling
+handling
 handleFiltered: aRequestContext
 	| url |
 	url := aRequestContext request url copy.
