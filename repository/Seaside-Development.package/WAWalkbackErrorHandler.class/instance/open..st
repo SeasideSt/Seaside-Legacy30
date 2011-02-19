@@ -1,4 +1,4 @@
-private
+actions
 open: anException 
 	| answer |
 	self requestContext request isXmlHttpRequest ifTrue: [ ^ super open: anException ].
