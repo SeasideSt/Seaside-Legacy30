@@ -1,3 +1,3 @@
-visitor accepting
+visiting
 accept: aVisitor
 	aVisitor visitUrlAttribute: self
