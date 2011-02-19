@@ -1,4 +1,4 @@
-accessing
+decorations
 decoratedComponent
 	"Answer the Component decorated by this Decoration."
 	
