@@ -1,3 +1,3 @@
-configuration
+running
 setUp
 	handler := WALegacyRedirectionHandler new
