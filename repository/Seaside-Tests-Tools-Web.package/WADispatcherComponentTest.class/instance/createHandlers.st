@@ -1,4 +1,4 @@
-private
+configuration
 createHandlers
 	^Array
 		with: rootHandler
