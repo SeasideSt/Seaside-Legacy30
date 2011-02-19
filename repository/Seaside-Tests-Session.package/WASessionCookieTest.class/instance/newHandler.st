@@ -1,4 +1,4 @@
-running
+private
 newHandler
 	^ WAApplication new
 		preferenceAt: #useCookies put: true;

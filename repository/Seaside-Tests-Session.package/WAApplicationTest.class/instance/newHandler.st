@@ -1,3 +1,3 @@
-running
+private
 newHandler
 	^ WAApplication new

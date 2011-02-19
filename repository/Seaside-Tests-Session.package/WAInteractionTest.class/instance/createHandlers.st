@@ -1,4 +1,4 @@
-private
+configuration
 createHandlers
 	| dispatcher application session root |
 	root := WADispatcher new.
