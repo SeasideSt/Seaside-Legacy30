@@ -1,4 +1,4 @@
-path
+updating
 updateRoot: anHtmlRoot 
 	| url |
 	super updateRoot: anHtmlRoot.
