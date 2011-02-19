@@ -1,4 +1,4 @@
-processing
+running
 go
 	self confirm: 'Raise an exception?' onAnswer: [ :answer |
 		[ answer ifTrue: [ self error: 'foo' ] ]
