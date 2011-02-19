@@ -1,4 +1,4 @@
-tests
+tests-attributes
 testAbsoluteHttpsUrl
 	self
 		assert: [ :html | html anchor resourceUrl: 'https://www.google.com/track.js' ]

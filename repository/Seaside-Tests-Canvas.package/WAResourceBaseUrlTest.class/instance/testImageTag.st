@@ -1,4 +1,4 @@
-tests
+tests-attributes
 testImageTag
 	self
 		assert: [ :html | html image resourceUrl: 'logo.jpeg' ]
