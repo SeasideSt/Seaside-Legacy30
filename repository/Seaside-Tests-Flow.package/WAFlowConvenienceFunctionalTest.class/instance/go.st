@@ -1,4 +1,4 @@
-controlling
+running
 go
 	[ self chooseCheese.
 	  self confirmCheese ] whileFalse.
