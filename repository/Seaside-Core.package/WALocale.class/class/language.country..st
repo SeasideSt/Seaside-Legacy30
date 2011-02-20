@@ -1,6 +1,6 @@
 instance creation
-language: aLanguageString country: aCounryString
+language: aLanguageString country: aCountryString
 	^self new
 		language: aLanguageString;
-		country: aCounryString;
+		country: aCountryString;
 		yourself
