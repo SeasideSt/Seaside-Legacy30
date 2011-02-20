@@ -1,4 +1,4 @@
-utitlies
+utilities
 asString: aCollectionOfIntegers
 	^ String streamContents: [ :stream |
 		aCollectionOfIntegers do: [ :each |
