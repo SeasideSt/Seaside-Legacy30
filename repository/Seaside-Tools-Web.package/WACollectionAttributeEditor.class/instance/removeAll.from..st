@@ -1,3 +1,4 @@
 private
-removeAll: aRemoveCollection from: aColletion
-	^ aColletion reject: [ :each | aRemoveCollection includes: each ]
+removeAll: aRemoveCollection from: aCollection
+	^ aCollection reject: [ :each |
+		aRemoveCollection includes: each ]

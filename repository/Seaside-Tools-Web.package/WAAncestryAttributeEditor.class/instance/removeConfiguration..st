@@ -1,7 +1,7 @@
 actions
-removeConfiguration: aConfig
+removeConfiguration: aConfiguration
 	| myApplication authFilter |
-	(aConfig isKindOf: WAAuthConfiguration) ifTrue: [
+	(aConfiguration isKindOf: WAAuthConfiguration) ifTrue: [
 		myApplication := self myApplication.
 		authFilter := myApplication filters detect: [ :each | each isKindOf: WAAuthenticationFilter ] ifNone: [ nil ].
 		authFilter isNil ifFalse: [
@@ -12,5 +12,5 @@ removeConfiguration: aConfig
 				preferenceAt: #passwordHash
 				put: nil.
 			myApplication removeFilter: authFilter ] ].
-	self configuration removeParent: aConfig.
+	self configuration removeParent: aConfiguration.
 	self parent buildGroups.

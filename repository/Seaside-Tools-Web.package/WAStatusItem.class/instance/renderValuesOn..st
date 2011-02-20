@@ -1,4 +1,4 @@
 rendering
-renderValuesOn: htm
+renderValuesOn: html
 	
 	self subclassResponsibility
