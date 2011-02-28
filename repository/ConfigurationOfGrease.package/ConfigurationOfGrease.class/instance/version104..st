@@ -9,8 +9,8 @@ version104: spec
   http://code.google.com/p/glassdb/issues/detail?id=239 
 - fix Issue 227: Squeak/Pharo String extensions methods don''t work on multibyte strings [GemStone]
   http://code.google.com/p/glassdb/issues/detail?id=227'.
-		spec author: 'DaleHenrichs'.
-		spec timestamp: '02/17/2011 17:31:39'.
+		spec author: 'dkh'.
+		spec timestamp: '2/28/2011 13:48'.
 		spec 
 			package: 'Grease-Core' with: 'Grease-Core-DaleHenrichs.58';
 			package: 'Grease-Tests-Core' with: 'Grease-Tests-Core-pmm.65'. ].
@@ -23,8 +23,8 @@ version104: spec
 	spec for: #'pharo' do: [
 		spec project: 'Refactoring-Core' with: #'stable'.
 		spec 
-			package: 'Grease-Slime' with: 'Grease-Slime-lr.7';
-			package: 'Grease-Tests-Slime' with: 'Grease-Tests-Slime-lr.6'. ].
+			package: 'Grease-Slime' with: 'Grease-Slime-pmm.8';
+			package: 'Grease-Tests-Slime' with: 'Grease-Tests-Slime-pmm.7'. ].
 
 	spec for: #'GreaseForPharo1.0' do: [
 		spec package: 'Grease-Pharo10-Core' with: 'Grease-Pharo10-Core-dkh.3'. ].
