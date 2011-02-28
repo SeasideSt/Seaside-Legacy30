@@ -18,7 +18,7 @@ testPackagingValidity
 					exceptions := #('Grease-Core' 'Grease-Tests-Core' 'Grease-Pharo-Core' 'Grease-Tests-Pharo-Core').
 					gr keys do: [ :key | me at: key ifAbsent: [ self assert: (exceptions includes: key) ] ] ].
 			exceptions := #('Seaside-FileSystem' 'Seaside-Swazoo' 'Seaside-Adaptors-Comanche' 'Seaside-Tools-OmniBrowser' 'Seaside-Tests-Slime' 'Seaside-Tests-Pharo-Continuation' 'Seaside-Pharo-Core' 'Seaside-Pharo-Flow' 'Seaside-Pharo-Continuation' 'Seaside-Development' 'Seaside-Tests-Development').
-			grease := #('Seaside-Tests-Core' 'Seaside-Tests-Pharo-Continuation' 'Seaside-Core' 'Seaside-Pharo-Core' 'Seaside-Pharo-Flow' 'Seaside-Pharo-Continuation' 'Seaside-Slime' 'Seaside-GemStone-Flow' 'Seaside-GemStone-Continuation' 'Seaside-Tests-GemStone-Continuation' 'Seaside-Tests-Slime').
+			grease := #('Seaside-Tests-Core' 'Seaside-Tests-Pharo-Continuation' 'Seaside-Core' 'Seaside-Pharo-Core' 'Seaside-Pharo-Flow' 'Seaside-Pharo-Continuation' 'Seaside-Slime' 'Seaside-GemStone-Flow' 'Seaside-GemStone-Continuation' 'Seaside-Tests-GemStone-Continuation' 'Seaside-Tests-Slime' 'Seaside-Tests-Pharo-Email').
 			me values
 				do:
 					[ :pkg | 
