@@ -3,7 +3,7 @@ version104: spec
 	<version: '1.0.4' imports: #('1.0.4-baseline' )>
 
 	spec for: #'common' do: [
-		spec blessing: #'development'.
+		spec blessing: #'release'.
 		spec description: '- latest mcz files for 1.0.4
 - fix Issue 239: using WAFastCGIAdaptor leads the false conversion of + in urls. [GemStone]
   http://code.google.com/p/glassdb/issues/detail?id=239 
