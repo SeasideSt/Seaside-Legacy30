@@ -4,7 +4,7 @@ testCompileByteArrayWithCacheSource
 	self 
 		useCompileUseNewCompiler: false
 		during: 
-			[ self deny: self compileUseNewCompiler.
+			[ self deny: GRPharoPlatform current useByteArrayLiterals.
 			library := WATestingFiles default.
 			data := (1 to: 255) asByteArray.
 			file := WAFile new

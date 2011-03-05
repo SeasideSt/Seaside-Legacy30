@@ -1,9 +1,11 @@
 private
 useCompileUseNewCompiler: aBoolean during: aBlock
 	| oldValue |
-	oldValue := self compileUseNewCompiler.
-	[ Preferences setPreference: #compileUseNewCompiler toValue: aBoolean.
+	self supportsSwitchToNewCompiler
+		ifFalse: [ ^ self ].
+	oldValue := GRPharoPlatform current useByteArrayLiterals.
+	[ (Smalltalk at: #Preferences) setPreference: #compileUseNewCompiler toValue: aBoolean.
 	aBlock value ]
 		ensure: [
-			self compileUseNewCompiler ifTrue: [
+			GRPharoPlatform current useByteArrayLiterals ifTrue: [
 				Preferences setPreference: #compileUseNewCompiler toValue: oldValue ] ]

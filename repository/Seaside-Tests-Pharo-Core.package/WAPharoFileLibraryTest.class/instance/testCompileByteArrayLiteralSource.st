@@ -1,11 +1,11 @@
 tests
 testCompileByteArrayLiteralSource
 	| library data file source expected |
-	self compileUseNewCompiler ifFalse: [ ^ self ].
+	GRPharoPlatform current useByteArrayLiterals ifFalse: [ ^ self ].
 	self 
 		useCompileUseNewCompiler: true
 		during: 
-			[ self assert: self compileUseNewCompiler.
+			[ self assert: GRPharoPlatform current useByteArrayLiterals.
 			library := WATestingFiles default.
 			data := (1 to: 255) asByteArray.
 			file := WAFile new
