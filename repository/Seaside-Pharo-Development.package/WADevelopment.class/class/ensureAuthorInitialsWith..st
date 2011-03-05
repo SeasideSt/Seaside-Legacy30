@@ -13,7 +13,7 @@ ensureAuthorInitialsWith: aOneArgumentBlock
 			author fullNamePerSe isEmpty
 				ifTrue: [ author fullName: (aOneArgumentBlock value: 'Please enter your initials:') ] ]
 		ifFalse: [
-			| utilities |
-			utilities := Smalltalk at: #Utilities.
-			utilities authorInitialsPerSe isEmpty ifTrue: [
-				utilities setAuthorInitials: (aOneArgumentBlock value: 'Please enter your initials:') ] ]
+			| utilies |
+			utilies := Smalltalk at: #Utilities.
+			utilies authorInitialsPerSe isEmpty ifTrue: [
+				utilies setAuthorInitials: (aOneArgumentBlock value: 'Please enter your initials:') ] ]
