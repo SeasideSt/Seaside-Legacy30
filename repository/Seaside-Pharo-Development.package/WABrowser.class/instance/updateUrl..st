@@ -1,4 +1,4 @@
-updating
+processing
 updateUrl: aUrl
 	super updateUrl: aUrl.
 	self model selectedClass isNil ifFalse: [
