@@ -1,8 +1,8 @@
 handling
 handleFiltered: aRequestContext 
-	"WAApplication instances only understand GET and POST requests."
+	"Seaside applications do not respond to prefetch requests and only understand GET and POST requests."
 	
-	(self isImplemented: aRequestContext request method) 
+	(aRequestContext request isPrefetch not and: [ self isImplemented: aRequestContext request method ]) 
 		ifTrue: [ super handleFiltered: aRequestContext ]
 		ifFalse: [ 
 			aRequestContext responseGenerator
