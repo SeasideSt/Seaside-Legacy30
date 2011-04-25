@@ -4,6 +4,7 @@ tests
 		with: 'Ajax' -> (Array 
 			with: 'Ajax' -> JQAjaxFunctionalTest new
 			with: 'Form' -> JQFormFunctionalTest new
+			with: 'Request' -> JQRequestFunctionalTest new
 			with: 'JSON' -> JQJsonFunctionalTest new
 			with: 'Counter' -> JQCounterFunctionalTest new
 			with: 'Repeating' -> JQRepeatingFunctionalTest new)
