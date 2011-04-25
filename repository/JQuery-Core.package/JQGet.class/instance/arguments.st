@@ -1,9 +1,12 @@
 accessing
 arguments
 	| arguments |
-	arguments := OrderedCollection with: self javascriptUrl.
+	arguments := OrderedCollection with: self url.
 	self options
-		at: 'complete'
+		at: 'data'
+		ifPresent: [ :value | arguments add: value ].
+	self options
+		at: 'success'
 		ifPresent: [ :value | arguments add: value ].
 	self options
 		at: 'dataType'
