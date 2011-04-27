@@ -4,9 +4,13 @@ version105: spec
 
 	spec for: #'common' do: [
 		spec blessing: #'development'.
-		spec description: ''.
+		spec description: '1.0.5 (DaleHenrichs.141):
+- Issue 267: FileLibrary improvements
+  http://code.google.com/p/seaside/issues/detail?id=267
+- experimental Pharo 1.2 support
+- support for Iliad [GemStone]'.
 		spec author: 'dkh'.
-		spec timestamp: '4/9/2011 21:08'.
+		spec timestamp: '4/27/2011 11:07'.
 		spec 
 			package: 'Grease-Core' with: 'Grease-Core-as.59';
 			package: 'Grease-Tests-Core' with: 'Grease-Tests-Core-pmm.65'. ].
@@ -32,7 +36,7 @@ version105: spec
 			project: 'UTF8' with: '0.238';
 			project: 'System-Digital-Signatures' with: '0.238'.
 		spec 
-			package: 'Grease-GemStone-Core' with: 'Grease-GemStone-Core-DaleHenrichs.36';
+			package: 'Grease-GemStone-Core' with: 'Grease-GemStone-Core-dkh.37';
 			package: 'Grease-Tests-GemStone-Core' with: 'Grease-Tests-GemStone-Core-DaleHenrichs.13'. ].
 
 	spec for: #'gs2.3.x' do: [
