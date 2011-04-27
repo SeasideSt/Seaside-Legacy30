@@ -8,9 +8,11 @@ version105: spec
 - Issue 267: FileLibrary improvements
   http://code.google.com/p/seaside/issues/detail?id=267
 - experimental Pharo 1.2 support
-- support for Iliad [GemStone]'.
+- support for Iliad [GemStone]
+1.0.5 (dkh.143):
+- Move GRGemStonePlatformTest>>testFileLibrary to WAGemStoneFileLibraryTest ... reference to WAFileLibrary belongs in a Seaside package'.
 		spec author: 'dkh'.
-		spec timestamp: '4/27/2011 11:07'.
+		spec timestamp: '04/27/2011 16:08:00'.
 		spec 
 			package: 'Grease-Core' with: 'Grease-Core-as.59';
 			package: 'Grease-Tests-Core' with: 'Grease-Tests-Core-pmm.65'. ].
@@ -37,7 +39,7 @@ version105: spec
 			project: 'System-Digital-Signatures' with: '0.238'.
 		spec 
 			package: 'Grease-GemStone-Core' with: 'Grease-GemStone-Core-dkh.37';
-			package: 'Grease-Tests-GemStone-Core' with: 'Grease-Tests-GemStone-Core-DaleHenrichs.13'. ].
+			package: 'Grease-Tests-GemStone-Core' with: 'Grease-Tests-GemStone-Core-dkh.14'. ].
 
 	spec for: #'gs2.3.x' do: [
 		spec package: 'Grease-GemStone230-Core' with: 'Grease-GemStone230-Core-dkh.2'. ].
