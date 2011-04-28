@@ -5,16 +5,14 @@ version105: spec
 	spec for: #'common' do: [
 		spec blessing: #'development'.
 		spec description: '1.0.5 (DaleHenrichs.141):
-- Issue 267: FileLibrary improvements
-  http://code.google.com/p/seaside/issues/detail?id=267
 - experimental Pharo 1.2 support
 - support for Iliad [GemStone]
 1.0.5 (dkh.143):
 - Move GRGemStonePlatformTest>>testFileLibrary to WAGemStoneFileLibraryTest ... reference to WAFileLibrary belongs in a Seaside package'.
 		spec author: 'dkh'.
-		spec timestamp: '04/27/2011 16:08:00'.
+		spec timestamp: '04/28/2011 12:08:39'.
 		spec 
-			package: 'Grease-Core' with: 'Grease-Core-as.59';
+			package: 'Grease-Core' with: 'Grease-Core-DaleHenrichs.58';
 			package: 'Grease-Tests-Core' with: 'Grease-Tests-Core-pmm.65'. ].
 
 	spec for: #'squeakCommon' do: [
