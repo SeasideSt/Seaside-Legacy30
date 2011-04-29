@@ -8,9 +8,11 @@ version105: spec
 - experimental Pharo 1.2 support
 - support for Iliad [GemStone]
 1.0.5 (dkh.143):
-- Move GRGemStonePlatformTest>>testFileLibrary to WAGemStoneFileLibraryTest ... reference to WAFileLibrary belongs in a Seaside package'.
-		spec author: 'dkh'.
-		spec timestamp: '04/28/2011 12:08:39'.
+- Move GRGemStonePlatformTest>>testFileLibrary to WAGemStoneFileLibraryTest ... reference to WAFileLibrary belongs in a Seaside package
+1.0.5 (dkh.145):
+- changes for the new Random classes available in 3.0'.
+		spec author: 'DaleHenrichs'.
+		spec timestamp: '04/29/2011 14:37:48'.
 		spec 
 			package: 'Grease-Core' with: 'Grease-Core-DaleHenrichs.58';
 			package: 'Grease-Tests-Core' with: 'Grease-Tests-Core-pmm.65'. ].
@@ -36,14 +38,14 @@ version105: spec
 			project: 'UTF8' with: '0.238';
 			project: 'System-Digital-Signatures' with: '0.238'.
 		spec 
-			package: 'Grease-GemStone-Core' with: 'Grease-GemStone-Core-dkh.37';
+			package: 'Grease-GemStone-Core' with: 'Grease-GemStone-Core-DaleHenrichs.38';
 			package: 'Grease-Tests-GemStone-Core' with: 'Grease-Tests-GemStone-Core-dkh.14'. ].
 
 	spec for: #'gs2.3.x' do: [
 		spec package: 'Grease-GemStone230-Core' with: 'Grease-GemStone230-Core-dkh.2'. ].
 
 	spec for: #'gs2.4.x' do: [
-		spec package: 'Grease-GemStone240-Core' with: 'Grease-GemStone240-Core-DaleHenrichs.2'. ].
+		spec package: 'Grease-GemStone240-Core' with: 'Grease-GemStone240-Core-dkh.3'. ].
 
 	spec for: #'gs3.x' do: [
 		spec package: 'Grease-GemStone300-Core' with: 'Grease-GemStone300-Core-DaleHenrichs.2'. ].
