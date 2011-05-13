@@ -19,7 +19,7 @@ version105: spec
 
 	spec for: #'squeakCommon' do: [
 		spec 
-			package: 'Grease-Pharo-Core' with: 'Grease-Pharo-Core-as.38';
+			package: 'Grease-Pharo-Core' with: 'Grease-Pharo-Core-pmm.37';
 			package: 'Grease-Tests-Pharo-Core' with: 'Grease-Tests-Pharo-Core-pmm.10'. ].
 
 	spec for: #'pharo' do: [
