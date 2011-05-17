@@ -2,5 +2,5 @@ version info
 version
 	"Answer the Grease version"
 
-	^ (GRVersion major: 1 minor: 0 revision: 4)
+	^ (GRVersion major: 1 minor: 0 revision: 5)
 		yourself
