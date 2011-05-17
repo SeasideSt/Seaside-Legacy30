@@ -11,10 +11,10 @@ version105: spec
 - Move GRGemStonePlatformTest>>testFileLibrary to WAGemStoneFileLibraryTest ... reference to WAFileLibrary belongs in a Seaside package
 1.0.5 (dkh.145):
 - changes for the new Random classes available in 3.0'.
-		spec author: 'DaleHenrichs'.
-		spec timestamp: '04/29/2011 14:37:48'.
+		spec author: 'dkh'.
+		spec timestamp: '5/17/2011 11:10'.
 		spec 
-			package: 'Grease-Core' with: 'Grease-Core-DaleHenrichs.58';
+			package: 'Grease-Core' with: 'Grease-Core-pmm.59';
 			package: 'Grease-Tests-Core' with: 'Grease-Tests-Core-pmm.65'. ].
 
 	spec for: #'squeakCommon' do: [
