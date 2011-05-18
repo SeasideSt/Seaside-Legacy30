@@ -3,7 +3,7 @@ version105: spec
 	<version: '1.0.5' imports: #('1.0.4-baseline' )>
 
 	spec for: #'common' do: [
-		spec blessing: #'development'.
+		spec blessing: #'release'.
 		spec description: '1.0.5 (DaleHenrichs.141):
 - experimental Pharo 1.2 support
 - support for Iliad [GemStone]
