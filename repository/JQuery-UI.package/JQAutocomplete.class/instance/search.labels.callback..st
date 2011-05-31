@@ -13,7 +13,7 @@ search: aSearchBlock labels: aLabelsBlock callback: aCallbackBlock
 					at: 'label' put: (aLabelsBlock value: object);
 					at: 'index' put: (mapping at: object ifAbsentPut: [ mapping size + 1 ]);
 					yourself ]) ];
-		onComplete: 'response(arguments[0])'; 
+		onSuccess: 'response(arguments[0])'; 
 		dataType: 'jsonp') asFunction: #('request' 'response')).
 	self onSelect: ((self jQuery ajax
 		callback: [ :value | term := value greaseInteger ] 
