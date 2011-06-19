@@ -1,4 +1,4 @@
 *seaside-pharo-email
 seasideSmtpPort
 
-	^ self seasideApplicationPreferenceAt: #smtpPort ifAbsent: [ SMTPClient defaultPortNumber ]
+	^ self seasideHandlerPreferenceAt: #smtpPort ifAbsent: [ SMTPClient defaultPortNumber ]

@@ -1,4 +1,4 @@
 *seaside-pharo-email
 seasideSmtpPassword
 
-	^ self seasideApplicationPreferenceAt: #smtpPassword ifAbsent: [ nil ]
+	^ self seasideHandlerPreferenceAt: #smtpPassword ifAbsent: [ nil ]
