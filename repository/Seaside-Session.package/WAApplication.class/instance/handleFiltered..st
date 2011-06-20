@@ -4,9 +4,8 @@ handleFiltered: aRequestContext
 	
 	aRequestContext request isPrefetch 
 		ifTrue: [
-			aRequestContext responseGenerator
-				statusForbidden;
-				respond ]
+			aRequestContext respond: [ :response |
+				response forbidden ] ]
 		ifFalse: [
 			(self isImplemented: aRequestContext request method)
 				ifTrue: [ super handleFiltered: aRequestContext ]
