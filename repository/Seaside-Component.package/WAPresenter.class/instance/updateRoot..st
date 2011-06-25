@@ -7,5 +7,5 @@ updateRoot: anHtmlRoot
 	Whenever you override this method don't forget to send super"
 	super updateRoot: anHtmlRoot.
 
-	self script isNil ifFalse: [ anHtmlRoot addScript: self script ].
-	self style isNil ifFalse: [ anHtmlRoot addStyle: self style ]
+	self style isNil ifFalse: [ anHtmlRoot addStyle: self style ].
+	self script isNil ifFalse: [ anHtmlRoot addScript: self script ]
