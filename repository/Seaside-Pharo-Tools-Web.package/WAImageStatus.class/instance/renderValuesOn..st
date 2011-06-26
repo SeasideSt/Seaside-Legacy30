@@ -1,6 +1,6 @@
 rendering
 renderValuesOn: html
-	| image upTime |
+	| image |
 	image := SmalltalkImage current.
 	
 	self renderLabel: 'Uptime' value: (self printDuration: self upTime) on: html.
