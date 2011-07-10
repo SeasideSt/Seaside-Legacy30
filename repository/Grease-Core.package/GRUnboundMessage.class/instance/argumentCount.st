@@ -1,3 +1,3 @@
-accessing
+delegation
 argumentCount
 	^ selector numArgs

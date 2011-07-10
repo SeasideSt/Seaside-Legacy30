@@ -1,6 +1,6 @@
 instance creation
 receiver: anObject selector: aSymbol arguments: anArray 
-	^ GRBoundDelayedSend basicNew 
+	^ self basicNew 
 		initializeWithReceiver: anObject
-		selector: aSymbol
-		arguments: anArray
+			message: (GRBoundMessage selector: aSymbol arguments: anArray);
+		yourself

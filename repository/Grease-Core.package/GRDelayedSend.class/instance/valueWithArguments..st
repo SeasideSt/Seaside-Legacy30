@@ -1,3 +1,3 @@
 evaluating
 valueWithArguments: anArray
-	self subclassResponsibility
+	^ message valueFor: receiver withArguments: anArray

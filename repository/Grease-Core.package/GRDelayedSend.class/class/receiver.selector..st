@@ -1,5 +1,6 @@
 instance creation
 receiver: anObject selector: aSymbol 
-	^ GRUnboundDelayedSend basicNew 
+	^ self basicNew 
 		initializeWithReceiver: anObject
-		selector: aSymbol
+			message: (GRUnboundMessage selector: aSymbol);
+		yourself
