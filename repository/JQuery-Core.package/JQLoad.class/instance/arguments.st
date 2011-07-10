@@ -6,6 +6,6 @@ arguments
 		at: 'data'
 		ifPresent: [ :value | arguments add: value ].
 	self options
-		at: 'success'
+		at: 'complete'
 		ifPresent: [ :value | arguments add: value ].
 	^ arguments
