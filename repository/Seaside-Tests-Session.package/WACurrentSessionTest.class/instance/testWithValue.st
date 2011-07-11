@@ -5,4 +5,4 @@ testWithValue
 	context := WARequestContext request: nil response: nil.
 	context
 		push: session
-		while: [ self assert: WACurrentSession value = session ]
+		during: [ self assert: WACurrentSession value = session ]
