@@ -6,11 +6,10 @@ refreshAfter: aNumber location: aUrlOrString message: aString
 			location: aUrlOrString;
 		nextPutAll: (WAHtmlCanvas builder
 				fullDocument: true;
-				render: 
-					[ :html | 
+				render: [ :html | 
 					html heading: aString.
-					html paragraph: 
-						[ html text: 'You are being redirected to '.
+					html paragraph: [
+						html text: 'You are being redirected to '.
 						html anchor
 							url: aUrlOrString;
 							with: aUrlOrString greaseString ] ])
