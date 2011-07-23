@@ -23,12 +23,12 @@ renderInline: aBlock factor: factor key: key on: html
 		context: context.
 	html div
 		class: 'bench';
-		with: 
-			[ html heading: title.
+		with: [
+			html heading: title.
 			startTime := Time millisecondClockValue.
 			endTime := startTime + runTime.
-			[ Time millisecondClockValue < endTime ] whileTrue: 
-				[ count := count + 1.
+			[ Time millisecondClockValue < endTime ] whileTrue: [
+				count := count + 1.
 				renderer
 					render: aBlock;
 					flush ] ].
@@ -36,15 +36,15 @@ renderInline: aBlock factor: factor key: key on: html
 	spi := (count / referenceValue * (10000 / runTime)) rounded.
 	backColor := spi > 100 
 		ifTrue: [ '#5f5' ]
-		ifFalse: 
-			[ spi < 50 
+		ifFalse: [
+			spi < 50 
 				ifTrue: [ '#f55' ]
 				ifFalse: [ '#55f' ] ].
 	duration := duration + spi.
 	html div
 		style: 'float:left;padding:4px';
-		with: 
-			[ html big: spi greaseString , ' SPI'.
+		with: [
+			html big: spi greaseString , ' SPI'.
 			html span
 				class: 'iteration';
 				with: '(' , count greaseString , ' iterations)'.

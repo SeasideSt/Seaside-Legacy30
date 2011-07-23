@@ -1,15 +1,15 @@
 rendering
 renderContentOn: html 
 	self renderInstructionsOn: html.
-	html form: 
-		[ html div: 
-			[ self renderNumberListOn: html.
+	html form: [
+		html div: [
+			self renderNumberListOn: html.
 			self renderLetterListOn: html.
 			html submitButton ] ].
 	html paragraph: 'This should always be a NUMBER: ' , number greaseString.
 	html paragraph: 'This should always be a LETTER: ' , letter greaseString.
-	html paragraph: 
-		[ | url |
+	html paragraph: [
+		| url |
 		url := html actionUrl greaseString.
 		html anchor
 			url: '#';

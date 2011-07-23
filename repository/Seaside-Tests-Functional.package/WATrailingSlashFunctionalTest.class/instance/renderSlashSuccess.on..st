@@ -8,10 +8,10 @@ renderSlashSuccess: aBoolean on: html
 		ifAbsent: [ nil ].
 	expectedSlash isNil 
 		ifTrue: [ html strong: 'not run' ]
-		ifFalse: 
-			[ aBoolean greaseString = expectedSlash 
-				ifTrue: 
-					[ hasTrailingSlash greaseString = expectedSlash 
+		ifFalse: [
+			aBoolean greaseString = expectedSlash 
+				ifTrue: [
+					hasTrailingSlash greaseString = expectedSlash 
 						ifTrue: [ html strong: 'success' ]
 						ifFalse: [ html strong: 'fail' ] ]
 				ifFalse: [ html strong: 'not run' ] ]

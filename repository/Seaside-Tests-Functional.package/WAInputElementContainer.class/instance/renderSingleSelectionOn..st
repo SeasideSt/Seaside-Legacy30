@@ -2,8 +2,8 @@ rendering-elements
 renderSingleSelectionOn: html 
 	self 
 		renderLabel: 'Single Selection'
-		input: 
-			[ html select
+		input: [
+			html select
 				list: self elements;
 				titles: [ :each | 'Title: ' , each greaseString ];
 				selected: singleSelection;

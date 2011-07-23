@@ -1,10 +1,9 @@
 rendering
 renderFormOn: canvas 
 	self 
-		renderInline: 
-			[ :html | 
-			html form: 
-				[ html button value: 'OK'.
+		renderInline: [ :html | 
+			html form: [
+				html button value: 'OK'.
 				html fileUpload.
 				html select
 					list: #('a' 'b' );
