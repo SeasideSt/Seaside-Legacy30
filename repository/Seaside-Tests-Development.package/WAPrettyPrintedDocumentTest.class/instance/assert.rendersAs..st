@@ -1,6 +1,5 @@
 testing
 assert: anObject rendersAs: aString
-	"self debug: #testRendering"
 	| oldContext document newContext stream |
 	stream := WriteStream on: String new.
 	oldContext := WARenderContext new
