@@ -21,8 +21,7 @@ buildReport
 				add: (WAReportColumn new
 						sortBlock: nil;
 						title: 'Commands';
-						valueBlock: 
-							[ :value :html | 
+						valueBlock: [ :value :html | 
 							self 
 								renderCommands: value
 								on: html ];
