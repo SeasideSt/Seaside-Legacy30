@@ -4,7 +4,8 @@ fileSelectors
 	selectors := Set new.
 	current := self class.
 	[ WAFileLibrary = current ] whileFalse: [
-		selectors addAll: (current selectors
-			select: [ :each | self isFileSelector: each ]).
+		current selectors do: [ :each |
+			(self isFileSelector: each) ifTrue: [
+				selectors add: each ] ].
 		current := current superclass ].
 	^ selectors
