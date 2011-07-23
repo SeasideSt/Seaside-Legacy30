@@ -1,4 +1,9 @@
 public
 name
-	^ '[' , adaptor port greaseString , '] ' , adaptor class name , (adaptor codec class = GRNullCodec
-		ifFalse: [ ' (' , adaptor codec name , ')' ] ifTrue: [ '' ])
+	^ String streamContents: [ :stream |
+		stream
+			nextPut: $[; print: adaptor port; nextPut: $];
+			space;
+			nextPutAll: adaptor class name.
+		 adaptor class = GRNullCodec ifFalse: [
+			stream space; nextPut: $(; nextPutAll:  adaptor codec name; nextPut: $) ] ]
