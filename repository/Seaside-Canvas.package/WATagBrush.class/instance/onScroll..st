@@ -1,3 +1,8 @@
 convenience
 onScroll: anObject
-	self attributes at: 'scroll' append: anObject separator: ';'
+	"The scroll event occurs when a document view is scrolled. "
+
+	self document scriptGenerator
+		event: 'scroll'
+		do: anObject
+		on: self
