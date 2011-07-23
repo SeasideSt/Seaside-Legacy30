@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "pmm 7/23/2011 21:22",
+	"super" : "WAObject",
+	"category" : "Seaside-Tests-Pharo-Development",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"seen",
+		"duplicates"
+	],
+	"name" : "WAUuidDuplicateContext",
+	"type" : "normal"
+}
