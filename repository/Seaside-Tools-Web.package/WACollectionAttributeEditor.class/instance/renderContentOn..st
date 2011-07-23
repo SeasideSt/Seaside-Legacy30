@@ -5,19 +5,19 @@ renderContentOn: html
 	listSize := (fullList size min: 30) max: 5.
 	html div
 		class: 'groupContent';
-		with: 
-			[ html heading
+		with: [
+			html heading
 				level2;
 				with: 'Configure attribute: ' , attribute key.
-			html form: 
-				[ self renderActionsOn: html.
+			html form: [
+				self renderActionsOn: html.
 				html paragraph.
-				html table: 
-					[ html tableRow: 
-						[ html tableData
+				html table: [
+					html tableRow: [
+						html tableData
 							verticalAlign: 'top';
-							with: 
-								[ html label: 'Available'.
+							with: [
+								html label: 'Available'.
 								html break.
 								html multiSelect
 									list: fullList;
@@ -29,14 +29,14 @@ renderContentOn: html
 							with: [ self renderMoveActionsOn: html ].
 						html tableData
 							verticalAlign: 'top';
-							with: 
-								[ html label: 'Current'.
+							with: [
+								html label: 'Current'.
 								html break.
 								currentList := self currentList.
 								currentList isEmpty 
 									ifTrue: [ html text: '(empty)' ]
-									ifFalse: 
-										[ html multiSelect
+									ifFalse: [
+										html multiSelect
 											list: currentList;
 											disabled: self isWriteable not;
 											selected: selectionsCurrent;
