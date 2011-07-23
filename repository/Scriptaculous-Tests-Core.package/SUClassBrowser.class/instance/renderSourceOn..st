@@ -5,9 +5,9 @@ renderSourceOn: html
 	html
 		strong: class name , '>>' , source nextLine;
 		break.
-	[ source atEnd ] whileFalse: 
-		[ [ source peek = Character tab ] whileTrue: 
-			[ html
+	[ source atEnd ] whileFalse: [
+		[ source peek = Character tab ] whileTrue: [
+			html
 				space;
 				space;
 				space.
