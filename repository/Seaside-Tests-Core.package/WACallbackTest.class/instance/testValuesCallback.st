@@ -6,10 +6,9 @@ testValuesCallback
 	key2 := '2'.
 	dict at: key1 greaseInteger put: '1a'.
 	dict at: key2 greaseInteger put: '2a'.
-	key := registry store: (WAValuesCallback on: 
-			[ :v | 
-			log
-				add: v ] values: dict).
+	key := registry store: (WAValuesCallback
+		on: [ :v | log add: v ]
+		values: dict).
 
 	"an empty callback"
 	self 

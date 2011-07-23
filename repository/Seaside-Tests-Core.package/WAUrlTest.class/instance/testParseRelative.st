@@ -1,7 +1,6 @@
 testing-parsing
 testParseRelative
-	self relativeExamples do: 
-		[ :each | 
+	self relativeExamples do: [ :each | 
 		self 
 			assert: (WAUrl 
 				absolute: each first

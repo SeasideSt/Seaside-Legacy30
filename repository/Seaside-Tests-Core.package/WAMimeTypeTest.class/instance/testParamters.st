@@ -1,7 +1,6 @@
 tests
 testParamters
-	^ #('text/html;charset=utf-8' 'text/html; charset=utf-8' ) do: 
-		[ :each | 
+	^ #('text/html;charset=utf-8' 'text/html; charset=utf-8' ) do: [ :each | 
 		| mimeType |
 		mimeType := WAMimeType fromString: each.
 		self assert: mimeType main = 'text'.

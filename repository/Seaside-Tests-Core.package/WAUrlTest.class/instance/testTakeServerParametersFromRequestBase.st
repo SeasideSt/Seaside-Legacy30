@@ -7,8 +7,7 @@ testTakeServerParametersFromRequestBase
 				scheme: 'https';
 				yourself))
 		setHeaders: (Dictionary new
-				at: 'host'
-					put: 'www.thehost.com:1337';
+				at: 'host' put: 'www.thehost.com:1337';
 				yourself);
 		yourself.
 	url takeServerParametersFromRequest: request.
