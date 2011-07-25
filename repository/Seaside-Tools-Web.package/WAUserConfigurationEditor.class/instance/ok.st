@@ -1,3 +1,4 @@
 actions
 ok
-	dialog ifTrue: [self answer]
+	dialog
+		ifTrue: [ self answer ]

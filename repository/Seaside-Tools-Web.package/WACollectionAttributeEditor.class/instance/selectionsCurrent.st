@@ -1,3 +1,3 @@
 accessing
 selectionsCurrent
-	^selectionsCurrent collect: [:each | each value]
+	^ selectionsCurrent collect: [ :each | each value ]

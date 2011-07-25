@@ -1,3 +1,3 @@
 accessing
 isWriteable
-	^self isOverride or: [self isModify]
+	^ self isOverride or: [ self isModify ]

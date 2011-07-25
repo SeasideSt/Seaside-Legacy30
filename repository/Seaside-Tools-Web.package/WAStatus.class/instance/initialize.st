@@ -2,6 +2,6 @@ initialization
 initialize
 	super initialize.
 	navigation := WASimpleNavigation new.
-	WAStatusItem sortedConcreteSubinstances do: [:each |
-		navigation add: each label: each label ].
+	WAStatusItem sortedConcreteSubinstances
+		do: [ :each | navigation add: each label: each label ].
 	navigation selectFirst

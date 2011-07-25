@@ -1,6 +1,6 @@
 rendering
 renderAttribute: anAttribute on: html
-	[(anAttribute isAdvanced not or: [self displayAdvancedAttributes])
+	[ (anAttribute isAdvanced not or: [self displayAdvancedAttributes])
 		ifTrue: [
 			html tableRow: [
 				html tableHeading: [
@@ -12,4 +12,4 @@ renderAttribute: anAttribute on: html
 						ifTrue: [
 							self renderCollectionFieldForAttribute: anAttribute on: html ]
 						ifFalse: [
-							self renderFieldForAttribute: anAttribute on: html ] ] ] ] ] on:  WAAttributeNotFound do: [ :ex | html text: ex]
+							self renderFieldForAttribute: anAttribute on: html ] ] ] ] ] on:  WAAttributeNotFound do: [ :ex | html text: ex ]

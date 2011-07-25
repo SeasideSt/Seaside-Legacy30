@@ -1,24 +1,23 @@
 rendering
 renderActionsOn: html
-	
-	(self isOverride or: [self isModify])
+	(self isOverride or: [ self isModify ])
 		ifTrue: [
 			html anchor
 				title: 'Clear override';
 				onClick: 'return submitForm(this)';
-				callback: [self clear ];
+				callback: [ self clear ];
 				with: 'Clear'.
 			self isModify
-					ifTrue: [html space. self renderAddToRemovalOn: html] ]
+				ifTrue: [ html space. self renderAddToRemovalOn: html ] ]
 		ifFalse: [
 			html anchor
 				title: 'Override inherited values';
 				onClick: 'return submitForm(this)';
-				callback: [self override ];
+				callback: [ self override ];
 				with: 'Override'.
 			html space.
 			html anchor
 				title: 'Define Additions and / or removals';
 				onClick: 'return submitForm(this)';
-				callback: [self modify ];
-				with: 'Modify']
+				callback: [ self modify ];
+				with: 'Modify' ]

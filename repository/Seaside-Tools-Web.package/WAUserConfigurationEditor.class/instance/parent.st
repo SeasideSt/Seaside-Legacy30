@@ -1,4 +1,3 @@
 accessing
-parent 
-	parent ifNil: [^self].
-	^parent 
+parent
+	^ parent ifNil: [ ^ self ]

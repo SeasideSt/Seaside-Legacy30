@@ -1,6 +1,5 @@
 rendering
 renderMoveActionsOn: html
-	
 	self isWriteable 
 		ifTrue: [	html anchor
 			title: 'Add to list';
@@ -13,4 +12,4 @@ renderMoveActionsOn: html
 			onClick: 'return submitForm(this)';
 			callback: [ self remove ];
 			with: '<-'		]
-		ifFalse: [html space: 5]
+		ifFalse: [ html space: 5 ]

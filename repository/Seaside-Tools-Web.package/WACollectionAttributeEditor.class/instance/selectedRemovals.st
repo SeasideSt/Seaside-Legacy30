@@ -1,3 +1,3 @@
 accessing
 selectedRemovals
-	^(selectionsCurrent select: [:each | each key = #remove]) collect: [:assoc | assoc value]
+	^ (selectionsCurrent select: [ :each | each key = #remove ]) collect: [ :assoc | assoc value ]
