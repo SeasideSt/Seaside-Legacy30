@@ -1,4 +1,4 @@
-testing
+tests
 testNoDuplicateUuids
 	| duplicates workingCopies |
 	workingCopies := WADevelopment allPackages collect: [ :each |
