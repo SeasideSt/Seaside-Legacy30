@@ -1,3 +1,3 @@
 *seaside-pharo-core
 seasideMimeDocumentType: aMimeType
-	^self seasideMimeDocument mimeType: aMimeType; yourself
+	^ self seasideMimeDocument mimeType: aMimeType; yourself
