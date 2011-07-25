@@ -4,7 +4,7 @@ testAssociationsDo
 	collection := self arbitraryCollection.
 	assocs := self arbitraryAssociations copy.
 	count := 0.
-	collection associationsDo: [:assoc |
+	collection associationsDo: [ :assoc |
 		| size |
 		count := count + 1.
 		size := assocs size.
