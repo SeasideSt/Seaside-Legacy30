@@ -7,5 +7,4 @@ renderMonth
 		selected: month;
 		yourself.
 	self addMonthCallbackToBrush: brush.
-	brush
-		labels: [:ea | Date nameOfMonth: ea]
+	brush labels: [ :ea | Date nameOfMonth: ea ]

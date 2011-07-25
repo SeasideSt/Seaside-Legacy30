@@ -5,6 +5,7 @@ callback: aBlock
 	However if you enable a disabled checkbox with JavaScript then the callback is invoked with the correct argument.
 	
 	http://code.google.com/p/seaside/issues/detail?id=18"
+
 	value := false.
 	callback := aBlock fixCallbackTemps.
-	super callback: [value := true]
+	super callback: [ value := true ]
