@@ -6,7 +6,7 @@ renderRowForSelector: aSymbol on: html
 		with: [
 			html span
 				class: 'dialog-form-label';
-				with: [self renderLabelForSelector: aSymbol on: html].
+				with: [ self renderLabelForSelector: aSymbol on: html ].
 			html span
 				class: 'dialog-form-field';
-				with: [self renderFieldForSelector: aSymbol on: html]]
+				with: [ self renderFieldForSelector: aSymbol on: html ] ]

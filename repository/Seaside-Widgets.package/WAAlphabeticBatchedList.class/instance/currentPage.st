@@ -1,3 +1,3 @@
 accessing
 currentPage
-	^ currentPage ifNil: [currentPage := self validPages first]
+	^ currentPage ifNil: [ currentPage := self validPages first ]

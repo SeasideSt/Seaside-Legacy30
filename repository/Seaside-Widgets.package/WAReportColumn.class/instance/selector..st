@@ -1,3 +1,3 @@
 accessing
 selector: aSymbol
-	valueBlock := [:row | row perform: aSymbol]
+	valueBlock := [ :row | row perform: aSymbol ]

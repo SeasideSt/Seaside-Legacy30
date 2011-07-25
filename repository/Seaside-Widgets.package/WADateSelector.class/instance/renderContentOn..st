@@ -15,4 +15,4 @@ renderContentOn: html
 		on: #year of: self;
 		labels: [ :each | self labelForYear: each ].
 
-	self dateIsValid ifFalse: [self renderValidationErrorOn: html]
+	self dateIsValid ifFalse: [ self renderValidationErrorOn: html ]

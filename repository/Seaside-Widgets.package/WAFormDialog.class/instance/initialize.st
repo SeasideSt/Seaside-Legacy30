@@ -1,4 +1,5 @@
 initialization
 initialize
 	super initialize.
-	self addFormByDefault ifTrue: [self addForm]
+	self addFormByDefault
+		ifTrue: [ self addForm ]

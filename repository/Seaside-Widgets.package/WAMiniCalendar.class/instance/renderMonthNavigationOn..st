@@ -7,11 +7,11 @@ renderMonthNavigationOn: html
 		with: [
 			html anchor
 				callback: [ self previousMonth ];
-				with: ((self monthNames at: (tab at: self monthIndex)) first: 3)].
+				with: ((self monthNames at: (tab at: self monthIndex)) first: 3) ].
 	html space.
 	html span
 		class: 'calendarNext';
 		with: [
 			html anchor
 				callback: [ self nextMonth ];
-				with: ((self monthNames at: (tab at: self monthIndex + 2)) first: 3)].
+				with: ((self monthNames at: (tab at: self monthIndex + 2)) first: 3) ].

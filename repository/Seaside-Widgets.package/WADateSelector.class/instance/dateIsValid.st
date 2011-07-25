@@ -1,4 +1,4 @@
 testing
 dateIsValid
-	[self date] on: Error do: [:e | ^ false].
+	[ self date ] on: Error do: [ :e | ^ false ].
 	^ true

@@ -1,5 +1,4 @@
 accessing
 currentSegment
 	^ stack isEmpty
-		ifTrue: [nil]
-		ifFalse: [stack last value]
+		ifFalse: [ stack last value ]

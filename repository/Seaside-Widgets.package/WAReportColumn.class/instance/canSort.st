@@ -1,3 +1,3 @@
 public
 canSort
-	^self canRender not and: [sortBlock notNil]
+	^ self canRender not and: [ sortBlock notNil ]

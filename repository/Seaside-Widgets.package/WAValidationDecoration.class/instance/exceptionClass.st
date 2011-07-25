@@ -1,3 +1,3 @@
 accessing
 exceptionClass
-	^exceptionClass ifNil: [exceptionClass := WAValidationNotification]
+	^ exceptionClass ifNil: [ exceptionClass := WAValidationNotification ]
