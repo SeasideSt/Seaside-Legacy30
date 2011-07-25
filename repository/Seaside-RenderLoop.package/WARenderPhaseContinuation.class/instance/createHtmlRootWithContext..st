@@ -1,3 +1,3 @@
 private
 createHtmlRootWithContext: aRenderContext
-	^WAHtmlRoot context: aRenderContext
+	^ WAHtmlRoot context: aRenderContext
