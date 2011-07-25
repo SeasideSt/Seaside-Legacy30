@@ -1,3 +1,3 @@
 private
 mergeArguments: anArray
-	^  anArray
+	^ anArray

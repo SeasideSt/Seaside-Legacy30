@@ -1,3 +1,3 @@
 streaming
 next: anInteger
-	^stream next: anInteger
+	^ stream next: anInteger

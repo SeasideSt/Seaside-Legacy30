@@ -1,3 +1,3 @@
 private
 basicForEncoding: aString
-	^self new
+	^ self new

@@ -4,4 +4,4 @@ readWriteCharacterStream
 		^ReadWriteStream on: String new
 	"
 
-	^self subclassResponsibility
+	^ self subclassResponsibility

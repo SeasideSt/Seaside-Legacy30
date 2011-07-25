@@ -1,4 +1,5 @@
 private
-unsupportedEncoding: aString 
+unsupportedEncoding: aString
 	"Signal an unsupported encoding."
-	GRUnsupportedEncodingError signal: 'unsupported encoding: ' , aString
+
+	^ GRUnsupportedEncodingError signal: 'unsupported encoding: ' , aString

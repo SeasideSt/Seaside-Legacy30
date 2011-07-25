@@ -4,4 +4,4 @@ readWriteByteStream
 		^ReadWriteStream on: ByteArray new
 	"
 
-	^self subclassResponsibility
+	^ self subclassResponsibility
