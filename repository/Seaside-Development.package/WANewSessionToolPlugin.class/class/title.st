@@ -1,3 +1,3 @@
 accessing
 title
-	^'New Session'
+	^ 'New Session'

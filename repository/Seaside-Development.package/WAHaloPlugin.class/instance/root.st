@@ -1,4 +1,3 @@
 accessing
 root
-
-	^root
+	^ root
