@@ -1,3 +1,3 @@
 accessing
 title
-	^'Smalltalk Image'
+	^ 'Smalltalk Image'

@@ -1,3 +1,3 @@
 private
 printDuration: aDuration
-	^self durationPrinter print: aDuration
+	^ self durationPrinter print: aDuration

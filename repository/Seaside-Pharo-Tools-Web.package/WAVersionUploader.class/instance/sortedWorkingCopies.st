@@ -1,4 +1,3 @@
 accessing
 sortedWorkingCopies
-	^MCWorkingCopy allManagers asSortedCollection: [ :a :b |
-		a packageName <= b packageName ]
+	^ MCWorkingCopy allManagers asSortedCollection: [ :a :b | a packageName <= b packageName ]

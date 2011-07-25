@@ -1,6 +1,6 @@
 private
 classesWithManyInstances
-	^Array streamContents: [ :stream |
+	^ Array streamContents: [ :stream |
 		Smalltalk globals keysAndValuesDo: [ :key :value|
 			((value isKindOf: Class) and: [key == value name]) ifTrue: [
 				| class |

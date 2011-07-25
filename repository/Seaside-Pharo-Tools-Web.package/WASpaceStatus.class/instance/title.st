@@ -1,3 +1,3 @@
 accessing
 title
-	^'Space Usage per Class'
+	^ 'Space Usage per Class'

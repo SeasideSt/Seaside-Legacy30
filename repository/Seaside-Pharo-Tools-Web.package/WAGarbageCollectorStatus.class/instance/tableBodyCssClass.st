@@ -1,3 +1,3 @@
 accessing
 tableBodyCssClass
-	^'right'
+	^ 'right'

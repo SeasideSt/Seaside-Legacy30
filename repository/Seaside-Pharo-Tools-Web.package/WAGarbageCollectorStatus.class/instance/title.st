@@ -1,3 +1,3 @@
 accessing
 title
-	^'Garbage Collector'
+	^ 'Garbage Collector'

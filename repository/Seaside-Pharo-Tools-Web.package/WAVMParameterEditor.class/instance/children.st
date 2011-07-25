@@ -1,3 +1,3 @@
 accessing
 children
-	^Array with: memoryInput
+	^ Array with: memoryInput

@@ -1,3 +1,3 @@
 testing
 isServerRunning
-	^self serverInstance isRunning
+	^ self serverInstance isRunning

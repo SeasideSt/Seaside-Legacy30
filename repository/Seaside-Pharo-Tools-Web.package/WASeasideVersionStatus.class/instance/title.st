@@ -1,3 +1,3 @@
 accessing
 title
-	^'Seaside Packages'
+	^ 'Seaside Packages'

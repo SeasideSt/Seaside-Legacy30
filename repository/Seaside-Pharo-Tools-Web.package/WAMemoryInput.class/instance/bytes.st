@@ -1,3 +1,3 @@
 accessing
 bytes
-	^value * multiplier
+	^ value * multiplier
