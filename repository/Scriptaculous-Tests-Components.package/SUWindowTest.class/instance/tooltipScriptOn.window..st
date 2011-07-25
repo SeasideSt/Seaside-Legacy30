@@ -18,6 +18,6 @@ tooltipScriptOn: html window: aWindow
 				each element on: 'mouseout' do: 	((JSStream on: 'event.target._showState = false'),
 					((html prototype element id: aWindow windowId; visible) then:
 						(html prototype evaluator 
-							callback: [:script | aWindow closeOn: script ] ) ) ) ] )
+							callback: [:script | aWindow closeOn: script ]))) ])
 
 	
