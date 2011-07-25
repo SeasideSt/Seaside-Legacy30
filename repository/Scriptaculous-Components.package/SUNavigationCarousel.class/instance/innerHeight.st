@@ -1,3 +1,3 @@
 accessing
 innerHeight
-	^elementHeight * visibleElements
+	^ elementHeight * visibleElements

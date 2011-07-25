@@ -1,3 +1,3 @@
 accessing
 mainId
-^'main',uid.
+	^ 'main' , uid

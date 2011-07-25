@@ -1,3 +1,3 @@
 private
 moveSizeY: anInteger
-	^(self elementSizeWithMargins * scrollInc * anInteger)
+	^ self elementSizeWithMargins * scrollInc * anInteger

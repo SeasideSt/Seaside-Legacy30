@@ -1,3 +1,3 @@
 accessing
 cssFloat
-	^self subclassResponsibility
+	^ self subclassResponsibility

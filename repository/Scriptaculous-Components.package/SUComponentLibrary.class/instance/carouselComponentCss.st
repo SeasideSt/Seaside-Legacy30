@@ -1,6 +1,6 @@
 styles
 carouselComponentCss
-^'.carouselComponent {position:relative;border:1px solid #ccc;overflow:hidden}
+	^ '.carouselComponent {position:relative;border:1px solid #ccc;overflow:hidden}
  .carouselComponent .carousel-list-h {width:10000px;
 		position:relative;
 		z-index:1}

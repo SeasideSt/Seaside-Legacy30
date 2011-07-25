@@ -1,3 +1,3 @@
 accessing-bounds
 clipExtent
-	^self subclassResponsibility
+	^ self subclassResponsibility

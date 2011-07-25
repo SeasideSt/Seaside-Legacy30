@@ -1,3 +1,3 @@
 accessing
 formattedResult
-	^self date printFormat: self format
+	^ self date printFormat: self format

@@ -1,3 +1,3 @@
 accessing
 titleHeight
-	^20
+	^ 20

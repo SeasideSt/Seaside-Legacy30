@@ -1,3 +1,3 @@
 accessing
 lastOffset
-	^offset + numVisible - 1
+	^ offset + numVisible - 1

@@ -1,3 +1,3 @@
 accessing-bounds
 componentExtent
-	^self subclassResponsibility
+	^ self subclassResponsibility

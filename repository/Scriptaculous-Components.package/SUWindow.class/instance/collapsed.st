@@ -1,3 +1,3 @@
 accessing
 collapsed
-	^collapsed
+	^ collapsed

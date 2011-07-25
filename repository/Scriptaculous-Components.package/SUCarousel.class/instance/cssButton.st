@@ -1,3 +1,3 @@
 accessing
 cssButton
-	^self subclassResponsibility
+	^ self subclassResponsibility

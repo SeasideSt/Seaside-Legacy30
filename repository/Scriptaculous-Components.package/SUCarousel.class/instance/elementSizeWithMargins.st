@@ -1,3 +1,3 @@
 accessing
 elementSizeWithMargins
-	^self elementSize + (2 * elementMargin)
+	^ self elementSize + (2 * elementMargin)

@@ -1,3 +1,3 @@
 accessing
 isOpen
-	^open
+	^ open

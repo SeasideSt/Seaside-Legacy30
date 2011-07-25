@@ -1,3 +1,3 @@
 accessing
 cssOrientation
-	^self subclassResponsibility
+	^ self subclassResponsibility

@@ -1,3 +1,3 @@
 private
 prevText
-	^self subclassResponsibility
+	^ self subclassResponsibility

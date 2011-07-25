@@ -1,3 +1,3 @@
 accessing
 cssFloat
-	^'carousel-float-v'
+	^ 'carousel-float-v'

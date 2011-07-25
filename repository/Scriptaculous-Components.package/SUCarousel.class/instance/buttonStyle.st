@@ -1,3 +1,3 @@
 private
 buttonStyle
-	^self subclassResponsibility
+	^ self subclassResponsibility

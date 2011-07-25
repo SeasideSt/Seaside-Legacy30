@@ -1,3 +1,3 @@
 accessing
 min
-	^min
+	^ min

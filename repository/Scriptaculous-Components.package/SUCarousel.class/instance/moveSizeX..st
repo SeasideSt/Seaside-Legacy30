@@ -1,3 +1,3 @@
 private
 moveSizeX: anInteger
-	^0
+	^ 0

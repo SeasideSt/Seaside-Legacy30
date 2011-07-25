@@ -1,3 +1,3 @@
 accessing
 elementSize
-	^self elementExtent y
+	^ self elementExtent y

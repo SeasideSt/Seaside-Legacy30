@@ -1,3 +1,3 @@
 accessing
 elementSize
-	^self subclassResponsibility
+	^ self subclassResponsibility

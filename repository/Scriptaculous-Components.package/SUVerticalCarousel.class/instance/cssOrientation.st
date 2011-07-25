@@ -1,3 +1,3 @@
 accessing
 cssOrientation
-	^'carousel-list-v'
+	^ 'carousel-list-v'

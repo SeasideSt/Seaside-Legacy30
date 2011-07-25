@@ -1,3 +1,3 @@
 accessing
 componentId
-	^'comp_', self windowId
+	^ 'comp_' , self windowId

@@ -1,3 +1,3 @@
 scripts
 initOffsetScript
-	^'drag._originalTop=splitter.offsetTop;'
+	^ 'drag._originalTop=splitter.offsetTop;'
