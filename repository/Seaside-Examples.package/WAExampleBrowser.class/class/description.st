@@ -1,3 +1,3 @@
 accessing
 description
-	^'Browse through Seaside examples'
+	^ 'Browse through Seaside examples'

@@ -1,6 +1,6 @@
 accessing
 mainCss
-	^'/* Pier
+	^ '/* Pier
 
    Copyright (c) 2003-2006 Lukas Renggli
    Copyright (c) 2005-2006 Software Composition Group, University of Berne

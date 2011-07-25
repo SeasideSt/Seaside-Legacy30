@@ -1,3 +1,3 @@
 accessing
 handlerName
-	^'examples/counter'
+	^ 'examples/counter'
