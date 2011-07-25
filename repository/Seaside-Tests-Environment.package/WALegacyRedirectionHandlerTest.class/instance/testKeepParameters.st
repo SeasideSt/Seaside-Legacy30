@@ -1,4 +1,4 @@
-testing
+tests
 testKeepParameters
 	| responseUrl response |
 	[ handler handleFiltered: self requestContext ]
