@@ -1,5 +1,5 @@
 instance creation
 newDateAndTime: aDateAndTime
-	^self
+	^ self
 		newDateAndTime: aDateAndTime
 		offset: aDateAndTime offset

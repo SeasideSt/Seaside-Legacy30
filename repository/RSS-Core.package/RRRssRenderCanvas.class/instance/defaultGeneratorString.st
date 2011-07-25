@@ -1,3 +1,3 @@
 private
 defaultGeneratorString
-	^'Seaside-RSRSS'
+	^ 'Seaside-RSRSS'

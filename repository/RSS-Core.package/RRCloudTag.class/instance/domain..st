@@ -1,3 +1,3 @@
 attributes
 domain: aString
-	^self attributeAt: 'domain' put: aString
+	^ self attributeAt: 'domain' put: aString

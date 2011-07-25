@@ -1,3 +1,3 @@
 accessing
 description
-	^'RSS feed'
+	^ 'RSS feed'

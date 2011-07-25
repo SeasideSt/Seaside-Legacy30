@@ -1,3 +1,3 @@
 attributes
 friday
-	^self with: 'Friday'
+	^ self with: 'Friday'

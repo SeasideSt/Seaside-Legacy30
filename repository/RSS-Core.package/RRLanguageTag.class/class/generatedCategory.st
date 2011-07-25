@@ -1,3 +1,3 @@
 accessing
 generatedCategory
-	^'languages-generated'
+	^ 'languages-generated'

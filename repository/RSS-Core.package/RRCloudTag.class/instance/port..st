@@ -1,3 +1,3 @@
 attributes
 port: anInteger
-	^self attributeAt: 'port' put: anInteger
+	^ self attributeAt: 'port' put: anInteger

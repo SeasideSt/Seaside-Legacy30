@@ -1,3 +1,3 @@
 private
 createRootComponent
-	^self rootComponentClass new
+	^ self rootComponentClass new

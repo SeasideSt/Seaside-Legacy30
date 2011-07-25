@@ -1,5 +1,3 @@
 accessing
 styles
-	styles isNil ifTrue: [
-		styles := OrderedCollection new ].
-	^styles
+	^ styles ifNil: [ styles := OrderedCollection new ]

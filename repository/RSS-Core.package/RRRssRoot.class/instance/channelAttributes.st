@@ -1,3 +1,3 @@
 accessing
 channelAttributes
-	^channelAttributes
+	^ channelAttributes

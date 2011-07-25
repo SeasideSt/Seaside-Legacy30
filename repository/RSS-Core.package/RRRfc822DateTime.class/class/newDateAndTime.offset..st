@@ -1,5 +1,5 @@
 instance creation
 newDateAndTime: aDateAndTime offset: aDuration
-	^self
+	^ self
 		dateAndTime: aDateAndTime
 		timeZoneString: (self offsetString: aDuration)

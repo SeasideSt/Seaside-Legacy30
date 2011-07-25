@@ -1,3 +1,3 @@
 accessing
 rssAttributes
-	^rssAttributes
+	^ rssAttributes

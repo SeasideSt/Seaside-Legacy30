@@ -1,3 +1,6 @@
 *rss-core
 rss
-	^self link beAlternate; beRss; yourself
+	^ self link
+		beAlternate;
+		beRss;
+		yourself

@@ -1,3 +1,3 @@
 attributes
 registerProcedure: aString
-	^self attributeAt: 'registerProcedure' put: aString
+	^ self attributeAt: 'registerProcedure' put: aString

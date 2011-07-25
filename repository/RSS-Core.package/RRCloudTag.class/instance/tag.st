@@ -1,3 +1,3 @@
 accessing
 tag
-	^'cloud'
+	^ 'cloud'

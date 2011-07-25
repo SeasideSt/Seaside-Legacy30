@@ -1,6 +1,6 @@
 instance creation
 dateAndTime: aDateAndTime timeZoneString: aString
-	^self new
+	^ self new
 		dateAndTime: aDateAndTime;
 		timeZoneString: aString;
 		yourself

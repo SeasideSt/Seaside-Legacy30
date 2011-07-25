@@ -1,3 +1,3 @@
 rendering
 rendererClass
-	^RRRssRenderCanvas
+	^ RRRssRenderCanvas

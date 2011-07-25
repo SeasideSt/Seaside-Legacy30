@@ -1,6 +1,6 @@
 accessing
 codes
-	^Array streamContents: [ :stream |
+	^ Array streamContents: [ :stream |
 		self codesString lines do: [ :line |
 			stream nextPut: (Array
 				with: (line copyUpTo: Character tab) asLegalSelector
