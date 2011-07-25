@@ -1,3 +1,3 @@
 testing
 canHaveChildren
-	^true
+	^ true

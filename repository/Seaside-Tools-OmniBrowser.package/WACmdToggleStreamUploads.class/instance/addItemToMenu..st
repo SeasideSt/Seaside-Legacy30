@@ -4,5 +4,5 @@ addItemToMenu: aMenu
 
 	super addItemToMenu: aMenu.
 	self isActive
-		ifFalse: [ ^self ].
-	aMenu lastItem icon: nil.
+		ifFalse: [ ^ self ].
+	aMenu lastItem icon: nil
