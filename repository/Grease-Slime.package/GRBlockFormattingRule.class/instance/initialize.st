@@ -8,7 +8,7 @@ initialize
 				ifFalse: [ answer ]
 				ifTrue: [
 					| source |
-					source := node methodNode source.
+					source := node source.
 					(source notNil and: [ node left notNil and: [ node right notNil ] ]) ifTrue: [
 						| first last |
 						first := source at: node left + 1 ifAbsent: [ $ ].
