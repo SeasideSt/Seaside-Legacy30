@@ -1,3 +1,3 @@
 accessing
 states
-	^Array with: self
+	^ Array with: self

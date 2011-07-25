@@ -1,3 +1,3 @@
 controlling
 confirmCheese
-	^self confirm: 'Is ', cheese,  ' your favorite cheese?'
+	^ self confirm: 'Is ' , cheese , ' your favorite cheese?'
