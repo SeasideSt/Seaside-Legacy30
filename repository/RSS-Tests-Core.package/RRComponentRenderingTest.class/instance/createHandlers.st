@@ -1,3 +1,3 @@
 configuration
 createHandlers
-	^Array with: handler
+	^ Array with: handler

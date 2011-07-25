@@ -1,3 +1,3 @@
 private
 renderFull: aBlock
-	^self renderFull: aBlock rootBlock: nil
+	^ self renderFull: aBlock rootBlock: nil
