@@ -1,3 +1,3 @@
 accessing
 children
-	^Array with: tieredList
+	^ Array with: tieredList

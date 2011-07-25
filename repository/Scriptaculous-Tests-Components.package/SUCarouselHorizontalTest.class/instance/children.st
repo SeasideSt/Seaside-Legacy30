@@ -1,3 +1,3 @@
 accessing
 children
-	^Array with: carousel
+	^ Array with: carousel

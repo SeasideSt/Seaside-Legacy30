@@ -1,6 +1,6 @@
 rendering
 style
-	^'
+	^ '
 div#lightbox {
 	background: white;
 	border: 1px solid #0000e8;
