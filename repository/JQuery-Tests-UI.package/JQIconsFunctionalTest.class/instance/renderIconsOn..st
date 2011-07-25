@@ -1,6 +1,6 @@
 rendering
 renderIconsOn: html
-	self iconClasses do: [:each |
+	self iconClasses do: [ :each |
 		html listItem
 			title: each;
 			class: 'ui-corner-all';
