@@ -1,3 +1,3 @@
 accessing
 counter
-	^ counter ifNil: [counter := WACounter new]
+	^ counter ifNil: [ counter := WACounter new ]

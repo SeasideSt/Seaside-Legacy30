@@ -1,3 +1,3 @@
 accessing
 componentCreator
-	^ componentCreator ifNil: [componentCreator := WAWelcomeComponentCreator new]
+	^ componentCreator ifNil: [ componentCreator := WAWelcomeComponentCreator new ]
