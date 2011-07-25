@@ -3,9 +3,9 @@ testAddAllFilesIn
 	| directoryName |
 	directoryName := 'XXXUsedBySeasideTests'.
 	FileDirectory default createDirectory: directoryName.
-	[| directory library |
+	[ | directory library |
 	directory := FileDirectory default directoryNamed: directoryName.
-	[(directory forceNewFileNamed: '.Seaside_Store') in: [ :stream | stream close ].
+	[ (directory forceNewFileNamed: '.Seaside_Store') in: [ :stream | stream close ].
 	(directory forceNewFileNamed: 'foo') in: [ :stream | stream close ].
 	SystemChangeNotifier uniqueInstance doSilently: [
 		library := WAFileLibrary
