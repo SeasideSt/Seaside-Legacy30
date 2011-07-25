@@ -2,7 +2,7 @@ initialization
 initialize
 	super initialize.
 	self matcher
-		matches: '[ :`@args | | `@temps | `@.stmts ]'
+		matches: '[ :`@args | | `@temps | ``@.stmts ]'
 		do: [ :node :answer |
 			answer isNil 
 				ifFalse: [ answer ]
