@@ -1,5 +1,5 @@
 private
 fileClass
-	^streamUploads
+	^ streamUploads
 		ifTrue: [ WATemporaryFile ]
 		ifFalse: [ WAFile ]

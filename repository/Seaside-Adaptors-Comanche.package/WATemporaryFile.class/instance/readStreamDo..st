@@ -5,6 +5,6 @@ readStreamDo: aOneArgumentBlock
 	the stream will be closed afterwards"
 	| stream |
 	stream := self temporaryDirectory readOnlyFileNamed: self temporaryFileName.
-	^[	stream binary.
+	^ [	stream binary.
 		aOneArgumentBlock value: stream ]
 			ensure: [ stream close ]

@@ -5,4 +5,4 @@ rawContents
 	contents isNil ifTrue: [
 		contents := self readStreamDo: [ :stream |
 			stream contents ] ].
-	^contents
+	^ contents
