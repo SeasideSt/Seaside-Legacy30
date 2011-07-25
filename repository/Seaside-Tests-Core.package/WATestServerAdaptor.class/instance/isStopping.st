@@ -1,3 +1,3 @@
 testing
 isStopping
-	^status = #stopping
+	^ status = #stopping

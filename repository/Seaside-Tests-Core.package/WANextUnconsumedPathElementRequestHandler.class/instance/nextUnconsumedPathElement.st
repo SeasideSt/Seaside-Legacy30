@@ -1,3 +1,3 @@
 accessing
 nextUnconsumedPathElement
-	^nextUnconsumedPathElement
+	^ nextUnconsumedPathElement

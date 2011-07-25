@@ -1,3 +1,3 @@
 testing
 isRunning
-	^status = #running
+	^ status = #running

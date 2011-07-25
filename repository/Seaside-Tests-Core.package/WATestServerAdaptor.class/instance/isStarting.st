@@ -1,3 +1,3 @@
 testing
 isStarting
-	^status = #starting
+	^ status = #starting

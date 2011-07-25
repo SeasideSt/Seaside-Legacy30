@@ -1,3 +1,3 @@
 testing
 isStopped
-	^status = #stopped
+	^ status = #stopped
