@@ -1,3 +1,3 @@
 accessing
 year: anObject
-	^year := anObject
+	year := anObject

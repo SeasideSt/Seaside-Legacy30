@@ -1,3 +1,3 @@
 accessing
 example
-	^self new
+	^ self new

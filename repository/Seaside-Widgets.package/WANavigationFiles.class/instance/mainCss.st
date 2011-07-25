@@ -1,6 +1,6 @@
 styles
 mainCss
-	^' /* this is from http://kalsey.com/tools/csstabs/ - would also be nice to do http://www.alistapart.com/articles/slidingdoors/ */
+	^ ' /* this is from http://kalsey.com/tools/csstabs/ - would also be nice to do http://www.alistapart.com/articles/slidingdoors/ */
 .kalsey .navigation-options {
 	border-bottom : 1px solid #ccc;
 	margin : 0;

@@ -1,3 +1,3 @@
 accessing
 defaultButton
-	^self buttons first
+	^ self buttons first

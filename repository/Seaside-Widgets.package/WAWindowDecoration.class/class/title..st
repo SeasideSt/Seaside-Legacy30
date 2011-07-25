@@ -1,5 +1,5 @@
 instance creation
 title: aTitle
-	^self new
+	^ self new
 		title: aTitle;
 		yourself

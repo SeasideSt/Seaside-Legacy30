@@ -1,3 +1,3 @@
 accessing
 minute: anObject
-	^minute := anObject
+	minute := anObject

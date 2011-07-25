@@ -1,3 +1,3 @@
 accessing-configuration
 labelBlock
-	^labelBlock
+	^ labelBlock

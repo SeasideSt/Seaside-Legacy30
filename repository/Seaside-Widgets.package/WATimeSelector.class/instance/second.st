@@ -1,3 +1,3 @@
 accessing
 second
-	^second
+	^ second

@@ -1,3 +1,3 @@
 accessing
 startHour
-	^startHour
+	^ startHour

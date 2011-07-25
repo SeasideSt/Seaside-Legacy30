@@ -1,3 +1,3 @@
 accessing
 states
-	^Array with: date with: monthIndex with: year
+	^ Array with: date with: monthIndex with: year

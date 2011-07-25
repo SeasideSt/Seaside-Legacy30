@@ -1,3 +1,3 @@
 accessing-configuration
 canSelectBlock
-	^canSelectBlock
+	^ canSelectBlock

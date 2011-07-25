@@ -1,3 +1,3 @@
 accessing-configuration
 selectBlock
-	^selectBlock
+	^ selectBlock

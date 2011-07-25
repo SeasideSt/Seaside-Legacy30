@@ -1,3 +1,3 @@
 accessing-delegated
 year
-	^year contents
+	^ year contents

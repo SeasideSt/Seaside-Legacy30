@@ -1,3 +1,3 @@
 accessing
 second: anObject
-	^second := anObject
+	second := anObject

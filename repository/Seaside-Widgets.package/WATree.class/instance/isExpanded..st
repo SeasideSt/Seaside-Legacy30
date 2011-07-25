@@ -1,3 +1,3 @@
 testing
 isExpanded: aNode
-	^expanded includes: aNode
+	^ expanded includes: aNode

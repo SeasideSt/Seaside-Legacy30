@@ -1,3 +1,3 @@
 accessing-nodes
 labelOf: aNode
-	^self labelBlock value: aNode
+	^ self labelBlock value: aNode

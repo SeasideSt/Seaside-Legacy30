@@ -1,3 +1,3 @@
 accessing
 label
-	^label ifNil: [ label := 'OK' ]
+	^ label ifNil: [ label := 'OK' ]

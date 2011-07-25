@@ -1,3 +1,3 @@
 private
 timeClass
-	^Time
+	^ Time

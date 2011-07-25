@@ -1,3 +1,3 @@
 accessing
 hour
-	^hour
+	^ hour

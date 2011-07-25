@@ -1,3 +1,3 @@
 public
 title
-	^title
+	^ title

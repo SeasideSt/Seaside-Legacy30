@@ -1,5 +1,5 @@
 accessing
 example
-	^self new
+	^ self new
 		items: (1 to: 100);
 		yourself

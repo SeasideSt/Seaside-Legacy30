@@ -1,3 +1,3 @@
 accessing
 month: anObject
-	^month := anObject
+	month := anObject

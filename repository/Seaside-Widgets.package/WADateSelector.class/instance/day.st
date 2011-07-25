@@ -1,3 +1,3 @@
 accessing
 day
-	^day
+	^ day
