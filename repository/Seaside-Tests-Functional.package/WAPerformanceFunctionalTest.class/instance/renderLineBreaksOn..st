@@ -1,6 +1,7 @@
 rendering
 renderLineBreaksOn: canvas
-	self renderInline: [:html |
+	self
+		renderInline: [ :html |
 			html withLineBreaks: 'a
 			b
 			c' ]

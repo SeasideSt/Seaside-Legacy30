@@ -10,4 +10,4 @@ renderEntityTableOn: html
 			self renderEntityTableColumnGroupsOn: html.
 			self renderEntityTableHeadOn: html.
 			self renderEntityTableFootOn: html.
-			self renderEntityTableBodyOn: html]
+			self renderEntityTableBodyOn: html ]

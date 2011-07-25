@@ -7,4 +7,4 @@ renderCurrencyTableOn: html
 			html tableColumnGroup.
 			html tableColumnGroup width: '100px'; align: 'char'; character: $..
 			self renderCurrencyTableHeadOn: html.
-			self renderCurrencyTableBodyOn: html]
+			self renderCurrencyTableBodyOn: html ]

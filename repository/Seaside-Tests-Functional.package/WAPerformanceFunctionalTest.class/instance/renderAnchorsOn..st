@@ -1,11 +1,11 @@
 rendering
 renderAnchorsOn: canvas
-	self renderInline: [:html | 
+	self renderInline: [ :html | 
 		html unorderedList: [
 			html listItem: [
 					html anchor
 						name: 'name';
-						callback: [];
+						callback: [ ];
 						with: 'Anchor' ] ] ]
 		factor: 1
 		key: #anchor

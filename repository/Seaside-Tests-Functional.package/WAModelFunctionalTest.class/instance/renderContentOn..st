@@ -8,4 +8,4 @@ renderContentOn: html
 				self renderPasswordOn: html.
 				self renderFeedbackOn: html ].
 			html div: [
-				self renderButtonOn: html ]]
+				self renderButtonOn: html ] ]

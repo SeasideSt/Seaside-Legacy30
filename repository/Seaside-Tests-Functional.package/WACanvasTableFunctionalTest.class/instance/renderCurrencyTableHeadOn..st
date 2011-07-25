@@ -1,7 +1,8 @@
 rendering
 renderCurrencyTableHeadOn: html
-	html tableHead title: 'Table header';
+	html tableHead
+		title: 'Table header';
 		with: [
 			html tableRow: [
 				html tableHeading: 'Currency'.
-				html tableHeading: 'Rate']]
+				html tableHeading: 'Rate' ] ]

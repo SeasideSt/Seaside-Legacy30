@@ -1,3 +1,3 @@
 actions
 swap
-	parent inform: 'Test passes!' onAnswer: []
+	parent inform: 'Test passes!' onAnswer: [ ]

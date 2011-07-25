@@ -1,6 +1,6 @@
 rendering
-renderContentOn: html 
-	html paragraph: [
+renderContentOn: html
+	html paragraph: [ 
 		html popupAnchor
 			callback: [ self calendarLoop ];
 			with: 'popup'.
@@ -29,5 +29,5 @@ renderContentOn: html
 			resizable: false;
 			extent: 300 @ 300;
 			position: 50 @ 50;
-			callback: [ self popupCloseTest  ];
-			with: 'popup with close button']
+			callback: [ self popupCloseTest ];
+			with: 'popup with close button' ]

@@ -8,7 +8,7 @@ renderContentOn: html
 			html div: [
 				html textInput
 					on: #input of: self.
-				html submitButton ]].
+				html submitButton ] ].
 		
 	html definitionList: [
 		html definitionTerm: 'Input'.
