@@ -1,3 +1,3 @@
 accessing
 isOverride
-	^self expression isKindOf: WAValueExpression
+	^ self expression isKindOf: WAValueExpression

@@ -15,4 +15,4 @@ currentCollectionAt: key
 								do: [ :each |
 										(attributeCollection detect: [:assoc | assoc value = each] ifNone: []) isNil
 												ifTrue: [attributeCollection addFirst: #inherited -> each ] ] ] ].
-	^attributeCollection
+	^ attributeCollection

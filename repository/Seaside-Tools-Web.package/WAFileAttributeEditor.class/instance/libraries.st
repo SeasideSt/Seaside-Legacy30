@@ -1,3 +1,3 @@
 accessing
 libraries
-	^configuration asSortedCollection: [ :a :b | a name < b name ]
+	^ configuration asSortedCollection: [ :a :b | a name < b name ]

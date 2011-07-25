@@ -1,3 +1,3 @@
 accessing
 selected
-	^navigation selectedComponent 
+	^ navigation selectedComponent

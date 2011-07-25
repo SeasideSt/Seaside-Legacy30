@@ -1,4 +1,4 @@
 accessing
-helpTexts 
+helpTexts
 	HelpTexts ifNil: [ self initHelpTexts ].
-	^HelpTexts
+	^ HelpTexts

@@ -1,3 +1,3 @@
 accessing
 children
-	^Array with: navigation
+	^ Array with: navigation

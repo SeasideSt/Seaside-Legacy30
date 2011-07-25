@@ -1,3 +1,3 @@
 testing
 canClear
-	^group ~~ #authentication
+	^ group ~~ #authentication

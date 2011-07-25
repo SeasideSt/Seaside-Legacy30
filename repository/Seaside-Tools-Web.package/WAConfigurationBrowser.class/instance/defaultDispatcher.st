@@ -1,3 +1,3 @@
 accessing
 defaultDispatcher
-	^WAAdmin defaultDispatcher
+	^ WAAdmin defaultDispatcher

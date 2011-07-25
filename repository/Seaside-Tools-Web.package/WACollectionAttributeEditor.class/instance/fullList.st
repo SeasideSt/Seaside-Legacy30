@@ -1,3 +1,3 @@
 accessing
 fullList
-	^attribute options
+	^ attribute options

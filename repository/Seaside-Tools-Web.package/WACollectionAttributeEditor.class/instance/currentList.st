@@ -1,3 +1,3 @@
 accessing
 currentList
-	^configuration currentCollectionAt: attribute key.
+	^ configuration currentCollectionAt: attribute key

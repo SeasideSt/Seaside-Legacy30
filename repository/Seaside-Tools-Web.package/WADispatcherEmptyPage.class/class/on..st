@@ -1,3 +1,5 @@
 instance creation
 on: parentComponent
-	^self new parent: parentComponent ; yourself 
+	^ self new
+		parent: parentComponent;
+		yourself

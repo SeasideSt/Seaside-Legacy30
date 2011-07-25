@@ -1,3 +1,3 @@
 accessing
 editor
-	^configurationEditor 
+	^ configurationEditor
