@@ -6,7 +6,7 @@ default
 	
 	| adaptors |
 	adaptors := WAAdmin serverAdaptors select: [ :each | each isKindOf: self ].
-	(adaptors size > 1) ifTrue: [ self error: 'You cannot use this convenience method when more than one adaptor of the same type are registered. Use WAServerManager or a graphical interface when dealing with multiple adaptors of the same type.'].
+	(adaptors size > 1) ifTrue: [ self error: 'You cannot use this convenience method when more than one adaptor of the same type are registered. Use WAServerManager or a graphical interface when dealing with multiple adaptors of the same type.' ].
 	^ adaptors isEmpty
 		ifTrue: [ nil ]
 		ifFalse: [ adaptors first ]
