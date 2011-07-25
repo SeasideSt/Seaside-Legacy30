@@ -1,3 +1,3 @@
 testing
 isApplication
-	^true
+	^ true
