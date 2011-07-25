@@ -1,3 +1,3 @@
 testing
 isEnabled
-	^ (requestor isSelected: target) and: [target canChangeMode]
+	^ (requestor isSelected: target) and: [ target canChangeMode ]
