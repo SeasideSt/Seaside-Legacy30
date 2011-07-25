@@ -7,7 +7,7 @@ testSearchContextsCaching
 		addParent: root;
 		yourself.
 	
-	self assert: (user retrieveSearchContext: #a default: 'testingSearchContextsCache' ) = 'testingSearchContextsCache'.
+	self assert: (user retrieveSearchContext: #a default: 'testingSearchContextsCache') = 'testingSearchContextsCache'.
 	user at: #a.
 	self assert: (user retrieveSearchContext: #a default: 'testingSearchContextsCache') attribute default = #default .
 	user clearSearchContexts.

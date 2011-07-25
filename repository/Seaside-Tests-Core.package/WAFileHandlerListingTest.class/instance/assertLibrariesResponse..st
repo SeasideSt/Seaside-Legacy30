@@ -2,5 +2,4 @@ testing
 assertLibrariesResponse: response
 	self assert: (response contents 
 					indexOfSubCollection: self expectedLibrariesContents 
-					startingAt: 1
-				) > 0
+					startingAt: 1) > 0
