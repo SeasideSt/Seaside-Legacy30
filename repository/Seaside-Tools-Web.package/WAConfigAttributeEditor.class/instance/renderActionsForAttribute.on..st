@@ -18,7 +18,7 @@ renderActionsForAttribute: anAttribute on: html
 							title: 'inherited from ', source name;
 							callback: [ self overrideAttribute: anAttribute ]; 
 							with: 'Override'.
-						(self isCollectionAttribute: anAttribute ) ifTrue: [
+						(self isCollectionAttribute: anAttribute) ifTrue: [
 							html text: ' '.
 							html anchor
 								onClick: 'return submitForm(this)';
@@ -46,7 +46,7 @@ renderActionsForAttribute: anAttribute on: html
 								title: 'inherited from attribute default';
 								callback: [ self overrideAttribute: anAttribute ]; 
 								with: 'Override'.
-							(self isCollectionAttribute: anAttribute ) ifTrue: [
+							(self isCollectionAttribute: anAttribute) ifTrue: [
 								html text: ' '.
 								html anchor
 									onClick: 'return submitForm(this)';
