@@ -1,5 +1,5 @@
 converting
 valueForField: anObject
-	^anObject isEmptyOrNil
+	^ anObject isEmptyOrNil
 		ifTrue: [ nil ]
 		ifFalse: [ WAUrl absolute: anObject ]
