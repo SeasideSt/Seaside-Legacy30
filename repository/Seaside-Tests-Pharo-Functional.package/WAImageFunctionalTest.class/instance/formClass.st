@@ -1,3 +1,3 @@
 accessing
 formClass
-	^Smalltalk classNamed: #Form
+	^ Smalltalk classNamed: #Form

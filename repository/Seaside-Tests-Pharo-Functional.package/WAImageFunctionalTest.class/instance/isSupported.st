@@ -1,3 +1,3 @@
 testing
 isSupported
-	^self formClass notNil
+	^ self formClass notNil
