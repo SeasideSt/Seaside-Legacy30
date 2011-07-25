@@ -1,4 +1,4 @@
-testing
+tests
 testUpdateRoot
 	 | response |
 	[ handler handleFiltered: self requestContext ]
