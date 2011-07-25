@@ -9,7 +9,7 @@ subStringsIn: aString splitBy: aCharacter do: aOneArgumentBlock
 			aString isEmpty ifFalse: [
 				aOneArgumentBlock value: aString ] ]
 		ifFalse: [
-			|  endIndex stringSize |
+			| endIndex stringSize |
 			stringSize := aString size.
 			startIndex = 1 ifFalse: [
 				"case where we have a path not starting with aCharacter"
