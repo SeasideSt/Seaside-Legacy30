@@ -1,5 +1,5 @@
 private
 seasideDev
-	^WAEmailAddress
+	^ WAEmailAddress
 		address: 'seaside-dev@lists.squeakfoundation.org'
 		username: 'Seaside Developers Mailinglist'

@@ -1,5 +1,5 @@
 private
 philippeMarschall
-	^WAEmailAddress
+	^ WAEmailAddress
 		address: 'philippe.marschall@gmail.com'
 		username: 'Philippe Marschall'
