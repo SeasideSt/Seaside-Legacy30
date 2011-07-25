@@ -1,3 +1,3 @@
 private
 spaceEntity
-	^'&#160;'
+	^ '&#160;'

@@ -1,3 +1,3 @@
 private callbacks
 seconds
-	^seconds
+	^ seconds

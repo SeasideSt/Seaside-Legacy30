@@ -1,3 +1,3 @@
 private
 defaultOptions
-	^#(month day year)
+	^ #(month day year)

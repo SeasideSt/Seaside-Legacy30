@@ -1,3 +1,3 @@
 accessing
 callbackClass
-	^WAMultipleValuesCallback
+	^ WAMultipleValuesCallback

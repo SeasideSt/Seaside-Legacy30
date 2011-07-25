@@ -1,3 +1,3 @@
 accessing
 options
-	^options ifNil: [ self defaultOptions ]
+	^ options ifNil: [ self defaultOptions ]

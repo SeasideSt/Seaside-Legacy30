@@ -1,3 +1,3 @@
 testing
 isGet
-	^(self attributeAt: 'method') = 'get'
+	^ (self attributeAt: 'method') = 'get'

@@ -1,3 +1,3 @@
 private
 hasCallback
-	^values notNil
+	^ values notNil

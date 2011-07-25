@@ -1,3 +1,3 @@
 private callbacks
 minutes
-	^minutes
+	^ minutes
