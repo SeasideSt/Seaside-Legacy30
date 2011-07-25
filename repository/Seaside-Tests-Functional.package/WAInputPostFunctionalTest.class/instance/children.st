@@ -1,3 +1,3 @@
 accessing
 children
-	^Array with: inputElements
+	^ Array with: inputElements

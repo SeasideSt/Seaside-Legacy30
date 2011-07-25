@@ -1,6 +1,6 @@
 rendering
 style
-	^'
+	^ '
 .wacanvastabletest table {
 	border-collapse: collapse;
 	border:1px solid black;

@@ -13,4 +13,4 @@ referenceDict
 	dict at: #nativeText put: 'Native Text Rendering Test' -> 26000.
 	dict at: #seasideBR put: 'Seaside (br) Rendering Test' -> 23000.
 	dict at: #nativeBR put: 'Native (br) Rendering Test' -> 78000.
-	^dict
+	^ dict

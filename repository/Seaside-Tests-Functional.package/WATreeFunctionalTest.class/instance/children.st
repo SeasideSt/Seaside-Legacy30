@@ -1,3 +1,3 @@
 accessing
 children
-	^Array with: tree
+	^ Array with: tree

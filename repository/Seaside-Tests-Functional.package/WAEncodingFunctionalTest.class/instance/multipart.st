@@ -1,3 +1,3 @@
 accessing
 multipart
-	^multipart
+	^ multipart

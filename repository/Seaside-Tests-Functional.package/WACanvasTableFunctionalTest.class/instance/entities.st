@@ -1,6 +1,6 @@
 samples
 entities
-	^#(
+	^ #(
 		('non-breaking space' ('&nbsp;' '&#160;' '&#xA0;'))
 		('ampersand' ('&amp;' '&#38;' '&#x26;'))
 		('less than sign' ('&lt;' '&#60;' '&#x3C;'))

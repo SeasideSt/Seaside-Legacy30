@@ -4,5 +4,5 @@ renderCharacterByCharacter: aString on: html
 	
 	self requestContext codec name = '(none)'
 	"Character by character rendering will fail for the NullCoded in case of multi byte characters. Don't test it."
-		ifTrue: [ ^self ].
+		ifTrue: [ ^ self ].
 	aString 	do: [ :each | html span: each ]

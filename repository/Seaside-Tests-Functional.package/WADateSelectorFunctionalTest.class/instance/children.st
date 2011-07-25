@@ -1,6 +1,6 @@
 accessing
 children
-	^(OrderedCollection new)
+	^ OrderedCollection new
 		add: beginDate;
 		add: endDate;
 		add: beginTime;

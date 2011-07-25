@@ -1,3 +1,3 @@
 private
 selectionIndex
-	^classes indexOf: self selected
+	^ classes indexOf: self selected
