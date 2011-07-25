@@ -1,3 +1,3 @@
 testing
 hasChangedSelector
-	^self changedSelector notNil
+	^ self changedSelector notNil

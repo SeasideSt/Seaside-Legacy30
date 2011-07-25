@@ -1,3 +1,3 @@
 testing
 isMeta
-	^self changedClass isMeta
+	^ self changedClass isMeta

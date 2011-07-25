@@ -1,5 +1,5 @@
 css
 selectorsToInclude
-	^#(
+	^ #(
 		styleCss
 	)

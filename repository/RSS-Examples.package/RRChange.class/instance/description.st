@@ -1,3 +1,3 @@
 accessing
 description
-	^description ifNil: [ self sourceCode ].
+	^ description ifNil: [ self sourceCode ]

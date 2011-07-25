@@ -1,6 +1,6 @@
 css
 style2Css
-	^'
+	^ '
 channel link, channel language, channel copyright, channel managingEditor, channel webMaster, channel docs, channel lastBuildDate {
 	    display:none;
 }

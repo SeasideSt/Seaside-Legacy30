@@ -1,6 +1,6 @@
 private
 firstPublicationDate
-	^DateAndTime
+	^ DateAndTime
 		year: 2003
 		month: 6
 		day: 3

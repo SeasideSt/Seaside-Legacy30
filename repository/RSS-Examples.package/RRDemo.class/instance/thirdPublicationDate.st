@@ -1,6 +1,6 @@
 private
 thirdPublicationDate
-	^DateAndTime
+	^ DateAndTime
 		year: 2003
 		month: 5
 		day: 27

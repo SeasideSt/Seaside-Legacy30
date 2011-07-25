@@ -1,6 +1,3 @@
 accessing
 selectorsToInclude
-	^#(
-		styleCss
-		style2Css
-	)
+	^ #(styleCss style2Css)

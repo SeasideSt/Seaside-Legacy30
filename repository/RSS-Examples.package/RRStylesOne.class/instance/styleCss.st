@@ -1,6 +1,6 @@
 css
 styleCss
-	^'
+	^ '
 rss {
 	display: block;
 	font-family: verdana, arial;
