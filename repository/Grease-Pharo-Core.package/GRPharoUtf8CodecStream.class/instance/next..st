@@ -34,4 +34,4 @@ next: anInteger
 			outStream nextPut: (Character codePoint: unicode).
 			count := count + 1 ].
 		unicode := nil ].
-	^outStream contents
+	^ outStream contents

@@ -9,4 +9,4 @@ contentsOfFile: aString binary: aBoolean
 			ascii;
 			wantsLineEndConversion: true;
 			yourself ].
-	^[ stream contents ] ensure: [ stream close ]
+	^ [ stream contents ] ensure: [ stream close ]

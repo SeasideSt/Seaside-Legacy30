@@ -7,4 +7,4 @@ explorerContents
 			with: value
 			name: (key printString contractTo: 32)
 			model: self) ].
-	^contents
+	^ contents

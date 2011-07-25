@@ -1,3 +1,3 @@
 private
 randomClass
-	^Random
+	^ Random

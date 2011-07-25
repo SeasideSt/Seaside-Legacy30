@@ -4,6 +4,6 @@ filesIn: aPathString
 	must not include file names that start with ."
 	| directory |
 	directory := FileDirectory default directoryNamed: aPathString.
-	^(directory fileNames
+	^ (directory fileNames
 		reject: [ :each | each first = $. ])
 		collect: [ :each | directory fullNameFor: each ]

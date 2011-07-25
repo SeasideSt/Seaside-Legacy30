@@ -1,3 +1,3 @@
 accessing
 codecs
-	^Array with: self new
+	^ Array with: self new

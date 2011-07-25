@@ -1,3 +1,3 @@
 streaming
 next: anInteger
-	^(stream next: anInteger) asString
+	^ (stream next: anInteger) asString

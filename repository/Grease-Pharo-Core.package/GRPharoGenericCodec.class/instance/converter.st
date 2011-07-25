@@ -1,3 +1,3 @@
 private
 converter
-	^TextConverter newForEncoding: self name
+	^ TextConverter newForEncoding: self name

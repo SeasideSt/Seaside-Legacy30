@@ -1,3 +1,3 @@
 *grease-pharo-core
 customizeExplorerContents
-	^true
+	^ true

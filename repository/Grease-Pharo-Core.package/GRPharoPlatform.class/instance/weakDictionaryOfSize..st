@@ -1,3 +1,3 @@
 factory
 weakDictionaryOfSize: aNumber
-	^IdentityDictionary new: aNumber
+	^ IdentityDictionary new: aNumber

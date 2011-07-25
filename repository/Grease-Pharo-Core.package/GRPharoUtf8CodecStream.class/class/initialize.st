@@ -1,7 +1,7 @@
 class initialization
 initialize
 	(Smalltalk hasClassNamed: #UTF8TextConverter) "guard for Squeak 37"
-		ifFalse: [ ^self ].
+		ifFalse: [ ^ self ].
 
 	Latin1ToUtf8Map := ByteArray new: 256.
 	Latin1ToUtf8Encodings := Array new: 256.
