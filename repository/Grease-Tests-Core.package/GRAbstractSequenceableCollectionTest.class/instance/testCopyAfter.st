@@ -1,6 +1,6 @@
 tests
 testCopyAfter
-	|  collection sub |
+	| collection sub |
 	
 	"match last element"
 	collection := self arbitraryCollection.
