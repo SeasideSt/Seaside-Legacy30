@@ -1,4 +1,4 @@
-testing
+tests
 testLeftToRight
 	self
 		assert: [ :root | root meta beLeftToRight ]

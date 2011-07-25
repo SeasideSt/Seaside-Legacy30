@@ -1,4 +1,4 @@
-testing
+tests
 testCanStartWithUnavailablePort
 
 	| adaptor1  |

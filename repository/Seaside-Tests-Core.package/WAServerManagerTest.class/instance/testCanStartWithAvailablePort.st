@@ -1,4 +1,4 @@
-testing
+tests
 testCanStartWithAvailablePort
 	| adaptor1 |
 	adaptor starting.
