@@ -1,4 +1,4 @@
-testing
+tests
 testCharCodingWithHandler
 	"569: Encoding information doesn't get included in the response"
 	self
