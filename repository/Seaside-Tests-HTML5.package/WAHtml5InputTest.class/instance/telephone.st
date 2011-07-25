@@ -1,3 +1,3 @@
 accessing
 telephone
-	^telephone
+	^ telephone

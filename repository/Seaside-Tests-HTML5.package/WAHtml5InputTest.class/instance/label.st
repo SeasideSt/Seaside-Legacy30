@@ -1,3 +1,3 @@
 accessing
 label
-	^'Html 5 Input'
+	^ 'Html 5 Input'

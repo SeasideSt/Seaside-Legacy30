@@ -1,3 +1,3 @@
 accessing
 autofocus
-	^autofocus
+	^ autofocus

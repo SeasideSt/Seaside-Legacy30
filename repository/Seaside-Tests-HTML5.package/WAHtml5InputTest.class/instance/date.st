@@ -1,3 +1,3 @@
 accessing
 date
-	^date
+	^ date

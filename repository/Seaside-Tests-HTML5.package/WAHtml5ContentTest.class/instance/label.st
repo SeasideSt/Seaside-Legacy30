@@ -1,3 +1,3 @@
 accessing
 label
-	^'Html 5 Content Model'
+	^ 'Html 5 Content Model'
