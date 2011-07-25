@@ -12,8 +12,8 @@ testHeaders
 	message headerAt: 'Date' put: now.
 		
 	" We have to take into account, that the header order is not implied."
-	self assert: (
-		('From: "Philippe Marschall" <philippe.marschall@gmail.com>', cr,
+	self assert: ((
+		'From: "Philippe Marschall" <philippe.marschall@gmail.com>', cr,
 		'To: "Seaside Developers Mailinglist" <seaside-dev@lists.squeakfoundation.org>',cr ,
 		'Subject: new email package', cr,
 		'Date: ', now, cr,
