@@ -1,3 +1,3 @@
 private
 subjectFor: anError
-	^anError signalerContext printString
+	^ anError signalerContext printString

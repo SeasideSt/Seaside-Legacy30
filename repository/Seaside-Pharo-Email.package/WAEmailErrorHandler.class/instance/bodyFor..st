@@ -1,4 +1,4 @@
 private
 bodyFor: anError
-	^WAStringEmailBody string: (String streamContents: [ :stream |
+	^ WAStringEmailBody string: (String streamContents: [ :stream | 
 		anError signalerContext errorReportOn: stream ])
