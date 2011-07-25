@@ -1,6 +1,6 @@
 public
 randomFrom: aCollection
-	|random count|
+	| random count |
 	random := self nextInt: aCollection size.
 	^ aCollection isSequenceable
 		ifTrue: [ aCollection at: random ]
