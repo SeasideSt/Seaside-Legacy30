@@ -1,6 +1,6 @@
 private
 requestor
-	^((Smalltalk hasClassNamed: #UIManager)
+	^ ((Smalltalk hasClassNamed: #UIManager)
 		ifTrue: [ (Smalltalk classNamed: #UIManager) default ]
 		ifFalse: [
 			"can be the case for kernel image"
