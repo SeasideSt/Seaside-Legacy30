@@ -2,7 +2,7 @@
 seasidePossibleCauses
 	| causes |
 	self receiver isNil ifFalse: [
-		^ #('you sent a message this type of object doesn''t understand' )].
+		^ #('you sent a message this type of object doesn''t understand') ].
 	causes := #(
 		'the receiver of the message is nil'
 		'a class extension hasn''t been loaded correctly'
