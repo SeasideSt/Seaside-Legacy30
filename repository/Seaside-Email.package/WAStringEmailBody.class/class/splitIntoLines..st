@@ -1,6 +1,6 @@
 private
 splitIntoLines: aString
-	^Array streamContents: [ :stream |
+	^ Array streamContents: [ :stream |
 		| cr start |
 		cr := Character cr.
 		start := 1.

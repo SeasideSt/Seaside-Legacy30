@@ -1,3 +1,3 @@
 adding
 addCc: anEmailAddress
-	^self cc add: anEmailAddress
+	^ self cc add: anEmailAddress

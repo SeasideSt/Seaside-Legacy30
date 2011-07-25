@@ -1,6 +1,6 @@
 private
 splitString: aString intoChunksNoLongerThan: anInteger
-	^Array streamContents: [ :stream |
+	^ Array streamContents: [ :stream |
 		self
 			splitString: aString
 			intoChunksNoLongerThan: anInteger

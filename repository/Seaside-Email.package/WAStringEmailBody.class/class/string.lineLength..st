@@ -12,6 +12,6 @@ string: aString lineLength: anInteger
 						do: [ :chunk | stream nextPutAll: chunk ]
 						separatedBy: [ stream nextPut: Character cr ] ] ]
 			separatedBy: [ stream nextPut: Character cr ] ].
-	^self new
+	^ self new
 		string: string;
 		yourself

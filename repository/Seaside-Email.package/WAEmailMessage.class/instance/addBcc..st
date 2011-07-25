@@ -1,3 +1,3 @@
 adding
 addBcc: anEmailAddress
-	^self bcc add: anEmailAddress
+	^ self bcc add: anEmailAddress
