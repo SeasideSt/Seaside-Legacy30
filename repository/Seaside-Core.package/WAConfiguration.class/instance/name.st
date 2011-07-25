@@ -1,3 +1,3 @@
 accessing
 name
-	^self class name
+	^ self class name

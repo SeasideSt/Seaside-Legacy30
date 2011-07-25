@@ -1,3 +1,3 @@
 convenience
 / aSymbol
-	^self urlOf: aSymbol
+	^ self urlOf: aSymbol

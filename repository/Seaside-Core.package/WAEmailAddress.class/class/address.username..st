@@ -1,6 +1,6 @@
 instance creation
 address: anAddressString username: aUsernameString
-	^self new
+	^ self new
 		address: anAddressString;
 		username: aUsernameString;
 		yourself

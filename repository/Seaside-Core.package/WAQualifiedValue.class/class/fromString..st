@@ -1,6 +1,6 @@
 instance creation
 fromString: aString
-	^Array streamContents: [ :stream |
+	^ Array streamContents: [ :stream |
 		| values |
 		values := aString subStrings: ','.
 		values do: [ :each |

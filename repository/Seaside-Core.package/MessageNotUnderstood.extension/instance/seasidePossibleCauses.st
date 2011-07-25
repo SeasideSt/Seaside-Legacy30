@@ -9,4 +9,4 @@ seasidePossibleCauses
 		'you sent the wrong message' ) asOrderedCollection.
 	self message selector = #contents ifTrue: [
 		causes addFirst: 'you forgot to send "super initialize" in a initialize method of a component or task' ].
-	^causes
+	^ causes

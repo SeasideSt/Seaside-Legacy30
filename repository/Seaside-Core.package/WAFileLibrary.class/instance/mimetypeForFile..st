@@ -1,3 +1,3 @@
 accessing
 mimetypeForFile: aFilename
-	^self class mimetypeFor: (aFilename copyAfterLast: $.)
+	^ self class mimetypeFor: (aFilename copyAfterLast: $.)

@@ -1,3 +1,3 @@
 instance creation
 path: aCollectionOfStrings
-	^self basicNew initializeWith: aCollectionOfStrings
+	^ self basicNew initializeWith: aCollectionOfStrings
