@@ -38,7 +38,7 @@ renderContentOn: html
 		attributeAt: 'rel'
 			put: 'illegal' ;
 		with: 'Show tooltip 3'.
-	windows do: [:w | html render: w ].
+	windows do: [ :w | html render: w ].
 	self 
 		tooltipScriptOn: html
 		window: aWindow
