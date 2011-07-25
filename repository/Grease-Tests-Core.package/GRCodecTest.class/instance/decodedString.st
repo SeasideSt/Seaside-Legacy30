@@ -1,3 +1,3 @@
 accessing
 decodedString
-	^'Übèrstrîñgé'
+	^ 'Übèrstrîñgé'
