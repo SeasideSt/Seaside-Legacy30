@@ -4,4 +4,4 @@ renderBodyOn: html
 		id: uid;
 		class: 'body';
 		class: 'closed' if: open not;
-		with: [open ifTrue: [ html render: body ] ]
+		with: [ open ifTrue: [ html render: body ] ]

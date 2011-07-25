@@ -1,4 +1,4 @@
 accessing
 visible
-	selected ifNil: [^#()].
+	selected ifNil: [ ^ #() ].
 	^Array with: selected

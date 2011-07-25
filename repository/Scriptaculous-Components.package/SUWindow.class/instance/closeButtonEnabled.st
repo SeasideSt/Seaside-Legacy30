@@ -1,3 +1,3 @@
 accessing-properties
 closeButtonEnabled
-	^self propertiesAt: #closeButton ifAbsent: [true]
+	^ self propertiesAt: #closeButton ifAbsent: [ true ]

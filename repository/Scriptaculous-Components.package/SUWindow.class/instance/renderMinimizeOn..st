@@ -8,4 +8,4 @@ renderMinimizeOn: html
 									callback: [:script | 
 												self collapseOn: script];
 												return: false);
-					with: '-']
+					with: '-' ]

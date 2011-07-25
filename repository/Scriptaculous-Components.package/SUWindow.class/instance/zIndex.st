@@ -1,3 +1,3 @@
 accessing
 zIndex
-	^self propertiesAt: #zIndex ifAbsent: [999]
+	^ self propertiesAt: #zIndex ifAbsent: [ 999 ]

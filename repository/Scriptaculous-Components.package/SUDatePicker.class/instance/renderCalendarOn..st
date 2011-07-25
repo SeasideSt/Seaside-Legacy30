@@ -11,7 +11,7 @@ renderCalendarOn: html
 					html tableData
 						class: 'weekDay';
 						with: each ] ].
-	self weeksDo: [:week | self renderRowForWeek: week on: html ].
+	self weeksDo: [ :week | self renderRowForWeek: week on: html ].
 	html tableRow: [
 		html tableData
 			colSpan: 9;

@@ -11,4 +11,4 @@ openOn: aScript
 	self isOpen
 		ifFalse: [
 			anElement update: self.
-			open := true]
+			open := true ]

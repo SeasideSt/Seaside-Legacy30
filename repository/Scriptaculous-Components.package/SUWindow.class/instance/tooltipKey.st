@@ -1,3 +1,3 @@
 accessing-properties
 tooltipKey
-	^self propertiesAt: #tooltipKey ifAbsent: [#unknown]
+	^ self propertiesAt: #tooltipKey ifAbsent: [ #unknown ]
