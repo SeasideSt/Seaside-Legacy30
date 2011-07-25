@@ -1,4 +1,4 @@
-testing
+tests
 testComponentCreation
 	| creator |
 	creator := WAWelcomeComponentCreator new.
