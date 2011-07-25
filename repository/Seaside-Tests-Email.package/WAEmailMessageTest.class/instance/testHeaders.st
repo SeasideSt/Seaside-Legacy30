@@ -25,4 +25,4 @@ testHeaders
 		'Subject: new email package', cr,
 		'Reply-To: "Philippe Marschall" <philippe.marschall@gmail.com>', cr,
 		'Date: ', now, cr, cr,
-		'Hello' = message plainMessage]).
+		'Hello' = message plainMessage ]).
