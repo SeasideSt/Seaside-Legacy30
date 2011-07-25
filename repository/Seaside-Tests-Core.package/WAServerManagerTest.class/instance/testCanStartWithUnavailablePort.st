@@ -1,7 +1,6 @@
 tests
 testCanStartWithUnavailablePort
-
-	| adaptor1  |
+	| adaptor1 |
 	adaptor1 := WATestServerAdaptor manager: manager.
 	adaptor1 port: adaptor port.
 	adaptor1 starting.
