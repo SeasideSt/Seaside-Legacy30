@@ -16,6 +16,15 @@ testBlockFormatting
 		compile: 'invalid3
 			[ b]'
 		classified: #(accessing).
+	
+	class
+		compile: 'invalid4
+			[ :a| ]'
+		classified: #(accessing).
+	class
+		compile: 'invalid5
+			[ :a |b ]'
+		classified: #(accessing).
 	self 
 		runRule: GRBlockFormattingRule
-		selectors: #(invalid1 invalid2 invalid3)
+		selectors: #(invalid1 invalid2 invalid3 invalid4 invalid5)
