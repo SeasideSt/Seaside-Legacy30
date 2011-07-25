@@ -1,3 +1,3 @@
 testing
 assertHandles: anObject
-	self assertHandles: anObject returnsSatisfying: [:result | result]
+	self assertHandles: anObject returnsSatisfying: [ :result | result ]

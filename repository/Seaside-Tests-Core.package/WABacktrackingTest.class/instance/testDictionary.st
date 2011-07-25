@@ -17,32 +17,32 @@ testDictionary
 
 	original restoreFromSnapshot: snapshot1.
 	self assert: original size = 2.
-	self assert: (original at: 1 ifAbsent: []) = #a.
-	self assert: (original at: 2 ifAbsent: []) = #b.
-	self assert: (original at: 3 ifAbsent: []) isNil.
-	self assert: (original at: 4 ifAbsent: []) isNil.
+	self assert: (original at: 1 ifAbsent: [ ]) = #a.
+	self assert: (original at: 2 ifAbsent: [ ]) = #b.
+	self assert: (original at: 3 ifAbsent: [ ]) isNil.
+	self assert: (original at: 4 ifAbsent: [ ]) isNil.
 
 	original restoreFromSnapshot: snapshot2.
-	self assert: (original at: 1 ifAbsent: []) = #a.
-	self assert: (original at: 2 ifAbsent: []) = #b.
-	self assert: (original at: 3 ifAbsent: []) = #c.
-	self assert: (original at: 4 ifAbsent: []) isNil.
+	self assert: (original at: 1 ifAbsent: [ ]) = #a.
+	self assert: (original at: 2 ifAbsent: [ ]) = #b.
+	self assert: (original at: 3 ifAbsent: [ ]) = #c.
+	self assert: (original at: 4 ifAbsent: [ ]) isNil.
 
 	original restoreFromSnapshot: snapshot3.
-	self assert: (original at: 1 ifAbsent: []) = #a.
-	self assert: (original at: 2 ifAbsent: []) = #b.
-	self assert: (original at: 3 ifAbsent: []) = #d.
-	self assert: (original at: 4 ifAbsent: []) isNil.
+	self assert: (original at: 1 ifAbsent: [ ]) = #a.
+	self assert: (original at: 2 ifAbsent: [ ]) = #b.
+	self assert: (original at: 3 ifAbsent: [ ]) = #d.
+	self assert: (original at: 4 ifAbsent: [ ]) isNil.
 
 	original restoreFromSnapshot: snapshot4.
-	self assert: (original at: 1 ifAbsent: []) isNil.
-	self assert: (original at: 2 ifAbsent: []) = #b.
-	self assert: (original at: 3 ifAbsent: []) = #d.
-	self assert: (original at: 4 ifAbsent: []) isNil.
+	self assert: (original at: 1 ifAbsent: [ ]) isNil.
+	self assert: (original at: 2 ifAbsent: [ ]) = #b.
+	self assert: (original at: 3 ifAbsent: [ ]) = #d.
+	self assert: (original at: 4 ifAbsent: [ ]) isNil.
 
 	original at: 2 put: #!.
 	original restoreFromSnapshot: snapshot4.
-	self assert: (original at: 1 ifAbsent: []) isNil.
-	self assert: (original at: 2 ifAbsent: []) = #b.
-	self assert: (original at: 3 ifAbsent: []) = #d.
-	self assert: (original at: 4 ifAbsent: []) isNil
+	self assert: (original at: 1 ifAbsent: [ ]) isNil.
+	self assert: (original at: 2 ifAbsent: [ ]) = #b.
+	self assert: (original at: 3 ifAbsent: [ ]) = #d.
+	self assert: (original at: 4 ifAbsent: [ ]) isNil
