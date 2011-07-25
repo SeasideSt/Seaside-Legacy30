@@ -1,5 +1,5 @@
 delegation
 handleAnswer: anObject
-	(self next handleAnswer: anObject) ifFalse:
-		[self handleAnswer: anObject continueWith: [^ false]].
+	(self next handleAnswer: anObject)
+		ifFalse: [ self handleAnswer: anObject continueWith: [ ^ false ] ].
 	^ true

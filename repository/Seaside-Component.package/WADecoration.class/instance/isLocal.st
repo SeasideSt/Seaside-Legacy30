@@ -1,3 +1,3 @@
 testing
 isLocal
-	^ (self isGlobal or: [self isDelegation]) not
+	^ (self isGlobal or: [ self isDelegation ]) not
