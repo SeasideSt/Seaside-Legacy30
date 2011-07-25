@@ -18,7 +18,7 @@ seasideDeliverEmailMessage: aWAEmailMessage
 		ifTrue: [ server ] 
 		ifFalse: [ NetNameResolver addressForName: server ].
 	client openOnHost: serverAddress port: self seasideSmtpPort.
-	[client 
+	[ client 
 		mailFrom: aWAEmailMessage from greaseString 
 		to: aWAEmailMessage recipientsAddresses
 		text: aWAEmailMessage plainMessage.
