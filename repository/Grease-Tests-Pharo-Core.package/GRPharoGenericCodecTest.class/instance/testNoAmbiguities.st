@@ -1,4 +1,4 @@
-testing
+tests
 testNoAmbiguities
 	#('utf-8' 'UTF-8' 'utf8') do: [ :each |
 		self deny: (GRPharoGenericCodec supportsEncoding: each) ].
