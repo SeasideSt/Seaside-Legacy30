@@ -1,6 +1,6 @@
 tasks
 createComponent: componentName
-	| userComponent  |
+	| userComponent |
 	
 	Smalltalk globals at: componentName ifPresent: [ :class |
 		self inform: 'Sorry a component named: ''', componentName, ''' already exists, please choose a different name.'. 
