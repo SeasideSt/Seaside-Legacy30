@@ -1,6 +1,7 @@
 rendering
 renderInline: aBlock factor: factor key: key on: html 
-	| startTime endTime count backColor anAssociation title referenceValue spi context document renderer stream runTime |
+	| startTime endTime count backColor anAssociation title referenceValue spi context document renderer stream runTime scale |
+	scale := self class scale.
 	count := 0.
 	runTime := 200.
 	anAssociation := referenceDict 
@@ -34,15 +35,15 @@ renderInline: aBlock factor: factor key: key on: html
 					flush ] ].
 	builder closeDocument: document.
 	spi := (count / referenceValue * (10000 / runTime)) rounded.
-	backColor := spi > 100 
+	backColor := spi > 800 
 		ifTrue: [ '#5f5' ]
 		ifFalse: [
-			spi < 50 
+			spi < 500 
 				ifTrue: [ '#f55' ]
 				ifFalse: [ '#55f' ] ].
 	duration := duration + spi.
 	html div
-		style: 'float:left;padding:4px';
+		class: 'spi';
 		with: [
 			html big: spi greaseString , ' SPI'.
 			html span
@@ -51,5 +52,5 @@ renderInline: aBlock factor: factor key: key on: html
 			html break.
 			html div
 				class: 'rect';
-				style: 'background:' , backColor , ';width:' , (spi * 2) greaseString , 'px' ].
+				style: 'background:' , backColor , ';width:' , (spi * scale) greaseString , 'px' ].
 	html div style: 'clear:both'

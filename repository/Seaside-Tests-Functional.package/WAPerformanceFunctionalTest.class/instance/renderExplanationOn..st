@@ -1,3 +1,3 @@
 rendering
 renderExplanationOn: html
-	html paragraph: 'Test rendering speed (Reference: Intel Core 2 Duo E6750, Seaside 3.0; Pharo 1.0, ~ 1400 SPI)'
+	html paragraph: 'Test rendering speed (Reference: Intel Core I5-2500K @ 3.3GHz Seaside 3.0; Cog VM,  Pharo 1.3, ~ 9400 SPI)'
