@@ -1,25 +1,28 @@
 tests
 testCrLf
+	| crlf testValue |
+	crlf := String with: Character cr with: Character lf.
+	testValue := 'value', crlf, 'Location: www.bad.com', crlf, crlf.
 	self
 		should: [
-			collection add: 'key' -> ('value', String crlf, 'Location: www.bad.com', String crlf, String crlf) ]
+			collection add: 'key' -> testValue ]
 		raise: WAInvalidHeaderValueError.
 	self
 		should: [
 			collection addAll: (Dictionary new
-				add: ('key' -> ('value', String crlf, 'Location: www.bad.com', String crlf, String crlf));
+				add: 'key' -> testValue;
 				yourself) ]
 		raise: WAInvalidHeaderValueError.
 	self
 		should: [
-			collection at: 'key' append: 'value', String crlf, 'Location: www.bad.com', String crlf, String crlf ]
+			collection at: 'key' append: testValue ]
 		raise: WAInvalidHeaderValueError.
 	self
 		should: [
-			collection at: 'key' add: 'value', String crlf, 'Location: www.bad.com', String crlf, String crlf ]
+			collection at: 'key' add: testValue ]
 		raise: WAInvalidHeaderValueError.
 	self
 		should: [
-			collection at: 'key' put: 'value', String crlf, 'Location: www.bad.com', String crlf, String crlf ]
+			collection at: 'key' put: testValue ]
 		raise: WAInvalidHeaderValueError
 	
