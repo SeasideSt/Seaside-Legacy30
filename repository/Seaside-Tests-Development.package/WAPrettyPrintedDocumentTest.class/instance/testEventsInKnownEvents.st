@@ -3,7 +3,7 @@ testEventsInKnownEvents
 	"Test that any event on WATagBrush is in WAPrettyPrintedDocument >> #knownEvents"
 	| selectors eventNames knownEvents |
 	selectors :=  WATagBrush selectors select: [ :each |
-		(each beginsWith: #on)
+		(each beginsWithSubCollection: #on)
 			and: [ each ~= #onEnter: ] ].
 	eventNames := selectors collect: [ :each |
 		each = #onDoubleClick:
