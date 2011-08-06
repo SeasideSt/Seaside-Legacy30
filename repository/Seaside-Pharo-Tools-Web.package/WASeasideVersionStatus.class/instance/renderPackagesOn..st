@@ -3,7 +3,7 @@ renderPackagesOn: html
 	| workingCopies |
 	workingCopies :=  [ self sortedWorkingCopies ]
 		on: Error
-		do: [
+		do: [ :e |
 			html render: 'Could not resolve working copies'.
 			^ self ].
 	html table: [
