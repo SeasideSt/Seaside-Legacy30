@@ -6,4 +6,4 @@ renderStartOn: html
 	html space.
 	html numberInput
 		value: start;
-		callback: [ :value |  [ start := value greaseInteger ] on: Error do: [ "ignore" ] ]
+		callback: [ :value |  [ start := value greaseInteger ] on: Error do: [ :e | "ignore" ] ]
