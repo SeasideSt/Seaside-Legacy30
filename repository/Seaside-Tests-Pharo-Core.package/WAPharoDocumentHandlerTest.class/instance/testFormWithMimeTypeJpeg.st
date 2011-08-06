@@ -9,4 +9,4 @@ testFormWithMimeTypeJpeg
 		mimeType: WAMimeType imageJpeg
 		fileName: nil.
 	
-	self assert: (handler document contents beginsWith: #(16rFF 16rD8 16rFF 16rE0) asByteArray) "JPEG Magic number"
+	self assert: (handler document contents beginsWithSubCollection: #(16rFF 16rD8 16rFF 16rE0) asByteArray) "JPEG Magic number"

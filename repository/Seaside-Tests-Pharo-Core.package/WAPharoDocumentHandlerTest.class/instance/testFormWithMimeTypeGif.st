@@ -9,4 +9,4 @@ testFormWithMimeTypeGif
 		mimeType: WAMimeType imageGif
 		fileName: nil.
 	
-	self assert: (handler document contents beginsWith: #(16r47 16r49 16r46 16r38) asByteArray) "GIF Magic number"
+	self assert: (handler document contents beginsWithSubCollection: #(16r47 16r49 16r46 16r38) asByteArray) "GIF Magic number"

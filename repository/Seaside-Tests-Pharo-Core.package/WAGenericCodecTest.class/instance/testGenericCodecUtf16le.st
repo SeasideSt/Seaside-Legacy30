@@ -3,7 +3,7 @@ testGenericCodecUtf16le
 	| codec bom |
 	codec := GRCodec forEncoding: 'utf-16'.
 	self assert: (codec isKindOf: GRPharoGenericCodec).
-	bom := #(255 254 ) asByteArray asString.
+	bom := self asString: #(255 254).
 	self assert: codec name = 'utf-16'.
 	self assert: codec url name = 'utf-8'.
 	self assert: (codec url isKindOf: GRPharoUtf8Codec).
