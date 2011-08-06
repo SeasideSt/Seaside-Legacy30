@@ -13,7 +13,7 @@ testAddPathParameter
 	
 	self assert: (url pathParameterAllAt: 2 key: 'jsessionid' ifAbsent: [ 'bar' ]) = 'bar'.
 	self assert: (url pathParameterAt: 2 key: 'jsessionid' ifAbsent: [ 'bar' ]) = 'bar'.
-	self assert: (url pathParameterAt: 2 key: 'old' ifAbsent: [ 'bar' ]) = nil.
+	self assert: (url pathParameterAt: 2 key: 'old' ifAbsent: [ 'bar' ]) isNil.
 	self assert: (url pathParameterAllAt: 2 key: 'old' ifAbsent: [ 'bar' ]) = (Array with: nil).
 	
 	self assert: (url pathParameterAt: 3 key: 'jsessionid' ifAbsent: [ 'bar' ]) = 'bar'.
