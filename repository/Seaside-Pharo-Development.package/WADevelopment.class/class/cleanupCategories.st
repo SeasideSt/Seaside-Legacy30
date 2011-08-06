@@ -10,7 +10,7 @@ cleanupCategories
 			ifTrue: [ new := #initialization ].
 		(new = #'instance-creation')
 			ifTrue: [ new := #'instance creation' ].
-		((class includesBehavior: TestCase) and: [ (protocol = #'testing' or: [ protocol beginsWith: #'testing-' ]) and: [ (class organization listAtCategoryNamed: protocol) allSatisfy: [ :each | each beginsWith: #test ] ] ])
+		((class includesBehavior: TestCase) and: [ (protocol = #'testing' or: [ protocol beginsWithSubCollection: #'testing-' ]) and: [ (class organization listAtCategoryNamed: protocol) allSatisfy: [ :each | each beginsWithSubCollection: #test ] ] ])
 			ifTrue: [ new := ('tests' , (protocol allButFirst: 7)) asSymbol ].
 		(new = protocol)
 			ifFalse: [ class organization renameCategory: protocol toBe: new ].
