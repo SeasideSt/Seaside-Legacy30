@@ -1,1 +1,1 @@
-SystemOrganization addCategory: 'Seaside-Adaptors-Swazoo'!
+SystemOrganization addCategory: #'Seaside-Adaptors-Swazoo'!
