@@ -5,7 +5,7 @@ rfc2965String
 	It can be used together with other serialization forms.
 	It can be used with HTTP header combining.
 	See class comment for a link to the spec."
-	^ String streamContents: [ :stream |
+	^String streamContents: [ :stream |
 		self writeKeyValueQuoted: true on: stream.
 		self writeCommentOn: stream.
 		self writeCommentUrlOn: stream.

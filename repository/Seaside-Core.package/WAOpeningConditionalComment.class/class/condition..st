@@ -1,5 +1,5 @@
 instance creation
 condition: aString
-	^ self new
+	^self new
 		condition: aString;
 		yourself

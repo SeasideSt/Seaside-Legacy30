@@ -1,3 +1,3 @@
 testing
 handlesFolder: aSymbol
-	^ self name = aSymbol
+	^self name = aSymbol

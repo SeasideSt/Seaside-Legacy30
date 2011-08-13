@@ -1,3 +1,4 @@
 enumerating
 handlersDo: aBlock
-	self keysAndHandlersDo: [ :key :value | aBlock value: value ]
+
+	self keysAndHandlersDo: [:key :value | aBlock value: value ]

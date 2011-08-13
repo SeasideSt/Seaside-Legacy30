@@ -4,7 +4,7 @@ oldNetscapeString
 	This has the broadest browser support but limited features.
 	It can not be used with HTTP header combining.
 	See class comment for a link to the spec."
-	^ String streamContents: [ :stream |
+	^String streamContents: [ :stream |
 		self writeKeyValueQuoted: false on: stream.
 		self writeExpiresOn: stream.
 		self writePathQuoted: false on: stream.

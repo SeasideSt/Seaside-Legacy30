@@ -1,10 +1,8 @@
 encoding
 encodePathOn: aDocument
 	path isNil ifFalse: [
-		path keysAndValuesDo: [ :index :each |
+		path do: [ :each |
 			aDocument nextPut: $/.
-			aDocument urlEncoder nextPutAll: each.
-			pathParameters isNil ifFalse: [
-				self encodePathParametersAt: index on: aDocument ] ] ].
+			aDocument urlEncoder nextPutAll: each ] ].
 	(path isNil or: [ path isEmpty or: [ slash ] ])
 		ifTrue: [ aDocument nextPut: $/ ]

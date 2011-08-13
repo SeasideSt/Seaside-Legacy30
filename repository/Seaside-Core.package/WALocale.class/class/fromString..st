@@ -7,6 +7,6 @@ fromString: aString
 	language := aString copyUpTo: delimiter.
 	country := aString copyAfter: delimiter.
 	country isEmpty ifTrue: [ country := nil ].
-	^ self
+	^self
 		language: language
 		country: country

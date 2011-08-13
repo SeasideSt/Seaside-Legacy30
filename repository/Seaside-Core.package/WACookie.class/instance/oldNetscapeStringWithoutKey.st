@@ -1,7 +1,7 @@
 writing
 oldNetscapeStringWithoutKey
 	"same as oldNetscapeString except that the key is not included, used for Kom hacks"
-	^ String streamContents: [ :stream |
+	^String streamContents: [ :stream |
 		self value isNil ifFalse: [
 			stream nextPutAll: self value ].
 		self writeExpiresOn: stream.

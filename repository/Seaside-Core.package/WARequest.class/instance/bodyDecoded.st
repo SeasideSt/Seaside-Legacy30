@@ -4,6 +4,6 @@ bodyDecoded
 	| contentType charSet |
 	contentType := self contentType.
 	charSet := contentType isNil ifFalse: [ contentType charSet ].
-	^ charSet isNil
+	^charSet isNil
 		ifTrue: [ WAIllegalStateException signal: 'no character set of request body can not be determined' ]
 		ifFalse: [ self bodyDecodeUsing: charSet ]

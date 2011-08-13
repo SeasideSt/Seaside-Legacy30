@@ -1,3 +1,4 @@
 *seaside-core
 seasideUrl
-	^ self
+
+	^self

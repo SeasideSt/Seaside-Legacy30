@@ -1,5 +1,5 @@
 instance creation
 on: aRendererClass
-	^ self new
+	^self new
 		rendererClass: aRendererClass;
 		yourself

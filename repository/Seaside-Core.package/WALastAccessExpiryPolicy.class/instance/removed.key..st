@@ -1,3 +1,3 @@
 notifications
 removed: anObject key: aString
-	lastAccessTable removeKey: aString ifAbsent: [ ]
+	lastAccessTable removeKey: aString ifAbsent: []

@@ -1,5 +1,5 @@
 instance creation
 language: aLanguageString
-	^ self new
+	^self new
 		language: aLanguageString;
 		yourself

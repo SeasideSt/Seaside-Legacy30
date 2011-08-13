@@ -1,3 +1,3 @@
 accessing
 address
-	^ address
+	^address

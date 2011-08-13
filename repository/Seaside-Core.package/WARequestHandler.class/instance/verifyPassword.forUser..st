@@ -12,6 +12,7 @@ verifyPassword: password forUser: username
 		self authConfigurationError: 'Login not defined. The default authentication method requires a WAAuthConfiguration' ].
 	hashPreference isNil ifTrue: [
 		self authConfigurationError: 'Password not defined. The default authentication method requires a WAAuthConfiguration' ].
+	(username isEmptyOrNil or: [ password isEmptyOrNil ]) ifTrue: [ ^ false ].
 	^ username isEmptyOrNil not
 		and: [ password isEmptyOrNil not
 		and: [ loginPreference = username

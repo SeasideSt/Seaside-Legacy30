@@ -1,3 +1,3 @@
 accessing
 documentForFile: aFilename
-	^ self perform: (self asSelector: aFilename)
+	^self perform: (self asSelector: aFilename)

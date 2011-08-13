@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "pmm 7/6/2011 21:34",
+	"commentStamp" : "jf 2/15/2010 23:15",
 	"super" : "WAObject",
 	"category" : "Seaside-Core-HTTP",
 	"classinstvars" : [ ],
@@ -14,8 +14,7 @@
 		"path",
 		"slash",
 		"queryFields",
-		"fragment",
-		"pathParameters"
+		"fragment"
 	],
 	"name" : "WAUrl",
 	"type" : "normal"

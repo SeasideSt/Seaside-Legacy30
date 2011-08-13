@@ -1,4 +1,4 @@
 private
 valueFrom: aString
-	^ (aString includes: $=)
+	^(aString includes: $=)
 		ifTrue: [ self trimBlanksAndQuotes: (aString copyAfter: $=) ]

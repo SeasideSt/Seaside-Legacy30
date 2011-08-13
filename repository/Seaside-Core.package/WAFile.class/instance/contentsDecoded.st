@@ -4,6 +4,6 @@ contentsDecoded
 	| type charSet |
 	type := self contentType.
 	charSet := type isNil ifFalse: [ type charSet ].
-	^ charSet isNil
+	^charSet isNil
 		ifTrue: [ WAIllegalStateException signal: 'no character set of file upload can not be determined' ]
 		ifFalse: [ self contentsDecodedUsing: charSet ]

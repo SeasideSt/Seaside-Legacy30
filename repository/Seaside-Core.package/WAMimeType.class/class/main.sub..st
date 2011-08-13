@@ -1,6 +1,6 @@
 instance creation
 main: aMainString sub: aSubString
-	^ self new
+	^self new
 		main: aMainString;
 		sub: aSubString;
 		yourself
