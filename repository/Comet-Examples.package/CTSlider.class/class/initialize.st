@@ -1,7 +1,7 @@
 initialization
 initialize
 	| application |
-	application := WAAdmin 	register: self asApplicationAt: 'comet/slider'.
+	application := WAAdmin register: self asApplicationAt: 'comet/slider'.
 	application 
 		addLibrary: JQDevelopmentLibrary;
 		addLibrary: JQUiDevelopmentLibrary;
