@@ -3,5 +3,4 @@ updateRoot: anHtmlRoot
 	super updateRoot: anHtmlRoot.
 	
 	anHtmlRoot title: self title.
-	anHtmlRoot link beShortcutIcon; url: WAToolFiles / #faviconIco.
-	WAWelcomeFiles default updateRoot: anHtmlRoot
+	anHtmlRoot link beShortcutIcon; url: WAToolFiles / #faviconIco

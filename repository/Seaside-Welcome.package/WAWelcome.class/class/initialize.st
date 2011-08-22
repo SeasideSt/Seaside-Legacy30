@@ -7,4 +7,5 @@ initialize
 		addLibrary: JQDeploymentLibrary;
 		addLibrary: JQUiDeploymentLibrary;
 		addLibrary: JQUiLightnessTheme;
-		preferenceAt: #scriptGeneratorClass put: JQScriptGenerator.
+		addLibrary: WAWelcomeFiles;
+		preferenceAt: #scriptGeneratorClass put: JQScriptGenerator
