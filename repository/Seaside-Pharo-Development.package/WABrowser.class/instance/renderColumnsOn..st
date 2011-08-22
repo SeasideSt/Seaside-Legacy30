@@ -9,7 +9,12 @@ renderColumnsOn: html
 					html select
 						size: 10;
 						list: array;
-						onChange: 'submit()';
+						"Very ugly hack to intentionally not delegate to WAScriptGenerator.
+						If we delegate to WAScriptGenerator and the script generator is jQuery
+						then #onChange: will result in
+						$.bind('change', function(){submit()});
+						which will blow up because submit() will not defined"
+						attributeAt: 'onchange' put: 'submit()';
 						selected: (array
 							at: (self model perform: (each , 'ListIndex') asSymbol)
 							ifAbsent: [ nil ]);
