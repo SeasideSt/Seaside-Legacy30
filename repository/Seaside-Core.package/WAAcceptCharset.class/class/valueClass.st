@@ -1,3 +1,3 @@
 private
 valueClass
-	^String
+	^ String

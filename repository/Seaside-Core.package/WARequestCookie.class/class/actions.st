@@ -1,6 +1,6 @@
 accessing
 actions
-	^Dictionary new
+	^ Dictionary new
 		at: '$Domain' put: [ :cookie :value | cookie domain: value ];
 		at: '$Path' put: [ :cookie :value | cookie path: value ];
 		at: '$Port' put: [ :cookie :value | cookie initializePorts: value ];

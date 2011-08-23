@@ -1,3 +1,3 @@
 notifications
 removed: anObject key: aString
-	ageTable removeKey: aString ifAbsent: []
+	ageTable removeKey: aString ifAbsent: [ ]

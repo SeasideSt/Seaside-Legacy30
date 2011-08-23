@@ -1,3 +1,3 @@
 comparing
 <= other
-	^self quality <= other quality
+	^ self quality <= other quality

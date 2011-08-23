@@ -1,3 +1,3 @@
 private
 valueClass
-	^WALocale
+	^ WALocale

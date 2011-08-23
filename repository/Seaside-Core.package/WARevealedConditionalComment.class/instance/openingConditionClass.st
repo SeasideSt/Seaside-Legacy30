@@ -1,3 +1,3 @@
 private
 openingConditionClass
-	^WAOpeningRevealedConditionalComment
+	^ WAOpeningRevealedConditionalComment

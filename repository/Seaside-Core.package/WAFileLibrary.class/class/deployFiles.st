@@ -1,3 +1,3 @@
 actions
 deployFiles
-	^self default deployFiles
+	^ self default deployFiles

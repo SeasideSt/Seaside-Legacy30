@@ -1,3 +1,3 @@
 private
 isBinary: aFilename
-	^(self mimetypeFor: (aFilename copyAfterLast: $.)) isBinary
+	^ (self mimetypeFor: (aFilename copyAfterLast: $.)) isBinary

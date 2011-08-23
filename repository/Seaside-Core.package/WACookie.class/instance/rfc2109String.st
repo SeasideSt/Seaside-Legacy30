@@ -4,7 +4,7 @@ rfc2109String
 	Almost no browser support.
 	It can be used with HTTP header combining.
 	See class comment for a link to the spec."
-	^String streamContents: [ :stream |
+	^ String streamContents: [ :stream |
 		self writeKeyValueQuoted: true on: stream.
 		self writeCommentOn: stream.
 		self writeMaxAgeOn: stream.

@@ -10,3 +10,4 @@ Instance Variables
 	slash:			<Boolean>
 	queryFields:		<WARequestFields> or nil
 	fragment:		<String> or nil
+	pathParameters:		<GROrderedMultiMap> or nil

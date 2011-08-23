@@ -5,7 +5,7 @@ fullPathForFileName: aString using: aFileHandler
 		pathSeparator := GRPlatform current pathSeparator.
 		xSendfileBaseDirectory := aFileHandler xSendfileBaseDirectory.
 		stream nextPutAll: xSendfileBaseDirectory.
-		(xSendfileBaseDirectory endsWith: pathSeparator) ifFalse: [
+		(xSendfileBaseDirectory endsWithSubCollection: pathSeparator) ifFalse: [
 			stream nextPutAll: pathSeparator ].
 		stream
 			nextPutAll: self name;

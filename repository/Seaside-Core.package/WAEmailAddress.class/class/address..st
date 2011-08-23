@@ -1,5 +1,5 @@
 instance creation
 address: aString
-	^self new
+	^ self new
 		address: aString;
 		yourself

@@ -1,3 +1,3 @@
 instance creation
 root: anHtmlRoot
-	^self basicNew initializeWithRoot: anHtmlRoot
+	^ self basicNew initializeWithRoot: anHtmlRoot
