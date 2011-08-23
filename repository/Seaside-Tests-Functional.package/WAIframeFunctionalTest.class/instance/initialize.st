@@ -1,4 +1,4 @@
 initialization
 initialize
 	super initialize.
-	calendar := WAMiniCalendar new
+	batchFunctionalTest := WABatchFunctionalTest new

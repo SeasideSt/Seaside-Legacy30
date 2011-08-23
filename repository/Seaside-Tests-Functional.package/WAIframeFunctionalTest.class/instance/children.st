@@ -1,3 +1,3 @@
 accessing
 children
-	^ Array with: calendar
+	^ Array with: batchFunctionalTest
