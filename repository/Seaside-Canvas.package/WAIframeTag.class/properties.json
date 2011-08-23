@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"rootBlock"
+		"rootBlock",
+		"url"
 	],
 	"name" : "WAIframeTag",
 	"type" : "normal"
