@@ -10,4 +10,5 @@ unableToResumeResponse
 	self requestContext respond: [ :response |
 		response
 			internalError;
+			contentType: WAMimeType textHtml;
 			nextPutAll: content ]
