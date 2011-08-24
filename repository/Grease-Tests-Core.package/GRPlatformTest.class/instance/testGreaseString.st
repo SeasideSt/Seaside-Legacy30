@@ -6,7 +6,9 @@ testGreaseString
 	self assert: 666 greaseString = '666'.
 	self assert: $A greaseString = 'A'.
 	self assert: nil greaseString = 'nil'.
-	[ 1 / 0 ] 
+	[	"Smalltalk/X has constant folding so 1 / 0 will be evaluated at compile time
+		resulting in an error when loading the code."
+		1 perform: #/ with: 0 ] 
 		on: ZeroDivide
 		do: [ :error | self assert: error greaseString isString ].
 	self assert: 15.25 greaseString = '15.25'.
