@@ -1,5 +1,5 @@
 options-generated
-hide: aString
+hide: aStringOrObject
 	"The effect to be used when the dialog is closed."
 
-	self optionAt: 'hide' put: aString
+	self optionAt: 'hide' put: aStringOrObject

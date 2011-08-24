@@ -1,5 +1,5 @@
 events-generated
 onChange: anObject
-	"After an item was selected; ui.item refers to the selected item. Always triggered after the close event."
+	"Triggered when the field is blurred, if the value has changed; ui.item refers to the selected item."
 
 	self optionAt: 'change' put: anObject asFunction
