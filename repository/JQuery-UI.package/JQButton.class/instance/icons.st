@@ -1,5 +1,3 @@
 accessing
 icons
-	icons isNil
-		ifTrue: [ self icons: (icons := GRSmallDictionary new) ].
-	^ icons
+	^ self options at: 'icons' ifAbsentPut: [ GRSmallDictionary new ]
