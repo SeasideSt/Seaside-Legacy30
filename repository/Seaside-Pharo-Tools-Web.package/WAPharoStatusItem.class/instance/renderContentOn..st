@@ -1,4 +1,4 @@
-private
+rendering
 renderContentOn: html
 	"allow optional Cog parameters to be reported easily"
 	html table: [

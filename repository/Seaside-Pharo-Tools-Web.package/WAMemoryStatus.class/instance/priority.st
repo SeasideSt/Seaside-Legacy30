@@ -1,3 +1,3 @@
 accessing
 priority
-	^ 1000
+	^ 700

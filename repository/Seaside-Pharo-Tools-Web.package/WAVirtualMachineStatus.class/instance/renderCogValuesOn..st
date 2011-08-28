@@ -4,8 +4,6 @@ renderCogValuesOn: html
 	self renderLabel: 'Cog VM - JIT' value: (self image getSystemAttribute: 1008) on: html.
 	self renderLabel: 'Cog VM - Stack pages' value: (self image vmParameterAt: 42) on: html.
 	self renderLabel: 'Cog VM - Desired stack pages' value: (self image vmParameterAt: 43) on: html.
-	self renderLabel: 'Cog JIT VM - Size of machine code zone (bytes)' value: (self image vmParameterAt: 46) on: html.
-	self renderLabel: 'Cog JIT VM - Desired size of machine code zone (bytes)' value: (self image vmParameterAt: 47) on: html.
 	"unclear which way round things go - and all appear to be zero anyway"
 	"self renderLabel: 'Cog VM - bit 0' value: ((image vmParameterAt: 48) bitAt: 1) on: html.
 	self renderLabel: 'Cog VM - Interpreted method bit used?' value: ((image vmParameterAt: 48) bitAt: 2) on: html.
@@ -13,5 +11,4 @@ renderCogValuesOn: html
 	self renderLabel: 'Cog VM - ForceInterruptChecks since startup' value: (self image vmParameterAt: 58) on: html.
 	self renderLabel: 'Cog VM - Stack page overflows since startup' value: (self image vmParameterAt: 60) on: html.
 	self renderLabel: 'Cog VM - Stack page divorces since startup' value: (self image vmParameterAt: 61) on: html.
-	self renderLabel: 'Cog VM - Compiled code compactions since startup' value: (self image vmParameterAt: 62) on: html.
-	self renderLabel: 'Cog VM - Time spent on compiled code compactions since startup' value: (self  printMilliSeconds:  (self image vmParameterAt: 63)) on: html.
+
