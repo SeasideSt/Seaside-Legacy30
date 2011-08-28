@@ -1,11 +1,11 @@
 rendering
 renderValuesOn: html
-	| image |
-	image := SmalltalkImage current.
+	| upTime |
+	upTime := Duration milliseconds: Time millisecondClockValue.
 	
-	self renderLabel: 'Uptime' value: (self printDuration: self upTime) on: html.
+	self renderLabel: 'Uptime' value: (self printDuration: upTime) on: html.
 	self renderLabel: 'Version' value: Smalltalk version on: html.
-	self renderLabel: 'Image Path' value: (image getSystemAttribute: 1) on: html.
+	self renderLabel: 'Image Path' value: (self image getSystemAttribute: 1) on: html.
 	self
 		renderLabel: 'Number of Sessions'
 		value: [
