@@ -7,9 +7,12 @@ version1051: spec
 		spec description: '1.0.5.1 (dkh.150):
 - open 1.0.5.1 for development ... GemStone-specific branch aimed at bypassing use of class instance variables (etc.) to allow the GemStone 3.0 version of Seaside to run against a read only SymbolDictionary. Some class instance variables are mapped to session temps and some are mapped to user-specific storage in UserGlobals.
 - refactor GRGemStonePlatform>>logError:title: and friends a bit to make it somewhat more useful
-- GRGemStoneRandomProvider class instance variables mutex and generator mapped to session temps'.
+- GRGemStoneRandomProvider class instance variables mutex and generator mapped to session temps
+1.0.5.1 (dkh.152):
+- fix issue 290  "transactionMutex is always nil"
+  http://code.google.com:9393/p/glassdb/issues/detail?id=290'.
 		spec author: 'dkh'.
-		spec timestamp: '07/29/2011 17:03:40'.
+		spec timestamp: '08/31/2011 12:43:20'.
 		spec 
 			package: 'Grease-Core' with: 'Grease-Core-pmm.59';
 			package: 'Grease-Tests-Core' with: 'Grease-Tests-Core-pmm.65'. ].
@@ -35,7 +38,10 @@ version1051: spec
 			project: 'UTF8' with: '0.239';
 			project: 'System-Digital-Signatures' with: '0.239'.
 		spec 
-			package: 'Grease-GemStone-Core' with: 'Grease-GemStone-Core-dkh.39';
+			package: 'Grease-GemStone-Core' with: [
+				spec 
+					file: 'Grease-GemStone-Core-dkh.40';
+					postLoadDoIt: #'initializeTransactionMutex1051'. ];
 			package: 'Grease-Tests-GemStone-Core' with: 'Grease-Tests-GemStone-Core-dkh.14'. ].
 
 	spec for: #'gs2.3.x' do: [
