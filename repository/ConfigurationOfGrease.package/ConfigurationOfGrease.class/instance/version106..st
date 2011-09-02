@@ -7,9 +7,11 @@ version106: spec
 		spec description: '1.0.6 (dkh.153):
 - open 1.0.6 for development
 - update to latest packages
-- update GRPlatform version to 1.0.6'.
+- update GRPlatform version to 1.0.6
+1.0.6 (dkh.154) [GEMSTONE]:
+- merge Grease-GemStone-Core-NickAger.43'.
 		spec author: 'dkh'.
-		spec timestamp: '9/1/2011 15:55'.
+		spec timestamp: '09/02/2011 17:03:50'.
 		spec 
 			package: 'Grease-Core' with: 'Grease-Core-dkh.65';
 			package: 'Grease-Tests-Core' with: 'Grease-Tests-Core-pmm.78'. ].
@@ -37,7 +39,7 @@ version106: spec
 		spec 
 			package: 'Grease-GemStone-Core' with: [
 				spec 
-					file: 'Grease-GemStone-Core-dkh.40';
+					file: 'Grease-GemStone-Core-dkh.44';
 					postLoadDoIt: #'initializeTransactionMutex1051'. ];
 			package: 'Grease-Tests-GemStone-Core' with: 'Grease-Tests-GemStone-Core-dkh.14'. ].
 
