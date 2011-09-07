@@ -6,10 +6,15 @@ version106: spec
 		spec blessing: #'development'.
 		spec description: '1.0.6 (dkh.153):
 - open 1.0.6 for development
-- update to latest packages
+- update to latest packages (http://code.google.com/p/seaside/wiki/Seaside306Changelog)
 - update GRPlatform version to 1.0.6
 1.0.6 (dkh.154) [GEMSTONE]:
-- merge Grease-GemStone-Core-NickAger.43'.
+- merge Grease-GemStone-Core-NickAger.43
+1.0.6 (dkh.155) [GEMSTONE]:
+- fix Issue 290: transactionMutex is always nil
+  http://code.google.com/p/glassdb/issues/detail?id=290
+- fix Issue 287: Pick up GsMisc v.0239.1
+  http://code.google.com/p/glassdb/issues/detail?id=287'.
 		spec author: 'dkh'.
 		spec timestamp: '09/02/2011 17:03:50'.
 		spec 
@@ -33,9 +38,9 @@ version106: spec
 	spec for: #'gemstone' do: [
 		spec 
 			project: 'GsCore' with: '0.245';
-			project: 'SMTPMail' with: '0.239';
-			project: 'UTF8' with: '0.239';
-			project: 'System-Digital-Signatures' with: '0.239'.
+			project: 'SMTPMail' with: '0.239.1';
+			project: 'UTF8' with: '0.239.1';
+			project: 'System-Digital-Signatures' with: '0.239.1'.
 		spec 
 			package: 'Grease-GemStone-Core' with: [
 				spec 
