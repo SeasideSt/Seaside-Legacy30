@@ -14,7 +14,7 @@ run: aClass do: aBlock
 		description: aClass name , ' has no rationale'.
 	composite := RBCompositeLintRule rules: rules name: 'Slime'.
 	undo := model changes execute.
-	[	SmalllintChecker runRule: composite onEnvironment: environment.
+	[	RBSmalllintChecker runRule: composite onEnvironment: environment.
 		rules do: [ :each |
 			self 
 				assert: (rule = each or: [ each result isEmpty and: [ each changes isEmpty ] ])
