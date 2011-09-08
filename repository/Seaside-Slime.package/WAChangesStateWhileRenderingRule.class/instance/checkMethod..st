@@ -14,7 +14,7 @@ checkMethod: aContext
 			result 
 				addClass: aContext selectedClass
 				selector: aContext selector.
-			result matcher 
+			matcher 
 				matches: each name , ' := ``@obj'
 				do: [ :node :answer | 
 					answer isNil 

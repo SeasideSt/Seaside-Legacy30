@@ -1,3 +1,3 @@
 accessing
 resultClass
-	^ ParseTreeEnvironment
+	^ RBParseTreeEnvironment
