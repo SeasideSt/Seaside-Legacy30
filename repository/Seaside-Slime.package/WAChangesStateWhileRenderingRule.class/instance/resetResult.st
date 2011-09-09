@@ -1,4 +1,5 @@
 running
 resetResult
 	super resetResult.
-	self result matcher: matcher
+	resultMatcher := RBParseTreeSearcher new.
+	self result matcher: resultMatcher

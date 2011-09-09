@@ -14,8 +14,8 @@ checkMethod: aContext
 			result 
 				addClass: aContext selectedClass
 				selector: aContext selector.
-			matcher 
-				matches: each name , ' := ``@obj'
+			resultMatcher 
+				matchesTree: each parent
 				do: [ :node :answer | 
 					answer isNil 
 						ifTrue: [ node ]

@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"matcher"
+		"matcher",
+		"resultMatcher"
 	],
 	"name" : "WAChangesStateWhileRenderingRule",
 	"type" : "normal"
