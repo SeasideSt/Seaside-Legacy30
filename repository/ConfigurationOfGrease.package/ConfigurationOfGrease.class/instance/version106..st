@@ -3,7 +3,7 @@ version106: spec
 	<version: '1.0.6' imports: #('1.0.4-baseline' )>
 
 	spec for: #'common' do: [
-		spec blessing: #'development'.
+		spec blessing: #'release'.
 		spec description: '1.0.6 (dkh.153):
 - open 1.0.6 for development
 - update to latest packages (http://code.google.com/p/seaside/wiki/Seaside306Changelog)
