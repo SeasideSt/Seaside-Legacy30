@@ -5,7 +5,11 @@ version1061: spec
 	spec for: #'common' do: [
 		spec blessing: #'development'.
 		spec description: '1.0.6.1 (dkh.157):
-- address GemStone2.3.x upgrade issues for GLASS 1.0-beta.8.7'.
+- address GemStone2.3.x upgrade issues for GLASS 1.0-beta.8.7
+1.0.6.1 (dkh.158):
+- fix Issue 279: GRGemStoneRandomProvider class>>#''sessionStart'' calls TransientRandom>>#''open'' which does not exist
+  http://code.google.com/p/glassdb/issues/detail?id=279
+  GemStone 2.3 fix (GemStone 2.4 fixed in earlier version)'.
 		spec author: 'dkh'.
 		spec timestamp: '9/13/2011 14:16'.
 		spec 
@@ -40,7 +44,7 @@ version1061: spec
 			package: 'Grease-Tests-GemStone-Core' with: 'Grease-Tests-GemStone-Core-dkh.14'. ].
 
 	spec for: #'gs2.3.x' do: [
-		spec package: 'Grease-GemStone230-Core' with: 'Grease-GemStone230-Core-dkh.3'. ].
+		spec package: 'Grease-GemStone230-Core' with: 'Grease-GemStone230-Core-dkh.4'. ].
 
 	spec for: #'gs2.4.x' do: [
 		spec package: 'Grease-GemStone240-Core' with: 'Grease-GemStone240-Core-dkh.3'. ].
