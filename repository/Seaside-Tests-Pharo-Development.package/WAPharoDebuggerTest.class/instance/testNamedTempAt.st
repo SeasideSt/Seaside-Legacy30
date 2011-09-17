@@ -1,5 +1,7 @@
 testing
 testNamedTempAt
+	"This is a test for the Pharo debugger API
+	http://code.google.com/p/seaside/issues/detail?id=689"
 	| frames |
 	frames := OrderedCollection new.
 	[ self signalInterestingError ]
