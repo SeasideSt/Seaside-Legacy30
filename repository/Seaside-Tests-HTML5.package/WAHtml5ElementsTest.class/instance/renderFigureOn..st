@@ -2,6 +2,6 @@ rendering
 renderFigureOn: html
 	html heading level2; with: '<figure>'.
 	html figure: [
-		html legend: 'The Profiler Icon'.
+		html legend: 'A Sample Icon'.
 		html space.
-		html image url: WAToolFiles / #profilerPng; altText: 'profiler' ]
+		html image url: WATestingFiles / #samplePng; altText: 'sample' ]
