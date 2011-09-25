@@ -17,4 +17,4 @@ Another example of the mark element is highlighting parts of a document that are
 <p>I also have some <mark>kitten</mark>s who are visiting me
 these days. They're really cute. I think they like my garden! Maybe I
 should adopt a <mark>kitten</mark>.</p>"
-	^ self tag: 'm'
+	^ self tag: 'mark'
