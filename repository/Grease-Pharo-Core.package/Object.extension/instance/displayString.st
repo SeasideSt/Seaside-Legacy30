@@ -2,5 +2,5 @@
 displayString
 	self 
 		greaseDeprecatedApi: 'Object>>#displayString'
-		details: 'Use #seasideString.'.
+		details: 'Use #greaseString.'.
 	^ self asString
