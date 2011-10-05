@@ -14,6 +14,7 @@ requestUrlFor: aNativeRequest
 		value isEmpty
 			ifTrue: [ seasideUrl addField: each key ]
 			ifFalse: [ seasideUrl addField: each key value: value ] ].
+	seasideUrl slash: swazooUri isDirectory.
 
 	aNativeRequest isEncrypted
 		ifTrue: [ seasideUrl scheme: 'https' ].
