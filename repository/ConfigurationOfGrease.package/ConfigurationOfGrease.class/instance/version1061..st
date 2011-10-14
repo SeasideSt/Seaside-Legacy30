@@ -1,6 +1,6 @@
 versions
 version1061: spec
-	<version: '1.0.6.1' imports: #('1.0.4-baseline' )>
+	<version: '1.0.6.1' imports: #('1.0.6.1-baseline' )>
 
 	spec for: #'common' do: [
 		spec blessing: #'development'.
@@ -9,9 +9,13 @@ version1061: spec
 1.0.6.1 (dkh.158):
 - fix Issue 279: GRGemStoneRandomProvider class>>#''sessionStart'' calls TransientRandom>>#''open'' which does not exist
   http://code.google.com/p/glassdb/issues/detail?id=279
-  GemStone 2.3 fix (GemStone 2.4 fixed in earlier version)'.
+  GemStone 2.3 fix (GemStone 2.4 fixed in earlier version)
+1.0.6.1 (dkh.159):
+- port to GemStone 3.0.1 (#generatehardBreak changed for 3.0)
+- GemStone 3.0.1 fix for Issue 130: remote breakpoints don''t work
+  http://code.google.com/p/glassdb/issues/detail?id=130'.
 		spec author: 'dkh'.
-		spec timestamp: '9/13/2011 14:16'.
+		spec timestamp: '10/14/2011 16:56'.
 		spec 
 			package: 'Grease-Core' with: 'Grease-Core-dkh.65';
 			package: 'Grease-Tests-Core' with: 'Grease-Tests-Core-pmm.78'. ].
@@ -39,9 +43,12 @@ version1061: spec
 		spec 
 			package: 'Grease-GemStone-Core' with: [
 				spec 
-					file: 'Grease-GemStone-Core-dkh.44';
+					file: 'Grease-GemStone-Core-dkh.45';
 					postLoadDoIt: #'initializeTransactionMutex1051'. ];
 			package: 'Grease-Tests-GemStone-Core' with: 'Grease-Tests-GemStone-Core-dkh.14'. ].
+
+	spec for: #'gs2.x' do: [
+		spec package: 'Grease-GemStone200-Core' with: 'Grease-GemStone200-Core-dkh.2'. ].
 
 	spec for: #'gs2.3.x' do: [
 		spec package: 'Grease-GemStone230-Core' with: 'Grease-GemStone230-Core-dkh.4'. ].
@@ -50,4 +57,4 @@ version1061: spec
 		spec package: 'Grease-GemStone240-Core' with: 'Grease-GemStone240-Core-dkh.3'. ].
 
 	spec for: #'gs3.x' do: [
-		spec package: 'Grease-GemStone300-Core' with: 'Grease-GemStone300-Core-DaleHenrichs.2'. ].
+		spec package: 'Grease-GemStone300-Core' with: 'Grease-GemStone300-Core-dkh.4'. ].
