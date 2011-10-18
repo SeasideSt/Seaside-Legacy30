@@ -28,10 +28,12 @@ version1062: spec
 
 	spec for: #'pharo1.1.x' do: [
 		spec 
+			package: 'Grease-Slime' with: 'Grease-Slime-lr.13';
 			package: 'Grease-Tests-Slime' with: 'Grease-Tests-Slime-lr.9'. ].
 	
 	spec for: #'pharo1.0.x' do: [
 		spec 
+			package: 'Grease-Slime' with: 'Grease-Slime-lr.13';
 			package: 'Grease-Tests-Slime' with: 'Grease-Tests-Slime-lr.9'. ].
 
 	spec for: #'gemstone' do: [
