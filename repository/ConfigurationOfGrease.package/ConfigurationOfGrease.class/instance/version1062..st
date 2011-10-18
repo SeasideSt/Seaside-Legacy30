@@ -4,9 +4,10 @@ version1062: spec
 
 	spec for: #'common' do: [
 		spec blessing: #'development'.
-		spec description: '1.0.6.2 (TudorGirba.159): Updated the Pharo version to deal with the latest changes in the RB'.
-		spec author: 'Tudor Girba'.
-		spec timestamp: '10/18/2011 13:55'.
+		spec description: '1.0.6.2 (StephaneDucasse.157): updating to renaming happening in RB :( 
+								- grease-slime.14.lr and a couple of others'.
+		spec author: 'StephaneDucasse'.
+		spec timestamp: ' 18 October 2011'. "Date today"
 		spec 
 			package: 'Grease-Core' with: 'Grease-Core-lr.66';
 			package: 'Grease-Tests-Core' with: 'Grease-Tests-Core-lr.79'. ].
