@@ -3,7 +3,7 @@ version1062: spec
 	<version: '1.0.6.2' imports: #('1.0.6.1-baseline' )>
 
 	spec for: #'common' do: [
-		spec blessing: #'development'.
+		spec blessing: #'release'.
 		spec description: '1.0.6.2 (StephaneDucasse.157): updating to renaming happening in RB :( 
 								- grease-slime.14.lr and a couple of others'.
 		spec author: 'StephaneDucasse'.
