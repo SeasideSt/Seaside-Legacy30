@@ -4,7 +4,17 @@ version1062: spec
 
 	spec for: #'common' do: [
 		spec blessing: #'release'.
-		spec description: '1.0.6.2 (StephaneDucasse.157): updating to renaming happening in RB :( 
+		spec description: '1.0.6.1 (dkh.157):
+- address GemStone2.3.x upgrade issues for GLASS 1.0-beta.8.7
+1.0.6.1 (dkh.158):
+- fix Issue 279: GRGemStoneRandomProvider class>>#''sessionStart'' calls TransientRandom>>#''open'' which does not exist
+  http://code.google.com/p/glassdb/issues/detail?id=279
+  GemStone 2.3 fix (GemStone 2.4 fixed in earlier version)
+1.0.6.1 (dkh.159):
+- port to GemStone 3.0.1 (#generatehardBreak changed for 3.0)
+- GemStone 3.0.1 fix for Issue 130: remote breakpoints don''t work
+  http://code.google.com/p/glassdb/issues/detail?id=130
+1.0.6.2 (StephaneDucasse.157): updating to renaming happening in RB :( 
 								- grease-slime.14.lr and a couple of others'.
 		spec author: 'StephaneDucasse'.
 		spec timestamp: ' 18 October 2011'. "Date today"
