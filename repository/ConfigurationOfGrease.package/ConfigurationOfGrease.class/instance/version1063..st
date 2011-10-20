@@ -3,7 +3,7 @@ version1063: spec
 	<version: '1.0.6.3' imports: #('1.0.6.1-baseline' )>
 
 	spec for: #'common' do: [
-		spec blessing: #'development'.
+		spec blessing: #'release'.
 		spec description: '1.0.6.1 (dkh.157):
 - address GemStone2.3.x upgrade issues for GLASS 1.0-beta.8.7
 1.0.6.1 (dkh.158):
@@ -20,7 +20,7 @@ version1063: spec
 - opened for development ... continued GemStone 3.0.1 work continued from 1.0.6.1
 - clean up tests when run against Minimal GLASS group'.
 		spec author: 'dkh'.
-		spec timestamp: '10/19/2011 21:52'. "Date today"
+		spec timestamp: '10/20/2011 14:51'. "Date today"
 		spec 
 			package: 'Grease-Core' with: 'Grease-Core-lr.66';
 			package: 'Grease-Tests-Core' with: 'Grease-Tests-Core-lr.79'. ].
