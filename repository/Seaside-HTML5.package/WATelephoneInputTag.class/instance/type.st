@@ -1,3 +1,3 @@
 accessing
 type
-	^ 'telephone'
+	^ 'tel'
