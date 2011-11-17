@@ -3,12 +3,12 @@ version1064: spec
 	<version: '1.0.6.4' imports: #('1.0.6.1-baseline' )>
 
 	spec for: #'common' do: [
-		spec blessing: #'development'.
+		spec blessing: #'release'.
 		spec description: '1.0.6.4 (dkh.174):
 - open 1.0.6.4 for development
 - support for GemStone/S 2.4.5 release'.
 		spec author: 'dkh'.
-		spec timestamp: '11/11/2011 15:04'.
+		spec timestamp: '11/17/2011 14:11'.
 		spec 
 			package: 'Grease-Core' with: 'Grease-Core-lr.66';
 			package: 'Grease-Tests-Core' with: 'Grease-Tests-Core-lr.79'. ].
