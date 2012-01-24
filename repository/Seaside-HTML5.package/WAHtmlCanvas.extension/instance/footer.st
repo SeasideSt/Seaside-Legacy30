@@ -7,4 +7,4 @@ footer
 	When used as an inline-level content container, the element represents a paragraph.
 
 	Contact information for the section given in a footer should be marked up using the address element."
-	^ self tag: 'footer '
+	^ self tag: 'footer'

@@ -5,4 +5,4 @@ header
 	header elements must not contain any header elements, footer elements, or any sectioning elements (such as section) as descendants.
 
 	header elements must have at least one h1, h2, h3, h4, h5, or h6 element as a descendant. "
-	^ self tag: 'header '
+	^ self tag: 'header'
