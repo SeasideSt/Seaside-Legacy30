@@ -2,7 +2,7 @@ rendering
 renderExampleOn: html
 	html paragraph: 'Complex, multi-page workflows can be expressed in Seaside with a single method. Unlike many web frameworks  which require a separate handler for each page or request, Seaside models an entire user session as a continuous piece of code, with natural, linear control flow.'.
 
-	html div class: #seasideExample; with: taskExample.
+	html div class: #seasideExample; with: self taskExample.
 		
 	html paragraph: [		
 		html text: 'This example subclasses '; code: 'WATask'; text: ' and implements the hook method '; code: '#go'.
