@@ -10,4 +10,6 @@ renderContentOn: html
 			html paragraph: [
 				self renderWriteToDiskOn: html.
 				html space.
-				self renderDoneOn: html ] ]
+				self renderDoneOn: html ].
+			
+			self renderAPInfoOn: html ]
