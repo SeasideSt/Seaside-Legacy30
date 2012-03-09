@@ -19,7 +19,7 @@ responseForLibrary: aLibrary
 								url: (aLibrary urlOf: each);
 								with: (aLibrary asFilename: each) ].
 						html tableData: (aLibrary fileSizeOf: each).
-						html tableData: (aLibrary mimetypeForFile: (aLibrary asFilename: each)) ] ] ] ].
+						html tableData: (aLibrary mimetypeOf: each) ] ] ] ].
 	context respond: [ :response |
 		response
 			contentType: WAMimeType textHtml;
