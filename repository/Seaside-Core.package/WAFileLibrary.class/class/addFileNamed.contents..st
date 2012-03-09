@@ -1,4 +1,4 @@
-private
+file addition
 addFileNamed: aFilename contents: aByteArrayOrString
 	| selector |
 	selector := self asSelector: aFilename.

@@ -1,3 +1,3 @@
 accessing
 libraries
-	^ WAFileLibrary allSubclasses
+	^ WAFileLibraryBase libraries

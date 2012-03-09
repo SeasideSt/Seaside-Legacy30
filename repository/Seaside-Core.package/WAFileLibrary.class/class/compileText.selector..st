@@ -14,7 +14,7 @@ compileText: aByteArrayOrString selector: aSymbol
 		aByteArrayOrString greaseString do: [ :each | 
 			each = $' ifTrue: [ stream nextPut: $' ].
 			stream nextPut: each ].
-		stream nextPutAll: '''' ].
+		stream nextPut: $' ].
 	GRPlatform current 
 		compile: code
 		into: self

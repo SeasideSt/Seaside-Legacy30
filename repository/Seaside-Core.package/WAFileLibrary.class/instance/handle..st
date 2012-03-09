@@ -13,10 +13,10 @@ handle: aRequestContext
 				response
 					cacheFor: self cacheDuration;
 					headerAt: 'X-Sendfile' put: (self fullPathForFileName: fileName using: fileHandler);
-					contentType: (self mimetypeForFile: fileName) ] ]
+					contentType: (self mimetypeOf: selector) ] ]
 		ifFalse: [
 			aRequestContext respond: [ :response |
 				response
 					cacheFor: self cacheDuration;
-					document: (self documentForFile: fileName)
-					mimeType: (self mimetypeForFile: fileName) ] ]
+					document: (self documentOf: selector)
+					mimeType: (self mimetypeOf: selector) ] ]
