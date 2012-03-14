@@ -6,4 +6,4 @@ asSelector: aFilename
 	[ mainPart first isDigit ]
 		whileTrue: [ mainPart := mainPart allButFirst ].
 	extension := (aFilename copyAfterLast: $.) asLowercase capitalized.
-	^ (mainPart , extension) asSymbol
+	^ (mainPart, extension) asSymbol
