@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "WAFileLibraryBase",
+	"super" : "WAAbstractFileLibrary",
 	"category" : "Seaside-Core-Libraries",
 	"classinstvars" : [ ],
 	"pools" : [ ],

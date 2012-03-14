@@ -10,6 +10,6 @@
 		"MimeTypes"
 	],
 	"instvars" : [ ],
-	"name" : "WAFileLibraryBase",
+	"name" : "WAAbstractFileLibrary",
 	"type" : "normal"
 }
