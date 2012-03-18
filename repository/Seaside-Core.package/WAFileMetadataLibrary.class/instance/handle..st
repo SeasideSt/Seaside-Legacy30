@@ -24,5 +24,5 @@ handle: aRequestContext
 			aRequestContext respond: [ :response |
 				response
 					cacheFor: fileResource cacheDuration;
-					document: fileResource contents
+					document: fileResource contents value
 					mimeType: fileResource mimeType ] ]

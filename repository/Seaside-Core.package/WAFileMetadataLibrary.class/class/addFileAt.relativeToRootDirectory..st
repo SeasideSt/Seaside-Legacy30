@@ -1,13 +1,15 @@
 private
 addFileAt: aPath relativeToRootDirectory: relativeRootDirectory
-	| relativeFilepath |
+	| relativeFilepath pathSeparator |
 	relativeFilepath := aPath allButFirst: relativeRootDirectory size.
+	pathSeparator := GRPlatform current pathSeparator.
 	
-	(relativeFilepath first = GRPlatform current pathSeparator first) 
+	(relativeFilepath first = pathSeparator first) 
 		ifTrue: [ relativeFilepath := relativeFilepath allButFirst ].
+		
+	relativeFilepath := relativeFilepath replaceAll: pathSeparator with: '/'. 
 
-	self 
-		addFileNamed: relativeFilepath
+	self addFileNamed: relativeFilepath
 		contents: (GRPlatform current 
 				contentsOfFile: aPath
 				binary: (self isBinaryAt: aPath))
