@@ -5,8 +5,8 @@ write: aStringOrByteArray toFile: aFileNameString inFolder: aFolderString
 	folder := FileDirectory default directoryNamed: aFolderString.
 	fullFilePath := folder fullNameFor: aFileNameString.
 	stream := aStringOrByteArray isString
-		ifTrue: [
-			(CrLfFileStream forceNewFileNamed: fullFilePath)
+		ifTrue: [		
+			(MultiByteFileStream forceNewFileNamed: fullFilePath)
 				ascii;
 				wantsLineEndConversion: true;
 				yourself ]
