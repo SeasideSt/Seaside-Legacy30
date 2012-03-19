@@ -14,9 +14,9 @@ testCompileByteArrayAgain
 		library addFile: file.
 		self assert: (library class selectors includes: #demoJpeg).
 		first := library perform: #demoJpeg.
-		self assert: first contents = data.
+		self assert: first contents value = data.
 		second := library perform: #demoJpeg.
-		self assert: first contents = second contents.
+		self assert: first contents value = second contents value.
 	
 		data := (1 to: 255) reverse asByteArray.
 		file := WAFile new
@@ -27,9 +27,9 @@ testCompileByteArrayAgain
 		library addFile: file.
 		self assert: (library class selectors includes: #demoJpeg).
 		first := library perform: #demoJpeg.
-		self assert: first contents = data.
+		self assert: first contents value = data.
 		second := library perform: #demoJpeg.
-		self assert: first contents = second contents
+		self assert: first contents value = second contents value
 	] ensure: [
 		library removeFile: file fileName.
 		self deny: (library class selectors includes: #demoJpeg).

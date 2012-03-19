@@ -11,4 +11,4 @@ testImgglyphiconshalflingsPng
 	stream := WriteStream on: ByteArray new.
 	response writeContentOn: stream.
 	contents := stream contents.
-	self assert: contents asByteArray = (library perform: #imgglyphiconshalflingsPng) contents.
+	self assert: contents asByteArray = (library perform: #imgglyphiconshalflingsPng) contents value.
