@@ -3,4 +3,4 @@ isFileSelector: aSymbol
 	| isContentMethod |
 	
 	isContentMethod := aSymbol endsWith: #Content.
-	^ (super isFileSelector: aSymbol) and: [ isContentMethod not ]
+	^ isContentMethod not  and:  [ super isFileSelector: aSymbol ]
