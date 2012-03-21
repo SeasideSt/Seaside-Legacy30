@@ -1,4 +1,4 @@
-uploaded
+uploaded metadata
 jsbootstrapJs
 	^ WAFileLibraryResource
 		filepath: 'js/bootstrap.js'

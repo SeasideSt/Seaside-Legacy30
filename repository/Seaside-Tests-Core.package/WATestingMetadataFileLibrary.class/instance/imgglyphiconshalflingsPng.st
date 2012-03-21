@@ -1,4 +1,4 @@
-uploaded
+uploaded metadata
 imgglyphiconshalflingsPng
 	^ WAFileLibraryResource
 		filepath: 'img/glyphicons-halflings.png'
