@@ -1,6 +1,6 @@
-private
+testing
 isFileSelector: aSymbol
 	| isContentMethod |
 	
-	isContentMethod := aSymbol endsWithSubCollection: #Content.
+	isContentMethod := aSymbol endsWith: #Content.
 	^ isContentMethod not  and:  [ super isFileSelector: aSymbol ]
