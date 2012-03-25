@@ -1,4 +1,4 @@
 doits
 initializeTransactionMutex1051
 
-	GRGemStonePlatform initialize.
+	(Smalltalk at: #GRGemStonePlatform) initialize.
