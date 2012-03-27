@@ -1,3 +1,3 @@
 accessing
 fileSizeOf: aSelector
-	^ (self fileResourceOf: aSelector) contents size
+	^ (self fileResourceOf: aSelector) contents value size
