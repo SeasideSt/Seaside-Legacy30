@@ -1,5 +1,5 @@
 private
 fileResourceOf: aSelector
-	^ (self class canPerform: aSelector)
+	^ (self respondsTo: aSelector)
 		ifTrue: [ self perform: aSelector ]
 		ifFalse: [ WAFileLibraryResource emptyInstance ]
