@@ -8,7 +8,6 @@ writerForMimeType: mimeType
 	(sub = 'jpg' or: [ sub = 'jpeg' ])
 		ifTrue: [ ^ Smalltalk at: #JPEGReadWriter2 ifAbsent: [ Smalltalk at: #PluginBasedJPEGReadWriter ifAbsent: [ nil ] ] ].
 	sub = 'png' ifTrue: [ ^ PNGReadWriter ].
-	sub = 'pcx' ifTrue: [ ^ PCXReadWriter ].
 	sub = 'bmp' ifTrue: [ ^ BMPReadWriter ].
 	sub = 'gif' ifTrue: [ ^ GIFReadWriter ].
 	^ nil
