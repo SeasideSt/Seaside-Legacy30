@@ -1,5 +1,5 @@
 actions
 toggleUIProcess
-	Project uiProcess isSuspended
-		ifTrue: [ Project uiProcess resume ]
-		ifFalse: [ Project uiProcess suspend ]
+	self uiProcess isSuspended
+		ifTrue: [ self uiProcess resume ]
+		ifFalse: [ self uiProcess suspend ]
