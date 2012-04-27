@@ -1,39 +1,46 @@
 versions
-version107: spec
-	<version: '1.0.7' imports: #('1.0.6.1-baseline' )>
+version1071: spec
+	<version: '1.0.7.1' imports: #('1.0.7.1-baseline' )>
 
 	spec for: #'common' do: [
-		spec blessing: #'release'.
-		spec description: ''.
+		spec blessing: #'development'.
+		spec description: '- Port Grease to Pharo2.0.
+- BlockContext class no longer exists in Pharo2.0, so the BlockContext extension methods only needed for Pharo1.3 and earlier
+- Slime not ported to Pharo2.0, yet, so exclude'.
 		spec author: 'dkh'.
-		spec timestamp: '3/28/2012 16:39'.
+		spec timestamp: '4/25/2012 12:08'.
 		spec 
 			package: 'Grease-Core' with: 'Grease-Core-NickAger.70';
 			package: 'Grease-Tests-Core' with: 'Grease-Tests-Core-pmm.80'. ].
 
 	spec for: #'squeakCommon' do: [
 		spec 
-			package: 'Grease-Pharo-Core' with: 'Grease-Pharo-Core-NickAger.49';
+			package: 'Grease-Pharo-Core' with: 'Grease-Pharo-Core-dkh.50';
 			package: 'Grease-Tests-Pharo-Core' with: 'Grease-Tests-Pharo-Core-lr.13'. ].
 
-	spec for: #'pharo' do: [
+	spec for: #'pharo1.x' do: [
 		spec project: 'Refactoring-Core' with: #'stable'.
 		spec 
 			package: 'Grease-Slime' with: 'Grease-Slime-lr.14';
-			package: 'Grease-Tests-Slime' with: 'Grease-Tests-Slime-lr.10'. ].
+			package: 'Grease-Tests-Slime' with: 'Grease-Tests-Slime-lr.10';
+			package: 'Grease-Pharo13-Core' with: 'Grease-Pharo13-Core-dkh.1'. ].
 
-	spec for: #'GreaseForPharo1.0' do: [
-		spec package: 'Grease-Pharo10-Core' with: 'Grease-Pharo10-Core-dkh.4'. ].
-
+	spec for: #'squeak' do: [
+		spec 
+			package: 'Grease-Pharo13-Core' with: 'Grease-Pharo13-Core-dkh.1'. ].
+	
 	spec for: #'pharo1.1.x' do: [
 		spec 
 			package: 'Grease-Slime' with: 'Grease-Slime-lr.13';
 			package: 'Grease-Tests-Slime' with: 'Grease-Tests-Slime-lr.9'. ].
-	
+
 	spec for: #'pharo1.0.x' do: [
 		spec 
 			package: 'Grease-Slime' with: 'Grease-Slime-lr.13';
 			package: 'Grease-Tests-Slime' with: 'Grease-Tests-Slime-lr.9'. ].
+
+	spec for: #'GreaseForPharo1.0' do: [
+		spec package: 'Grease-Pharo10-Core' with: 'Grease-Pharo10-Core-dkh.4'. ].
 
 	spec for: #'gemstone' do: [
 		spec 
