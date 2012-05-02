@@ -8,7 +8,10 @@ encodeString: aString on: aStream
 		char := aString at: index.
 		value := char greaseInteger.
 		value < JavascriptCharacters size 
-			ifFalse: [ aStream nextPut: char ]
+			ifFalse: [ 
+				(value = 16r2028) ifTrue: [ aStream nextPutAll: '\u2028' ] ifFalse: [
+				(value = 16r2029) ifTrue: [ aStream nextPutAll: '\u2029' ] ifFalse: [
+				aStream nextPut: char ] ] ]
 			ifTrue: [
 				encoded := JavascriptCharacters at: value + 1.
 				encoded isString 
