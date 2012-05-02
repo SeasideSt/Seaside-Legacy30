@@ -7,11 +7,15 @@ encodeString: aString on: aStream
 	1 to: aString size do: [ :index | 
 		char := aString at: index.
 		value := char greaseInteger.
-		value < JavascriptCharacters size 
+		value < JavascriptCharacters size
 			ifFalse: [ 
-				(value = 16r2028) ifTrue: [ aStream nextPutAll: '\u2028' ] ifFalse: [
-				(value = 16r2029) ifTrue: [ aStream nextPutAll: '\u2029' ] ifFalse: [
-				aStream nextPut: char ] ] ]
+				"U+2028 and U+2029 have to be treaded as new lines"
+				value = 16r2028 "Line separator"
+					ifTrue: [ aStream nextPutAll: '\u2028' ]
+					ifFalse: [
+						value = 16r2029 "Paragraph separator"
+							ifTrue: [ aStream nextPutAll: '\u2029' ]
+							ifFalse: [ aStream nextPut: char ] ] ]
 			ifTrue: [
 				encoded := JavascriptCharacters at: value + 1.
 				encoded isString 
