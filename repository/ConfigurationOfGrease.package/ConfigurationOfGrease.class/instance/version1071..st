@@ -6,9 +6,10 @@ version1071: spec
 		spec blessing: #'development'.
 		spec description: '- Port Grease to Pharo2.0.
 - BlockContext class no longer exists in Pharo2.0, so the BlockContext extension methods only needed for Pharo1.3 and earlier
-- Slime not ported to Pharo2.0, yet, so exclude'.
+- Slime not ported to Pharo2.0, yet, so exclude
+-GemStone 3.1 support for libICU (Unicode)'.
 		spec author: 'dkh'.
-		spec timestamp: '4/25/2012 12:08'.
+		spec timestamp: '5/23/2012 17:21'.
 		spec 
 			package: 'Grease-Core' with: 'Grease-Core-NickAger.70';
 			package: 'Grease-Tests-Core' with: 'Grease-Tests-Core-pmm.80'. ].
@@ -44,10 +45,10 @@ version1071: spec
 
 	spec for: #'gemstone' do: [
 		spec 
-			project: 'GsCore' with: '0.245.2';
-			project: 'SMTPMail' with: '0.240.1';
-			project: 'UTF8' with: '0.240.1';
-			project: 'System-Digital-Signatures' with: '0.240.1'.
+			project: 'GsCore' with: '0.246';
+			project: 'SMTPMail' with: '0.241';
+			project: 'UTF8' with: '0.241';
+			project: 'System-Digital-Signatures' with: '0.241'.
 		spec 
 			package: 'Grease-GemStone-Core' with: [
 				spec 
