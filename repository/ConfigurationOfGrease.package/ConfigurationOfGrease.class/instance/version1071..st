@@ -7,9 +7,11 @@ version1071: spec
 		spec description: '- Port Grease to Pharo2.0.
 - BlockContext class no longer exists in Pharo2.0, so the BlockContext extension methods only needed for Pharo1.3 and earlier
 - Slime not ported to Pharo2.0, yet, so exclude
--GemStone 3.1 support for libICU (Unicode)'.
+- GemStone 3.1 support for libICU (Unicode)
+1.0.7.1 (dkh.186):
+- Adjust Utf8 code .. libICU produces a ByteArray when it encodes to UTF8, but Seaside wants Strings'.
 		spec author: 'dkh'.
-		spec timestamp: '5/23/2012 17:21'.
+		spec timestamp: '5/24/2012 10:25'.
 		spec 
 			package: 'Grease-Core' with: 'Grease-Core-NickAger.70';
 			package: 'Grease-Tests-Core' with: 'Grease-Tests-Core-pmm.80'. ].
@@ -52,7 +54,7 @@ version1071: spec
 		spec 
 			package: 'Grease-GemStone-Core' with: [
 				spec 
-					file: 'Grease-GemStone-Core-dkh.47';
+					file: 'Grease-GemStone-Core-dkh.48';
 					postLoadDoIt: #'initializeTransactionMutex1051'. ];
 			package: 'Grease-Tests-GemStone-Core' with: 'Grease-Tests-GemStone-Core-dkh.14'. ].
 
