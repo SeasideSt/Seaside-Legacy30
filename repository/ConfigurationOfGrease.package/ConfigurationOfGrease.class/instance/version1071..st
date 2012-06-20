@@ -3,7 +3,7 @@ version1071: spec
 	<version: '1.0.7.1' imports: #('1.0.7.1-baseline' )>
 
 	spec for: #'common' do: [
-		spec blessing: #'development'.
+		spec blessing: #'release'.
 		spec description: '- Port Grease to Pharo2.0.
 - BlockContext class no longer exists in Pharo2.0, so the BlockContext extension methods only needed for Pharo1.3 and earlier
 - Slime not ported to Pharo2.0, yet, so exclude
@@ -11,7 +11,7 @@ version1071: spec
 1.0.7.1 (dkh.186):
 - Adjust Utf8 code .. libICU produces a ByteArray when it encodes to UTF8, but Seaside wants Strings'.
 		spec author: 'dkh'.
-		spec timestamp: '5/24/2012 10:25'.
+		spec timestamp: '6/19/2012 17:01'.
 		spec 
 			package: 'Grease-Core' with: 'Grease-Core-NickAger.70';
 			package: 'Grease-Tests-Core' with: 'Grease-Tests-Core-pmm.80'. ].
