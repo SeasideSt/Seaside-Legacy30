@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "pmm 6/1/2008 01:03",
+	"commentStamp" : "<historical>",
 	"super" : "GRPlatform",
 	"category" : "Grease-Pharo-Core",
 	"classinstvars" : [ ],
