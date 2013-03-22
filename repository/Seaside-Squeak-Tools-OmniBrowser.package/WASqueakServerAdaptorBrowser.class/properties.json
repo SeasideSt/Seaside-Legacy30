@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WAServerAdaptorBrowser",
+	"category" : "Seaside-Squeak-Tools-OmniBrowser",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WASqueakServerAdaptorBrowser",
+	"type" : "normal"
+}
