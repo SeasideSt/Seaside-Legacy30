@@ -25,7 +25,7 @@ compile: aString into: aClass classified: aSymbol
 	aClass 
 		addSelectorSilently: selector
 		withMethod: compiledMethod.
-	SystemChangeNotifier uniqueInstance doSilently:  [
+	self doSilently:  [
 		aClass organization 
 			classify: selector
 			under: aSymbol ]
