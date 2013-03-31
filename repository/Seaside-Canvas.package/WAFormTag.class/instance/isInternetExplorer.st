@@ -4,4 +4,4 @@ isInternetExplorer
 	| userAgent |
 	userAgent := self requestContext request userAgent.
 	^ userAgent notNil and: 
-		[ (userAgent includesSubString: 'MSIE') and: [ (userAgent includesSubString: 'Opera') not ] ]
+		[ (userAgent indexOfSubCollection: 'MSIE' startingAt: 1) ~= 0 and: [ (userAgent indexOfSubCollection: 'Opera' startingAt: 1) = 0 ] ]
