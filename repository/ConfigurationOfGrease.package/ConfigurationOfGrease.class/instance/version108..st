@@ -1,12 +1,12 @@
 versions
 version108: spec
-	<version: '1.0.8' imports: #('1.0.7.1-baseline' )>
+	<version: '1.0.8' imports: #('1.0.8-baseline' )>
 
 	spec for: #'common' do: [
 		spec blessing: #'development'.
-		spec description: 'opened'.
+		spec description: ''.
 		spec author: 'JohanBrichau'.
-		spec timestamp: '3/31/2013 19:03'.
+		spec timestamp: '3/31/2013 21:17'.
 		spec 
 			package: 'Grease-Core' with: 'Grease-Core-NickAger.70';
 			package: 'Grease-Tests-Core' with: 'Grease-Tests-Core-pmm.80'. ].
@@ -16,16 +16,11 @@ version108: spec
 			package: 'Grease-Pharo-Core' with: 'Grease-Pharo-Core-JohanBrichau.52';
 			package: 'Grease-Tests-Pharo-Core' with: 'Grease-Tests-Pharo-Core-lr.13'. ].
 
-	spec for: #'pharo2.x' do:[
-		spec 
-			package: 'Grease-Slime' with: 'Grease-Slime-lr.13';
-			package: 'Grease-Tests-Slime' with: 'Grease-Tests-Slime-JohanBrichau.11'. ].
-
-	spec for: #'pharo1.x' do: [
+	spec for: #'pharo' do: [
 		spec project: 'Refactoring-Core' with: #'stable'.
 		spec 
 			package: 'Grease-Slime' with: 'Grease-Slime-lr.14';
-			package: 'Grease-Tests-Slime' with: 'Grease-Tests-Slime-lr.10';
+			package: 'Grease-Tests-Slime' with: 'Grease-Tests-Slime-JohanBrichau.11';
 			package: 'Grease-Pharo13-Core' with: 'Grease-Pharo13-Core-dkh.1'. ].
 
 	spec for: #'squeak' do: [
