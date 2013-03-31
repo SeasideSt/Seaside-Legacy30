@@ -7,14 +7,14 @@ testAddAllFilesIn
 	directory := FileDirectory default directoryNamed: directoryName.
 	[ (directory forceNewFileNamed: '.Seaside_Store') in: [ :stream | stream close ].
 	(directory forceNewFileNamed: 'foo') in: [ :stream | stream close ].
-	SystemChangeNotifier uniqueInstance doSilently: [
+	GRPlatform current doSilently: [
 		library := WAFileLibrary
 			subclass: #XXXTestFileLibrary
 			instanceVariableNames: ''
 			classVariableNames: ''
 			poolDictionaries: ''
 			category: 'Uncategorized'.
-		[ library addAllFilesIn: directory pathName.
+		[ library addAllFilesIn: directory fullName.
 		self assert: library selectors size = 1 ] "reject .Seaside_Store"
 			ensure: [ library removeFromSystem ] ] ]
 		ensure: [ directory deleteLocalFiles ] ]
