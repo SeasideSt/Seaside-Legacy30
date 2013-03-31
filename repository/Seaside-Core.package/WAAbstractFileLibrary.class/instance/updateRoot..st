@@ -5,9 +5,9 @@ updateRoot: anHtmlRoot
 	self selectorsToInclude do: [ :each |
 		| mimeType |
 		mimeType := self mimetypeOf: each.
-		(mimeType sub includesSubString: 'javascript')
+		(mimeType sub indexOfSubCollection: 'javascript' startingAt: 1) ~= 0
 			ifTrue: [ anHtmlRoot javascript url: (self urlOf: each) ].
-		(mimeType sub includesSubString: 'ico')
+		(mimeType sub indexOfSubCollection: 'ico' startingAt: 1) ~= 0
 			ifTrue: [ anHtmlRoot link beShortcutIcon; url: (self urlOf: each) ].
 		(mimeType sub = 'css')
 			ifTrue: [ anHtmlRoot stylesheet url: (self urlOf: each) ] ]
