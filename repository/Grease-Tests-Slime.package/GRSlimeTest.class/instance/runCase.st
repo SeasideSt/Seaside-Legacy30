@@ -1,4 +1,3 @@
 running
 runCase
-	SystemChangeNotifier uniqueInstance
-		doSilently: [ super runCase ]
+	GRPlatform current doSilently: [ super runCase ]
