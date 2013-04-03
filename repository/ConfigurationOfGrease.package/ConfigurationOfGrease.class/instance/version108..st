@@ -4,35 +4,23 @@ version108: spec
 
 	spec for: #'common' do: [
 		spec blessing: #'development'.
-		spec description: ''.
-		spec author: 'JohanBrichau'.
-		spec timestamp: '3/31/2013 21:17'.
+		spec description: 'Seaside 3 for Pharo 2.0 and Squeak 4.4'.
+		spec author: 'topa'.
+		spec timestamp: '4/03/2013 13:39'.
 		spec 
 			package: 'Grease-Core' with: 'Grease-Core-NickAger.70';
 			package: 'Grease-Tests-Core' with: 'Grease-Tests-Core-pmm.80'. ].
 
 	spec for: #'squeakCommon' do: [
-		spec 
-			package: 'Grease-Pharo-Core' with: 'Grease-Pharo-Core-JohanBrichau.52';
-			package: 'Grease-Tests-Pharo-Core' with: 'Grease-Tests-Pharo-Core-lr.13'. ].
-
-	spec for: #'pharo' do: [
 		spec project: 'Refactoring-Core' with: #'stable'.
 		spec 
-			package: 'Grease-Slime' with: 'Grease-Slime-lr.14';
+			package: 'Grease-Pharo-Core' with: 'Grease-Pharo-Core-JohanBrichau.52';
+			package: 'Grease-Tests-Pharo-Core' with: 'Grease-Tests-Pharo-Core-lr.13';
+			package: 'Grease-Slime' with: 'Grease-Slime-topa.15';
 			package: 'Grease-Tests-Slime' with: 'Grease-Tests-Slime-JohanBrichau.11';
 			package: 'Grease-Pharo13-Core' with: 'Grease-Pharo13-Core-dkh.1'. ].
-
-	spec for: #'squeak' do: [
-		spec 
-			package: 'Grease-Pharo13-Core' with: 'Grease-Pharo13-Core-dkh.1'. ].
 	
-	spec for: #'pharo1.1.x' do: [
-		spec 
-			package: 'Grease-Slime' with: 'Grease-Slime-lr.13';
-			package: 'Grease-Tests-Slime' with: 'Grease-Tests-Slime-lr.9'. ].
-
-	spec for: #'pharo1.0.x' do: [
+	spec for: #( #'pharo1.0.x' #'pharo1.1.x') do: [
 		spec 
 			package: 'Grease-Slime' with: 'Grease-Slime-lr.13';
 			package: 'Grease-Tests-Slime' with: 'Grease-Tests-Slime-lr.9'. ].

@@ -19,6 +19,12 @@ baseline108: spec
 			group: 'default' with: #('Slime' ).].
 
 	spec for: #'squeakCommon' do: [
+		spec project: 'Refactoring-Core' with: [
+				spec
+					className: 'ConfigurationOfRefactoringBrowser';
+					versionString: #'stable';
+					loads: #('Core' );
+					repository: 'http://www.squeaksource.com/MetacelloRepository' ].
 		spec 
 			package: 'Grease-Core' with: [
 				spec includes: #('Grease-Pharo-Core' ). ];
@@ -27,16 +33,7 @@ baseline108: spec
 			package: 'Grease-Pharo-Core' with: [
 				spec requires: #('Grease-Core' ). ];
 			package: 'Grease-Tests-Pharo-Core' with: [
-				spec requires: #('Grease-Tests-Core' ). ].].
-
-	spec for: #'pharo' do: [
-		spec project: 'Refactoring-Core' with: [
-				spec
-					className: 'ConfigurationOfRefactoringBrowser';
-					versionString: #'stable';
-					loads: #('Core' );
-					repository: 'http://www.squeaksource.com/MetacelloRepository' ].
-		spec 
+				spec requires: #('Grease-Tests-Core' ). ];
 			package: 'Grease-Slime' with: [
 				spec requires: #('Refactoring-Core' 'Grease-Core' ). ];
 			package: 'Grease-Tests-Slime' with: [
@@ -45,13 +42,7 @@ baseline108: spec
 			group: 'Slime' with: #('Grease-Slime' );
 			group: 'Slime Tests' with: #('Grease-Tests-Slime' ).].
 
-	spec for: #'pharo1.x' do: [
-		spec 
-			package: 'Grease-Pharo-Core' with: [
-				spec includes: #('Grease-Pharo13-Core' ). ];
-			package: 'Grease-Pharo13-Core' ].
-
-	spec for: #'squeak' do: [
+	spec for: #( #'pharo1.x' #'squeak') do: [
 		spec 
 			package: 'Grease-Pharo-Core' with: [
 				spec includes: #('Grease-Pharo13-Core' ). ];
