@@ -1,7 +1,8 @@
 parsing
 parseValue
-	| char |
 	stream atEnd ifFalse: [ 
+		| char |
+		self whitespace.
 		char := stream peek.
 		char = ${
 			ifTrue: [ ^ self parseObject ].
