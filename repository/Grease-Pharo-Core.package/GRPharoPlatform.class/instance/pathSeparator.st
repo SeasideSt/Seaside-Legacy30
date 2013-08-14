@@ -1,3 +1,3 @@
 file library
 pathSeparator
-	^ FileDirectory pathNameDelimiter asString
+	^ FileSystem disk delimiter asString
