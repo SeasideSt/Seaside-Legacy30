@@ -12,12 +12,13 @@ compile: aString into: aClass classified: aSymbol
 	compiledMethod := methodNode generate: aClass defaultMethodTrailer.
 	compiledMethod 
 		putSource: aString
-		fromParseNode: methodNode
 		inFile: 2
 		withPreamble: [ :file | 
 			aClass
 				printCategoryChunk: aSymbol asString
-				on: file priorMethod: (aClass compiledMethodAt: selector ifAbsent: [ nil ]).
+				on: file
+				withStamp: Author changeStamp
+				priorMethod: (aClass compiledMethodAt: selector ifAbsent: [ nil ]).
 			file cr ].
 	aClass 
 		addSelectorSilently: selector
