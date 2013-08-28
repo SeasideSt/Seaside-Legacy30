@@ -1,3 +1,3 @@
 cryptography
 secureHashFor: aString
-	^ SHA1 new hashMessage: aString
+	^ SecureHashAlgorithm new hashMessage: aString
