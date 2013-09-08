@@ -14,6 +14,6 @@ testCanvasWithLineBreaksGemStoneIssue289
 			yourself.
 		self
 			assert: [ :html | html withLineBreaks: stream contents ] gives: 'a<br/>b<br/>c'].
-	testBlock value: String cr.
-	testBlock value: String crlf.
-	testBlock value: String lf.
+	testBlock value: (String with: Character cr).
+	testBlock value: (String with: Character cr with: Character lf).
+	testBlock value: (String with: Character lf).
