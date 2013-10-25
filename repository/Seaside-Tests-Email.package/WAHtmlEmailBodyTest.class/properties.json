@@ -5,9 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"message"
-	],
-	"name" : "WAEmailMessageTest",
+	"instvars" : [ ],
+	"name" : "WAHtmlEmailBodyTest",
 	"type" : "normal"
 }
