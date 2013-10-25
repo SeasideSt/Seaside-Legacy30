@@ -1,13 +1,16 @@
 {
 	"commentStamp" : "",
-	"super" : "WAObject",
+	"super" : "WAEmailMessage",
 	"category" : "Seaside-Email",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
-	"instvars" : [
-		"string"
+	"classvars" : [
+		"MyRandom"
 	],
-	"name" : "WAEmailBody",
+	"instvars" : [
+		"parts",
+		"boundary"
+	],
+	"name" : "WAMultiPartEmailMessage",
 	"type" : "normal"
 }

@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "WAStringEmailBody",
+	"name" : "WAHtmlEmailBody",
 	"type" : "normal"
 }
