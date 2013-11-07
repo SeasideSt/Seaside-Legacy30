@@ -1,5 +1,5 @@
 description
-describeOn: config 
+describeOn: config
 	(config string: #smtpServer)
 		group: #email;
 		label: 'SMTP Server';
@@ -19,4 +19,4 @@ describeOn: config
 		beAdvanced;
 		group: #email;
 		label: 'SMTP Server password';
-		comment: 'The password used to log into the SMTP Server to use for sending Emails'.
+		comment: 'The password used to log into the SMTP Server to use for sending Emails'

@@ -1,5 +1,8 @@
 as yet unclassified
 initialize
+	| mimeParameters |
 	super initialize.
 	boundary := self class newBoundary.
-	self headerAt: 'Content-Type' put: 'multipart/alternative; boundary=' , boundary
+	mimeParameters := Dictionary new.
+	mimeParameters at: 'boundary' put: boundary.
+	self headerAt: 'Content-Type' put: (WAMimeType main: 'multipart' sub: 'alternative' parameters: mimeParameters)

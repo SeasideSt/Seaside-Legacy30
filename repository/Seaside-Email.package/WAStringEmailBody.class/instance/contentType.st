@@ -1,3 +1,3 @@
 accessing
 contentType
-	^ 'text/plain; charset=UTF-8'
+	^ WAMimeType textPlain

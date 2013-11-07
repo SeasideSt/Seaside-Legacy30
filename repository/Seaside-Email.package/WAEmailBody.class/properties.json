@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"string"
+		"contentString"
 	],
 	"name" : "WAEmailBody",
 	"type" : "normal"

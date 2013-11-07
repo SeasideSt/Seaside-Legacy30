@@ -1,7 +1,7 @@
 as yet unclassified
 renderBlock: anHtmlRenderingBlock
 	self
-		string:
+		contentString:
 			(WAHtmlCanvas builder
 				fullDocument: true;
 				render: anHtmlRenderingBlock)

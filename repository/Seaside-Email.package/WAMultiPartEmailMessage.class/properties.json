@@ -4,9 +4,7 @@
 	"category" : "Seaside-Email",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [
-		"MyRandom"
-	],
+	"classvars" : [ ],
 	"instvars" : [
 		"parts",
 		"boundary"
