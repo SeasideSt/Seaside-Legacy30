@@ -14,7 +14,7 @@ Reply-To: "Philippe Marschall" <philippe.marschall@gmail.com>
 Date: ' , now
 				,
 					'
-Content-Type: multipart/alternative; boundary=' , message boundary
+Content-Type: multipart/alternative;boundary=' , message boundary
 				,
 					'
 
@@ -22,7 +22,7 @@ Content-Type: multipart/alternative; boundary=' , message boundary
 --' , message boundary
 				,
 					'
-Content-Type: text/plain; charset=UTF-8
+Content-Type: text/plain
 
 Hello
 
@@ -35,7 +35,7 @@ Hello
 To: "Seaside Developers Mailinglist" <seaside-dev@lists.squeakfoundation.org>
 Subject: new email package
 Reply-To: "Philippe Marschall" <philippe.marschall@gmail.com>
-Content-Type: multipart/alternative; boundary=' , message boundary
+Content-Type: multipart/alternative;boundary=' , message boundary
 						,
 							'
 Date: ' , now
@@ -46,7 +46,7 @@ Date: ' , now
 --' , message boundary
 						,
 							'
-Content-Type: text/plain; charset=UTF-8
+Content-Type: text/plain
 
 Hello
 

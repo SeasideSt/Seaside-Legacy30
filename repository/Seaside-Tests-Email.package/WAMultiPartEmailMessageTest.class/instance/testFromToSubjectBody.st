@@ -8,7 +8,7 @@ testFromToSubjectBody
 			'From: "Philippe Marschall" <philippe.marschall@gmail.com>
 To: "Seaside Developers Mailinglist" <seaside-dev@lists.squeakfoundation.org>
 Subject: new email package
-Content-Type: multipart/alternative; boundary=' , message boundary
+Content-Type: multipart/alternative;boundary=' , message boundary
 				,
 					'
 
@@ -16,7 +16,7 @@ Content-Type: multipart/alternative; boundary=' , message boundary
 --' , message boundary
 				,
 					'
-Content-Type: text/plain; charset=UTF-8
+Content-Type: text/plain
 
 Hello
 
