@@ -1,7 +1,9 @@
 as yet unclassified
 testParts
+	| parts |
 	message setHtmlBody: [ :h | h paragraph: 'hello' ].
-	self assert: message parts size equals: 2.
-	self assert: message parts asArray sort last isHtml.
-	self assert: message plainTextBodyString equals: 'Hello'.
-	self assert: message htmlBodyString equals:'<html><head><title></title></head><body onload="onLoad()"><p>hello</p><script type="text/javascript">/*<![CDATA[*/function onLoad(){};/*]]>*/</script></body></html>'
+	parts := message parts asArray sort.
+	self assert: parts size equals: 2.
+	self assert: parts last isHtml.
+	self assert: parts first contentString equals: 'Hello'.
+	self assert: parts last contentString equals:'<html><head><title></title></head><body onload="onLoad()"><p>hello</p><script type="text/javascript">/*<![CDATA[*/function onLoad(){};/*]]>*/</script></body></html>'
