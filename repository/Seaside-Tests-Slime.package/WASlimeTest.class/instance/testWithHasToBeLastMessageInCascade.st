@@ -8,14 +8,14 @@ testWithHasToBeLastMessageInCascade
 		compile: 'renderContent01On: html
 			html div
 				with: ''foo'';
-				class: ''bar''.'
+				class: ''bar'''
 		classified: #(rendering).
 	class
 		compile: 'renderContent02On: html
 			html div
 				id: ''zork'';
 				with: ''foo'';
-				class: ''bar''.'
+				class: ''bar'''
 		classified: #(rendering).
 	self 
 		runRule: WAWithHasToBeLastMessageInCascadeRule
