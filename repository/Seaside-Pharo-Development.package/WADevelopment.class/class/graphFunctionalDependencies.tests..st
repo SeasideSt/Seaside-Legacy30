@@ -9,7 +9,7 @@ graphFunctionalDependencies: functionalBool tests: testsBool
 		ifFalse: [ packages := packages reject: [ :each | each packageName includesSubString: '-Tests-' ] ].
 	analyzer := (Smalltalk classNamed: #PDPackageAnalyzer) onPackages: packages.
 	functionalBool ifTrue: [ 
-		GRPackage packages 
+		GRPackage grPackages 
 			do: [ :package | 
 				package dependencies do: [ :dep | 
 					| source target |
