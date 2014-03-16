@@ -1,4 +1,4 @@
-accessing
+hooks
 style
 	^ '.inventory, .selected { 
 	height: 4em;
