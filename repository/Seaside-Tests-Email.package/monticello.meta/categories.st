@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'Seaside-Tests-Email'!
+SystemOrganization addCategory: 'Seaside-Tests-Email'!
