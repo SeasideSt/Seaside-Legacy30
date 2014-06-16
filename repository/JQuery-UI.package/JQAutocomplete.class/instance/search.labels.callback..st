@@ -4,11 +4,14 @@ search: aSearchBlock labels: aLabelsBlock callback: aCallbackBlock
 	
 	| term mapping |
 	mapping := IdentityDictionary new.
+	"assigments to temps don't work in GS 2.4'
+	http://code.google.com/p/glassdb/issues/detail?id=221"
+	term := WAValueHolder new.
 	self source: ((self jQuery getJson
-		callback: [ :value | term := value ]
+		callback: [ :value | term contents: value ]
 		value: (JSStream on: 'request.term');
 		text: [ :stream | 
-			stream json: ((aSearchBlock value: term) asArray collect: [ :object | 
+			stream json: ((aSearchBlock value: term contents) asArray collect: [ :object | 
 				GRSmallDictionary new
 					at: 'label' put: (aLabelsBlock value: object);
 					at: 'index' put: (mapping at: object ifAbsentPut: [ mapping size + 1 ]);
@@ -16,10 +19,10 @@ search: aSearchBlock labels: aLabelsBlock callback: aCallbackBlock
 		onSuccess: 'response(arguments[0])'; 
 		dataType: 'jsonp') asFunction: #('request' 'response')).
 	self onSelect: ((self jQuery ajax
-		callback: [ :value | term := value greaseInteger ] 
+		callback: [ :value | term contents: value greaseInteger ] 
 		value: (JSStream on: 'ui.item.index');
 		script: [ :script |
 			mapping keysAndValuesDo: [ :object :value |
-				value = term
+				value = term contents
 					ifTrue: [ aCallbackBlock value: object value: script ] ] ])
 		asFunction: #('event' 'ui'))
