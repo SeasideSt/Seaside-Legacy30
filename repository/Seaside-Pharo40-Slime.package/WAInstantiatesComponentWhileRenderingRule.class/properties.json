@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "GRSlimeBlockLintRule",
+	"category" : "Seaside-Pharo40-Slime",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"matcher"
+	],
+	"name" : "WAInstantiatesComponentWhileRenderingRule",
+	"type" : "normal"
+}
