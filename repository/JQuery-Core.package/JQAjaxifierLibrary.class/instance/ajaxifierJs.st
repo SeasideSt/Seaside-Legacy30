@@ -15,30 +15,34 @@ $(function () {
 	var BODY_EXTRACTOR = /<body[^>]*>((.|\s)*?)<\/body>/im;
 	var SCRIPT_EXTRACTOR = /<script(.|\s)*?\/script>/ig;
 	var PARAM_EXTRACTOR = /\?(.*)$/i;
-	var PARAM_CLEANER = /&_n/ig;
 	
 	// variables
 	var activeHash = "";
 
 	// ajax action
-	function load(type, url, data) {
-		var url = url + (type == "GET" ? "&_n" : "");
+	function load(type, url, data, modifyHistory) {
 		$.ajax({
 			type: type, url: url, data: data,
 			beforeSend: function (xhr) {
+				// WAActionCallback per default are disabled for AJAX requests
+				// Detection happens with X-Requested-With so we override it 
 				xhr.setRequestHeader("X-Requested-With", "Ajaxifier");
 			},
-			success: function (data) {
+ 			success: function (data, textStatus, jqXHR) {
 				$("head").html(HEAD_EXTRACTOR
 					.exec(data)[1]
 					.replace(SCRIPT_EXTRACTOR, ""));
 				$("body").html(BODY_EXTRACTOR
 					.exec(data)[1]);
-				window.location.hash = activeHash = (type == "GET" ?
-					PARAM_EXTRACTOR
-						.exec(url)[1]
-						.replace(PARAM_CLEANER, "")
-					: "");
+
+				if (modifyHistory) {
+					var path = jqXHR.getResponseHeader("X-RedirectedTo");
+	 				if (typeof(window.history.pushState) == "function") {
+						window.history.pushState(path, null, path);
+					} else {
+						window.location.hash = activeHash = PARAM_EXTRACTOR.exec(path)[1];
+					}
+				}
 			}
 		});
 	}
@@ -49,7 +53,7 @@ $(function () {
 		// links
 		var anchor = $(event.target).closest("a");
 		if (anchor.length == 1) {
-			load("GET", anchor.attr("href"));
+			load("GET", anchor.attr("href"), null, true);
 			event.preventDefault();
 		}
 		
@@ -58,7 +62,7 @@ $(function () {
 		if (submit.length == 1) {
 			var form = submit.closest("form");
 			if (form.length == 1) {
-				load("POST", form.attr("action"), form.find(":input").serialize() + "&" + submit.attr("name"));
+				load("POST", form.attr("action"), form.find(":input").serialize() + "&" + submit.attr("name"), true);
 				event.preventDefault();
 			}
 		}
@@ -69,7 +73,12 @@ $(function () {
 	setInterval(function () {
 		var currentHash = window.location.hash.substr(1);
 		if (currentHash != activeHash)
-			load("GET", "?" + (activeHash = currentHash));
+			load("GET", "?" + (activeHash = currentHash), null, true);
 	}, 250);
+
+	// We assume nobody else will override onpopstate... since we are LIKELY the only ones to use pushstate etc.
+	window.onpopstate = function(event) {
+		load("GET", event.state, null, false);
+	}
 
 });'
