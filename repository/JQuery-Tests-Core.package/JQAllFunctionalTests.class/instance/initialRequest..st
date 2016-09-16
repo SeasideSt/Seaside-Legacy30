@@ -1,4 +1,4 @@
-initialization
+hooks
 initialRequest: aRequest
 	super initialRequest: aRequest.
 	tests do: [ :category |

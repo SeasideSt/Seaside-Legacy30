@@ -7,4 +7,4 @@ renderJavascriptOn: html
 		context document: (WAPrettyPrintedDocument context: html context).
 		context document scriptGenerator: html document scriptGenerator class new.
 		contents renderWithContext: context.
-		context document scriptGenerator closeOn: context document ].
+		context document scriptGenerator closeOn: context document ]

@@ -1,4 +1,4 @@
-rendering
+hooks
 style
 	^ 'fieldset { border: none; margin: 1em 0; padding: 0; }
 fieldset label, fieldset span, fieldset p { display: block; float: left; width: 33%; margin: 0; padding: 0; }

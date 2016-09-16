@@ -1,3 +1,3 @@
-accessing
+hooks
 children
 	^ Array with: contents
