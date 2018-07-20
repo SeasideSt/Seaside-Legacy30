@@ -1,8 +1,7 @@
 baselines
 baseline: spec
-
+	<baseline>
 	self baselineCommon:spec.
-
 	spec
 		for: #squeakCommon
 		do: [ 

@@ -1,6 +1,5 @@
 baselines
 baselineCommon: spec
-
 	spec
 		for: #common
 		do: [ 
