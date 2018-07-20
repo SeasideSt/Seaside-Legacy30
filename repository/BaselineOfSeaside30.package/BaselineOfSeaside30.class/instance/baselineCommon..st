@@ -7,19 +7,12 @@ baselineCommon: spec
 				baseline: 'Grease'
         		with: [ 
 					spec
-						loads: #('Grease');
+						loads: #('Core');
 						repository: 'github://SeasideSt/Grease:master/repository' ].
 			spec
 				project: 'Grease Core Tests' copyFrom: 'Grease' with: [ 
 				spec loads: #('Core Tests') ].
-			
 			spec
-				project: 'Swazoo2'
-					with: [ 
-							spec
-								className: 'ConfigurationOfSwazoo2';
-								versionString: #stable;
-								repository: 'http://www.smalltalkhub.com/mc/Swazoo/Swazoo/main' ];
 				project: 'Zinc'
 					with: [ 
 							spec
@@ -69,7 +62,6 @@ baselineCommon: spec
 				package: 'Seaside-Session' with: [ spec requires: #('Seaside-Core') ];
 				package: 'Seaside-Tools-Core'
 					with: [ spec requires: #('Seaside-Core' 'Seaside-Component' 'Seaside-RenderLoop' 'Seaside-Session') ];
-				package: 'Seaside-Tools-OmniBrowser' with: [ spec requires: #('Seaside-Tools-Core') ];
 				package: 'Seaside-Tools-Web'
 					with: [ spec requires: #('Seaside-Tools-Core' 'Seaside-RenderLoop' 'Seaside-Widgets') ];
 				package: 'Seaside-Welcome'
@@ -78,17 +70,11 @@ baselineCommon: spec
 								requires:
 									#('Seaside-Environment' 'Seaside-Tools-Web' 'Seaside-Examples' 'Seaside-Development' 'JQuery-Core' 'JQuery-UI' 'Seaside-Flow' 'Seaside-Tests-Flow' 'Seaside-Widgets') ];
 				package: 'Seaside-Widgets' with: [ spec requires: #('Seaside-Component' 'Seaside-Canvas') ];
-				package: 'Seaside-Swazoo'
-					with: [ 
-							spec
-								requires: #('Grease' 'Swazoo2');
-								repository: 'http://smalltalkhub.com/mc/Seaside/Seaside30LGPL/main' ];
 				package: 'Zinc-Seaside'
 					with: [ 
 							spec
 								requires: #('Seaside-Core' 'Zinc');
 								repository: 'http://mc.stfx.eu/ZincHTTPComponents' ];
-				package: 'Seaside-Adaptors-Swazoo' with: [ spec requires: #('Seaside-Core' 'Seaside-Swazoo') ];
 				package: 'Javascript-Tests-Core' with: [ spec requires: #('Seaside-Tests-Core' 'Javascript-Core') ];
 				package: 'JQuery-Tests-Core'
 					with: [ spec requires: #('JQuery-Core' 'Javascript-Tests-Core' 'Seaside-Development' 'Seaside-Tests-Functional') ];
@@ -146,27 +132,14 @@ baselineCommon: spec
 				group: 'Development Tests' with: #('Development' 'Base Tests' 'Seaside-Tests-Development');
 				group: 'Core'
 					with:
-						#('Base' 'Development' 'RSS-Core' 'Javascript-Core' 'Prototype-Core' 'Scriptaculous-Core' 'JQuery-Core' 'JQuery-UI' 'Seaside-Email' 'Seaside-HTML5' 'Seaside-InternetExplorer' 'Seaside-Examples' 'RSS-Examples' 'Seaside-Tools-Web' 'Scriptaculous-Components' 'Seaside-Welcome' 'Seaside-Tools-OmniBrowser');
+						#('Base' 'Development' 'RSS-Core' 'Javascript-Core' 'Prototype-Core' 'Scriptaculous-Core' 'JQuery-Core' 'JQuery-UI' 'Seaside-Email' 'Seaside-HTML5' 'Seaside-InternetExplorer' 'Seaside-Examples' 'RSS-Examples' 'Seaside-Tools-Web' 'Scriptaculous-Components' 'Seaside-Welcome');
 				group: 'Tests'
 					with:
 						#('Base Tests' 'Development Tests' 'RSS-Tests-Core' 'Javascript-Tests-Core' 'Seaside-Tests-Email' 'Seaside-Tests-Functional' 'Prototype-Tests-Core' 'Scriptaculous-Tests-Core' 'Scriptaculous-Tests-Components' 'JQuery-Tests-Core' 'JQuery-Tests-UI' 'Seaside-Tests-HTML5' 'Seaside-Tests-InternetExplorer' 'Seaside-Tests-Examples' 'Seaside-Tests-Tools-Web' 'Seaside-Tests-UTF8' 'Seaside-Tests-Welcome') ].
 	spec
-		for: #squeakCommon
+		for: #'squeakCommon'
 		do: [ 
 			spec
-				project: 'Kom'
-					with: [ 
-							spec
-								className: 'ConfigurationOfKomHttpServer';
-								versionString: #bleedingEdge;
-								repository: 'http://www.smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main' ];
-				project: 'OB'
-					with: [ 
-							spec
-								className: 'ConfigurationOfOmniBrowser';
-								versionString: #stable;
-								loads: #('Core');
-								repository: 'http://www.squeaksource.com/MetacelloRepository' ];
 				project: 'SPort2'
 					with: [ 
 							spec
