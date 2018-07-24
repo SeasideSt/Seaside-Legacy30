@@ -105,5 +105,5 @@ baseline: spec
 		do: [
 			spec 
 				package:'Seaside-Pharo60-Legacy';
-				package: 'Seaside-Core' with: [ spec includes: 'Seaside-Pharo60-Legacy'  ]
+				package: 'Seaside-Core' with: [ spec requires: 'Seaside-Pharo60-Legacy'  ]
 		].
