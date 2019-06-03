@@ -71,10 +71,7 @@ baselineCommon: spec
 									#('Seaside-Environment' 'Seaside-Tools-Web' 'Seaside-Examples' 'Seaside-Development' 'JQuery-Core' 'JQuery-UI' 'Seaside-Flow' 'Seaside-Tests-Flow' 'Seaside-Widgets') ];
 				package: 'Seaside-Widgets' with: [ spec requires: #('Seaside-Component' 'Seaside-Canvas') ];
 				package: 'Zinc-Seaside'
-					with: [ 
-							spec
-								requires: #('Seaside-Core' 'Zinc');
-								repository: 'http://mc.stfx.eu/ZincHTTPComponents' ];
+					with: [ spec requires: #('Seaside-Core' 'Zinc') ];
 				package: 'Javascript-Tests-Core' with: [ spec requires: #('Seaside-Tests-Core' 'Javascript-Core') ];
 				package: 'JQuery-Tests-Core'
 					with: [ spec requires: #('JQuery-Core' 'Javascript-Tests-Core' 'Seaside-Development' 'Seaside-Tests-Functional') ];
