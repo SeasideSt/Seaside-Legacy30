@@ -74,7 +74,7 @@ baseline: spec
 				group: 'OneClick' with: #('Zinc-Seaside') ].
 			
 	spec
-		for: #(#'pharo4.x' #'pharo5.x' #'pharo6.x' #'pharo7.x' #'pharo8.x')
+		for: #(#'pharo4.x' #'pharo5.x' #'pharo6.x' #'pharo7.x' #'pharo8.x' #'pharo9.x')
 		do: [ 
 			spec
 				removeProject: 'OB';
@@ -101,7 +101,7 @@ baseline: spec
 		
 
 	spec
-		for: #(#'pharo6.x' #'pharo7.x' #'pharo8.x')
+		for: #(#'pharo6.x' #'pharo7.x' #'pharo8.x' #'pharo9.x')
 		do: [
 			spec 
 				package:'Seaside-Pharo60-Legacy';
